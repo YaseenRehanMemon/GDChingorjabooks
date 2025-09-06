@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 12: Circulation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to the shared stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+        // MathJax configuration (for rendering LaTeX)
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body style="--accent-color: #E91E63;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 12: Circulation</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Circulatory Systems</a></li>
+                <li><a href="#human-heart">The Human Heart</a></li>
+                <li><a href="#blood-vessels">Blood Vessels</a></li>
+                <li><a href="#blood-pressure">Blood Pressure</a></li>
+                <li><a href="#lymphatic-system">Lymphatic System</a></li>
+                <li><a href="#disorders">Cardiovascular Disorders</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>12.1 Circulatory Systems</h2>
+                <p>In complex multicellular animals, simple diffusion is not sufficient to transport substances over long distances. The <strong>circulatory system</strong> solves this problem by transporting fluid throughout the body, functionally connecting all cells to the organs responsible for exchange (like the lungs and intestines).</p>
+                <div class="card">
+                    <h4>Open vs. Closed Circulatory Systems</h4>
+                    <ul>
+                        <li><b>Open Circulatory System:</b> Blood (called <b>hemolymph</b>) is pumped by a heart into an open body cavity (the hemocoel), where it directly bathes the tissues. Found in arthropods and most mollusks.</li>
+                        <li><b>Closed Circulatory System:</b> Blood is confined within vessels (arteries, veins, capillaries) and is distinct from the interstitial fluid. This allows for more efficient transport and higher blood pressure. Found in annelids, some mollusks, and all vertebrates.</li>
+                    </ul>
+                </div>
+                <h3>Single vs. Double Circuit Circulation</h3>
+                <ul>
+                    <li><b>Single Circuit:</b> Blood passes through the heart only once in a complete circuit (e.g., in fish).</li>
+                    <li><b>Double Circuit:</b> Blood is pumped through the heart twice in one circuit. This involves a <b>pulmonary circuit</b> (to the lungs) and a <b>systemic circuit</b> (to the rest of the body). Found in amphibians, reptiles, birds, and mammals.</li>
+                </ul>
+            </section>
+
+            <section id="human-heart">
+                <h2>12.2 The Human Heart</h2>
+                <p>The human heart is a four-chambered muscular pump responsible for circulating blood throughout the body. It is enclosed in a protective sac called the <strong>pericardium</strong>.</p>
+                <h3>12.2.1 Structure of the Heart</h3>
+                <ul>
+                    <li><b>Chambers:</b> Two upper, thin-walled atria (right and left) that receive blood, and two lower, thick-walled ventricles (right and left) that pump blood out.</li>
+                    <li><b>Valves:</b> Ensure one-way blood flow. The <b>atrioventricular (AV) valves</b> (tricuspid and bicuspid/mitral) are between atria and ventricles. The <b>semilunar valves</b> are at the exit of the ventricles.</li>
+                </ul>
+                <h3>12.2.2 The Cardiac Cycle</h3>
+                <p>The cardiac cycle is the sequence of events during one heartbeat. It consists of two main phases:</p>
+                <ul>
+                    <li><b>Systole:</b> The contraction phase of the heart chambers.</li>
+                    <li><b>Diastole:</b> The relaxation phase of the heart chambers.</li>
+                </ul>
+                <p>The "lub-dub" sound of the heartbeat is caused by the closing of the AV valves (lub) and the semilunar valves (dub).</p>
+                <h3>12.2.3 Control of the Heartbeat</h3>
+                <p>The heartbeat is controlled by a specialized conduction system:</p>
+                <ol>
+                    <li>The <b>Sinoatrial (SA) node</b>, or the "pacemaker," located in the right atrium, initiates the electrical impulse.</li>
+                    <li>The impulse spreads across the atria, causing them to contract.</li>
+                    <li>The impulse reaches the <b>Atrioventricular (AV) node</b>, where it is briefly delayed.</li>
+                    <li>The impulse then travels down the bundle of His and through the Purkinje fibers, causing the ventricles to contract from the bottom up.</li>
+                </ol>
+                <h3>12.2.4 Electrocardiogram (ECG)</h3>
+                <p>An ECG is a recording of the electrical activity of the heart. It shows distinct waves (P, QRS, T) that correspond to the depolarization and repolarization of the atria and ventricles.</p>
+            </section>
+            
+            <section id="blood-vessels">
+                <h2>12.3 Blood Vessels</h2>
+                <p>Blood travels through a network of vessels that form a closed loop.</p>
+                <table>
+                    <thead><tr><th>Vessel</th><th>Function</th><th>Structure</th></tr></thead>
+                    <tbody>
+                        <tr><td><b>Arteries & Arterioles</b></td><td>Carry blood <b>away</b> from the heart.</td><td>Thick, muscular, and elastic walls to withstand high pressure.</td></tr>
+                        <tr><td><b>Capillaries</b></td><td>The site of exchange between blood and tissues.</td><td>Extremely thin walls (one cell thick) to allow for efficient diffusion.</td></tr>
+                        <tr><td><b>Veins & Venules</b></td><td>Carry blood <b>toward</b> the heart.</td><td>Thinner walls than arteries; contain one-way valves to prevent backflow of blood under low pressure.</td></tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section id="blood-pressure">
+                <h2>12.4 Blood Pressure</h2>
+                <p><strong>Blood pressure</strong> is the hydrostatic force of blood exerted on the walls of the vessels. It is highest in the arteries and lowest in the veins.</p>
+                <div class="card">
+                    <h4>Systolic and Diastolic Pressure</h4>
+                    <p>Blood pressure is measured as two numbers (e.g., 120/80 mmHg):</p>
+                    <ul>
+                        <li><b>Systolic Pressure (Top Number):</b> The pressure in the arteries during ventricular contraction (systole).</li>
+                        <li><b>Diastolic Pressure (Bottom Number):</b> The pressure in the arteries during ventricular relaxation (diastole).</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="lymphatic-system">
+                <h2>12.5 The Lymphatic System</h2>
+                <p>The lymphatic system is a network of vessels and organs that returns excess interstitial fluid (called <strong>lymph</strong>) to the bloodstream. It is a crucial part of the immune system.</p>
+            </section>
+
+            <section id="disorders">
+                <h2>12.6 Cardiovascular Disorders</h2>
+                <p>Disorders of the heart and blood vessels are a leading cause of death worldwide.</p>
+                <ul>
+                    <li><b>Hypertension:</b> High blood pressure.</li>
+                    <li><b>Atherosclerosis:</b> The hardening and narrowing of arteries due to the buildup of plaque (cholesterol, fats, etc.).</li>
+                    <li><b>Thrombus:</b> A blood clot that forms within a blood vessel.</li>
+                    <li><b>Heart Attack:</b> Damage or death of heart muscle due to a blockage in a coronary artery.</li>
+                </ul>
+            </section>
+            
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Circulatory Systems</b> can be <b>open</b> or <b>closed</b>, and have <b>single</b> or <b>double</b> circuits.</li>
+                        <li>The <b>Human Heart</b> is a four-chambered pump. The <b>cardiac cycle</b> involves systole (contraction) and diastole (relaxation), controlled by an electrical conduction system starting at the <b>SA node</b>.</li>
+                        <li><b>Blood Vessels:</b> <b>Arteries</b> carry blood away from the heart, <b>veins</b> carry it toward the heart, and <b>capillaries</b> are the site of exchange.</li>
+                        <li><b>Blood Pressure</b> is the force of blood against vessel walls, measured as systolic over diastolic pressure.</li>
+                        <li>The <b>Lymphatic System</b> returns excess fluid to the blood and is a key part of the immune system.</li>
+                        <li><b>Cardiovascular Disorders</b> include hypertension and atherosclerosis, which can lead to heart attacks and strokes.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

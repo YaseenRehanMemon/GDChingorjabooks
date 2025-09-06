@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 17: Nervous Coordination</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --accent-color: #2196F3; /* Blue */
+            --bg-light: #f4f7f9; --text-light: #333; --card-bg-light: #ffffff; --border-light: #e0e0e0; --header-bg-light: #ffffff; --sidebar-bg-light: #fdfdfd;
+            --bg-dark: #121212; --text-dark: #e0e0e0; --card-bg-dark: #1e1e1e; --border-dark: #333; --header-bg-dark: #1e1e1e; --sidebar-bg-dark: #232323;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { font-family: 'Poppins', sans-serif; line-height: 1.6; scroll-behavior: smooth; background-color: var(--bg-light); color: var(--text-light); transition: background-color 0.3s, color 0.3s; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: var(--border-light); color: var(--text-light); transition: background-color 0.3s; font-weight: 600; }
+        .theme-toggle-label .moon { display: none; } .theme-toggle-label .sun { display: inline; }
+        body.dark-mode { --bg-light: var(--bg-dark); --text-light: var(--text-dark); --card-bg-light: var(--card-bg-dark); --border-light: var(--border-dark); --header-bg-light: var(--header-bg-dark); --sidebar-bg-light: var(--sidebar-bg-dark); }
+        .dark-mode .theme-toggle-label .moon { display: inline; } .dark-mode .theme-toggle-label .sun { display: none; } .dark-mode .sidebar a { color: #c5d7e8; } .dark-mode .sidebar a:hover { color: #ffffff; }
+        .page-container { display: grid; grid-template-columns: 260px 1fr; grid-template-rows: auto 1fr; grid-template-areas: "header header" "sidebar content"; min-height: 100vh; }
+        header { grid-area: header; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: var(--header-bg-light); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        header h1 { color: var(--accent-color); font-size: 1.8rem; }
+        .sidebar { grid-area: sidebar; background-color: var(--sidebar-bg-light); padding: 2rem; border-right: 1px solid var(--border-light); position: fixed; top: 75px; left: 0; width: 260px; height: calc(100vh - 75px); overflow-y: auto; }
+        .sidebar h2 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        .sidebar ul { list-style: none; } .sidebar li { margin-bottom: 0.8rem; }
+        .sidebar a { text-decoration: none; color: #555; font-weight: 500; transition: color 0.2s; } .sidebar a:hover { color: var(--accent-color); }
+        .content { grid-area: content; padding: 2rem 3rem; }
+        section { margin-bottom: 3rem; padding-top: 80px; margin-top: -75px; }
+        h2 { font-size: 2rem; color: var(--accent-color); margin-bottom: 1.5rem; border-bottom: 2px solid var(--border-light); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; }
+        p, ul, ol { margin-bottom: 1rem; } ul, ol { padding-left: 20px; }
+        b { color: var(--accent-color); }
+        .card { background-color: var(--card-bg-light); border: 1px solid var(--border-light); border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        @media (max-width: 900px) { .page-container { grid-template-columns: 1fr; grid-template-areas: "header" "content"; } .sidebar { display: none; } header h1 { font-size: 1.4rem; } .content { padding: 1.5rem; } }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+            function applyTheme(isDarkMode) { body.classList.toggle('dark-mode', isDarkMode); }
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const initialThemeDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+            themeToggleCheckbox.checked = initialThemeDark;
+            applyTheme(initialThemeDark);
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+    </script>
+</head>
+<body style="--accent-color: #2196F3;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 17: Nervous Coordination</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#neuron">The Neuron</a></li>
+                <li><a href="#action-potential">The Action Potential</a></li>
+                <li><a href="#synapse">The Synapse</a></li>
+                <li><a href="#cns-pns">Human Nervous System</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>1. Introduction to Nervous Coordination</h2>
+                <p>The nervous system provides rapid, point-to-point communication between different parts of the body using electrical and chemical signals. This allows for quick responses to internal and external stimuli.</p>
+            </section>
+
+            <section id="neuron">
+                <h2>2. The Neuron</h2>
+                <p>The <b>neuron</b> is the fundamental structural and functional unit of the nervous system. It is specialized for transmitting nerve impulses.</p>
+                <div class="card">
+                    <h4>Structure of a Neuron</h4>
+                    <ul>
+                        <li><b>Cell Body (Soma):</b> Contains the nucleus and most of the cell's organelles.</li>
+                        <li><b>Dendrites:</b> Highly branched extensions that receive signals from other neurons.</li>
+                        <li><b>Axon:</b> A long extension that transmits signals to other cells. Many axons are insulated by a <b>myelin sheath</b>, which speeds up signal transmission.</li>
+                    </ul>
+                </div>
+                 <h3>Types of Neurons</h3>
+                <ul>
+                    <li><b>Sensory Neurons:</b> Transmit signals from sensory receptors to the central nervous system (CNS).</li>
+                    <li><b>Interneurons:</b> Located within the CNS, they integrate information and connect sensory and motor neurons.</li>
+                    <li><b>Motor Neurons:</b> Transmit signals from the CNS to effectors (muscles or glands).</li>
+                </ul>
+            </section>
+            
+            <section id="action-potential">
+                <h2>3. The Nerve Impulse (Action Potential)</h2>
+                <p>A nerve impulse is an electrical signal that travels along the axon of a neuron. It is a rapid, temporary change in the membrane potential.</p>
+                <h3>Resting Potential</h3>
+                <p>An unstimulated neuron has a <b>resting potential</b> of about -70mV. This is due to the sodium-potassium pump (\(\text{Na}^+/\text{K}^+\) pump), which actively transports more positive ions (\(3 \text{ Na}^+\)) out of the cell than it brings in (\(2 \text{ K}^+\)). The inside of the neuron is negative relative to the outside.</p>
+                <h3>Action Potential</h3>
+                <p>An action potential is an "all-or-none" event triggered when a stimulus causes the membrane potential to reach a <b>threshold</b> (around -55mV).</p>
+                <div class="card">
+                    <h4>Steps of an Action Potential</h4>
+                    <ol>
+                        <li><b>Depolarization:</b> Voltage-gated sodium channels open, and \( \text{Na}^+ \) ions rush into the cell, causing the inside to become positive.</li>
+                        <li><b>Repolarization:</b> Sodium channels close, and voltage-gated potassium channels open. \( \text{K}^+ \) ions rush out of the cell, restoring the negative charge inside.</li>
+                        <li><b>Hyperpolarization:</b> The potassium channels are slow to close, causing a brief "undershoot" where the membrane potential becomes more negative than the resting potential.</li>
+                    </ol>
+                    <p>In myelinated axons, the action potential "jumps" between the gaps in the myelin (Nodes of Ranvier), a process called <b>saltatory conduction</b>, which is much faster.</p>
+                </div>
+            </section>
+
+            <section id="synapse">
+                <h2>4. The Synapse: Transmitting the Signal</h2>
+                <p>A synapse is the junction where a signal is transmitted from one neuron to another cell. Most synapses are <b>chemical synapses</b>.</p>
+                 <div class="card">
+                    <h4>Events at a Chemical Synapse</h4>
+                    <ol>
+                        <li>The action potential arrives at the axon terminal.</li>
+                        <li>Voltage-gated \( \text{Ca}^{2+} \) channels open, and calcium ions rush in.</li>
+                        <li>The influx of calcium causes synaptic vesicles to fuse with the presynaptic membrane, releasing <b>neurotransmitters</b> into the synaptic cleft.</li>
+                        <li>Neurotransmitters diffuse across the cleft and bind to receptors on the postsynaptic membrane.</li>
+                        <li>This binding opens ion channels, causing a change in the membrane potential of the postsynaptic cell, either exciting or inhibiting it.</li>
+                    </ol>
+                </div>
+            </section>
+            
+             <section id="cns-pns">
+                <h2>5. The Human Nervous System</h2>
+                <p>The nervous system is broadly divided into two main parts.</p>
+                 <div class="card">
+                    <h4>Major Divisions</h4>
+                    <ul>
+                        <li><b>Central Nervous System (CNS):</b> Consists of the <b>brain</b> and <b>spinal cord</b>. It is the primary site for integrating information and making decisions.</li>
+                        <li><b>Peripheral Nervous System (PNS):</b> Consists of all the nerves outside the CNS. It connects the CNS to the limbs and organs.
+                            <ul>
+                                <li>The <b>Somatic</b> division controls voluntary movements (skeletal muscles).</li>
+                                <li>The <b>Autonomic</b> division controls involuntary functions (heart rate, digestion). The autonomic system is further divided into the <b>sympathetic</b> ("fight-or-flight") and <b>parasympathetic</b> ("rest-and-digest") branches.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Neuron:</b> The basic unit of the nervous system, composed of a cell body, dendrites, and an axon.</li>
+                        <li><b>Action Potential:</b> A rapid, all-or-none electrical signal that travels down an axon, involving the depolarization and repolarization of the membrane.</li>
+                        <li><b>Synapse:</b> The junction where a signal is transmitted between neurons via chemical messengers called <b>neurotransmitters</b>.</li>
+                        <li><b>CNS:</b> The brain and spinal cord, acting as the body's control center.</li>
+                        <li><b>PNS:</b> Nerves connecting the CNS to the rest of the body, divided into somatic (voluntary) and autonomic (involuntary) systems.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

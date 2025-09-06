@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 10: Biochemistry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --accent-color: #8BC34A; /* Light Green */
+            --bg-light: #f4f7f9; --text-light: #333; --card-bg-light: #ffffff; --border-light: #e0e0e0; --header-bg-light: #ffffff; --sidebar-bg-light: #fdfdfd;
+            --bg-dark: #121212; --text-dark: #e0e0e0; --card-bg-dark: #1e1e1e; --border-dark: #333; --header-bg-dark: #1e1e1e; --sidebar-bg-dark: #232323;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { font-family: 'Poppins', sans-serif; line-height: 1.6; scroll-behavior: smooth; background-color: var(--bg-light); color: var(--text-light); transition: background-color 0.3s, color 0.3s; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: var(--border-light); color: var(--text-light); transition: background-color 0.3s; font-weight: 600; }
+        .theme-toggle-label .moon { display: none; } .theme-toggle-label .sun { display: inline; }
+        body.dark-mode { --bg-light: var(--bg-dark); --text-light: var(--text-dark); --card-bg-light: var(--card-bg-dark); --border-light: var(--border-dark); --header-bg-light: var(--header-bg-dark); --sidebar-bg-light: var(--sidebar-bg-dark); }
+        .dark-mode .theme-toggle-label .moon { display: inline; } .dark-mode .theme-toggle-label .sun { display: none; } .dark-mode .sidebar a { color: #c5d7e8; } .dark-mode .sidebar a:hover { color: #ffffff; }
+        .page-container { display: grid; grid-template-columns: 260px 1fr; grid-template-rows: auto 1fr; grid-template-areas: "header header" "sidebar content"; min-height: 100vh; }
+        header { grid-area: header; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: var(--header-bg-light); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        header h1 { color: var(--accent-color); font-size: 1.8rem; }
+        .sidebar { grid-area: sidebar; background-color: var(--sidebar-bg-light); padding: 2rem; border-right: 1px solid var(--border-light); position: fixed; top: 75px; left: 0; width: 260px; height: calc(100vh - 75px); overflow-y: auto; }
+        .sidebar h2 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        .sidebar ul { list-style: none; } .sidebar li { margin-bottom: 0.8rem; }
+        .sidebar a { text-decoration: none; color: #555; font-weight: 500; transition: color 0.2s; } .sidebar a:hover { color: var(--accent-color); }
+        .content { grid-area: content; padding: 2rem 3rem; }
+        section { margin-bottom: 3rem; padding-top: 80px; margin-top: -75px; }
+        h2 { font-size: 2rem; color: var(--accent-color); margin-bottom: 1.5rem; border-bottom: 2px solid var(--border-light); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; }
+        p, ul, ol { margin-bottom: 1rem; } ul, ol { padding-left: 20px; }
+        b { color: var(--accent-color); }
+        .card { background-color: var(--card-bg-light); border: 1px solid var(--border-light); border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        @media (max-width: 900px) { .page-container { grid-template-columns: 1fr; grid-template-areas: "header" "content"; } .sidebar { display: none; } header h1 { font-size: 1.4rem; } .content { padding: 1.5rem; } }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+            function applyTheme(isDarkMode) { body.classList.toggle('dark-mode', isDarkMode); }
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const initialThemeDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+            themeToggleCheckbox.checked = initialThemeDark;
+            applyTheme(initialThemeDark);
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+    </script>
+</head>
+<body style="--accent-color: #8BC34A;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 10: Biochemistry</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#carbs">Carbohydrates</a></li>
+                <li><a href="#proteins">Proteins</a></li>
+                <li><a href="#lipids">Lipids</a></li>
+                <li><a href="#minerals">Minerals</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>1. Introduction to Biochemistry</h2>
+                <p>Biochemistry is the study of the chemical processes within and relating to living organisms. It focuses on the structure, function, and interaction of the four major classes of biological macromolecules.</p>
+            </section>
+
+            <section id="carbs">
+                <h2>2. Carbohydrates</h2>
+                <p>Carbohydrates are polyhydroxy aldehydes or ketones, or substances that yield these compounds upon hydrolysis. They are the primary source of energy for living organisms and also serve structural roles.</p>
+                <h3>Classification of Carbohydrates</h3>
+                <ul>
+                    <li><b>Monosaccharides:</b> The simplest sugars (e.g., glucose, fructose). They are the monomers for larger carbohydrates.</li>
+                    <li><b>Disaccharides:</b> Two monosaccharides joined by a <b>glycosidic bond</b> (e.g., sucrose, lactose).</li>
+                    <li><b>Polysaccharides:</b> Large polymers of monosaccharides (e.g., starch, glycogen, cellulose).</li>
+                </ul>
+                <div class="card">
+                    <h4>Role in Health and Disease</h4>
+                    <p><b>Glucose</b> is the main fuel for our cells. Its level in the blood is tightly regulated. An inability to regulate blood glucose leads to diabetes. <b>Dietary fiber</b> (like cellulose) is a carbohydrate that is important for digestive health, even though we cannot digest it.</p>
+                </div>
+            </section>
+            
+            <section id="proteins">
+                <h2>3. Proteins</h2>
+                <p>Proteins are large, complex polymers made from amino acid monomers linked by <b>peptide bonds</b>. They perform a vast array of functions in the cell.</p>
+                <h3>Protein Structure</h3>
+                <p>A protein's function is determined by its unique three-dimensional shape, which is described at four levels:</p>
+                <ol>
+                    <li><b>Primary:</b> The linear sequence of amino acids.</li>
+                    <li><b>Secondary:</b> Local folding into structures like the \(\alpha\)-helix and \(\beta\)-pleated sheet, stabilized by hydrogen bonds.</li>
+                    <li><b>Tertiary:</b> The overall 3D shape of a single polypeptide chain, determined by interactions between R-groups.</li>
+                    <li><b>Quaternary:</b> The arrangement of multiple polypeptide subunits to form a single functional protein (e.g., hemoglobin).</li>
+                </ol>
+                <div class="card">
+                    <h4>Functions of Proteins</h4>
+                    <ul>
+                        <li><b>Enzymes:</b> Catalyze biochemical reactions.</li>
+                        <li><b>Structural:</b> Provide support (e.g., collagen, keratin).</li>
+                        <li><b>Transport:</b> Carry substances (e.g., hemoglobin transports oxygen).</li>
+                        <li><b>Regulatory:</b> Act as hormones to regulate body functions (e.g., insulin).</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="lipids">
+                <h2>4. Lipids</h2>
+                <p>Lipids are a diverse group of naturally occurring molecules that are defined by their insolubility in water but solubility in nonpolar organic solvents. They include fats, oils, waxes, and steroids.</p>
+                <h3>Classification of Lipids</h3>
+                <ul>
+                    <li><b>Triglycerides (Fats and Oils):</b> Esters of glycerol and three fatty acids. They are the main form of long-term energy storage. <b>Saturated fats</b> have no C=C double bonds, while <b>unsaturated fats</b> have one or more.</li>
+                    <li><b>Phospholipids:</b> A major component of cell membranes, with a hydrophilic head and two hydrophobic tails.</li>
+                    <li><b>Steroids:</b> Lipids characterized by a specific four-ring carbon structure (e.g., cholesterol, testosterone, estrogen).</li>
+                </ul>
+                <div class="card">
+                    <h4>Saponification</h4>
+                    <p>This is the hydrolysis of a fat or oil with a strong base (like NaOH) to produce glycerol and the salt of a fatty acid, which is commonly known as <b>soap</b>.</p>
+                </div>
+            </section>
+            
+            <section id="minerals">
+                <h2>5. Minerals of Biological Significance</h2>
+                <p>Minerals are inorganic elements required by the body for various physiological functions. They are essential for maintaining health.</p>
+                 <div class="card">
+                    <h4>Key Minerals and Their Roles</h4>
+                    <ul>
+                        <li><b>Calcium (Ca):</b> Essential for strong bones and teeth, muscle contraction, and nerve function.</li>
+                        <li><b>Iron (Fe):</b> A crucial component of hemoglobin, which is necessary for oxygen transport in the blood.</li>
+                        <li><b>Phosphorus (P):</b> Important for bone health and a key component of DNA, RNA, and ATP.</li>
+                        <li><b>Zinc (Zn):</b> Plays a role in wound healing, immune function, and the senses of taste and smell.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Biochemistry:</b> The study of the molecules of life: carbohydrates, proteins, lipids, and nucleic acids.</li>
+                        <li><b>Carbohydrates:</b> Serve as the primary energy source. They range from simple monosaccharides (glucose) to complex polysaccharides (starch).</li>
+                        <li><b>Proteins:</b> Polymers of amino acids that perform a huge variety of tasks, from catalyzing reactions (enzymes) to providing structure. Their function is dictated by their 3D shape.</li>
+                        <li><b>Lipids:</b> Water-insoluble molecules used for long-term energy storage (fats), cell membranes (phospholipids), and as hormones (steroids).</li>
+                        <li><b>Minerals:</b> Inorganic elements like calcium and iron that are essential for various bodily functions.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

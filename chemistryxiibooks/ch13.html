@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 13: Spectroscopy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --accent-color: #2196F3; /* Blue */
+            --bg-light: #f4f7f9; --text-light: #333; --card-bg-light: #ffffff; --border-light: #e0e0e0; --header-bg-light: #ffffff; --sidebar-bg-light: #fdfdfd;
+            --bg-dark: #121212; --text-dark: #e0e0e0; --card-bg-dark: #1e1e1e; --border-dark: #333; --header-bg-dark: #1e1e1e; --sidebar-bg-dark: #232323;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { font-family: 'Poppins', sans-serif; line-height: 1.6; scroll-behavior: smooth; background-color: var(--bg-light); color: var(--text-light); transition: background-color 0.3s, color 0.3s; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: var(--border-light); color: var(--text-light); transition: background-color 0.3s; font-weight: 600; }
+        .theme-toggle-label .moon { display: none; } .theme-toggle-label .sun { display: inline; }
+        body.dark-mode { --bg-light: var(--bg-dark); --text-light: var(--text-dark); --card-bg-light: var(--card-bg-dark); --border-light: var(--border-dark); --header-bg-light: var(--header-bg-dark); --sidebar-bg-light: var(--sidebar-bg-dark); }
+        .dark-mode .theme-toggle-label .moon { display: inline; } .dark-mode .theme-toggle-label .sun { display: none; } .dark-mode .sidebar a { color: #c5d7e8; } .dark-mode .sidebar a:hover { color: #ffffff; }
+        .page-container { display: grid; grid-template-columns: 260px 1fr; grid-template-rows: auto 1fr; grid-template-areas: "header header" "sidebar content"; min-height: 100vh; }
+        header { grid-area: header; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: var(--header-bg-light); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        header h1 { color: var(--accent-color); font-size: 1.8rem; }
+        .sidebar { grid-area: sidebar; background-color: var(--sidebar-bg-light); padding: 2rem; border-right: 1px solid var(--border-light); position: fixed; top: 75px; left: 0; width: 260px; height: calc(100vh - 75px); overflow-y: auto; }
+        .sidebar h2 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        .sidebar ul { list-style: none; } .sidebar li { margin-bottom: 0.8rem; }
+        .sidebar a { text-decoration: none; color: #555; font-weight: 500; transition: color 0.2s; } .sidebar a:hover { color: var(--accent-color); }
+        .content { grid-area: content; padding: 2rem 3rem; }
+        section { margin-bottom: 3rem; padding-top: 80px; margin-top: -75px; }
+        h2 { font-size: 2rem; color: var(--accent-color); margin-bottom: 1.5rem; border-bottom: 2px solid var(--border-light); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; }
+        p, ul, ol { margin-bottom: 1rem; } ul, ol { padding-left: 20px; }
+        b { color: var(--accent-color); }
+        .card { background-color: var(--card-bg-light); border: 1px solid var(--border-light); border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        @media (max-width: 900px) { .page-container { grid-template-columns: 1fr; grid-template-areas: "header" "content"; } .sidebar { display: none; } header h1 { font-size: 1.4rem; } .content { padding: 1.5rem; } }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+            function applyTheme(isDarkMode) { body.classList.toggle('dark-mode', isDarkMode); }
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const initialThemeDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+            themeToggleCheckbox.checked = initialThemeDark;
+            applyTheme(initialThemeDark);
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+    </script>
+</head>
+<body style="--accent-color: #2196F3;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 13: Spectroscopy</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#ir">Infrared (IR)</a></li>
+                <li><a href="#uv-vis">UV-Visible (UV-Vis)</a></li>
+                <li><a href="#nmr">Nuclear Magnetic Resonance (NMR)</a></li>
+                <li><a href="#mass-spec">Mass Spectrometry</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>1. Introduction to Spectroscopy</h2>
+                <p>Spectroscopy is the study of the interaction between matter and electromagnetic radiation. It is a powerful analytical technique used by chemists to determine the structure and identity of molecules.</p>
+                <div class="card">
+                    <h4>The Electromagnetic Spectrum</h4>
+                    <p>Different regions of the electromagnetic spectrum (e.g., infrared, ultraviolet, radio waves) interact with molecules in different ways, providing unique information about their structure.</p>
+                </div>
+            </section>
+
+            <section id="ir">
+                <h2>2. Infrared (IR) Spectroscopy</h2>
+                <p>IR spectroscopy is used to identify the <b>functional groups</b> present in a molecule. It works by detecting the vibrations of chemical bonds.</p>
+                <div class="card">
+                    <h4>How it Works</h4>
+                    <p>When a molecule absorbs IR radiation, its bonds stretch and bend at specific frequencies. An IR spectrum is a plot of absorbance (or transmittance) versus frequency (usually in wavenumbers, \( \text{cm}^{-1} \)). Different functional groups absorb at characteristic frequencies.</p>
+                    <ul>
+                        <li>A strong, broad peak around \(3300 \text{ cm}^{-1}\) indicates an <b>O-H</b> bond (alcohol).</li>
+                        <li>A strong, sharp peak around \(1700 \text{ cm}^{-1}\) indicates a <b>C=O</b> bond (carbonyl group).</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="uv-vis">
+                <h2>3. UV-Visible (UV-Vis) Spectroscopy</h2>
+                <p>UV-Vis spectroscopy provides information about the electronic transitions in a molecule, and it is particularly useful for analyzing compounds with <b>conjugated systems</b> (alternating single and double bonds).</p>
+                <div class="card">
+                    <h4>How it Works</h4>
+                    <p>Molecules with \(\pi\)-electrons absorb UV or visible light to promote an electron from a lower-energy orbital to a higher-energy one. The wavelength of maximum absorbance (\(\lambda_{\text{max}}\)) is a key piece of data. The more extensive the conjugation in a molecule, the longer the \(\lambda_{\text{max}}\).</p>
+                </div>
+            </section>
+
+            <section id="nmr">
+                <h2>4. Nuclear Magnetic Resonance (NMR) Spectroscopy</h2>
+                <p>NMR spectroscopy is arguably the most powerful tool for determining the detailed carbon-hydrogen framework of a molecule. It relies on the magnetic properties of certain atomic nuclei, most commonly <b>¹H (proton)</b> and <b>¹³C</b>.</p>
+                <div class="card">
+                    <h4>Information from a ¹H NMR Spectrum</h4>
+                    <ol>
+                        <li><b>Number of Signals:</b> Indicates the number of different types of chemically non-equivalent protons.</li>
+                        <li><b>Chemical Shift (\(\delta\)):</b> The position of a signal along the x-axis (in ppm) indicates the electronic environment of the protons.</li>
+                        <li><b>Integration:</b> The area under each signal is proportional to the number of protons of that type.</li>
+                        <li><b>Splitting Pattern (Multiplicity):</b> Reveals the number of protons on adjacent carbons (n+1 rule).</li>
+                    </ol>
+                </div>
+            </section>
+            
+            <section id="mass-spec">
+                <h2>5. Mass Spectrometry (MS)</h2>
+                <p>Unlike other spectroscopic methods, mass spectrometry does not measure the interaction with electromagnetic radiation. Instead, it determines the <b>molecular weight</b> and <b>molecular formula</b> of a compound by measuring its mass-to-charge ratio (m/z).</p>
+                <div class="card">
+                    <h4>How it Works</h4>
+                    <p>A sample is vaporized and ionized, often by bombarding it with high-energy electrons. This creates a radical cation called the <b>molecular ion (M⁺)</b>, whose m/z value gives the molecular weight. This ion often breaks apart into smaller, charged fragments, creating a fragmentation pattern that can be used like a "fingerprint" to identify the molecule.</p>
+                </div>
+            </section>
+            
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Spectroscopy:</b> The analysis of how matter interacts with electromagnetic radiation to determine molecular structure.</li>
+                        <li><b>Infrared (IR):</b> Identifies functional groups by measuring bond vibrations. Key peaks include O-H and C=O.</li>
+                        <li><b>UV-Visible (UV-Vis):</b> Analyzes electronic transitions, especially in conjugated systems.</li>
+                        <li><b>Nuclear Magnetic Resonance (NMR):</b> Provides detailed information about the C-H framework from chemical shift, integration, and splitting patterns.</li>
+                        <li><b>Mass Spectrometry (MS):</b> Determines molecular weight and formula by measuring the mass-to-charge ratio of ionized molecules and their fragments.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

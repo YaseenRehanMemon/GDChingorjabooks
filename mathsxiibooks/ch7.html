@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 7: Plane Analytic Geometry - The Straight Line</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root { --accent-color: #795548; /* Brown for Geometry */ }
+        body { font-family: 'Poppins', sans-serif; margin: 0; background-color: #f4f7f9; color: #333; transition: background-color 0.3s, color 0.3s; }
+        .dark-mode { background-color: #121212; color: #e0e0e0; }
+        .page-container { display: flex; flex-direction: column; }
+        header { background-color: #ffffff; padding: 1rem 2rem; border-bottom: 1px solid #e0e0e0; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .dark-mode header { background-color: #1e1e1e; border-bottom: 1px solid #333; }
+        header h1 { margin: 0; color: var(--accent-color); font-size: 1.8rem; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: #e9eef2; transition: background-color 0.3s; }
+        .dark-mode .theme-toggle-label { background-color: #242424; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label .sun { display: inline; } .theme-toggle-label .moon { display: none; }
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label .sun { display: none; }
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label .moon { display: inline; }
+        .container { display: flex; }
+        .sidebar { width: 260px; background-color: #e9eef2; padding: 1.5rem; height: 100vh; position: fixed; top: 70px; left: 0; overflow-y: auto; border-right: 1px solid #e0e0e0; }
+        .dark-mode .sidebar { background-color: #242424; border-right: 1px solid #333; }
+        .sidebar h2 { font-size: 1.2rem; color: var(--accent-color); margin-top: 0; }
+        .sidebar ul { list-style: none; padding: 0; }
+        .sidebar ul li a { display: block; color: #333; text-decoration: none; padding: 0.75rem 1rem; border-radius: 5px; transition: background-color 0.2s; }
+        .dark-mode .sidebar ul li a { color: #e0e0e0; }
+        .sidebar ul li a:hover { background-color: var(--accent-color); color: white; }
+        .content { flex: 1; padding: 2rem; margin-left: 290px; }
+        .card { background-color: #ffffff; border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .dark-mode .card { background-color: #1e1e1e; border-color: var(--accent-color); }
+        .card.formula { background-color: #efebe9; border-color: #a1887f; }
+        .dark-mode .card.formula { background-color: #3e3c3b; border-color: #bcaaa4; }
+        h2 { border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        @media (max-width: 768px) { .sidebar { display: none; } .content { margin-left: 0; } header { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 7: The Straight Line</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+        <div class="container">
+            <nav class="sidebar">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="#division">Division of a Line Segment</a></li>
+                    <li><a href="#slope">Slope of a Line</a></li>
+                    <li><a href="#forms">Forms of Linear Equations</a></li>
+                    <li><a href="#distance">Distance Formulas</a></li>
+                    <li><a href="#concurrency">Concurrency of Lines</a></li>
+                </ul>
+            </nav>
+            <main class="content">
+                <section id="division">
+                    <h2>7.1 Division of a Line Segment</h2>
+                    <p>Analytic geometry uses algebra to describe geometric figures. We can find the coordinates of points that divide a line segment in a specific ratio.</p>
+                    <div class="card formula">
+                        <h4>Section Formula</h4>
+                        <p>The coordinates \((x, y)\) of a point that divides the line segment joining \(A(x_1, y_1)\) and \(B(x_2, y_2)\) in the ratio \(m:n\) are:</p>
+                        <p><b>Internally:</b> \( \left( \frac{mx_2 + nx_1}{m+n}, \frac{my_2 + ny_1}{m+n} \right) \)</p>
+                        <p><b>Externally:</b> \( \left( \frac{mx_2 - nx_1}{m-n}, \frac{my_2 - ny_1}{m-n} \right) \)</p>
+                        <p>For the <b>midpoint</b>, the ratio is 1:1, so the formula simplifies to \( \left( \frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2} \right) \).</p>
+                    </div>
+                </section>
+
+                <section id="slope">
+                    <h2>7.2 Slope (Gradient) of a Line</h2>
+                    <p>The slope of a line measures its steepness and direction. It is the "rise" (vertical change) over the "run" (horizontal change).</p>
+                    <div class="card">
+                        <h4>Calculating Slope</h4>
+                        <ul>
+                            <li><strong>From two points \((x_1, y_1)\) and \((x_2, y_2)\):</strong> \( m = \frac{y_2 - y_1}{x_2 - x_1} \)</li>
+                            <li><strong>Parallel Lines:</strong> Two lines are parallel if and only if their slopes are equal (\(m_1 = m_2\)).</li>
+                            <li><strong>Perpendicular Lines:</strong> Two lines are perpendicular if and only if the product of their slopes is -1 (\(m_1 \cdot m_2 = -1\)).</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="forms">
+                    <h2>7.3 Forms of Linear Equations</h2>
+                    <p>The equation of a straight line can be expressed in several standard forms, each useful in different contexts.</p>
+                    <div class="card">
+                        <h4>Standard Forms</h4>
+                        <ul>
+                            <li><strong>Slope-Intercept Form:</strong> \(y = mx + c\), where \(m\) is the slope and \(c\) is the y-intercept.</li>
+                            <li><strong>Point-Slope Form:</strong> \(y - y_1 = m(x - x_1)\), where \(m\) is the slope and \((x_1, y_1)\) is a point on the line.</li>
+                            <li><strong>Two-Point Form:</strong> \(y - y_1 = \frac{y_2 - y_1}{x_2 - x_1}(x - x_1)\), for a line passing through \((x_1, y_1)\) and \((x_2, y_2)\).</li>
+                            <li><strong>Intercept Form:</strong> \(\frac{x}{a} + \frac{y}{b} = 1\), where \(a\) is the x-intercept and \(b\) is the y-intercept.</li>
+                            <li><strong>General Form:</strong> \(Ax + By + C = 0\), where A, B, and C are constants.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="distance">
+                    <h2>7.4 Distance Formulas</h2>
+                    <div class="card formula">
+                        <h4>Perpendicular Distance from a Point to a Line</h4>
+                        <p>The perpendicular (shortest) distance from a point \((x_1, y_1)\) to the line \(Ax + By + C = 0\) is given by:</p>
+                        \[ d = \frac{|Ax_1 + By_1 + C|}{\sqrt{A^2 + B^2}} \]
+                    </div>
+                     <div class="card formula">
+                        <h4>Distance Between Two Parallel Lines</h4>
+                        <p>For two parallel lines \(Ax + By + C_1 = 0\) and \(Ax + By + C_2 = 0\), the distance between them is:</p>
+                        \[ d = \frac{|C_1 - C_2|}{\sqrt{A^2 + B^2}} \]
+                    </div>
+                </section>
+                
+                <section id="concurrency">
+                    <h2>7.5 Concurrency of Lines in a Triangle</h2>
+                    <p>In a triangle, certain sets of special lines are <strong>concurrent</strong>, meaning they all intersect at a single point.</p>
+                    <div class="card">
+                        <h4>Points of Concurrency</h4>
+                        <ul>
+                            <li><strong>Centroid:</strong> The intersection of the three <strong>medians</strong> (lines from a vertex to the midpoint of the opposite side).</li>
+                            <li><strong>Orthocenter:</strong> The intersection of the three <strong>altitudes</strong> (perpendicular lines from a vertex to the opposite side).</li>
+                            <li><strong>Circumcenter:</strong> The intersection of the three <strong>perpendicular bisectors</strong> of the sides. It is the center of the circle that passes through all three vertices.</li>
+                            <li><strong>Incenter:</strong> The intersection of the three <strong>angle bisectors</strong>. It is the center of the circle inscribed within the triangle.</li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

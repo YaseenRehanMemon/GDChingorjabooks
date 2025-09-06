@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 18: Chemical Coordination</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --accent-color: #FFC107; /* Amber */
+            --bg-light: #f4f7f9; --text-light: #333; --card-bg-light: #ffffff; --border-light: #e0e0e0; --header-bg-light: #ffffff; --sidebar-bg-light: #fdfdfd;
+            --bg-dark: #121212; --text-dark: #e0e0e0; --card-bg-dark: #1e1e1e; --border-dark: #333; --header-bg-dark: #1e1e1e; --sidebar-bg-dark: #232323;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { font-family: 'Poppins', sans-serif; line-height: 1.6; scroll-behavior: smooth; background-color: var(--bg-light); color: var(--text-light); transition: background-color 0.3s, color 0.3s; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: var(--border-light); color: var(--text-light); transition: background-color 0.3s; font-weight: 600; }
+        .theme-toggle-label .moon { display: none; } .theme-toggle-label .sun { display: inline; }
+        body.dark-mode { --bg-light: var(--bg-dark); --text-light: var(--text-dark); --card-bg-light: var(--card-bg-dark); --border-light: var(--border-dark); --header-bg-light: var(--header-bg-dark); --sidebar-bg-light: var(--sidebar-bg-dark); }
+        .dark-mode .theme-toggle-label .moon { display: inline; } .dark-mode .theme-toggle-label .sun { display: none; } .dark-mode .sidebar a { color: #c5d7e8; } .dark-mode .sidebar a:hover { color: #ffffff; }
+        .page-container { display: grid; grid-template-columns: 260px 1fr; grid-template-rows: auto 1fr; grid-template-areas: "header header" "sidebar content"; min-height: 100vh; }
+        header { grid-area: header; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: var(--header-bg-light); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        header h1 { color: var(--accent-color); font-size: 1.8rem; }
+        .sidebar { grid-area: sidebar; background-color: var(--sidebar-bg-light); padding: 2rem; border-right: 1px solid var(--border-light); position: fixed; top: 75px; left: 0; width: 260px; height: calc(100vh - 75px); overflow-y: auto; }
+        .sidebar h2 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        .sidebar ul { list-style: none; } .sidebar li { margin-bottom: 0.8rem; }
+        .sidebar a { text-decoration: none; color: #555; font-weight: 500; transition: color 0.2s; } .sidebar a:hover { color: var(--accent-color); }
+        .content { grid-area: content; padding: 2rem 3rem; }
+        section { margin-bottom: 3rem; padding-top: 80px; margin-top: -75px; }
+        h2 { font-size: 2rem; color: var(--accent-color); margin-bottom: 1.5rem; border-bottom: 2px solid var(--border-light); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; }
+        p, ul, ol { margin-bottom: 1rem; } ul, ol { padding-left: 20px; }
+        b { color: var(--accent-color); }
+        .card { background-color: var(--card-bg-light); border: 1px solid var(--border-light); border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        @media (max-width: 900px) { .page-container { grid-template-columns: 1fr; grid-template-areas: "header" "content"; } .sidebar { display: none; } header h1 { font-size: 1.4rem; } .content { padding: 1.5rem; } }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+            function applyTheme(isDarkMode) { body.classList.toggle('dark-mode', isDarkMode); }
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const initialThemeDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+            themeToggleCheckbox.checked = initialThemeDark;
+            applyTheme(initialThemeDark);
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+    </script>
+</head>
+<body style="--accent-color: #FFC107;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 18: Chemical Coordination</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Hormones & Endocrine System</a></li>
+                <li><a href="#hypothalamus-pituitary">Hypothalamus & Pituitary</a></li>
+                <li><a href="#thyroid-parathyroid">Thyroid & Parathyroid</a></li>
+                <li><a href="#pancreas">Pancreas</a></li>
+                <li><a href="#adrenal-gonads">Adrenal & Gonads</a></li>
+                <li><a href="#feedback">Feedback Mechanisms</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>1. Hormones and the Endocrine System</h2>
+                <p>Chemical coordination relies on the <b>endocrine system</b>, which consists of glands that produce and secrete chemical messengers called <b>hormones</b> directly into the bloodstream. Hormones travel throughout the body but only affect specific <b>target cells</b> that have receptors for them.</p>
+                <h3>Chemical Nature of Hormones</h3>
+                <ul>
+                    <li><b>Peptide/Protein Hormones:</b> Water-soluble hormones made of amino acid chains (e.g., Insulin, ADH). They cannot cross the cell membrane and bind to surface receptors.</li>
+                    <li><b>Amino Acid Derivatives:</b> Modified amino acids (e.g., Thyroxine, Epinephrine).</li>
+                    <li><b>Steroid Hormones:</b> Lipid-soluble hormones derived from cholesterol (e.g., Testosterone, Estrogen). They can cross the cell membrane and bind to intracellular receptors.</li>
+                </ul>
+            </section>
+
+            <section id="hypothalamus-pituitary">
+                <h2>2. The Hypothalamus and Pituitary Gland</h2>
+                <p>The <b>hypothalamus</b> is a region of the brain that acts as the main control center linking the nervous system to the endocrine system. It controls the <b>pituitary gland</b>, often called the "master gland."</p>
+                <div class="card">
+                    <h4>The Pituitary Gland</h4>
+                    <ul>
+                        <li><b>Anterior Pituitary:</b> Produces and releases several hormones that regulate other endocrine glands (tropic hormones). Key hormones include Growth Hormone (GH), Thyroid-Stimulating Hormone (TSH), and Follicle-Stimulating Hormone (FSH).</li>
+                        <li><b>Posterior Pituitary:</b> Stores and releases two hormones made by the hypothalamus:
+                            <ul>
+                                <li><b>Antidiuretic Hormone (ADH):</b> Regulates water balance by increasing water reabsorption in the kidneys.</li>
+                                <li><b>Oxytocin:</b> Stimulates uterine contractions during childbirth and milk release.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="thyroid-parathyroid">
+                <h2>3. The Thyroid and Parathyroid Glands</h2>
+                <p>These glands are located in the neck and are crucial for metabolism and calcium regulation.</p>
+                <h3>Thyroid Gland</h3>
+                <p>Produces hormones that regulate metabolism.</p>
+                <ul>
+                    <li><b>Thyroxine (T4) and Triiodothyronine (T3):</b> Increase metabolic rate, oxygen consumption, and heat production.</li>
+                    <li><b>Calcitonin:</b> Lowers blood calcium levels by stimulating calcium deposition in bones.</li>
+                </ul>
+                <h3>Parathyroid Glands</h3>
+                <p>Produce <b>Parathyroid Hormone (PTH)</b>, which has the opposite effect of calcitonin. PTH <b>raises blood calcium levels</b> by stimulating its release from bones and reabsorption by the kidneys.</p>
+            </section>
+
+            <section id="pancreas">
+                <h2>4. The Pancreas</h2>
+                <p>The pancreas has both exocrine (digestive enzymes) and endocrine functions. The endocrine cells are located in clusters called the <b>Islets of Langerhans</b>.</p>
+                <div class="card">
+                    <h4>Regulation of Blood Glucose</h4>
+                    <p>Two antagonistic hormones from the pancreas maintain blood glucose homeostasis:</p>
+                    <ul>
+                        <li><b>Insulin (from Beta cells):</b> Released when blood sugar is high. It stimulates cells to take up glucose from the blood, lowering blood glucose levels.</li>
+                        <li><b>Glucagon (from Alpha cells):</b> Released when blood sugar is low. It stimulates the liver to break down glycogen and release glucose into the blood, raising blood glucose levels.</li>
+                    </ul>
+                    <p><b>Diabetes Mellitus</b> is a disorder caused by a deficiency of insulin or a decreased response to it.</p>
+                </div>
+            </section>
+            
+            <section id="adrenal-gonads">
+                <h2>5. The Adrenal Glands and Gonads</h2>
+                <h3>Adrenal Glands</h3>
+                <p>Located on top of the kidneys, each adrenal gland has two parts:</p>
+                <ul>
+                    <li><b>Adrenal Medulla (inner):</b> Secretes <b>epinephrine (adrenaline)</b> and norepinephrine, which mediate the "fight-or-flight" response to short-term stress.</li>
+                    <li><b>Adrenal Cortex (outer):</b> Secretes steroid hormones (corticosteroids) that regulate long-term stress responses, blood pressure, and metabolism.</li>
+                </ul>
+                <h3>The Gonads (Testes and Ovaries)</h3>
+                <p>The gonads produce sex hormones responsible for the development of primary and secondary sexual characteristics.</p>
+                <ul>
+                    <li><b>Testes (male):</b> Produce <b>androgens</b>, primarily <b>testosterone</b>.</li>
+                    <li><b>Ovaries (female):</b> Produce <b>estrogens</b> and <b>progesterone</b>.</li>
+                </ul>
+            </section>
+
+            <section id="feedback">
+                <h2>6. Feedback Mechanisms in Hormone Regulation</h2>
+                <p>Hormone levels are primarily controlled by <b>negative feedback</b> loops, which maintain homeostasis.</p>
+                 <div class="card">
+                    <h4>Negative Feedback</h4>
+                    <p>The final product of a pathway inhibits an earlier step in the pathway. For example, high levels of thyroxine in the blood inhibit the hypothalamus and pituitary from releasing TRH and TSH, thereby reducing thyroxine production.</p>
+                    <h4>Positive Feedback</h4>
+                    <p>The final product stimulates an earlier step, amplifying the response. This is rare but occurs during processes like childbirth, where oxytocin stimulates uterine contractions, which in turn stimulate more oxytocin release.</p>
+                </div>
+            </section>
+            
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Endocrine System:</b> A system of glands that secrete <b>hormones</b> into the bloodstream to regulate body functions.</li>
+                        <li><b>Hypothalamus & Pituitary:</b> The "master control center." The hypothalamus controls the pituitary, which in turn regulates many other glands like the thyroid and adrenals.</li>
+                        <li><b>Blood Glucose Regulation:</b> Maintained by the pancreatic hormones <b>insulin</b> (lowers glucose) and <b>glucagon</b> (raises glucose).</li>
+                        <li><b>Calcium Regulation:</b> Controlled by <b>calcitonin</b> (lowers calcium) from the thyroid and <b>parathyroid hormone</b> (raises calcium).</li>
+                        <li><b>Stress Response:</b> Managed by hormones from the adrenal glands (epinephrine and corticosteroids).</li>
+                        <li><b>Regulation:</b> Hormone secretion is tightly controlled, primarily through <b>negative feedback</b> loops to maintain homeostasis.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

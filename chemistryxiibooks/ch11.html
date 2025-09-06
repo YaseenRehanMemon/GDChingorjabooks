@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 11: Industrial Chemistry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --accent-color: #607D8B; /* Blue Grey */
+            --bg-light: #f4f7f9; --text-light: #333; --card-bg-light: #ffffff; --border-light: #e0e0e0; --header-bg-light: #ffffff; --sidebar-bg-light: #fdfdfd;
+            --bg-dark: #121212; --text-dark: #e0e0e0; --card-bg-dark: #1e1e1e; --border-dark: #333; --header-bg-dark: #1e1e1e; --sidebar-bg-dark: #232323;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { font-family: 'Poppins', sans-serif; line-height: 1.6; scroll-behavior: smooth; background-color: var(--bg-light); color: var(--text-light); transition: background-color 0.3s, color 0.3s; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: var(--border-light); color: var(--text-light); transition: background-color 0.3s; font-weight: 600; }
+        .theme-toggle-label .moon { display: none; } .theme-toggle-label .sun { display: inline; }
+        body.dark-mode { --bg-light: var(--bg-dark); --text-light: var(--text-dark); --card-bg-light: var(--card-bg-dark); --border-light: var(--border-dark); --header-bg-light: var(--header-bg-dark); --sidebar-bg-light: var(--sidebar-bg-dark); }
+        .dark-mode .theme-toggle-label .moon { display: inline; } .dark-mode .theme-toggle-label .sun { display: none; } .dark-mode .sidebar a { color: #c5d7e8; } .dark-mode .sidebar a:hover { color: #ffffff; }
+        .page-container { display: grid; grid-template-columns: 260px 1fr; grid-template-rows: auto 1fr; grid-template-areas: "header header" "sidebar content"; min-height: 100vh; }
+        header { grid-area: header; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: var(--header-bg-light); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        header h1 { color: var(--accent-color); font-size: 1.8rem; }
+        .sidebar { grid-area: sidebar; background-color: var(--sidebar-bg-light); padding: 2rem; border-right: 1px solid var(--border-light); position: fixed; top: 75px; left: 0; width: 260px; height: calc(100vh - 75px); overflow-y: auto; }
+        .sidebar h2 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        .sidebar ul { list-style: none; } .sidebar li { margin-bottom: 0.8rem; }
+        .sidebar a { text-decoration: none; color: #555; font-weight: 500; transition: color 0.2s; } .sidebar a:hover { color: var(--accent-color); }
+        .content { grid-area: content; padding: 2rem 3rem; }
+        section { margin-bottom: 3rem; padding-top: 80px; margin-top: -75px; }
+        h2 { font-size: 2rem; color: var(--accent-color); margin-bottom: 1.5rem; border-bottom: 2px solid var(--border-light); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; }
+        p, ul, ol { margin-bottom: 1rem; } ul, ol { padding-left: 20px; }
+        b { color: var(--accent-color); }
+        .card { background-color: var(--card-bg-light); border: 1px solid var(--border-light); border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        @media (max-width: 900px) { .page-container { grid-template-columns: 1fr; grid-template-areas: "header" "content"; } .sidebar { display: none; } header h1 { font-size: 1.4rem; } .content { padding: 1.5rem; } }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+            function applyTheme(isDarkMode) { body.classList.toggle('dark-mode', isDarkMode); }
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const initialThemeDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+            themeToggleCheckbox.checked = initialThemeDark;
+            applyTheme(initialThemeDark);
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+    </script>
+</head>
+<body style="--accent-color: #607D8B;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 11: Industrial Chemistry</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#pharma">Pharmaceuticals</a></li>
+                <li><a href="#polymers">Synthetic Polymers</a></li>
+                <li><a href="#cosmetics">Cosmetics</a></li>
+                <li><a href="#adhesives">Adhesives</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>1. Introduction to Industrial Chemistry</h2>
+                <p>Industrial chemistry is the branch of chemistry that applies chemical and physical processes to transform raw materials into products that are beneficial to humanity. It plays a crucial role in a country's economy by producing essential goods like medicines, plastics, paints, and fertilizers.</p>
+            </section>
+
+            <section id="pharma">
+                <h2>2. Pharmaceutical Industry</h2>
+                <p>The pharmaceutical industry discovers, develops, produces, and markets drugs or pharmaceutical drugs for use as medications to be administered to patients to cure them, vaccinate them, or alleviate symptoms.</p>
+                <div class="card">
+                    <h4>Common Types of Drugs</h4>
+                    <ul>
+                        <li><b>Analgesics:</b> Pain relievers (e.g., Aspirin, Paracetamol).</li>
+                        <li><b>Antibiotics:</b> Kill or inhibit the growth of bacteria (e.g., Penicillin).</li>
+                        <li><b>Antipyretics:</b> Reduce fever (e.g., Paracetamol).</li>
+                        <li><b>Antihistamines:</b> Treat allergies by reducing histamine levels (e.g., Diphenhydramine).</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="polymers">
+                <h2>3. Synthetic Polymers</h2>
+                <p>Polymers are large molecules (macromolecules) made up of many repeating smaller units called monomers. Synthetic polymers are created through chemical reactions and are essential materials in modern life.</p>
+                <div class="card">
+                    <h4>Key Synthetic Polymers</h4>
+                    <ul>
+                        <li><b>Polyvinyl Chloride (PVC):</b> An addition polymer made from vinyl chloride monomers. It is a versatile thermoplastic used for pipes, bottles, and electrical insulation due to its durability and low cost.</li>
+                        <li><b>Nylon 6,6:</b> A polyamide formed by the condensation polymerization of hexamethylenediamine and adipic acid. It is known for its high strength and is used to make textiles, ropes, and bristles.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="cosmetics">
+                <h2>4. Cosmetics</h2>
+                <p>Cosmetics are products used to enhance or alter the appearance of the face, body, nails, or hair.</p>
+                <div class="card">
+                    <h4>Composition of Common Cosmetics</h4>
+                    <ul>
+                        <li><b>Lipstick:</b> A mixture of oils, waxes, pigments, and moisturizers.</li>
+                        <li><b>Nail Polish:</b> A lacquer containing pigments, a film-forming polymer (like nitrocellulose), plasticizers, and a solvent.</li>
+                        <li><b>Nail Polish Remover:</b> An organic solvent, typically acetone, designed to dissolve the polymers in nail polish.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="adhesives">
+                <h2>5. Adhesives</h2>
+                <p>Adhesives, or glues, are substances that bond materials together. They create a bond through physical or chemical processes.</p>
+                <div class="card">
+                    <h4>Types of Adhesives</h4>
+                    <ul>
+                        <li><b>Starch:</b> A natural, low-strength adhesive made by heating starch in water. Used in food products and for biodegradable plastics.</li>
+                        <li><b>Epoxy Resins:</b> Strong synthetic adhesives used for bonding metals, plastics, and ceramics.</li>
+                        <li><b>Super Glue (Cyanoacrylate):</b> A fast-acting adhesive that bonds quickly to many surfaces.</li>
+                        <li><b>Wood Glue (Polyvinyl Acetate):</b> A water-based adhesive that forms a strong, durable bond between pieces of wood.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Industrial Chemistry:</b> Focuses on converting raw materials into useful products for society.</li>
+                        <li><b>Pharmaceuticals:</b> Includes the production of essential medicines like analgesics (painkillers) and antibiotics (for bacterial infections).</li>
+                        <li><b>Synthetic Polymers:</b> Large molecules like <b>PVC</b> (used in pipes) and <b>Nylon</b> (used in fabrics) are created through polymerization and are vital to modern industry.</li>
+                        <li><b>Cosmetics:</b> Products like lipstick and nail polish are formulated mixtures of chemicals designed to enhance appearance.</li>
+                        <li><b>Adhesives:</b> Substances like epoxy resins and super glue are used to bond materials together in construction and everyday life.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

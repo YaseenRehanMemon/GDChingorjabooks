@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 26: Biotechnology</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --accent-color: #009688; /* Teal */
+            --bg-light: #f4f7f9; --text-light: #333; --card-bg-light: #ffffff; --border-light: #e0e0e0; --header-bg-light: #ffffff; --sidebar-bg-light: #fdfdfd;
+            --bg-dark: #121212; --text-dark: #e0e0e0; --card-bg-dark: #1e1e1e; --border-dark: #333; --header-bg-dark: #1e1e1e; --sidebar-bg-dark: #232323;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { font-family: 'Poppins', sans-serif; line-height: 1.6; scroll-behavior: smooth; background-color: var(--bg-light); color: var(--text-light); transition: background-color 0.3s, color 0.3s; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: var(--border-light); color: var(--text-light); transition: background-color 0.3s; font-weight: 600; }
+        .theme-toggle-label .moon { display: none; } .theme-toggle-label .sun { display: inline; }
+        body.dark-mode { --bg-light: var(--bg-dark); --text-light: var(--text-dark); --card-bg-light: var(--card-bg-dark); --border-light: var(--border-dark); --header-bg-light: var(--header-bg-dark); --sidebar-bg-light: var(--sidebar-bg-dark); }
+        .dark-mode .theme-toggle-label .moon { display: inline; } .dark-mode .theme-toggle-label .sun { display: none; } .dark-mode .sidebar a { color: #c5d7e8; } .dark-mode .sidebar a:hover { color: #ffffff; }
+        .page-container { display: grid; grid-template-columns: 260px 1fr; grid-template-rows: auto 1fr; grid-template-areas: "header header" "sidebar content"; min-height: 100vh; }
+        header { grid-area: header; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: var(--header-bg-light); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        header h1 { color: var(--accent-color); font-size: 1.8rem; }
+        .sidebar { grid-area: sidebar; background-color: var(--sidebar-bg-light); padding: 2rem; border-right: 1px solid var(--border-light); position: fixed; top: 75px; left: 0; width: 260px; height: calc(100vh - 75px); overflow-y: auto; }
+        .sidebar h2 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        .sidebar ul { list-style: none; } .sidebar li { margin-bottom: 0.8rem; }
+        .sidebar a { text-decoration: none; color: #555; font-weight: 500; transition: color 0.2s; } .sidebar a:hover { color: var(--accent-color); }
+        .content { grid-area: content; padding: 2rem 3rem; }
+        section { margin-bottom: 3rem; padding-top: 80px; margin-top: -75px; }
+        h2 { font-size: 2rem; color: var(--accent-color); margin-bottom: 1.5rem; border-bottom: 2px solid var(--border-light); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; }
+        p, ul, ol { margin-bottom: 1rem; } ul, ol { padding-left: 20px; }
+        b { color: var(--accent-color); }
+        .card { background-color: var(--card-bg-light); border: 1px solid var(--border-light); border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        @media (max-width: 900px) { .page-container { grid-template-columns: 1fr; grid-template-areas: "header" "content"; } .sidebar { display: none; } header h1 { font-size: 1.4rem; } .content { padding: 1.5rem; } }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+            function applyTheme(isDarkMode) { body.classList.toggle('dark-mode', isDarkMode); }
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const initialThemeDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+            themeToggleCheckbox.checked = initialThemeDark;
+            applyTheme(initialThemeDark);
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+    </script>
+</head>
+<body style="--accent-color: #009688;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 26: Biotechnology</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#cloning">Gene Cloning & PCR</a></li>
+                <li><a href="#analysis">DNA Analysis</a></li>
+                <li><a href="#transgenic">Transgenic Organisms</a></li>
+                <li><a href="#healthcare">Biotechnology & Healthcare</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>1. Introduction to Biotechnology</h2>
+                <p>Biotechnology is the use of living organisms or their components to produce useful products or carry out processes. Modern biotechnology largely relies on <b>genetic engineering</b>, the direct manipulation of an organism's genes using recombinant DNA technology.</p>
+            </section>
+
+            <section id="cloning">
+                <h2>2. Cloning of Genes</h2>
+                <p>Gene cloning is the process of producing multiple, identical copies of a specific gene.</p>
+                <h3>Recombinant DNA Technology</h3>
+                <p>This is the core technique for gene cloning.</p>
+                <div class="card">
+                    <h4>Steps in Creating Recombinant DNA</h4>
+                    <ol>
+                        <li><b>Isolate Gene of Interest:</b> The desired gene is cut out from the source DNA using <b>restriction enzymes</b>, which act like molecular scissors that cut at specific DNA sequences.</li>
+                        <li><b>Insert into a Vector:</b> The isolated gene is pasted into a <b>plasmid</b> (a small, circular piece of DNA from bacteria) that has been cut with the same restriction enzyme. The enzyme <b>DNA ligase</b> seals the gene into the plasmid, creating a recombinant DNA molecule.</li>
+                        <li><b>Transformation:</b> The recombinant plasmid is introduced into a host cell, usually a bacterium like <i>E. coli</i>.</li>
+                        <li><b>Selection and Cloning:</b> As the host bacteria reproduce, they also replicate the plasmid, making millions of copies of the gene of interest.</li>
+                    </ol>
+                </div>
+                <h3>Polymerase Chain Reaction (PCR)</h3>
+                <p>PCR is a technique used to amplify a specific segment of DNA in a test tube, creating billions of copies in just a few hours. It is an alternative to using bacteria for cloning and is essential for DNA analysis when only a small sample is available.</p>
+            </section>
+            
+            <section id="analysis">
+                <h2>3. DNA Analysis</h2>
+                <p>Once DNA is cloned or amplified, it can be analyzed using several techniques.</p>
+                <div class="card">
+                    <h4>Key Analysis Techniques</h4>
+                    <ul>
+                        <li><b>Gel Electrophoresis:</b> Separates DNA fragments based on their size. An electric current is used to move DNA fragments through a gel matrix; smaller fragments move faster and farther.</li>
+                        <li><b>DNA Sequencing:</b> Determines the exact nucleotide sequence of a piece of DNA.</li>
+                        <li><b>DNA Fingerprinting (RFLP Analysis):</b> A technique to identify individuals based on unique patterns in their DNA, created by cutting the DNA with restriction enzymes and separating the fragments by gel electrophoresis.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="transgenic">
+                <h2>4. Transgenic Organisms (GMOs)</h2>
+                <p>A transgenic organism, or Genetically Modified Organism (GMO), is one that has been altered through genetic engineering to contain a gene from a different species.</p>
+                <h3>Applications</h3>
+                <ul>
+                    <li><b>Transgenic Bacteria:</b> Used to produce valuable proteins like human insulin, human growth hormone, and vaccines.</li>
+                    <li><b>Transgenic Plants:</b> Engineered for desirable traits such as pest resistance (Bt corn), herbicide resistance (Roundup Ready soybeans), or improved nutritional value (Golden Rice).</li>
+                    <li><b>Transgenic Animals:</b> Used to produce pharmaceuticals in their milk ("pharming") or to serve as models for studying human diseases.</li>
+                </ul>
+            </section>
+            
+            <section id="healthcare">
+                <h2>5. Biotechnology and Healthcare</h2>
+                <p>Biotechnology has revolutionized medicine, providing new ways to diagnose and treat diseases.</p>
+                <div class="card">
+                    <h4>Applications in Healthcare</h4>
+                    <ul>
+                        <li><b>Production of Pharmaceuticals:</b> Manufacturing proteins like insulin and vaccines using transgenic bacteria.</li>
+                        <li><b>Disease Diagnosis:</b> Using DNA probes and PCR to diagnose genetic disorders and detect infectious agents.</li>
+                        <li><b>Gene Therapy:</b> A technique that aims to treat genetic disorders by replacing a defective gene with a normal one. It is still largely experimental but holds great promise.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Genetic Engineering:</b> The direct manipulation of genes, primarily through <b>recombinant DNA technology</b>.</li>
+                        <li><b>Gene Cloning:</b> Making many copies of a gene, either by inserting it into bacteria via a plasmid or by using the <b>Polymerase Chain Reaction (PCR)</b>.</li>
+                        <li><b>DNA Analysis:</b> Techniques like <b>gel electrophoresis</b> (separates DNA by size) and <b>DNA sequencing</b> (reads the nucleotide order) are used to study genes.</li>
+                        <li><b>Transgenic Organisms (GMOs):</b> Organisms that contain genes from another species. They are used in agriculture to create pest-resistant crops and in medicine to produce therapeutic proteins.</li>
+                        <li><b>Healthcare Applications:</b> Biotechnology is used to diagnose genetic diseases, produce vaccines and medicines like insulin, and develop new treatments like <b>gene therapy</b>.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

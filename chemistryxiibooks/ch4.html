@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4: Nomenclature of Organic Compounds</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --accent-color: #3F51B5; /* Indigo */
+            --bg-light: #f4f7f9; --text-light: #333; --card-bg-light: #ffffff; --border-light: #e0e0e0; --header-bg-light: #ffffff; --sidebar-bg-light: #fdfdfd;
+            --bg-dark: #121212; --text-dark: #e0e0e0; --card-bg-dark: #1e1e1e; --border-dark: #333; --header-bg-dark: #1e1e1e; --sidebar-bg-dark: #232323;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { font-family: 'Poppins', sans-serif; line-height: 1.6; scroll-behavior: smooth; background-color: var(--bg-light); color: var(--text-light); transition: background-color 0.3s, color 0.3s; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: var(--border-light); color: var(--text-light); transition: background-color 0.3s; font-weight: 600; }
+        .theme-toggle-label .moon { display: none; } .theme-toggle-label .sun { display: inline; }
+        body.dark-mode { --bg-light: var(--bg-dark); --text-light: var(--text-dark); --card-bg-light: var(--card-bg-dark); --border-light: var(--border-dark); --header-bg-light: var(--header-bg-dark); --sidebar-bg-light: var(--sidebar-bg-dark); }
+        .dark-mode .theme-toggle-label .moon { display: inline; } .dark-mode .theme-toggle-label .sun { display: none; } .dark-mode .sidebar a { color: #c5d7e8; } .dark-mode .sidebar a:hover { color: #ffffff; }
+        .page-container { display: grid; grid-template-columns: 260px 1fr; grid-template-rows: auto 1fr; grid-template-areas: "header header" "sidebar content"; min-height: 100vh; }
+        header { grid-area: header; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: var(--header-bg-light); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        header h1 { color: var(--accent-color); font-size: 1.8rem; }
+        .sidebar { grid-area: sidebar; background-color: var(--sidebar-bg-light); padding: 2rem; border-right: 1px solid var(--border-light); position: fixed; top: 75px; left: 0; width: 260px; height: calc(100vh - 75px); overflow-y: auto; }
+        .sidebar h2 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        .sidebar ul { list-style: none; } .sidebar li { margin-bottom: 0.8rem; }
+        .sidebar a { text-decoration: none; color: #555; font-weight: 500; transition: color 0.2s; } .sidebar a:hover { color: var(--accent-color); }
+        .content { grid-area: content; padding: 2rem 3rem; }
+        section { margin-bottom: 3rem; padding-top: 80px; margin-top: -75px; }
+        h2 { font-size: 2rem; color: var(--accent-color); margin-bottom: 1.5rem; border-bottom: 2px solid var(--border-light); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; }
+        p, ol, table { margin-bottom: 1rem; } ol { padding-left: 20px; }
+        code { background-color: var(--border-light); padding: 2px 6px; border-radius: 4px; font-family: 'Courier New', monospace; }
+        .card { background-color: var(--card-bg-light); border: 1px solid var(--border-light); border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        @media (max-width: 900px) { .page-container { grid-template-columns: 1fr; grid-template-areas: "header" "content"; } .sidebar { display: none; } header h1 { font-size: 1.4rem; } .content { padding: 1.5rem; } }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+            function applyTheme(isDarkMode) { body.classList.toggle('dark-mode', isDarkMode); }
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const initialThemeDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+            themeToggleCheckbox.checked = initialThemeDark;
+            applyTheme(initialThemeDark);
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+    </script>
+</head>
+<body style="--accent-color: #3F51B5;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 4: Nomenclature</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#iupac">IUPAC System</a></li>
+                <li><a href="#alkanes">Alkanes</a></li>
+                <li><a href="#alkenes-alkynes">Alkenes & Alkynes</a></li>
+                <li><a href="#functional-groups">Compounds with Functional Groups</a></li>
+                <li><a href="#priority">Priority of Groups</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="iupac">
+                <h2>1. The IUPAC System</h2>
+                <p>With millions of organic compounds, a systematic method for naming them is essential. The <b>International Union of Pure and Applied Chemistry (IUPAC)</b> system provides a set of rules that gives each compound a unique and unambiguous name based on its structure.</p>
+                <div class="card">
+                    <h4>Core IUPAC Rules</h4>
+                    <ol>
+                        <li><b>Identify the Parent Chain:</b> Find the longest continuous carbon chain. If a functional group is present, the chain must contain it.</li>
+                        <li><b>Number the Chain:</b> Number the carbons in the parent chain, starting from the end that gives any substituents or functional groups the lowest possible numbers.</li>
+                        <li><b>Name the Substituents:</b> Name any branches or groups attached to the parent chain as prefixes (e.g., <code>methyl</code>, <code>chloro</code>, <code>hydroxy</code>).</li>
+                        <li><b>Assemble the Name:</b> Combine the parts in the order: (substituent number)-(substituent name)(parent chain name). Use prefixes like <code>di-</code>, <code>tri-</code> for multiple identical substituents.</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="alkanes">
+                <h2>2. Nomenclature of Alkanes</h2>
+                <p>Alkanes are saturated hydrocarbons with the general formula \(C_nH_{2n+2}\). Their IUPAC names end in <code>-ane</code>.</p>
+                <ul>
+                    <li><b>Parent Chain:</b> The longest continuous carbon chain.</li>
+                    <li><b>Numbering:</b> Start from the end that gives the substituents the lowest numbers.</li>
+                    <li><b>Example:</b> A 5-carbon chain with a methyl group on the 2nd carbon is named <b>2-methylpentane</b>.</li>
+                </ul>
+            </section>
+            
+            <section id="alkenes-alkynes">
+                <h2>3. Nomenclature of Alkenes and Alkynes</h2>
+                <p>Alkenes (double bonds) and alkynes (triple bonds) are unsaturated hydrocarbons.</p>
+                <div class="card">
+                    <h4>Naming Unsaturated Hydrocarbons</h4>
+                    <ul>
+                        <li><b>Parent Chain:</b> Must include the double or triple bond.</li>
+                        <li><b>Suffix:</b> The ending <code>-ane</code> is changed to <code>-ene</code> for alkenes and <code>-yne</code> for alkynes.</li>
+                        <li><b>Numbering:</b> The chain is numbered to give the first carbon of the multiple bond the lowest possible number. This number is placed before the suffix (e.g., <code>pent-2-ene</code>).</li>
+                        <li><b>Example (Alkene):</b> \( \text{CH}_3\text{CH}=\text{CHCH}_2\text{CH}_3 \) is named <b>pent-2-ene</b>.</li>
+                        <li><b>Example (Alkyne):</b> \( \text{HC}\equiv\text{CCH}_2\text{CH}_3 \) is named <b>but-1-yne</b>.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="functional-groups">
+                <h2>4. Naming Compounds with Functional Groups</h2>
+                <p>The presence of a functional group changes the suffix of the parent name.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Family</th>
+                            <th>Functional Group</th>
+                            <th>Suffix</th>
+                            <th>Example (and Name)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alcohol</td>
+                            <td>-OH</td>
+                            <td>-ol</td>
+                            <td>\( \text{CH}_3\text{CH}_2\text{OH} \) (Ethanol)</td>
+                        </tr>
+                        <tr>
+                            <td>Aldehyde</td>
+                            <td>-CHO</td>
+                            <td>-al</td>
+                            <td>\( \text{CH}_3\text{CHO} \) (Ethanal)</td>
+                        </tr>
+                        <tr>
+                            <td>Ketone</td>
+                            <td>-CO-</td>
+                            <td>-one</td>
+                            <td>\( \text{CH}_3\text{COCH}_3 \) (Propanone)</td>
+                        </tr>
+                        <tr>
+                            <td>Carboxylic Acid</td>
+                            <td>-COOH</td>
+                            <td>-oic acid</td>
+                            <td>\( \text{CH}_3\text{COOH} \) (Ethanoic acid)</td>
+                        </tr>
+                         <tr>
+                            <td>Amine</td>
+                            <td>-NH₂</td>
+                            <td>-amine</td>
+                            <td>\( \text{CH}_3\text{CH}_2\text{NH}_2 \) (Ethanamine)</td>
+                        </tr>
+                         <tr>
+                            <td>Ester</td>
+                            <td>-COO-</td>
+                            <td>-oate</td>
+                            <td>\( \text{CH}_3\text{COOCH}_3 \) (Methyl ethanoate)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section id="priority">
+                <h2>5. Priority of Functional Groups</h2>
+                <p>When a molecule contains more than one functional group, a priority system determines which group is named with the suffix (the principal group) and which are named as prefixes.</p>
+                <div class="card">
+                    <h4>Order of Priority (Highest to Lowest)</h4>
+                    <p><b>Carboxylic Acid</b> > <b>Ester</b> > <b>Acyl Halide</b> > <b>Amide</b> > <b>Aldehyde</b> > <b>Ketone</b> > <b>Alcohol</b> > <b>Amine</b> > <b>Alkene</b> > <b>Alkyne</b> > <b>Alkane</b> > <b>Haloalkane</b></p>
+                    <p><b>Example:</b> In a molecule with both an -OH and a -COOH group, it is named as a carboxylic acid, and the -OH group is named with the prefix <code>hydroxy</code>.</p>
+                     <p><b>4-hydroxybutanoic acid</b></p>
+                </div>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>IUPAC System:</b> A systematic set of rules for naming organic compounds based on their structure.</li>
+                        <li><b>Core Structure:</b> A name consists of a <b>prefix</b> (substituents), a <b>parent</b> name (longest carbon chain), and a <b>suffix</b> (principal functional group).</li>
+                        <li><b>Alkanes, Alkenes, Alkynes:</b> Named with suffixes <code>-ane</code>, <code>-ene</code>, and <code>-yne</code> respectively. The position of multiple bonds is indicated by a number.</li>
+                        <li><b>Functional Groups:</b> The presence of a functional group determines the family of the compound and is indicated by a characteristic suffix (e.g., <code>-ol</code> for alcohols, <code>-al</code> for aldehydes).</li>
+                        <li><b>Priority Rules:</b> When multiple functional groups are present, a priority list determines which group is named as the suffix.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

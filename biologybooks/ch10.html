@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 10: Forms and Functions in Plant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to the shared stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+        // MathJax configuration (for rendering LaTeX)
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body style="--accent-color: #4CAF50;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 10: Forms and Functions in Plant</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#nutrition">Nutrition in Plants</a></li>
+                <li><a href="#gaseous-exchange">Gaseous Exchange</a></li>
+                <li><a href="#transport">Transport in Plants</a></li>
+                <li><a href="#homeostasis">Homeostasis in Plants</a></li>
+                <li><a href="#growth">Growth & Responses</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="nutrition">
+                <h2>10.1 Nutrition in Plants</h2>
+                <p>Plants are photosynthetic autotrophs, meaning they produce their own food. In addition to light, carbon dioxide, and water, they require various <strong>mineral nutrients</strong> from the soil for healthy growth.</p>
+                <div class="card">
+                    <h4>Macronutrients vs. Micronutrients</h4>
+                    <ul>
+                        <li><b>Macronutrients:</b> Required in large amounts (e.g., Nitrogen, Phosphorus, Potassium, Calcium, Magnesium, Sulphur).</li>
+                        <li><b>Micronutrients (Trace Elements):</b> Required in small amounts (e.g., Iron, Manganese, Zinc, Copper).</li>
+                    </ul>
+                </div>
+                <h3>10.1.1 Carnivorous Plants</h3>
+                <p>Some plants, like the Venus flytrap, are <strong>carnivorous</strong>. They have adapted to live in nitrogen-deficient soils by trapping and digesting insects to supplement their nitrogen supply.</p>
+            </section>
+
+            <section id="gaseous-exchange">
+                <h2>10.2 Gaseous Exchange in Plants</h2>
+                <p>Plants exchange gases (O₂, CO₂, water vapor) with the environment primarily through small pores on the leaf surface called <strong>stomata</strong>. Each stoma is surrounded by two <strong>guard cells</strong> that regulate its opening and closing to balance the need for CO₂ uptake with the need to conserve water.</p>
+            </section>
+            
+            <section id="transport">
+                <h2>10.3 Transport in Plants</h2>
+                <p>Vascular plants have specialized tissues, xylem and phloem, for long-distance transport.</p>
+                <h3>10.3.1 Water Transport (Xylem)</h3>
+                <p>Water and dissolved minerals are absorbed by the roots and transported upward to the rest of the plant through the <strong>xylem</strong>. This movement is driven by the <strong>Cohesion-Tension Theory</strong>:</p>
+                <div class="card">
+                    <h4>Cohesion-Tension Theory</h4>
+                    <ol>
+                        <li><b>Transpiration:</b> Water evaporates from the leaves through stomata, creating a negative pressure potential (tension).</li>
+                        <li><b>Cohesion:</b> Water molecules stick to each other (due to hydrogen bonds), forming a continuous column in the xylem.</li>
+                        <li><b>Adhesion:</b> Water molecules stick to the walls of the xylem.</li>
+                        <li><b>Pulling Force:</b> The tension created by transpiration pulls the entire column of water up from the roots.</li>
+                    </ol>
+                </div>
+                <h3>10.3.2 Sugar Transport (Phloem)</h3>
+                <p>Sugars produced during photosynthesis are transported from a <strong>source</strong> (e.g., a mature leaf) to a <strong>sink</strong> (e.g., a root, fruit, or developing leaf) through the <strong>phloem</strong>.</p>
+                <div class="card">
+                    <h4>Pressure-Flow Hypothesis</h4>
+                    <p>This model explains phloem transport:</p>
+                    <ol>
+                        <li><b>Loading:</b> Sugar is actively transported into the phloem at the source, making the sap highly concentrated.</li>
+                        <li><b>Water Entry:</b> Water moves from the xylem into the phloem by osmosis, creating high turgor pressure.</li>
+                        <li><b>Bulk Flow:</b> This high pressure pushes the sap through the phloem from the source to the sink.</li>
+                        <li><b>Unloading:</b> Sugar is actively transported out of the phloem at the sink, and water follows by osmosis, returning to the xylem.</li>
+                    </ol>
+                </div>
+            </section>
+            
+            <section id="homeostasis">
+                <h2>10.4 Homeostasis in Plants</h2>
+                <p><strong>Homeostasis</strong> is the maintenance of a stable internal environment. Plants achieve this through various adaptations, particularly for water balance (osmoregulation).</p>
+                <ul>
+                    <li><b>Hydrophytes:</b> Plants adapted to live in water.</li>
+                    <li><b>Mesophytes:</b> Plants adapted to moderate water conditions.</li>
+                    <li><b>Xerophytes:</b> Plants adapted to arid (dry) conditions, with features like thick cuticles, sunken stomata, and deep roots to conserve water.</li>
+                </ul>
+            </section>
+            
+            <section id="growth">
+                <h2>10.5 Growth and Responses in Plants</h2>
+                <h3>10.5.1 Plant Hormones (Growth Regulators)</h3>
+                <p>Plant growth and development are controlled by chemical messengers called <strong>hormones</strong>.</p>
+                <table>
+                    <thead><tr><th>Hormone</th><th>Primary Function(s)</th></tr></thead>
+                    <tbody>
+                        <tr><td><b>Auxins</b></td><td>Promote cell elongation, apical dominance, root formation.</td></tr>
+                        <tr><td><b>Gibberellins</b></td><td>Promote stem elongation, germination, fruit development.</td></tr>
+                        <tr><td><b>Cytokinins</b></td><td>Promote cell division, inhibit senescence (aging).</td></tr>
+                        <tr><td><b>Abscisic Acid (ABA)</b></td><td>Inhibits growth, closes stomata during water stress, promotes dormancy.</td></tr>
+                        <tr><td><b>Ethene (Ethylene)</b></td><td>A gaseous hormone that promotes fruit ripening and abscission (leaf fall).</td></tr>
+                    </tbody>
+                </table>
+                <h3>10.5.2 Growth Responses (Tropisms)</h3>
+                <p>A <strong>tropism</strong> is a directional growth response to an external stimulus.</p>
+                <ul>
+                    <li><b>Phototropism:</b> Growth in response to light.</li>
+                    <li><b>Geotropism (Gravitropism):</b> Growth in response to gravity (shoots grow up, roots grow down).</li>
+                    <li><b>Thigmotropism:</b> Growth in response to touch (e.g., a vine coiling around a support).</li>
+                </ul>
+                 <h3>10.5.3 Photoperiodism and Vernalization</h3>
+                <ul>
+                    <li><b>Photoperiodism:</b> A plant's response to the relative lengths of day and night, which often controls flowering. Plants can be classified as long-day, short-day, or day-neutral.</li>
+                    <li><b>Vernalization:</b> The promotion of flowering by exposure to a prolonged period of cold.</li>
+                </ul>
+            </section>
+            
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Plant Nutrition:</b> Plants require light, water, CO₂, and mineral nutrients (macronutrients and micronutrients) for growth.</li>
+                        <li><b>Gaseous Exchange:</b> Occurs through stomata, regulated by guard cells to balance gas needs with water conservation.</li>
+                        <li><b>Transport:</b> Water moves up through the <b>xylem</b> via transpiration, cohesion, and adhesion. Sugars move through the <b>phloem</b> from source to sink via the pressure-flow mechanism.</li>
+                        <li><b>Homeostasis:</b> Plants regulate their internal environment, especially water balance, with adaptations categorized as hydrophytic, mesophytic, or xerophytic.</li>
+                        <li><b>Growth & Responses:</b> Regulated by <b>hormones</b> (auxins, gibberellins, etc.) and directional responses to stimuli called <b>tropisms</b>. Flowering can be triggered by day length (<b>photoperiodism</b>) or cold treatment (<b>vernalization</b>).</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

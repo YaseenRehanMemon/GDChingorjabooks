@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 27: Biology and Human Welfare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --accent-color: #03A9F4; /* Light Blue */
+            --bg-light: #f4f7f9; --text-light: #333; --card-bg-light: #ffffff; --border-light: #e0e0e0; --header-bg-light: #ffffff; --sidebar-bg-light: #fdfdfd;
+            --bg-dark: #121212; --text-dark: #e0e0e0; --card-bg-dark: #1e1e1e; --border-dark: #333; --header-bg-dark: #1e1e1e; --sidebar-bg-dark: #232323;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { font-family: 'Poppins', sans-serif; line-height: 1.6; scroll-behavior: smooth; background-color: var(--bg-light); color: var(--text-light); transition: background-color 0.3s, color 0.3s; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: var(--border-light); color: var(--text-light); transition: background-color 0.3s; font-weight: 600; }
+        .theme-toggle-label .moon { display: none; } .theme-toggle-label .sun { display: inline; }
+        body.dark-mode { --bg-light: var(--bg-dark); --text-light: var(--text-dark); --card-bg-light: var(--card-bg-dark); --border-light: var(--border-dark); --header-bg-light: var(--header-bg-dark); --sidebar-bg-light: var(--sidebar-bg-dark); }
+        .dark-mode .theme-toggle-label .moon { display: inline; } .dark-mode .theme-toggle-label .sun { display: none; } .dark-mode .sidebar a { color: #c5d7e8; } .dark-mode .sidebar a:hover { color: #ffffff; }
+        .page-container { display: grid; grid-template-columns: 260px 1fr; grid-template-rows: auto 1fr; grid-template-areas: "header header" "sidebar content"; min-height: 100vh; }
+        header { grid-area: header; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: var(--header-bg-light); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        header h1 { color: var(--accent-color); font-size: 1.8rem; }
+        .sidebar { grid-area: sidebar; background-color: var(--sidebar-bg-light); padding: 2rem; border-right: 1px solid var(--border-light); position: fixed; top: 75px; left: 0; width: 260px; height: calc(100vh - 75px); overflow-y: auto; }
+        .sidebar h2 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        .sidebar ul { list-style: none; } .sidebar li { margin-bottom: 0.8rem; }
+        .sidebar a { text-decoration: none; color: #555; font-weight: 500; transition: color 0.2s; } .sidebar a:hover { color: var(--accent-color); }
+        .content { grid-area: content; padding: 2rem 3rem; }
+        section { margin-bottom: 3rem; padding-top: 80px; margin-top: -75px; }
+        h2 { font-size: 2rem; color: var(--accent-color); margin-bottom: 1.5rem; border-bottom: 2px solid var(--border-light); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; }
+        p, ul, ol { margin-bottom: 1rem; } ul, ol { padding-left: 20px; }
+        b { color: var(--accent-color); }
+        .card { background-color: var(--card-bg-light); border: 1px solid var(--border-light); border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        @media (max-width: 900px) { .page-container { grid-template-columns: 1fr; grid-template-areas: "header" "content"; } .sidebar { display: none; } header h1 { font-size: 1.4rem; } .content { padding: 1.5rem; } }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+            function applyTheme(isDarkMode) { body.classList.toggle('dark-mode', isDarkMode); }
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const initialThemeDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+            themeToggleCheckbox.checked = initialThemeDark;
+            applyTheme(initialThemeDark);
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+    </script>
+</head>
+<body style="--accent-color: #03A9F4;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 27: Biology & Human Welfare</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#disease">Disease Management</a></li>
+                <li><a href="#vaccination">Vaccination</a></li>
+                <li><a href="#animal-husbandry">Animal Husbandry</a></li>
+                <li><a href="#plant-breeding">Plant Breeding</a></li>
+                <li><a href="#microbes">Microbes in Human Welfare</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="disease">
+                <h2>1. Integrated Disease Management</h2>
+                <p>Integrated Disease Management (IDM) is a proactive approach to prevent and control diseases. It combines multiple strategies to minimize the impact of diseases on human, animal, and plant populations.</p>
+                <div class="card">
+                    <h4>Mechanisms of Disease Management</h4>
+                    <ul>
+                        <li><b>Host Resistance:</b> Using organisms (plants or animals) that have natural or bred resistance to specific pathogens.</li>
+                        <li><b>Biological Control:</b> Using natural predators or parasites to control the population of a pathogen or pest.</li>
+                        <li><b>Cultural Control:</b> Modifying environmental conditions to make them less favorable for pathogens (e.g., crop rotation).</li>
+                        <li><b>Chemical Control:</b> Using pesticides, fungicides, and other chemicals to control pests and diseases.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="vaccination">
+                <h2>2. Vaccination</h2>
+                <p>Vaccination is the administration of a <b>vaccine</b> to stimulate an individual's immune system to develop immunity to a specific disease, without having to experience the disease itself.</p>
+                <div class="card">
+                    <h4>How Vaccines Work</h4>
+                    <p>Vaccines contain a weakened or inactivated form of a pathogen (or a piece of it, like a protein). This harmless version triggers an immune response, leading to the production of memory cells. If the individual is later exposed to the actual pathogen, the immune system can mount a rapid and effective response to prevent illness.</p>
+                    <p>Vaccination is the single most effective method for safeguarding communities and preventing the spread of infectious diseases like polio, measles, and tetanus.</p>
+                </div>
+            </section>
+            
+            <section id="animal-husbandry">
+                <h2>3. Animal Husbandry</h2>
+                <p>Animal husbandry is the branch of agriculture concerned with the care, breeding, and management of livestock such as cattle, sheep, and poultry.</p>
+                <h3>Major Types</h3>
+                <ul>
+                    <li><b>Dairy Farming:</b> Focuses on the production of milk from cows, buffaloes, etc.</li>
+                    <li><b>Poultry Farming:</b> The raising of domesticated birds like chickens and ducks for their meat and eggs.</li>
+                    <li><b>Apiculture (Beekeeping):</b> The management of honeybee colonies for the production of honey and wax, and for crop pollination.</li>
+                </ul>
+                <p>Improving breeds and providing proper nutrition and care are essential for maximizing the output of food products from livestock.</p>
+            </section>
+
+            <section id="plant-breeding">
+                <h2>4. Enhancing Crop and Fruit Yield</h2>
+                <p>Modern techniques are used to improve the quality and yield of crops.</p>
+                <div class="card">
+                    <h4>Methods for Plant Improvement</h4>
+                    <ul>
+                        <li><b>Selection:</b> The process of choosing the best quality plants from a population for propagation.</li>
+                        <li><b>Hybridization:</b> Crossing two genetically dissimilar parents to produce offspring (hybrids) that may have superior qualities (hybrid vigor).</li>
+                        <li><b>Genetic Engineering:</b> Introducing specific genes into plants to confer desirable traits like pest resistance or enhanced nutritional value.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="microbes">
+                <h2>5. Role of Microbes in Human Welfare</h2>
+                <p>While some microbes cause disease, many are incredibly beneficial to humans and the environment.</p>
+                <div class="card">
+                    <h4>Beneficial Roles of Microbes</h4>
+                    <ul>
+                        <li><b>Household Food Production:</b> Yeast (<i>Saccharomyces cerevisiae</i>) is used for baking bread and fermenting beverages. Bacteria (<i>Lactobacillus</i>) are used to make yogurt and cheese.</li>
+                        <li><b>Industrial Production:</b> Microbes are used to produce antibiotics, vaccines, hormones, and enzymes on a large scale.</li>
+                        <li><b>Sewage Treatment:</b> Microbes play a vital role in breaking down organic matter in wastewater, helping to purify it before it is returned to the environment.</li>
+                        <li><b>Energy Generation:</b> Some microbes can produce biofuels like ethanol or methane as part of their metabolic processes.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Disease Management:</b> Uses an integrated approach combining host resistance, biological, cultural, and chemical controls.</li>
+                        <li><b>Vaccination:</b> A critical public health tool that stimulates the immune system to provide protection against infectious diseases.</li>
+                        <li><b>Animal Husbandry:</b> The science of caring for and breeding livestock to produce food and other products.</li>
+                        <li><b>Plant Breeding:</b> Enhances crop yield and quality through techniques like hybridization and genetic engineering.</li>
+                        <li><b>Beneficial Microbes:</b> Essential for making food (bread, yogurt), producing medicine (antibiotics), treating sewage, and generating biofuels.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

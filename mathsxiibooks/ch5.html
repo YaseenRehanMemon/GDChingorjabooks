@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5: Differentiation of Vector Functions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root { --accent-color: #9C27B0; /* Purple for Vectors */ }
+        body { font-family: 'Poppins', sans-serif; margin: 0; background-color: #f4f7f9; color: #333; transition: background-color 0.3s, color 0.3s; }
+        .dark-mode { background-color: #121212; color: #e0e0e0; }
+        .page-container { display: flex; flex-direction: column; }
+        header { background-color: #ffffff; padding: 1rem 2rem; border-bottom: 1px solid #e0e0e0; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .dark-mode header { background-color: #1e1e1e; border-bottom: 1px solid #333; }
+        header h1 { margin: 0; color: var(--accent-color); font-size: 1.8rem; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: #e9eef2; transition: background-color 0.3s; }
+        .dark-mode .theme-toggle-label { background-color: #242424; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label .sun { display: inline; } .theme-toggle-label .moon { display: none; }
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label .sun { display: none; }
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label .moon { display: inline; }
+        .container { display: flex; }
+        .sidebar { width: 260px; background-color: #e9eef2; padding: 1.5rem; height: 100vh; position: fixed; top: 70px; left: 0; overflow-y: auto; border-right: 1px solid #e0e0e0; }
+        .dark-mode .sidebar { background-color: #242424; border-right: 1px solid #333; }
+        .sidebar h2 { font-size: 1.2rem; color: var(--accent-color); margin-top: 0; }
+        .sidebar ul { list-style: none; padding: 0; }
+        .sidebar ul li a { display: block; color: #333; text-decoration: none; padding: 0.75rem 1rem; border-radius: 5px; transition: background-color 0.2s; }
+        .dark-mode .sidebar ul li a { color: #e0e0e0; }
+        .sidebar ul li a:hover { background-color: var(--accent-color); color: white; }
+        .content { flex: 1; padding: 2rem; margin-left: 290px; }
+        .card { background-color: #ffffff; border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .dark-mode .card { background-color: #1e1e1e; border-color: var(--accent-color); }
+        .card.formula { background-color: #f3e5f5; border-color: #ab47bc; }
+        .dark-mode .card.formula { background-color: #322938; border-color: #ba68c8; }
+        h2 { border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        @media (max-width: 768px) { .sidebar { display: none; } .content { margin-left: 0; } header { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 5: Vector Differentiation</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+        <div class="container">
+            <nav class="sidebar">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="#intro">Vector Functions</a></li>
+                    <li><a href="#limit-continuity">Limit and Continuity</a></li>
+                    <li><a href="#derivative">Derivative of a Vector</a></li>
+                    <li><a href="#rules">Differentiation Rules</a></li>
+                    <li><a href="#motion">Velocity & Acceleration</a></li>
+                </ul>
+            </nav>
+            <main class="content">
+                <section id="intro">
+                    <h2>5.1 Vector Functions</h2>
+                    <p>A vector function is a function that takes a real number (often time, \(t\)) as input and produces a vector as output. It can be used to describe the position of a moving particle in space.</p>
+                    <div class="card">
+                        <h4>Definition and Components</h4>
+                        <p>A vector function \(\mathbf{r}(t)\) in three dimensions is defined by its component functions:</p>
+                        \[ \mathbf{r}(t) = f(t)\mathbf{i} + g(t)\mathbf{j} + h(t)\mathbf{k} \]
+                        <ul>
+                            <li>The <strong>domain</strong> of \(\mathbf{r}(t)\) is the intersection of the domains of its component functions \(f(t), g(t)\), and \(h(t)\).</li>
+                            <li>The <strong>range</strong> is the set of all output vectors.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="limit-continuity">
+                    <h2>5.2 Limit and Continuity of Vector Functions</h2>
+                    <p>The concepts of limits and continuity extend naturally from scalar functions to vector functions. We simply apply the concepts to each component individually.</p>
+                    <div class="card">
+                        <h4>Limit of a Vector Function</h4>
+                        <p>The limit of \(\mathbf{r}(t)\) as \(t\) approaches \(t_0\) is found by taking the limit of each component:</p>
+                        \[ \lim_{t \to t_0} \mathbf{r}(t) = \left(\lim_{t \to t_0} f(t)\right)\mathbf{i} + \left(\lim_{t \to t_0} g(t)\right)\mathbf{j} + \left(\lim_{t \to t_0} h(t)\right)\mathbf{k} \]
+                    </div>
+                     <div class="card">
+                        <h4>Continuity</h4>
+                        <p>A vector function \(\mathbf{r}(t)\) is <strong>continuous</strong> at \(t = t_0\) if:</p>
+                        \[ \lim_{t \to t_0} \mathbf{r}(t) = \mathbf{r}(t_0) \]
+                        <p>This is true if and only if all of its component functions are continuous at \(t = t_0\).</p>
+                    </div>
+                </section>
+                
+                <section id="derivative">
+                    <h2>5.3 Derivative of a Vector Function</h2>
+                    <p>The derivative of a vector function, \(\mathbf{r}'(t)\), represents a tangent vector to the curve traced by \(\mathbf{r}(t)\). It gives both the direction and the magnitude of the rate of change.</p>
+                    <div class="card">
+                        <h4>Calculating the Derivative</h4>
+                        <p>The derivative is found by differentiating each component function with respect to the parameter \(t\):</p>
+                        \[ \mathbf{r}'(t) = \frac{d\mathbf{r}}{dt} = f'(t)\mathbf{i} + g'(t)\mathbf{j} + h'(t)\mathbf{k} \]
+                    </div>
+                </section>
+
+                <section id="rules">
+                    <h2>5.4 Differentiation Rules for Vectors</h2>
+                    <p>The standard differentiation rules (like the product rule) have vector equivalents for operations like the dot product and cross product.</p>
+                    <div class="card">
+                        <h4>Key Vector Differentiation Rules</h4>
+                        Let \(\mathbf{u}(t)\) and \(\mathbf{v}(t)\) be vector functions, \(c\) be a scalar, and \(f(t)\) be a scalar function.
+                        <ul>
+                            <li><strong>Sum Rule:</strong> \(\frac{d}{dt}[\mathbf{u}(t) + \mathbf{v}(t)] = \mathbf{u}'(t) + \mathbf{v}'(t)\)</li>
+                            <li><strong>Scalar Multiple:</strong> \(\frac{d}{dt}[f(t)\mathbf{u}(t)] = f'(t)\mathbf{u}(t) + f(t)\mathbf{u}'(t)\)</li>
+                            <li><strong>Dot Product Rule:</strong> \(\frac{d}{dt}[\mathbf{u}(t) \cdot \mathbf{v}(t)] = \mathbf{u}'(t) \cdot \mathbf{v}(t) + \mathbf{u}(t) \cdot \mathbf{v}'(t)\)</li>
+                            <li><strong>Cross Product Rule:</strong> \(\frac{d}{dt}[\mathbf{u}(t) \times \mathbf{v}(t)] = \mathbf{u}'(t) \times \mathbf{v}(t) + \mathbf{u}(t) \times \mathbf{v}'(t)\)</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="motion">
+                    <h2>5.5 Velocity and Acceleration</h2>
+                    <p>In physics, vector derivatives are used to describe motion along a curve.</p>
+                    <div class="card">
+                        <h4>Motion in Space</h4>
+                        <p>If \(\mathbf{r}(t)\) is the <strong>position vector</strong> of a particle at time \(t\), then:</p>
+                        <ul>
+                            <li>The <strong>velocity vector</strong> is the first derivative: \(\mathbf{v}(t) = \mathbf{r}'(t)\). It is tangent to the path of motion.</li>
+                            <li>The <strong>speed</strong> is the magnitude of the velocity: \(\|\mathbf{v}(t)\|\).</li>
+                            <li>The <strong>acceleration vector</strong> is the second derivative: \(\mathbf{a}(t) = \mathbf{v}'(t) = \mathbf{r}''(t)\).</li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

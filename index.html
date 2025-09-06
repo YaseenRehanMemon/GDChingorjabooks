@@ -12,47 +12,32 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background: #111827;
+            background: #0d1117; /* Darker, more professional background */
             color: #d1d5db;
-            /* Simple, subtle animation for a modern feel */
-            animation: background-pan 15s ease infinite;
+            /* Subtle radial gradient for depth */
+            background-image: radial-gradient(at 0% 0%, #171f2a 0, transparent 50%), radial-gradient(at 100% 100%, #171f2a 0, transparent 50%);
             background-size: 200% 200%;
+            animation: background-pan 15s ease-in-out infinite alternate;
         }
 
         @keyframes background-pan {
             0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
         }
 
         .card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .card:hover {
-            transform: translateY(-5px) scale(1.02);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
 
-        .subject-card {
-            background-color: #1f2937;
-            border: 1px solid #374151;
+        .chapter-link, .class-link {
+            transition: background-color 0.2s ease, transform 0.2s ease;
         }
-
-        .chapter-list {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s ease-in-out;
-        }
-        .chapter-list.active {
-            max-height: 1000px; /* A large value to allow the transition */
-        }
-
-        .chapter-link {
-            background-color: #374151;
-            transition: background-color 0.2s ease;
-        }
-        .chapter-link:hover {
-            background-color: #4b5563;
+        .chapter-link:hover, .class-link:hover {
+            transform: translateX(5px);
         }
 
         .loader {
@@ -68,54 +53,83 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
     </style>
 </head>
-<body class="p-6 md:p-12">
+<body class="p-4 md:p-8 lg:p-12">
 
-    <div class="max-w-4xl mx-auto">
-        <!-- Main title with animation -->
-        <header class="text-center mb-12">
-            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4 animate-pulse">Our Books</h1>
-            <p class="text-gray-400 text-lg md:text-xl">Select a subject to start your learning journey.</p>
+    <div class="max-w-7xl mx-auto">
+        <!-- Main title with animation and responsive text size -->
+        <header class="text-center mb-10 md:mb-16 fade-in">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-400 to-indigo-400 mb-2 md:mb-4 animate-pulse">Our Books</h1>
+            <p class="text-gray-300 text-base md:text-lg lg:text-xl">Discover a world of knowledge. Select a subject to begin.</p>
         </header>
 
         <!-- Subject Selection -->
-        <section id="subject-selection" class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <section id="subject-selection" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 mb-12 fade-in">
             <!-- Chemistry Card -->
-            <div id="chemistry" class="subject-card rounded-xl p-8 cursor-pointer card">
-                <h2 class="text-2xl font-bold text-teal-400 mb-2">Chemistry</h2>
-                <p class="text-gray-400">Delve into the study of matter and its properties.</p>
+            <div id="chemistry" class="subject-card rounded-xl p-6 md:p-8 cursor-pointer card bg-[#1c232f] border-2 border-transparent hover:border-teal-400 transition-colors">
+                <h2 class="text-xl md:text-2xl font-bold text-teal-400 mb-2">Chemistry</h2>
+                <p class="text-gray-400 text-sm md:text-base">The study of matter and its changes.</p>
             </div>
             <!-- Physics Card -->
-            <div id="physics" class="subject-card rounded-xl p-8 cursor-pointer card">
-                <h2 class="text-2xl font-bold text-pink-400 mb-2">Physics</h2>
-                <p class="text-gray-400">Explore the laws of motion, energy, and the physical universe.</p>
+            <div id="physics" class="subject-card rounded-xl p-6 md:p-8 cursor-pointer card bg-[#1c232f] border-2 border-transparent hover:border-pink-400 transition-colors">
+                <h2 class="text-xl md:text-2xl font-bold text-pink-400 mb-2">Physics</h2>
+                <p class="text-gray-400 text-sm md:text-base">Exploring the fundamental laws of nature.</p>
             </div>
             <!-- Mathematics Card -->
-            <div id="mathematics" class="subject-card rounded-xl p-8 cursor-pointer card">
-                <h2 class="text-2xl font-bold text-indigo-400 mb-2">Mathematics</h2>
-                <p class="text-gray-400">Master the science of numbers, shapes, and patterns.</p>
+            <div id="mathematics" class="subject-card rounded-xl p-6 md:p-8 cursor-pointer card bg-[#1c232f] border-2 border-transparent hover:border-indigo-400 transition-colors">
+                <h2 class="text-xl md:text-2xl font-bold text-indigo-400 mb-2">Mathematics</h2>
+                <p class="text-gray-400 text-sm md:text-base">The language of the universe.</p>
+            </div>
+            <!-- Biology Card -->
+            <div id="biology" class="subject-card rounded-xl p-6 md:p-8 cursor-pointer card bg-[#1c232f] border-2 border-transparent hover:border-green-400 transition-colors">
+                <h2 class="text-xl md:text-2xl font-bold text-green-400 mb-2">Biology</h2>
+                <p class="text-gray-400 text-sm md:text-base">Understanding life and living organisms.</p>
+            </div>
+        </section>
+
+        <!-- Class Selection -->
+        <section id="class-selection" class="hidden fade-in">
+            <div class="flex items-center gap-4 mb-8">
+                <button id="back-to-subjects" class="text-gray-400 hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                </button>
+                <h2 id="class-title" class="text-3xl md:text-4xl font-bold text-white"></h2>
+            </div>
+            <div id="class-list-container" class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+                <!-- Class links will be dynamically injected here -->
             </div>
         </section>
 
         <!-- Chapter Display Section -->
-        <section id="chapter-display" class="hidden">
-            <div class="flex items-center gap-4 mb-6">
-                <button id="back-button" class="text-gray-400 hover:text-white transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <section id="chapter-display" class="hidden fade-in">
+            <div class="flex items-center gap-4 mb-8">
+                <button id="back-to-classes" class="text-gray-400 hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                     </svg>
                 </button>
-                <h2 id="chapter-title" class="text-3xl font-bold text-white"></h2>
+                <h2 id="chapter-title" class="text-3xl md:text-4xl font-bold text-white"></h2>
             </div>
-            <div id="chapter-list-container" class="space-y-4">
+            <div id="chapter-list-container" class="space-y-3 md:space-y-4">
                 <!-- Chapter links will be dynamically injected here -->
             </div>
 
             <!-- Summary section -->
-            <div id="summary-section" class="mt-8 p-6 rounded-xl bg-gray-800 hidden">
-                <h3 class="text-xl font-bold text-gray-200 mb-4">Chapter Summary</h3>
-                <div id="summary-content" class="text-gray-400"></div>
+            <div id="summary-section" class="mt-6 md:mt-8 p-4 md:p-6 rounded-xl bg-[#1f2937] border border-gray-700 hidden">
+                <h3 class="text-lg md:text-xl font-bold text-gray-200 mb-4">Chapter Summary</h3>
+                <div id="summary-content" class="text-gray-400 leading-relaxed text-sm md:text-base"></div>
                 <div id="summary-loader" class="mt-4 flex justify-center hidden">
                     <div class="loader"></div>
                 </div>
@@ -125,98 +139,240 @@
     </div>
 
     <script>
-        // Data structure for subjects and chapters
+        // Data structure for subjects, classes, and chapters
         const subjects = {
             chemistry: {
-                title: "Chemistry Chapters",
-                path: "chemistrybooks",
-                chapters: [
-                    "Stoichiometry",
-                    "Atomic Structure",
-                    "Theories of Covalent Bonding and Shapes of Molecules",
-                    "States of Matter I: Gases",
-                    "States of Matter II: Liquids",
-                    "States of Matter III: Solids",
-                    "Chemical Equilibrium",
-                    "Acids, Bases, and Salts",
-                    "Chemical Kinetics",
-                    "Solutions and Colloids",
-                    "Thermochemistry",
-                    "Electrochemistry"
-                ]
+                title: "Chemistry",
+                classes: {
+                    default: {
+                        path: "chemistrybooks",
+                        chapters: [
+                            { num: 1, name: "Stoichiometry" },
+                            { num: 2, name: "Atomic Structure" },
+                            { num: 3, name: "Chemical Bonding" },
+                            { num: 4, name: "States of Matter" },
+                            { num: 5, name: "Thermodynamics" },
+                            { num: 6, name: "Chemical Equilibrium" },
+                            { num: 7, name: "Acids, Bases, and Salts" },
+                            { num: 8, name: "Chemical Kinetics" },
+                            { num: 9, name: "Solutions and Colloids" },
+                            { num: 10, name: "Thermochemistry" },
+                            { num: 11, name: "Electrochemistry" }
+                        ]
+                    },
+                    xii: {
+                        path: "chemistryxiibooks",
+                        chapters: [
+                            { num: 1, name: "Solid State" },
+                            { num: 2, name: "Solutions" },
+                            { num: 3, name: "Electrochemistry" },
+                            { num: 4, name: "Chemical Kinetics" },
+                            { num: 5, name: "Surface Chemistry" },
+                            { num: 6, name: "General Principles and Processes of Isolation of Elements" },
+                            { num: 7, name: "p-Block Elements" },
+                            { num: 8, name: "d- and f-Block Elements" },
+                            { num: 9, name: "Coordination Compounds" },
+                            { num: 10, name: "Haloalkanes and Haloarenes" },
+                            { num: 11, name: "Alcohols, Phenols, and Ethers" },
+                            { num: 12, name: "Aldehydes, Ketones, and Carboxylic Acids" },
+                            { num: 13, name: "Amines" },
+                            { num: 14, name: "Biomolecules" }
+                        ]
+                    }
+                }
             },
             physics: {
-                title: "Physics Chapters",
-                path: "physicsbooks",
-                chapters: [
-                    "Physics and Measurements",
-                    "Kinematics",
-                    "Dynamics",
-                    "Rotational and Circular Motion",
-                    "Work, Energy and Power",
-                    "Fluid Statics",
-                    "Fluid Dynamics",
-                    "Electric Fields",
-                    "Capacitors",
-                    "D.C Circuits",
-                    "Oscillations",
-                    "Acoustics",
-                    "Physical Optics",
-                    "Communication"
-                ]
+                title: "Physics",
+                classes: {
+                    default: {
+                        path: "physicsbooks",
+                        chapters: [
+                            { num: 1, name: "Physics and Measurements" },
+                            { num: 2, name: "Kinematics" },
+                            { num: 3, name: "Dynamics" },
+                            { num: 4, name: "Rotational and Circular Motion" },
+                            { num: 5, name: "Work, Energy and Power" },
+                            { num: 6, name: "Fluid Statics" },
+                            { num: 7, name: "Fluid Dynamics" },
+                            { num: 8, name: "Electric Fields" },
+                            { num: 9, name: "Capacitors" },
+                            { num: 10, name: "D.C Circuits" },
+                            { num: 11, name: "Oscillations" },
+                            { num: 12, name: "Acoustics" },
+                            { num: 13, name: "Physical Optics" },
+                            { num: 14, name: "Communication" }
+                        ]
+                    },
+                    xii: {
+                        path: "physicsxiibooks",
+                        // Updated to match the user's provided file structure
+                        chapters: [
+                            { num: 15, name: "Electric Charges and Fields" },
+                            { num: 16, name: "Electrostatic Potential and Capacitance" },
+                            { num: 17, name: "Current Electricity" },
+                            { num: 18, name: "Moving Charges and Magnetism" },
+                            { num: 19, name: "Magnetism and Matter" },
+                            { num: 20, name: "Electromagnetic Induction" },
+                            { num: 21, name: "Alternating Current" },
+                            { num: 22, name: "Electromagnetic Waves" },
+                            { num: 23, name: "Ray Optics and Optical Instruments" },
+                            { num: 24, name: "Wave Optics" },
+                            { num: 25, name: "Dual Nature of Radiation and Matter" },
+                            { num: 26, name: "Atoms" },
+                            { num: 27, name: "Nuclei" },
+                            { num: 28, name: "Semiconductor Electronics: Materials, Devices and Simple Circuits" }
+                        ]
+                    }
+                }
             },
             mathematics: {
-                title: "Mathematics Chapters",
-                path: "mathbooks",
-                chapters: [
-                    "Complex Numbers",
-                    "Matrices & Determinants",
-                    "Vectors",
-                    "Sequences & Series",
-                    "Miscellaneous Series",
-                    "Permutation, Combination & Probability",
-                    "Mathematical Induction & Binomial Theorem",
-                    "Functions & Graphs",
-                    "Linear Inequalities",
-                    "Trigonometric Identities of Sum & Difference of Angles",
-                    "Application of Trigonometry",
-                    "Graphs of Trigonometric & Inverse Trigonometric Functions & Solution of Trigonometric Equations"
-                ]
+                title: "Mathematics",
+                classes: {
+                    default: {
+                        path: "mathbooks",
+                        chapters: [
+                            { num: 1, name: "Complex Numbers" },
+                            { num: 2, name: "Matrices & Determinants" },
+                            { num: 3, name: "Vectors" },
+                            { num: 4, name: "Sequences & Series" },
+                            { num: 5, name: "Miscellaneous Series" },
+                            { num: 6, name: "Permutation, Combination & Probability" },
+                            { num: 7, name: "Mathematical Induction & Binomial Theorem" },
+                            { num: 8, name: "Functions & Graphs" },
+                            { num: 9, name: "Linear Inequalities" },
+                            { num: 10, name: "Trigonometric Identities of Sum & Difference of Angles" },
+                            { num: 11, name: "Application of Trigonometry" },
+                            { num: 12, name: "Graphs of Trigonometric & Inverse Trigonometric Functions & Solution of Trigonometric Equations" }
+                        ]
+                    },
+                    xii: {
+                        path: "mathsxiibooks",
+                        chapters: [
+                            { num: 1, name: "Relations and Functions" },
+                            { num: 2, name: "Inverse Trigonometric Functions" },
+                            { num: 3, name: "Matrices" },
+                            { num: 4, name: "Determinants" },
+                            { num: 5, name: "Continuity and Differentiability" },
+                            { num: 6, name: "Application of Derivatives" },
+                            { num: 7, name: "Integrals" },
+                            { num: 8, name: "Application of Integrals" },
+                            { num: 9, name: "Differential Equations" },
+                            { num: 10, name: "Vector Algebra" },
+                            { num: 11, name: "Three Dimensional Geometry" },
+                            { num: 12, name: "Linear Programming" },
+                            { num: 13, name: "Probability" }
+                        ]
+                    }
+                }
+            },
+            biology: {
+                title: "Biology",
+                classes: {
+                    default: {
+                        path: "biologybooks",
+                        chapters: [
+                            { num: 1, name: "The Living World" },
+                            { num: 2, name: "Biological Classification" },
+                            { num: 3, name: "Plant Kingdom" },
+                            { num: 4, name: "Animal Kingdom" },
+                            { num: 5, name: "Morphology of Flowering Plants" },
+                            { num: 6, name: "Anatomy of Flowering Plants" },
+                            { num: 7, name: "Structural Organisation in Animals" },
+                            { num: 8, name: "Cell: The Unit of Life" },
+                            { num: 9, name: "Biomolecules" },
+                            { num: 10, name: "Cell Cycle and Cell Division" },
+                            { num: 11, name: "Transport in Plants" },
+                            { num: 12, name: "Mineral Nutrition" },
+                            { num: 13, name: "Photosynthesis in Higher Plants" },
+                            { num: 14, name: "Respiration in Plants" }
+                        ]
+                    },
+                    xii: {
+                        path: "biologyxiibooks",
+                        // Updated to match the user's provided file structure
+                        chapters: [
+                            { num: 15, name: "Reproduction in Organisms" },
+                            { num: 16, name: "Sexual Reproduction in Flowering Plants" },
+                            { num: 17, name: "Human Reproduction" },
+                            { num: 18, name: "Reproductive Health" },
+                            { num: 19, name: "Principles of Inheritance and Variation" },
+                            { num: 20, name: "Molecular Basis of Inheritance" },
+                            { num: 21, name: "Evolution" },
+                            { num: 22, name: "Human Health and Disease" },
+                            { num: 23, name: "Microbes in Human Welfare" },
+                            { num: 24, name: "Biotechnology - Principles and Processes" },
+                            { num: 25, name: "Biotechnology and its Applications" },
+                            { num: 26, name: "Organisms and Populations" },
+                            { num: 27, name: "Ecosystem" }
+                        ]
+                    }
+                }
             }
         };
 
+        // DOM elements
         const subjectSelection = document.getElementById('subject-selection');
+        const classSelection = document.getElementById('class-selection');
+        const classTitle = document.getElementById('class-title');
+        const classListContainer = document.getElementById('class-list-container');
         const chapterDisplay = document.getElementById('chapter-display');
         const chapterTitle = document.getElementById('chapter-title');
         const chapterListContainer = document.getElementById('chapter-list-container');
-        const backButton = document.getElementById('back-button');
+        const backToSubjectsBtn = document.getElementById('back-to-subjects');
+        const backToClassesBtn = document.getElementById('back-to-classes');
         const summarySection = document.getElementById('summary-section');
         const summaryContent = document.getElementById('summary-content');
         const summaryLoader = document.getElementById('summary-loader');
 
-        // Function to show chapters for a selected subject
-        function showChapters(subject) {
-            const data = subjects[subject];
-            chapterTitle.textContent = data.title;
-            chapterListContainer.innerHTML = '';
-            summarySection.classList.add('hidden'); // Hide summary when changing subject
+        let currentSubject;
 
-            data.chapters.forEach((chapterName, index) => {
-                const chapterNumber = index + 1;
+        // Function to show classes for a selected subject
+        function showClasses(subject) {
+            currentSubject = subject;
+            const data = subjects[subject];
+            classTitle.textContent = `${data.title} Books`;
+            classListContainer.innerHTML = '';
+            
+            // Loop through classes and create links
+            for (const key in data.classes) {
+                const classData = data.classes[key];
+                const className = key === 'xii' ? 'Class XII' : 'Class XI';
+                
+                const classLinkContainer = document.createElement('div');
+                classLinkContainer.className = 'class-card rounded-xl p-6 md:p-8 cursor-pointer card bg-[#1f2937] border-2 border-transparent hover:border-gray-600 transition-colors';
+                classLinkContainer.innerHTML = `<h3 class="text-xl font-bold text-gray-200">${className}</h3>`;
+                
+                classLinkContainer.addEventListener('click', () => showChapters(subject, key));
+                classListContainer.appendChild(classLinkContainer);
+            }
+
+            // Hide previous section and show current one
+            subjectSelection.classList.add('hidden');
+            classSelection.classList.remove('hidden');
+            summarySection.classList.add('hidden');
+        }
+
+        // Function to show chapters for a selected class
+        function showChapters(subject, className) {
+            const data = subjects[subject].classes[className];
+            chapterTitle.textContent = `${subjects[subject].title} - ${className === 'xii' ? 'Class XII' : 'Class XI'} Chapters`;
+            chapterListContainer.innerHTML = '';
+            
+            data.chapters.forEach(chapter => {
                 const chapterLinkContainer = document.createElement('div');
-                chapterLinkContainer.className = 'flex items-center justify-between p-4 rounded-lg bg-gray-700 transition-colors';
+                chapterLinkContainer.className = 'flex items-center justify-between p-4 rounded-lg bg-[#1f2937] border border-gray-700 hover:bg-gray-700 transition-colors';
 
                 const chapterLink = document.createElement('a');
-                chapterLink.href = `${data.path}/ch${chapterNumber}.html`;
-                chapterLink.className = 'chapter-link block text-gray-300 hover:text-white';
-                chapterLink.textContent = `Chapter ${chapterNumber}: ${chapterName}`;
-
+                chapterLink.href = `${data.path}/ch${chapter.num}.html`;
+                chapterLink.className = 'chapter-link block text-gray-300 hover:text-white text-sm md:text-base';
+                chapterLink.textContent = `Chapter ${chapter.num}: ${chapter.name}`;
+                
                 const summaryButton = document.createElement('button');
-                summaryButton.textContent = 'Get Summary ✨';
+                summaryButton.textContent = 'Get Summary';
                 summaryButton.className = 'bg-gray-600 hover:bg-gray-500 text-sm text-white font-semibold py-1 px-3 rounded-full transition-colors';
                 summaryButton.addEventListener('click', (e) => {
                     e.preventDefault();
-                    getChapterSummary(data.title, chapterName);
+                    getChapterSummary(subjects[subject].title, chapter.name);
                 });
 
                 chapterLinkContainer.appendChild(chapterLink);
@@ -224,7 +380,7 @@
                 chapterListContainer.appendChild(chapterLinkContainer);
             });
 
-            subjectSelection.classList.add('hidden');
+            classSelection.classList.add('hidden');
             chapterDisplay.classList.remove('hidden');
         }
 
@@ -238,7 +394,7 @@
             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
 
             const prompt = `Provide a concise summary of the ${chapterName} chapter from a ${subjectTitle} textbook. Focus on key concepts and principles.`;
-
+            
             const payload = {
                 contents: [{
                     parts: [{ text: prompt }]
@@ -266,16 +422,21 @@
             }
         }
 
-        // Add event listeners to subject cards
-        document.getElementById('chemistry').addEventListener('click', () => showChapters('chemistry'));
-        document.getElementById('physics').addEventListener('click', () => showChapters('physics'));
-        document.getElementById('mathematics').addEventListener('click', () => showChapters('mathematics'));
+        // Add event listeners
+        document.getElementById('chemistry').addEventListener('click', () => showClasses('chemistry'));
+        document.getElementById('physics').addEventListener('click', () => showClasses('physics'));
+        document.getElementById('mathematics').addEventListener('click', () => showClasses('mathematics'));
+        document.getElementById('biology').addEventListener('click', () => showClasses('biology'));
 
-        // Add event listener to back button
-        backButton.addEventListener('click', () => {
-            chapterDisplay.classList.add('hidden');
+        // Back button logic
+        backToSubjectsBtn.addEventListener('click', () => {
+            classSelection.classList.add('hidden');
             subjectSelection.classList.remove('hidden');
-            summarySection.classList.add('hidden');
+        });
+
+        backToClassesBtn.addEventListener('click', () => {
+            chapterDisplay.classList.add('hidden');
+            showClasses(currentSubject); // Go back to the class selection for the same subject
         });
     </script>
 </body>

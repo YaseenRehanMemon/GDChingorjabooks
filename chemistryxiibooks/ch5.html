@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5: Hydrocarbons</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --accent-color: #FF9800; /* Orange */
+            --bg-light: #f4f7f9; --text-light: #333; --card-bg-light: #ffffff; --border-light: #e0e0e0; --header-bg-light: #ffffff; --sidebar-bg-light: #fdfdfd;
+            --bg-dark: #121212; --text-dark: #e0e0e0; --card-bg-dark: #1e1e1e; --border-dark: #333; --header-bg-dark: #1e1e1e; --sidebar-bg-dark: #232323;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { font-family: 'Poppins', sans-serif; line-height: 1.6; scroll-behavior: smooth; background-color: var(--bg-light); color: var(--text-light); transition: background-color 0.3s, color 0.3s; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: var(--border-light); color: var(--text-light); transition: background-color 0.3s; font-weight: 600; }
+        .theme-toggle-label .moon { display: none; } .theme-toggle-label .sun { display: inline; }
+        body.dark-mode { --bg-light: var(--bg-dark); --text-light: var(--text-dark); --card-bg-light: var(--card-bg-dark); --border-light: var(--border-dark); --header-bg-light: var(--header-bg-dark); --sidebar-bg-light: var(--sidebar-bg-dark); }
+        .dark-mode .theme-toggle-label .moon { display: inline; } .dark-mode .theme-toggle-label .sun { display: none; } .dark-mode .sidebar a { color: #c5d7e8; } .dark-mode .sidebar a:hover { color: #ffffff; }
+        .page-container { display: grid; grid-template-columns: 260px 1fr; grid-template-rows: auto 1fr; grid-template-areas: "header header" "sidebar content"; min-height: 100vh; }
+        header { grid-area: header; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: var(--header-bg-light); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        header h1 { color: var(--accent-color); font-size: 1.8rem; }
+        .sidebar { grid-area: sidebar; background-color: var(--sidebar-bg-light); padding: 2rem; border-right: 1px solid var(--border-light); position: fixed; top: 75px; left: 0; width: 260px; height: calc(100vh - 75px); overflow-y: auto; }
+        .sidebar h2 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        .sidebar ul { list-style: none; } .sidebar li { margin-bottom: 0.8rem; }
+        .sidebar a { text-decoration: none; color: #555; font-weight: 500; transition: color 0.2s; } .sidebar a:hover { color: var(--accent-color); }
+        .content { grid-area: content; padding: 2rem 3rem; }
+        section { margin-bottom: 3rem; padding-top: 80px; margin-top: -75px; }
+        h2 { font-size: 2rem; color: var(--accent-color); margin-bottom: 1.5rem; border-bottom: 2px solid var(--border-light); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; }
+        p, ul, ol { margin-bottom: 1rem; } ul, ol { padding-left: 20px; }
+        .card { background-color: var(--card-bg-light); border: 1px solid var(--border-light); border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        .card.formula { background-color: #333; color: white; border-left: 5px solid var(--accent-color); }
+        .card.formula p { margin: 0; font-family: 'Courier New', Courier, monospace; }
+        @media (max-width: 900px) { .page-container { grid-template-columns: 1fr; grid-template-areas: "header" "content"; } .sidebar { display: none; } header h1 { font-size: 1.4rem; } .content { padding: 1.5rem; } }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+            function applyTheme(isDarkMode) { body.classList.toggle('dark-mode', isDarkMode); }
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const initialThemeDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+            themeToggleCheckbox.checked = initialThemeDark;
+            applyTheme(initialThemeDark);
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+    </script>
+</head>
+<body style="--accent-color: #FF9800;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 5: Hydrocarbons</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#alkanes">Alkanes</a></li>
+                <li><a href="#alkenes">Alkenes</a></li>
+                <li><a href="#alkynes">Alkynes</a></li>
+                <li><a href="#aromatic">Aromatic Hydrocarbons</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>1. Introduction to Hydrocarbons</h2>
+                <p>Hydrocarbons are organic compounds composed entirely of carbon and hydrogen atoms. They are the simplest organic compounds and form the backbone of many complex organic molecules.</p>
+                <div class="card">
+                    <h4>Classification of Hydrocarbons</h4>
+                    <ul>
+                        <li><b>Aliphatic:</b> Compounds with carbon atoms joined in straight chains, branched chains, or non-aromatic rings.
+                            <ul>
+                                <li><b>Alkanes:</b> Single C-C bonds (saturated).</li>
+                                <li><b>Alkenes:</b> At least one C=C double bond (unsaturated).</li>
+                                <li><b>Alkynes:</b> At least one C≡C triple bond (unsaturated).</li>
+                            </ul>
+                        </li>
+                        <li><b>Aromatic:</b> Compounds that contain one or more benzene rings or other ring systems with delocalized pi electrons.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="alkanes">
+                <h2>2. Alkanes (Saturated Hydrocarbons)</h2>
+                <p>Alkanes contain only single carbon-carbon bonds. They are known as "saturated" because they have the maximum possible number of hydrogen atoms for their carbon skeleton. The general formula is \( C_nH_{2n+2} \).</p>
+                <h3>Structure and Reactivity</h3>
+                <p>Alkanes have a tetrahedral geometry around each carbon atom due to \(sp^3\) hybridization. They are generally unreactive towards polar reagents because C-C and C-H bonds are nonpolar. Their primary reaction is <b>free-radical substitution</b>, typically initiated by UV light.</p>
+                <div class="card">
+                    <h4>Free-Radical Substitution of Methane</h4>
+                    <p>This reaction occurs in three steps:</p>
+                    <ol>
+                        <li><b>Initiation:</b> UV light splits a chlorine molecule into two reactive chlorine free radicals. \( \text{Cl}_2 \xrightarrow{UV} 2\text{Cl}\cdot \)</li>
+                        <li><b>Propagation:</b> A chlorine radical reacts with methane, creating a methyl radical, which then reacts with another chlorine molecule. This is a chain reaction.</li>
+                        <li><b>Termination:</b> Two free radicals combine to end the chain.</li>
+                    </ol>
+                </div>
+            </section>
+            
+            <section id="alkenes">
+                <h2>3. Alkenes (Unsaturated Hydrocarbons)</h2>
+                <p>Alkenes contain at least one carbon-carbon double bond (\( C=C \)). The general formula for an alkene with one double bond is \( C_nH_{2n} \).</p>
+                <h3>Structure and Reactivity</h3>
+                <p>The carbon atoms in a double bond are \(sp^2\) hybridized, resulting in a trigonal planar geometry. The double bond consists of one strong sigma (\(\sigma\)) bond and one weaker pi (\(\pi\)) bond. The exposed electrons of the pi bond make alkenes much more reactive than alkanes. Their characteristic reaction is <b>electrophilic addition</b>.</p>
+                <div class="card">
+                    <h4>Key Reactions of Alkenes</h4>
+                    <ul>
+                        <li><b>Hydrogenation:</b> Addition of \(H_2\) across the double bond to form an alkane.</li>
+                        <li><b>Halogenation:</b> Addition of a halogen (e.g., \(Br_2\)) to form a dihaloalkane.</li>
+                        <li><b>Hydrohalogenation:</b> Addition of HX (e.g., HBr) following Markovnikov's rule.</li>
+                        <li><b>Hydration:</b> Addition of water (\(H_2O\)) to form an alcohol.</li>
+                    </ul>
+                </div>
+                <h3>Geometric Isomerism (Cis-Trans)</h3>
+                <p>Due to the restricted rotation around the C=C double bond, alkenes can exhibit cis-trans isomerism.
+                    <ul>
+                        <li><b>Cis isomer:</b> Similar groups are on the same side of the double bond.</li>
+                        <li><b>Trans isomer:</b> Similar groups are on opposite sides of the double bond.</li>
+                    </ul>
+                </p>
+            </section>
+
+            <section id="alkynes">
+                <h2>4. Alkynes (Unsaturated Hydrocarbons)</h2>
+                <p>Alkynes contain at least one carbon-carbon triple bond (\( C\equiv C \)). The general formula for an alkyne with one triple bond is \( C_nH_{2n-2} \).</p>
+                <h3>Structure and Acidity</h3>
+                <p>The carbon atoms in a triple bond are \(sp\) hybridized, leading to a linear geometry. The C-H bond in terminal alkynes (where the triple bond is at the end of a chain) is unusually acidic because the \(sp\) hybridized carbon is more electronegative, making it easier to remove the proton (\(H^+\)).</p>
+            </section>
+
+            <section id="aromatic">
+                <h2>5. Aromatic Hydrocarbons (Benzene)</h2>
+                <p>The simplest aromatic hydrocarbon is benzene, \(C_6H_6\). Its structure is a planar hexagonal ring of six carbon atoms, with a delocalized system of six pi electrons shared across the entire ring.</p>
+                <h3>Structure and Stability</h3>
+                <p>This delocalization of electrons, known as <b>resonance</b>, makes benzene exceptionally stable. Because of this stability, benzene does not undergo addition reactions like alkenes. Its characteristic reaction is <b>electrophilic aromatic substitution</b>, where a hydrogen atom on the ring is replaced by an electrophile, preserving the stable aromatic system.</p>
+                <div class="card">
+                    <h4>Key Electrophilic Aromatic Substitution Reactions</h4>
+                    <ul>
+                        <li><b>Halogenation:</b> Substitution of H with a halogen (e.g., Br), catalyzed by a Lewis acid.</li>
+                        <li><b>Nitration:</b> Substitution of H with a nitro group (\(-\text{NO}_2\)).</li>
+                        <li><b>Friedel-Crafts Alkylation:</b> Substitution of H with an alkyl group (\(-R\)).</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Hydrocarbons:</b> Compounds of only carbon and hydrogen, classified as alkanes, alkenes, alkynes, and aromatics.</li>
+                        <li><b>Alkanes:</b> Saturated (\(sp^3\)), unreactive, undergo free-radical substitution.</li>
+                        <li><b>Alkenes:</b> Unsaturated (\(sp^2\)), contain C=C bonds, undergo electrophilic addition, and can show cis-trans isomerism.</li>
+                        <li><b>Alkynes:</b> Unsaturated (\(sp\)), contain C≡C bonds, are linear, and terminal alkynes are weakly acidic.</li>
+                        <li><b>Aromatic (Benzene):</b> A stable planar ring with delocalized pi electrons. Undergoes electrophilic substitution, not addition.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

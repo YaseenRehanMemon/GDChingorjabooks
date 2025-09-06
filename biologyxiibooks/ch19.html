@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 19: Animal Behaviour</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        /* General Styles & Resets */
+        :root {
+            --accent-color: #4CAF50; /* Green for this chapter */
+            --bg-light: #f4f7f9;
+            --text-light: #333;
+            --card-bg-light: #ffffff;
+            --border-light: #e0e0e0;
+            --header-bg-light: #ffffff;
+            --sidebar-bg-light: #fdfdfd;
+
+            --bg-dark: #121212;
+            --text-dark: #e0e0e0;
+            --card-bg-dark: #1e1e1e;
+            --border-dark: #333;
+            --header-bg-dark: #1e1e1e;
+            --sidebar-bg-dark: #232323;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+            background-color: var(--bg-light);
+            color: var(--text-light);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Light/Dark Mode Toggle */
+        .theme-toggle-checkbox {
+            display: none;
+        }
+
+        .theme-toggle-label {
+            cursor: pointer;
+            padding: 8px 12px;
+            border-radius: 20px;
+            background-color: var(--border-light);
+            color: var(--text-light);
+            transition: background-color 0.3s;
+            font-weight: 600;
+        }
+
+        .theme-toggle-label .moon { display: none; }
+        .theme-toggle-label .sun { display: inline; }
+
+        /* Dark Mode Styles */
+        body.dark-mode {
+            --bg-light: var(--bg-dark);
+            --text-light: var(--text-dark);
+            --card-bg-light: var(--card-bg-dark);
+            --border-light: var(--border-dark);
+            --header-bg-light: var(--header-bg-dark);
+            --sidebar-bg-light: var(--sidebar-bg-dark);
+        }
+        
+        .dark-mode .theme-toggle-label .moon { display: inline; }
+        .dark-mode .theme-toggle-label .sun { display: none; }
+        .dark-mode .sidebar a { color: #c5d7e8; }
+        .dark-mode .sidebar a:hover { color: #ffffff; }
+
+        /* Layout */
+        .page-container {
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            grid-template-rows: auto 1fr;
+            grid-template-areas:
+                "header header"
+                "sidebar content";
+            min-height: 100vh;
+        }
+
+        header {
+            grid-area: header;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: var(--header-bg-light);
+            border-bottom: 1px solid var(--border-light);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        header h1 {
+            color: var(--accent-color);
+            font-size: 1.8rem;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: var(--sidebar-bg-light);
+            padding: 2rem;
+            border-right: 1px solid var(--border-light);
+            position: fixed;
+            top: 75px; /* Height of header */
+            left: 0;
+            width: 260px;
+            height: calc(100vh - 75px);
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar li {
+            margin-bottom: 0.8rem;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .sidebar a:hover {
+            color: var(--accent-color);
+        }
+
+        .content {
+            grid-area: content;
+            padding: 2rem 3rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            padding-top: 80px; /* Offset for sticky header */
+            margin-top: -75px;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--border-light);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p, ul, table {
+            margin-bottom: 1rem;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        b {
+            color: var(--accent-color);
+        }
+
+        /* Card Component */
+        .card {
+            background-color: var(--card-bg-light);
+            border: 1px solid var(--border-light);
+            border-left: 5px solid var(--accent-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+
+        .card h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid var(--border-light);
+        }
+        
+        th {
+            background-color: var(--accent-color);
+            color: white;
+            font-size: 1.1rem;
+        }
+        
+        td {
+            vertical-align: top;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .page-container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "content";
+            }
+            .sidebar {
+                display: none;
+            }
+            header h1 {
+                font-size: 1.4rem;
+            }
+            .content {
+                padding: 1.5rem;
+            }
+            section {
+                padding-top: 80px;
+                margin-top: -75px;
+            }
+        }
+    </style>
+    
+    <script>
+        // JS for Theme Toggling
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+    </script>
+</head>
+<body style="--accent-color: #4CAF50;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 19: Animal Behaviour</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#nature">The Nature of Behaviour</a></li>
+                <li><a href="#innate">Innate Behaviour</a></li>
+                <li><a href="#learning">Learning Behaviour</a></li>
+                <li><a href="#social">Social Behaviour</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="nature">
+                <h2>1. The Nature of Behaviour</h2>
+                <p>Behaviour is how an organism responds to changes in its environment. These responses are adaptive, meaning they increase the organism's chances of survival and reproduction. The scientific study of animal behaviour is called <b>Ethology</b>.</p>
+                <div class="card">
+                    <h4>Stimulus and Response</h4>
+                    <p>A <b>stimulus</b> is any detectable change (physical or chemical) in the environment that causes a response. Organisms have sensory cells (<b>receptors</b>) that detect stimuli and send signals to the central nervous system (CNS), which then interprets the signal and coordinates a <b>response</b>.</p>
+                </div>
+                <h3>Types of Responses</h3>
+                <ul>
+                    <li><b>Positive Response:</b> An action that moves an organism towards a stimulus (e.g., a person feeling happy about good news).</li>
+                    <li><b>Negative Response:</b> An action that moves an organism away from a stimulus (e.g., a dog hiding to avoid a bath).</li>
+                    <li><b>Ignored Response:</b> A decision by an organism to not react to a stimulus (e.g., ignoring a slight change in room temperature).</li>
+                </ul>
+                <h3>Heredity and Biological Rhythms</h3>
+                <p>Behaviour is influenced by an organism's genes (heredity), which control the development of the nervous and hormonal systems. Many behaviours follow cyclical patterns called <b>biological rhythms</b>, controlled by an internal <b>biological clock</b>.</p>
+                <ul>
+                    <li><b>Circadian Rhythms:</b> 24-hour cycles of activity (day-night).</li>
+                    <li><b>Diurnal:</b> Active during the day (e.g., birds, butterflies).</li>
+                    <li><b>Nocturnal:</b> Active at night (e.g., owls, bats).</li>
+                    <li><b>Crepuscular:</b> Active at dawn and dusk (e.g., mosquitoes).</li>
+                </ul>
+            </section>
+
+            <section id="innate">
+                <h2>2. Innate Behaviour</h2>
+                <p>Innate behaviour is genetically determined and does not require any prior experience or learning. It is often referred to as inborn or instinctive behaviour and is performed similarly by all members of a species. Innate behaviours are crucial for the survival of animals, especially those with short lifespans.</p>
+                <div class="card">
+                    <h4>Key Definition: Innate Behaviour</h4>
+                    <p>An inherited pattern of behaviour that an animal performs correctly the first time it is exposed to a specific stimulus, without any prior practice.</p>
+                </div>
+
+                <h3>Orientation Behaviours</h3>
+                <p>These are behaviours where an organism moves in a specific way in response to a stimulus.</p>
+                <ul>
+                    <li><b>Taxis:</b> A directional movement toward (positive taxis) or away from (negative taxis) a stimulus. For example, a moth flying towards light (positive phototaxis).</li>
+                    <li><b>Kinesis:</b> A non-directional change in the rate of movement in response to the intensity of a stimulus. For example, woodlice move faster in dry areas and slower in humid areas to stay in a favorable environment.</li>
+                </ul>
+                
+                <h3>Instincts (Fixed Action Patterns)</h3>
+                <p>Instincts are complex, unchangeable sequences of innate behaviours that, once initiated, are usually carried to completion. They are triggered by a specific external cue known as a sign stimulus.</p>
+                <div class="card">
+                    <h4>Examples of Instincts</h4>
+                    <ul>
+                        <li><b>Migration of Salmon:</b> Salmon hatch in freshwater, migrate to the ocean to mature, and then instinctively travel hundreds of miles back to their exact birth stream to reproduce.</li>
+                        <li><b>Dances of Honeybees:</b> Scout bees perform complex dances (the round dance and waggle dance) to communicate the direction and distance of a food source to other bees in the hive.</li>
+                        <li><b>Nest Building in Birds:</b> A tailorbird instinctively knows how to build a complex hanging nest using twigs and grass without being taught.</li>
+                        <li><b>Spider's Orb Web:</b> Spiders can spin intricate, functional webs based on a genetically programmed set of rules, without any prior experience.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="learning">
+                <h2>3. Learning Behaviour</h2>
+                <p>Learning is the modification of behaviour based on specific experiences. It allows an animal to adapt to changing environmental conditions and is more prominent in animals with longer lifespans and more complex nervous systems.</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Innate Behaviour</th>
+                            <th>Learning Behaviour</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Inherited and genetically determined.</td>
+                            <td>Acquired through experience or from society.</td>
+                        </tr>
+                        <tr>
+                            <td>Permanent and does not change with experience.</td>
+                            <td>Can be modified and is not always permanent.</td>
+                        </tr>
+                        <tr>
+                            <td>Common in animals with short lifespans.</td>
+                            <td>Common in animals with long lifespans.</td>
+                        </tr>
+                        <tr>
+                            <td>Example: A newborn baby grasping an object.</td>
+                            <td>Example: A person learning to play cricket.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>Types of Learning</h3>
+                <div class="card">
+                    <ul>
+                        <li><b>Habituation:</b> The simplest form of learning, where an animal learns to ignore a persistent, harmless stimulus. This is a <b>reversible</b> process. (e.g., a squirrel in a park eventually ignoring humans).</li>
+                        <li><b>Imprinting:</b> A type of learning that is restricted to a specific "critical period" early in an animal's life, where it forms a strong attachment to the first moving object it sees. This is <b>irreversible</b>. (e.g., Konrad Lorenz's geese following him as if he were their mother).</li>
+                        <li><b>Classical Conditioning:</b> An animal learns to associate a neutral stimulus with a significant stimulus. (e.g., Pavlov's dogs salivating at the sound of a bell because they associated it with food).</li>
+                        <li><b>Instrumental Conditioning (Trial-and-Error):</b> An animal learns to associate a voluntary action with a reward or punishment. (e.g., a rat in a Skinner box learning to press a lever for a food reward).</li>
+                        <li><b>Insight Learning:</b> Solving a problem with a sudden understanding of how to do it, without trial-and-error. (e.g., Köhler's chimpanzees stacking boxes to reach bananas).</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="social">
+                <h2>4. Social Behaviour</h2>
+                <p>Social behaviour involves the interactions between two or more individuals of the same species. Living in social groups can help animals avoid predators, find food, and raise offspring.</p>
+                <h3>Agonistic Behaviour & Dominance Hierarchies</h3>
+                <p>Conflicts over resources like food, mates, or territory are often settled through <b>agonistic behaviour</b>, which includes threats, rituals, and sometimes combat. This behaviour often leads to the formation of a <b>dominance hierarchy</b>, a ranking system within the group.</p>
+                <div class="card">
+                    <h4>Example: Pecking Order in Chickens</h4>
+                    <p>When hens are grouped, they fight until a clear ranking is established. The "alpha" hen can peck all others but is not pecked herself, giving her first access to food and roosting sites. This hierarchy minimizes future conflicts.</p>
+                </div>
+                <h3>Territorial Behaviour</h3>
+                <p>A <b>territory</b> is an area that one or more individuals defend against others of the same species. It is used for feeding, mating, and raising young. Animals like gorillas and baboons use agonistic displays to establish and defend their territories.</p>
+                <h3>Altruism</h3>
+                <p>Altruism is a behaviour that reduces an individual's own fitness but increases the fitness of other individuals in the population. It is common in social insects.</p>
+                <div class="card">
+                    <h4>Example: Honeybee Society</h4>
+                    <p>A honeybee colony consists of a queen (reproductive female), drones (males), and workers (sterile females). The sterile worker bees sacrifice their own reproduction to care for the queen, forage for food, and defend the hive, ensuring the survival of the queen's offspring and the colony as a whole.</p>
+                </div>
+            </section>
+            
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Behaviour</b> is an organism's response to stimuli, crucial for survival and reproduction.</li>
+                        <li><b>Innate Behaviour</b> is genetically determined and includes simple reflexes (taxis, kinesis) and complex instincts (fixed action patterns like migration and bee dances).</li>
+                        <li><b>Learning Behaviour</b> is the modification of behaviour through experience. Types include habituation, imprinting, classical and instrumental conditioning, and insight learning.</li>
+                        <li><b>Social Behaviour</b> involves interactions within a species. It includes agonistic behaviour to establish dominance hierarchies (pecking order), territoriality, and altruism (self-sacrificing behaviour for the good of the group).</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

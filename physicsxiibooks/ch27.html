@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 9: Capacitors</title>
+    <title>Chapter 27: Nuclear Physics</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
         /* 1. CSS Variables for Theming */
         :root {
@@ -152,8 +153,6 @@
         .card.formula {
             background-color: var(--sidebar-bg);
             border-left: 5px solid var(--accent-color);
-            font-family: monospace;
-            font-size: 1.1rem;
         }
 
         .card ul, .card ol {
@@ -304,60 +303,13 @@
             }
         }
     </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
-            const body = document.body;
-
-            function applyTheme(isDarkMode) {
-                if (isDarkMode) {
-                    body.classList.add('dark-mode');
-                } else {
-                    body.classList.remove('dark-mode');
-                }
-            }
-
-            const savedTheme = localStorage.getItem('theme');
-            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-            if (savedTheme === 'dark') {
-                themeToggleCheckbox.checked = true;
-                applyTheme(true);
-            } else if (savedTheme === 'light') {
-                themeToggleCheckbox.checked = false;
-                applyTheme(false);
-            } else {
-                themeToggleCheckbox.checked = prefersDark;
-                applyTheme(prefersDark);
-            }
-
-            themeToggleCheckbox.addEventListener('change', () => {
-                const isDarkMode = themeToggleCheckbox.checked;
-                applyTheme(isDarkMode);
-                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-            });
-        });
-
-        // MathJax configuration for rendering LaTeX
-        window.MathJax = {
-            tex: {
-                inlineMath: [['\\(', '\\)']],
-                displayMath: [['\\[', '\\]']]
-            },
-            svg: {
-                fontCache: 'global'
-            }
-        };
-    </script>
-    <!-- MathJax CDN for rendering LaTeX -->
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
 <body>
     <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
     
     <div class="page-container">
         <header>
-            <h1>Chapter 9: Capacitors</h1>
+            <h1>Chapter 27: Nuclear Physics</h1>
             <label for="theme-toggle" class="theme-toggle-label">
                 <span class="sun">Light</span>
                 <span class="moon">Dark</span>
@@ -367,118 +319,115 @@
         <nav class="sidebar">
             <h2>Navigation</h2>
             <ul>
-                <li><a href="#intro">What is a Capacitor?</a></li>
-                <li><a href="#parallel-plate">The Parallel Plate Capacitor</a></li>
-                <li><a href="#combinations">Combinations of Capacitors</a></li>
-                <li><a href="#energy">Energy Storage</a></li>
-                <li><a href="#rc-circuits">RC Circuits</a></li>
+                <li><a href="#nucleus">The Atomic Nucleus</a></li>
+                <li><a href="#binding">Binding Energy & Mass Defect</a></li>
+                <li><a href="#radioactivity">Radioactivity</a></li>
+                <li><a href="#reactions">Nuclear Reactions</a></li>
+                <li><a href="#radiation">Radiation & Health</a></li>
                 <li><a href="#summary">Chapter Summary</a></li>
             </ul>
         </nav>
 
         <main class="content">
-            <section id="intro">
-                <h2>What is a Capacitor?</h2>
-                <p>A <b>capacitor</b> is a fundamental electronic component designed to store electric charge and energy. In its simplest form, it consists of two conductive plates separated by an insulating material called a <b>dielectric</b>.</p>
-                <div class="card">
-                    <h3>Capacitance (C)</h3>
-                    <p>Capacitance is the measure of a capacitor's ability to store charge. It is defined as the ratio of the charge stored on one plate to the potential difference (voltage) between the plates.</p>
-                </div>
+            <section id="nucleus">
+                <h2>The Atomic Nucleus</h2>
+                <p>Nuclear physics is the study of the atomic nucleus, its constituents, and interactions. The nucleus is composed of protons and neutrons, collectively called <b>nucleons</b>.</p>
                 <div class="card formula">
-                    <h4>Formula: C = Q / V</h4>
-                    <p><b>C</b> = Capacitance (in Farads, F)<br>
-                       <b>Q</b> = Magnitude of charge on one plate (in Coulombs, C)<br>
-                       <b>V</b> = Voltage across the plates (in Volts, V)</p>
+                    <h4>Nuclide Notation</h4>
+                    \[ ^A_Z X \]
+                    <p><b>X</b> = Chemical symbol of the element<br>
+                       <b>Z</b> = Atomic Number (number of protons)<br>
+                       <b>A</b> = Mass Number (total number of protons and neutrons)</p>
                 </div>
-                <p>A capacitor has a capacitance of one Farad if one Coulomb of charge is stored when the potential difference is one Volt. The Farad is a very large unit; more common units are the microfarad (&mu;F) and picofarad (pF).</p>
+                <h3>Isotopes</h3>
+                <p><b>Isotopes</b> are atoms of the same element that have the same number of protons (\(Z\)) but different numbers of neutrons. This means they have the same chemical properties but different masses. For example, Carbon-12, Carbon-13, and Carbon-14 are all isotopes of carbon.</p>
             </section>
 
-            <section id="parallel-plate">
-                <h2>The Parallel Plate Capacitor</h2>
-                <p>The most common type of capacitor is the parallel plate capacitor. Its capacitance depends on its geometric properties and the material between its plates.</p>
-                
-                <div class="card formula">
-                    <h4>Capacitance of a Parallel Plate Capacitor</h4>
-                    <b>C = &epsilon;<sub>r</sub> &epsilon;₀ A / d</b>
-                    <p><b>A</b> = Area of one of the plates<br>
-                       <b>d</b> = Distance between the plates<br>
-                       <b>&epsilon;₀</b> = Permittivity of free space (a constant)<br>
-                       <b>&epsilon;<sub>r</sub></b> = The dielectric constant of the insulator</p>
-                </div>
-
+            <section id="binding">
+                <h2>Mass Defect and Binding Energy</h2>
+                <p>A remarkable discovery in nuclear physics is that the mass of a nucleus is always slightly <em>less</em> than the sum of the individual masses of its protons and neutrons. This "missing" mass is known as the <b>mass defect</b>.</p>
                 <div class="card">
-                    <h3>Dielectrics</h3>
-                    <p>A <b>dielectric</b> is an insulating material placed between the capacitor plates. It serves three purposes:</p>
-                    <ul>
-                        <li>It keeps the conductive plates from touching.</li>
-                        <li>It increases the maximum voltage the capacitor can withstand.</li>
-                        <li>It <b>increases the capacitance</b> by a factor known as the dielectric constant (&epsilon;<sub>r</sub>).</li>
-                    </ul>
+                    <h3>Binding Energy</h3>
+                    <p>The mass defect is not actually lost; it has been converted into energy according to Einstein's equation, \(E=mc^2\). This energy is the <b>nuclear binding energy</b>. It is the energy that holds the nucleus together, and it represents the energy that would be required to break the nucleus apart into its individual nucleons.</p>
+                    <p>The <b>binding energy per nucleon</b> is a measure of the stability of a nucleus. Nuclei with the highest binding energy per nucleon (around iron, \(^{56}\text{Fe}\)) are the most stable.</p>
                 </div>
-            </section>
-
-            <section id="combinations">
-                <h2>Combinations of Capacitors</h2>
-                <p>Capacitors in a circuit can be combined in series or parallel to achieve a desired equivalent capacitance.</p>
-                
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Combination</th>
-                            <th>Description</th>
-                            <th>Equivalent Capacitance (C<sub>eq</sub>)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><b>Parallel</b></td>
-                            <td>Plates are connected side-by-side. The voltage across each capacitor is the same. The total charge is the sum of the individual charges.</td>
-                            <td><b>C<sub>eq</sub> = C₁ + C₂ + C₃ + ...</b></td>
-                        </tr>
-                        <tr>
-                            <td><b>Series</b></td>
-                            <td>Capacitors are connected end-to-end. The charge on each capacitor is the same. The total voltage is the sum of the individual voltages.</td>
-                            <td><b>1/C<sub>eq</sub> = 1/C₁ + 1/C₂ + 1/C₃ + ...</b></td>
-                        </tr>
-                    </tbody>
-                </table>
-                 <p><b>Note:</b> These rules are the opposite of the rules for combining resistors!</p>
             </section>
             
-            <section id="energy">
-                <h2>Energy Stored in a Capacitor</h2>
-                <p>Work is required to move charge onto the plates of a capacitor. This work is stored as electric potential energy in the electric field between the plates. This stored energy can be released quickly, which is why capacitors are used in applications like camera flashes.</p>
-                
-                <div class="card formula">
-                    <h4>Formulas for Stored Energy (U)</h4>
-                    <b>U = \frac{1}{2}QV = \frac{1}{2}CV^2 = \frac{Q^2}{2C}</b>
+            <section id="radioactivity">
+                <h2>Radioactive Decay</h2>
+                <p><b>Radioactivity</b> is the spontaneous process by which an unstable atomic nucleus loses energy by emitting radiation. This process, called decay, is random and spontaneous.</p>
+                <div class="card">
+                    <h3>Types of Radioactive Decay</h3>
+                    <table>
+                        <thead>
+                            <tr><th>Decay Type</th><th>Particle Emitted</th><th>Description</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><b>Alpha (\(\alpha\))</b></td><td>Helium nucleus (\(^{4}_{2}\text{He}\))</td><td>Reduces mass number by 4 and atomic number by 2.</td></tr>
+                            <tr><td><b>Beta (\(\beta^-\))</b></td><td>Electron (\(^{0}_{-1}\text{e}\))</td><td>A neutron turns into a proton. Atomic number increases by 1.</td></tr>
+                            <tr><td><b>Gamma (\(\gamma\))</b></td><td>Photon</td><td>An excited nucleus drops to a lower energy state. No change in mass or atomic number.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                 <div class="card">
+                    <h3>Half-Life (\(T_{1/2}\))</h3>
+                    <p>The <b>half-life</b> is the time it takes for half of the radioactive nuclei in a sample to decay. It is a constant for a given isotope and is related to the decay constant (\(\lambda\)).</p>
+                     <div class="card formula">\[ T_{1/2} = \frac{\ln(2)}{\lambda} \approx \frac{0.693}{\lambda} \]</div>
+                </div>
+            </section>
+            
+            <section id="reactions">
+                <h2>Nuclear Reactions</h2>
+                <p>A nuclear reaction is a process in which two nuclei, or a nucleus and an external subatomic particle, collide to produce one or more new nuclides.</p>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Nuclear Fission</h3>
+                        <p>Fission is the splitting of a large, heavy nucleus (like Uranium-235) into two smaller nuclei. This process releases a tremendous amount of energy and several neutrons, which can go on to cause a <b>chain reaction</b>. This is the principle behind nuclear power reactors and atomic bombs.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Nuclear Fusion</h3>
+                        <p>Fusion is the process of combining two light nuclei to form a heavier, more stable nucleus. This process releases even more energy per nucleon than fission. Fusion is the energy source of the Sun and other stars. Achieving controlled fusion on Earth is a major goal of physics research.</p>
+                    </div>
+                </div>
+                 <div class="card">
+                    <h3>Conservation Laws</h3>
+                    <p>In all nuclear reactions, several quantities must be conserved:
+                        <ul>
+                            <li>Mass-energy (the total of mass and energy is constant)</li>
+                            <li>Charge (total Z is constant)</li>
+                            <li>Nucleon number (total A is constant)</li>
+                            <li>Momentum</li>
+                        </ul>
+                    </p>
                 </div>
             </section>
 
-            <section id="rc-circuits">
-                <h2>Charging and Discharging (RC Circuits)</h2>
-                <p>When a capacitor is connected to a power source through a resistor, it does not charge instantly. The process is gradual and follows an exponential curve.</p>
-
-                <div class="card">
-                    <h3>The Time Constant (&tau;)</h3>
-                    <p>The rate of charging or discharging is determined by the <b>time constant</b> of the circuit, which is the product of the resistance and the capacitance.</p>
-                    <div class="card formula">
-                        <b>&tau; = RC</b>
-                    </div>
-                    <p>The time constant represents the time it takes for the capacitor to charge to approximately <b>63.2%</b> of its maximum voltage, or to discharge to <b>36.8%</b> of its initial voltage.</p>
+            <section id="radiation">
+                <h2>Radiation and Health</h2>
+                <p>Nuclear radiation can be harmful to living tissue because it is a form of <b>ionizing radiation</b>, meaning it has enough energy to knock electrons out of atoms and molecules, breaking chemical bonds.</p>
+                 <div class="card">
+                    <h3>Biological Effects and Dosimetry</h3>
+                    <p>The biological damage depends on the type of radiation and the absorbed dose. <b>Dosimetry</b> is the science of measuring radiation dose. The effects can range from short-term radiation sickness to long-term increased cancer risk.</p>
+                    <h3>Applications of Radiation</h3>
+                    <p>Despite the risks, nuclear radiation has many beneficial uses:</p>
+                    <ul>
+                        <li><b>Medical Diagnosis and Therapy:</b> Radioactive tracers are used in imaging (like PET scans) to diagnose diseases. Radiation therapy is used to target and destroy cancer cells.</li>
+                        <li><b>Agriculture and Industry:</b> Tracers can be used to study fertilizer uptake in plants, and radiation can be used to sterilize medical equipment.</li>
+                    </ul>
                 </div>
             </section>
 
             <section id="summary">
                 <h2>Chapter Summary</h2>
-                <p>Capacitors are essential components in electronics for storing charge and energy.</p>
+                <p>Nuclear physics deals with the structure, properties, and reactions of the atomic nucleus.</p>
                 <div class="card">
                     <ul>
-                        <li>A capacitor stores charge, and its ability to do so is measured by its <b>capacitance (C = \(\frac{Q}{V}\))</b>.</li>
-                        <li>The capacitance of a parallel plate capacitor depends on its plate area (A), the distance between them (d), and the <b>dielectric</b> material used (<b>C = \(\frac{\epsilon A}{d}\)</b>).</li>
-                        <li>Capacitors in <b>parallel add directly</b> (C<sub>eq</sub> = C₁ + C₂), while capacitors in <b>series add as reciprocals</b> (1/C<sub>eq</sub> = 1/C₁ + 1/C₂).</li>
-                        <li>The energy stored in a capacitor is given by <b>U = \frac{1}{2}CV^2</b>.</li>
-                        <li>The charging and discharging of a capacitor through a resistor is governed by the <b>time constant (&tau; = RC)</b>.</li>
+                        <li>The nucleus is composed of protons and neutrons, and its properties are defined by its atomic number (\(Z\)) and mass number (\(A\)). <b>Isotopes</b> have the same \(Z\) but different \(A\).</li>
+                        <li>The stability of a nucleus is determined by its <b>binding energy</b>, which arises from the conversion of a small amount of mass (the <b>mass defect</b>) into energy.</li>
+                        <li>Unstable nuclei undergo <b>radioactive decay</b> (\(\alpha, \beta, \gamma\)), a process characterized by the <b>half-life</b>.</li>
+                        <li><b>Nuclear Fission</b> is the splitting of a heavy nucleus, releasing energy and enabling chain reactions used in nuclear reactors.</li>
+                        <li><b>Nuclear Fusion</b> is the combining of light nuclei, releasing immense energy and powering the stars.</li>
+                        <li>While ionizing radiation poses biological risks, it also has vital applications in medicine, industry, and research.</li>
                     </ul>
                 </div>
             </section>

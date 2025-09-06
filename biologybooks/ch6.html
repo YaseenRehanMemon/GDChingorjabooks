@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6: Prokaryotes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to the shared stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+        // MathJax configuration (for rendering LaTeX)
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body style="--accent-color: #795548;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 6: Prokaryotes</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Taxonomy of Prokaryotes</a></li>
+                <li><a href="#archaea-bacteria">Domains Archaea & Bacteria</a></li>
+                <li><a href="#structure">Structure of Bacteria</a></li>
+                <li><a href="#nutrition-growth">Nutrition, Growth & Reproduction</a></li>
+                <li><a href="#importance">Importance of Bacteria</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>6.1 Taxonomy of Prokaryotes</h2>
+                <p><strong>Prokaryotes</strong> are the most primitive and first inhabitants on Earth. They are single-celled organisms that lack a true nucleus and other membrane-bound organelles. Modern classification, based on ribosomal RNA sequences, divides all life into three domains, two of which are prokaryotic.</p>
+                <div class="card">
+                    <h4>The Three Domains of Life</h4>
+                    <ol>
+                        <li><b>Domain Archaea:</b> Prokaryotes often found in extreme environments.</li>
+                        <li><b>Domain Bacteria:</b> The more common and well-known prokaryotes.</li>
+                        <li><b>Domain Eukarya:</b> All organisms with eukaryotic cells (protists, fungi, plants, animals).</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="archaea-bacteria">
+                <h2>6.2 Domains Archaea and Bacteria</h2>
+                <h3>Domain Archaea</h3>
+                <p>Archaea are known for living in extreme habitats. While they share a prokaryotic cell structure with bacteria, they have unique genetic and metabolic characteristics that are closer to eukaryotes.</p>
+                <ul>
+                    <li><b>Thermophiles:</b> Live in hot springs.</li>
+                    <li><b>Halophiles:</b> Live in high-salt environments.</li>
+                    <li><b>Methanogens:</b> Produce methane gas and are found in anaerobic conditions like marshes and animal guts.</li>
+                </ul>
+                <h3>Domain Bacteria</h3>
+                <p>Bacteria are incredibly diverse and are found in nearly every habitat on Earth. They play crucial roles as decomposers, pathogens, and symbionts.</p>
+                <div class="card">
+                    <h4>Gram Staining</h4>
+                    <p>Bacteria are often classified based on their cell wall structure using a technique called Gram staining:</p>
+                    <ul>
+                        <li><b>Gram-positive bacteria:</b> Have a thick peptidoglycan cell wall and stain purple.</li>
+                        <li><b>Gram-negative bacteria:</b> Have a thin peptidoglycan cell wall and an outer membrane. They stain pink or red.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="structure">
+                <h2>6.3 Structure of Bacteria</h2>
+                <p>Bacterial cells, while simple, have a well-defined structure.</p>
+                <div class="card">
+                    <h4>Key Structural Components</h4>
+                    <ul>
+                        <li><b>Cell Wall:</b> Provides shape and protection, composed of peptidoglycan.</li>
+                        <li><b>Plasma Membrane:</b> Regulates passage of materials.</li>
+                        <li><b>Cytoplasm:</b> Contains the nucleoid, ribosomes, and other components.</li>
+                        <li><b>Nucleoid:</b> A region containing a single, circular chromosome (the bacterial DNA).</li>
+                        <li><b>Ribosomes:</b> Site of protein synthesis (70S in size).</li>
+                        <li><b>Appendages:</b> May include flagella (for motility), pili (for attachment and conjugation), and capsules/slime layers (for protection).</li>
+                        <li><b>Endospores:</b> Some bacteria can form a dormant, highly resistant structure called an endospore to survive harsh conditions.</li>
+                    </ul>
+                </div>
+                <h3>Shapes of Bacteria</h3>
+                <ul>
+                    <li><b>Cocci:</b> Spherical (e.g., *Streptococcus*).</li>
+                    <li><b>Bacilli:</b> Rod-shaped (e.g., *E. coli*).</li>
+                    <li><b>Spirilla:</b> Spiral-shaped (e.g., *Helicobacter pylori*).</li>
+                </ul>
+            </section>
+
+            <section id="nutrition-growth">
+                <h2>6.4 Nutrition, Growth, and Reproduction</h2>
+                <h3>Modes of Nutrition</h3>
+                <ul>
+                    <li><b>Autotrophs:</b> Produce their own food.
+                        <ul>
+                            <li><b>Photoautotrophs:</b> Use light energy (e.g., cyanobacteria).</li>
+                            <li><b>Chemoautotrophs:</b> Use energy from inorganic chemicals.</li>
+                        </ul>
+                    </li>
+                    <li><b>Heterotrophs:</b> Obtain organic molecules from other organisms (e.g., saprotrophs, parasites).</li>
+                </ul>
+                <h3>Growth in Bacteria</h3>
+                <p>Bacterial growth refers to an increase in the number of cells in a population, which typically occurs exponentially. The growth curve has four phases: Lag, Log (Exponential), Stationary, and Death.</p>
+                <h3>Reproduction and Genetic Recombination</h3>
+                <ul>
+                    <li><b>Binary Fission:</b> The primary mode of asexual reproduction, where a cell divides into two identical daughter cells.</li>
+                    <li><b>Genetic Recombination:</b> Bacteria can exchange genetic material through:
+                        <ul>
+                            <li><b>Conjugation:</b> DNA transfer through a pilus.</li>
+                            <li><b>Transformation:</b> Uptake of DNA from the environment.</li>
+                            <li><b>Transduction:</b> DNA transfer via a bacteriophage.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            
+            <section id="importance">
+                <h2>6.5 Importance of Bacteria</h2>
+                <p>Bacteria are vital to the biosphere and have significant impacts on human life.</p>
+                <div class="card">
+                    <h4>Beneficial Roles</h4>
+                    <ul>
+                        <li><b>Decomposers:</b> They are essential for recycling nutrients in ecosystems.</li>
+                        <li><b>Nitrogen Fixation:</b> Convert atmospheric nitrogen into forms usable by plants.</li>
+                        <li><b>Food Production:</b> Used to make yogurt, cheese, and vinegar.</li>
+                        <li><b>Biotechnology:</b> Used in medicine (e.g., producing insulin) and genetic engineering.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Harmful Roles</h4>
+                    <ul>
+                        <li><b>Pathogens:</b> Cause a wide range of diseases in humans, animals, and plants (e.g., cholera, tuberculosis, pneumonia).</li>
+                        <li><b>Food Spoilage:</b> Cause food to decay and become unpalatable.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Prokaryotes</b> are divided into two domains: <b>Archaea</b> (often extremophiles) and <b>Bacteria</b> (widespread).</li>
+                        <li>They lack a nucleus and membrane-bound organelles but have a cell wall, plasma membrane, ribosomes, and a nucleoid region with a circular chromosome.</li>
+                        <li>Bacteria are classified by shape (cocci, bacilli, spirilla) and cell wall structure (Gram-positive/negative).</li>
+                        <li>They exhibit diverse modes of nutrition (autotrophic and heterotrophic) and reproduce primarily through <b>binary fission</b>.</li>
+                        <li>Genetic diversity is achieved through <b>conjugation, transformation, and transduction</b>.</li>
+                        <li>Bacteria play crucial roles as decomposers, pathogens, and in biotechnology.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

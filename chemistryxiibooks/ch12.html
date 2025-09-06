@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 12: Environmental Chemistry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --accent-color: #00BCD4; /* Cyan */
+            --bg-light: #f4f7f9; --text-light: #333; --card-bg-light: #ffffff; --border-light: #e0e0e0; --header-bg-light: #ffffff; --sidebar-bg-light: #fdfdfd;
+            --bg-dark: #121212; --text-dark: #e0e0e0; --card-bg-dark: #1e1e1e; --border-dark: #333; --header-bg-dark: #1e1e1e; --sidebar-bg-dark: #232323;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { font-family: 'Poppins', sans-serif; line-height: 1.6; scroll-behavior: smooth; background-color: var(--bg-light); color: var(--text-light); transition: background-color 0.3s, color 0.3s; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: var(--border-light); color: var(--text-light); transition: background-color 0.3s; font-weight: 600; }
+        .theme-toggle-label .moon { display: none; } .theme-toggle-label .sun { display: inline; }
+        body.dark-mode { --bg-light: var(--bg-dark); --text-light: var(--text-dark); --card-bg-light: var(--card-bg-dark); --border-light: var(--border-dark); --header-bg-light: var(--header-bg-dark); --sidebar-bg-light: var(--sidebar-bg-dark); }
+        .dark-mode .theme-toggle-label .moon { display: inline; } .dark-mode .theme-toggle-label .sun { display: none; } .dark-mode .sidebar a { color: #c5d7e8; } .dark-mode .sidebar a:hover { color: #ffffff; }
+        .page-container { display: grid; grid-template-columns: 260px 1fr; grid-template-rows: auto 1fr; grid-template-areas: "header header" "sidebar content"; min-height: 100vh; }
+        header { grid-area: header; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: var(--header-bg-light); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        header h1 { color: var(--accent-color); font-size: 1.8rem; }
+        .sidebar { grid-area: sidebar; background-color: var(--sidebar-bg-light); padding: 2rem; border-right: 1px solid var(--border-light); position: fixed; top: 75px; left: 0; width: 260px; height: calc(100vh - 75px); overflow-y: auto; }
+        .sidebar h2 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        .sidebar ul { list-style: none; } .sidebar li { margin-bottom: 0.8rem; }
+        .sidebar a { text-decoration: none; color: #555; font-weight: 500; transition: color 0.2s; } .sidebar a:hover { color: var(--accent-color); }
+        .content { grid-area: content; padding: 2rem 3rem; }
+        section { margin-bottom: 3rem; padding-top: 80px; margin-top: -75px; }
+        h2 { font-size: 2rem; color: var(--accent-color); margin-bottom: 1.5rem; border-bottom: 2px solid var(--border-light); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; }
+        p, ul, ol { margin-bottom: 1rem; } ul, ol { padding-left: 20px; }
+        b { color: var(--accent-color); }
+        .card { background-color: var(--card-bg-light); border: 1px solid var(--border-light); border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        .card.formula { background-color: #333; color: white; border-left: 5px solid var(--accent-color); }
+        .card.formula p { margin: 0; font-family: 'Courier New', Courier, monospace; }
+        @media (max-width: 900px) { .page-container { grid-template-columns: 1fr; grid-template-areas: "header" "content"; } .sidebar { display: none; } header h1 { font-size: 1.4rem; } .content { padding: 1.5rem; } }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+            function applyTheme(isDarkMode) { body.classList.toggle('dark-mode', isDarkMode); }
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const initialThemeDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+            themeToggleCheckbox.checked = initialThemeDark;
+            applyTheme(initialThemeDark);
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+    </script>
+</head>
+<body style="--accent-color: #00BCD4;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 12: Environmental Chemistry</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#atmosphere">The Atmosphere</a></li>
+                <li><a href="#acid-rain">Acid Rain</a></li>
+                <li><a href="#greenhouse">Greenhouse Effect</a></li>
+                <li><a href="#ozone">Ozone Layer Depletion</a></li>
+                <li><a href="#water">Water Pollution</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="atmosphere">
+                <h2>1. The Atmosphere and Air Pollution</h2>
+                <p>Environmental chemistry studies chemical processes in the environment. The atmosphere is divided into layers, with the <b>troposphere</b> being the lowest layer where we live and where weather occurs.</p>
+                <h3>Major Air Pollutants</h3>
+                <p>The combustion of fossil fuels releases several harmful pollutants:</p>
+                <ul>
+                    <li><b>Oxides of Sulfur (\( \text{SO}_x \)):</b> \( \text{SO}_2 \) and \( \text{SO}_3 \) are released from burning coal and are primary causes of industrial smog and acid rain.</li>
+                    <li><b>Oxides of Nitrogen (\( \text{NO}_x \)):</b> \( \text{NO} \) and \( \text{NO}_2 \) are produced at high temperatures in car engines and contribute to smog and acid rain.</li>
+                    <li><b>Volatile Organic Compounds (VOCs):</b> Unburnt hydrocarbons from gasoline and solvents that contribute to ozone formation in the troposphere.</li>
+                </ul>
+            </section>
+
+            <section id="acid-rain">
+                <h2>2. Acid Rain</h2>
+                <p>Acid rain refers to any form of precipitation with acidic components, such as sulfuric or nitric acid, that fall to the ground from the atmosphere in wet or dry forms.</p>
+                <div class="card">
+                    <h4>Formation of Acid Rain</h4>
+                    <p>Sulfur oxides and nitrogen oxides react with water, oxygen, and other chemicals in the atmosphere to form sulfuric acid (\( \text{H}_2\text{SO}_4 \)) and nitric acid (\( \text{HNO}_3 \)). This lowers the pH of rain from its natural level (around 5.6) to 4.0 or lower.</p>
+                    <p><b>Impacts:</b> Acid rain damages forests, acidifies lakes and streams (harming aquatic life), and corrodes buildings and statues.</p>
+                </div>
+            </section>
+            
+            <section id="greenhouse">
+                <h2>3. The Greenhouse Effect and Global Warming</h2>
+                <div class="card">
+                    <h4>What is the Greenhouse Effect?</h4>
+                    <p>A natural process where certain gases in the atmosphere, known as <b>greenhouse gases</b> (e.g., \( \text{CO}_2 \), \( \text{CH}_4 \), \( \text{H}_2\text{O} \)), trap heat from the sun. This effect keeps the Earth's surface warm enough to support life.</p>
+                </div>
+                <h3>Global Warming</h3>
+                <p>Human activities, primarily the burning of fossil fuels, have drastically increased the concentration of greenhouse gases, especially \( \text{CO}_2 \). This enhances the natural greenhouse effect, leading to a gradual increase in the Earth's average surface temperature, a phenomenon known as <b>global warming</b> or climate change.</p>
+            </section>
+
+            <section id="ozone">
+                <h2>4. Ozone Layer Depletion</h2>
+                <p>The <b>stratosphere</b> contains a layer of ozone (\( \text{O}_3 \)) that protects life on Earth by absorbing most of the sun's harmful ultraviolet (UV) radiation.</p>
+                <h3>The Role of CFCs</h3>
+                <p><b>Chlorofluorocarbons (CFCs)</b>, once widely used in refrigeration and aerosol sprays, are the primary cause of ozone depletion. In the stratosphere, UV radiation breaks down CFCs, releasing chlorine atoms. A single chlorine atom can act as a catalyst to destroy tens of thousands of ozone molecules.</p>
+                 <div class="card">
+                    <h4>The Catalytic Cycle</h4>
+                    <p>\( \text{Cl} \cdot + \text{O}_3 \rightarrow \text{ClO} \cdot + \text{O}_2 \)</p>
+                    <p>\( \text{ClO} \cdot + \text{O} \rightarrow \text{Cl} \cdot + \text{O}_2 \)</p>
+                    <p>The chlorine radical is regenerated, allowing it to destroy more ozone molecules.</p>
+                </div>
+                <p>International agreements like the Montreal Protocol have successfully phased out the production of CFCs, and the ozone layer is slowly recovering.</p>
+            </section>
+            
+            <section id="water">
+                <h2>5. Water Pollution and Analysis</h2>
+                <p>Water pollution is any change in the quality of water that adversely affects life. It is caused by industrial waste, sewage, and agricultural runoff.</p>
+                <h3>Parameters for Drinking Water Quality</h3>
+                <p>The World Health Organization (WHO) sets standards for safe drinking water, including:</p>
+                <ul>
+                    <li><b>pH:</b> Should be between 6.5 and 8.5.</li>
+                    <li><b>Total Dissolved Solids (TDS):</b> A measure of all inorganic and organic suspended particles. Should be below 600 mg/L.</li>
+                    <li><b>Turbidity:</b> A measure of the cloudiness of water.</li>
+                    <li><b>Biological Oxygen Demand (BOD):</b> A measure of the amount of oxygen consumed by bacteria while decomposing organic waste. High BOD indicates pollution.</li>
+                </ul>
+            </section>
+            
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Air Pollution:</b> Caused by \( \text{SO}_x \), \( \text{NO}_x \), and VOCs from burning fossil fuels.</li>
+                        <li><b>Acid Rain:</b> Formed when \( \text{SO}_x \) and \( \text{NO}_x \) react with atmospheric water. It damages ecosystems and structures.</li>
+                        <li><b>Greenhouse Effect:</b> A natural process where gases like \( \text{CO}_2 \) trap heat. Enhanced by human activity, it leads to <b>global warming</b>.</li>
+                        <li><b>Ozone Layer:</b> Protects Earth from UV radiation. It has been depleted by <b>CFCs</b>, which catalytically destroy ozone molecules in the stratosphere.</li>
+                        <li><b>Water Pollution:</b> The contamination of water bodies. Water quality is assessed using parameters like pH, TDS, and BOD.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

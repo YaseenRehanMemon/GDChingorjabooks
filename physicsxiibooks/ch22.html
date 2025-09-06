@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 9: Capacitors</title>
+    <title>Chapter 22: Solid State Electronics</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
         /* 1. CSS Variables for Theming */
         :root {
@@ -152,8 +153,6 @@
         .card.formula {
             background-color: var(--sidebar-bg);
             border-left: 5px solid var(--accent-color);
-            font-family: monospace;
-            font-size: 1.1rem;
         }
 
         .card ul, .card ol {
@@ -304,60 +303,13 @@
             }
         }
     </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
-            const body = document.body;
-
-            function applyTheme(isDarkMode) {
-                if (isDarkMode) {
-                    body.classList.add('dark-mode');
-                } else {
-                    body.classList.remove('dark-mode');
-                }
-            }
-
-            const savedTheme = localStorage.getItem('theme');
-            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-            if (savedTheme === 'dark') {
-                themeToggleCheckbox.checked = true;
-                applyTheme(true);
-            } else if (savedTheme === 'light') {
-                themeToggleCheckbox.checked = false;
-                applyTheme(false);
-            } else {
-                themeToggleCheckbox.checked = prefersDark;
-                applyTheme(prefersDark);
-            }
-
-            themeToggleCheckbox.addEventListener('change', () => {
-                const isDarkMode = themeToggleCheckbox.checked;
-                applyTheme(isDarkMode);
-                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-            });
-        });
-
-        // MathJax configuration for rendering LaTeX
-        window.MathJax = {
-            tex: {
-                inlineMath: [['\\(', '\\)']],
-                displayMath: [['\\[', '\\]']]
-            },
-            svg: {
-                fontCache: 'global'
-            }
-        };
-    </script>
-    <!-- MathJax CDN for rendering LaTeX -->
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
 <body>
     <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
     
     <div class="page-container">
         <header>
-            <h1>Chapter 9: Capacitors</h1>
+            <h1>Chapter 22: Solid State Electronics</h1>
             <label for="theme-toggle" class="theme-toggle-label">
                 <span class="sun">Light</span>
                 <span class="moon">Dark</span>
@@ -367,118 +319,118 @@
         <nav class="sidebar">
             <h2>Navigation</h2>
             <ul>
-                <li><a href="#intro">What is a Capacitor?</a></li>
-                <li><a href="#parallel-plate">The Parallel Plate Capacitor</a></li>
-                <li><a href="#combinations">Combinations of Capacitors</a></li>
-                <li><a href="#energy">Energy Storage</a></li>
-                <li><a href="#rc-circuits">RC Circuits</a></li>
+                <li><a href="#semiconductors">Semiconductors</a></li>
+                <li><a href="#diodes">The P-N Junction Diode</a></li>
+                <li><a href="#applications">Diode Applications</a></li>
+                <li><a href="#transistors">Transistors</a></li>
+                <li><a href="#op-amps">Operational Amplifiers</a></li>
                 <li><a href="#summary">Chapter Summary</a></li>
             </ul>
         </nav>
 
         <main class="content">
-            <section id="intro">
-                <h2>What is a Capacitor?</h2>
-                <p>A <b>capacitor</b> is a fundamental electronic component designed to store electric charge and energy. In its simplest form, it consists of two conductive plates separated by an insulating material called a <b>dielectric</b>.</p>
-                <div class="card">
-                    <h3>Capacitance (C)</h3>
-                    <p>Capacitance is the measure of a capacitor's ability to store charge. It is defined as the ratio of the charge stored on one plate to the potential difference (voltage) between the plates.</p>
+            <section id="semiconductors">
+                <h2>Semiconductors: The Foundation of Electronics</h2>
+                <p>Semiconductors are materials with electrical conductivity between that of a conductor and an insulator. Their unique properties allow us to control the flow of electricity, making them the building blocks of all modern electronics.</p>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Intrinsic Semiconductors</h3>
+                        <p>These are pure semiconductor materials like silicon (Si) and germanium (Ge). Their conductivity is low and highly dependent on temperature.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Extrinsic (Doped) Semiconductors</h3>
+                        <p>The conductivity of semiconductors is dramatically increased by a process called <b>doping</b>, where a small number of impurity atoms are intentionally added.</p>
+                    </div>
                 </div>
-                <div class="card formula">
-                    <h4>Formula: C = Q / V</h4>
-                    <p><b>C</b> = Capacitance (in Farads, F)<br>
-                       <b>Q</b> = Magnitude of charge on one plate (in Coulombs, C)<br>
-                       <b>V</b> = Voltage across the plates (in Volts, V)</p>
-                </div>
-                <p>A capacitor has a capacitance of one Farad if one Coulomb of charge is stored when the potential difference is one Volt. The Farad is a very large unit; more common units are the microfarad (&mu;F) and picofarad (pF).</p>
+                <h3>Types of Doped Semiconductors</h3>
+                <ul>
+                    <li><b>N-type:</b> Doped with elements that have extra valence electrons (e.g., Phosphorus). The majority charge carriers are <b>negative electrons</b>.</li>
+                    <li><b>P-type:</b> Doped with elements that are missing valence electrons (e.g., Boron). This creates "holes" that act as the majority <b>positive charge carriers</b>.</li>
+                </ul>
             </section>
 
-            <section id="parallel-plate">
-                <h2>The Parallel Plate Capacitor</h2>
-                <p>The most common type of capacitor is the parallel plate capacitor. Its capacitance depends on its geometric properties and the material between its plates.</p>
-                
-                <div class="card formula">
-                    <h4>Capacitance of a Parallel Plate Capacitor</h4>
-                    <b>C = &epsilon;<sub>r</sub> &epsilon;₀ A / d</b>
-                    <p><b>A</b> = Area of one of the plates<br>
-                       <b>d</b> = Distance between the plates<br>
-                       <b>&epsilon;₀</b> = Permittivity of free space (a constant)<br>
-                       <b>&epsilon;<sub>r</sub></b> = The dielectric constant of the insulator</p>
+            <section id="diodes">
+                <h2>The P-N Junction Diode</h2>
+                <p>A <b>P-N junction</b> is formed by joining a piece of P-type semiconductor to a piece of N-type semiconductor. This simple device, called a <b>diode</b>, is fundamental to electronics because it allows current to flow in only one direction.</p>
+                 <div class="card">
+                    <h3>The Depletion Region</h3>
+                    <p>At the junction, electrons from the N-side diffuse into the P-side and combine with holes. This creates a thin region at the junction that is depleted of free charge carriers, known as the depletion region. This region acts as a potential barrier.</p>
                 </div>
-
-                <div class="card">
-                    <h3>Dielectrics</h3>
-                    <p>A <b>dielectric</b> is an insulating material placed between the capacitor plates. It serves three purposes:</p>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Forward Bias</h3>
+                        <p>When the positive terminal of a voltage source is connected to the P-side and the negative to the N-side, the potential barrier is lowered. This allows current to flow easily through the diode.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Reverse Bias</h3>
+                        <p>When the polarity is reversed, the potential barrier is increased. This prevents current from flowing (except for a very small leakage current).</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="applications">
+                <h2>Diode Applications</h2>
+                <p>The one-way nature of the diode makes it useful in many applications.</p>
+                 <div class="card">
+                    <h3>Rectification</h3>
+                    <p><b>Rectification</b> is the process of converting alternating current (AC) into direct current (DC). Diodes are the key components in rectifier circuits.</p>
+                     <ul>
+                         <li><b>Half-wave Rectifier:</b> A single diode blocks one half of the AC cycle, converting it into a pulsating DC.</li>
+                         <li><b>Full-wave Rectifier:</b> Uses a configuration of multiple diodes to convert both halves of the AC cycle into a smoother pulsating DC.</li>
+                     </ul>
+                </div>
+                 <div class="card">
+                    <h3>Special Diodes</h3>
                     <ul>
-                        <li>It keeps the conductive plates from touching.</li>
-                        <li>It increases the maximum voltage the capacitor can withstand.</li>
-                        <li>It <b>increases the capacitance</b> by a factor known as the dielectric constant (&epsilon;<sub>r</sub>).</li>
+                        <li><b>Light-Emitting Diode (LED):</b> A diode that emits light when forward biased.</li>
+                        <li><b>Photodiode:</b> A diode that generates a current when exposed to light.</li>
+                        <li><b>Photovoltaic Cell (Solar Cell):</b> A large P-N junction designed to convert light energy directly into electrical energy.</li>
                     </ul>
                 </div>
             </section>
 
-            <section id="combinations">
-                <h2>Combinations of Capacitors</h2>
-                <p>Capacitors in a circuit can be combined in series or parallel to achieve a desired equivalent capacitance.</p>
-                
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Combination</th>
-                            <th>Description</th>
-                            <th>Equivalent Capacitance (C<sub>eq</sub>)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><b>Parallel</b></td>
-                            <td>Plates are connected side-by-side. The voltage across each capacitor is the same. The total charge is the sum of the individual charges.</td>
-                            <td><b>C<sub>eq</sub> = C₁ + C₂ + C₃ + ...</b></td>
-                        </tr>
-                        <tr>
-                            <td><b>Series</b></td>
-                            <td>Capacitors are connected end-to-end. The charge on each capacitor is the same. The total voltage is the sum of the individual voltages.</td>
-                            <td><b>1/C<sub>eq</sub> = 1/C₁ + 1/C₂ + 1/C₃ + ...</b></td>
-                        </tr>
-                    </tbody>
-                </table>
-                 <p><b>Note:</b> These rules are the opposite of the rules for combining resistors!</p>
-            </section>
-            
-            <section id="energy">
-                <h2>Energy Stored in a Capacitor</h2>
-                <p>Work is required to move charge onto the plates of a capacitor. This work is stored as electric potential energy in the electric field between the plates. This stored energy can be released quickly, which is why capacitors are used in applications like camera flashes.</p>
-                
-                <div class="card formula">
-                    <h4>Formulas for Stored Energy (U)</h4>
-                    <b>U = \frac{1}{2}QV = \frac{1}{2}CV^2 = \frac{Q^2}{2C}</b>
+            <section id="transistors">
+                <h2>Transistors: The Digital Switch and Amplifier</h2>
+                <p>A <b>transistor</b> is a semiconductor device with three layers (either N-P-N or P-N-P). It can act as either an electronic switch or an amplifier, and is the fundamental building block of computers and modern electronics.</p>
+                <div class="card">
+                    <h3>Transistor as a Switch</h3>
+                    <p>A small current applied to the central <b>base</b> terminal controls a much larger current flowing between the <b>emitter</b> and the <b>collector</b>. This allows the transistor to be turned ON (allowing current to flow) or OFF (blocking current).</p>
+                </div>
+                <div class="card">
+                    <h3>Transistor as an Amplifier</h3>
+                    <p>In its active region, a small change in the base current produces a large, proportional change in the collector current. This allows the transistor to amplify a weak input signal into a much stronger output signal.</p>
                 </div>
             </section>
 
-            <section id="rc-circuits">
-                <h2>Charging and Discharging (RC Circuits)</h2>
-                <p>When a capacitor is connected to a power source through a resistor, it does not charge instantly. The process is gradual and follows an exponential curve.</p>
-
+            <section id="op-amps">
+                <h2>Operational Amplifiers (Op-Amps)</h2>
+                <p>An <b>operational amplifier</b> is an integrated circuit that functions as a high-gain voltage amplifier. It is a versatile building block used in a vast range of analog circuits.</p>
                 <div class="card">
-                    <h3>The Time Constant (&tau;)</h3>
-                    <p>The rate of charging or discharging is determined by the <b>time constant</b> of the circuit, which is the product of the resistance and the capacitance.</p>
-                    <div class="card formula">
-                        <b>&tau; = RC</b>
-                    </div>
-                    <p>The time constant represents the time it takes for the capacitor to charge to approximately <b>63.2%</b> of its maximum voltage, or to discharge to <b>36.8%</b> of its initial voltage.</p>
+                    <h3>Ideal Op-Amp Properties</h3>
+                    <ul>
+                        <li>Infinite open-loop gain</li>
+                        <li>Infinite input impedance</li>
+                        <li>Zero output impedance</li>
+                    </ul>
+                    <h3>Key Applications</h3>
+                    <p>By using <b>negative feedback</b> (feeding a portion of the output back to the input), the op-amp's behavior can be precisely controlled. Common configurations include:</p>
+                    <ul>
+                        <li><b>Inverting Amplifier:</b> Amplifies and inverts the input signal.</li>
+                        <li><b>Non-inverting Amplifier:</b> Amplifies the input signal without inverting it.</li>
+                        <li><b>Comparator:</b> Compares two input voltages and outputs a signal indicating which is larger.</li>
+                    </ul>
                 </div>
             </section>
 
             <section id="summary">
                 <h2>Chapter Summary</h2>
-                <p>Capacitors are essential components in electronics for storing charge and energy.</p>
+                <p>Solid-state electronics is built upon the controlled flow of charge carriers through semiconductor materials.</p>
                 <div class="card">
                     <ul>
-                        <li>A capacitor stores charge, and its ability to do so is measured by its <b>capacitance (C = \(\frac{Q}{V}\))</b>.</li>
-                        <li>The capacitance of a parallel plate capacitor depends on its plate area (A), the distance between them (d), and the <b>dielectric</b> material used (<b>C = \(\frac{\epsilon A}{d}\)</b>).</li>
-                        <li>Capacitors in <b>parallel add directly</b> (C<sub>eq</sub> = C₁ + C₂), while capacitors in <b>series add as reciprocals</b> (1/C<sub>eq</sub> = 1/C₁ + 1/C₂).</li>
-                        <li>The energy stored in a capacitor is given by <b>U = \frac{1}{2}CV^2</b>.</li>
-                        <li>The charging and discharging of a capacitor through a resistor is governed by the <b>time constant (&tau; = RC)</b>.</li>
+                        <li><b>Semiconductors</b> are materials whose conductivity can be controlled by <b>doping</b> to create N-type (excess electrons) and P-type (excess holes) materials.</li>
+                        <li>A <b>P-N junction diode</b> allows current to flow easily in one direction (<b>forward bias</b>) and blocks it in the other (<b>reverse bias</b>). This property is used for <b>rectification</b> (AC to DC conversion).</li>
+                        <li>A <b>transistor</b> is a three-layer semiconductor device that can act as an electronic <b>switch</b> or a signal <b>amplifier</b>.</li>
+                        <li>An <b>operational amplifier (op-amp)</b> is a high-gain amplifier used as a fundamental building block in analog circuits, with its properties controlled by negative feedback.</li>
                     </ul>
                 </div>
             </section>

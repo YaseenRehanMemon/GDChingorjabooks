@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 10: Differential Equations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root { --accent-color: #009688; /* Teal for Differential Equations */ }
+        body { font-family: 'Poppins', sans-serif; margin: 0; background-color: #f4f7f9; color: #333; transition: background-color 0.3s, color 0.3s; }
+        .dark-mode { background-color: #121212; color: #e0e0e0; }
+        .page-container { display: flex; flex-direction: column; }
+        header { background-color: #ffffff; padding: 1rem 2rem; border-bottom: 1px solid #e0e0e0; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .dark-mode header { background-color: #1e1e1e; border-bottom: 1px solid #333; }
+        header h1 { margin: 0; color: var(--accent-color); font-size: 1.8rem; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: #e9eef2; transition: background-color 0.3s; }
+        .dark-mode .theme-toggle-label { background-color: #242424; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label .sun { display: inline; } .theme-toggle-label .moon { display: none; }
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label .sun { display: none; }
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label .moon { display: inline; }
+        .container { display: flex; }
+        .sidebar { width: 260px; background-color: #e9eef2; padding: 1.5rem; height: 100vh; position: fixed; top: 70px; left: 0; overflow-y: auto; border-right: 1px solid #e0e0e0; }
+        .dark-mode .sidebar { background-color: #242424; border-right: 1px solid #333; }
+        .sidebar h2 { font-size: 1.2rem; color: var(--accent-color); margin-top: 0; }
+        .sidebar ul { list-style: none; padding: 0; }
+        .sidebar ul li a { display: block; color: #333; text-decoration: none; padding: 0.75rem 1rem; border-radius: 5px; transition: background-color 0.2s; }
+        .dark-mode .sidebar ul li a { color: #e0e0e0; }
+        .sidebar ul li a:hover { background-color: var(--accent-color); color: white; }
+        .content { flex: 1; padding: 2rem; margin-left: 290px; }
+        .card { background-color: #ffffff; border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .dark-mode .card { background-color: #1e1e1e; border-color: var(--accent-color); }
+        .card.formula { background-color: #e0f2f1; border-color: #4db6ac; }
+        .dark-mode .card.formula { background-color: #263836; border-color: #80cbc4; }
+        h2 { border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        @media (max-width: 768px) { .sidebar { display: none; } .content { margin-left: 0; } header { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 10: Differential Equations</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+        <div class="container">
+            <nav class="sidebar">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="#intro">Introduction to DEs</a></li>
+                    <li><a href="#formation">Formation of DEs</a></li>
+                    <li><a href="#first-order">First-Order Equations</a></li>
+                    <li><a href="#applications">Real-Life Applications</a></li>
+                    <li><a href="#orthogonal">Orthogonal Trajectories</a></li>
+                </ul>
+            </nav>
+            <main class="content">
+                <section id="intro">
+                    <h2>10.1 Introduction to Differential Equations</h2>
+                    <p>A <strong>differential equation (DE)</strong> is an equation that relates a function with its derivatives. These equations are fundamental in science and engineering because they describe how things change.</p>
+                    <div class="card">
+                        <h4>Key Terminology</h4>
+                        <ul>
+                            <li><strong>Order:</strong> The order of the highest derivative in the equation. For example, \(\frac{d^2y}{dx^2} + y = 0\) is a second-order DE.</li>
+                            <li><strong>Degree:</strong> The power of the highest-order derivative after the equation has been cleared of radicals and fractions.</li>
+                            <li><strong>Solution:</strong> A function that satisfies the differential equation.
+                                <ul>
+                                    <li><strong>General Solution:</strong> A solution containing arbitrary constants.</li>
+                                    <li><strong>Particular Solution:</strong> A solution where the constants have been determined by initial conditions.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="formation">
+                    <h2>10.2 Formation of Differential Equations</h2>
+                    <p>We can form a differential equation from a general solution by eliminating the arbitrary constants through differentiation.</p>
+                    <div class="card">
+                        <h4>Process</h4>
+                        <p>If a solution has \(n\) arbitrary constants, you need to differentiate the equation \(n\) times. This will create a system of \(n+1\) equations, which you can then use to algebraically eliminate the \(n\) constants, resulting in a differential equation.</p>
+                    </div>
+                </section>
+                
+                <section id="first-order">
+                    <h2>10.3 Solving First-Order Differential Equations</h2>
+                    <p>First-order DEs involve only the first derivative. We will look at two common types that can be solved analytically.</p>
+                    <h3>Separable Equations</h3>
+                    <p>A DE is separable if it can be written in the form \(g(y) \cdot dy = f(x) \cdot dx\). To solve it, you integrate both sides of the equation.</p>
+                     <div class="card formula">
+                        <h4>Example</h4>
+                        <p>To solve \(\frac{dy}{dx} = \frac{x}{y}\):</p>
+                        <ol>
+                            <li>Separate variables: \(y \,dy = x \,dx\)</li>
+                            <li>Integrate both sides: \(\int y \,dy = \int x \,dx\)</li>
+                            <li>Result: \(\frac{y^2}{2} = \frac{x^2}{2} + C\)</li>
+                        </ol>
+                    </div>
+                    <h3>Homogeneous Equations</h3>
+                    <p>A first-order DE is homogeneous if it can be written in the form \(\frac{dy}{dx} = F(\frac{y}{x})\). These are solved using the substitution \(y = vx\), which transforms the equation into a separable one in terms of \(v\) and \(x\).</p>
+                </section>
+
+                <section id="applications">
+                    <h2>10.4 Real-Life Applications</h2>
+                    <p>Differential equations are used to model dynamic real-world phenomena.</p>
+                    <div class="card">
+                        <h4>Common Models</h4>
+                        <ul>
+                            <li><strong>Population Growth:</strong> The rate of population growth is often proportional to the current population size, leading to the equation \(\frac{dP}{dt} = kP\).</li>
+                            <li><strong>Newton's Law of Cooling:</strong> The rate at which an object cools is proportional to the difference between its temperature and the ambient temperature.</li>
+                            <li><strong>Electrical Circuits:</strong> DEs model the flow of current in circuits containing resistors, capacitors, and inductors.</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section id="orthogonal">
+                    <h2>10.5 Orthogonal Trajectories</h2>
+                    <p>An orthogonal trajectory is a curve that intersects every curve in a given family of curves at a right angle (90°).</p>
+                    <div class="card">
+                        <h4>Finding Orthogonal Trajectories</h4>
+                        <ol>
+                            <li>Find the differential equation for the given family of curves by eliminating the arbitrary constant. Let the slope be \(\frac{dy}{dx} = f(x, y)\).</li>
+                            <li>The slope of the orthogonal trajectories will be the negative reciprocal: \(\frac{dy}{dx} = -\frac{1}{f(x, y)}\).</li>
+                            <li>Solve this new differential equation to find the family of orthogonal trajectories.</li>
+                        </ol>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

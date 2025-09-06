@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 15: Homeostasis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+            function applyTheme(isDarkMode) { body.classList.toggle('dark-mode', isDarkMode); }
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const initialThemeDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+            themeToggleCheckbox.checked = initialThemeDark;
+            applyTheme(initialThemeDark);
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 15: Homeostasis</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Introduction to Homeostasis</a></li>
+                <li><a href="#osmoregulation">Osmoregulation</a></li>
+                <li><a href="#excretion">Excretion & Urinary System</a></li>
+                <li><a href="#thermoregulation">Thermoregulation</a></li>
+                <li><a href="#disorders">Disorders of Urinary Tract</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>1. Introduction to Homeostasis</h2>
+                <p>Homeostasis is the process by which biological systems maintain a stable internal environment despite changes in external conditions. It is essential for the survival and proper functioning of all living organisms.</p>
+                <div class="card">
+                    <h4>Feedback Mechanisms</h4>
+                    <p>Homeostasis is primarily achieved through <b>feedback systems</b>, which monitor and adjust physiological values.</p>
+                    <ul>
+                        <li><b>Negative Feedback:</b> The most common mechanism. The system responds to a change by bringing the variable back towards its set point (e.g., body temperature regulation).</li>
+                        <li><b>Positive Feedback:</b> The system responds to a change by amplifying it, pushing the variable further from the set point. It is less common and usually part of a larger process that has a defined end point (e.g., blood clotting, childbirth).</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="osmoregulation">
+                <h2>2. Osmoregulation</h2>
+                <p>Osmoregulation is the control of water balance and the concentration of solutes in body fluids. Organisms must manage the movement of water between their internal and external environments.</p>
+                <h3>Challenges in Different Environments</h3>
+                <ul>
+                    <li><b>Freshwater Animals:</b> Live in a hypotonic environment. They constantly gain water by osmosis and lose salts by diffusion. They excrete large amounts of dilute urine and actively transport salts into their bodies.</li>
+                    <li><b>Marine Animals:</b> Live in a hypertonic environment. They constantly lose water by osmosis. They drink large amounts of seawater and excrete excess salts through their gills and produce concentrated urine.</li>
+                    <li><b>Terrestrial Animals:</b> Face the constant threat of dehydration. They have adaptations like waterproof skin, efficient kidneys, and metabolic water production to conserve water.</li>
+                </ul>
+            </section>
+            
+            <section id="excretion">
+                <h2>3. Excretion & the Human Urinary System</h2>
+                <p>Excretion is the process of removing metabolic wastes from the body. The primary metabolic waste is nitrogenous waste, produced from the breakdown of proteins and nucleic acids.</p>
+                <h3>Types of Nitrogenous Wastes</h3>
+                <ul>
+                    <li><b>Ammonia:</b> Highly toxic, requires a lot of water to excrete. Common in aquatic animals.</li>
+                    <li><b>Urea:</b> Less toxic than ammonia, requires less water. Excreted by mammals and amphibians.</li>
+                    <li><b>Uric Acid:</b> Least toxic, requires very little water. Excreted as a paste by birds, reptiles, and insects.</li>
+                </ul>
+                <h3>The Human Urinary System</h3>
+                <p>The urinary system filters waste from the blood and regulates water and solute levels. Its main components are the kidneys, ureters, bladder, and urethra.</p>
+                <div class="card">
+                    <h4>The Nephron: Functional Unit of the Kidney</h4>
+                    <p>Each kidney contains about a million nephrons. Urine formation involves three key processes:</p>
+                    <ol>
+                        <li><b>Glomerular Filtration:</b> Blood pressure forces water and small solutes from the blood into the Bowman's capsule, forming a filtrate.</li>
+                        <li><b>Tubular Reabsorption:</b> Essential substances (glucose, salts, water) are reabsorbed from the filtrate back into the blood.</li>
+                        <li><b>Tubular Secretion:</b> Additional wastes and excess ions are actively transported from the blood into the filtrate.</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="thermoregulation">
+                <h2>4. Thermoregulation</h2>
+                <p>Thermoregulation is the process by which animals maintain an internal temperature within a tolerable range. It is crucial for optimal enzyme function.</p>
+                <h3>Classification of Animals</h3>
+                <ul>
+                    <li><b>Ectotherms (Poikilotherms):</b> "Cold-blooded." Their body temperature is primarily determined by the external environment. They regulate temperature using behavioral adaptations (e.g., basking in the sun). Examples: reptiles, fish.</li>
+                    <li><b>Endotherms (Homeotherms):</b> "Warm-blooded." They generate most of their heat internally through metabolism. They maintain a constant body temperature regardless of the environment. Examples: mammals, birds.</li>
+                </ul>
+                 <div class="card">
+                    <h4>Human Thermoregulation</h4>
+                    <p>The <b>hypothalamus</b> in the brain acts as the body's thermostat. When body temperature rises, it triggers sweating and vasodilation (widening of blood vessels in the skin) to release heat. When temperature drops, it triggers shivering and vasoconstriction (narrowing of blood vessels) to conserve heat.</p>
+                </div>
+            </section>
+
+             <section id="disorders">
+                <h2>5. Disorders of the Urinary Tract</h2>
+                <p>Disorders of the urinary system can impair the body's ability to filter blood and maintain homeostasis.</p>
+                <div class="card">
+                    <h4>Common Disorders</h4>
+                    <ul>
+                        <li><b>Kidney Stones:</b> Formed when minerals and salts in the urine crystallize. They can block the urinary tract and cause severe pain. Treatment includes lithotripsy (shock waves to break up stones).</li>
+                        <li><b>Kidney Failure:</b> A condition where the kidneys lose their ability to filter waste from the blood. It can be acute or chronic. Treatment options include dialysis and kidney transplant.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Homeostasis:</b> Maintaining a stable internal environment using feedback mechanisms (mostly negative feedback).</li>
+                        <li><b>Osmoregulation:</b> The control of water and solute balance, with different strategies for freshwater, marine, and terrestrial animals.</li>
+                        <li><b>Excretion:</b> The removal of metabolic wastes, primarily nitrogenous wastes (ammonia, urea, uric acid). The human urinary system uses the nephron to filter blood and form urine.</li>
+                        <li><b>Thermoregulation:</b> The maintenance of a stable body temperature. Ectotherms rely on external heat, while endotherms generate their own.</li>
+                        <li><b>Disorders:</b> Conditions like kidney stones and kidney failure disrupt the excretory system's function and require medical intervention like dialysis or transplant.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

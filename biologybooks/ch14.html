@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 14: Gaseous Exchange</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to the shared stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+        // MathJax configuration (for rendering LaTeX)
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body style="--accent-color: #f44336;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 14: Gaseous Exchange</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Respiration & Respiratory Surfaces</a></li>
+                <li><a href="#human-respiratory">Human Respiratory System</a></li>
+                <li><a href="#ventilation">Ventilation (Breathing)</a></li>
+                <li><a href="#gas-transport">Transport of Gases</a></li>
+                <li><a href="#disorders">Respiratory Disorders</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>14.1 Respiration and Respiratory Surfaces</h2>
+                <p><strong>Cellular respiration</strong> is the metabolic process where cells gain energy (ATP) by oxidizing food molecules. Aerobic respiration requires a continuous supply of oxygen and produces carbon dioxide as a waste product. <strong>Gaseous exchange</strong> is the process of moving these gases between the organism and its environment.</p>
+                <div class="card">
+                    <h4>Characteristics of a Respiratory Surface</h4>
+                    <p>For efficient gas exchange, a respiratory surface (like the alveoli in our lungs) must have these characteristics:</p>
+                    <ul>
+                        <li><b>Large Surface Area:</b> To maximize the rate of diffusion.</li>
+                        <li><b>Thin:</b> To reduce the diffusion distance.</li>
+                        <li><b>Moist:</b> Gases must dissolve in a fluid before they can diffuse across the membrane.</li>
+                        <li><b>Permeable:</b> Must allow gases to pass through.</li>
+                        <li><b>Significant Blood Supply:</b> To maintain a steep concentration gradient by quickly transporting gases away from the surface.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="human-respiratory">
+                <h2>14.2 The Human Respiratory System</h2>
+                <p>The human respiratory system consists of a complex set of organs that carry air from the environment to the lungs for gaseous exchange.</p>
+                <h3>The Air Passageway</h3>
+                <ol>
+                    <li><b>Nose/Nasal Cavity:</b> Air is warmed, moistened, and filtered by hairs and mucus.</li>
+                    <li><b>Pharynx (Throat):</b> A common passageway for both air and food.</li>
+                    <li><b>Larynx (Voice Box):</b> Contains the vocal cords. The epiglottis prevents food from entering the airway.</li>
+                    <li><b>Trachea (Windpipe):</b> A tube reinforced with C-shaped cartilage rings to keep it open.</li>
+                    <li><b>Bronchi and Bronchioles:</b> The trachea branches into two bronchi (one for each lung), which further branch into smaller tubes called bronchioles.</li>
+                    <li><b>Alveoli:</b> The bronchioles terminate in tiny, clustered air sacs called <strong>alveoli</strong>, which are the primary sites of gas exchange.</li>
+                </ol>
+                <h3>The Lungs</h3>
+                <p>The lungs are paired, spongy organs located in the thoracic cavity, protected by the rib cage. Each lung is composed of lobes (three in the right, two in the left).</p>
+            </section>
+
+            <section id="ventilation">
+                <h2>14.3 Ventilation (Breathing)</h2>
+                <p><strong>Ventilation</strong> is the mechanical process of moving air into and out of the lungs. It relies on pressure differences between the atmosphere and the lungs.</p>
+                <table>
+                    <thead><tr><th>Process</th><th>Description</th><th>Mechanism</th></tr></thead>
+                    <tbody>
+                        <tr><td><b>Inspiration (Inhalation)</b></td><td>Active process of breathing in.</td><td>The diaphragm contracts and flattens, and the external intercostal muscles contract, lifting the rib cage up and out. This increases the volume of the thoracic cavity, decreases pressure in the lungs, and air rushes in.</td></tr>
+                        <tr><td><b>Expiration (Exhalation)</b></td><td>Passive process of breathing out.</td><td>The diaphragm and external intercostal muscles relax. This decreases the volume of the thoracic cavity, increases pressure in the lungs, and air is forced out.</td></tr>
+                    </tbody>
+                </table>
+                <h3>Control of Breathing</h3>
+                <p>Breathing rate is controlled involuntarily by the respiratory center in the brainstem (medulla oblongata), which monitors the concentration of CO₂ and H⁺ in the blood.</p>
+            </section>
+
+            <section id="gas-transport">
+                <h2>14.4 Transport of Gases in the Blood</h2>
+                <h3>14.4.1 Transport of Oxygen</h3>
+                <p>Most oxygen (about 97%) is transported in the blood bound to <strong>hemoglobin</strong>, a protein found in red blood cells. This combination is called <strong>oxyhemoglobin</strong>. The binding of oxygen to hemoglobin is a reversible process.</p>
+                <h3>14.4.2 Transport of Carbon Dioxide</h3>
+                <p>Carbon dioxide is transported in the blood in three ways:</p>
+                <ol>
+                    <li><b>As Bicarbonate Ions (approx. 70%):</b> CO₂ reacts with water in red blood cells to form carbonic acid, which then dissociates into H⁺ and bicarbonate ions (HCO₃⁻). This is the most important transport mechanism.</li>
+                    <li><b>Bound to Hemoglobin (approx. 20%):</b> CO₂ binds to a different site on hemoglobin than oxygen, forming carbaminohemoglobin.</li>
+                    <li><b>Dissolved in Plasma (approx. 10%):</b> A small amount of CO₂ dissolves directly in the blood plasma.</li>
+                </ol>
+            </section>
+            
+            <section id="disorders">
+                <h2>14.5 Respiratory Disorders</h2>
+                <ul>
+                    <li><b>Sinusitis:</b> Inflammation of the sinuses.</li>
+                    <li><b>Pneumonia:</b> An infection that causes the alveoli to fill with fluid or pus.</li>
+                    <li><b>Pulmonary Tuberculosis (TB):</b> A bacterial infection of the lungs caused by <i>Mycobacterium tuberculosis</i>.</li>
+                    <li><b>Emphysema:</b> A disease, often caused by smoking, where the walls of the alveoli break down, reducing the surface area for gas exchange.</li>
+                    <li><b>Lung Cancer:</b> Uncontrolled cell growth in the lung tissues, strongly linked to smoking.</li>
+                </ul>
+            </section>
+            
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Gaseous Exchange</b> is the process of supplying O₂ for cellular respiration and removing waste CO₂, which occurs across a specialized <b>respiratory surface</b>.</li>
+                        <li>The <b>Human Respiratory System</b> consists of an air passageway (nose, pharynx, larynx, trachea, bronchi, bronchioles) leading to the <b>alveoli</b> within the lungs.</li>
+                        <li><b>Breathing (Ventilation)</b> is the mechanical movement of air, driven by the contraction and relaxation of the diaphragm and intercostal muscles.</li>
+                        <li><b>Gas Transport:</b> Oxygen is primarily transported by <b>hemoglobin</b> in red blood cells. Carbon dioxide is mostly transported as <b>bicarbonate ions</b> in the plasma.</li>
+                        <li><b>Respiratory Disorders</b> can affect the airways and lungs, impairing the body's ability to exchange gases effectively.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

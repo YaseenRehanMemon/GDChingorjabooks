@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5: Acellular Life</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to the shared stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+        // MathJax configuration (for rendering LaTeX)
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body style="--accent-color: #607D8B;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 5: Acellular Life</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Introduction to Viruses</a></li>
+                <li><a href="#structure">Virus Structure & Classification</a></li>
+                <li><a href="#bacteriophage">Bacteriophages</a></li>
+                <li><a href="#hiv">HIV</a></li>
+                <li><a href="#prions-viroids">Prions & Viroids</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>5.1 Introduction to Viruses</h2>
+                <p><strong>Acellular life</strong> refers to infectious agents that lack a true cellular structure. The most prominent of these are <strong>viruses</strong>. Viruses blur the line between living and non-living; they possess genetic material and can evolve, but they lack the cellular machinery for metabolism and reproduction, making them obligate intracellular parasites.</p>
+                <div class="card">
+                    <h4>Living vs. Non-Living Characters of Viruses</h4>
+                    <ul>
+                        <li><b>Living Characters:</b> They possess their own genetic material (DNA or RNA), can undergo mutation, and replicate (but only inside a host cell).</li>
+                        <li><b>Non-Living Characters:</b> They lack cellular organelles, cannot perform metabolism on their own, and can be crystallized and stored like chemicals.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="structure">
+                <h2>5.2 Virus Structure and Classification</h2>
+                <p>Viruses are incredibly diverse in their structure, but all consist of a core of genetic material surrounded by a protective protein coat.</p>
+                <h3>5.2.1 General Structure</h3>
+                <ul>
+                    <li><b>Genome:</b> The core of the virus, containing its genetic material, which can be DNA or RNA, and can be single-stranded (ss) or double-stranded (ds).</li>
+                    <li><b>Capsid:</b> A protein shell that encloses the genome. It is made of protein subunits called <strong>capsomeres</strong>.</li>
+                    <li><b>Envelope (optional):</b> Some viruses have an outer lipid membrane derived from the host cell, which may contain viral glycoproteins.</li>
+                </ul>
+                <h3>5.2.2 Classification of Viruses</h3>
+                <p>Viruses can be classified based on several criteria:</p>
+                <ul>
+                    <li><b>Host Type:</b> Phytophages (plant viruses), Zoophages (animal viruses), Bacteriophages (bacterial viruses).</li>
+                    <li><b>Genome Type (Baltimore Classification):</b> A seven-group system based on the type of nucleic acid (DNA/RNA, ss/ds) and its replication strategy.</li>
+                </ul>
+            </section>
+            
+            <section id="bacteriophage">
+                <h2>5.3 Bacteriophages</h2>
+                <p>A <strong>bacteriophage</strong> (or "phage") is a virus that infects and replicates within bacteria. They typically have a complex structure consisting of a head, tail, and base plate.</p>
+                <h3>Replication Cycles of Bacteriophages</h3>
+                <div class="card">
+                    <h4>Lytic Cycle</h4>
+                    <p>A replication cycle that results in the death of the host cell. The phage injects its DNA, hijacks the cell's machinery to produce new phage components, assembles new phages, and then lyses (bursts) the cell to release the new viruses.</p>
+                </div>
+                <div class="card">
+                    <h4>Lysogenic Cycle</h4>
+                    <p>A replication cycle where the phage's DNA integrates into the host bacterium's chromosome, becoming a <strong>prophage</strong>. The host cell is not immediately killed and can replicate normally, copying the prophage along with its own DNA. An environmental trigger can cause the prophage to exit the bacterial chromosome and enter the lytic cycle.</p>
+                </div>
+            </section>
+
+            <section id="hiv">
+                <h2>5.4 Human Immunodeficiency Virus (HIV)</h2>
+                <p>HIV is a retrovirus that causes Acquired Immunodeficiency Syndrome (AIDS). It is an enveloped RNA virus that specifically targets helper T cells, a crucial component of the human immune system.</p>
+                <h3>Life Cycle of HIV</h3>
+                <p>HIV uses an enzyme called <strong>reverse transcriptase</strong> to convert its RNA genome into DNA. This viral DNA is then integrated into the host cell's genome, where it can remain dormant or be used to produce new viruses that bud from the cell, eventually destroying the immune system's ability to fight off infections.</p>
+            </section>
+            
+            <section id="prions-viroids">
+                <h2>5.5 Prions and Viroids</h2>
+                <p>Prions and viroids are even simpler infectious agents than viruses.</p>
+                <div class="card">
+                    <h4>Prions</h4>
+                    <p><strong>Prions</strong> are infectious proteins. They are misfolded versions of normal cellular proteins that can induce other normal proteins to misfold, leading to the accumulation of protein aggregates that cause neurodegenerative diseases.</p>
+                    <p><b>Examples:</b> Mad Cow Disease, Creutzfeldt-Jakob disease.</p>
+                </div>
+                <div class="card">
+                    <h4>Viroids</h4>
+                    <p><strong>Viroids</strong> are small, circular, single-stranded RNA molecules that infect plants. They do not code for any proteins and disrupt the host plant's growth and development by interfering with its regulatory systems.</p>
+                </div>
+            </section>
+            
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Acellular Life:</b> Infectious agents lacking a cellular structure, including viruses, viroids, and prions.</li>
+                        <li><b>Viruses:</b> Obligate intracellular parasites with a nucleic acid genome (DNA or RNA) enclosed in a protein capsid. They can be classified by their host, genome, or structure.</li>
+                        <li><b>Bacteriophages:</b> Viruses that infect bacteria and replicate via a <b>lytic cycle</b> (killing the host) or a <b>lysogenic cycle</b> (integrating into the host genome).</li>
+                        <li><b>HIV:</b> A retrovirus that uses reverse transcriptase to replicate and targets helper T cells, leading to AIDS.</li>
+                        <li><b>Prions:</b> Infectious, misfolded proteins that cause neurodegenerative diseases.</li>
+                        <li><b>Viroids:</b> Small, circular RNA molecules that infect plants.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

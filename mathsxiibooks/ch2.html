@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2: Functions and Limits</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        /* General Body Styles */
+        :root {
+            --accent-color: #007BFF;
+            --background-color-light: #f4f7f9;
+            --text-color-light: #333;
+            --card-bg-light: #ffffff;
+            --header-bg-light: #ffffff;
+            --sidebar-bg-light: #e9eef2;
+            --border-color-light: #e0e0e0;
+
+            --background-color-dark: #121212;
+            --text-color-dark: #e0e0e0;
+            --card-bg-dark: #1e1e1e;
+            --header-bg-dark: #1e1e1e;
+            --sidebar-bg-dark: #242424;
+            --border-color-dark: #333;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: var(--background-color-light);
+            color: var(--text-color-light);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Light & Dark Mode Logic */
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-checkbox:checked + .page-container body {
+            --background-color-light: var(--background-color-dark);
+            --text-color-light: var(--text-color-dark);
+            --card-bg-light: var(--card-bg-dark);
+            --header-bg-light: var(--header-bg-dark);
+            --sidebar-bg-light: var(--sidebar-bg-dark);
+            --border-color-light: var(--border-color-dark);
+        }
+        
+        .theme-toggle-label {
+            cursor: pointer;
+            padding: 8px 12px;
+            border-radius: 20px;
+            background-color: var(--sidebar-bg-light);
+            transition: background-color 0.3s;
+        }
+
+        .theme-toggle-label .sun { display: inline; }
+        .theme-toggle-label .moon { display: none; }
+
+        .theme-toggle-checkbox:checked + .page-container .theme-toggle-label .sun { display: none; }
+        .theme-toggle-checkbox:checked + .page-container .theme-toggle-label .moon { display: inline; }
+
+
+        .page-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: var(--header-bg-light);
+            padding: 1rem 2rem;
+            border-bottom: 1px solid var(--border-color-light);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            color: var(--accent-color);
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: var(--sidebar-bg-light);
+            padding: 1.5rem;
+            height: 100vh;
+            position: fixed;
+            top: 65px; /* Height of header */
+            left: 0;
+            overflow-y: auto;
+            border-right: 1px solid var(--border-color-light);
+        }
+
+        .sidebar h2 {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            margin-top: 0;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li a {
+            display: block;
+            color: var(--text-color-light);
+            text-decoration: none;
+            padding: 0.75rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        .content {
+            flex: 1;
+            padding: 2rem;
+            margin-left: 280px; /* Width of sidebar + padding */
+        }
+        
+        section {
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background-color: var(--card-bg-light);
+            border: 1px solid var(--border-color-light);
+            border-left: 5px solid var(--accent-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .card.formula {
+            background-color: #e8f5e9; /* Light green background */
+            border-color: #4CAF50;
+        }
+        
+        body.dark-mode .card.formula {
+            background-color: #2e3c30;
+            border-color: #66bb6a;
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .sidebar {
+                display: none;
+            }
+            .content {
+                margin-left: 0;
+                padding: 1.5rem;
+            }
+            header {
+                flex-direction: column;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 2: Functions and Limits</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+        
+        <div class="container">
+            <nav class="sidebar">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="#intro">Introduction to Functions</a></li>
+                    <li><a href="#composition">Composition of Functions</a></li>
+                    <li><a href="#types">Types of Functions</a></li>
+                    <li><a href="#limits-intro">Introduction to Limits</a></li>
+                    <li><a href="#limits-eval">Evaluating Limits</a></li>
+                    <li><a href="#continuity">Continuity</a></li>
+                    <li><a href="#summary">Chapter Summary</a></li>
+                </ul>
+            </nav>
+
+            <main class="content">
+                <section id="intro">
+                    <h2>1.1 Introduction to Functions</h2>
+                    <p>A function is a rule that assigns each input value to exactly one output value. We can think of it as a machine that takes an input and produces a unique output.</p>
+                    <div class="card">
+                        <h4>Domain and Range</h4>
+                        <ul>
+                            <li><strong>Domain:</strong> The set of all possible input values (often the x-values).</li>
+                            <li><strong>Range:</strong> The set of all possible output values (often the y-values).</li>
+                        </ul>
+                        <p>We can identify the domain and range by looking at a function's graph. The domain is the horizontal spread of the graph, and the range is the vertical spread.</p>
+                    </div>
+                    <h3>Modulus Function</h3>
+                    <p>The modulus function, written as \(y = |x|\), gives the absolute value of a number. It essentially makes any negative input positive.</p>
+                     <div class="card formula">
+                        \[ |x| = \begin{cases} 
+                              x & \text{if } x \ge 0 \\
+                              -x & \text{if } x < 0 
+                           \end{cases}
+                        \]
+                    </div>
+                     <ul>
+                        <li><strong>Domain:</strong> All real numbers (\(\mathbb{R}\)).</li>
+                        <li><strong>Range:</strong> All non-negative real numbers (\(y \ge 0\)).</li>
+                    </ul>
+                </section>
+
+                <section id="composition">
+                    <h2>1.2 Composition of Functions</h2>
+                    <p>Composition is an operation where the output of one function becomes the input for another function. It's like linking two function machines together.</p>
+                    <div class="card">
+                        <h4>Notation and Definition</h4>
+                        <p>The composition of function \(g\) with function \(f\) is denoted as \( (g \circ f)(x) \), which is read as "g of f of x".</p>
+                        <p>It is defined as: \( (g \circ f)(x) = g(f(x)) \).</p>
+                        <p><strong>Important:</strong> The order matters! \( (g \circ f)(x) \) is generally not the same as \( (f \circ g)(x) \).</p>
+                    </div>
+                     <h3>Inverse of a Composition</h3>
+                     <p>If two functions \(f\) and \(g\) are bijective (one-to-one and onto), the inverse of their composition has a special property:</p>
+                     <div class="card formula">
+                        \[ (g \circ f)^{-1}(x) = (f^{-1} \circ g^{-1})(x) \]
+                        <p>This means the inverse of the composition is the composition of the inverses in the reverse order.</p>
+                     </div>
+                </section>
+
+                 <section id="types">
+                    <h2>1.3 Types of Functions</h2>
+                    <p>Functions can be classified into different categories based on their properties and structure.</p>
+                     <div class="card">
+                         <h4>Key Function Types</h4>
+                         <ul>
+                            <li><strong>Algebraic:</strong> Functions built from polynomials using algebraic operations (addition, multiplication, roots). Example: \(f(x) = \sqrt{x^2+1}\).</li>
+                            <li><strong>Trigonometric:</strong> Functions like \(\sin(x)\), \(\cos(x)\), \(\tan(x)\) that relate angles of a triangle to the lengths of its sides.</li>
+                             <li><strong>Exponential:</strong> Functions where the variable is in the exponent. Example: \(f(x) = a^x\), where \(a\) is a constant base.</li>
+                             <li><strong>Logarithmic:</strong> The inverse of exponential functions. Example: \(f(x) = \log_a(x)\).</li>
+                             <li><strong>Explicit vs. Implicit:</strong>
+                                <ul>
+                                    <li>An <strong>explicit</strong> function is written as \(y = f(x)\), where \(y\) is isolated. Example: \(y = 3x^2 - 5\).</li>
+                                     <li>An <strong>implicit</strong> function has \(x\) and \(y\) mixed together. Example: \(x^2 + y^2 = 25\).</li>
+                                </ul>
+                             </li>
+                         </ul>
+                     </div>
+                </section>
+                
+                <section id="limits-intro">
+                    <h2>1.4 Introduction to Limits</h2>
+                    <p>The concept of a limit is fundamental to calculus. It describes the value that a function "approaches" as the input approaches some value.</p>
+                    <div class="card">
+                        <h4>The Idea of a Limit</h4>
+                        <p>We write \(\lim_{x \to a} f(x) = L\), which means: "As \(x\) gets arbitrarily close to \(a\), the value of \(f(x)\) gets arbitrarily close to \(L\)".</p>
+                         <p>The function doesn't actually have to equal \(L\) at \(x=a\). The limit is only concerned with the behavior *near* the point.</p>
+                    </div>
+                     <h3>Left-Hand and Right-Hand Limits</h3>
+                     <p>A limit exists only if the function approaches the same value from both sides.</p>
+                     <ul>
+                         <li><strong>Left-Hand Limit (\(x \to a^-\)):</strong> The value the function approaches as \(x\) comes from the left side (values less than \(a\)).</li>
+                         <li><strong>Right-Hand Limit (\(x \to a^+\)):</strong> The value the function approaches as \(x\) comes from the right side (values greater than \(a\)).</li>
+                     </ul>
+                      <div class="card formula">
+                        The limit \(\lim_{x \to a} f(x)\) exists if and only if \(\lim_{x \to a^-} f(x) = \lim_{x \to a^+} f(x)\).
+                      </div>
+                </section>
+
+                 <section id="limits-eval">
+                    <h2>1.5 Evaluating Limits</h2>
+                    <p>We can evaluate limits using several theorems and techniques.</p>
+                     <div class="card">
+                         <h4>Limit Theorems</h4>
+                         <p>If \(\lim_{x \to a} f(x) = L\) and \(\lim_{x \to a} g(x) = M\), then:</p>
+                         <ul>
+                            <li><b>Sum/Difference:</b> \(\lim_{x \to a} [f(x) \pm g(x)] = L \pm M\)</li>
+                            <li><b>Product:</b> \(\lim_{x \to a} [f(x) \cdot g(x)] = L \cdot M\)</li>
+                             <li><b>Quotient:</b> \(\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{L}{M}\) (provided \(M \neq 0\))</li>
+                         </ul>
+                     </div>
+                     <h3>Important Trigonometric Limit</h3>
+                     <p>A crucial limit used frequently in calculus is:</p>
+                      <div class="card formula">
+                        \[ \lim_{x \to 0} \frac{\sin x}{x} = 1 \]
+                          <p>(Note: \(x\) must be in radians).</p>
+                      </div>
+                </section>
+
+                 <section id="continuity">
+                    <h2>1.6 Continuity</h2>
+                    <p>A function is continuous if you can draw its graph without lifting your pen from the paper. Formally, it means there are no breaks, jumps, or holes in the graph.</p>
+                     <div class="card">
+                         <h4>Conditions for Continuity at a Point</h4>
+                         <p>A function \(f(x)\) is continuous at a point \(x=a\) if all three of the following conditions are met:</p>
+                         <ol>
+                             <li>\(f(a)\) is defined (the point exists).</li>
+                             <li>\(\lim_{x \to a} f(x)\) exists (the limit exists).</li>
+                             <li>\(\lim_{x \to a} f(x) = f(a)\) (the limit equals the function value).</li>
+                         </ol>
+                     </div>
+                </section>
+
+                <section id="summary">
+                    <h2>Chapter Summary</h2>
+                    <div class="card">
+                        <ul>
+                            <li><strong>Functions:</strong> A rule that maps an input (domain) to a unique output (range).</li>
+                            <li><strong>Composition:</strong> Creating a new function by applying one function to the result of another, written as \(g(f(x))\).</li>
+                            <li><strong>Limits:</strong> Describe the value a function approaches as its input approaches a certain point. A limit exists only if the left-hand and right-hand limits are equal.</li>
+                            <li><strong>Continuity:</strong> A function is continuous at a point if the limit at that point exists, the function value is defined, and both are equal.</li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

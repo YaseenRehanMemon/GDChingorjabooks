@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 21: Development and Aging</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --accent-color: #9E9E9E; /* Grey */
+            --bg-light: #f4f7f9; --text-light: #333; --card-bg-light: #ffffff; --border-light: #e0e0e0; --header-bg-light: #ffffff; --sidebar-bg-light: #fdfdfd;
+            --bg-dark: #121212; --text-dark: #e0e0e0; --card-bg-dark: #1e1e1e; --border-dark: #333; --header-bg-dark: #1e1e1e; --sidebar-bg-dark: #232323;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { font-family: 'Poppins', sans-serif; line-height: 1.6; scroll-behavior: smooth; background-color: var(--bg-light); color: var(--text-light); transition: background-color 0.3s, color 0.3s; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: var(--border-light); color: var(--text-light); transition: background-color 0.3s; font-weight: 600; }
+        .theme-toggle-label .moon { display: none; } .theme-toggle-label .sun { display: inline; }
+        body.dark-mode { --bg-light: var(--bg-dark); --text-light: var(--text-dark); --card-bg-light: var(--card-bg-dark); --border-light: var(--border-dark); --header-bg-light: var(--header-bg-dark); --sidebar-bg-light: var(--sidebar-bg-dark); }
+        .dark-mode .theme-toggle-label .moon { display: inline; } .dark-mode .theme-toggle-label .sun { display: none; } .dark-mode .sidebar a { color: #c5d7e8; } .dark-mode .sidebar a:hover { color: #ffffff; }
+        .page-container { display: grid; grid-template-columns: 260px 1fr; grid-template-rows: auto 1fr; grid-template-areas: "header header" "sidebar content"; min-height: 100vh; }
+        header { grid-area: header; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: var(--header-bg-light); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        header h1 { color: var(--accent-color); font-size: 1.8rem; }
+        .sidebar { grid-area: sidebar; background-color: var(--sidebar-bg-light); padding: 2rem; border-right: 1px solid var(--border-light); position: fixed; top: 75px; left: 0; width: 260px; height: calc(100vh - 75px); overflow-y: auto; }
+        .sidebar h2 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        .sidebar ul { list-style: none; } .sidebar li { margin-bottom: 0.8rem; }
+        .sidebar a { text-decoration: none; color: #555; font-weight: 500; transition: color 0.2s; } .sidebar a:hover { color: var(--accent-color); }
+        .content { grid-area: content; padding: 2rem 3rem; }
+        section { margin-bottom: 3rem; padding-top: 80px; margin-top: -75px; }
+        h2 { font-size: 2rem; color: var(--accent-color); margin-bottom: 1.5rem; border-bottom: 2px solid var(--border-light); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; }
+        p, ul, ol { margin-bottom: 1rem; } ul, ol { padding-left: 20px; }
+        b { color: var(--accent-color); }
+        .card { background-color: var(--card-bg-light); border: 1px solid var(--border-light); border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        @media (max-width: 900px) { .page-container { grid-template-columns: 1fr; grid-template-areas: "header" "content"; } .sidebar { display: none; } header h1 { font-size: 1.4rem; } .content { padding: 1.5rem; } }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+            function applyTheme(isDarkMode) { body.classList.toggle('dark-mode', isDarkMode); }
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const initialThemeDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+            themeToggleCheckbox.checked = initialThemeDark;
+            applyTheme(initialThemeDark);
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+    </script>
+</head>
+<body style="--accent-color: #9E9E9E;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 21: Development & Aging</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#embryonic">Embryonic Development</a></li>
+                <li><a href="#control">Control of Development</a></li>
+                <li><a href="#pregnancy">Pregnancy</a></li>
+                <li><a href="#disorders">Developmental Disorders</a></li>
+                <li><a href="#aging">Aging</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="embryonic">
+                <h2>1. Human Embryonic Development</h2>
+                <p>Development is the process by which a single-celled zygote becomes a complex, multicellular organism.</p>
+                <div class="card">
+                    <h4>Key Stages of Early Development</h4>
+                    <ol>
+                        <li><b>Fertilization:</b> The fusion of a sperm and egg to form a diploid <b>zygote</b>.</li>
+                        <li><b>Cleavage:</b> A series of rapid mitotic divisions of the zygote, forming a solid ball of cells called a <b>morula</b>.</li>
+                        <li><b>Blastulation:</b> The morula develops into a <b>blastocyst</b>, a hollow ball of cells with an inner cell mass that will become the embryo.</li>
+                        <li><b>Gastrulation:</b> A dramatic reorganization of cells where the blastocyst folds inward to form the three primary <b>germ layers</b>.</li>
+                    </ul>
+                </div>
+                <h3>The Three Germ Layers</h3>
+                <p>These layers are the foundation for all tissues and organs in the body.</p>
+                <ul>
+                    <li><b>Ectoderm (outer layer):</b> Forms the nervous system, skin, and hair.</li>
+                    <li><b>Mesoderm (middle layer):</b> Forms the skeleton, muscles, circulatory system, and reproductive organs.</li>
+                    <li><b>Endoderm (inner layer):</b> Forms the lining of the digestive and respiratory tracts, and glands like the liver and pancreas.</li>
+                </ul>
+            </section>
+
+            <section id="control">
+                <h2>2. Control of Development</h2>
+                <p>Development is a precisely controlled process governed by genetic information and environmental cues.</p>
+                 <div class="card">
+                    <h4>Key Control Mechanisms</h4>
+                    <ul>
+                        <li><b>Role of the Nucleus:</b> The nucleus contains the genetic blueprint (DNA) that directs development. Hammerling's experiments with <i>Acetabularia</i> algae showed that the nucleus determines the organism's physical traits.</li>
+                        <li><b>Role of the Cytoplasm:</b> The cytoplasm of the egg contains regulatory molecules that are unevenly distributed. This creates differences in daughter cells after cleavage, influencing their developmental fate.</li>
+                        <li><b>Embryonic Induction:</b> A process where one group of embryonic cells (an <b>organizer</b>) influences the development of another. The organizer cells release chemical signals that direct neighboring cells to follow a specific developmental path.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="pregnancy">
+                <h2>3. Pregnancy and Human Development</h2>
+                <p>Human pregnancy, or gestation, is the period of fetal development within the uterus, lasting approximately 40 weeks (about 9 months). It is divided into three trimesters.</p>
+                 <div class="card">
+                    <h4>The Three Trimesters</h4>
+                    <ul>
+                        <li><b>First Trimester (Weeks 1-12):</b> The period of most radical change. Gastrulation occurs, and all major organs and body systems begin to form (organogenesis).</li>
+                        <li><b>Second Trimester (Weeks 13-27):</b> The fetus grows rapidly and becomes more active. Details like hair and fingernails form.</li>
+                        <li><b>Third Trimester (Weeks 28-Birth):</b> The fetus continues to grow in size and mass, accumulating fat. The respiratory and circulatory systems mature in preparation for birth.</li>
+                    </ul>
+                </div>
+                 <h3>Placenta and Umbilical Cord</h3>
+                 <p>The <b>placenta</b> is a vital organ that forms from embryonic and maternal tissues. It facilitates the exchange of nutrients, gases, and waste products between the mother and the fetus. The <b>umbilical cord</b> connects the fetus to the placenta.</p>
+            </section>
+
+            <section id="disorders">
+                <h2>4. Disorders During Embryonic Development</h2>
+                <p>Errors in development can be caused by genetic abnormalities or exposure to harmful environmental factors.</p>
+                <ul>
+                    <li><b>Genetic Abnormalities:</b> Spontaneous abortion (miscarriage) is often due to major chromosomal errors in the embryo.</li>
+                    <li><b>Maternal-Derived Abnormalities:</b> Maternal health issues (like diabetes) or infections (like Rubella) can cause birth defects.</li>
+                    <li><b>Neural Tube Defects:</b> Conditions like spina bifida occur when the neural tube fails to close completely during development.</li>
+                </ul>
+            </section>
+            
+            <section id="aging">
+                <h2>5. Aging</h2>
+                <p>Aging is the process of natural, progressive, and irreversible changes that occur in an organism over time, leading to a decline in physical and physiological function.</p>
+                <div class="card">
+                    <h4>Factors Contributing to Aging</h4>
+                    <ul>
+                        <li><b>Genetic Factors:</b> The shortening of <b>telomeres</b> (protective caps on chromosomes) with each cell division limits the number of times a cell can divide. Genes involved in DNA repair also play a crucial role.</li>
+                        <li><b>Extrinsic Factors:</b> Lifestyle choices (diet, exercise) and environmental exposures (pollution, UV radiation) can accelerate aging by causing cellular damage.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Embryonic Development:</b> Begins with fertilization and proceeds through cleavage, blastulation, and gastrulation, establishing the three <b>germ layers</b> (ectoderm, mesoderm, endoderm).</li>
+                        <li><b>Control of Development:</b> Directed by genetic information in the <b>nucleus</b> and regulatory molecules in the <b>cytoplasm</b>. <b>Embryonic induction</b> is a key process where one group of cells influences the fate of another.</li>
+                        <li><b>Pregnancy:</b> A ~40-week period divided into three trimesters, during which the fetus develops and matures, supported by the placenta.</li>
+                        <li><b>Developmental Disorders:</b> Can arise from genetic errors or harmful maternal exposures.</li>
+                        <li><b>Aging:</b> A complex biological process involving the gradual decline of bodily functions, influenced by genetic factors (like telomere shortening) and environmental damage.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

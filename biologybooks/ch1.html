@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1: Biological Molecules</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to the shared stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+        // MathJax configuration (for rendering LaTeX)
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body style="--accent-color: #4CAF50;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 1: Biological Molecules</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Importance of Water</a></li>
+                <li><a href="#carbohydrates">Carbohydrates</a></li>
+                <li><a href="#proteins">Proteins</a></li>
+                <li><a href="#lipids">Lipids</a></li>
+                <li><a href="#nucleic-acids">Nucleic Acids</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>1.1 Introduction to Biological Molecules</h2>
+                <p>All living organisms are composed of chemicals. The study of the chemical composition and reactions within living cells is called <strong>biochemistry</strong>. The large, complex organic molecules that form the structure and carry out the functions of life are called <strong>biomolecules</strong> or <strong>macromolecules</strong>.</p>
+                <div class="card">
+                    <h4>Monomers and Polymers</h4>
+                    <p>Most macromolecules are <strong>polymers</strong>, which are long chains made up of repeating smaller units called <strong>monomers</strong>.</p>
+                    <ul>
+                        <li><b>Condensation (Dehydration Synthesis):</b> The process of joining monomers together by removing a water molecule.</li>
+                        <li><b>Hydrolysis:</b> The process of breaking polymers apart by adding a water molecule.</li>
+                    </ul>
+                </div>
+                 <div class="card">
+                    <h4>The Importance of Water</h4>
+                    <p>Water is the most abundant component in any living cell (70-90%). Its unique properties, due to its polarity and ability to form hydrogen bonds, make it the "medium of life":</p>
+                    <ul>
+                        <li><b>Universal Solvent:</b> Dissolves polar and ionic substances.</li>
+                        <li><b>High Specific Heat:</b> Stabilizes temperature.</li>
+                        <li><b>Cohesion and Adhesion:</b> Allows for transport in plants.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="carbohydrates">
+                <h2>1.2 Carbohydrates</h2>
+                <p>Carbohydrates are the primary source of energy for living organisms. They are made of carbon, hydrogen, and oxygen, typically in a 1:2:1 ratio. Their monomers are called <strong>monosaccharides</strong>.</p>
+                <table>
+                    <thead>
+                        <tr><th>Type</th><th>Description</th><th>Examples</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><b>Monosaccharides</b></td><td>Simple sugars, the basic building blocks.</td><td>Glucose, Fructose, Galactose</td></tr>
+                        <tr><td><b>Disaccharides</b></td><td>Two monosaccharides joined by a glycosidic linkage.</td><td>Sucrose (table sugar), Lactose (milk sugar), Maltose</td></tr>
+                        <tr><td><b>Polysaccharides</b></td><td>Long chains (polymers) of monosaccharides. Used for energy storage and structure.</td><td>Starch (plant energy storage), Glycogen (animal energy storage), Cellulose (plant cell wall structure)</td></tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section id="proteins">
+                <h2>1.3 Proteins</h2>
+                <p>Proteins are the most diverse and complex macromolecules, performing a vast array of functions in the cell. They are polymers of <strong>amino acids</strong>.</p>
+                <div class="card">
+                    <h4>Amino Acids and Peptide Bonds</h4>
+                    <p>There are 20 common amino acids that are the building blocks of all proteins. They are joined together by <strong>peptide bonds</strong> to form a long chain called a <strong>polypeptide</strong>. The specific sequence of amino acids determines the protein's unique 3D structure and function.</p>
+                </div>
+                <h3>Levels of Protein Structure</h3>
+                <ol>
+                    <li><b>Primary Structure:</b> The unique linear sequence of amino acids.</li>
+                    <li><b>Secondary Structure:</b> Local folding of the polypeptide chain into coils (alpha-helices) or sheets (beta-pleated sheets), held together by hydrogen bonds.</li>
+                    <li><b>Tertiary Structure:</b> The overall 3D shape of a single polypeptide, resulting from interactions between the R-groups of the amino acids.</li>
+                    <li><b>Quaternary Structure:</b> The arrangement of multiple polypeptide chains to form a single functional protein (e.g., hemoglobin).</li>
+                </ol>
+            </section>
+
+            <section id="lipids">
+                <h2>1.4 Lipids</h2>
+                <p>Lipids are a diverse group of hydrophobic molecules that are insoluble in water. They are crucial for long-term energy storage, insulation, and forming cell membranes.</p>
+                <table>
+                    <thead>
+                        <tr><th>Type</th><th>Description</th><th>Function</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><b>Fats & Oils (Triglycerides)</b></td><td>Composed of glycerol and three fatty acids. Fats are solid at room temp (saturated), while oils are liquid (unsaturated).</td><td>Long-term energy storage, insulation.</td></tr>
+                        <tr><td><b>Phospholipids</b></td><td>Glycerol, two fatty acids, and a phosphate group. They have a hydrophilic head and a hydrophobic tail.</td><td>Primary component of cell membranes.</td></tr>
+                        <tr><td><b>Waxes</b></td><td>Long-chain fatty acids linked to long-chain alcohols.</td><td>Waterproofing, protective coatings.</td></tr>
+                        <tr><td><b>Steroids</b></td><td>Characterized by a four-ring structure.</td><td>Hormones (e.g., testosterone, estrogen), cholesterol (component of cell membranes).</td></tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section id="nucleic-acids">
+                <h2>1.5 Nucleic Acids</h2>
+                <p>Nucleic acids are macromolecules that store and transmit genetic information. They are polymers of <strong>nucleotides</strong>.</p>
+                
+                <div class="card">
+                    <h4>Components of a Nucleotide</h4>
+                    <p>Each nucleotide consists of three parts:</p>
+                    <ol>
+                        <li>A 5-carbon sugar (deoxyribose in DNA, ribose in RNA).</li>
+                        <li>A phosphate group.</li>
+                        <li>A nitrogenous base (Adenine, Guanine, Cytosine, Thymine in DNA; Uracil replaces Thymine in RNA).</li>
+                    </ol>
+                </div>
+                <h3>DNA vs. RNA</h3>
+                <ul>
+                    <li><b>DNA (Deoxyribonucleic Acid):</b> A double-stranded helix that stores the genetic blueprint for an organism.</li>
+                    <li><b>RNA (Ribonucleic Acid):</b> A single-stranded molecule involved in translating the genetic information from DNA into proteins. The three main types are mRNA, tRNA, and rRNA.</li>
+                </ul>
+            </section>
+            
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li>Living organisms are composed of <b>biomolecules</b>, which are primarily based on carbon.</li>
+                        <li><b>Carbohydrates</b> (sugars, starches, cellulose) provide quick energy and structural support.</li>
+                        <li><b>Proteins</b> (polymers of amino acids) have complex structures and perform most of the work in cells.</li>
+                        <li><b>Lipids</b> (fats, oils, waxes, steroids) are hydrophobic and are used for energy storage, insulation, and membranes.</li>
+                        <li><b>Nucleic Acids</b> (DNA and RNA, polymers of nucleotides) store and transmit genetic information.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

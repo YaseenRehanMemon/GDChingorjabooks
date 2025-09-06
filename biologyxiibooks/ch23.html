@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 23: Inheritance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --accent-color: #673AB7; /* Deep Purple */
+            --bg-light: #f4f7f9; --text-light: #333; --card-bg-light: #ffffff; --border-light: #e0e0e0; --header-bg-light: #ffffff; --sidebar-bg-light: #fdfdfd;
+            --bg-dark: #121212; --text-dark: #e0e0e0; --card-bg-dark: #1e1e1e; --border-dark: #333; --header-bg-dark: #1e1e1e; --sidebar-bg-dark: #232323;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { font-family: 'Poppins', sans-serif; line-height: 1.6; scroll-behavior: smooth; background-color: var(--bg-light); color: var(--text-light); transition: background-color 0.3s, color 0.3s; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: var(--border-light); color: var(--text-light); transition: background-color 0.3s; font-weight: 600; }
+        .theme-toggle-label .moon { display: none; } .theme-toggle-label .sun { display: inline; }
+        body.dark-mode { --bg-light: var(--bg-dark); --text-light: var(--text-dark); --card-bg-light: var(--card-bg-dark); --border-light: var(--border-dark); --header-bg-light: var(--header-bg-dark); --sidebar-bg-light: var(--sidebar-bg-dark); }
+        .dark-mode .theme-toggle-label .moon { display: inline; } .dark-mode .theme-toggle-label .sun { display: none; } .dark-mode .sidebar a { color: #c5d7e8; } .dark-mode .sidebar a:hover { color: #ffffff; }
+        .page-container { display: grid; grid-template-columns: 260px 1fr; grid-template-rows: auto 1fr; grid-template-areas: "header header" "sidebar content"; min-height: 100vh; }
+        header { grid-area: header; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: var(--header-bg-light); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        header h1 { color: var(--accent-color); font-size: 1.8rem; }
+        .sidebar { grid-area: sidebar; background-color: var(--sidebar-bg-light); padding: 2rem; border-right: 1px solid var(--border-light); position: fixed; top: 75px; left: 0; width: 260px; height: calc(100vh - 75px); overflow-y: auto; }
+        .sidebar h2 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        .sidebar ul { list-style: none; } .sidebar li { margin-bottom: 0.8rem; }
+        .sidebar a { text-decoration: none; color: #555; font-weight: 500; transition: color 0.2s; } .sidebar a:hover { color: var(--accent-color); }
+        .content { grid-area: content; padding: 2rem 3rem; }
+        section { margin-bottom: 3rem; padding-top: 80px; margin-top: -75px; }
+        h2 { font-size: 2rem; color: var(--accent-color); margin-bottom: 1.5rem; border-bottom: 2px solid var(--border-light); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; }
+        p, ul, ol { margin-bottom: 1rem; } ul, ol { padding-left: 20px; }
+        b { color: var(--accent-color); }
+        .card { background-color: var(--card-bg-light); border: 1px solid var(--border-light); border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        @media (max-width: 900px) { .page-container { grid-template-columns: 1fr; grid-template-areas: "header" "content"; } .sidebar { display: none; } header h1 { font-size: 1.4rem; } .content { padding: 1.5rem; } }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+            function applyTheme(isDarkMode) { body.classList.toggle('dark-mode', isDarkMode); }
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const initialThemeDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+            themeToggleCheckbox.checked = initialThemeDark;
+            applyTheme(initialThemeDark);
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+    </script>
+</head>
+<body style="--accent-color: #673AB7;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 23: Inheritance</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#mendel">Mendel's Laws</a></li>
+                <li><a href="#non-mendelian">Non-Mendelian Inheritance</a></li>
+                <li><a href="#polygenic">Polygenic Inheritance & Epistasis</a></li>
+                <li><a href="#linkage">Gene Linkage & Crossing Over</a></li>
+                <li><a href="#sex">Sex Determination & Linkage</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="mendel">
+                <h2>1. Mendel's Laws of Inheritance</h2>
+                <p>Gregor Mendel, through his experiments with pea plants, established the fundamental principles of heredity.</p>
+                <div class="card">
+                    <h4>Mendel's Laws</h4>
+                    <ul>
+                        <li><b>Law of Segregation:</b> For any given trait, the two alleles an individual has separate (segregate) during gamete formation, so that each gamete receives only one of the two alleles. This explains the 3:1 phenotypic ratio in a monohybrid cross.</li>
+                        <li><b>Law of Independent Assortment:</b> Alleles for different traits are inherited independently of one another. The inheritance of one trait does not affect the inheritance of another. This explains the 9:3:3:1 phenotypic ratio in a dihybrid cross.</li>
+                    </ul>
+                </div>
+                <p>A <b>test cross</b> (crossing an individual with a dominant phenotype to a homozygous recessive individual) is used to determine the unknown genotype of the dominant parent.</p>
+            </section>
+
+            <section id="non-mendelian">
+                <h2>2. Non-Mendelian Inheritance</h2>
+                <p>Not all traits follow the simple dominant/recessive pattern described by Mendel.</p>
+                <div class="card">
+                    <h4>Variations on Mendelian Genetics</h4>
+                    <ul>
+                        <li><b>Incomplete Dominance:</b> The heterozygous phenotype is an intermediate blend of the two homozygous phenotypes (e.g., red and white snapdragons producing pink offspring).</li>
+                        <li><b>Codominance:</b> Both alleles are fully and separately expressed in the heterozygous phenotype (e.g., roan cattle with both red and white hairs; the human AB blood type).</li>
+                        <li><b>Multiple Alleles:</b> A gene that has more than two possible alleles in a population, although an individual can only carry two (e.g., the ABO blood group system, with \(I^A\), \(I^B\), and \(i\) alleles).</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="polygenic">
+                <h2>3. Polygenic Inheritance and Epistasis</h2>
+                <h3>Polygenic Inheritance</h3>
+                <p><b>Polygenic inheritance</b> occurs when a single trait is controlled by two or more genes. This often results in a continuous range of phenotypes, like human height or skin color.</p>
+                <h3>Epistasis</h3>
+                <p><b>Epistasis</b> is a phenomenon where the expression of one gene is affected (masked or modified) by one or more other genes at different loci. For example, in Labrador retrievers, one gene determines black/brown pigment, but a second, separate gene determines whether that pigment is deposited in the fur at all, resulting in yellow labs.</p>
+            </section>
+
+            <section id="linkage">
+                <h2>4. Gene Linkage and Crossing Over</h2>
+                <p>Genes located close together on the same chromosome tend to be inherited together. This is known as <b>gene linkage</b>.</p>
+                <div class="card">
+                    <h4>Crossing Over</h4>
+                    <p>Linkage can be broken by <b>crossing over</b>, a process that occurs during meiosis where homologous chromosomes exchange segments. This creates new combinations of alleles (recombinant chromatids) and increases genetic variation.</p>
+                </div>
+            </section>
+            
+            <section id="sex">
+                <h2>5. Sex Determination and Sex Linkage</h2>
+                <h3>Sex Determination</h3>
+                <p>Sex is determined by specific <b>sex chromosomes</b>. In humans and fruit flies, the system is XX/XY:</p>
+                <ul>
+                    <li><b>XX:</b> Female</li>
+                    <li><b>XY:</b> Male</li>
+                </ul>
+                <p>Other systems exist, like the ZZ/ZW system in birds (where the female is heterogametic) and the XO system in grasshoppers.</p>
+                <h3>Sex-Linked Inheritance</h3>
+                <p><b>Sex-linked traits</b> are traits controlled by genes located on the sex chromosomes. Most are <b>X-linked</b> because the X chromosome is much larger than the Y.</p>
+                <div class="card">
+                    <h4>Characteristics of X-linked Recessive Traits</h4>
+                    <ul>
+                        <li>They appear much more often in males than in females, as males only have one X chromosome.</li>
+                        <li>Affected sons are usually born to unaffected mothers who are carriers.</li>
+                        <li>The trait skips generations.</li>
+                        <li>Examples include red-green color blindness and hemophilia.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Mendel's Laws:</b> The Law of Segregation and the Law of Independent Assortment describe the inheritance of traits with dominant and recessive alleles.</li>
+                        <li><b>Non-Mendelian Patterns:</b> Include incomplete dominance (blending), codominance (both expressed), and multiple alleles (e.g., ABO blood types).</li>
+                        <li><b>Polygenic Traits:</b> Traits controlled by multiple genes, resulting in continuous variation (e.g., skin color).</li>
+                        <li><b>Gene Linkage:</b> Genes on the same chromosome tend to be inherited together, but this can be broken by <b>crossing over</b> during meiosis.</li>
+                        <li><b>Sex-Linked Traits:</b> Traits determined by genes on sex chromosomes (usually the X chromosome). X-linked recessive disorders are more common in males.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

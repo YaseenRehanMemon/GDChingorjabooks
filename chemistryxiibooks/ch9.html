@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 9: Carboxylic Acids & Derivatives</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --accent-color: #F44336; /* Red */
+            --bg-light: #f4f7f9; --text-light: #333; --card-bg-light: #ffffff; --border-light: #e0e0e0; --header-bg-light: #ffffff; --sidebar-bg-light: #fdfdfd;
+            --bg-dark: #121212; --text-dark: #e0e0e0; --card-bg-dark: #1e1e1e; --border-dark: #333; --header-bg-dark: #1e1e1e; --sidebar-bg-dark: #232323;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { font-family: 'Poppins', sans-serif; line-height: 1.6; scroll-behavior: smooth; background-color: var(--bg-light); color: var(--text-light); transition: background-color 0.3s, color 0.3s; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: var(--border-light); color: var(--text-light); transition: background-color 0.3s; font-weight: 600; }
+        .theme-toggle-label .moon { display: none; } .theme-toggle-label .sun { display: inline; }
+        body.dark-mode { --bg-light: var(--bg-dark); --text-light: var(--text-dark); --card-bg-light: var(--card-bg-dark); --border-light: var(--border-dark); --header-bg-light: var(--header-bg-dark); --sidebar-bg-light: var(--sidebar-bg-dark); }
+        .dark-mode .theme-toggle-label .moon { display: inline; } .dark-mode .theme-toggle-label .sun { display: none; } .dark-mode .sidebar a { color: #c5d7e8; } .dark-mode .sidebar a:hover { color: #ffffff; }
+        .page-container { display: grid; grid-template-columns: 260px 1fr; grid-template-rows: auto 1fr; grid-template-areas: "header header" "sidebar content"; min-height: 100vh; }
+        header { grid-area: header; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: var(--header-bg-light); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        header h1 { color: var(--accent-color); font-size: 1.8rem; }
+        .sidebar { grid-area: sidebar; background-color: var(--sidebar-bg-light); padding: 2rem; border-right: 1px solid var(--border-light); position: fixed; top: 75px; left: 0; width: 260px; height: calc(100vh - 75px); overflow-y: auto; }
+        .sidebar h2 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        .sidebar ul { list-style: none; } .sidebar li { margin-bottom: 0.8rem; }
+        .sidebar a { text-decoration: none; color: #555; font-weight: 500; transition: color 0.2s; } .sidebar a:hover { color: var(--accent-color); }
+        .content { grid-area: content; padding: 2rem 3rem; }
+        section { margin-bottom: 3rem; padding-top: 80px; margin-top: -75px; }
+        h2 { font-size: 2rem; color: var(--accent-color); margin-bottom: 1.5rem; border-bottom: 2px solid var(--border-light); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; }
+        p, ul, ol { margin-bottom: 1rem; } ul, ol { padding-left: 20px; }
+        .card { background-color: var(--card-bg-light); border: 1px solid var(--border-light); border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        @media (max-width: 900px) { .page-container { grid-template-columns: 1fr; grid-template-areas: "header" "content"; } .sidebar { display: none; } header h1 { font-size: 1.4rem; } .content { padding: 1.5rem; } }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+            function applyTheme(isDarkMode) { body.classList.toggle('dark-mode', isDarkMode); }
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const initialThemeDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+            themeToggleCheckbox.checked = initialThemeDark;
+            applyTheme(initialThemeDark);
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+    </script>
+</head>
+<body style="--accent-color: #F44336;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 9: Carboxylic Acids & Derivatives</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Carboxylic Acids</a></li>
+                <li><a href="#prep">Preparation</a></li>
+                <li><a href="#reactions">Reactions</a></li>
+                <li><a href="#derivatives">Functional Derivatives</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>1. Carboxylic Acids (R-COOH)</h2>
+                <p>Carboxylic acids are organic compounds that contain the <b>carboxyl functional group</b> (-COOH), which consists of a carbonyl group (\(C=O\)) and a hydroxyl group (-OH) attached to the same carbon atom.</p>
+                <div class="card">
+                    <h4>Acidity and Physical Properties</h4>
+                    <p>Carboxylic acids are weak acids, but they are significantly more acidic than alcohols and phenols. The carboxyl group is highly polar and can form strong <b>hydrogen bonds</b>, leading to very high boiling points (often existing as dimers in the liquid phase) and good water solubility for smaller molecules.</p>
+                </div>
+                <h3>Acidity Comparison</h3>
+                <p>The strength of a carboxylic acid depends on the stability of its conjugate base, the carboxylate ion (\(\text{RCOO}^-\)).</p>
+                <ul>
+                    <li>The carboxylate ion is stabilized by resonance, which delocalizes the negative charge over both oxygen atoms.</li>
+                    <li>Electron-withdrawing groups attached to the R group increase acidity, while electron-donating groups decrease it.</li>
+                </ul>
+            </section>
+
+            <section id="prep">
+                <h2>2. Preparation of Carboxylic Acids</h2>
+                <p>Carboxylic acids can be synthesized through various oxidation and hydrolysis reactions.</p>
+                <div class="card">
+                    <h4>Key Preparation Methods</h4>
+                    <ul>
+                        <li><b>Oxidation of Primary Alcohols and Aldehydes:</b> Primary alcohols and aldehydes can be oxidized to carboxylic acids using strong oxidizing agents like potassium permanganate (\( \text{KMnO}_4 \)) or potassium dichromate (\( \text{K}_2\text{Cr}_2\text{O}_7 \)).</li>
+                        <li><b>Hydrolysis of Nitriles:</b> Nitriles (\(R-C\equiv N\)) can be hydrolyzed in acidic or basic conditions to produce carboxylic acids.</li>
+                        <li><b>Carbonation of Grignard Reagents:</b> The reaction of a Grignard reagent with carbon dioxide (\(\text{CO}_2\)), followed by acidification, produces a carboxylic acid with one more carbon than the original Grignard reagent.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="reactions">
+                <h2>3. Reactions of Carboxylic Acids</h2>
+                <p>Carboxylic acids can react at either the acidic proton of the -OH group or at the electrophilic carbonyl carbon.</p>
+                <ul>
+                    <li><b>As Acids:</b> They react with bases to form carboxylate salts.</li>
+                    <li><b>Reduction:</b> They can be reduced to primary alcohols using a strong reducing agent like lithium aluminum hydride (\( \text{LiAlH}_4 \)).</li>
+                    <li><b>Conversion to Derivatives:</b> The -OH group can be replaced by other nucleophiles, leading to the formation of functional derivatives.</li>
+                </ul>
+            </section>
+
+            <section id="derivatives">
+                <h2>4. Carboxylic Acid Functional Derivatives</h2>
+                <p>These compounds are formed by replacing the -OH group of a carboxylic acid with another group (-Z). The central reaction for interconverting them is <b>nucleophilic acyl substitution</b>.</p>
+                <div class="card">
+                    <h4>Common Derivatives</h4>
+                    <ul>
+                        <li><b>Acyl Halides (R-CO-X):</b> The most reactive derivatives. Formed by reacting a carboxylic acid with thionyl chloride (\(\text{SOCl}_2\)) or other halogenating agents.</li>
+                        <li><b>Acid Anhydrides (R-CO-O-CO-R):</b> Formed by the dehydration (removal of water) from two carboxylic acid molecules.</li>
+                        <li><b>Esters (R-CO-OR'):</b> Formed by the reaction of a carboxylic acid and an alcohol (<b>Fischer Esterification</b>). They often have pleasant, fruity odors.</li>
+                        <li><b>Amides (R-CO-NH₂):</b> The least reactive derivatives. Formed by the reaction of a carboxylic acid derivative (like an acyl chloride) with ammonia or an amine.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Carboxylic Acids (-COOH):</b> Are weak acids with high boiling points due to hydrogen bonding.</li>
+                        <li><b>Preparation:</b> Can be made by oxidizing primary alcohols/aldehydes or by reacting Grignard reagents with \(CO_2\).</li>
+                        <li><b>Reactions:</b> They act as acids and can be reduced to primary alcohols. Their most important reaction is conversion into functional derivatives.</li>
+                        <li><b>Functional Derivatives:</b> Include acyl halides, anhydrides, esters, and amides, all of which can be interconverted via <b>nucleophilic acyl substitution</b>.</li>
+                        <li><b>Reactivity of Derivatives:</b> Acyl Halide > Anhydride > Ester > Amide.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3: Differentiation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root { --accent-color: #4CAF50; /* Green for Differentiation */ }
+        body { font-family: 'Poppins', sans-serif; margin: 0; background-color: #f4f7f9; color: #333; transition: background-color 0.3s, color 0.3s; }
+        .dark-mode { background-color: #121212; color: #e0e0e0; }
+        .page-container { display: flex; flex-direction: column; }
+        header { background-color: #ffffff; padding: 1rem 2rem; border-bottom: 1px solid #e0e0e0; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .dark-mode header { background-color: #1e1e1e; border-bottom: 1px solid #333; }
+        header h1 { margin: 0; color: var(--accent-color); font-size: 1.8rem; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: #e9eef2; transition: background-color 0.3s; }
+        .dark-mode .theme-toggle-label { background-color: #242424; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label .sun { display: inline; } .theme-toggle-label .moon { display: none; }
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label .sun { display: none; }
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label .moon { display: inline; }
+        .container { display: flex; }
+        .sidebar { width: 260px; background-color: #e9eef2; padding: 1.5rem; height: 100vh; position: fixed; top: 70px; left: 0; overflow-y: auto; border-right: 1px solid #e0e0e0; }
+        .dark-mode .sidebar { background-color: #242424; border-right: 1px solid #333; }
+        .sidebar h2 { font-size: 1.2rem; color: var(--accent-color); margin-top: 0; }
+        .sidebar ul { list-style: none; padding: 0; }
+        .sidebar ul li a { display: block; color: #333; text-decoration: none; padding: 0.75rem 1rem; border-radius: 5px; transition: background-color 0.2s; }
+        .dark-mode .sidebar ul li a { color: #e0e0e0; }
+        .sidebar ul li a:hover { background-color: var(--accent-color); color: white; }
+        .content { flex: 1; padding: 2rem; margin-left: 290px; }
+        .card { background-color: #ffffff; border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .dark-mode .card { background-color: #1e1e1e; border-color: var(--accent-color); }
+        .card.formula { background-color: #e8f5e9; border-color: #66bb6a; }
+        .dark-mode .card.formula { background-color: #2e3c30; border-color: #81c784; }
+        h2 { border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        @media (max-width: 768px) { .sidebar { display: none; } .content { margin-left: 0; } header { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 3: Differentiation</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+        <div class="container">
+            <nav class="sidebar">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="#intro">The Derivative</a></li>
+                    <li><a href="#rules">Basic Differentiation Rules</a></li>
+                    <li><a href="#product-quotient">Product & Quotient Rules</a></li>
+                    <li><a href="#chain">The Chain Rule</a></li>
+                    <li><a href="#implicit">Implicit Differentiation</a></li>
+                    <li><a href="#trig-exp-log">Derivatives of Special Functions</a></li>
+                </ul>
+            </nav>
+            <main class="content">
+                <section id="intro">
+                    <h2>3.1 The Derivative</h2>
+                    <p>Differentiation is the process of finding the <strong>derivative</strong> of a function. The derivative represents the <strong>instantaneous rate of change</strong> of the function, which can be visualized as the slope of the tangent line to the function's graph at a specific point.</p>
+                    <div class="card">
+                        <h4>Definition of the Derivative (First Principle)</h4>
+                        <p>The derivative of a function \(f(x)\), denoted as \(f'(x)\) or \(\frac{dy}{dx}\), is defined by the limit:</p>
+                        <div class="card formula">
+                        \[ f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h} \]
+                        </div>
+                        <p>This formula calculates the slope of the secant line between two points on the curve as the distance between them (h) approaches zero.</p>
+                    </div>
+                </section>
+
+                <section id="rules">
+                    <h2>3.2 Basic Differentiation Rules</h2>
+                    <p>While the first principle is fundamental, we typically use a set of rules to find derivatives more efficiently.</p>
+                    <div class="card">
+                        <h4>Core Rules</h4>
+                        <ul>
+                            <li><strong>Constant Rule:</strong> The derivative of a constant is zero. If \(f(x) = c\), then \(f'(x) = 0\).</li>
+                            <li><strong>Power Rule:</strong> A crucial rule for differentiating polynomials.</li>
+                        </ul>
+                        <div class="card formula">
+                            <p><b>Power Rule:</b> If \(f(x) = x^n\), then \(f'(x) = n \cdot x^{n-1}\).</p>
+                            <p>Example: The derivative of \(x^3\) is \(3x^2\).</p>
+                        </div>
+                         <ul>
+                            <li><strong>Constant Multiple Rule:</strong> The derivative of a constant multiplied by a function is the constant times the derivative of the function. \(\frac{d}{dx}[c \cdot f(x)] = c \cdot f'(x)\).</li>
+                             <li><strong>Sum/Difference Rule:</strong> The derivative of a sum or difference of functions is the sum or difference of their derivatives. \(\frac{d}{dx}[f(x) \pm g(x)] = f'(x) \pm g'(x)\).</li>
+                         </ul>
+                    </div>
+                </section>
+                
+                <section id="product-quotient">
+                    <h2>3.3 The Product and Quotient Rules</h2>
+                    <p>These rules are used to differentiate functions that are multiplied or divided.</p>
+                    <div class="card formula">
+                        <h4>Product Rule</h4>
+                        <p>If \(h(x) = f(x)g(x)\), then:</p>
+                        \[ h'(x) = f(x)g'(x) + g(x)f'(x) \]
+                        <p>In words: "The first times the derivative of the second, plus the second times the derivative of the first."</p>
+                    </div>
+                    <div class="card formula">
+                        <h4>Quotient Rule</h4>
+                        <p>If \(h(x) = \frac{f(x)}{g(x)}\), then:</p>
+                        \[ h'(x) = \frac{g(x)f'(x) - f(x)g'(x)}{[g(x)]^2} \]
+                        <p>In words: "Low d-high minus high d-low, over the square of what's below."</p>
+                    </div>
+                </section>
+
+                <section id="chain">
+                    <h2>3.4 The Chain Rule</h2>
+                    <p>The chain rule is essential for differentiating composite functions (a function inside another function).</p>
+                    <div class="card">
+                        <h4>Defining the Chain Rule</h4>
+                        <p>If \(y = f(u)\) and \(u = g(x)\), then the derivative of the composite function \(y = f(g(x))\) is:</p>
+                         <div class="card formula">
+                            \[ \frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} \]
+                         </div>
+                         <p>In words: "The derivative of the outer function (with the inside function left alone) times the derivative of the inside function."</p>
+                        <p><strong>Example:</strong> To differentiate \((x^2+1)^3\), the outer function is \(u^3\) and the inner is \(x^2+1\). The derivative is \(3(x^2+1)^2 \cdot (2x)\).</p>
+                    </div>
+                </section>
+
+                <section id="implicit">
+                    <h2>3.5 Implicit Differentiation</h2>
+                    <p>Implicit differentiation is a technique used when a function is not given in the form \(y=f(x)\). It involves differentiating both sides of the equation with respect to \(x\) and then solving for \(\frac{dy}{dx}\).</p>
+                    <div class="card">
+                        <h4>Steps for Implicit Differentiation</h4>
+                        <ol>
+                            <li>Differentiate both sides of the equation with respect to \(x\).</li>
+                            <li>When differentiating a term with \(y\), apply the chain rule by multiplying by \(\frac{dy}{dx}\).</li>
+                            <li>Isolate all terms containing \(\frac{dy}{dx}\) on one side of the equation.</li>
+                            <li>Factor out \(\frac{dy}{dx}\).</li>
+                            <li>Solve for \(\frac{dy}{dx}\).</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section id="trig-exp-log">
+                    <h2>3.6 Derivatives of Special Functions</h2>
+                    <div class="card">
+                        <h4>Trigonometric, Exponential, and Logarithmic Derivatives</h4>
+                        <table>
+                            <thead>
+                                <tr><th>Function</th><th>Derivative</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>\(\sin(x)\)</td><td>\(\cos(x)\)</td></tr>
+                                <tr><td>\(\cos(x)\)</td><td>\(-\sin(x)\)</td></tr>
+                                <tr><td>\(\tan(x)\)</td><td>\(\sec^2(x)\)</td></tr>
+                                <tr><td>\(e^x\)</td><td>\(e^x\)</td></tr>
+                                <tr><td>\(a^x\)</td><td>\(a^x \ln(a)\)</td></tr>
+                                <tr><td>\(\ln(x)\)</td><td>\(\frac{1}{x}\)</td></tr>
+                                <tr><td>\(\log_a(x)\)</td><td>\(\frac{1}{x \ln(a)}\)</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

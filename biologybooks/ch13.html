@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 13: Immunity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to the shared stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+        // MathJax configuration (for rendering LaTeX)
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body style="--accent-color: #009688;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 13: Immunity</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Introduction to Immunity</a></li>
+                <li><a href="#first-line">First Line of Defense</a></li>
+                <li><a href="#second-line">Second Line of Defense</a></li>
+                <li><a href="#third-line">Third Line of Defense</a></li>
+                <li><a href="#disorders">Immune System Disorders</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>13.1 Introduction to Immunity</h2>
+                <p>The <strong>immune system</strong> is a complex network of cells, tissues, and organs that work together to defend the body against pathogenic organisms and other foreign invaders. <strong>Immunity</strong> is the body's ability to resist infection and disease.</p>
+                <div class="card">
+                    <h4>Two Branches of the Immune System</h4>
+                    <ul>
+                        <li><b>Innate Immune System:</b> Provides a non-specific, immediate defense. It is the first and second line of defense.</li>
+                        <li><b>Adaptive (Acquired) Immune System:</b> A highly specific defense that develops after exposure to a pathogen. It has memory, allowing for a faster and stronger response to subsequent infections. This is the third line of defense.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="first-line">
+                <h2>13.2 First Line of Defense (Innate Immunity)</h2>
+                <p>The first line of defense consists of physical and biochemical barriers designed to prevent pathogens from entering the body.</p>
+                <ul>
+                    <li><b>Physical Barriers:</b>
+                        <ul>
+                            <li><b>Skin:</b> An intact, multi-layered physical barrier.</li>
+                            <li><b>Mucous Membranes:</b> Line the digestive, respiratory, and urinary tracts, trapping microbes.</li>
+                            <li><b>Ciliated Epithelium:</b> Cilia in the respiratory tract sweep mucus and trapped particles upward.</li>
+                        </ul>
+                    </li>
+                    <li><b>Biochemical Barriers:</b>
+                        <ul>
+                            <li><b>Saliva, Mucus, Tears:</b> Contain lysozyme, an enzyme that breaks down bacterial cell walls.</li>
+                            <li><b>Stomach Acid (HCl):</b> Creates a highly acidic environment that kills most pathogens.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            
+            <section id="second-line">
+                <h2>13.3 Second Line of Defense (Innate Immunity)</h2>
+                <p>If pathogens breach the first line of defense, the second line of non-specific defense is activated.</p>
+                <div class="card">
+                    <h4>Key Components of the Second Line</h4>
+                    <ul>
+                        <li><b>Phagocytes:</b> White blood cells like <b>neutrophils</b> and <b>macrophages</b> that engulf and digest pathogens.</li>
+                        <li><b>Natural Killer (NK) Cells:</b> Lymphocytes that can detect and destroy virally infected cells and tumor cells.</li>
+                        <li><b>Inflammatory Response:</b> A localized response to injury or infection characterized by redness, heat, swelling, and pain. It helps to contain the infection and recruit immune cells to the area.</li>
+                        <li><b>Protective Proteins:</b> Includes complement proteins that can lyse pathogens, and interferons that help prevent the spread of viral infections.</li>
+                        <li><b>Fever:</b> An elevated body temperature that can inhibit the growth of some pathogens and enhance immune responses.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="third-line">
+                <h2>13.4 Third Line of Defense (Adaptive Immunity)</h2>
+                <p>The adaptive immune system provides a specific, targeted response to particular pathogens and has the crucial feature of memory.</p>
+                <h3>Recognition of Self vs. Non-self</h3>
+                <p>The adaptive immune system can distinguish between the body's own cells ("self") and foreign invaders ("non-self") by recognizing molecules called <strong>antigens</strong>. Antigens are typically proteins or polysaccharides on the surface of pathogens.</p>
+                
+                <h3>Key Players in Adaptive Immunity</h3>
+                <p>The main cells of the adaptive immune system are lymphocytes: <strong>T cells</strong> and <strong>B cells</strong>.</p>
+                <div class="card">
+                    <h4>Cell-Mediated Immunity (CMI)</h4>
+                    <p>Primarily involves <strong>T lymphocytes (T cells)</strong>.</p>
+                    <ul>
+                        <li><b>Helper T Cells (T<sub>H</sub>):</b> Recognize antigens presented by other immune cells and activate B cells and cytotoxic T cells.</li>
+                        <li><b>Cytotoxic T Cells (T<sub>C</sub>):</b> Directly attack and kill infected body cells and tumor cells.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Humoral Immunity (Antibody-Mediated Immunity)</h4>
+                    <p>Primarily involves <strong>B lymphocytes (B cells)</strong> and the <strong>antibodies</strong> they produce.</p>
+                    <p>When a B cell is activated by an antigen (often with help from a T<sub>H</sub> cell), it differentiates into:</p>
+                    <ul>
+                        <li><b>Plasma Cells:</b> Secrete large quantities of antibodies into the blood and lymph.</li>
+                        <li><b>Memory Cells:</b> Long-lived cells that provide long-term immunity.</li>
+                    </ul>
+                </div>
+                <h3>Active vs. Passive Immunity</h3>
+                <ul>
+                    <li><b>Active Immunity:</b> Develops when your own body produces antibodies in response to an infection (natural) or vaccination (artificial). It is long-lasting.</li>
+                    <li><b>Passive Immunity:</b> Results from receiving antibodies from another source, such as from mother to baby through the placenta (natural) or through an injection of immune serum (artificial). It is temporary.</li>
+                </ul>
+            </section>
+
+            <section id="disorders">
+                <h2>13.5 Immune System Disorders</h2>
+                <ul>
+                    <li><b>Allergies:</b> An exaggerated immune response to a normally harmless substance (allergen).</li>
+                    <li><b>Autoimmune Diseases:</b> The immune system mistakenly attacks the body's own tissues (e.g., rheumatoid arthritis, multiple sclerosis).</li>
+                    <li><b>Immunodeficiency:</b> A condition where the immune system's ability to fight infectious disease is compromised or entirely absent (e.g., AIDS, caused by HIV).</li>
+                    <li><b>Transplant Rejection:</b> The immune system recognizes a transplanted organ as foreign and attacks it.</li>
+                </ul>
+            </section>
+            
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li>The immune system is divided into <b>innate</b> (non-specific) and <b>adaptive</b> (specific) branches.</li>
+                        <li><b>First Line of Defense:</b> Physical and chemical barriers like skin and mucous membranes.</li>
+                        <li><b>Second Line of Defense:</b> Non-specific responses including phagocytes, NK cells, inflammation, and fever.</li>
+                        <li><b>Third Line of Defense (Adaptive Immunity):</b> A specific response to antigens involving lymphocytes.
+                            <ul>
+                                <li><b>Humoral Immunity:</b> B cells produce antibodies.</li>
+                                <li><b>Cell-Mediated Immunity:</b> T cells (Helper and Cytotoxic) manage and carry out direct attacks.</li>
+                            </ul>
+                        </li>
+                        <li>Immunity can be <b>active</b> (your body makes antibodies) or <b>passive</b> (you receive antibodies).</li>
+                        <li>Immune system disorders include allergies, autoimmune diseases, and immunodeficiencies.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

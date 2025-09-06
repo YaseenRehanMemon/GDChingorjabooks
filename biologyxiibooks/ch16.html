@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 16: Support and Movement</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --accent-color: #795548; /* Brown */
+            --bg-light: #f4f7f9; --text-light: #333; --card-bg-light: #ffffff; --border-light: #e0e0e0; --header-bg-light: #ffffff; --sidebar-bg-light: #fdfdfd;
+            --bg-dark: #121212; --text-dark: #e0e0e0; --card-bg-dark: #1e1e1e; --border-dark: #333; --header-bg-dark: #1e1e1e; --sidebar-bg-dark: #232323;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { font-family: 'Poppins', sans-serif; line-height: 1.6; scroll-behavior: smooth; background-color: var(--bg-light); color: var(--text-light); transition: background-color 0.3s, color 0.3s; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: var(--border-light); color: var(--text-light); transition: background-color 0.3s; font-weight: 600; }
+        .theme-toggle-label .moon { display: none; } .theme-toggle-label .sun { display: inline; }
+        body.dark-mode { --bg-light: var(--bg-dark); --text-light: var(--text-dark); --card-bg-light: var(--card-bg-dark); --border-light: var(--border-dark); --header-bg-light: var(--header-bg-dark); --sidebar-bg-light: var(--sidebar-bg-dark); }
+        .dark-mode .theme-toggle-label .moon { display: inline; } .dark-mode .theme-toggle-label .sun { display: none; } .dark-mode .sidebar a { color: #c5d7e8; } .dark-mode .sidebar a:hover { color: #ffffff; }
+        .page-container { display: grid; grid-template-columns: 260px 1fr; grid-template-rows: auto 1fr; grid-template-areas: "header header" "sidebar content"; min-height: 100vh; }
+        header { grid-area: header; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: var(--header-bg-light); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        header h1 { color: var(--accent-color); font-size: 1.8rem; }
+        .sidebar { grid-area: sidebar; background-color: var(--sidebar-bg-light); padding: 2rem; border-right: 1px solid var(--border-light); position: fixed; top: 75px; left: 0; width: 260px; height: calc(100vh - 75px); overflow-y: auto; }
+        .sidebar h2 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        .sidebar ul { list-style: none; } .sidebar li { margin-bottom: 0.8rem; }
+        .sidebar a { text-decoration: none; color: #555; font-weight: 500; transition: color 0.2s; } .sidebar a:hover { color: var(--accent-color); }
+        .content { grid-area: content; padding: 2rem 3rem; }
+        section { margin-bottom: 3rem; padding-top: 80px; margin-top: -75px; }
+        h2 { font-size: 2rem; color: var(--accent-color); margin-bottom: 1.5rem; border-bottom: 2px solid var(--border-light); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; }
+        p, ul, ol { margin-bottom: 1rem; } ul, ol { padding-left: 20px; }
+        b { color: var(--accent-color); }
+        .card { background-color: var(--card-bg-light); border: 1px solid var(--border-light); border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        @media (max-width: 900px) { .page-container { grid-template-columns: 1fr; grid-template-areas: "header" "content"; } .sidebar { display: none; } header h1 { font-size: 1.4rem; } .content { padding: 1.5rem; } }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+            function applyTheme(isDarkMode) { body.classList.toggle('dark-mode', isDarkMode); }
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const initialThemeDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+            themeToggleCheckbox.checked = initialThemeDark;
+            applyTheme(initialThemeDark);
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+    </script>
+</head>
+<body style="--accent-color: #795548;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 16: Support & Movement</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#skeleton">Human Skeleton</a></li>
+                <li><a href="#joints">Joints</a></li>
+                <li><a href="#disorders">Skeletal Disorders</a></li>
+                <li><a href="#muscles">Muscles</a></li>
+                <li><a href="#contraction">Muscle Contraction</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="skeleton">
+                <h2>1. The Human Skeleton</h2>
+                <p>The human skeleton provides the framework for the body, offering support, protection for internal organs, allowing movement, storing minerals, and producing blood cells. An adult human has 206 bones.</p>
+                <div class="card">
+                    <h4>Divisions of the Skeleton</h4>
+                    <ul>
+                        <li><b>Axial Skeleton (80 bones):</b> Forms the central axis of the body. It includes the skull, vertebral column, ribs, and sternum.</li>
+                        <li><b>Appendicular Skeleton (126 bones):</b> Consists of the bones of the limbs (arms and legs) and the pectoral (shoulder) and pelvic (hip) girdles that attach them to the axial skeleton.</li>
+                    </ul>
+                </div>
+                <h3>Structure of Bone and Cartilage</h3>
+                <p>Bones are rigid organs made of collagen and hardened by calcium phosphate. <b>Cartilage</b> is a flexible connective tissue found at the ends of bones in joints, in the nose, and ears. It provides cushioning and reduces friction.</p>
+            </section>
+
+            <section id="joints">
+                <h2>2. Joints</h2>
+                <p>Joints, or articulations, are the functional junctions between two or more bones.</p>
+                 <div class="card">
+                    <h4>Types of Joints</h4>
+                    <ul>
+                        <li><b>Fibrous Joints:</b> Immovable joints where bones are held together by dense connective tissue (e.g., the sutures of the skull).</li>
+                        <li><b>Cartilaginous Joints:</b> Slightly movable joints where bones are joined by cartilage (e.g., between vertebrae).</li>
+                        <li><b>Synovial Joints:</b> Freely movable joints that are the most common type in the body. They feature a fluid-filled synovial cavity that lubricates the joint. Examples include hinge joints (knee), ball-and-socket joints (hip), and pivot joints (neck).</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="disorders">
+                <h2>3. Disorders of the Skeleton</h2>
+                <p>Various conditions can affect the health and function of the skeletal system.</p>
+                 <div class="card">
+                    <h4>Common Skeletal Disorders</h4>
+                    <ul>
+                        <li><b>Fractures:</b> A break in a bone. The body repairs fractures in stages, starting with a hematoma (blood clot), followed by the formation of a soft and then a hard callus, and finally bone remodeling.</li>
+                        <li><b>Disc Slip:</b> The protrusion of the soft inner part of an intervertebral disc, which can press on spinal nerves and cause pain.</li>
+                        <li><b>Arthritis:</b> Inflammation of the joints, causing pain and stiffness. <b>Osteoarthritis</b> is caused by cartilage wear-and-tear, while <b>Rheumatoid arthritis</b> is an autoimmune disease where the body attacks its own joints.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="muscles">
+                <h2>4. Muscles</h2>
+                <p>Muscles are tissues that contract and relax to produce movement.</p>
+                <h3>Types of Muscles</h3>
+                <ul>
+                    <li><b>Skeletal Muscle:</b> Attached to bones, responsible for voluntary movements. Its cells are long, cylindrical, and striated (striped).</li>
+                    <li><b>Smooth Muscle:</b> Found in the walls of internal organs like the stomach and blood vessels. It is responsible for involuntary movements. Its cells are spindle-shaped and not striated.</li>
+                    <li><b>Cardiac Muscle:</b> Found only in the heart. It is striated but its contractions are involuntary. Its cells are branched and connected by intercalated discs.</li>
+                </ul>
+            </section>
+            
+            <section id="contraction">
+                <h2>5. Muscle Contraction</h2>
+                <p>Muscle contraction at the cellular level is explained by the <b>Sliding Filament Model</b>.</p>
+                <div class="card">
+                    <h4>The Sarcomere and Sliding Filaments</h4>
+                    <p>Skeletal muscle fibers are made of myofibrils, which are composed of repeating contractile units called <b>sarcomeres</b>. Each sarcomere consists of overlapping thick filaments (<b>myosin</b>) and thin filaments (<b>actin</b>).</p>
+                    <p>During contraction, myosin heads bind to actin, forming cross-bridges. The myosin heads then pull the actin filaments toward the center of the sarcomere. This sliding movement shortens the sarcomere, and thus the entire muscle fiber, without the filaments themselves changing length. This process is powered by ATP and triggered by the release of calcium ions (\(\text{Ca}^{2+}\)).</p>
+                </div>
+                <h3>Antagonistic Muscles</h3>
+                <p>Muscles can only pull, they cannot push. Therefore, they work in <b>antagonistic pairs</b>. One muscle (the agonist) contracts to produce a movement, while the other (the antagonist) relaxes. For example, to bend the elbow, the biceps (flexor) contracts and the triceps (extensor) relaxes.</p>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Human Skeleton:</b> Divided into the <b>axial</b> (skull, spine, ribs) and <b>appendicular</b> (limbs, girdles) skeletons, providing support and protection.</li>
+                        <li><b>Joints:</b> Connections between bones, classified as fibrous (immovable), cartilaginous (slightly movable), and synovial (freely movable).</li>
+                        <li><b>Skeletal Disorders:</b> Include fractures, disc slips, and arthritis (inflammation of joints).</li>
+                        <li><b>Muscle Types:</b> Three types exist: <b>skeletal</b> (voluntary, striated), <b>smooth</b> (involuntary, non-striated), and <b>cardiac</b> (involuntary, striated, found in the heart).</li>
+                        <li><b>Muscle Contraction:</b> The <b>Sliding Filament Model</b> describes how myosin (thick) filaments pull on actin (thin) filaments to shorten the sarcomere, causing contraction. This requires ATP and is triggered by calcium.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

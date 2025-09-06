@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6: Alkyl Halides & Amines</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --accent-color: #9C27B0; /* Purple */
+            --bg-light: #f4f7f9; --text-light: #333; --card-bg-light: #ffffff; --border-light: #e0e0e0; --header-bg-light: #ffffff; --sidebar-bg-light: #fdfdfd;
+            --bg-dark: #121212; --text-dark: #e0e0e0; --card-bg-dark: #1e1e1e; --border-dark: #333; --header-bg-dark: #1e1e1e; --sidebar-bg-dark: #232323;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { font-family: 'Poppins', sans-serif; line-height: 1.6; scroll-behavior: smooth; background-color: var(--bg-light); color: var(--text-light); transition: background-color 0.3s, color 0.3s; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: var(--border-light); color: var(--text-light); transition: background-color 0.3s; font-weight: 600; }
+        .theme-toggle-label .moon { display: none; } .theme-toggle-label .sun { display: inline; }
+        body.dark-mode { --bg-light: var(--bg-dark); --text-light: var(--text-dark); --card-bg-light: var(--card-bg-dark); --border-light: var(--border-dark); --header-bg-light: var(--header-bg-dark); --sidebar-bg-light: var(--sidebar-bg-dark); }
+        .dark-mode .theme-toggle-label .moon { display: inline; } .dark-mode .theme-toggle-label .sun { display: none; } .dark-mode .sidebar a { color: #c5d7e8; } .dark-mode .sidebar a:hover { color: #ffffff; }
+        .page-container { display: grid; grid-template-columns: 260px 1fr; grid-template-rows: auto 1fr; grid-template-areas: "header header" "sidebar content"; min-height: 100vh; }
+        header { grid-area: header; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: var(--header-bg-light); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        header h1 { color: var(--accent-color); font-size: 1.8rem; }
+        .sidebar { grid-area: sidebar; background-color: var(--sidebar-bg-light); padding: 2rem; border-right: 1px solid var(--border-light); position: fixed; top: 75px; left: 0; width: 260px; height: calc(100vh - 75px); overflow-y: auto; }
+        .sidebar h2 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        .sidebar ul { list-style: none; } .sidebar li { margin-bottom: 0.8rem; }
+        .sidebar a { text-decoration: none; color: #555; font-weight: 500; transition: color 0.2s; } .sidebar a:hover { color: var(--accent-color); }
+        .content { grid-area: content; padding: 2rem 3rem; }
+        section { margin-bottom: 3rem; padding-top: 80px; margin-top: -75px; }
+        h2 { font-size: 2rem; color: var(--accent-color); margin-bottom: 1.5rem; border-bottom: 2px solid var(--border-light); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; }
+        p, ul, ol { margin-bottom: 1rem; } ul, ol { padding-left: 20px; }
+        b { color: var(--accent-color); }
+        .card { background-color: var(--card-bg-light); border: 1px solid var(--border-light); border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        .card.formula { background-color: #333; color: white; border-left: 5px solid var(--accent-color); }
+        .card.formula p { margin: 0; font-family: 'Courier New', Courier, monospace; }
+        @media (max-width: 900px) { .page-container { grid-template-columns: 1fr; grid-template-areas: "header" "content"; } .sidebar { display: none; } header h1 { font-size: 1.4rem; } .content { padding: 1.5rem; } }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+            function applyTheme(isDarkMode) { body.classList.toggle('dark-mode', isDarkMode); }
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const initialThemeDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+            themeToggleCheckbox.checked = initialThemeDark;
+            applyTheme(initialThemeDark);
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+    </script>
+</head>
+<body style="--accent-color: #9C27B0;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 6: Alkyl Halides & Amines</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#alkyl-halides">Alkyl Halides (R-X)</a></li>
+                <li><a href="#sn-reactions">Nucleophilic Substitution</a></li>
+                <li><a href="#e-reactions">Elimination Reactions</a></li>
+                <li><a href="#grignard">Grignard Reagents</a></li>
+                <li><a href="#amines">Amines (R-NH₂)</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="alkyl-halides">
+                <h2>1. Alkyl Halides (Haloalkanes)</h2>
+                <p>Alkyl halides are organic compounds in which a halogen atom (F, Cl, Br, or I) is bonded to an \(sp^3\)-hybridized carbon atom of an alkyl group. Their general formula is <b>R-X</b>.</p>
+                <div class="card">
+                    <h4>Structure and Reactivity</h4>
+                    <p>The carbon-halogen bond (\(C-X\)) is <b>polar</b> because halogens are more electronegative than carbon. This creates a partial positive charge (\(\delta+\)) on the carbon and a partial negative charge (\(\delta-\)) on the halogen. This polarity makes the carbon atom an <b>electrophilic site</b>, susceptible to attack by nucleophiles.</p>
+                </div>
+                <h3>Classification of Alkyl Halides</h3>
+                <ul>
+                    <li><b>Primary (\(1^\circ\)):</b> The carbon bonded to the halogen is attached to one other carbon.</li>
+                    <li><b>Secondary (\(2^\circ\)):</b> The carbon bonded to the halogen is attached to two other carbons.</li>
+                    <li><b>Tertiary (\(3^\circ\)):</b> The carbon bonded to the halogen is attached to three other carbons.</li>
+                </ul>
+            </section>
+
+            <section id="sn-reactions">
+                <h2>2. Nucleophilic Substitution Reactions (S<sub>N</sub>)</h2>
+                <p>This is the hallmark reaction of alkyl halides. A <b>nucleophile</b> (a species with a lone pair of electrons) replaces the halogen atom (the <b>leaving group</b>).</p>
+                <div class="card formula">
+                    <p>\( \text{R}-\text{X} + \text{Nu:}^- \rightarrow \text{R}-\text{Nu} + \text{X:}^- \)</p>
+                </div>
+                <h3>S<sub>N</sub>2 Mechanism (Bimolecular)</h3>
+                <ul>
+                    <li><b>One-Step Process:</b> Bond-making and bond-breaking occur simultaneously.</li>
+                    <li><b>Backside Attack:</b> The nucleophile attacks the carbon from the side opposite the leaving group.</li>
+                    <li><b>Rate Law:</b> Rate = k[Alkyl Halide][Nucleophile]. (Second-order kinetics).</li>
+                    <li><b>Favored by:</b> Primary (\(1^\circ\)) alkyl halides, strong nucleophiles, and less steric hindrance.</li>
+                </ul>
+                <h3>S<sub>N</sub>1 Mechanism (Unimolecular)</h3>
+                <ul>
+                    <li><b>Two-Step Process:</b> First, the leaving group departs to form a stable <b>carbocation intermediate</b>. Second, the nucleophile attacks the carbocation.</li>
+                    <li><b>Rate-Determining Step:</b> The first step (formation of the carbocation) is the slow step.</li>
+                    <li><b>Rate Law:</b> Rate = k[Alkyl Halide]. (First-order kinetics).</li>
+                    <li><b>Favored by:</b> Tertiary (\(3^\circ\)) alkyl halides, weak nucleophiles, and polar protic solvents that stabilize the carbocation.</li>
+                </ul>
+            </section>
+            
+            <section id="e-reactions">
+                <h2>3. Elimination Reactions</h2>
+                <p>In an elimination reaction, atoms are removed from adjacent carbons to form a double bond (an alkene). These reactions compete with substitution reactions. Elimination is favored by <b>strong, bulky bases</b> and <b>high temperatures</b>.</p>
+                <ul>
+                    <li><b>E2 Mechanism:</b> A one-step process where the base removes a proton at the same time the leaving group departs. Favored by \(1^\circ\) and \(2^\circ\) alkyl halides and strong bases.</li>
+                    <li><b>E1 Mechanism:</b> A two-step process that proceeds through a carbocation intermediate (just like S<sub>N</sub>1). Favored by \(3^\circ\) alkyl halides and weak bases.</li>
+                </ul>
+            </section>
+
+            <section id="grignard">
+                <h2>4. Grignard Reagents (Organometallic Compounds)</h2>
+                <p>A Grignard reagent is an organometallic compound with the general formula <b>R-Mg-X</b>. It is prepared by reacting an alkyl halide with magnesium metal in anhydrous ether.</p>
+                <div class="card">
+                    <h4>Reactivity of Grignard Reagents</h4>
+                    <p>The C-Mg bond is highly polar, making the carbon atom strongly <b>nucleophilic</b> and basic. Grignard reagents are powerful tools for forming new carbon-carbon bonds.</p>
+                    <p>They react vigorously with any source of protons (like water, alcohols) to form an alkane, and they attack the electrophilic carbon of carbonyl groups (aldehydes, ketones, esters).</p>
+                </div>
+            </section>
+            
+            <section id="amines">
+                <h2>5. Amines</h2>
+                <p>Amines are organic derivatives of ammonia (\(\text{NH}_3\)) where one or more hydrogen atoms are replaced by alkyl or aryl groups.</p>
+                <h3>Structure and Basicity</h3>
+                <p>The nitrogen atom in an amine is \(sp^3\)-hybridized and has a lone pair of electrons. This lone pair makes amines <b>basic</b> (they can accept a proton) and <b>nucleophilic</b>.</p>
+                <ul>
+                    <li><b>Basicity Trend:</b> In the gas phase, \(3^\circ > 2^\circ > 1^\circ > \text{NH}_3\). In aqueous solution, the trend is generally \(2^\circ > 1^\circ \approx 3^\circ > \text{NH}_3\).</li>
+                </ul>
+                <h3>Preparation and Reactions</h3>
+                <ul>
+                    <li><b>Preparation:</b> Can be prepared by alkylation of ammonia or reduction of nitriles and amides.</li>
+                    <li><b>Reactions:</b> Amines act as nucleophiles, reacting with alkyl halides, aldehydes, ketones, and acyl halides (to form amides).</li>
+                </ul>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Alkyl Halides (R-X):</b> Contain a polar C-X bond, making the carbon electrophilic. They undergo nucleophilic substitution and elimination reactions.</li>
+                        <li><b>Nucleophilic Substitution:</b> Can occur via a one-step <b>S<sub>N</sub>2</b> mechanism (favored by \(1^\circ\) R-X) or a two-step <b>S<sub>N</sub>1</b> mechanism via a carbocation (favored by \(3^\circ\) R-X).</li>
+                        <li><b>Elimination Reactions:</b> Compete with substitution and form alkenes. Favored by strong bases and high heat.</li>
+                        <li><b>Grignard Reagents (R-Mg-X):</b> Powerful nucleophiles and bases used to form new C-C bonds.</li>
+                        <li><b>Amines (R-NH₂):</b> Organic bases containing a nitrogen with a lone pair. They are good nucleophiles and react with various electrophiles.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+

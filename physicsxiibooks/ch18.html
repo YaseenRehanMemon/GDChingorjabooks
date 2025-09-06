@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 9: Capacitors</title>
+    <title>Chapter 18: Magnetic Fields</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
         /* 1. CSS Variables for Theming */
         :root {
@@ -152,8 +153,6 @@
         .card.formula {
             background-color: var(--sidebar-bg);
             border-left: 5px solid var(--accent-color);
-            font-family: monospace;
-            font-size: 1.1rem;
         }
 
         .card ul, .card ol {
@@ -304,60 +303,13 @@
             }
         }
     </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
-            const body = document.body;
-
-            function applyTheme(isDarkMode) {
-                if (isDarkMode) {
-                    body.classList.add('dark-mode');
-                } else {
-                    body.classList.remove('dark-mode');
-                }
-            }
-
-            const savedTheme = localStorage.getItem('theme');
-            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-            if (savedTheme === 'dark') {
-                themeToggleCheckbox.checked = true;
-                applyTheme(true);
-            } else if (savedTheme === 'light') {
-                themeToggleCheckbox.checked = false;
-                applyTheme(false);
-            } else {
-                themeToggleCheckbox.checked = prefersDark;
-                applyTheme(prefersDark);
-            }
-
-            themeToggleCheckbox.addEventListener('change', () => {
-                const isDarkMode = themeToggleCheckbox.checked;
-                applyTheme(isDarkMode);
-                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-            });
-        });
-
-        // MathJax configuration for rendering LaTeX
-        window.MathJax = {
-            tex: {
-                inlineMath: [['\\(', '\\)']],
-                displayMath: [['\\[', '\\]']]
-            },
-            svg: {
-                fontCache: 'global'
-            }
-        };
-    </script>
-    <!-- MathJax CDN for rendering LaTeX -->
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
 <body>
     <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
     
     <div class="page-container">
         <header>
-            <h1>Chapter 9: Capacitors</h1>
+            <h1>Chapter 18: Magnetic Fields</h1>
             <label for="theme-toggle" class="theme-toggle-label">
                 <span class="sun">Light</span>
                 <span class="moon">Dark</span>
@@ -367,118 +319,108 @@
         <nav class="sidebar">
             <h2>Navigation</h2>
             <ul>
-                <li><a href="#intro">What is a Capacitor?</a></li>
-                <li><a href="#parallel-plate">The Parallel Plate Capacitor</a></li>
-                <li><a href="#combinations">Combinations of Capacitors</a></li>
-                <li><a href="#energy">Energy Storage</a></li>
-                <li><a href="#rc-circuits">RC Circuits</a></li>
+                <li><a href="#intro">Sources of Magnetic Fields</a></li>
+                <li><a href="#force-charge">Force on a Moving Charge</a></li>
+                <li><a href="#force-wire">Force on a Current-Carrying Wire</a></li>
+                <li><a href="#ampere">Ampere's Law</a></li>
+                <li><a href="#instruments">Measuring Instruments</a></li>
                 <li><a href="#summary">Chapter Summary</a></li>
             </ul>
         </nav>
 
         <main class="content">
             <section id="intro">
-                <h2>What is a Capacitor?</h2>
-                <p>A <b>capacitor</b> is a fundamental electronic component designed to store electric charge and energy. In its simplest form, it consists of two conductive plates separated by an insulating material called a <b>dielectric</b>.</p>
-                <div class="card">
-                    <h3>Capacitance (C)</h3>
-                    <p>Capacitance is the measure of a capacitor's ability to store charge. It is defined as the ratio of the charge stored on one plate to the potential difference (voltage) between the plates.</p>
+                <h2>Sources of Magnetic Fields</h2>
+                <p>A magnetic field (\(\vec{B}\)) is a region of space where a magnetic force can be detected. Unlike electric fields which are created by static charges, magnetic fields are created by <b>moving charges</b> (i.e., electric currents).</p>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Permanent Magnets</h3>
+                        <p>In materials like iron, the coordinated spinning of electrons in atoms creates tiny magnetic domains. When these domains align, a permanent macroscopic magnetic field is produced.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Electric Currents</h3>
+                        <p>Any wire carrying an electric current is surrounded by a magnetic field. The direction of the field can be found using the <b>Right-Hand Rule</b>: point your thumb in the direction of the current, and your fingers will curl in the direction of the magnetic field lines.</p>
+                    </div>
                 </div>
-                <div class="card formula">
-                    <h4>Formula: C = Q / V</h4>
-                    <p><b>C</b> = Capacitance (in Farads, F)<br>
-                       <b>Q</b> = Magnitude of charge on one plate (in Coulombs, C)<br>
-                       <b>V</b> = Voltage across the plates (in Volts, V)</p>
+                 <div class="card">
+                    <h3>Magnetic Flux (\(\Phi_B\)) and Flux Density</h3>
+                    <p><b>Magnetic Flux</b> is a measure of the total number of magnetic field lines passing through a given area. It is the scalar product of the magnetic field and area. <b>Magnetic Flux Density</b> is another term for the magnetic field strength (\(B\)), measured in Tesla (T).</p>
+                    <div class="card formula">\[ \Phi_B = \vec{B} \cdot \vec{A} = BA \cos(\theta) \]</div>
                 </div>
-                <p>A capacitor has a capacitance of one Farad if one Coulomb of charge is stored when the potential difference is one Volt. The Farad is a very large unit; more common units are the microfarad (&mu;F) and picofarad (pF).</p>
             </section>
 
-            <section id="parallel-plate">
-                <h2>The Parallel Plate Capacitor</h2>
-                <p>The most common type of capacitor is the parallel plate capacitor. Its capacitance depends on its geometric properties and the material between its plates.</p>
-                
+            <section id="force-charge">
+                <h2>Force on a Moving Charge</h2>
+                <p>A magnetic field exerts a force on a charged particle, but only if the particle is moving. This force is known as the Lorentz force.</p>
                 <div class="card formula">
-                    <h4>Capacitance of a Parallel Plate Capacitor</h4>
-                    <b>C = &epsilon;<sub>r</sub> &epsilon;₀ A / d</b>
-                    <p><b>A</b> = Area of one of the plates<br>
-                       <b>d</b> = Distance between the plates<br>
-                       <b>&epsilon;₀</b> = Permittivity of free space (a constant)<br>
-                       <b>&epsilon;<sub>r</sub></b> = The dielectric constant of the insulator</p>
+                    <h4>Magnetic Force on a Charge</h4>
+                    \[ \vec{F} = q(\vec{v} \times \vec{B}) \]
+                    <p>The magnitude of the force is:</p>
+                    \[ F = |q|vB \sin(\theta) \]
+                    <p><b>\(q\)</b> = Charge of the particle<br>
+                       <b>\(v\)</b> = Velocity of the particle<br>
+                       <b>\(B\)</b> = Magnetic field strength<br>
+                       <b>\(\theta\)</b> = Angle between the velocity and the magnetic field</p>
                 </div>
-
                 <div class="card">
-                    <h3>Dielectrics</h3>
-                    <p>A <b>dielectric</b> is an insulating material placed between the capacitor plates. It serves three purposes:</p>
+                    <h3>Important Properties</h3>
                     <ul>
-                        <li>It keeps the conductive plates from touching.</li>
-                        <li>It increases the maximum voltage the capacitor can withstand.</li>
-                        <li>It <b>increases the capacitance</b> by a factor known as the dielectric constant (&epsilon;<sub>r</sub>).</li>
+                        <li>The force is always <b>perpendicular</b> to both the velocity (\(\vec{v}\)) and the magnetic field (\(\vec{B}\)).</li>
+                        <li>Because the force is always perpendicular to the direction of motion, <b>a magnetic field does no work</b> on a charged particle and cannot change its kinetic energy or speed.</li>
+                        <li>A magnetic field can only change the <b>direction</b> of a particle's motion, causing it to move in a circular or helical path. This principle is used in particle accelerators and for determining the charge-to-mass ratio (e/m) of an electron.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="force-wire">
+                <h2>Force on a Current-Carrying Wire</h2>
+                <p>Since a current is a collection of moving charges, a wire carrying a current in a magnetic field will experience a magnetic force.</p>
+                 <div class="card formula">
+                    <h4>Magnetic Force on a Wire</h4>
+                    \[ \vec{F} = I(\vec{L} \times \vec{B}) \]
+                     <p>The magnitude of the force is:</p>
+                     \[ F = BIL \sin(\theta) \]
+                     <p><b>\(I\)</b> = Current in the wire<br><b>\(L\)</b> = Length of the wire in the field<br><b>\(B\)</b> = Magnetic field strength</p>
+                </div>
+                 <p>The direction of the force is given by Fleming's Left-Hand Rule. This effect is the operating principle behind electric motors.</p>
+            </section>
+
+            <section id="ampere">
+                <h2>Ampere's Law</h2>
+                <p>Ampere's Law relates the magnetic field in a closed loop to the electric current passing through that loop. It is the magnetic equivalent of Gauss's Law in electrostatics.</p>
+                <div class="card">
+                    <h3>Solenoids and Toroids</h3>
+                    <p>Ampere's law is particularly useful for calculating the magnetic field inside specific structures:</p>
+                    <ul>
+                        <li><b>Solenoid:</b> A long coil of wire. It produces a strong, uniform magnetic field inside the coil. \(B = \mu_0 n I\), where n is the number of turns per unit length.</li>
+                        <li><b>Toroid:</b> A solenoid bent into a donut shape. It confines the magnetic field entirely within its core.</li>
                     </ul>
                 </div>
             </section>
 
-            <section id="combinations">
-                <h2>Combinations of Capacitors</h2>
-                <p>Capacitors in a circuit can be combined in series or parallel to achieve a desired equivalent capacitance.</p>
-                
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Combination</th>
-                            <th>Description</th>
-                            <th>Equivalent Capacitance (C<sub>eq</sub>)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><b>Parallel</b></td>
-                            <td>Plates are connected side-by-side. The voltage across each capacitor is the same. The total charge is the sum of the individual charges.</td>
-                            <td><b>C<sub>eq</sub> = C₁ + C₂ + C₃ + ...</b></td>
-                        </tr>
-                        <tr>
-                            <td><b>Series</b></td>
-                            <td>Capacitors are connected end-to-end. The charge on each capacitor is the same. The total voltage is the sum of the individual voltages.</td>
-                            <td><b>1/C<sub>eq</sub> = 1/C₁ + 1/C₂ + 1/C₃ + ...</b></td>
-                        </tr>
-                    </tbody>
-                </table>
-                 <p><b>Note:</b> These rules are the opposite of the rules for combining resistors!</p>
-            </section>
-            
-            <section id="energy">
-                <h2>Energy Stored in a Capacitor</h2>
-                <p>Work is required to move charge onto the plates of a capacitor. This work is stored as electric potential energy in the electric field between the plates. This stored energy can be released quickly, which is why capacitors are used in applications like camera flashes.</p>
-                
-                <div class="card formula">
-                    <h4>Formulas for Stored Energy (U)</h4>
-                    <b>U = \frac{1}{2}QV = \frac{1}{2}CV^2 = \frac{Q^2}{2C}</b>
-                </div>
-            </section>
-
-            <section id="rc-circuits">
-                <h2>Charging and Discharging (RC Circuits)</h2>
-                <p>When a capacitor is connected to a power source through a resistor, it does not charge instantly. The process is gradual and follows an exponential curve.</p>
-
+            <section id="instruments">
+                <h2>Measuring Instruments: The Galvanometer</h2>
+                <p>A <b>galvanometer</b> is a device that detects small electric currents. It works on the principle that a current-carrying coil in a magnetic field experiences a torque (\(\tau = NIAB\sin\theta\)). This torque causes the coil to rotate against a spring, and the amount of deflection is proportional to the current.</p>
                 <div class="card">
-                    <h3>The Time Constant (&tau;)</h3>
-                    <p>The rate of charging or discharging is determined by the <b>time constant</b> of the circuit, which is the product of the resistance and the capacitance.</p>
-                    <div class="card formula">
-                        <b>&tau; = RC</b>
-                    </div>
-                    <p>The time constant represents the time it takes for the capacitor to charge to approximately <b>63.2%</b> of its maximum voltage, or to discharge to <b>36.8%</b> of its initial voltage.</p>
+                    <h3>Conversions</h3>
+                    <ul>
+                        <li><b>Ammeter:</b> A galvanometer can be converted into an ammeter (to measure current) by connecting a low-resistance <b>shunt</b> resistor in parallel with it.</li>
+                        <li><b>Voltmeter:</b> It can be converted into a voltmeter (to measure voltage) by connecting a high-resistance <b>multiplier</b> resistor in series with it.</li>
+                    </ul>
                 </div>
             </section>
 
             <section id="summary">
                 <h2>Chapter Summary</h2>
-                <p>Capacitors are essential components in electronics for storing charge and energy.</p>
+                <p>Magnetic fields are produced by moving charges and exert forces on other moving charges.</p>
                 <div class="card">
                     <ul>
-                        <li>A capacitor stores charge, and its ability to do so is measured by its <b>capacitance (C = \(\frac{Q}{V}\))</b>.</li>
-                        <li>The capacitance of a parallel plate capacitor depends on its plate area (A), the distance between them (d), and the <b>dielectric</b> material used (<b>C = \(\frac{\epsilon A}{d}\)</b>).</li>
-                        <li>Capacitors in <b>parallel add directly</b> (C<sub>eq</sub> = C₁ + C₂), while capacitors in <b>series add as reciprocals</b> (1/C<sub>eq</sub> = 1/C₁ + 1/C₂).</li>
-                        <li>The energy stored in a capacitor is given by <b>U = \frac{1}{2}CV^2</b>.</li>
-                        <li>The charging and discharging of a capacitor through a resistor is governed by the <b>time constant (&tau; = RC)</b>.</li>
+                        <li><b>Sources of \(\vec{B}\):</b> Electric currents and permanent magnets.</li>
+                        <li><b>Force on a moving charge:</b> \(F = |q|vB \sin(\theta)\). This force is always perpendicular to both \(\vec{v}\) and \(\vec{B}\) and does no work.</li>
+                        <li><b>Force on a current-carrying wire:</b> \(F = BIL \sin(\theta)\). This is the principle behind electric motors.</li>
+                        <li><b>Magnetic Flux (\(\Phi_B\))</b> is the measure of field lines through an area. The magnetic field strength (\(B\)) is also called flux density.</li>
+                        <li><b>Ampere's Law</b> relates the magnetic field around a closed loop to the current passing through it. It is used to find the field in solenoids and toroids.</li>
+                        <li>A <b>galvanometer</b> detects current via the torque on a coil in a magnetic field. It can be converted into an <b>ammeter</b> (with a parallel shunt) or a <b>voltmeter</b> (with a series multiplier).</li>
                     </ul>
                 </div>
             </section>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 8: Diversity Among Plants</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to the shared stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+        // MathJax configuration (for rendering LaTeX)
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body style="--accent-color: #2ecc71;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 8: Diversity Among Plants</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Plant Evolution</a></li>
+                <li><a href="#bryophytes">Bryophytes (Non-Vascular)</a></li>
+                <li><a href="#seedless-vascular">Seedless Vascular Plants</a></li>
+                <li><a href="#seed-plants">Seed Plants</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>8.1 Evolutionary Relations in Plants</h2>
+                <p>Plants are multicellular, eukaryotic, photosynthetic autotrophs with cell walls made of cellulose. The evolutionary history of plants is a story of adaptation from aquatic habitats to a terrestrial life, which presented challenges like water conservation and structural support.</p>
+                <div class="card">
+                    <h4>Alternation of Generations</h4>
+                    <p>All plants exhibit a life cycle called <strong>alternation of generations</strong>, where a multicellular haploid (n) stage, the <strong>gametophyte</strong>, alternates with a multicellular diploid (2n) stage, the <strong>sporophyte</strong>.</p>
+                    <ul>
+                        <li>The gametophyte produces gametes (sperm and egg) by mitosis.</li>
+                        <li>The sporophyte produces spores by meiosis.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="bryophytes">
+                <h2>8.2 Bryophytes (Non-Vascular Plants)</h2>
+                <p><strong>Bryophytes</strong> are the simplest land plants and represent an early stage of plant evolution. They lack a specialized vascular system (xylem and phloem) for transporting water and nutrients, which limits their size and keeps them tied to moist environments.</p>
+                <div class="card">
+                    <h4>Key Characteristics of Bryophytes</h4>
+                    <ul>
+                        <li><b>Dominant Generation:</b> The gametophyte is the dominant, photosynthetic, and free-living stage of the life cycle.</li>
+                        <li><b>Dependence on Water:</b> Require water for sexual reproduction, as the sperm must swim to reach the egg.</li>
+                        <li><b>Examples:</b> Mosses, Liverworts, and Hornworts.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="seedless-vascular">
+                <h2>8.3 Seedless Vascular Plants (Pteridophytes)</h2>
+                <p><strong>Seedless vascular plants</strong> were the first to evolve vascular tissues (xylem and phloem), allowing them to grow taller and live in drier habitats than bryophytes. However, they still reproduce using spores and require water for fertilization.</p>
+                <div class="card">
+                    <h4>Key Characteristics of Pteridophytes</h4>
+                    <ul>
+                        <li><b>Dominant Generation:</b> The sporophyte is the dominant, larger generation.</li>
+                        <li><b>Vascular Tissue:</b> Possess xylem for water transport and phloem for nutrient transport, providing structural support.</li>
+                        <li><b>Reproduction:</b> Reproduce via spores, not seeds.</li>
+                        <li><b>Examples:</b> Ferns, Club Mosses, and Horsetails.</li>
+                    </ul>
+                </div>
+                 <h3>Evolution of the Leaf</h3>
+                <p>Vascular plants evolved two main types of leaves:</p>
+                <ul>
+                    <li><b>Microphylls:</b> Small, single-veined leaves (e.g., in club mosses).</li>
+                    <li><b>Megaphylls:</b> Larger leaves with a complex, branching vascular system (e.g., in ferns and seed plants).</li>
+                </ul>
+            </section>
+
+            <section id="seed-plants">
+                <h2>8.4 Seed Plants (Spermatophytes)</h2>
+                <p>The evolution of the <strong>seed</strong> was a major adaptation that allowed plants to fully conquer terrestrial environments. A seed consists of an embryo, a food supply, and a protective coat.</p>
+                <p>Seed plants are divided into two major groups: Gymnosperms and Angiosperms.</p>
+                
+                <h3>Gymnosperms</h3>
+                <p>Gymnosperms are plants with "naked seeds," meaning their seeds are not enclosed within a fruit. They are typically cone-bearing plants.</p>
+                <ul>
+                    <li><b>Examples:</b> Conifers (pines, firs, spruces), Cycads, Ginkgo.</li>
+                </ul>
+                
+                <h3>Angiosperms (Flowering Plants)</h3>
+                <p>Angiosperms are the most diverse and successful group of plants. Their key adaptations are the <strong>flower</strong> (for efficient reproduction) and the <strong>fruit</strong> (for seed protection and dispersal).</p>
+                <div class="card">
+                    <h4>Key Features of Angiosperms</h4>
+                    <ul>
+                        <li><b>Flowers:</b> Specialized reproductive structures that attract pollinators.</li>
+                        <li><b>Double Fertilization:</b> A unique process where one sperm fertilizes the egg to form the zygote, and a second sperm fuses with two other nuclei to form the endosperm (food supply).</li>
+                        <li><b>Fruits:</b> Mature ovaries that enclose and protect the seeds.</li>
+                    </ul>
+                </div>
+                <h4>Monocots vs. Dicots</h4>
+                <p>Angiosperms are further divided into two major classes:</p>
+                <table>
+                    <thead><tr><th>Feature</th><th>Monocots</th><th>Dicots</th></tr></thead>
+                    <tbody>
+                        <tr><td><b>Cotyledons (Seed Leaves)</b></td><td>One</td><td>Two</td></tr>
+                        <tr><td><b>Leaf Veins</b></td><td>Parallel</td><td>Net-like (branched)</td></tr>
+                        <tr><td><b>Flower Parts</b></td><td>In multiples of 3</td><td>In multiples of 4 or 5</td></tr>
+                        <tr><td><b>Vascular Bundles in Stem</b></td><td>Scattered</td><td>Arranged in a ring</td></tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li>Plant evolution shows a trend of increasing adaptation to land, including the development of vascular tissue, seeds, flowers, and fruits.</li>
+                        <li><b>Bryophytes</b> are non-vascular plants with a dominant gametophyte generation, requiring water for reproduction.</li>
+                        <li><b>Seedless Vascular Plants (Pteridophytes)</b>, like ferns, have a dominant sporophyte and vascular tissue but still reproduce via spores.</li>
+                        <li><b>Seed Plants</b> are the most successful land plants.
+                            <ul>
+                                <li><b>Gymnosperms</b> have "naked seeds," typically in cones.</li>
+                                <li><b>Angiosperms</b> have flowers and fruits, and are divided into <b>Monocots</b> and <b>Dicots</b>.</li>
+                            </ul>
+                        </li>
+                        <li>A key evolutionary trend is the reduction of the gametophyte generation and the increasing dominance of the sporophyte.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

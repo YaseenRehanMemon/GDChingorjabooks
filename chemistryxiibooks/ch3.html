@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3: Organic Compounds</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --accent-color: #FF5722; /* Deep Orange */
+            --bg-light: #f4f7f9; --text-light: #333; --card-bg-light: #ffffff; --border-light: #e0e0e0; --header-bg-light: #ffffff; --sidebar-bg-light: #fdfdfd;
+            --bg-dark: #121212; --text-dark: #e0e0e0; --card-bg-dark: #1e1e1e; --border-dark: #333; --header-bg-dark: #1e1e1e; --sidebar-bg-dark: #232323;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { font-family: 'Poppins', sans-serif; line-height: 1.6; scroll-behavior: smooth; background-color: var(--bg-light); color: var(--text-light); transition: background-color 0.3s, color 0.3s; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: var(--border-light); color: var(--text-light); transition: background-color 0.3s; font-weight: 600; }
+        .theme-toggle-label .moon { display: none; } .theme-toggle-label .sun { display: inline; }
+        body.dark-mode { --bg-light: var(--bg-dark); --text-light: var(--text-dark); --card-bg-light: var(--card-bg-dark); --border-light: var(--border-dark); --header-bg-light: var(--header-bg-dark); --sidebar-bg-light: var(--sidebar-bg-dark); }
+        .dark-mode .theme-toggle-label .moon { display: inline; } .dark-mode .theme-toggle-label .sun { display: none; } .dark-mode .sidebar a { color: #c5d7e8; } .dark-mode .sidebar a:hover { color: #ffffff; }
+        .page-container { display: grid; grid-template-columns: 260px 1fr; grid-template-rows: auto 1fr; grid-template-areas: "header header" "sidebar content"; min-height: 100vh; }
+        header { grid-area: header; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: var(--header-bg-light); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        header h1 { color: var(--accent-color); font-size: 1.8rem; }
+        .sidebar { grid-area: sidebar; background-color: var(--sidebar-bg-light); padding: 2rem; border-right: 1px solid var(--border-light); position: fixed; top: 75px; left: 0; width: 260px; height: calc(100vh - 75px); overflow-y: auto; }
+        .sidebar h2 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        .sidebar ul { list-style: none; } .sidebar li { margin-bottom: 0.8rem; }
+        .sidebar a { text-decoration: none; color: #555; font-weight: 500; transition: color 0.2s; } .sidebar a:hover { color: var(--accent-color); }
+        .content { grid-area: content; padding: 2rem 3rem; }
+        section { margin-bottom: 3rem; padding-top: 80px; margin-top: -75px; }
+        h2 { font-size: 2rem; color: var(--accent-color); margin-bottom: 1.5rem; border-bottom: 2px solid var(--border-light); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; }
+        p, ul, table { margin-bottom: 1rem; } ul { padding-left: 20px; }
+        .card { background-color: var(--card-bg-light); border: 1px solid var(--border-light); border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        .card.formula { background-color: #333; color: white; border-left: 5px solid var(--accent-color); }
+        .card.formula p { margin: 0; font-family: 'Courier New', Courier, monospace; }
+        @media (max-width: 900px) { .page-container { grid-template-columns: 1fr; grid-template-areas: "header" "content"; } .sidebar { display: none; } header h1 { font-size: 1.4rem; } .content { padding: 1.5rem; } }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+            function applyTheme(isDarkMode) { body.classList.toggle('dark-mode', isDarkMode); }
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const initialThemeDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+            themeToggleCheckbox.checked = initialThemeDark;
+            applyTheme(initialThemeDark);
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+    </script>
+</head>
+<body style="--accent-color: #FF5722;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 3: Organic Compounds</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#sources">Sources of Organic Compounds</a></li>
+                <li><a href="#characteristics">Characteristics</a></li>
+                <li><a href="#functional-groups">Functional Groups</a></li>
+                <li><a href="#reforming">Petroleum Reforming</a></li>
+                <li><a href="#buckyball">Buckyball</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>1. Introduction to Organic Chemistry</h2>
+                <p>Organic chemistry is the study of carbon-containing compounds, specifically hydrocarbons and their derivatives. Initially, it was believed that organic compounds could only be produced by living organisms due to a "vital force."</p>
+                <div class="card">
+                    <h4>The Overthrow of Vital Force Theory</h4>
+                    <p>In 1828, German chemist Friedrich Wöhler synthesized urea, an organic compound found in urine, from an inorganic compound (ammonium cyanate). This landmark experiment demonstrated that organic compounds could be created in the lab, disproving the vital force theory and opening the door to modern synthetic organic chemistry.</p>
+                    <div class="card formula">
+                        <p>\( \text{NH}_4\text{CNO} \xrightarrow{\Delta} \text{CO(NH}_2)_2 \)</p>
+                        <p>(Ammonium cyanate) \(\rightarrow\) (Urea)</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sources">
+                <h2>2. Sources of Organic Compounds</h2>
+                <p>Organic compounds are abundant and are sourced from both natural and synthetic origins.</p>
+                <h3>Fossil Fuels</h3>
+                <p>Fossil fuels are the primary source of many essential organic compounds, especially hydrocarbons.</p>
+                <ul>
+                    <li><b>Coal:</b> A solid fossil fuel derived from ancient plant matter. Through a process called <b>destructive distillation</b> (heating in the absence of air), coal yields coke, coal tar, coal gas, and ammonia liquor. Coal tar is a rich source of aromatic hydrocarbons like benzene.</li>
+                    <li><b>Petroleum (Crude Oil):</b> A complex liquid mixture of alkanes, cycloalkanes, and aromatic hydrocarbons. It is refined to produce fuels like gasoline and is a feedstock for the petrochemical industry.</li>
+                    <li><b>Natural Gas:</b> A mixture of light hydrocarbons, primarily methane (\( \text{CH}_4 \)). It's a cleaner-burning fuel than coal or petroleum.</li>
+                </ul>
+                <h3>Natural Products</h3>
+                <p>Many organic compounds are isolated directly from plants and animals. These include sugars (glucose), structural polymers (cellulose), hormones (insulin), and medicines.</p>
+            </section>
+
+            <section id="characteristics">
+                <h2>3. Unique Characteristics of Organic Compounds</h2>
+                <p>The vast number and diversity of organic compounds are due to the unique properties of the carbon atom.</p>
+                <div class="card">
+                    <h4>Key Properties of Carbon</h4>
+                    <ul>
+                        <li><b>Catenation:</b> Carbon's unique ability to form long, stable chains and rings by bonding with other carbon atoms.</li>
+                        <li><b>Tetravalency:</b> Carbon has four valence electrons, allowing it to form four strong covalent bonds.</li>
+                        <li><b>Isomerism:</b> The existence of compounds (isomers) that have the same molecular formula but different structural arrangements, leading to different properties.</li>
+                        <li><b>Non-Ionic Nature:</b> Organic compounds primarily feature covalent bonds, leading to lower melting/boiling points and slower reaction rates compared to ionic compounds.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="functional-groups">
+                <h2>4. Functional Groups and Homologous Series</h2>
+                <div class="card">
+                    <h4>Functional Group</h4>
+                    <p>A specific atom or group of atoms within a molecule that is responsible for its characteristic chemical reactions. Compounds with the same functional group belong to the same family (e.g., alcohols, which all contain the -OH group).</p>
+                </div>
+                <h3>Homologous Series</h3>
+                <p>A series of organic compounds with the same functional group and similar chemical properties, in which successive members differ by a \(-\text{CH}_2-\) group. For example, the alkanes (methane, ethane, propane, etc.) form a homologous series.</p>
+            </section>
+            
+            <section id="reforming">
+                <h2>5. Reforming of Petroleum</h2>
+                <p>Reforming is a crucial industrial process used to improve the quality of gasoline.</p>
+                <div class="card">
+                    <h4>What is Reforming?</h4>
+                    <p>The process of converting straight-chain hydrocarbons (which have low octane ratings and cause engine "knocking") into branched-chain or aromatic hydrocarbons (which have high octane ratings and burn more smoothly).</p>
+                    <p>This process is typically carried out at high pressure and temperature using a platinum catalyst.</p>
+                    <div class="card formula">
+                        <p>\( \text{n-octane} \xrightarrow{\text{Heat, Pt catalyst}} \text{isooctane (2,2,4-trimethylpentane)} \)</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="buckyball">
+                <h2>6. Buckyball: A New Form of Carbon</h2>
+                <p>In 1985, a new allotropic form of carbon was discovered: Buckminsterfullerene (\(\text{C}_{60}\)), commonly known as the <b>buckyball</b>.</p>
+                <div class="card">
+                    <h4>Structure of a Buckyball</h4>
+                    <p>It consists of 60 carbon atoms arranged in a hollow, spherical shape resembling a soccer ball. The structure is composed of 20 hexagons and 12 pentagons. Buckyballs are used in nanotechnology, electronics, and drug delivery systems.</p>
+                </div>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Organic Chemistry:</b> The study of carbon compounds, which can be synthesized and are not limited to living organisms.</li>
+                        <li><b>Sources:</b> Key sources include fossil fuels (coal, petroleum, natural gas) and natural products from plants and animals.</li>
+                        <li><b>Diversity:</b> The huge number of organic compounds is due to carbon's ability of <b>catenation</b> and <b>isomerism</b>.</li>
+                        <li><b>Functional Groups:</b> Specific groups of atoms that determine the chemical properties of a family of organic compounds.</li>
+                        <li><b>Reforming:</b> An industrial process that increases the octane rating of gasoline by converting straight-chain alkanes into branched isomers.</li>
+                        <li><b>Buckyball (\(\text{C}_{60}\)):</b> A spherical allotrope of carbon with applications in nanotechnology.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

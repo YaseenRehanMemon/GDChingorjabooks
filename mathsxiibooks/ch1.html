@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1: Introduction to Symbolic Package: MAPLE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --accent-color: #D32F2F; /* Red for Maple */ }
+        body { font-family: 'Poppins', sans-serif; margin: 0; background-color: #f4f7f9; color: #333; transition: background-color 0.3s, color 0.3s; }
+        .dark-mode { background-color: #121212; color: #e0e0e0; }
+        .page-container { display: flex; flex-direction: column; }
+        header { background-color: #ffffff; padding: 1rem 2rem; border-bottom: 1px solid #e0e0e0; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .dark-mode header { background-color: #1e1e1e; border-bottom: 1px solid #333; }
+        header h1 { margin: 0; color: var(--accent-color); font-size: 1.8rem; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: #e9eef2; transition: background-color 0.3s; }
+        .dark-mode .theme-toggle-label { background-color: #242424; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label .sun { display: inline; } .theme-toggle-label .moon { display: none; }
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label .sun { display: none; }
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label .moon { display: inline; }
+        .container { display: flex; }
+        .sidebar { width: 260px; background-color: #e9eef2; padding: 1.5rem; height: 100vh; position: fixed; top: 70px; left: 0; overflow-y: auto; border-right: 1px solid #e0e0e0; }
+        .dark-mode .sidebar { background-color: #242424; border-right: 1px solid #333; }
+        .sidebar h2 { font-size: 1.2rem; color: var(--accent-color); margin-top: 0; }
+        .sidebar ul { list-style: none; padding: 0; }
+        .sidebar ul li a { display: block; color: #333; text-decoration: none; padding: 0.75rem 1rem; border-radius: 5px; transition: background-color 0.2s; }
+        .dark-mode .sidebar ul li a { color: #e0e0e0; }
+        .sidebar ul li a:hover { background-color: var(--accent-color); color: white; }
+        .content { flex: 1; padding: 2rem; margin-left: 290px; }
+        .card { background-color: #ffffff; border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .dark-mode .card { background-color: #1e1e1e; border-color: var(--accent-color); }
+        h2 { border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        code { background-color: #e0e0e0; padding: 2px 6px; border-radius: 4px; font-family: 'Courier New', Courier, monospace; }
+        .dark-mode code { background-color: #2c2c2c; color: #f0f0f0; }
+        table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        th, td { padding: 12px; border: 1px solid #e0e0e0; text-align: left; }
+        .dark-mode th, .dark-mode td { border-color: #333; }
+        th { background-color: #f2f2f2; }
+        .dark-mode th { background-color: #2a2a2a; }
+        @media (max-width: 768px) { .sidebar { display: none; } .content { margin-left: 0; } header { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 1: Intro to MAPLE</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+        <div class="container">
+            <nav class="sidebar">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="#intro">What is MAPLE?</a></li>
+                    <li><a href="#environment">The MAPLE Environment</a></li>
+                    <li><a href="#commands">Basic Commands</a></li>
+                    <li><a href="#polynomials">Polynomials</a></li>
+                    <li><a href="#plotting">Graphics and Plotting</a></li>
+                    <li><a href="#matrices">Matrices</a></li>
+                </ul>
+            </nav>
+            <main class="content">
+                <section id="intro">
+                    <h2>1.1 What is MAPLE?</h2>
+                    <p>Maple is a powerful software for symbolic computation, allowing you to perform complex mathematical operations, visualize data, and solve problems from various areas of mathematics.</p>
+                    <div class="card">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li><strong>Symbolic Computation:</strong> Manipulate mathematical expressions with variables, like solving <code>x + a = 0</code> for <code>x</code>.</li>
+                            <li><strong>Numerical Computation:</strong> Calculate with numbers to find approximate solutions.</li>
+                            <li><strong>Visualization:</strong> Create 2D and 3D plots of functions and data.</li>
+                            <li><strong>Programming:</strong> Develop custom algorithms and functions.</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="environment">
+                    <h2>1.2 The MAPLE Environment</h2>
+                    <p>The main Maple interface consists of several key components that help you interact with the software.</p>
+                    <div class="card">
+                        <h4>Main Components</h4>
+                        <ul>
+                            <li><strong>Menu Bar:</strong> Provides access to file operations, editing tools, and other features (File, Edit, View, etc.).</li>
+                            <li><strong>Toolbar:</strong> Contains shortcuts for common actions like creating new files, saving, and printing.</li>
+                            <li><strong>Palettes:</strong> Collections of clickable templates for mathematical expressions, symbols, and matrices, making it easy to enter complex notation.</li>
+                            <li><strong>Workspace:</strong> The main area where you type commands and see the output. It can operate in two modes:
+                                <ul>
+                                    <li><strong>Document Mode:</strong> Allows mixing text and executable math on the same line. Great for creating reports.</li>
+                                    <li><strong>Worksheet Mode:</strong> A more traditional programming style where each command starts with a prompt (<code>></code>).</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="commands">
+                    <h2>1.3 Basic Commands</h2>
+                    <p>Commands are the instructions you give to Maple. Every command must end with a semicolon (<code>;</code>) to display the output, or a colon (<code>:</code>) to hide it.</p>
+                    <div class="card">
+                        <h4>Essential Commands</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Command</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>:=</code></td>
+                                    <td>Assignment operator. Assigns a value to a variable (e.g., <code>a := 5;</code>).</td>
+                                </tr>
+                                <tr>
+                                    <td><code>restart;</code></td>
+                                    <td>Clears all variables from memory, providing a fresh start.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>evalf();</code></td>
+                                    <td>Evaluates an expression to a floating-point (decimal) number (e.g., <code>evalf(Pi);</code>).</td>
+                                </tr>
+                                <tr>
+                                    <td><code>simplify();</code></td>
+                                    <td>Applies simplification rules to an expression.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>solve();</code></td>
+                                    <td>Solves an equation or a system of equations for specified variables.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section id="polynomials">
+                    <h2>1.4 Working with Polynomials</h2>
+                    <p>Maple provides powerful tools for manipulating polynomials.</p>
+                    <div class="card">
+                        <h4>Polynomial Operations</h4>
+                        <ul>
+                            <li><strong>Factoring:</strong> Use the <code>factor()</code> command to factor a polynomial. <br>Example: <code>factor(x^2 - 4);</code> returns <code>(x - 2)(x + 2)</code>.</li>
+                            <li><strong>Expanding:</strong> Use the <code>expand()</code> command to expand a factored expression.<br>Example: <code>expand((x - 2)*(x + 2));</code> returns <code>x^2 - 4</code>.</li>
+                            <li><strong>Substituting:</strong> Use the <code>subs()</code> command to substitute a value or expression into another.<br>Example: <code>subs(x=3, x^2 + 1);</code> returns <code>10</code>.</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="plotting">
+                    <h2>1.5 Graphics and Plotting</h2>
+                    <p>Maple's plotting capabilities are one of its most useful features for visualizing functions.</p>
+                    <div class="card">
+                        <h4>2D Plotting</h4>
+                        <ul>
+                            <li><strong>Single Function:</strong> <code>plot(f(x), x = a..b);</code> plots the function <code>f(x)</code> from <code>x=a</code> to <code>x=b</code>.<br>Example: <code>plot(sin(x), x = 0..2*Pi);</code></li>
+                            <li><strong>Multiple Functions:</strong> <code>plot({f(x), g(x)}, x = a..b);</code> plots multiple functions on the same axes. <br>Example: <code>plot({sin(x), cos(x)}, x = 0..2*Pi);</code></li>
+                            <li><strong>Parametric Plots:</strong> <code>plot([x(t), y(t), t = a..b]);</code> creates a plot from parametric equations.<br>Example: <code>plot([cos(t), sin(t), t = 0..2*Pi]);</code> (This draws a circle).</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="matrices">
+                    <h2>1.6 Matrices</h2>
+                    <p>Maple can define and perform operations on matrices and vectors.</p>
+                    <div class="card">
+                        <h4>Creating and Using Matrices</h4>
+                        <p>You can use the Matrix palette or commands. To perform matrix operations, you first need to load the Linear Algebra package:</p>
+                        <code>with(LinearAlgebra):</code>
+                        <ul>
+                            <li><strong>Defining a Matrix:</strong> <code>A := Matrix([[1, 2], [3, 4]]);</code></li>
+                            <li><strong>Matrix Operations:</strong> You can add (<code>A + B</code>), subtract (<code>A - B</code>), and multiply (<code>A . B</code>) matrices. Note the use of a period for matrix multiplication.</li>
+                            <li><strong>Inverse and Transpose:</strong> Find the inverse with <code>MatrixInverse(A)</code> and the transpose with <code>Transpose(A)</code>.</li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

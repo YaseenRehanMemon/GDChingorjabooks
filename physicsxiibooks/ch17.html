@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 9: Capacitors</title>
+    <title>Chapter 17: Second Law of Thermodynamics</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
         /* 1. CSS Variables for Theming */
         :root {
@@ -152,8 +153,6 @@
         .card.formula {
             background-color: var(--sidebar-bg);
             border-left: 5px solid var(--accent-color);
-            font-family: monospace;
-            font-size: 1.1rem;
         }
 
         .card ul, .card ol {
@@ -304,60 +303,13 @@
             }
         }
     </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
-            const body = document.body;
-
-            function applyTheme(isDarkMode) {
-                if (isDarkMode) {
-                    body.classList.add('dark-mode');
-                } else {
-                    body.classList.remove('dark-mode');
-                }
-            }
-
-            const savedTheme = localStorage.getItem('theme');
-            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-            if (savedTheme === 'dark') {
-                themeToggleCheckbox.checked = true;
-                applyTheme(true);
-            } else if (savedTheme === 'light') {
-                themeToggleCheckbox.checked = false;
-                applyTheme(false);
-            } else {
-                themeToggleCheckbox.checked = prefersDark;
-                applyTheme(prefersDark);
-            }
-
-            themeToggleCheckbox.addEventListener('change', () => {
-                const isDarkMode = themeToggleCheckbox.checked;
-                applyTheme(isDarkMode);
-                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-            });
-        });
-
-        // MathJax configuration for rendering LaTeX
-        window.MathJax = {
-            tex: {
-                inlineMath: [['\\(', '\\)']],
-                displayMath: [['\\[', '\\]']]
-            },
-            svg: {
-                fontCache: 'global'
-            }
-        };
-    </script>
-    <!-- MathJax CDN for rendering LaTeX -->
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
 <body>
     <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
     
     <div class="page-container">
         <header>
-            <h1>Chapter 9: Capacitors</h1>
+            <h1>Chapter 17: Second Law of Thermodynamics</h1>
             <label for="theme-toggle" class="theme-toggle-label">
                 <span class="sun">Light</span>
                 <span class="moon">Dark</span>
@@ -367,118 +319,104 @@
         <nav class="sidebar">
             <h2>Navigation</h2>
             <ul>
-                <li><a href="#intro">What is a Capacitor?</a></li>
-                <li><a href="#parallel-plate">The Parallel Plate Capacitor</a></li>
-                <li><a href="#combinations">Combinations of Capacitors</a></li>
-                <li><a href="#energy">Energy Storage</a></li>
-                <li><a href="#rc-circuits">RC Circuits</a></li>
+                <li><a href="#intro">The Arrow of Time</a></li>
+                <li><a href="#engines">Heat Engines</a></li>
+                <li><a href="#carnot">The Carnot Engine</a></li>
+                <li><a href="#refrigerators">Refrigerators</a></li>
+                <li><a href="#entropy">Entropy</a></li>
                 <li><a href="#summary">Chapter Summary</a></li>
             </ul>
         </nav>
 
         <main class="content">
             <section id="intro">
-                <h2>What is a Capacitor?</h2>
-                <p>A <b>capacitor</b> is a fundamental electronic component designed to store electric charge and energy. In its simplest form, it consists of two conductive plates separated by an insulating material called a <b>dielectric</b>.</p>
-                <div class="card">
-                    <h3>Capacitance (C)</h3>
-                    <p>Capacitance is the measure of a capacitor's ability to store charge. It is defined as the ratio of the charge stored on one plate to the potential difference (voltage) between the plates.</p>
-                </div>
-                <div class="card formula">
-                    <h4>Formula: C = Q / V</h4>
-                    <p><b>C</b> = Capacitance (in Farads, F)<br>
-                       <b>Q</b> = Magnitude of charge on one plate (in Coulombs, C)<br>
-                       <b>V</b> = Voltage across the plates (in Volts, V)</p>
-                </div>
-                <p>A capacitor has a capacitance of one Farad if one Coulomb of charge is stored when the potential difference is one Volt. The Farad is a very large unit; more common units are the microfarad (&mu;F) and picofarad (pF).</p>
-            </section>
-
-            <section id="parallel-plate">
-                <h2>The Parallel Plate Capacitor</h2>
-                <p>The most common type of capacitor is the parallel plate capacitor. Its capacitance depends on its geometric properties and the material between its plates.</p>
+                <h2>The Second Law: The Arrow of Time</h2>
+                <p>While the First Law of Thermodynamics tells us that energy is conserved, it doesn't specify the direction in which processes occur. The Second Law provides this direction, often called "time's arrow." It explains why heat flows from hot to cold, and why some processes are irreversible.</p>
                 
-                <div class="card formula">
-                    <h4>Capacitance of a Parallel Plate Capacitor</h4>
-                    <b>C = &epsilon;<sub>r</sub> &epsilon;₀ A / d</b>
-                    <p><b>A</b> = Area of one of the plates<br>
-                       <b>d</b> = Distance between the plates<br>
-                       <b>&epsilon;₀</b> = Permittivity of free space (a constant)<br>
-                       <b>&epsilon;<sub>r</sub></b> = The dielectric constant of the insulator</p>
-                </div>
-
-                <div class="card">
-                    <h3>Dielectrics</h3>
-                    <p>A <b>dielectric</b> is an insulating material placed between the capacitor plates. It serves three purposes:</p>
-                    <ul>
-                        <li>It keeps the conductive plates from touching.</li>
-                        <li>It increases the maximum voltage the capacitor can withstand.</li>
-                        <li>It <b>increases the capacitance</b> by a factor known as the dielectric constant (&epsilon;<sub>r</sub>).</li>
-                    </ul>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Kelvin-Planck Statement</h3>
+                        <p>It is impossible to construct a heat engine that, operating in a cycle, produces no other effect than the extraction of heat from a single reservoir and the performance of an equivalent amount of work. (In short, no heat engine can be 100% efficient).</p>
+                    </div>
+                    <div class="card">
+                        <h3>Clausius Statement</h3>
+                        <p>It is impossible to construct a device that, operating in a cycle, produces no other effect than the transfer of heat from a colder body to a hotter body. (In short, heat does not spontaneously flow from cold to hot).</p>
+                    </div>
                 </div>
             </section>
 
-            <section id="combinations">
-                <h2>Combinations of Capacitors</h2>
-                <p>Capacitors in a circuit can be combined in series or parallel to achieve a desired equivalent capacitance.</p>
+            <section id="engines">
+                <h2>Heat Engines</h2>
+                <p>A <b>heat engine</b> is a device that converts thermal energy (heat) into mechanical work. It operates in a cycle by taking heat from a high-temperature source (hot reservoir), converting some of it into work, and rejecting the rest to a lower-temperature sink (cold reservoir).</p>
                 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Combination</th>
-                            <th>Description</th>
-                            <th>Equivalent Capacitance (C<sub>eq</sub>)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><b>Parallel</b></td>
-                            <td>Plates are connected side-by-side. The voltage across each capacitor is the same. The total charge is the sum of the individual charges.</td>
-                            <td><b>C<sub>eq</sub> = C₁ + C₂ + C₃ + ...</b></td>
-                        </tr>
-                        <tr>
-                            <td><b>Series</b></td>
-                            <td>Capacitors are connected end-to-end. The charge on each capacitor is the same. The total voltage is the sum of the individual voltages.</td>
-                            <td><b>1/C<sub>eq</sub> = 1/C₁ + 1/C₂ + 1/C₃ + ...</b></td>
-                        </tr>
-                    </tbody>
-                </table>
-                 <p><b>Note:</b> These rules are the opposite of the rules for combining resistors!</p>
+                <div class="card formula">
+                    <h4>Thermal Efficiency (\(\eta\))</h4>
+                    \[ \eta = \frac{W}{Q_H} = \frac{Q_H - Q_C}{Q_H} = 1 - \frac{Q_C}{Q_H} \]
+                    <p><b>\(W\)</b> = Work done by the engine<br>
+                       <b>\(Q_H\)</b> = Heat absorbed from the hot reservoir<br>
+                       <b>\(Q_C\)</b> = Heat exhausted to the cold reservoir</p>
+                </div>
+                <p>Because some heat must always be exhausted (\(Q_C > 0\)), the efficiency of any heat engine is always less than 100%.</p>
+            </section>
+
+            <section id="carnot">
+                <h2>The Carnot Engine: The Ideal Limit</h2>
+                <p>Sadi Carnot conceived of an ideal, reversible engine operating in a special cycle known as the Carnot cycle. This theoretical engine sets the maximum possible efficiency for any heat engine operating between two given temperatures.</p>
+                
+                <div class="card">
+                    <h3>The Carnot Cycle</h3>
+                    <p>The cycle consists of four reversible processes: two isothermal (constant temperature) and two adiabatic (no heat exchange).</p>
+                    <div class="card formula">
+                        <h4>Efficiency of a Carnot Engine</h4>
+                        \[ \eta_{\text{Carnot}} = 1 - \frac{T_C}{T_H} \]
+                        <p>Where \(T_C\) and \(T_H\) are the absolute temperatures (in Kelvin) of the cold and hot reservoirs, respectively.</p>
+                    </div>
+                    <p>This is the highest possible efficiency. All real engines (like petrol or diesel engines) are less efficient due to irreversible processes like friction.</p>
+                </div>
             </section>
             
-            <section id="energy">
-                <h2>Energy Stored in a Capacitor</h2>
-                <p>Work is required to move charge onto the plates of a capacitor. This work is stored as electric potential energy in the electric field between the plates. This stored energy can be released quickly, which is why capacitors are used in applications like camera flashes.</p>
-                
+            <section id="refrigerators">
+                <h2>Refrigerators and Heat Pumps</h2>
+                <p>A <b>refrigerator</b> is essentially a heat engine running in reverse. It uses external work to extract heat from a cold space (the inside of the fridge) and exhaust it to a warmer space (the room).</p>
                 <div class="card formula">
-                    <h4>Formulas for Stored Energy (U)</h4>
-                    <b>U = \frac{1}{2}QV = \frac{1}{2}CV^2 = \frac{Q^2}{2C}</b>
+                    <h4>Coefficient of Performance (COP)</h4>
+                    <p>The efficiency of a refrigerator is measured by its Coefficient of Performance (COP), which is the ratio of heat removed to the work done.</p>
+                    \[ \text{COP} = \frac{Q_C}{W} \]
+                     <p>For an ideal (Carnot) refrigerator:</p>
+                     \[ \text{COP}_{\text{Carnot}} = \frac{T_C}{T_H - T_C} \]
                 </div>
             </section>
 
-            <section id="rc-circuits">
-                <h2>Charging and Discharging (RC Circuits)</h2>
-                <p>When a capacitor is connected to a power source through a resistor, it does not charge instantly. The process is gradual and follows an exponential curve.</p>
-
+            <section id="entropy">
+                <h2>Entropy: A Measure of Disorder</h2>
+                <p><b>Entropy (S)</b> is a thermodynamic property that can be thought of as a measure of the disorder, randomness, or unavailability of energy in a system.</p>
+                
                 <div class="card">
-                    <h3>The Time Constant (&tau;)</h3>
-                    <p>The rate of charging or discharging is determined by the <b>time constant</b> of the circuit, which is the product of the resistance and the capacitance.</p>
+                    <h3>The Second Law in Terms of Entropy</h3>
+                    <p>The total entropy of an isolated system can never decrease over time. It remains constant for reversible processes and increases for irreversible (natural) processes.</p>
                     <div class="card formula">
-                        <b>&tau; = RC</b>
+                        \[ \Delta S_{\text{universe}} \geq 0 \]
                     </div>
-                    <p>The time constant represents the time it takes for the capacitor to charge to approximately <b>63.2%</b> of its maximum voltage, or to discharge to <b>36.8%</b> of its initial voltage.</p>
+                    <p>This means that all natural processes tend to move towards a state of greater disorder. This increase in entropy is what gives time its direction and leads to the concept of the "degradation of energy"—as entropy increases, the amount of energy available to do useful work decreases.</p>
                 </div>
+                 <div class="card formula">
+                    <h4>Change in Entropy</h4>
+                    <p>For a reversible process at a constant temperature \(T\), the change in entropy is:</p>
+                    \[ \Delta S = \frac{Q}{T} \]
+                 </div>
             </section>
 
             <section id="summary">
                 <h2>Chapter Summary</h2>
-                <p>Capacitors are essential components in electronics for storing charge and energy.</p>
+                <p>The Second Law of Thermodynamics governs the direction of natural processes, introducing the fundamental concepts of efficiency and disorder.</p>
                 <div class="card">
                     <ul>
-                        <li>A capacitor stores charge, and its ability to do so is measured by its <b>capacitance (C = \(\frac{Q}{V}\))</b>.</li>
-                        <li>The capacitance of a parallel plate capacitor depends on its plate area (A), the distance between them (d), and the <b>dielectric</b> material used (<b>C = \(\frac{\epsilon A}{d}\)</b>).</li>
-                        <li>Capacitors in <b>parallel add directly</b> (C<sub>eq</sub> = C₁ + C₂), while capacitors in <b>series add as reciprocals</b> (1/C<sub>eq</sub> = 1/C₁ + 1/C₂).</li>
-                        <li>The energy stored in a capacitor is given by <b>U = \frac{1}{2}CV^2</b>.</li>
-                        <li>The charging and discharging of a capacitor through a resistor is governed by the <b>time constant (&tau; = RC)</b>.</li>
+                        <li>The Second Law states that <b>heat does not spontaneously flow from cold to hot</b> (Clausius) and that <b>no heat engine can be 100% efficient</b> (Kelvin-Planck).</li>
+                        <li>A <b>heat engine</b> converts heat into work with an efficiency of \(\eta = 1 - Q_C/Q_H\).</li>
+                        <li>The <b>Carnot engine</b> is an ideal, reversible engine with the maximum possible efficiency, which depends only on the temperatures of the hot and cold reservoirs: \(\eta_C = 1 - T_C/T_H\).</li>
+                        <li>A <b>refrigerator</b> uses work to move heat from a cold region to a hot region. Its performance is measured by the COP.</li>
+                        <li><b>Entropy (S)</b> is a measure of the disorder of a system. The Second Law states that the total entropy of the universe always increases or stays the same (\(\Delta S \ge 0\)) for any process.</li>
+                        <li>The increase in entropy signifies the "degradation of energy" and provides the "arrow of time."</li>
                     </ul>
                 </div>
             </section>

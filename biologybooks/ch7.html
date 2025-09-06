@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 7: Protoctists and Fungi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to the shared stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+        // MathJax configuration (for rendering LaTeX)
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body style="--accent-color: #CDDC39;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 7: Protoctists and Fungi</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro-protoctista">Kingdom Protoctista</a></li>
+                <li><a href="#groups-protoctista">Major Groups of Protoctista</a></li>
+                <li><a href="#intro-fungi">Kingdom Fungi</a></li>
+                <li><a href="#fungi-diversity">Diversity Among Fungi</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro-protoctista">
+                <h2>7.1 Kingdom Protoctista</h2>
+                <p>The <strong>Kingdom Protoctista</strong> is a diverse and varied group of eukaryotic organisms. It is often considered a "catch-all" kingdom for eukaryotes that are not plants, animals, or fungi. They are mostly unicellular, but some are colonial or simple multicellular organisms.</p>
+            </section>
+
+            <section id="groups-protoctista">
+                <h2>7.2 Major Groups of Protoctista</h2>
+                <p>Protoctists are broadly categorized based on their similarities to other kingdoms.</p>
+                <div class="card">
+                    <h4>Plant-like Protoctists (Algae)</h4>
+                    <p>Algae are photosynthetic protoctists, often called the "grass of the water." They can be unicellular, colonial, or multicellular. They are classified based on their photosynthetic pigments.</p>
+                    <p><b>Example:</b> <i>Ulva</i> (sea lettuce), which exhibits an <b>alternation of generations</b> between a haploid gametophyte and a diploid sporophyte.</p>
+                </div>
+                <div class="card">
+                    <h4>Fungi-like Protoctists (Slime Molds and Water Molds)</h4>
+                    <p>These organisms are heterotrophic absorbers. Slime molds are amoeboid and move, while water molds (Oomycetes) have filamentous hyphae similar to fungi.</p>
+                    <p><b>Example:</b> <i>Phytophthora infestans</i>, a water mold that causes late blight of potato.</p>
+                </div>
+                <div class="card">
+                    <h4>Animal-like Protoctists (Protozoa)</h4>
+                    <p>Protozoa are unicellular, heterotrophic organisms that ingest their food. They are classified based on their method of locomotion.</p>
+                    <ul>
+                        <li><b>Sarcodina (Rhizopoda):</b> Move using pseudopodia (e.g., <i>Amoeba</i>).</li>
+                        <li><b>Flagellata (Mastigophora):</b> Move using flagella (e.g., <i>Trypanosoma</i>).</li>
+                        <li><b>Ciliata (Ciliophora):</b> Move using cilia (e.g., <i>Paramecium</i>).</li>
+                        <li><b>Sporozoa:</b> Non-motile parasites (e.g., <i>Plasmodium</i>, which causes malaria).</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="intro-fungi">
+                <h2>7.3 Kingdom Fungi</h2>
+                <p><strong>Fungi</strong> are a large, successful group of eukaryotic organisms that are primarily multicellular (except for yeasts). The study of fungi is called <strong>mycology</strong>.</p>
+                <h3>7.3.1 General Characteristics</h3>
+                <div class="card">
+                    <ul>
+                        <li><b>Nutrition:</b> Fungi are <strong>absorptive heterotrophs</strong>. They secrete digestive enzymes into their surroundings and then absorb the resulting nutrients.</li>
+                        <li><b>Structure:</b> The body of a fungus is called a <strong>mycelium</strong>, which is a network of filamentous threads called <strong>hyphae</strong>. Hyphae can be septate (with cross-walls) or aseptate (coenocytic).</li>
+                        <li><b>Cell Wall:</b> Fungal cell walls are made of <strong>chitin</strong>, a strong and flexible polysaccharide.</li>
+                        <li><b>Reproduction:</b> Fungi can reproduce both asexually (through spores, conidia, or budding) and sexually.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="fungi-diversity">
+                <h2>7.4 Diversity Among Fungi</h2>
+                <p>Fungi are classified into major divisions based on their reproductive structures.</p>
+                <table>
+                    <thead>
+                        <tr><th>Division</th><th>Common Name</th><th>Key Reproductive Feature</th><th>Example</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><b>Zygomycota</b></td><td>Zygote Fungi</td><td>Forms a resistant zygospore during sexual reproduction.</td><td><i>Mucor</i> (bread mold)</td></tr>
+                        <tr><td><b>Ascomycota</b></td><td>Sac Fungi</td><td>Produces sexual spores (ascospores) in a sac-like structure called an ascus.</td><td>Yeast, mildew, <i>Penicillium</i></td></tr>
+                        <tr><td><b>Basidiomycota</b></td><td>Club Fungi</td><td>Produces sexual spores (basidiospores) on a club-shaped structure called a basidium.</td><td>Mushrooms, toadstools, rusts</td></tr>
+                        <tr><td><b>Deuteromycota</b></td><td>Imperfect Fungi</td><td>No known sexual stage in their life cycle.</td><td><i>Aspergillus</i></td></tr>
+                    </tbody>
+                </table>
+                <h3>Importance of Fungi</h3>
+                <div class="card">
+                    <ul>
+                        <li><b>Decomposers:</b> Fungi are essential for recycling nutrients in ecosystems by breaking down dead organic material.</li>
+                        <li><b>Food and Drink:</b> Used in baking (yeast), brewing, and as food (mushrooms).</li>
+                        <li><b>Medicine:</b> Source of important antibiotics, most famously penicillin.</li>
+                        <li><b>Pathogens:</b> Cause diseases in plants (e.g., rusts, smuts) and animals (e.g., ringworm, athlete's foot).</li>
+                        <li><b>Mutualistic Relationships:</b> Form vital symbiotic relationships like lichens (with algae) and mycorrhizae (with plant roots).</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Kingdom Protoctista:</b> A diverse group of eukaryotes including algae (plant-like), slime/water molds (fungi-like), and protozoa (animal-like).</li>
+                        <li><b>Kingdom Fungi:</b> A major kingdom of absorptive heterotrophs with chitin cell walls and bodies made of hyphae.</li>
+                        <li><b>Fungal Diversity:</b> Major groups include Zygomycota, Ascomycota, Basidiomycota, and Deuteromycota, primarily distinguished by their methods of sexual reproduction.</li>
+                        <li><b>Ecological Roles:</b> Both protoctists and fungi play critical roles as producers, decomposers, pathogens, and symbionts, significantly impacting human life and the environment.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

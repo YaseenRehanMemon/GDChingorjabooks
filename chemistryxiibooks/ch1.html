@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1: Chemistry of Representative Elements</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --accent-color: #E91E63; /* Pink */
+            --bg-light: #f4f7f9; --text-light: #333; --card-bg-light: #ffffff; --border-light: #e0e0e0; --header-bg-light: #ffffff; --sidebar-bg-light: #fdfdfd;
+            --bg-dark: #121212; --text-dark: #e0e0e0; --card-bg-dark: #1e1e1e; --border-dark: #333; --header-bg-dark: #1e1e1e; --sidebar-bg-dark: #232323;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { font-family: 'Poppins', sans-serif; line-height: 1.6; scroll-behavior: smooth; background-color: var(--bg-light); color: var(--text-light); transition: background-color 0.3s, color 0.3s; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: var(--border-light); color: var(--text-light); transition: background-color 0.3s; font-weight: 600; }
+        .theme-toggle-label .moon { display: none; } .theme-toggle-label .sun { display: inline; }
+        body.dark-mode { --bg-light: var(--bg-dark); --text-light: var(--text-dark); --card-bg-light: var(--card-bg-dark); --border-light: var(--border-dark); --header-bg-light: var(--header-bg-dark); --sidebar-bg-light: var(--sidebar-bg-dark); }
+        .dark-mode .theme-toggle-label .moon { display: inline; } .dark-mode .theme-toggle-label .sun { display: none; } .dark-mode .sidebar a { color: #c5d7e8; } .dark-mode .sidebar a:hover { color: #ffffff; }
+        .page-container { display: grid; grid-template-columns: 260px 1fr; grid-template-rows: auto 1fr; grid-template-areas: "header header" "sidebar content"; min-height: 100vh; }
+        header { grid-area: header; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: var(--header-bg-light); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        header h1 { color: var(--accent-color); font-size: 1.8rem; }
+        .sidebar { grid-area: sidebar; background-color: var(--sidebar-bg-light); padding: 2rem; border-right: 1px solid var(--border-light); position: fixed; top: 75px; left: 0; width: 260px; height: calc(100vh - 75px); overflow-y: auto; }
+        .sidebar h2 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        .sidebar ul { list-style: none; } .sidebar li { margin-bottom: 0.8rem; }
+        .sidebar a { text-decoration: none; color: #555; font-weight: 500; transition: color 0.2s; } .sidebar a:hover { color: var(--accent-color); }
+        .content { grid-area: content; padding: 2rem 3rem; }
+        section { margin-bottom: 3rem; padding-top: 80px; margin-top: -75px; }
+        h2 { font-size: 2rem; color: var(--accent-color); margin-bottom: 1.5rem; border-bottom: 2px solid var(--border-light); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; }
+        p, ul { margin-bottom: 1rem; } ul { padding-left: 20px; }
+        .card { background-color: var(--card-bg-light); border: 1px solid var(--border-light); border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        @media (max-width: 900px) { .page-container { grid-template-columns: 1fr; grid-template-areas: "header" "content"; } .sidebar { display: none; } header h1 { font-size: 1.4rem; } .content { padding: 1.5rem; } }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+            function applyTheme(isDarkMode) { body.classList.toggle('dark-mode', isDarkMode); }
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const initialThemeDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+            themeToggleCheckbox.checked = initialThemeDark;
+            applyTheme(initialThemeDark);
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+    </script>
+</head>
+<body style="--accent-color: #E91E63;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 1: Representative Elements</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#s-block">s-Block Elements</a></li>
+                <li><a href="#p-block">p-Block Elements</a></li>
+                <li><a href="#trends">Periodic Trends</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>1. Introduction to Representative Elements</h2>
+                <p>The representative elements are the elements in the <b>s-block</b> and <b>p-block</b> of the periodic table. They are called "representative" because they exhibit a wide range of chemical and physical properties and follow periodic trends more consistently than other elements.</p>
+                <div class="card">
+                    <h4>Key Groups</h4>
+                    <ul>
+                        <li><b>s-Block:</b> Groups 1 (alkali metals) and 2 (alkaline earth metals). Their valence electrons are in the s-orbital.</li>
+                        <li><b>p-Block:</b> Groups 13 to 18. Their valence electrons are in the p-orbitals. This block contains metals, metalloids, and nonmetals.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="s-block">
+                <h2>2. s-Block Elements</h2>
+                <p>The s-block elements are highly reactive metals known for forming ionic compounds.</p>
+                <h3>Group 1: Alkali Metals</h3>
+                <p>Alkali metals (Li, Na, K, etc.) have a single valence electron (\(ns^1\)), which they readily lose to form a +1 ion. They are soft, have low densities, and react vigorously with water to produce hydrogen gas and a metal hydroxide.</p>
+                 <div class="card">
+                    <h4>Example Reaction: Sodium with Water</h4>
+                    <p>\( 2\text{Na}(s) + 2\text{H}_2\text{O}(l) \rightarrow 2\text{NaOH}(aq) + \text{H}_2(g) \)</p>
+                </div>
+                <h3>Group 2: Alkaline Earth Metals</h3>
+                <p>Alkaline earth metals (Be, Mg, Ca, etc.) have two valence electrons (\(ns^2\)) and tend to lose both to form a +2 ion. They are harder and less reactive than alkali metals but are still considered reactive metals.</p>
+            </section>
+            
+            <section id="p-block">
+                <h2>3. p-Block Elements</h2>
+                <p>The p-block is the most diverse block, containing a mix of nonmetals, metalloids, and metals.</p>
+                 <h3>Group 17: Halogens</h3>
+                <p>Halogens (F, Cl, Br, I) are highly reactive nonmetals with seven valence electrons (\(ns^2np^5\)). They need only one more electron to complete their octet, so they are powerful oxidizing agents and readily form -1 ions (halides).</p>
+                <h3>Group 18: Noble Gases</h3>
+                <p>Noble gases (He, Ne, Ar, etc.) have completely filled valence shells (\(ns^2np^6\)). This stable electron configuration makes them chemically inert and unreactive under normal conditions. They exist as monatomic gases.</p>
+            </section>
+
+            <section id="trends">
+                <h2>4. Periodic Trends in Representative Elements</h2>
+                <p>The properties of representative elements change predictably across a period and down a group.</p>
+                <div class="card">
+                    <h4>Key Periodic Trends</h4>
+                    <ul>
+                        <li><b>Atomic Radius:</b> Decreases from left to right across a period (due to increasing nuclear charge) and increases down a group (due to adding new electron shells).</li>
+                        <li><b>Ionization Energy:</b> The energy required to remove an electron. It increases across a period and decreases down a group.</li>
+                        <li><b>Electronegativity:</b> An atom's ability to attract electrons in a bond. It increases across a period and decreases down a group.</li>
+                        <li><b>Metallic Character:</b> Decreases across a period and increases down a group.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Representative Elements:</b> The s-block and p-block elements, which show clear periodic trends.</li>
+                        <li><b>s-Block (Groups 1 & 2):</b> Highly reactive metals (alkali and alkaline earth metals) that lose electrons to form cations.</li>
+                        <li><b>p-Block (Groups 13-18):</b> A diverse group including metals, metalloids, and nonmetals like the highly reactive halogens and the inert noble gases.</li>
+                        <li><b>Periodic Trends:</b> Properties like atomic radius, ionization energy, and electronegativity vary predictably across periods and down groups, helping to explain the chemical behavior of these elements.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

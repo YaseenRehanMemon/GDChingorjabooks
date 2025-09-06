@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4: Higher-Order Derivatives and Applications</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root { --accent-color: #FF5722; /* Orange for Applications */ }
+        body { font-family: 'Poppins', sans-serif; margin: 0; background-color: #f4f7f9; color: #333; transition: background-color 0.3s, color 0.3s; }
+        .dark-mode { background-color: #121212; color: #e0e0e0; }
+        .page-container { display: flex; flex-direction: column; }
+        header { background-color: #ffffff; padding: 1rem 2rem; border-bottom: 1px solid #e0e0e0; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .dark-mode header { background-color: #1e1e1e; border-bottom: 1px solid #333; }
+        header h1 { margin: 0; color: var(--accent-color); font-size: 1.8rem; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: #e9eef2; transition: background-color 0.3s; }
+        .dark-mode .theme-toggle-label { background-color: #242424; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label .sun { display: inline; } .theme-toggle-label .moon { display: none; }
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label .sun { display: none; }
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label .moon { display: inline; }
+        .container { display: flex; }
+        .sidebar { width: 260px; background-color: #e9eef2; padding: 1.5rem; height: 100vh; position: fixed; top: 70px; left: 0; overflow-y: auto; border-right: 1px solid #e0e0e0; }
+        .dark-mode .sidebar { background-color: #242424; border-right: 1px solid #333; }
+        .sidebar h2 { font-size: 1.2rem; color: var(--accent-color); margin-top: 0; }
+        .sidebar ul { list-style: none; padding: 0; }
+        .sidebar ul li a { display: block; color: #333; text-decoration: none; padding: 0.75rem 1rem; border-radius: 5px; transition: background-color 0.2s; }
+        .dark-mode .sidebar ul li a { color: #e0e0e0; }
+        .sidebar ul li a:hover { background-color: var(--accent-color); color: white; }
+        .content { flex: 1; padding: 2rem; margin-left: 290px; }
+        .card { background-color: #ffffff; border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .dark-mode .card { background-color: #1e1e1e; border-color: var(--accent-color); }
+        h2 { border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        @media (max-width: 768px) { .sidebar { display: none; } .content { margin-left: 0; } header { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 4: Higher-Order Derivatives & Applications</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+        <div class="container">
+            <nav class="sidebar">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="#higher-order">Higher-Order Derivatives</a></li>
+                    <li><a href="#series">Taylor & Maclaurin Series</a></li>
+                    <li><a href="#applications">Applications of Derivatives</a></li>
+                    <li><a href="#extrema">Maxima and Minima</a></li>
+                </ul>
+            </nav>
+            <main class="content">
+                <section id="higher-order">
+                    <h2>4.1 Higher-Order Derivatives</h2>
+                    <p>A higher-order derivative is the result of differentiating a function multiple times. If the first derivative tells us the rate of change (velocity), the second derivative tells us the rate of change of the rate of change (acceleration).</p>
+                    <div class="card">
+                        <h4>Notation</h4>
+                        <ul>
+                            <li><strong>First Derivative:</strong> \(f'(x)\) or \(\frac{dy}{dx}\)</li>
+                            <li><strong>Second Derivative:</strong> \(f''(x)\) or \(\frac{d^2y}{dx^2}\)</li>
+                            <li><strong>Third Derivative:</strong> \(f'''(x)\) or \(\frac{d^3y}{dx^3}\)</li>
+                            <li><strong>nth Derivative:</strong> \(f^{(n)}(x)\) or \(\frac{d^ny}{dx^n}\)</li>
+                        </ul>
+                        <p>To find a higher-order derivative, you simply differentiate the previous derivative.</p>
+                    </div>
+                </section>
+
+                <section id="series">
+                    <h2>4.2 Taylor and Maclaurin Series</h2>
+                    <p>Taylor and Maclaurin series are powerful tools used to approximate complex functions with an infinite sum of polynomial terms. This allows us to work with functions that are otherwise difficult to compute.</p>
+                    <div class="card">
+                        <h4>Maclaurin Series (Centered at 0)</h4>
+                        <p>A Maclaurin series is a special case of a Taylor series that is centered at \(x=0\). It represents a function \(f(x)\) as a power series:</p>
+                        \[ f(x) = f(0) + f'(0)x + \frac{f''(0)}{2!}x^2 + \frac{f'''(0)}{3!}x^3 + \dots + \frac{f^{(n)}(0)}{n!}x^n + \dots \]
+                    </div>
+                    <div class="card">
+                        <h4>Taylor Series (Centered at a)</h4>
+                        <p>A Taylor series is a more general representation that can be centered around any point \(x=a\):</p>
+                        \[ f(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \frac{f'''(a)}{3!}(x-a)^3 + \dots \]
+                    </div>
+                </section>
+
+                <section id="applications">
+                    <h2>4.3 Applications of Derivatives</h2>
+                    <p>The derivative has many practical applications, primarily related to understanding the geometry and behavior of a function's graph.</p>
+                    <div class="card">
+                        <h4>Key Applications</h4>
+                        <ul>
+                            <li><strong>Equation of a Tangent Line:</strong> The derivative \(f'(a)\) gives the slope of the line tangent to the graph of \(f(x)\) at the point \((a, f(a))\).</li>
+                            <li><strong>Equation of a Normal Line:</strong> The normal line is perpendicular to the tangent line. Its slope is the negative reciprocal of the tangent's slope, \(-\frac{1}{f'(a)}\).</li>
+                            <li><strong>Angle of Intersection:</strong> The angle \(\theta\) between two curves at a point of intersection is the angle between their tangent lines. If the slopes of the tangents are \(m_1\) and \(m_2\), the angle is given by:</li>
+                        </ul>
+                        \[ \tan(\theta) = \left| \frac{m_2 - m_1}{1 + m_1 m_2} \right| \]
+                    </div>
+                </section>
+                
+                <section id="extrema">
+                    <h2>4.4 Maxima and Minima (Extreme Values)</h2>
+                    <p>Derivatives are the primary tool for finding the maximum and minimum values of a function, which is crucial for optimization problems.</p>
+                    <h3>Increasing and Decreasing Functions</h3>
+                    <ul>
+                        <li>If \(f'(x) > 0\) on an interval, the function is <strong>increasing</strong> on that interval.</li>
+                        <li>If \(f'(x) < 0\) on an interval, the function is <strong>decreasing</strong> on that interval.</li>
+                    </ul>
+                    <div class="card">
+                        <h4>Second Derivative Test for Extrema</h4>
+                        <p>The second derivative test helps classify critical points (where \(f'(x) = 0\)) as local maxima or minima.</p>
+                        <ol>
+                            <li>Find the critical points by solving \(f'(x) = 0\). Let \(c\) be a critical point.</li>
+                            <li>Calculate the second derivative, \(f''(x)\).</li>
+                            <li>Evaluate \(f''(c)\):
+                                <ul>
+                                    <li>If \(f''(c) < 0\), the function has a <strong>local maximum</strong> at \(x=c\). (The graph is concave down).</li>
+                                    <li>If \(f''(c) > 0\), the function has a <strong>local minimum</strong> at \(x=c\). (The graph is concave up).</li>
+                                    <li>If \(f''(c) = 0\), the test is inconclusive.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

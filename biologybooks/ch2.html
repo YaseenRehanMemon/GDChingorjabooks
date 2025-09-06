@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2: Enzymes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to the shared stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+        // MathJax configuration (for rendering LaTeX)
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body style="--accent-color: #FF9800;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 2: Enzymes</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Introduction to Enzymes</a></li>
+                <li><a href="#structure">Enzyme Structure</a></li>
+                <li><a href="#mechanism">Mechanism of Action</a></li>
+                <li><a href="#factors">Factors Affecting Enzyme Action</a></li>
+                <li><a href="#inhibition">Enzyme Inhibition</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>2.1 Introduction to Enzymes</h2>
+                <p><strong>Enzymes</strong> are biological catalysts that speed up the rate of metabolic reactions in living cells without being consumed in the process. Life as we know it would not be possible without enzymes, as most biochemical reactions would occur too slowly to sustain life.</p>
+                <div class="card">
+                    <h4>Key Characteristics of Enzymes</h4>
+                    <ul>
+                        <li><b>Catalytic Nature:</b> They are highly efficient catalysts, increasing reaction rates dramatically.</li>
+                        <li><b>Specificity:</b> Each enzyme typically catalyzes only one specific reaction or a very small group of related reactions.</li>
+                        <li><b>Protein Structure:</b> Most enzymes are globular proteins. (Some RNA molecules, called ribozymes, also act as catalysts).</li>
+                        <li><b>Regulation:</b> Enzyme activity can be controlled by various factors, allowing the cell to regulate its metabolic pathways.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="structure">
+                <h2>2.2 Enzyme Structure</h2>
+                <p>The function of an enzyme is directly related to its complex three-dimensional structure.</p>
+                <h3>2.2.1 Active Site</h3>
+                <p>The <strong>active site</strong> is a specific region on the enzyme's surface where the substrate binds and the chemical reaction occurs. It is a small, 3D pocket or groove with a specific shape and charge distribution that is complementary to its substrate.</p>
+                <h3>2.2.2 Co-factors</h3>
+                <p>Some enzymes require a non-protein component, called a <strong>co-factor</strong>, to be active. The protein part of such an enzyme is called an <strong>apoenzyme</strong>, and the complete, active enzyme with its co-factor is a <strong>holoenzyme</strong>.</p>
+                <table>
+                    <thead>
+                        <tr><th>Co-factor Type</th><th>Description</th><th>Example</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><b>Activator</b></td><td>An inorganic ion that is temporarily attached.</td><td>Mg²⁺, Mn²⁺, Cl⁻</td></tr>
+                        <tr><td><b>Coenzyme</b></td><td>An organic, non-protein molecule that is loosely attached. Often derived from vitamins.</td><td>NAD⁺, FAD, Coenzyme A</td></tr>
+                        <tr><td><b>Prosthetic Group</b></td><td>An organic, non-protein molecule that is tightly and covalently bonded to the enzyme.</td><td>Heme group in hemoglobin</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="mechanism">
+                <h2>2.3 Mechanism of Enzyme Action</h2>
+                <p>Enzymes work by lowering the <strong>activation energy</strong> of a reaction—the minimum energy required to start the reaction. This makes it easier for reactants (substrates) to be converted into products.</p>
+                <h3>2.3.1 Models of Enzyme Action</h3>
+                <ul>
+                    <li><b>Lock and Key Model:</b> Proposed by Emil Fischer, this model suggests the active site has a rigid shape that is perfectly complementary to the substrate, like a lock and its key.</li>
+                    <li><b>Induced Fit Model:</b> A more modern and accepted model proposed by Koshland. It suggests the active site is flexible. The binding of the substrate induces a conformational change in the enzyme, resulting in a tighter, more precise fit.</li>
+                </ul>
+            </section>
+            
+            <section id="factors">
+                <h2>2.4 Factors Affecting Enzyme Action</h2>
+                <p>The rate of an enzyme-catalyzed reaction is influenced by several factors.</p>
+                <div class="card">
+                    <h4>Key Factors</h4>
+                    <ul>
+                        <li><b>Temperature:</b> As temperature increases, the reaction rate increases up to an <b>optimum temperature</b>. Beyond this point, the enzyme begins to <b>denature</b> (lose its shape and function), and the rate rapidly decreases.</li>
+                        <li><b>pH:</b> Each enzyme has an <b>optimum pH</b> at which it is most active. Extreme pH values can cause denaturation.</li>
+                        <li><b>Substrate Concentration:</b> As substrate concentration increases, the reaction rate increases until the enzyme's active sites become saturated with substrate. At this point, the rate plateaus at its maximum velocity (\(V_{max}\)).</li>
+                        <li><b>Enzyme Concentration:</b> If substrate is in excess, the reaction rate is directly proportional to the enzyme concentration.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="inhibition">
+                <h2>2.5 Enzyme Inhibition</h2>
+                <p><strong>Enzyme inhibition</strong> occurs when a molecule, called an <strong>inhibitor</strong>, binds to an enzyme and decreases its activity. Inhibition can be reversible or irreversible.</p>
+                <table>
+                    <thead>
+                        <tr><th>Type of Inhibition</th><th>Description</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><b>Competitive Inhibition</b></td><td>The inhibitor has a shape similar to the substrate and competes for the same active site. Can be overcome by increasing substrate concentration.</td></tr>
+                        <tr><td><b>Non-competitive Inhibition</b></td><td>The inhibitor binds to a different site on the enzyme (an <b>allosteric site</b>), changing the shape of the active site and making it less effective.</td></tr>
+                        <tr><td><b>Feedback Inhibition</b></td><td>A metabolic control mechanism where the end product of a pathway acts as an inhibitor for an enzyme earlier in the pathway, preventing overproduction.</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Enzymes</b> are highly specific protein catalysts that speed up biochemical reactions by lowering their <b>activation energy</b>.</li>
+                        <li>The <b>active site</b> is the region where the substrate binds. The <b>Induced Fit model</b> describes how the active site can change shape upon substrate binding for a better fit.</li>
+                        <li>Some enzymes require non-protein <b>co-factors</b> (activators, coenzymes, prosthetic groups) to function.</li>
+                        <li>Enzyme activity is affected by <b>temperature</b>, <b>pH</b>, and the concentrations of both the <b>enzyme</b> and the <b>substrate</b>.</li>
+                        <li><b>Enzyme inhibition</b> (competitive or non-competitive) is the process of reducing enzyme activity, which is a key mechanism for regulating metabolic pathways.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

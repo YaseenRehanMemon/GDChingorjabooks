@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4: Bioenergetics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to the shared stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+        // MathJax configuration (for rendering LaTeX)
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body style="--accent-color: #03A9F4;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 4: Bioenergetics</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Introduction to Bioenergetics</a></li>
+                <li><a href="#photosynthesis">Photosynthesis</a></li>
+                <li><a href="#cellular-respiration">Cellular Respiration</a></li>
+                <li><a href="#photorespiration">Photorespiration</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>4.1 Introduction to Bioenergetics</h2>
+                <p><strong>Bioenergetics</strong> is the study of how energy is captured, converted, and used in biological systems. It follows the laws of thermodynamics, focusing on two key processes: photosynthesis and cellular respiration.</p>
+                <div class="card">
+                    <h4>ATP: The Energy Currency of the Cell</h4>
+                    <p><strong>Adenosine Triphosphate (ATP)</strong> is the primary energy-carrying molecule used to power most cellular activities. Energy is stored in its high-energy phosphate bonds and released when ATP is hydrolyzed to ADP (Adenosine Diphosphate).</p>
+                </div>
+            </section>
+
+            <section id="photosynthesis">
+                <h2>4.2 Photosynthesis</h2>
+                <p>Photosynthesis is the process by which autotrophs (like plants and algae) convert light energy into chemical energy, stored in the bonds of glucose molecules. It occurs in the chloroplasts.</p>
+                <div class="card formula">
+                    <h4>Overall Equation for Photosynthesis:</h4>
+                    \[ 6\text{CO}_2 + 6\text{H}_2\text{O} \xrightarrow{\text{Light Energy}} \text{C}_6\text{H}_{12}\text{O}_6 + 6\text{O}_2 \]
+                </div>
+                <h3>Stages of Photosynthesis</h3>
+                <ol>
+                    <li><b>Light-Dependent Reactions:</b> Occur in the thylakoid membranes of chloroplasts. Light energy is captured by pigments (like chlorophyll), water is split to release oxygen, and the energy is used to produce ATP and NADPH.</li>
+                    <li><b>Light-Independent Reactions (Calvin Cycle):</b> Occur in the stroma of chloroplasts. The energy from ATP and NADPH is used to "fix" carbon from CO₂ into organic molecules, ultimately producing glucose.</li>
+                </ol>
+            </section>
+            
+            <section id="cellular-respiration">
+                <h2>4.3 Cellular Respiration</h2>
+                <p>Cellular respiration is the process by which cells break down glucose and other organic molecules to produce ATP, releasing energy for cellular work. It can be aerobic (with oxygen) or anaerobic (without oxygen).</p>
+                
+                <h3>4.3.1 Aerobic Respiration</h3>
+                <p>Aerobic respiration is a highly efficient process that occurs in the presence of oxygen, primarily within the mitochondria.</p>
+                <div class="card formula">
+                    <h4>Overall Equation for Aerobic Respiration:</h4>
+                    \[ \text{C}_6\text{H}_{12}\text{O}_6 + 6\text{O}_2 \to 6\text{CO}_2 + 6\text{H}_2\text{O} + \text{ATP (Energy)} \]
+                </div>
+                <h4>Stages of Aerobic Respiration</h4>
+                <ol>
+                    <li><b>Glycolysis:</b> Occurs in the cytoplasm. Glucose (a 6-carbon sugar) is broken down into two molecules of pyruvate (a 3-carbon molecule). This yields a small amount of ATP and NADH.</li>
+                    <li><b>Pyruvate Oxidation:</b> Pyruvate enters the mitochondrion and is converted into Acetyl-CoA, releasing CO₂ and producing NADH.</li>
+                    <li><b>Krebs Cycle (Citric Acid Cycle):</b> Occurs in the mitochondrial matrix. Acetyl-CoA is completely oxidized, producing ATP, NADH, FADH₂, and CO₂.</li>
+                    <li><b>Oxidative Phosphorylation (Electron Transport Chain):</b> Occurs on the inner mitochondrial membrane. The energy from NADH and FADH₂ is used to create a proton gradient, which drives the synthesis of a large amount of ATP through a process called chemiosmosis. Oxygen acts as the final electron acceptor, forming water.</li>
+                </ol>
+
+                <h3>4.3.2 Anaerobic Respiration (Fermentation)</h3>
+                <p>When oxygen is not available, cells can produce a small amount of ATP through glycolysis followed by fermentation. The main purpose of fermentation is to regenerate NAD⁺ so that glycolysis can continue.</p>
+                <ul>
+                    <li><b>Lactic Acid Fermentation:</b> Pyruvate is converted to lactic acid (e.g., in human muscle cells during strenuous exercise).</li>
+                    <li><b>Alcoholic Fermentation:</b> Pyruvate is converted to ethanol and CO₂ (e.g., in yeast).</li>
+                </ul>
+            </section>
+            
+            <section id="photorespiration">
+                <h2>4.4 Photorespiration</h2>
+                <p><strong>Photorespiration</strong> is a wasteful process that occurs in C₃ plants when the enzyme RuBisCO binds to O₂ instead of CO₂. This happens in hot, dry conditions when stomata close to conserve water, leading to high O₂ and low CO₂ levels inside the leaf. It consumes ATP and releases CO₂, reducing the efficiency of photosynthesis. C₄ and CAM plants have evolved alternative mechanisms to minimize photorespiration.</p>
+            </section>
+            
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Bioenergetics</b> is the study of energy flow in living systems, with <b>ATP</b> as the main energy currency.</li>
+                        <li><b>Photosynthesis</b> uses light energy, water, and CO₂ to create glucose and oxygen. It consists of light-dependent reactions and the Calvin cycle.</li>
+                        <li><b>Cellular Respiration</b> breaks down glucose to produce ATP.
+                            <ul>
+                                <li><b>Aerobic respiration</b> (with oxygen) involves Glycolysis, Pyruvate Oxidation, the Krebs Cycle, and Oxidative Phosphorylation, yielding a large amount of ATP.</li>
+                                <li><b>Anaerobic respiration</b> (without oxygen) involves Glycolysis followed by Fermentation, yielding a small amount of ATP.</li>
+                            </ul>
+                        </li>
+                        <li><b>Photorespiration</b> is a wasteful process in C₃ plants where RuBisCO fixes O₂ instead of CO₂, reducing photosynthetic efficiency.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

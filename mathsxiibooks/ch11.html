@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 11: Partial Differentiation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root { --accent-color: #3F51B5; /* Indigo for Partial Diff */ }
+        body { font-family: 'Poppins', sans-serif; margin: 0; background-color: #f4f7f9; color: #333; transition: background-color 0.3s, color 0.3s; }
+        .dark-mode { background-color: #121212; color: #e0e0e0; }
+        .page-container { display: flex; flex-direction: column; }
+        header { background-color: #ffffff; padding: 1rem 2rem; border-bottom: 1px solid #e0e0e0; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .dark-mode header { background-color: #1e1e1e; border-bottom: 1px solid #333; }
+        header h1 { margin: 0; color: var(--accent-color); font-size: 1.8rem; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: #e9eef2; transition: background-color 0.3s; }
+        .dark-mode .theme-toggle-label { background-color: #242424; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label .sun { display: inline; } .theme-toggle-label .moon { display: none; }
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label .sun { display: none; }
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label .moon { display: inline; }
+        .container { display: flex; }
+        .sidebar { width: 260px; background-color: #e9eef2; padding: 1.5rem; height: 100vh; position: fixed; top: 70px; left: 0; overflow-y: auto; border-right: 1px solid #e0e0e0; }
+        .dark-mode .sidebar { background-color: #242424; border-right: 1px solid #333; }
+        .sidebar h2 { font-size: 1.2rem; color: var(--accent-color); margin-top: 0; }
+        .sidebar ul { list-style: none; padding: 0; }
+        .sidebar ul li a { display: block; color: #333; text-decoration: none; padding: 0.75rem 1rem; border-radius: 5px; transition: background-color 0.2s; }
+        .dark-mode .sidebar ul li a { color: #e0e0e0; }
+        .sidebar ul li a:hover { background-color: var(--accent-color); color: white; }
+        .content { flex: 1; padding: 2rem; margin-left: 290px; }
+        .card { background-color: #ffffff; border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .dark-mode .card { background-color: #1e1e1e; border-color: var(--accent-color); }
+        .card.formula { background-color: #e8eaf6; border-color: #7986cb; }
+        .dark-mode .card.formula { background-color: #2c2f44; border-color: #9fa8da; }
+        h2 { border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        @media (max-width: 768px) { .sidebar { display: none; } .content { margin-left: 0; } header { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 11: Partial Differentiation</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+        <div class="container">
+            <nav class="sidebar">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="#intro">Functions of Two Variables</a></li>
+                    <li><a href="#partial-derivatives">Partial Derivatives</a></li>
+                    <li><a href="#homogeneous">Homogeneous Functions</a></li>
+                    <li><a href="#euler">Euler's Theorem</a></li>
+                </ul>
+            </nav>
+            <main class="content">
+                <section id="intro">
+                    <h2>11.1 Functions of Two Variables</h2>
+                    <p>While ordinary differentiation deals with functions of a single variable, like \(y = f(x)\), partial differentiation extends these concepts to functions of two or more independent variables, such as \(z = f(x, y)\).</p>
+                    <div class="card">
+                        <h4>Definition</h4>
+                        <p>A function of two variables, \(z = f(x, y)\), assigns a unique output value \(z\) to every ordered pair of input values \((x, y)\) in its domain.</p>
+                        <p>For example, the area of a rectangle is a function of its length and width, \(A(l, w) = l \cdot w\).</p>
+                    </div>
+                </section>
+
+                <section id="partial-derivatives">
+                    <h2>11.2 Partial Derivatives</h2>
+                    <p>A partial derivative measures the rate of change of a multivariable function with respect to one of its variables, while holding all other variables constant.</p>
+                    <div class="card">
+                        <h4>Notation and Calculation</h4>
+                        <p>For a function \(z = f(x, y)\):</p>
+                        <ul>
+                            <li>The <strong>partial derivative with respect to x</strong> is denoted \(\frac{\partial z}{\partial x}\) or \(f_x(x,y)\). To calculate it, treat \(y\) as a constant and differentiate \(f\) with respect to \(x\) using standard rules.</li>
+                            <li>The <strong>partial derivative with respect to y</strong> is denoted \(\frac{\partial z}{\partial y}\) or \(f_y(x,y)\). To calculate it, treat \(x\) as a constant and differentiate \(f\) with respect to \(y\).</li>
+                        </ul>
+                    </div>
+                    <div class="card formula">
+                        <h4>Example</h4>
+                        <p>If \(f(x, y) = x^2y^3 + 2x + y\), find \(f_x\) and \(f_y\).</p>
+                        <p><b>With respect to x (treat y as constant):</b></p>
+                        \[ \frac{\partial f}{\partial x} = (2x)y^3 + 2 + 0 = 2xy^3 + 2 \]
+                        <p><b>With respect to y (treat x as constant):</b></p>
+                        \[ \frac{\partial f}{\partial y} = x^2(3y^2) + 0 + 1 = 3x^2y^2 + 1 \]
+                    </div>
+                </section>
+                
+                <section id="homogeneous">
+                    <h2>11.3 Homogeneous Functions</h2>
+                    <p>A homogeneous function is a special type of multivariable function where scaling all the input variables by a factor \(t\) results in the original function being scaled by some power of \(t\).</p>
+                    <div class="card">
+                        <h4>Definition</h4>
+                        <p>A function \(f(x, y)\) is called a <strong>homogeneous function of degree n</strong> if for any \(t > 0\):</p>
+                        \[ f(tx, ty) = t^n f(x, y) \]
+                        <p><strong>Example:</strong> The function \(f(x, y) = x^2 + 3xy\) is homogeneous of degree 2 because \(f(tx, ty) = (tx)^2 + 3(tx)(ty) = t^2(x^2 + 3xy) = t^2 f(x, y)\).</p>
+                    </div>
+                </section>
+
+                <section id="euler">
+                    <h2>11.4 Euler's Theorem on Homogeneous Functions</h2>
+                    <p>Euler's theorem provides a direct relationship between a homogeneous function and its partial derivatives.</p>
+                    <div class="card formula">
+                        <h4>Euler's Theorem</h4>
+                        <p>If \(z = f(x, y)\) is a homogeneous function of degree \(n\), then:</p>
+                        \[ x \frac{\partial z}{\partial x} + y \frac{\partial z}{\partial y} = nz \]
+                        <p>This theorem is a powerful tool for verifying if a function is homogeneous and for solving certain types of partial differential equations.</p>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

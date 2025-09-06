@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 7: Alcohols, Phenols & Ethers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --accent-color: #03A9F4; /* Light Blue */
+            --bg-light: #f4f7f9; --text-light: #333; --card-bg-light: #ffffff; --border-light: #e0e0e0; --header-bg-light: #ffffff; --sidebar-bg-light: #fdfdfd;
+            --bg-dark: #121212; --text-dark: #e0e0e0; --card-bg-dark: #1e1e1e; --border-dark: #333; --header-bg-dark: #1e1e1e; --sidebar-bg-dark: #232323;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { font-family: 'Poppins', sans-serif; line-height: 1.6; scroll-behavior: smooth; background-color: var(--bg-light); color: var(--text-light); transition: background-color 0.3s, color 0.3s; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: var(--border-light); color: var(--text-light); transition: background-color 0.3s; font-weight: 600; }
+        .theme-toggle-label .moon { display: none; } .theme-toggle-label .sun { display: inline; }
+        body.dark-mode { --bg-light: var(--bg-dark); --text-light: var(--text-dark); --card-bg-light: var(--card-bg-dark); --border-light: var(--border-dark); --header-bg-light: var(--header-bg-dark); --sidebar-bg-light: var(--sidebar-bg-dark); }
+        .dark-mode .theme-toggle-label .moon { display: inline; } .dark-mode .theme-toggle-label .sun { display: none; } .dark-mode .sidebar a { color: #c5d7e8; } .dark-mode .sidebar a:hover { color: #ffffff; }
+        .page-container { display: grid; grid-template-columns: 260px 1fr; grid-template-rows: auto 1fr; grid-template-areas: "header header" "sidebar content"; min-height: 100vh; }
+        header { grid-area: header; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: var(--header-bg-light); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        header h1 { color: var(--accent-color); font-size: 1.8rem; }
+        .sidebar { grid-area: sidebar; background-color: var(--sidebar-bg-light); padding: 2rem; border-right: 1px solid var(--border-light); position: fixed; top: 75px; left: 0; width: 260px; height: calc(100vh - 75px); overflow-y: auto; }
+        .sidebar h2 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        .sidebar ul { list-style: none; } .sidebar li { margin-bottom: 0.8rem; }
+        .sidebar a { text-decoration: none; color: #555; font-weight: 500; transition: color 0.2s; } .sidebar a:hover { color: var(--accent-color); }
+        .content { grid-area: content; padding: 2rem 3rem; }
+        section { margin-bottom: 3rem; padding-top: 80px; margin-top: -75px; }
+        h2 { font-size: 2rem; color: var(--accent-color); margin-bottom: 1.5rem; border-bottom: 2px solid var(--border-light); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; }
+        p, ul, ol { margin-bottom: 1rem; } ul, ol { padding-left: 20px; }
+        b { color: var(--accent-color); }
+        .card { background-color: var(--card-bg-light); border: 1px solid var(--border-light); border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        .card.formula { background-color: #333; color: white; border-left: 5px solid var(--accent-color); }
+        .card.formula p { margin: 0; font-family: 'Courier New', Courier, monospace; }
+        @media (max-width: 900px) { .page-container { grid-template-columns: 1fr; grid-template-areas: "header" "content"; } .sidebar { display: none; } header h1 { font-size: 1.4rem; } .content { padding: 1.5rem; } }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+            function applyTheme(isDarkMode) { body.classList.toggle('dark-mode', isDarkMode); }
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const initialThemeDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+            themeToggleCheckbox.checked = initialThemeDark;
+            applyTheme(initialThemeDark);
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+    </script>
+</head>
+<body style="--accent-color: #03A9F4;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 7: Alcohols, Phenols & Ethers</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#alcohols">Alcohols (R-OH)</a></li>
+                <li><a href="#phenols">Phenols (Ar-OH)</a></li>
+                <li><a href="#ethers">Ethers (R-O-R')</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="alcohols">
+                <h2>1. Alcohols (R-OH)</h2>
+                <p>Alcohols are organic compounds containing a hydroxyl (<b>-OH</b>) functional group attached to a saturated (\(sp^3\)-hybridized) carbon atom.</p>
+                <div class="card">
+                    <h4>Properties and Structure</h4>
+                    <p>The O-H bond in alcohols is highly polar, which allows them to form <b>hydrogen bonds</b>. This results in significantly higher boiling points and better water solubility compared to hydrocarbons of similar molecular weight.</p>
+                    <p>Alcohols are weakly acidic and can react with active metals like sodium to release hydrogen gas.</p>
+                </div>
+                <h3>Preparation of Alcohols</h3>
+                <ul>
+                    <li><b>Hydration of Alkenes:</b> Addition of water across a double bond in the presence of an acid catalyst.</li>
+                    <li><b>Reduction of Carbonyl Compounds:</b> Aldehydes are reduced to primary alcohols, and ketones are reduced to secondary alcohols, using reducing agents like \( \text{NaBH}_4 \) or \( \text{LiAlH}_4 \).</li>
+                    <li><b>From Grignard Reagents:</b> Reaction of a Grignard reagent with an aldehyde or ketone produces an alcohol.</li>
+                </ul>
+                <h3>Reactions of Alcohols</h3>
+                <ul>
+                    <li><b>Dehydration:</b> Elimination of water in the presence of a strong acid (like \(H_2SO_4\)) to form an alkene.</li>
+                    <li><b>Oxidation:</b> Primary alcohols oxidize to aldehydes, then to carboxylic acids. Secondary alcohols oxidize to ketones. Tertiary alcohols do not typically oxidize.</li>
+                </ul>
+            </section>
+
+            <section id="phenols">
+                <h2>2. Phenols (Ar-OH)</h2>
+                <p>Phenols are compounds where a hydroxyl (<b>-OH</b>) group is attached directly to an aromatic ring (like benzene).</p>
+                <div class="card">
+                    <h4>Acidity of Phenols</h4>
+                    <p>Phenols are significantly <b>more acidic</b> than alcohols. This is because the negative charge on the resulting phenoxide ion (\(\text{C}_6\text{H}_5\text{O}^-\)) is stabilized by resonance, delocalizing the charge over the aromatic ring. Alcohols lack this resonance stabilization.</p>
+                </div>
+                 <h3>Preparation and Reactions</h3>
+                <ul>
+                    <li><b>Preparation:</b> Can be prepared from chlorobenzene (Dow's Process) or by hydrolysis of diazonium salts.</li>
+                    <li><b>Reactions:</b> The -OH group is an activating, ortho-para director for <b>electrophilic aromatic substitution</b> reactions like nitration and halogenation.</li>
+                </ul>
+            </section>
+            
+            <section id="ethers">
+                <h2>3. Ethers (R-O-R')</h2>
+                <p>Ethers are compounds with two alkyl or aryl groups bonded to a single oxygen atom.</p>
+                <h3>Properties and Structure</h3>
+                <p>Ethers have a bent structure similar to water and alcohols. However, they cannot form hydrogen bonds with themselves, resulting in much <b>lower boiling points</b> than alcohols of similar molecular weight. They are relatively unreactive and are often used as excellent nonpolar solvents.</p>
+                 <h3>Preparation of Ethers</h3>
+                <div class="card">
+                    <h4>Williamson Ether Synthesis</h4>
+                    <p>This is the most important method for preparing ethers. It is an S<sub>N</sub>2 reaction between a metal alkoxide (\(\text{RO}^-\text{Na}^+\)) and a primary alkyl halide (\(\text{R'X}\)).</p>
+                    <div class="card formula">
+                         <p>\( \text{R}-\text{O}^-\text{Na}^+ + \text{R'}-\text{X} \rightarrow \text{R}-\text{O}-\text{R'} + \text{NaX} \)</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Alcohols (R-OH):</b> Contain a hydroxyl group on an \(sp^3\) carbon. Hydrogen bonding gives them high boiling points. They can be prepared from alkenes or carbonyls and undergo reactions like dehydration and oxidation.</li>
+                        <li><b>Phenols (Ar-OH):</b> Contain a hydroxyl group on an aromatic ring. They are more acidic than alcohols due to resonance stabilization of the phenoxide ion.</li>
+                        <li><b>Ethers (R-O-R'):</b> Contain an oxygen atom bonded to two carbon groups. They are relatively unreactive, have low boiling points, and are excellent solvents. The Williamson synthesis is a key method for their preparation.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

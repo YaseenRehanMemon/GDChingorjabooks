@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 9: Diversity Among Animals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to the shared stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+        // MathJax configuration (for rendering LaTeX)
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body style="--accent-color: #E91E63;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 9: Diversity Among Animals</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Characteristics of Animals</a></li>
+                <li><a href="#classification">Criteria for Classification</a></li>
+                <li><a href="#invertebrates">Major Invertebrate Phyla</a></li>
+                <li><a href="#chordates">Phylum Chordata</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>9.1 Characteristics of Animals</h2>
+                <p>Animals are a diverse group of organisms that share several key characteristics. They are <strong>multicellular</strong>, <strong>eukaryotic</strong>, and <strong>heterotrophic</strong> (ingestive). Most animals are motile at some point in their lives, reproduce sexually, and lack cell walls.</p>
+            </section>
+
+            <section id="classification">
+                <h2>9.2 Criteria for Animal Classification</h2>
+                <p>Animals are classified based on their evolutionary relationships, which are inferred from their morphology, embryological development, and genetic makeup.</p>
+                <div class="card">
+                    <h4>Key Classification Criteria</h4>
+                    <ul>
+                        <li><b>Presence of Tissues:</b> Parazoa (e.g., sponges) lack true tissues, while Eumetazoa have them.</li>
+                        <li><b>Body Symmetry:</b> Can be <b>asymmetrical</b>, <b>radially symmetrical</b> (like a pie, e.g., cnidarians), or <b>bilaterally symmetrical</b> (with a left and right side, e.g., humans).</li>
+                        <li><b>Number of Germ Layers:</b> <b>Diploblastic</b> animals have two germ layers (ectoderm and endoderm), while <b>triploblastic</b> animals have a third layer, the mesoderm.</li>
+                        <li><b>Body Cavity (Coelom):</b> Triploblastic animals are classified based on their body cavity:
+                            <ul>
+                                <li><b>Acoelomates:</b> Lack a body cavity (e.g., flatworms).</li>
+                                <li><b>Pseudocoelomates:</b> Have a body cavity partially lined by mesoderm (e.g., roundworms).</li>
+                                <li><b>Coelomates:</b> Have a true coelom, a body cavity completely lined by mesoderm (e.g., annelids, arthropods, chordates).</li>
+                            </ul>
+                        </li>
+                        <li><b>Embryological Development:</b> Coelomates are further divided into <b>Protostomes</b> (where the blastopore becomes the mouth) and <b>Deuterostomes</b> (where the blastopore becomes the anus).</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="invertebrates">
+                <h2>9.3 Major Invertebrate Phyla</h2>
+                <p>Invertebrates are animals that lack a backbone, representing over 97% of all animal species.</p>
+                <table>
+                    <thead><tr><th>Phylum</th><th>Common Name</th><th>Key Characteristics</th></tr></thead>
+                    <tbody>
+                        <tr><td><b>Porifera</b></td><td>Sponges</td><td>Asymmetrical, lack true tissues, sessile filter-feeders.</td></tr>
+                        <tr><td><b>Cnidaria</b></td><td>Jellyfish, Corals, Anemones</td><td>Radially symmetrical, diploblastic, have stinging cells (nematocysts).</td></tr>
+                        <tr><td><b>Platyhelminthes</b></td><td>Flatworms</td><td>Bilaterally symmetrical, triploblastic, acoelomate.</td></tr>
+                        <tr><td><b>Aschelminthes (Nematoda)</b></td><td>Roundworms</td><td>Bilaterally symmetrical, pseudocoelomate, have a complete digestive tract.</td></tr>
+                        <tr><td><b>Annelida</b></td><td>Segmented Worms</td><td>Bilaterally symmetrical, coelomate, body is segmented (e.g., earthworms, leeches).</td></tr>
+                        <tr><td><b>Mollusca</b></td><td>Mollusks</td><td>Soft-bodied, coelomate, often with a shell. Three main parts: muscular foot, visceral mass, and mantle (e.g., snails, clams, octopuses).</td></tr>
+                        <tr><td><b>Arthropoda</b></td><td>Arthropods</td><td>Most diverse phylum. Coelomate, with a hard exoskeleton (chitin) and jointed appendages (e.g., insects, spiders, crustaceans).</td></tr>
+                        <tr><td><b>Echinodermata</b></td><td>Echinoderms</td><td>Radially symmetrical as adults, deuterostomes, with a water vascular system and tube feet (e.g., starfish, sea urchins).</td></tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section id="chordates">
+                <h2>9.4 Phylum Chordata</h2>
+                <p>Chordates are deuterostome animals characterized by four key features present at some stage of their development:</p>
+                <div class="card">
+                    <h4>Four Hallmark Features of Chordates</h4>
+                    <ol>
+                        <li>A <b>notochord</b> (a flexible dorsal rod).</li>
+                        <li>A <b>dorsal, hollow nerve cord</b>.</li>
+                        <li><b>Pharyngeal gill slits</b>.</li>
+                        <li>A <b>post-anal tail</b>.</li>
+                    </ol>
+                </div>
+                <h3>Vertebrates</h3>
+                <p>Vertebrates are a subphylum of chordates where the notochord is replaced by a backbone of vertebrae. This group includes:</p>
+                <ul>
+                    <li><b>Jawless Fishes (Agnatha):</b> e.g., lampreys.</li>
+                    <li><b>Cartilaginous Fishes (Chondrichthyes):</b> e.g., sharks, rays.</li>
+                    <li><b>Bony Fishes (Osteichthyes):</b> The most numerous group of vertebrates.</li>
+                    <li><b>Amphibia:</b> First vertebrates on land, still tied to water for reproduction (e.g., frogs, salamanders).</li>
+                    <li><b>Reptilia:</b> Evolved the amniotic egg, allowing for reproduction on land (e.g., snakes, turtles, crocodiles).</li>
+                    <li><b>Aves (Birds):</b> Evolved from reptiles, adapted for flight with feathers, hollow bones, and are endothermic (warm-blooded).</li>
+                    <li><b>Mammalia (Mammals):</b> Have hair and mammary glands, and are endothermic. Includes monotremes (egg-laying), marsupials (pouched), and placentals.</li>
+                </ul>
+            </section>
+            
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Animals</b> are multicellular, heterotrophic eukaryotes lacking cell walls.</li>
+                        <li>They are classified based on symmetry, number of germ layers, presence of a coelom, and embryological development (protostome vs. deuterostome).</li>
+                        <li><b>Invertebrates</b> are a vast group including phyla like Porifera, Cnidaria, Platyhelminthes, Nematoda, Annelida, Mollusca, Arthropoda, and Echinodermata.</li>
+                        <li><b>Chordates</b> possess a notochord, dorsal nerve cord, pharyngeal slits, and a post-anal tail at some life stage.</li>
+                        <li><b>Vertebrates</b>, a subphylum of chordates, have a backbone and include classes like fishes, amphibians, reptiles, birds, and mammals, each with unique adaptations.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

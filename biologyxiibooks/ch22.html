@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 22: Chromosome and DNA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --accent-color: #3F51B5; /* Indigo */
+            --bg-light: #f4f7f9; --text-light: #333; --card-bg-light: #ffffff; --border-light: #e0e0e0; --header-bg-light: #ffffff; --sidebar-bg-light: #fdfdfd;
+            --bg-dark: #121212; --text-dark: #e0e0e0; --card-bg-dark: #1e1e1e; --border-dark: #333; --header-bg-dark: #1e1e1e; --sidebar-bg-dark: #232323;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { font-family: 'Poppins', sans-serif; line-height: 1.6; scroll-behavior: smooth; background-color: var(--bg-light); color: var(--text-light); transition: background-color 0.3s, color 0.3s; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: var(--border-light); color: var(--text-light); transition: background-color 0.3s; font-weight: 600; }
+        .theme-toggle-label .moon { display: none; } .theme-toggle-label .sun { display: inline; }
+        body.dark-mode { --bg-light: var(--bg-dark); --text-light: var(--text-dark); --card-bg-light: var(--card-bg-dark); --border-light: var(--border-dark); --header-bg-light: var(--header-bg-dark); --sidebar-bg-light: var(--sidebar-bg-dark); }
+        .dark-mode .theme-toggle-label .moon { display: inline; } .dark-mode .theme-toggle-label .sun { display: none; } .dark-mode .sidebar a { color: #c5d7e8; } .dark-mode .sidebar a:hover { color: #ffffff; }
+        .page-container { display: grid; grid-template-columns: 260px 1fr; grid-template-rows: auto 1fr; grid-template-areas: "header header" "sidebar content"; min-height: 100vh; }
+        header { grid-area: header; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: var(--header-bg-light); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        header h1 { color: var(--accent-color); font-size: 1.8rem; }
+        .sidebar { grid-area: sidebar; background-color: var(--sidebar-bg-light); padding: 2rem; border-right: 1px solid var(--border-light); position: fixed; top: 75px; left: 0; width: 260px; height: calc(100vh - 75px); overflow-y: auto; }
+        .sidebar h2 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        .sidebar ul { list-style: none; } .sidebar li { margin-bottom: 0.8rem; }
+        .sidebar a { text-decoration: none; color: #555; font-weight: 500; transition: color 0.2s; } .sidebar a:hover { color: var(--accent-color); }
+        .content { grid-area: content; padding: 2rem 3rem; }
+        section { margin-bottom: 3rem; padding-top: 80px; margin-top: -75px; }
+        h2 { font-size: 2rem; color: var(--accent-color); margin-bottom: 1.5rem; border-bottom: 2px solid var(--border-light); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; }
+        p, ul, ol { margin-bottom: 1rem; } ul, ol { padding-left: 20px; }
+        b { color: var(--accent-color); }
+        .card { background-color: var(--card-bg-light); border: 1px solid var(--border-light); border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        @media (max-width: 900px) { .page-container { grid-template-columns: 1fr; grid-template-areas: "header" "content"; } .sidebar { display: none; } header h1 { font-size: 1.4rem; } .content { padding: 1.5rem; } }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+            function applyTheme(isDarkMode) { body.classList.toggle('dark-mode', isDarkMode); }
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const initialThemeDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+            themeToggleCheckbox.checked = initialThemeDark;
+            applyTheme(initialThemeDark);
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+    </script>
+</head>
+<body style="--accent-color: #3F51B5;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 22: Chromosome & DNA</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#dna-heredity">DNA as Hereditary Material</a></li>
+                <li><a href="#chromosome-theory">Chromosomal Theory</a></li>
+                <li><a href="#replication">DNA Replication</a></li>
+                <li><a href="#gene-expression">Gene Expression</a></li>
+                <li><a href="#mutation">Mutation</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="dna-heredity">
+                <h2>1. DNA as the Hereditary Material</h2>
+                <p>Early experiments proved that DNA, not protein, is the molecule that carries genetic information.</p>
+                <div class="card">
+                    <h4>Key Experiments</h4>
+                    <ul>
+                        <li><b>Griffith's Experiment (1928):</b> Showed that a substance from dead pathogenic bacteria could "transform" harmless bacteria into pathogenic ones. He called this the "transforming principle."</li>
+                        <li><b>Avery, MacLeod, and McCarty's Experiment (1944):</b> Identified Griffith's transforming principle as DNA by systematically destroying different macromolecules.</li>
+                        <li><b>Hershey-Chase Experiment (1952):</b> Used bacteriophages (viruses that infect bacteria) with radioactively labeled DNA and protein. They showed that only the viral DNA entered the bacterial cell to direct the synthesis of new viruses, confirming DNA as the genetic material.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="chromosome-theory">
+                <h2>2. The Chromosomal Theory of Inheritance</h2>
+                <p>This theory, developed by Sutton and Boveri, states that genes are located at specific positions (loci) on chromosomes, and that the behavior of chromosomes during meiosis accounts for inheritance patterns.</p>
+                <div class="card">
+                    <h4>Core Principles</h4>
+                    <ul>
+                        <li>Genes are located on chromosomes.</li>
+                        <li>The separation of homologous chromosomes during meiosis explains Mendel's law of segregation.</li>
+                        <li>The independent assortment of homologous chromosome pairs during meiosis explains Mendel's law of independent assortment.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="replication">
+                <h2>3. DNA Replication</h2>
+                <p>DNA replication is the process by which a cell makes an identical copy of its DNA. This process is <b>semiconservative</b>.</p>
+                <div class="card">
+                    <h4>Semiconservative Replication</h4>
+                    <p>Each new DNA molecule consists of one "old" strand (from the parent molecule) and one "newly" synthesized strand. This was confirmed by the Meselson-Stahl experiment.</p>
+                </div>
+                <h3>Key Enzymes and Steps</h3>
+                <ol>
+                    <li><b>Initiation:</b> The enzyme <b>helicase</b> unwinds the DNA double helix at an origin of replication, creating a replication fork.</li>
+                    <li><b>Elongation:</b> The enzyme <b>DNA polymerase</b> adds new nucleotides to the 3' end of the growing strand, using the old strand as a template. One strand (the <b>leading strand</b>) is synthesized continuously, while the other (the <b>lagging strand</b>) is made in short pieces called Okazaki fragments.</li>
+                    <li><b>Joining:</b> The enzyme <b>DNA ligase</b> joins the Okazaki fragments on the lagging strand into a continuous strand.</li>
+                </ol>
+            </section>
+
+            <section id="gene-expression">
+                <h2>4. Gene Expression: From DNA to Protein</h2>
+                <p>Gene expression is the process by which the genetic information stored in DNA is used to synthesize a functional product, such as a protein. This concept is summarized by the <b>Central Dogma</b> of molecular biology.</p>
+                <div class="card">
+                    <h4>Central Dogma: DNA \(\rightarrow\) RNA \(\rightarrow\) Protein</h4>
+                    <ul>
+                        <li><b>Transcription:</b> The synthesis of a messenger RNA (mRNA) molecule from a DNA template. This process occurs in the nucleus and is catalyzed by RNA polymerase.</li>
+                        <li><b>Translation:</b> The synthesis of a polypeptide (protein) from the information in the mRNA sequence. This process occurs at the ribosome in the cytoplasm and involves transfer RNA (tRNA) to bring the correct amino acids.</li>
+                    </ul>
+                </div>
+                <h3>The Genetic Code</h3>
+                <p>The sequence of nucleotides in mRNA is read in groups of three called <b>codons</b>. The genetic code is the set of rules that specifies which codon corresponds to which amino acid. The code is a <b>triplet code</b>, is nearly universal, and is redundant (multiple codons can specify the same amino acid).</p>
+            </section>
+            
+            <section id="mutation">
+                <h2>5. Mutation</h2>
+                <p>A mutation is a permanent change in the nucleotide sequence of an organism's DNA.</p>
+                 <div class="card">
+                    <h4>Types of Mutations</h4>
+                    <ul>
+                        <li><b>Gene Mutations (Point Mutations):</b> Changes in a single gene.
+                            <ul>
+                                <li><b>Substitution:</b> One base is replaced by another. This can be silent, missense, or nonsense.</li>
+                                <li><b>Insertion/Deletion:</b> Bases are added or removed, causing a <b>frameshift</b> that alters the entire downstream amino acid sequence.</li>
+                            </ul>
+                        </li>
+                        <li><b>Chromosomal Mutations:</b> Changes affecting the structure or number of whole chromosomes (e.g., deletion, duplication, translocation, aneuploidy like Down Syndrome).</li>
+                    </ul>
+                </div>
+                <p>Mutations can be harmful, neutral, or, rarely, beneficial. They are the ultimate source of all genetic variation.</p>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Hereditary Material:</b> Landmark experiments by Griffith, Avery, and Hershey-Chase proved that <b>DNA</b> is the molecule of heredity.</li>
+                        <li><b>Chromosomal Theory:</b> Genes are located on chromosomes, and their behavior during meiosis explains Mendelian inheritance.</li>
+                        <li><b>DNA Replication:</b> A <b>semiconservative</b> process where each new DNA molecule contains one old and one new strand, carried out by enzymes like helicase and DNA polymerase.</li>
+                        <li><b>Gene Expression:</b> The <b>Central Dogma</b> describes the flow of genetic information from DNA to RNA (<b>transcription</b>) and from RNA to protein (<b>translation</b>), guided by the triplet <b>genetic code</b>.</li>
+                        <li><b>Mutation:</b> A permanent change in DNA sequence. Mutations can occur at the gene level (point mutations) or chromosome level and are the source of genetic variation.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 8: The Circle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root { --accent-color: #FBC02D; /* Yellow for Circle */ }
+        body { font-family: 'Poppins', sans-serif; margin: 0; background-color: #f4f7f9; color: #333; transition: background-color 0.3s, color 0.3s; }
+        .dark-mode { background-color: #121212; color: #e0e0e0; }
+        .page-container { display: flex; flex-direction: column; }
+        header { background-color: #ffffff; padding: 1rem 2rem; border-bottom: 1px solid #e0e0e0; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .dark-mode header { background-color: #1e1e1e; border-bottom: 1px solid #333; }
+        header h1 { margin: 0; color: var(--accent-color); font-size: 1.8rem; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: #e9eef2; transition: background-color 0.3s; }
+        .dark-mode .theme-toggle-label { background-color: #242424; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label .sun { display: inline; } .theme-toggle-label .moon { display: none; }
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label .sun { display: none; }
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label .moon { display: inline; }
+        .container { display: flex; }
+        .sidebar { width: 260px; background-color: #e9eef2; padding: 1.5rem; height: 100vh; position: fixed; top: 70px; left: 0; overflow-y: auto; border-right: 1px solid #e0e0e0; }
+        .dark-mode .sidebar { background-color: #242424; border-right: 1px solid #333; }
+        .sidebar h2 { font-size: 1.2rem; color: var(--accent-color); margin-top: 0; }
+        .sidebar ul { list-style: none; padding: 0; }
+        .sidebar ul li a { display: block; color: #333; text-decoration: none; padding: 0.75rem 1rem; border-radius: 5px; transition: background-color 0.2s; }
+        .dark-mode .sidebar ul li a { color: #e0e0e0; }
+        .sidebar ul li a:hover { background-color: var(--accent-color); color: white; }
+        .content { flex: 1; padding: 2rem; margin-left: 290px; }
+        .card { background-color: #ffffff; border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .dark-mode .card { background-color: #1e1e1e; border-color: var(--accent-color); }
+        .card.formula { background-color: #fffde7; border-color: #ffeb3b; }
+        .dark-mode .card.formula { background-color: #44412b; border-color: #ffee58; }
+        h2 { border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        @media (max-width: 768px) { .sidebar { display: none; } .content { margin-left: 0; } header { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 8: The Circle</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+        <div class="container">
+            <nav class="sidebar">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="#intro">Introduction to Conics</a></li>
+                    <li><a href="#equation">Equation of a Circle</a></li>
+                    <li><a href="#tangent-normal">Tangents and Normals</a></li>
+                    <li><a href="#properties">Properties of Circles</a></li>
+                </ul>
+            </nav>
+            <main class="content">
+                <section id="intro">
+                    <h2>8.1 Introduction to Conic Sections</h2>
+                    <p>Conic sections are curves formed by the intersection of a plane and a double-napped cone. The main types are the circle, ellipse, parabola, and hyperbola. The circle is a special case where the plane intersects the cone perpendicular to its axis.</p>
+                    <div class="card">
+                        <h4>Definition of a Circle</h4>
+                        <p>A <strong>circle</strong> is the set of all points in a plane that are equidistant from a fixed point called the <strong>center</strong>. The distance from the center to any point on the circle is called the <strong>radius</strong>.</p>
+                    </div>
+                </section>
+
+                <section id="equation">
+                    <h2>8.2 The Equation of a Circle</h2>
+                    <p>We can describe a circle algebraically with an equation. The two main forms are the standard form and the general form.</p>
+                    <div class="card formula">
+                        <h4>Standard Form</h4>
+                        <p>The standard form of the equation of a circle with center \((h, k)\) and radius \(r\) is:</p>
+                        \[ (x - h)^2 + (y - k)^2 = r^2 \]
+                        <p>If the center is at the origin \((0, 0)\), the equation simplifies to \(x^2 + y^2 = r^2\).</p>
+                    </div>
+                    <div class="card formula">
+                        <h4>General Form</h4>
+                        <p>The general form of the equation of a circle is:</p>
+                        \[ x^2 + y^2 + 2gx + 2fy + c = 0 \]
+                        <ul>
+                            <li><strong>Center:</strong> \((-g, -f)\)</li>
+                            <li><strong>Radius:</strong> \(r = \sqrt{g^2 + f^2 - c}\)</li>
+                        </ul>
+                        <p>For this to represent a real circle, we must have \(g^2 + f^2 - c > 0\).</p>
+                    </div>
+                </section>
+                
+                <section id="tangent-normal">
+                    <h2>8.3 Tangents and Normals to a Circle</h2>
+                    <p>A tangent is a line that touches the circle at exactly one point. A normal is a line perpendicular to the tangent at the point of tangency.</p>
+                    <div class="card">
+                        <h4>Condition for Tangency</h4>
+                        <p>A line \(y = mx + c\) is tangent to the circle \(x^2 + y^2 = r^2\) if the perpendicular distance from the center \((0,0)\) to the line is equal to the radius \(r\). This leads to the condition:</p>
+                        \[ c^2 = r^2(1 + m^2) \]
+                    </div>
+                     <div class="card">
+                        <h4>Equation of a Tangent at a Point</h4>
+                        <p>The equation of the tangent to the circle \(x^2 + y^2 = r^2\) at a point \((x_1, y_1)\) on the circle is:</p>
+                         \[ xx_1 + yy_1 = r^2 \]
+                         <p>The <strong>normal</strong> line at this point always passes through the center of the circle.</p>
+                    </div>
+                    <h3>Length of a Tangent</h3>
+                    <p>The length of the tangent from an external point \((x_1, y_1)\) to the circle \(x^2 + y^2 + 2gx + 2fy + c = 0\) is given by the formula:</p>
+                     <div class="card formula">
+                        \[ L = \sqrt{x_1^2 + y_1^2 + 2gx_1 + 2fy_1 + c} \]
+                    </div>
+                </section>
+
+                <section id="properties">
+                    <h2>8.4 Geometric Properties of Circles</h2>
+                    <p>Circles have several fundamental geometric properties that can be proven using analytic methods.</p>
+                    <div class="card">
+                        <h4>Key Properties</h4>
+                        <ul>
+                            <li><strong>Perpendicular Bisector of a Chord:</strong> The perpendicular bisector of any chord of a circle passes through the center of the circle.</li>
+                            <li><strong>Angle in a Semicircle:</strong> The angle subtended by a diameter at any point on the circumference is always a right angle (90°).</li>
+                            <li><strong>Tangents from an External Point:</strong> The lengths of the two tangents drawn from an external point to a circle are equal.</li>
+                            <li><strong>Congruent Chords:</strong> Chords of equal length are equidistant from the center, and vice versa.</li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

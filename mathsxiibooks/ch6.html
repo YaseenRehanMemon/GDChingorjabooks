@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6: Integration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root { --accent-color: #2196F3; /* Blue for Integration */ }
+        body { font-family: 'Poppins', sans-serif; margin: 0; background-color: #f4f7f9; color: #333; transition: background-color 0.3s, color 0.3s; }
+        .dark-mode { background-color: #121212; color: #e0e0e0; }
+        .page-container { display: flex; flex-direction: column; }
+        header { background-color: #ffffff; padding: 1rem 2rem; border-bottom: 1px solid #e0e0e0; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .dark-mode header { background-color: #1e1e1e; border-bottom: 1px solid #333; }
+        header h1 { margin: 0; color: var(--accent-color); font-size: 1.8rem; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: #e9eef2; transition: background-color 0.3s; }
+        .dark-mode .theme-toggle-label { background-color: #242424; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label .sun { display: inline; } .theme-toggle-label .moon { display: none; }
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label .sun { display: none; }
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label .moon { display: inline; }
+        .container { display: flex; }
+        .sidebar { width: 260px; background-color: #e9eef2; padding: 1.5rem; height: 100vh; position: fixed; top: 70px; left: 0; overflow-y: auto; border-right: 1px solid #e0e0e0; }
+        .dark-mode .sidebar { background-color: #242424; border-right: 1px solid #333; }
+        .sidebar h2 { font-size: 1.2rem; color: var(--accent-color); margin-top: 0; }
+        .sidebar ul { list-style: none; padding: 0; }
+        .sidebar ul li a { display: block; color: #333; text-decoration: none; padding: 0.75rem 1rem; border-radius: 5px; transition: background-color 0.2s; }
+        .dark-mode .sidebar ul li a { color: #e0e0e0; }
+        .sidebar ul li a:hover { background-color: var(--accent-color); color: white; }
+        .content { flex: 1; padding: 2rem; margin-left: 290px; }
+        .card { background-color: #ffffff; border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .dark-mode .card { background-color: #1e1e1e; border-color: var(--accent-color); }
+        .card.formula { background-color: #e3f2fd; border-color: #64b5f6; }
+        .dark-mode .card.formula { background-color: #2a354d; border-color: #90caf9; }
+        h2 { border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        @media (max-width: 768px) { .sidebar { display: none; } .content { margin-left: 0; } header { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 6: Integration</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+        <div class="container">
+            <nav class="sidebar">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="#intro">Antiderivatives</a></li>
+                    <li><a href="#definite">The Definite Integral</a></li>
+                    <li><a href="#ftc">Fundamental Theorem</a></li>
+                    <li><a href="#substitution">Integration by Substitution</a></li>
+                    <li><a href="#parts">Integration by Parts</a></li>
+                    <li><a href="#partial-fractions">Partial Fractions</a></li>
+                </ul>
+            </nav>
+            <main class="content">
+                <section id="intro">
+                    <h2>6.1 Antiderivatives and Indefinite Integration</h2>
+                    <p>Integration is the reverse process of differentiation. It is often called finding the <strong>antiderivative</strong>. If the derivative of \(F(x)\) is \(f(x)\), then the antiderivative of \(f(x)\) is \(F(x)\).</p>
+                    <div class="card">
+                        <h4>The Constant of Integration, C</h4>
+                        <p>Because the derivative of a constant is zero, the antiderivative of a function is not unique. For example, the derivative of \(x^2\), \(x^2+5\), and \(x^2-100\) are all \(2x\). To account for this, we add a <strong>constant of integration</strong>, \(C\), to every indefinite integral.</p>
+                        <div class="card formula">
+                            \[ \int f(x) \,dx = F(x) + C \]
+                        </div>
+                    </div>
+                </section>
+
+                <section id="definite">
+                    <h2>6.2 The Definite Integral</h2>
+                    <p>The definite integral represents the <strong>area under the curve</strong> of a function \(f(x)\) between two points, \(a\) and \(b\). It gives a specific numerical value.</p>
+                    <div class="card">
+                        <h4>Notation and Interpretation</h4>
+                        <p>The definite integral from \(a\) to \(b\) is written as:</p>
+                        \[ \int_{a}^{b} f(x) \,dx \]
+                        <ul>
+                            <li>\(\int\) is the integral symbol.</li>
+                            <li>\(a\) is the <strong>lower limit</strong> of integration.</li>
+                            <li>\(b\) is the <strong>upper limit</strong> of integration.</li>
+                            <li>\(f(x)\) is the <strong>integrand</strong>.</li>
+                        </ul>
+                        <p>This expression represents the accumulated area between the curve \(y=f(x)\) and the x-axis, from \(x=a\) to \(x=b\).</p>
+                    </div>
+                </section>
+                
+                <section id="ftc">
+                    <h2>6.3 The Fundamental Theorem of Calculus</h2>
+                    <p>The Fundamental Theorem of Calculus connects the concepts of differentiation and integration. It provides a powerful method for evaluating definite integrals without using area summations.</p>
+                    <div class="card formula">
+                        <h4>The Fundamental Theorem</h4>
+                        <p>If \(f(x)\) is a continuous function on the interval \([a, b]\) and \(F(x)\) is any antiderivative of \(f(x)\) (meaning \(F'(x) = f(x)\)), then:</p>
+                        \[ \int_{a}^{b} f(x) \,dx = F(b) - F(a) \]
+                    </div>
+                </section>
+
+                <section id="substitution">
+                    <h2>6.4 Integration by Substitution (u-Substitution)</h2>
+                    <p>Substitution is a technique for finding antiderivatives that reverses the chain rule of differentiation. It is used when the integrand is a composite function.</p>
+                    <div class="card">
+                        <h4>Steps for u-Substitution</h4>
+                        <ol>
+                            <li><strong>Choose 'u':</strong> Identify a part of the integrand, usually the "inner function," to be \(u\).</li>
+                            <li><strong>Find du:</strong> Differentiate \(u\) to find \(du = u' \,dx\).</li>
+                            <li><strong>Substitute:</strong> Replace the parts of the original integral with \(u\) and \(du\). The goal is to have an integral only in terms of \(u\).</li>
+                            <li><strong>Integrate:</strong> Evaluate the new, simpler integral with respect to \(u\).</li>
+                            <li><strong>Back-substitute:</strong> Replace \(u\) with its original expression in terms of \(x\).</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section id="parts">
+                    <h2>6.5 Integration by Parts</h2>
+                    <p>Integration by Parts is a technique that reverses the product rule of differentiation. It is useful for integrating the product of two functions.</p>
+                    <div class="card formula">
+                        <h4>The Integration by Parts Formula</h4>
+                        \[ \int u \,dv = uv - \int v \,du \]
+                        <p>The key is to choose \(u\) and \(dv\) strategically. A good rule of thumb is the <strong>LIATE</strong> principle for choosing \(u\): Logarithmic, Inverse Trig, Algebraic, Trigonometric, Exponential.</p>
+                    </div>
+                </section>
+
+                <section id="partial-fractions">
+                    <h2>6.6 Integration by Partial Fractions</h2>
+                    <p>This method is used to integrate rational functions (a ratio of two polynomials). It involves breaking down a complex fraction into a sum of simpler fractions that are easier to integrate.</p>
+                    <div class="card">
+                        <h4>The Process</h4>
+                        <ol>
+                            <li><strong>Factor the Denominator:</strong> Completely factor the denominator of the rational function.</li>
+                            <li><strong>Set up the Decomposition:</strong> Write the fraction as a sum of simpler fractions with unknown numerators (A, B, C, etc.) based on the factors of the denominator.</li>
+                            <li><strong>Solve for Constants:</strong> Solve for the unknown numerators by equating coefficients or substituting convenient values for \(x\).</li>
+                            <li><strong>Integrate:</strong> Integrate the sum of the simpler fractions.</li>
+                        </ol>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

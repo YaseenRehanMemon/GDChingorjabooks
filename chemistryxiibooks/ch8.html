@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 8: Aldehydes & Ketones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --accent-color: #673AB7; /* Deep Purple */
+            --bg-light: #f4f7f9; --text-light: #333; --card-bg-light: #ffffff; --border-light: #e0e0e0; --header-bg-light: #ffffff; --sidebar-bg-light: #fdfdfd;
+            --bg-dark: #121212; --text-dark: #e0e0e0; --card-bg-dark: #1e1e1e; --border-dark: #333; --header-bg-dark: #1e1e1e; --sidebar-bg-dark: #232323;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { font-family: 'Poppins', sans-serif; line-height: 1.6; scroll-behavior: smooth; background-color: var(--bg-light); color: var(--text-light); transition: background-color 0.3s, color 0.3s; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: var(--border-light); color: var(--text-light); transition: background-color 0.3s; font-weight: 600; }
+        .theme-toggle-label .moon { display: none; } .theme-toggle-label .sun { display: inline; }
+        body.dark-mode { --bg-light: var(--bg-dark); --text-light: var(--text-dark); --card-bg-light: var(--card-bg-dark); --border-light: var(--border-dark); --header-bg-light: var(--header-bg-dark); --sidebar-bg-light: var(--sidebar-bg-dark); }
+        .dark-mode .theme-toggle-label .moon { display: inline; } .dark-mode .theme-toggle-label .sun { display: none; } .dark-mode .sidebar a { color: #c5d7e8; } .dark-mode .sidebar a:hover { color: #ffffff; }
+        .page-container { display: grid; grid-template-columns: 260px 1fr; grid-template-rows: auto 1fr; grid-template-areas: "header header" "sidebar content"; min-height: 100vh; }
+        header { grid-area: header; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: var(--header-bg-light); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        header h1 { color: var(--accent-color); font-size: 1.8rem; }
+        .sidebar { grid-area: sidebar; background-color: var(--sidebar-bg-light); padding: 2rem; border-right: 1px solid var(--border-light); position: fixed; top: 75px; left: 0; width: 260px; height: calc(100vh - 75px); overflow-y: auto; }
+        .sidebar h2 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        .sidebar ul { list-style: none; } .sidebar li { margin-bottom: 0.8rem; }
+        .sidebar a { text-decoration: none; color: #555; font-weight: 500; transition: color 0.2s; } .sidebar a:hover { color: var(--accent-color); }
+        .content { grid-area: content; padding: 2rem 3rem; }
+        section { margin-bottom: 3rem; padding-top: 80px; margin-top: -75px; }
+        h2 { font-size: 2rem; color: var(--accent-color); margin-bottom: 1.5rem; border-bottom: 2px solid var(--border-light); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; }
+        p, ul, ol { margin-bottom: 1rem; } ul, ol { padding-left: 20px; }
+        b { color: var(--accent-color); }
+        .card { background-color: var(--card-bg-light); border: 1px solid var(--border-light); border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        .card.formula { background-color: #333; color: white; border-left: 5px solid var(--accent-color); }
+        .card.formula p { margin: 0; font-family: 'Courier New', Courier, monospace; }
+        @media (max-width: 900px) { .page-container { grid-template-columns: 1fr; grid-template-areas: "header" "content"; } .sidebar { display: none; } header h1 { font-size: 1.4rem; } .content { padding: 1.5rem; } }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+            function applyTheme(isDarkMode) { body.classList.toggle('dark-mode', isDarkMode); }
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const initialThemeDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+            themeToggleCheckbox.checked = initialThemeDark;
+            applyTheme(initialThemeDark);
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+    </script>
+</head>
+<body style="--accent-color: #673AB7;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 8: Aldehydes & Ketones</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#prep">Preparation Methods</a></li>
+                <li><a href="#reactions">Key Reactions</a></li>
+                <li><a href="#tests">Laboratory Tests</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>1. Introduction to Carbonyl Compounds</h2>
+                <p>Aldehydes and ketones are characterized by the presence of a <b>carbonyl group</b> (\( C=O \)). The main difference lies in what is attached to the carbonyl carbon.</p>
+                <div class="card">
+                    <h4>Aldehydes vs. Ketones</h4>
+                    <ul>
+                        <li><b>Aldehyde:</b> The carbonyl carbon is bonded to at least one hydrogen atom. The carbonyl group is at the end of a carbon chain. (General formula: R-CHO)</li>
+                        <li><b>Ketone:</b> The carbonyl carbon is bonded to two other carbon atoms. The carbonyl group is within a carbon chain. (General formula: R-CO-R')</li>
+                    </ul>
+                </div>
+                <p>The carbonyl group's carbon-oxygen double bond is polar, with the carbon being electrophilic (\(\delta+\)) and the oxygen being nucleophilic (\(\delta-\)). This polarity dictates the chemistry of these compounds.</p>
+            </section>
+
+            <section id="prep">
+                <h2>2. Preparation of Aldehydes and Ketones</h2>
+                <p>Several methods can be used to synthesize these important functional groups.</p>
+                 <div class="card">
+                    <h4>Key Preparation Methods</h4>
+                    <ul>
+                        <li><b>Oxidation of Alcohols:</b>
+                            <ul>
+                                <li><b>Primary alcohols</b> are oxidized to <b>aldehydes</b> using mild oxidizing agents like Pyridinium Chlorochromate (PCC).</li>
+                                <li><b>Secondary alcohols</b> are oxidized to <b>ketones</b> using stronger agents like \( \text{K}_2\text{Cr}_2\text{O}_7 \).</li>
+                            </ul>
+                        </li>
+                        <li><b>Ozonolysis of Alkenes:</b> Cleavage of a C=C double bond with ozone (\(O_3\)) followed by a reducing agent (like zinc) yields aldehydes and/or ketones.</li>
+                        <li><b>Hydration of Alkynes:</b> Addition of water to an alkyne, catalyzed by acid and mercury(II) salts, forms an unstable enol that rearranges to a ketone (or acetaldehyde from ethyne).</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="reactions">
+                <h2>3. Key Reactions of Aldehydes and Ketones</h2>
+                <p>The primary reaction of carbonyl compounds is <b>nucleophilic addition</b>, where a nucleophile attacks the electrophilic carbonyl carbon.</p>
+                <h3>Nucleophilic Addition Reactions</h3>
+                <ul>
+                    <li><b>Addition of HCN:</b> Forms a cyanohydrin.</li>
+                    <li><b>Addition of Grignard Reagents:</b> Forms alcohols (formaldehyde \(\rightarrow\) \(1^\circ\) alcohol; other aldehydes \(\rightarrow\) \(2^\circ\) alcohol; ketones \(\rightarrow\) \(3^\circ\) alcohol).</li>
+                    <li><b>Addition of Alcohols:</b> Forms hemiacetals and acetals, which act as protecting groups for the carbonyl.</li>
+                </ul>
+                <div class="card">
+                    <h4>Relative Reactivity</h4>
+                    <p><b>Aldehydes are more reactive than ketones</b> towards nucleophilic attack. This is due to two factors:</p>
+                    <ol>
+                        <li><b>Steric Hindrance:</b> The single hydrogen on an aldehyde's carbonyl carbon creates less crowding than the two alkyl groups on a ketone.</li>
+                        <li><b>Electronic Effects:</b> Alkyl groups are electron-donating, which reduces the partial positive charge on the carbonyl carbon of ketones, making it less electrophilic.</li>
+                    </ol>
+                </div>
+                <h3>Oxidation and Reduction</h3>
+                <ul>
+                    <li><b>Oxidation:</b> Aldehydes are easily oxidized to carboxylic acids by various oxidizing agents. Ketones are generally resistant to oxidation.</li>
+                    <li><b>Reduction:</b> Both aldehydes and ketones are reduced to alcohols using agents like \( \text{NaBH}_4 \) or \( \text{LiAlH}_4 \).</li>
+                </ul>
+            </section>
+
+            <section id="tests">
+                <h2>4. Laboratory Tests to Distinguish Aldehydes and Ketones</h2>
+                <p>The difference in oxidation potential is the basis for simple chemical tests to distinguish between aldehydes and ketones.</p>
+                <div class="card">
+                    <h4>Key Tests</h4>
+                    <ul>
+                        <li><b>Tollens' Test (Silver Mirror Test):</b> Aldehydes react with Tollens' reagent (\( [\text{Ag(NH}_3)_2]^+ \)) to form a silver mirror on the inside of the test tube. Ketones do not react.</li>
+                        <li><b>Fehling's or Benedict's Test:</b> Aldehydes react with the blue copper(II) solution in these reagents to form a red precipitate of copper(I) oxide (\(\text{Cu}_2\text{O}\)). Ketones do not react.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Carbonyl Group:</b> Aldehydes (R-CHO) and ketones (R-CO-R') both contain the \(C=O\) functional group.</li>
+                        <li><b>Reactivity:</b> The polar \(C=O\) bond makes the carbon electrophilic, leading to <b>nucleophilic addition</b> as the characteristic reaction. Aldehydes are more reactive than ketones.</li>
+                        <li><b>Preparation:</b> Commonly prepared by oxidizing alcohols or through ozonolysis of alkenes.</li>
+                        <li><b>Reactions:</b> They undergo nucleophilic addition with Grignard reagents and HCN, and can be reduced to alcohols.</li>
+                        <li><b>Distinguishing Test:</b> Aldehydes can be easily oxidized and give positive results with Tollens' and Fehling's reagents, while ketones do not.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

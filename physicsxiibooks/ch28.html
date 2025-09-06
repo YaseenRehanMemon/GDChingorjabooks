@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 9: Capacitors</title>
+    <title>Chapter 28: Particle Physics</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
         /* 1. CSS Variables for Theming */
         :root {
@@ -152,8 +153,6 @@
         .card.formula {
             background-color: var(--sidebar-bg);
             border-left: 5px solid var(--accent-color);
-            font-family: monospace;
-            font-size: 1.1rem;
         }
 
         .card ul, .card ol {
@@ -304,60 +303,13 @@
             }
         }
     </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
-            const body = document.body;
-
-            function applyTheme(isDarkMode) {
-                if (isDarkMode) {
-                    body.classList.add('dark-mode');
-                } else {
-                    body.classList.remove('dark-mode');
-                }
-            }
-
-            const savedTheme = localStorage.getItem('theme');
-            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-            if (savedTheme === 'dark') {
-                themeToggleCheckbox.checked = true;
-                applyTheme(true);
-            } else if (savedTheme === 'light') {
-                themeToggleCheckbox.checked = false;
-                applyTheme(false);
-            } else {
-                themeToggleCheckbox.checked = prefersDark;
-                applyTheme(prefersDark);
-            }
-
-            themeToggleCheckbox.addEventListener('change', () => {
-                const isDarkMode = themeToggleCheckbox.checked;
-                applyTheme(isDarkMode);
-                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-            });
-        });
-
-        // MathJax configuration for rendering LaTeX
-        window.MathJax = {
-            tex: {
-                inlineMath: [['\\(', '\\)']],
-                displayMath: [['\\[', '\\]']]
-            },
-            svg: {
-                fontCache: 'global'
-            }
-        };
-    </script>
-    <!-- MathJax CDN for rendering LaTeX -->
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
 <body>
     <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
     
     <div class="page-container">
         <header>
-            <h1>Chapter 9: Capacitors</h1>
+            <h1>Chapter 28: Particle Physics</h1>
             <label for="theme-toggle" class="theme-toggle-label">
                 <span class="sun">Light</span>
                 <span class="moon">Dark</span>
@@ -367,118 +319,129 @@
         <nav class="sidebar">
             <h2>Navigation</h2>
             <ul>
-                <li><a href="#intro">What is a Capacitor?</a></li>
-                <li><a href="#parallel-plate">The Parallel Plate Capacitor</a></li>
-                <li><a href="#combinations">Combinations of Capacitors</a></li>
-                <li><a href="#energy">Energy Storage</a></li>
-                <li><a href="#rc-circuits">RC Circuits</a></li>
+                <li><a href="#standard-model">The Standard Model</a></li>
+                <li><a href="#forces">Fundamental Forces</a></li>
+                <li><a href="#particles">The Particle Zoo</a></li>
+                <li><a href="#detectors">Particle Detectors</a></li>
                 <li><a href="#summary">Chapter Summary</a></li>
             </ul>
         </nav>
 
         <main class="content">
-            <section id="intro">
-                <h2>What is a Capacitor?</h2>
-                <p>A <b>capacitor</b> is a fundamental electronic component designed to store electric charge and energy. In its simplest form, it consists of two conductive plates separated by an insulating material called a <b>dielectric</b>.</p>
-                <div class="card">
-                    <h3>Capacitance (C)</h3>
-                    <p>Capacitance is the measure of a capacitor's ability to store charge. It is defined as the ratio of the charge stored on one plate to the potential difference (voltage) between the plates.</p>
-                </div>
-                <div class="card formula">
-                    <h4>Formula: C = Q / V</h4>
-                    <p><b>C</b> = Capacitance (in Farads, F)<br>
-                       <b>Q</b> = Magnitude of charge on one plate (in Coulombs, C)<br>
-                       <b>V</b> = Voltage across the plates (in Volts, V)</p>
-                </div>
-                <p>A capacitor has a capacitance of one Farad if one Coulomb of charge is stored when the potential difference is one Volt. The Farad is a very large unit; more common units are the microfarad (&mu;F) and picofarad (pF).</p>
-            </section>
-
-            <section id="parallel-plate">
-                <h2>The Parallel Plate Capacitor</h2>
-                <p>The most common type of capacitor is the parallel plate capacitor. Its capacitance depends on its geometric properties and the material between its plates.</p>
+            <section id="standard-model">
+                <h2>The Standard Model of Particle Physics</h2>
+                <p>Particle physics seeks to identify the most fundamental particles and forces that make up our universe. The <b>Standard Model</b> is the current theory that describes these particles and their interactions. It successfully explains three of the four fundamental forces.</p>
                 
-                <div class="card formula">
-                    <h4>Capacitance of a Parallel Plate Capacitor</h4>
-                    <b>C = &epsilon;<sub>r</sub> &epsilon;₀ A / d</b>
-                    <p><b>A</b> = Area of one of the plates<br>
-                       <b>d</b> = Distance between the plates<br>
-                       <b>&epsilon;₀</b> = Permittivity of free space (a constant)<br>
-                       <b>&epsilon;<sub>r</sub></b> = The dielectric constant of the insulator</p>
-                </div>
-
-                <div class="card">
-                    <h3>Dielectrics</h3>
-                    <p>A <b>dielectric</b> is an insulating material placed between the capacitor plates. It serves three purposes:</p>
-                    <ul>
-                        <li>It keeps the conductive plates from touching.</li>
-                        <li>It increases the maximum voltage the capacitor can withstand.</li>
-                        <li>It <b>increases the capacitance</b> by a factor known as the dielectric constant (&epsilon;<sub>r</sub>).</li>
-                    </ul>
+                <h3>Two Classes of Particles</h3>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Fermions (Matter Particles)</h3>
+                        <p>These are the particles that make up all physical matter. They are divided into two main groups: <b>quarks</b> and <b>leptons</b>.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Bosons (Force-Carrying Particles)</h3>
+                        <p>These particles mediate the fundamental forces. They are exchanged between fermions, which is how forces are transmitted.</p>
+                    </div>
                 </div>
             </section>
 
-            <section id="combinations">
-                <h2>Combinations of Capacitors</h2>
-                <p>Capacitors in a circuit can be combined in series or parallel to achieve a desired equivalent capacitance.</p>
-                
+            <section id="forces">
+                <h2>The Four Fundamental Forces</h2>
+                <p>All interactions in the universe are governed by four fundamental forces.</p>
                 <table>
                     <thead>
                         <tr>
-                            <th>Combination</th>
-                            <th>Description</th>
-                            <th>Equivalent Capacitance (C<sub>eq</sub>)</th>
+                            <th>Force</th>
+                            <th>Mediating Boson</th>
+                            <th>Relative Strength</th>
+                            <th>Acts On</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><b>Parallel</b></td>
-                            <td>Plates are connected side-by-side. The voltage across each capacitor is the same. The total charge is the sum of the individual charges.</td>
-                            <td><b>C<sub>eq</sub> = C₁ + C₂ + C₃ + ...</b></td>
+                            <td><b>Strong Nuclear</b></td>
+                            <td>Gluon</td>
+                            <td>1</td>
+                            <td>Quarks (holds nuclei together)</td>
                         </tr>
                         <tr>
-                            <td><b>Series</b></td>
-                            <td>Capacitors are connected end-to-end. The charge on each capacitor is the same. The total voltage is the sum of the individual voltages.</td>
-                            <td><b>1/C<sub>eq</sub> = 1/C₁ + 1/C₂ + 1/C₃ + ...</b></td>
+                            <td><b>Electromagnetic</b></td>
+                            <td>Photon</td>
+                            <td>\(10^{-2}\)</td>
+                            <td>Electric Charge</td>
+                        </tr>
+                        <tr>
+                            <td><b>Weak Nuclear</b></td>
+                            <td>W and Z Bosons</td>
+                            <td>\(10^{-7}\)</td>
+                            <td>Quarks and Leptons (responsible for radioactive decay)</td>
+                        </tr>
+                        <tr>
+                            <td><b>Gravitational</b></td>
+                            <td>Graviton (hypothetical)</td>
+                            <td>\(10^{-39}\)</td>
+                            <td>Mass-Energy</td>
                         </tr>
                     </tbody>
                 </table>
-                 <p><b>Note:</b> These rules are the opposite of the rules for combining resistors!</p>
+                <p>The Standard Model successfully unifies the electromagnetic and weak forces into a single "electroweak" theory but does not yet include gravity.</p>
             </section>
             
-            <section id="energy">
-                <h2>Energy Stored in a Capacitor</h2>
-                <p>Work is required to move charge onto the plates of a capacitor. This work is stored as electric potential energy in the electric field between the plates. This stored energy can be released quickly, which is why capacitors are used in applications like camera flashes.</p>
-                
-                <div class="card formula">
-                    <h4>Formulas for Stored Energy (U)</h4>
-                    <b>U = \frac{1}{2}QV = \frac{1}{2}CV^2 = \frac{Q^2}{2C}</b>
+            <section id="particles">
+                <h2>The Particle Zoo: Quarks and Leptons</h2>
+                <p>The fermions of the Standard Model are organized into three "generations" of increasing mass. All the stable matter in the universe is made from the first generation.</p>
+                 <div class="card-container">
+                    <div class="card">
+                        <h3>Leptons</h3>
+                        <p>Leptons are fundamental particles that do not experience the strong nuclear force.</p>
+                        <ul>
+                            <li><b>Electron (\(e^-\)):</b> The familiar particle that orbits the nucleus.</li>
+                            <li><b>Muon (\(\mu\)) & Tau (\(\tau\)):</b> Heavier, unstable cousins of the electron.</li>
+                            <li><b>Neutrinos (\(\nu_e, \nu_\mu, \nu_\tau\)):</b> Very light, neutral particles that interact very weakly with other matter.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Quarks</h3>
+                        <p>Quarks are fundamental particles that experience the strong nuclear force. They have fractional electric charges and are always found bound together inside composite particles called <b>hadrons</b>.</p>
+                        <ul>
+                           <li><b>Flavors:</b> Up (\(+2/3\)), Down (\(-1/3\)), Charm, Strange, Top, Bottom.</li>
+                           <li><b>Color Charge:</b> Quarks also have a property called "color" (red, green, blue), which is the charge associated with the strong force.</li>
+                        </ul>
+                    </div>
                 </div>
+                <h3>Hadrons: Particles Made of Quarks</h3>
+                <ul>
+                    <li><b>Baryons:</b> Made of three quarks. Protons (uud) and neutrons (udd) are the most common baryons.</li>
+                    <li><b>Mesons:</b> Made of one quark and one antiquark. They are unstable particles.</li>
+                </ul>
             </section>
 
-            <section id="rc-circuits">
-                <h2>Charging and Discharging (RC Circuits)</h2>
-                <p>When a capacitor is connected to a power source through a resistor, it does not charge instantly. The process is gradual and follows an exponential curve.</p>
-
-                <div class="card">
-                    <h3>The Time Constant (&tau;)</h3>
-                    <p>The rate of charging or discharging is determined by the <b>time constant</b> of the circuit, which is the product of the resistance and the capacitance.</p>
-                    <div class="card formula">
-                        <b>&tau; = RC</b>
+            <section id="detectors">
+                <h2>Particle Detectors</h2>
+                <p>Since subatomic particles are too small to be seen directly, physicists use specialized detectors to observe the tracks and energy they leave behind when passing through a medium.</p>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Wilson Cloud Chamber</h3>
+                        <p>One of the earliest particle detectors. It contains a supersaturated vapor. When a charged particle passes through, it ionizes the vapor, causing visible cloud-like tracks to form along its path.</p>
                     </div>
-                    <p>The time constant represents the time it takes for the capacitor to charge to approximately <b>63.2%</b> of its maximum voltage, or to discharge to <b>36.8%</b> of its initial voltage.</p>
+                    <div class="card">
+                        <h3>Geiger-Müller (GM) Counter</h3>
+                        <p>A gas-filled tube that detects ionizing radiation. When a particle enters the tube, it ionizes the gas, creating a cascade of electrons that results in a detectable electrical pulse or "click."</p>
+                    </div>
                 </div>
             </section>
 
             <section id="summary">
                 <h2>Chapter Summary</h2>
-                <p>Capacitors are essential components in electronics for storing charge and energy.</p>
+                <p>The Standard Model is a highly successful theory that provides a comprehensive framework for understanding the fundamental building blocks of the universe.</p>
                 <div class="card">
                     <ul>
-                        <li>A capacitor stores charge, and its ability to do so is measured by its <b>capacitance (C = \(\frac{Q}{V}\))</b>.</li>
-                        <li>The capacitance of a parallel plate capacitor depends on its plate area (A), the distance between them (d), and the <b>dielectric</b> material used (<b>C = \(\frac{\epsilon A}{d}\)</b>).</li>
-                        <li>Capacitors in <b>parallel add directly</b> (C<sub>eq</sub> = C₁ + C₂), while capacitors in <b>series add as reciprocals</b> (1/C<sub>eq</sub> = 1/C₁ + 1/C₂).</li>
-                        <li>The energy stored in a capacitor is given by <b>U = \frac{1}{2}CV^2</b>.</li>
-                        <li>The charging and discharging of a capacitor through a resistor is governed by the <b>time constant (&tau; = RC)</b>.</li>
+                        <li>All matter is made of fundamental particles called <b>fermions</b> (<b>quarks</b> and <b>leptons</b>).</li>
+                        <li>The fundamental forces are mediated by force-carrying particles called <b>bosons</b>.</li>
+                        <li><b>Quarks</b> combine to form <b>hadrons</b> like protons and neutrons. They are held together by the <b>strong nuclear force</b>, mediated by gluons.</li>
+                        <li><b>Leptons</b>, such as the electron, do not feel the strong force. The <b>weak nuclear force</b> governs their decay.</li>
+                        <li>The <b>electromagnetic force</b> acts on charged particles and is mediated by photons.</li>
+                        <li><b>Particle detectors</b> like the Wilson Cloud Chamber and Geiger Counter allow us to "see" and count subatomic particles by observing the effects of their interaction with matter.</li>
                     </ul>
                 </div>
             </section>

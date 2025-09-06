@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 11: Holozoic Nutrition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to the shared stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+        // MathJax configuration (for rendering LaTeX)
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body style="--accent-color: #8BC34A;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 11: Holozoic Nutrition</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Introduction to Holozoic Nutrition</a></li>
+                <li><a href="#digestion-types">Types of Digestion</a></li>
+                <li><a href="#human-digestive">Human Digestive System</a></li>
+                <li><a href="#accessory-glands">Accessory Glands</a></li>
+                <li><a href="#disorders">Digestive Disorders</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>11.1 Introduction to Holozoic Nutrition</h2>
+                <p><strong>Holozoic nutrition</strong> is a type of heterotrophic nutrition characterized by the ingestion of solid or liquid organic food, which is then digested, absorbed, and assimilated. It consists of five main stages:</p>
+                <div class="card">
+                    <h4>The 5 Stages of Holozoic Nutrition</h4>
+                    <ol>
+                        <li><b>Ingestion:</b> The process of taking food into the body.</li>
+                        <li><b>Digestion:</b> The breakdown of large, complex food molecules into smaller, soluble ones.</li>
+                        <li><b>Absorption:</b> The uptake of digested food molecules into the cells of the body.</li>
+                        <li><b>Assimilation:</b> The utilization of absorbed food molecules for energy, growth, and repair.</li>
+                        <li><b>Egestion:</b> The removal of undigested waste from the body.</li>
+                    </ol>
+                </div>
+            </section>
+            
+            <section id="digestion-types">
+                <h2>11.2 Types of Digestion</h2>
+                <p>Digestion can be classified based on where it occurs and the mechanisms involved.</p>
+                <ul>
+                    <li><b>Intracellular Digestion:</b> Digestion occurs inside the cell within a food vacuole (e.g., <i>Amoeba</i>).</li>
+                    <li><b>Extracellular Digestion:</b> Digestion occurs outside the cells, within a specialized digestive tract or cavity (e.g., humans, <i>Planaria</i>).</li>
+                    <li><b>Mechanical Digestion:</b> The physical breakdown of food into smaller pieces (e.g., chewing, churning in the stomach).</li>
+                    <li><b>Chemical Digestion:</b> The chemical breakdown of food molecules by enzymes.</li>
+                </ul>
+                <h3>Digestive Systems</h3>
+                <ul>
+                    <li><b>Sac-like (Incomplete):</b> A digestive system with only one opening that serves as both mouth and anus (e.g., <i>Planaria</i>).</li>
+                    <li><b>Tube-like (Complete):</b> A digestive system with two openings, a mouth for ingestion and an anus for egestion (e.g., humans).</li>
+                </ul>
+            </section>
+            
+            <section id="human-digestive">
+                <h2>11.3 The Human Digestive System (Alimentary Canal)</h2>
+                <p>The human digestive system is a long, tube-like alimentary canal extending from the mouth to the anus, along with several accessory glands.</p>
+                <div class="card">
+                    <h4>Major Organs of the Alimentary Canal</h4>
+                    <ul>
+                        <li><b>Mouth and Oral Cavity:</b> Where ingestion and mechanical digestion (chewing) begin. Salivary amylase starts carbohydrate digestion.</li>
+                        <li><b>Pharynx and Esophagus:</b> Passageways that transport food from the mouth to the stomach via peristalsis.</li>
+                        <li><b>Stomach:</b> A muscular sac that churns food. It secretes hydrochloric acid (HCl) to kill bacteria and pepsin to begin protein digestion. The semi-digested food paste is called <b>chyme</b>.</li>
+                        <li><b>Small Intestine (Duodenum, Jejunum, Ileum):</b> The primary site for chemical digestion and absorption of nutrients. Its large surface area is due to folds, villi, and microvilli.</li>
+                        <li><b>Large Intestine (Colon, Rectum, Anal Canal):</b> Primarily responsible for the reabsorption of water and electrolytes, and the formation and storage of feces.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="accessory-glands">
+                <h2>11.4 Role of Accessory Glands</h2>
+                <p>Accessory glands secrete digestive juices into the alimentary canal.</p>
+                <ul>
+                    <li><b>Salivary Glands:</b> Produce saliva, containing mucus for lubrication and amylase for starch digestion.</li>
+                    <li><b>Liver:</b> The largest gland, produces <b>bile</b>, which emulsifies fats (breaks large fat globules into smaller ones). The bile is stored in the <b>gall bladder</b>.</li>
+                    <li><b>Pancreas:</b> Secretes pancreatic juice containing a variety of powerful enzymes (amylase, trypsin, lipase) to digest carbohydrates, proteins, and fats. It also produces bicarbonate to neutralize stomach acid.</li>
+                </ul>
+            </section>
+            
+            <section id="disorders">
+                <h2>11.5 Disorders of the Digestive System</h2>
+                <p>Various conditions can affect the digestive system.</p>
+                <ul>
+                    <li><b>Ulcer:</b> A sore in the lining of the stomach or duodenum, often caused by the bacterium <i>H. pylori</i> or overuse of certain medications.</li>
+                    <li><b>Food Poisoning:</b> Illness caused by consuming food contaminated with bacteria, viruses, or toxins.</li>
+                    <li><b>Dyspepsia (Indigestion):</b> Discomfort or pain in the upper abdomen.</li>
+                    <li><b>Obesity:</b> The accumulation of excessive body fat, increasing the risk of many health problems.</li>
+                    <li><b>Anorexia Nervosa & Bulimia Nervosa:</b> Serious psychological eating disorders.</li>
+                </ul>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Holozoic Nutrition</b> involves ingestion, digestion, absorption, assimilation, and egestion.</li>
+                        <li>Digestion can be <b>intracellular</b> or <b>extracellular</b>, and involves both <b>mechanical</b> and <b>chemical</b> processes.</li>
+                        <li>The <b>Human Alimentary Canal</b> is a complete digestive tract including the mouth, esophagus, stomach, small intestine, and large intestine.</li>
+                        <li><b>Accessory Glands</b> (salivary glands, liver, pancreas) secrete enzymes and other substances like bile to aid in digestion.</li>
+                        <li>The <b>Small Intestine</b> is where most chemical digestion and absorption occur, aided by secretions from the pancreas and liver.</li>
+                        <li>The <b>Large Intestine</b>'s primary role is water reabsorption.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

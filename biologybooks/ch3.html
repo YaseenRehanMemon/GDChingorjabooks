@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3: Cell Structure and Function</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to the shared stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+        // MathJax configuration (for rendering LaTeX)
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body style="--accent-color: #673AB7;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 3: Cell Structure and Function</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#cell-theory">Cell Theory & Techniques</a></li>
+                <li><a href="#prokaryotic-eukaryotic">Prokaryotic vs Eukaryotic Cells</a></li>
+                <li><a href="#boundary">Cell Boundary</a></li>
+                <li><a href="#organelles">Cytoplasm & Organelles</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="cell-theory">
+                <h2>3.1 Cell Theory and Techniques</h2>
+                <p>The cell is the basic structural and functional unit of all living organisms. The <strong>Cell Theory</strong> is a foundational principle of biology, stating that all living things are composed of cells, cells are the basic unit of life, and all cells arise from pre-existing cells.</p>
+                <h3>Techniques in Cell Biology</h3>
+                <p>Studying cells requires specialized techniques:</p>
+                <ul>
+                    <li><b>Microscopy:</b> Using light or electron microscopes to magnify cells and their internal structures.</li>
+                    <li><b>Cell Fractionation:</b> A process of breaking cells open and separating their organelles by centrifugation, allowing for the study of individual components.</li>
+                </ul>
+            </section>
+
+            <section id="prokaryotic-eukaryotic">
+                <h2>3.2 Prokaryotic and Eukaryotic Cells</h2>
+                <p>All life can be divided into two fundamental types of cells based on their complexity and structure.</p>
+                <table>
+                    <thead>
+                        <tr><th>Feature</th><th>Prokaryotic Cell</th><th>Eukaryotic Cell</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><b>Nucleus</b></td><td>No true nucleus; genetic material is in a nucleoid region.</td><td>True nucleus with a nuclear membrane.</td></tr>
+                        <tr><td><b>Organelles</b></td><td>No membrane-bound organelles.</td><td>Contains membrane-bound organelles (mitochondria, ER, Golgi, etc.).</td></tr>
+                        <tr><td><b>Size</b></td><td>Generally smaller and simpler.</td><td>Generally larger and more complex.</td></tr>
+                        <tr><td><b>Examples</b></td><td>Bacteria, Archaea.</td><td>Plants, Animals, Fungi, Protists.</td></tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section id="boundary">
+                <h2>3.3 The Cell Boundary</h2>
+                <h3>3.3.1 Plasma Membrane</h3>
+                <p>The <strong>plasma membrane</strong> is a selectively permeable barrier that surrounds every cell. According to the <strong>Fluid Mosaic Model</strong>, it is composed of a flexible phospholipid bilayer with various proteins embedded within it.</p>
+                <div class="card">
+                    <h4>Functions of the Plasma Membrane</h4>
+                    <ul>
+                        <li>Regulates the passage of substances into and out of the cell.</li>
+                        <li>Receives signals from the environment.</li>
+                        <li>Allows for cell-to-cell communication and identification.</li>
+                    </ul>
+                </div>
+                <h3>3.3.2 Cell Wall</h3>
+                <p>The <strong>cell wall</strong> is a rigid outer layer found in plants, fungi, and bacteria, located outside the plasma membrane. It provides structural support, protection, and prevents the cell from bursting in a hypotonic environment.</p>
+            </section>
+
+            <section id="organelles">
+                <h2>3.4 Cytoplasm and Organelles</h2>
+                <p>The <strong>cytoplasm</strong> is the entire content within the plasma membrane, excluding the nucleus. It consists of the gel-like <strong>cytosol</strong> and various <strong>organelles</strong>, each with a specific function.</p>
+                <div class="card">
+                    <h4>Key Eukaryotic Organelles</h4>
+                    <ul>
+                        <li><b>Nucleus:</b> Contains the cell's genetic material (DNA) and controls all cell activities.</li>
+                        <li><b>Ribosomes:</b> Not membrane-bound; responsible for protein synthesis.</li>
+                        <li><b>Endoplasmic Reticulum (ER):</b> A network of membranes. The <b>Rough ER</b> (with ribosomes) processes proteins, while the <b>Smooth ER</b> synthesizes lipids and detoxifies substances.</li>
+                        <li><b>Golgi Apparatus:</b> Modifies, sorts, and packages proteins and lipids for secretion or delivery to other organelles.</li>
+                        <li><b>Lysosomes:</b> Contain digestive enzymes to break down waste materials, cellular debris, and ingested particles.</li>
+                        <li><b>Mitochondria:</b> The "powerhouses" of the cell; site of cellular respiration and ATP production.</li>
+                        <li><b>Chloroplasts:</b> (In plants and algae) Site of photosynthesis, converting light energy into chemical energy.</li>
+                        <li><b>Vacuole:</b> A large, membrane-bound sac. In plants, the central vacuole stores water and maintains turgor pressure.</li>
+                        <li><b>Cytoskeleton:</b> A network of protein fibers (microfilaments, intermediate filaments, microtubules) that provides structural support, cell shape, and facilitates movement.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Cells</b> are the fundamental units of life, categorized as either simple <b>prokaryotic</b> cells (no nucleus) or complex <b>eukaryotic</b> cells (with a true nucleus and membrane-bound organelles).</li>
+                        <li>The <b>plasma membrane</b>, described by the fluid mosaic model, is a selective barrier for all cells. A <b>cell wall</b> provides additional support in plants, fungi, and bacteria.</li>
+                        <li>The <b>nucleus</b> controls cell activities, while <b>ribosomes</b> synthesize proteins.</li>
+                        <li>The <b>endomembrane system</b> (ER, Golgi, lysosomes) works together to synthesize, modify, package, and transport proteins and lipids.</li>
+                        <li><b>Mitochondria</b> are responsible for cellular respiration and ATP synthesis, while <b>chloroplasts</b> perform photosynthesis.</li>
+                        <li>The <b>cytoskeleton</b> provides shape, support, and movement for the cell.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

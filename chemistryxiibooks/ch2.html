@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2: Chemistry of Outer Transition Elements</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        /* General Styles & Resets */
+        :root {
+            --accent-color: #009688; /* Teal for this chapter */
+            --bg-light: #f4f7f9;
+            --text-light: #333;
+            --card-bg-light: #ffffff;
+            --border-light: #e0e0e0;
+            --header-bg-light: #ffffff;
+            --sidebar-bg-light: #fdfdfd;
+
+            --bg-dark: #1a1a2e;
+            --text-dark: #e0e0e0;
+            --card-bg-dark: #162447;
+            --border-dark: #2a3b68;
+            --header-bg-dark: #162447;
+            --sidebar-bg-dark: #1f4068;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+            background-color: var(--bg-light);
+            color: var(--text-light);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Light/Dark Mode Toggle */
+        .theme-toggle-checkbox {
+            display: none;
+        }
+
+        .theme-toggle-label {
+            cursor: pointer;
+            padding: 8px 12px;
+            border-radius: 20px;
+            background-color: var(--border-light);
+            color: var(--text-light);
+            transition: background-color 0.3s;
+            font-weight: 600;
+        }
+
+        .theme-toggle-label .moon { display: none; }
+        .theme-toggle-label .sun { display: inline; }
+
+        /* Dark Mode Styles */
+        body.dark-mode {
+            --bg-light: var(--bg-dark);
+            --text-light: var(--text-dark);
+            --card-bg-light: var(--card-bg-dark);
+            --border-light: var(--border-dark);
+            --header-bg-light: var(--header-bg-dark);
+            --sidebar-bg-light: var(--sidebar-bg-dark);
+        }
+        
+        .dark-mode .theme-toggle-label .moon { display: inline; }
+        .dark-mode .theme-toggle-label .sun { display: none; }
+        .dark-mode .sidebar a { color: #c5d7e8; }
+        .dark-mode .sidebar a:hover { color: #ffffff; }
+
+        /* Layout */
+        .page-container {
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            grid-template-rows: auto 1fr;
+            grid-template-areas:
+                "header header"
+                "sidebar content";
+            min-height: 100vh;
+        }
+
+        header {
+            grid-area: header;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: var(--header-bg-light);
+            border-bottom: 1px solid var(--border-light);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        header h1 {
+            color: var(--accent-color);
+            font-size: 1.8rem;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: var(--sidebar-bg-light);
+            padding: 2rem;
+            border-right: 1px solid var(--border-light);
+            position: fixed;
+            top: 75px; /* Height of header */
+            left: 0;
+            width: 260px;
+            height: calc(100vh - 75px);
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar li {
+            margin-bottom: 0.8rem;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .sidebar a:hover {
+            color: var(--accent-color);
+        }
+
+        .content {
+            grid-area: content;
+            padding: 2rem 3rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            padding-top: 80px; /* Offset for sticky header */
+            margin-top: -75px;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--border-light);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p, ul, table {
+            margin-bottom: 1rem;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+
+        /* Card Component */
+        .card {
+            background-color: var(--card-bg-light);
+            border: 1px solid var(--border-light);
+            border-left: 5px solid var(--accent-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+
+        .card.formula {
+            background-color: #333;
+            color: white;
+            border-left: 5px solid var(--accent-color);
+        }
+        
+        .card.formula p {
+            margin: 0;
+            font-weight: 600;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        th {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .page-container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "content";
+            }
+            .sidebar {
+                display: none;
+            }
+            header h1 {
+                font-size: 1.4rem;
+            }
+            .content {
+                padding: 1.5rem;
+            }
+            section {
+                padding-top: 80px;
+                margin-top: -75px;
+            }
+        }
+    </style>
+    
+    <script>
+        // JS for Theme Toggling
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+    </script>
+</head>
+<body style="--accent-color: #009688;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 2: Transition Elements</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#config">Electronic Configuration</a></li>
+                <li><a href="#properties">General Properties</a></li>
+                <li><a href="#alloys">Alloy Formation</a></li>
+                <li><a href="#coordination">Coordination Compounds</a></li>
+                <li><a href="#chemistry">Chemistry of Key Elements</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>1. Introduction to Transition Elements</h2>
+                <p>Transition elements, also known as d-block elements, are located in the central block of the periodic table. They are essential in chemistry and industry due to their unique properties.</p>
+                <div class="card">
+                    <h4>Key Definition: Transition Element</h4>
+                    <p>An element that has a partially filled d-orbital in its atomic state or in any of its common ionic states.</p>
+                </div>
+                <p>These elements exhibit properties that are intermediate between the highly reactive s-block metals and the mostly non-metallic p-block elements. They are grouped into four series based on which d-orbital is being filled: 3d, 4d, 5d, and 6d series.</p>
+            </section>
+
+            <section id="config">
+                <h2>2. Electronic Configuration</h2>
+                <p>The general valence electronic configuration for d-block elements is \( (n-1)d^{1-10} ns^{1-2} \), where 'n' is the outermost shell. Electrons typically fill the \(ns\) orbital before the \( (n-1)d \) orbital.</p>
+                <h3>Anomalous Configurations of Cr and Cu</h3>
+                <p>Chromium (Cr) and Copper (Cu) are important exceptions to the standard filling order. This occurs because half-filled (\(d^5\)) and completely-filled (\(d^{10}\)) d-orbitals have extra stability.</p>
+                 <div class="card">
+                    <ul>
+                        <li><b>Chromium (Cr, Z=24):</b> Expected configuration is \([Ar] 4s^2 3d^4\). However, the actual configuration is \([Ar] 4s^1 3d^5\). One electron moves from the 4s orbital to the 3d orbital to achieve a stable, half-filled d-subshell.</li>
+                        <li><b>Copper (Cu, Z=29):</b> Expected configuration is \([Ar] 4s^2 3d^9\). The actual configuration is \([Ar] 4s^1 3d^{10}\). One electron moves from the 4s to the 3d orbital to achieve a very stable, completely filled d-subshell.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="properties">
+                <h2>3. General Properties of Transition Elements</h2>
+                <p>The partially filled d-orbitals give transition elements several characteristic properties.</p>
+                <h3>Variable Oxidation States</h3>
+                <p>Transition elements can show multiple oxidation states because the energy difference between the \(ns\) and \((n-1)d\) orbitals is very small. This allows electrons from both subshells to participate in bonding.</p>
+                <ul>
+                    <li><b>Manganese (Mn)</b> shows the widest range of oxidation states, from +2 to +7.</li>
+                    <li>The most common oxidation state is +2 (from losing two 4s electrons).</li>
+                </ul>
+                <h3>Formation of Colored Ions</h3>
+                <p>Most transition metal compounds are colored. This is due to a phenomenon called <strong>d-d transition</strong>. When light passes through a solution containing a transition metal ion, the d-electrons absorb light of a specific wavelength to jump to a higher energy d-orbital. The color we see is the complementary color of the light that was absorbed.</p>
+                 <div class="card">
+                    <p><b>Example:</b> \([Cu(H_2O)_6]^{2+}\) solutions are blue because they absorb orange-red light, transmitting the complementary blue light.</p>
+                    <p>Ions with empty (\(Sc^{3+}\)) or completely full (\(Zn^{2+}\)) d-orbitals are colorless because d-d transitions are not possible.</p>
+                </div>
+                 <h3>Catalytic Activity</h3>
+                 <p>Many transition metals and their compounds are excellent catalysts. This is due to their ability to:</p>
+                 <ul>
+                     <li>Exhibit variable oxidation states, allowing them to act as electron carriers.</li>
+                     <li>Provide a large surface area for reactants to adsorb onto.</li>
+                 </ul>
+                 <p><b>Examples:</b> Iron (Fe) in the Haber process for ammonia synthesis, and Nickel (Ni) for hydrogenation of alkenes.</p>
+                 <h3>Magnetic Properties</h3>
+                 <p>Substances are classified based on their behavior in a magnetic field:</p>
+                 <ul>
+                    <li><b>Paramagnetic:</b> Weakly attracted by a magnetic field. This occurs in substances with unpaired electrons.</li>
+                    <li><b>Diamagnetic:</b> Weakly repelled by a magnetic field. This occurs in substances where all electrons are paired.</li>
+                 </ul>
+                 <p>Since most transition metal ions have unpaired d-electrons, they are paramagnetic.</p>
+            </section>
+
+            <section id="alloys">
+                <h2>4. Alloy Formation</h2>
+                <div class="card">
+                    <h4>What is an Alloy?</h4>
+                    <p>An alloy is a homogeneous mixture of two or more elements, where at least one is a metal.</p>
+                </div>
+                <p>Transition metals readily form alloys because their atoms are similar in size. This allows atoms of one metal to easily replace atoms of another in the metallic crystal lattice.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Alloy</th>
+                            <th>Composition</th>
+                            <th>Key Uses</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Stainless Steel</td>
+                            <td>Iron (Fe), Chromium (Cr), Nickel (Ni)</td>
+                            <td>Cutlery, surgical instruments, construction</td>
+                        </tr>
+                        <tr>
+                            <td>Brass</td>
+                            <td>Copper (Cu), Zinc (Zn)</td>
+                            <td>Plumbing, musical instruments, decoration</td>
+                        </tr>
+                        <tr>
+                            <td>Bronze</td>
+                            <td>Copper (Cu), Tin (Sn)</td>
+                            <td>Medals, statues, bearings</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section id="coordination">
+                <h2>5. Coordination Compounds</h2>
+                <p>Transition metals have a strong tendency to form coordination compounds (or complexes). These consist of a central metal atom or ion bonded to a group of surrounding molecules or ions, called <strong>ligands</strong>.</p>
+                <h3>Basic Nomenclature Rules</h3>
+                <ol>
+                    <li><b>Cation before Anion:</b> The positive ion (cation) is named first, followed by the negative ion (anion).</li>
+                    <li><b>Ligands First:</b> Within the complex ion, name the ligands first in alphabetical order, then the metal.</li>
+                    <li><b>Ligand Naming:</b>
+                        <ul>
+                            <li>Negative ligands end in "-o" (e.g., chloro, hydroxo).</li>
+                            <li>Neutral ligands usually keep their names (e.g., ammine for NH₃, aqua for H₂O).</li>
+                        </ul>
+                    </li>
+                    <li><b>Prefixes:</b> Use prefixes (di-, tri-, tetra-) to indicate the number of each ligand.</li>
+                    <li><b>Metal Naming:</b>
+                        <ul>
+                            <li>If the complex is a cation or neutral, the metal keeps its name.</li>
+                            <li>If the complex is an anion, the metal's name ends in "-ate" (e.g., ferrate, cuprate).</li>
+                        </ul>
+                    </li>
+                    <li><b>Oxidation State:</b> The oxidation state of the central metal is written in Roman numerals in parentheses after the metal's name.</li>
+                </ol>
+                <div class="card">
+                    <p><b>Example 1: [Cu(NH₃)₄]SO₄</b><br>
+                    Tetraamminecopper(II) sulfate</p>
+                    <p><b>Example 2: K₄[Fe(CN)₆]</b><br>
+                    Potassium hexacyanoferrate(II)</p>
+                </div>
+            </section>
+
+            <section id="chemistry">
+                <h2>6. Chemistry of Key Transition Elements</h2>
+                <h3>Potassium Dichromate (\(K_2Cr_2O_7\))</h3>
+                <p>A powerful oxidizing agent, especially in acidic solutions. The chromium is in its +6 oxidation state. In redox reactions, the orange dichromate ion (\(Cr_2O_7^{2-}\)) is reduced to the green chromium(III) ion (\(Cr^{3+}\)).</p>
+                <div class="card formula">
+                <p>\( Cr_2O_7^{2-} + 14H^+ + 6e^- \rightarrow 2Cr^{3+} + 7H_2O \)</p>
+                </div>
+                <h3>Potassium Permanganate (\(KMnO_4\))</h3>
+                <p>An even stronger oxidizing agent. The manganese is in its +7 oxidation state. Its reaction product depends on the pH of the solution:</p>
+                <ul>
+                    <li><b>In acidic solution:</b> The purple permanganate ion (\(MnO_4^-\)) is reduced to the colorless manganese(II) ion (\(Mn^{2+}\)).</li>
+                    <li><b>In neutral/basic solution:</b> It is reduced to form a brown solid, manganese(IV) oxide (\(MnO_2\)).</li>
+                </ul>
+                <div class="card formula">
+                <p>\( MnO_4^- + 8H^+ + 5e^- \rightarrow Mn^{2+} + 4H_2O \)</p>
+                </div>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Transition Elements:</b> d-block elements with partially filled d-orbitals.</li>
+                        <li><b>Electronic Configuration:</b> General form is \( (n-1)d^{1-10} ns^{1-2} \). Cr and Cu are exceptions due to the stability of half-filled and fully-filled d-orbitals.</li>
+                        <li><b>Key Properties:</b> They exhibit variable oxidation states, form colored compounds (due to d-d transitions), have catalytic activity, and are often paramagnetic (due to unpaired electrons).</li>
+                        <li><b>Alloys:</b> Formed easily due to similar atomic sizes (e.g., steel, brass).</li>
+                        <li><b>Coordination Compounds:</b> Formed between a central metal ion and surrounding ligands. Their names follow specific IUPAC rules.</li>
+                        <li><b>Important Compounds:</b> \(K_2Cr_2O_7\) and \(KMnO_4\) are powerful oxidizing agents used widely in chemistry.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

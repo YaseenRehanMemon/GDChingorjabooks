@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 25: Man and His Environment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --accent-color: #4CAF50; /* Green */
+            --bg-light: #f4f7f9; --text-light: #333; --card-bg-light: #ffffff; --border-light: #e0e0e0; --header-bg-light: #ffffff; --sidebar-bg-light: #fdfdfd;
+            --bg-dark: #121212; --text-dark: #e0e0e0; --card-bg-dark: #1e1e1e; --border-dark: #333; --header-bg-dark: #1e1e1e; --sidebar-bg-dark: #232323;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { font-family: 'Poppins', sans-serif; line-height: 1.6; scroll-behavior: smooth; background-color: var(--bg-light); color: var(--text-light); transition: background-color 0.3s, color 0.3s; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: var(--border-light); color: var(--text-light); transition: background-color 0.3s; font-weight: 600; }
+        .theme-toggle-label .moon { display: none; } .theme-toggle-label .sun { display: inline; }
+        body.dark-mode { --bg-light: var(--bg-dark); --text-light: var(--text-dark); --card-bg-light: var(--card-bg-dark); --border-light: var(--border-dark); --header-bg-light: var(--header-bg-dark); --sidebar-bg-light: var(--sidebar-bg-dark); }
+        .dark-mode .theme-toggle-label .moon { display: inline; } .dark-mode .theme-toggle-label .sun { display: none; } .dark-mode .sidebar a { color: #c5d7e8; } .dark-mode .sidebar a:hover { color: #ffffff; }
+        .page-container { display: grid; grid-template-columns: 260px 1fr; grid-template-rows: auto 1fr; grid-template-areas: "header header" "sidebar content"; min-height: 100vh; }
+        header { grid-area: header; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: var(--header-bg-light); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        header h1 { color: var(--accent-color); font-size: 1.8rem; }
+        .sidebar { grid-area: sidebar; background-color: var(--sidebar-bg-light); padding: 2rem; border-right: 1px solid var(--border-light); position: fixed; top: 75px; left: 0; width: 260px; height: calc(100vh - 75px); overflow-y: auto; }
+        .sidebar h2 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        .sidebar ul { list-style: none; } .sidebar li { margin-bottom: 0.8rem; }
+        .sidebar a { text-decoration: none; color: #555; font-weight: 500; transition: color 0.2s; } .sidebar a:hover { color: var(--accent-color); }
+        .content { grid-area: content; padding: 2rem 3rem; }
+        section { margin-bottom: 3rem; padding-top: 80px; margin-top: -75px; }
+        h2 { font-size: 2rem; color: var(--accent-color); margin-bottom: 1.5rem; border-bottom: 2px solid var(--border-light); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; }
+        p, ul, ol { margin-bottom: 1rem; } ul, ol { padding-left: 20px; }
+        b { color: var(--accent-color); }
+        .card { background-color: var(--card-bg-light); border: 1px solid var(--border-light); border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        @media (max-width: 900px) { .page-container { grid-template-columns: 1fr; grid-template-areas: "header" "content"; } .sidebar { display: none; } header h1 { font-size: 1.4rem; } .content { padding: 1.5rem; } }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+            function applyTheme(isDarkMode) { body.classList.toggle('dark-mode', isDarkMode); }
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const initialThemeDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+            themeToggleCheckbox.checked = initialThemeDark;
+            applyTheme(initialThemeDark);
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+    </script>
+</head>
+<body style="--accent-color: #4CAF50;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 25: Man & His Environment</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#biogeochemical">Biogeochemical Cycles</a></li>
+                <li><a href="#energy-flow">Flow of Energy</a></li>
+                <li><a href="#succession">Ecological Succession</a></li>
+                <li><a href="#population">Population Dynamics</a></li>
+                <li><a href="#human-impact">Human Impacts</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="biogeochemical">
+                <h2>1. Biogeochemical Cycles</h2>
+                <p>Biogeochemical cycles describe the movement and exchange of essential elements (like carbon, nitrogen, and water) between living organisms (bio), the Earth's geology (geo), and the atmosphere (chemical). These cycles are crucial for sustaining life.</p>
+                <div class="card">
+                    <h4>Key Cycles</h4>
+                    <ul>
+                        <li><b>The Water Cycle:</b> The continuous movement of water on, above, and below the surface of the Earth, driven by solar energy. Key processes are <b>evaporation</b>, <b>condensation</b>, and <b>precipitation</b>.</li>
+                        <li><b>The Nitrogen Cycle:</b> The process of converting atmospheric nitrogen (\(N_2\)) into forms usable by living organisms. This relies on bacteria for <b>nitrogen fixation</b> (converting \(N_2\) to ammonia), <b>nitrification</b> (converting ammonia to nitrates), and <b>denitrification</b> (returning \(N_2\) to the atmosphere).</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="energy-flow">
+                <h2>2. The Flow of Energy in Ecosystems</h2>
+                <p>Energy flows through an ecosystem in one direction: from the sun to producers and then to consumers. It is not recycled.</p>
+                <h3>Trophic Levels and Ecological Pyramids</h3>
+                <p>The feeding relationships in an ecosystem are described by <b>trophic levels</b>.</p>
+                <ul>
+                    <li><b>Producers (T1):</b> Autotrophs (e.g., plants) that capture solar energy.</li>
+                    <li><b>Primary Consumers (T2):</b> Herbivores that eat producers.</li>
+                    <li><b>Secondary Consumers (T3):</b> Carnivores that eat herbivores.</li>
+                    <li><b>Decomposers:</b> Break down dead organic matter, returning nutrients to the soil.</li>
+                </ul>
+                <div class="card">
+                    <h4>The 10% Rule</h4>
+                    <p>Only about 10% of the energy from one trophic level is transferred to the next. The rest is lost, primarily as heat during metabolic processes. This energy loss limits the number of trophic levels in an ecosystem, which can be visualized with an <b>energy pyramid</b>.</p>
+                </div>
+            </section>
+            
+            <section id="succession">
+                <h2>3. Ecological Succession</h2>
+                <p>Ecological succession is the predictable and orderly series of changes that a community of organisms undergoes over time.</p>
+                 <div class="card">
+                    <h4>Types of Succession</h4>
+                    <ul>
+                        <li><b>Primary Succession:</b> Occurs in a virtually lifeless area where no soil exists, such as on a new volcanic island or bare rock. It begins with pioneer species like lichens that create soil.</li>
+                        <li><b>Secondary Succession:</b> Occurs in an area where an existing community has been cleared by a disturbance that leaves the soil intact, such as a forest fire or abandoned farmland. It happens much faster than primary succession.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="population">
+                <h2>4. Population Dynamics</h2>
+                <p>Population dynamics is the study of how and why populations change in size and structure over time.</p>
+                <h3>Characteristics of a Population</h3>
+                <ul>
+                    <li><b>Density:</b> The number of individuals per unit area.</li>
+                    <li><b>Distribution:</b> The pattern of spacing among individuals (clumped, uniform, or random).</li>
+                    <li><b>Growth Rate:</b> Determined by birth rates, death rates, immigration, and emigration.</li>
+                </ul>
+                <h3>Rapid Human Population Growth</h3>
+                <p>The rapid growth of the human population presents major challenges, including resource depletion, environmental degradation, and increased pollution, straining the Earth's <b>carrying capacity</b>.</p>
+            </section>
+            
+            <section id="human-impact">
+                <h2>5. Human Impacts on the Environment</h2>
+                <p>Human activities have profound and often detrimental impacts on ecosystems worldwide.</p>
+                <div class="card">
+                    <h4>Major Environmental Issues</h4>
+                    <ul>
+                        <li><b>Global Warming:</b> The increase in Earth's average temperature due to the enhanced greenhouse effect caused by burning fossil fuels.</li>
+                        <li><b>Acid Rain:</b> Precipitation with a low pH caused by atmospheric pollution from sulfur and nitrogen oxides.</li>
+                        <li><b>Ozone Depletion:</b> The thinning of the stratospheric ozone layer caused by CFCs, which increases surface UV radiation.</li>
+                        <li><b>Resource Depletion:</b> The overuse of both renewable and non-renewable resources, such as deforestation and the exhaustion of fossil fuels.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Biogeochemical Cycles:</b> Essential elements like water and nitrogen are constantly recycled between living organisms and the environment.</li>
+                        <li><b>Energy Flow:</b> Energy flows in one direction through an ecosystem's trophic levels, with about 90% lost at each transfer.</li>
+                        <li><b>Ecological Succession:</b> The predictable change in a community over time, either starting from bare rock (primary) or after a disturbance (secondary).</li>
+                        <li><b>Population Dynamics:</b> The study of changes in population size and structure, with rapid human population growth being a major environmental concern.</li>
+                        <li><b>Human Impacts:</b> Human activities are the primary drivers of major environmental problems, including global warming, acid rain, ozone depletion, and resource depletion.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

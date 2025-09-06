@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 9: Capacitors</title>
+    <title>Chapter 19: Electromagnetic Induction</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
         /* 1. CSS Variables for Theming */
         :root {
@@ -152,8 +153,6 @@
         .card.formula {
             background-color: var(--sidebar-bg);
             border-left: 5px solid var(--accent-color);
-            font-family: monospace;
-            font-size: 1.1rem;
         }
 
         .card ul, .card ol {
@@ -304,60 +303,13 @@
             }
         }
     </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
-            const body = document.body;
-
-            function applyTheme(isDarkMode) {
-                if (isDarkMode) {
-                    body.classList.add('dark-mode');
-                } else {
-                    body.classList.remove('dark-mode');
-                }
-            }
-
-            const savedTheme = localStorage.getItem('theme');
-            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-            if (savedTheme === 'dark') {
-                themeToggleCheckbox.checked = true;
-                applyTheme(true);
-            } else if (savedTheme === 'light') {
-                themeToggleCheckbox.checked = false;
-                applyTheme(false);
-            } else {
-                themeToggleCheckbox.checked = prefersDark;
-                applyTheme(prefersDark);
-            }
-
-            themeToggleCheckbox.addEventListener('change', () => {
-                const isDarkMode = themeToggleCheckbox.checked;
-                applyTheme(isDarkMode);
-                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-            });
-        });
-
-        // MathJax configuration for rendering LaTeX
-        window.MathJax = {
-            tex: {
-                inlineMath: [['\\(', '\\)']],
-                displayMath: [['\\[', '\\]']]
-            },
-            svg: {
-                fontCache: 'global'
-            }
-        };
-    </script>
-    <!-- MathJax CDN for rendering LaTeX -->
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
 <body>
     <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
     
     <div class="page-container">
         <header>
-            <h1>Chapter 9: Capacitors</h1>
+            <h1>Chapter 19: Electromagnetic Induction</h1>
             <label for="theme-toggle" class="theme-toggle-label">
                 <span class="sun">Light</span>
                 <span class="moon">Dark</span>
@@ -367,118 +319,106 @@
         <nav class="sidebar">
             <h2>Navigation</h2>
             <ul>
-                <li><a href="#intro">What is a Capacitor?</a></li>
-                <li><a href="#parallel-plate">The Parallel Plate Capacitor</a></li>
-                <li><a href="#combinations">Combinations of Capacitors</a></li>
-                <li><a href="#energy">Energy Storage</a></li>
-                <li><a href="#rc-circuits">RC Circuits</a></li>
+                <li><a href="#faraday-lenz">Faraday's & Lenz's Laws</a></li>
+                <li><a href="#motional-emf">Motional EMF</a></li>
+                <li><a href="#generators-motors">Generators & Motors</a></li>
+                <li><a href="#inductance">Inductance</a></li>
+                <li><a href="#transformers">Transformers</a></li>
                 <li><a href="#summary">Chapter Summary</a></li>
             </ul>
         </nav>
 
         <main class="content">
-            <section id="intro">
-                <h2>What is a Capacitor?</h2>
-                <p>A <b>capacitor</b> is a fundamental electronic component designed to store electric charge and energy. In its simplest form, it consists of two conductive plates separated by an insulating material called a <b>dielectric</b>.</p>
-                <div class="card">
-                    <h3>Capacitance (C)</h3>
-                    <p>Capacitance is the measure of a capacitor's ability to store charge. It is defined as the ratio of the charge stored on one plate to the potential difference (voltage) between the plates.</p>
-                </div>
+            <section id="faraday-lenz">
+                <h2>Faraday's Law of Induction</h2>
+                <p>The core principle of electromagnetic induction was discovered by Michael Faraday. It states that a changing magnetic field through a loop of wire induces an electromotive force (EMF), or voltage, in the wire.</p>
                 <div class="card formula">
-                    <h4>Formula: C = Q / V</h4>
-                    <p><b>C</b> = Capacitance (in Farads, F)<br>
-                       <b>Q</b> = Magnitude of charge on one plate (in Coulombs, C)<br>
-                       <b>V</b> = Voltage across the plates (in Volts, V)</p>
+                    <h4>Faraday's Law of Induction</h4>
+                    \[ \mathcal{E} = -N \frac{\Delta \Phi_B}{\Delta t} \]
+                    <p><b>\(\mathcal{E}\)</b> = Induced EMF (in Volts)<br>
+                       <b>\(N\)</b> = Number of turns in the coil<br>
+                       <b>\(\Delta \Phi_B\)</b> = Change in magnetic flux<br>
+                       <b>\(\Delta t\)</b> = Time interval</p>
                 </div>
-                <p>A capacitor has a capacitance of one Farad if one Coulomb of charge is stored when the potential difference is one Volt. The Farad is a very large unit; more common units are the microfarad (&mu;F) and picofarad (pF).</p>
-            </section>
-
-            <section id="parallel-plate">
-                <h2>The Parallel Plate Capacitor</h2>
-                <p>The most common type of capacitor is the parallel plate capacitor. Its capacitance depends on its geometric properties and the material between its plates.</p>
-                
-                <div class="card formula">
-                    <h4>Capacitance of a Parallel Plate Capacitor</h4>
-                    <b>C = &epsilon;<sub>r</sub> &epsilon;₀ A / d</b>
-                    <p><b>A</b> = Area of one of the plates<br>
-                       <b>d</b> = Distance between the plates<br>
-                       <b>&epsilon;₀</b> = Permittivity of free space (a constant)<br>
-                       <b>&epsilon;<sub>r</sub></b> = The dielectric constant of the insulator</p>
-                </div>
-
                 <div class="card">
-                    <h3>Dielectrics</h3>
-                    <p>A <b>dielectric</b> is an insulating material placed between the capacitor plates. It serves three purposes:</p>
-                    <ul>
-                        <li>It keeps the conductive plates from touching.</li>
-                        <li>It increases the maximum voltage the capacitor can withstand.</li>
-                        <li>It <b>increases the capacitance</b> by a factor known as the dielectric constant (&epsilon;<sub>r</sub>).</li>
-                    </ul>
+                    <h3>Lenz's Law: The Direction of the Current</h3>
+                    <p>The negative sign in Faraday's Law is crucial and is represented by Lenz's Law. It states that <b>the direction of the induced current is such that its own magnetic field opposes the change in magnetic flux that produced it</b>. This is a statement of the conservation of energy; the induced current creates a field that fights the change, meaning you have to do work to create it.</p>
                 </div>
             </section>
 
-            <section id="combinations">
-                <h2>Combinations of Capacitors</h2>
-                <p>Capacitors in a circuit can be combined in series or parallel to achieve a desired equivalent capacitance.</p>
-                
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Combination</th>
-                            <th>Description</th>
-                            <th>Equivalent Capacitance (C<sub>eq</sub>)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><b>Parallel</b></td>
-                            <td>Plates are connected side-by-side. The voltage across each capacitor is the same. The total charge is the sum of the individual charges.</td>
-                            <td><b>C<sub>eq</sub> = C₁ + C₂ + C₃ + ...</b></td>
-                        </tr>
-                        <tr>
-                            <td><b>Series</b></td>
-                            <td>Capacitors are connected end-to-end. The charge on each capacitor is the same. The total voltage is the sum of the individual voltages.</td>
-                            <td><b>1/C<sub>eq</sub> = 1/C₁ + 1/C₂ + 1/C₃ + ...</b></td>
-                        </tr>
-                    </tbody>
-                </table>
-                 <p><b>Note:</b> These rules are the opposite of the rules for combining resistors!</p>
+            <section id="motional-emf">
+                <h2>Motional EMF</h2>
+                <p>An EMF can be induced not just by a changing field, but also by moving a conductor through a constant magnetic field. This is called motional EMF.</p>
+                <div class="card">
+                    <h3>How it Works</h3>
+                    <p>When a conducting rod of length \(L\) moves with velocity \(v\) perpendicular to a magnetic field \(B\), the magnetic force on the charge carriers (\(F = qvB\)) pushes them to one end of the rod. This separation of charge creates an electric field and thus a potential difference, or EMF, across the ends of the rod.</p>
+                    <div class="card formula">
+                        <h4>Motional EMF Formula</h4>
+                        \[ \mathcal{E} = B L v \]
+                    </div>
+                </div>
             </section>
             
-            <section id="energy">
-                <h2>Energy Stored in a Capacitor</h2>
-                <p>Work is required to move charge onto the plates of a capacitor. This work is stored as electric potential energy in the electric field between the plates. This stored energy can be released quickly, which is why capacitors are used in applications like camera flashes.</p>
-                
-                <div class="card formula">
-                    <h4>Formulas for Stored Energy (U)</h4>
-                    <b>U = \frac{1}{2}QV = \frac{1}{2}CV^2 = \frac{Q^2}{2C}</b>
-                </div>
-            </section>
-
-            <section id="rc-circuits">
-                <h2>Charging and Discharging (RC Circuits)</h2>
-                <p>When a capacitor is connected to a power source through a resistor, it does not charge instantly. The process is gradual and follows an exponential curve.</p>
-
-                <div class="card">
-                    <h3>The Time Constant (&tau;)</h3>
-                    <p>The rate of charging or discharging is determined by the <b>time constant</b> of the circuit, which is the product of the resistance and the capacitance.</p>
-                    <div class="card formula">
-                        <b>&tau; = RC</b>
+            <section id="generators-motors">
+                <h2>Generators and Motors</h2>
+                <p>Electromagnetic induction is the fundamental principle behind electric generators and motors.</p>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>AC Generator</h3>
+                        <p>A generator converts <b>mechanical energy into electrical energy</b>. It works by rotating a coil of wire in a magnetic field. As the coil rotates, the magnetic flux through it changes continuously, inducing a sinusoidal alternating current (AC) according to Faraday's Law.</p>
                     </div>
-                    <p>The time constant represents the time it takes for the capacitor to charge to approximately <b>63.2%</b> of its maximum voltage, or to discharge to <b>36.8%</b> of its initial voltage.</p>
+                    <div class="card">
+                        <h3>Electric Motor and Back EMF</h3>
+                        <p>A motor converts <b>electrical energy into mechanical energy</b>. It is essentially a generator run in reverse. When a current is passed through a coil in a magnetic field, the coil experiences a torque and rotates. As the motor's coil rotates, it also acts like a generator, producing an induced EMF that opposes the original current. This is called <b>back EMF</b>, and it is crucial for regulating the motor's speed and current draw.</p>
+                    </div>
                 </div>
             </section>
 
+            <section id="inductance">
+                <h2>Inductance</h2>
+                <p>Inductance is the property of an electrical conductor by which a change in current through it induces an electromotive force in itself and in any nearby conductors.</p>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Self-Inductance (L)</h3>
+                        <p>When the current in a coil changes, the coil induces an EMF in itself. This is called self-inductance. A component designed to have a specific inductance is called an <b>inductor</b>.</p>
+                         <div class="card formula">\[ \mathcal{E} = -L \frac{\Delta I}{\Delta t} \]</div>
+                        <p>Energy stored in an inductor's magnetic field is \(U = \frac{1}{2}LI^2\).</p>
+                    </div>
+                    <div class="card">
+                        <h3>Mutual Inductance (M)</h3>
+                        <p>A changing current in one coil can induce an EMF in a second, nearby coil. This is called mutual inductance.</p>
+                        <div class="card formula">\[ \mathcal{E}_2 = -M \frac{\Delta I_1}{\Delta t} \]</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="transformers">
+                <h2>Transformers</h2>
+                <p>A transformer is a device that uses mutual inductance to change the voltage of an AC signal. It is essential for efficient long-distance power transmission.</p>
+                <div class="card">
+                    <h3>How it Works</h3>
+                    <p>It consists of two coils, a primary and a secondary, wound on a common iron core. An alternating current in the primary coil creates a changing magnetic flux in the core, which then induces an EMF in the secondary coil.</p>
+                    <div class="card formula">
+                        <h4>The Transformer Equation</h4>
+                        \[ \frac{V_S}{V_P} = \frac{N_S}{N_P} \]
+                        <p><b>Step-Up Transformer:</b> \(N_S > N_P\), so voltage increases (and current decreases).</p>
+                        <p><b>Step-Down Transformer:</b> \(N_S < N_P\), so voltage decreases (and current increases).</p>
+                    </div>
+                    <p>Power is transmitted at very high voltages to minimize energy loss (\(P_{loss} = I^2R\)) and then stepped down for safe use in homes.</p>
+                </div>
+            </section>
+            
             <section id="summary">
                 <h2>Chapter Summary</h2>
-                <p>Capacitors are essential components in electronics for storing charge and energy.</p>
+                <p>Electromagnetic induction is the link between magnetism and electricity, forming the basis for much of modern technology.</p>
                 <div class="card">
                     <ul>
-                        <li>A capacitor stores charge, and its ability to do so is measured by its <b>capacitance (C = \(\frac{Q}{V}\))</b>.</li>
-                        <li>The capacitance of a parallel plate capacitor depends on its plate area (A), the distance between them (d), and the <b>dielectric</b> material used (<b>C = \(\frac{\epsilon A}{d}\)</b>).</li>
-                        <li>Capacitors in <b>parallel add directly</b> (C<sub>eq</sub> = C₁ + C₂), while capacitors in <b>series add as reciprocals</b> (1/C<sub>eq</sub> = 1/C₁ + 1/C₂).</li>
-                        <li>The energy stored in a capacitor is given by <b>U = \frac{1}{2}CV^2</b>.</li>
-                        <li>The charging and discharging of a capacitor through a resistor is governed by the <b>time constant (&tau; = RC)</b>.</li>
+                        <li><b>Faraday's Law of Induction:</b> A changing magnetic flux induces an EMF (\(\mathcal{E} = -N \Delta\Phi_B / \Delta t\)).</li>
+                        <li><b>Lenz's Law:</b> The induced current creates a magnetic field that opposes the change that produced it, conserving energy.</li>
+                        <li><b>Motional EMF (\(\mathcal{E} = BLv\))</b> is induced when a conductor moves through a magnetic field.</li>
+                        <li><b>Generators</b> use motional EMF to convert mechanical energy to electrical energy. <b>Motors</b> do the reverse, and their rotation creates a <b>back EMF</b> that regulates their operation.</li>
+                        <li><b>Inductance</b> is the property of a circuit to oppose a change in current. <b>Self-inductance</b> occurs within a single coil, while <b>mutual inductance</b> occurs between two coils.</li>
+                        <li><b>Transformers</b> use mutual inductance to step AC voltages up or down, enabling efficient power transmission.</li>
                     </ul>
                 </div>
             </section>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 24: Evolution</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --accent-color: #009688; /* Teal */
+            --bg-light: #f4f7f9; --text-light: #333; --card-bg-light: #ffffff; --border-light: #e0e0e0; --header-bg-light: #ffffff; --sidebar-bg-light: #fdfdfd;
+            --bg-dark: #121212; --text-dark: #e0e0e0; --card-bg-dark: #1e1e1e; --border-dark: #333; --header-bg-dark: #1e1e1e; --sidebar-bg-dark: #232323;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { font-family: 'Poppins', sans-serif; line-height: 1.6; scroll-behavior: smooth; background-color: var(--bg-light); color: var(--text-light); transition: background-color 0.3s, color 0.3s; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: var(--border-light); color: var(--text-light); transition: background-color 0.3s; font-weight: 600; }
+        .theme-toggle-label .moon { display: none; } .theme-toggle-label .sun { display: inline; }
+        body.dark-mode { --bg-light: var(--bg-dark); --text-light: var(--text-dark); --card-bg-light: var(--card-bg-dark); --border-light: var(--border-dark); --header-bg-light: var(--header-bg-dark); --sidebar-bg-light: var(--sidebar-bg-dark); }
+        .dark-mode .theme-toggle-label .moon { display: inline; } .dark-mode .theme-toggle-label .sun { display: none; } .dark-mode .sidebar a { color: #c5d7e8; } .dark-mode .sidebar a:hover { color: #ffffff; }
+        .page-container { display: grid; grid-template-columns: 260px 1fr; grid-template-rows: auto 1fr; grid-template-areas: "header header" "sidebar content"; min-height: 100vh; }
+        header { grid-area: header; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: var(--header-bg-light); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        header h1 { color: var(--accent-color); font-size: 1.8rem; }
+        .sidebar { grid-area: sidebar; background-color: var(--sidebar-bg-light); padding: 2rem; border-right: 1px solid var(--border-light); position: fixed; top: 75px; left: 0; width: 260px; height: calc(100vh - 75px); overflow-y: auto; }
+        .sidebar h2 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        .sidebar ul { list-style: none; } .sidebar li { margin-bottom: 0.8rem; }
+        .sidebar a { text-decoration: none; color: #555; font-weight: 500; transition: color 0.2s; } .sidebar a:hover { color: var(--accent-color); }
+        .content { grid-area: content; padding: 2rem 3rem; }
+        section { margin-bottom: 3rem; padding-top: 80px; margin-top: -75px; }
+        h2 { font-size: 2rem; color: var(--accent-color); margin-bottom: 1.5rem; border-bottom: 2px solid var(--border-light); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; }
+        p, ul, ol { margin-bottom: 1rem; } ul, ol { padding-left: 20px; }
+        b { color: var(--accent-color); }
+        .card { background-color: var(--card-bg-light); border: 1px solid var(--border-light); border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        @media (max-width: 900px) { .page-container { grid-template-columns: 1fr; grid-template-areas: "header" "content"; } .sidebar { display: none; } header h1 { font-size: 1.4rem; } .content { padding: 1.5rem; } }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+            function applyTheme(isDarkMode) { body.classList.toggle('dark-mode', isDarkMode); }
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const initialThemeDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+            themeToggleCheckbox.checked = initialThemeDark;
+            applyTheme(initialThemeDark);
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+    </script>
+</head>
+<body style="--accent-color: #009688;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 24: Evolution</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#concepts">Concepts of Evolution</a></li>
+                <li><a href="#evidence">Evidence for Evolution</a></li>
+                <li><a href="#darwin">Darwinism & Natural Selection</a></li>
+                <li><a href="#neo-darwinism">Neo-Darwinism</a></li>
+                <li><a href="#speciation">Speciation</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="concepts">
+                <h2>1. Concepts of Evolution</h2>
+                <p>Biological <b>evolution</b> is the process of gradual change in the heritable characteristics of biological populations over successive generations. It is the central organizing principle of modern biology.</p>
+                <h3>Early Theories</h3>
+                <ul>
+                    <li><b>Lamarckism (Inheritance of Acquired Characteristics):</b> Proposed by Jean-Baptiste Lamarck. He suggested that traits acquired during an organism's lifetime could be passed on to its offspring (e.g., a giraffe stretching its neck to reach leaves would have offspring with longer necks). This idea has been largely discredited because acquired traits do not alter an organism's genes.</li>
+                </ul>
+            </section>
+
+            <section id="evidence">
+                <h2>2. Evidence for Evolution</h2>
+                <p>The theory of evolution is supported by a vast and diverse body of evidence from multiple scientific disciplines.</p>
+                <div class="card">
+                    <h4>Lines of Evidence</h4>
+                    <ul>
+                        <li><b>Paleontology (Fossil Record):</b> Fossils show a historical sequence of life forms, with simpler organisms in older rock layers and more complex ones in younger layers. Transitional fossils, like <i>Archaeopteryx</i>, show features of both ancestral and descendant groups (reptiles and birds).</li>
+                        <li><b>Comparative Anatomy:</b>
+                            <ul>
+                                <li><b>Homologous Structures:</b> Structures with a similar underlying anatomy due to common ancestry, but which may have different functions (e.g., the forelimbs of humans, cats, whales, and bats).</li>
+                                <li><b>Analogous Structures:</b> Structures that serve a similar function but have different evolutionary origins, resulting from convergent evolution (e.g., the wings of a bird and an insect).</li>
+                            </ul>
+                        </li>
+                        <li><b>Biogeography:</b> The geographic distribution of species. The presence of similar species in geographically separated areas (like marsupials in Australia and the Americas) is explained by continental drift from a common supercontinent, Pangaea.</li>
+                        <li><b>Molecular Biology:</b> The universality of the genetic code (DNA) and the similarity in DNA sequences and protein structures between different species provide powerful evidence for a common ancestor.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="darwin">
+                <h2>3. Darwinism and Natural Selection</h2>
+                <p>Charles Darwin, in his book <i>On the Origin of Species</i> (1859), proposed the theory of evolution by <b>natural selection</b>. Alfred Russel Wallace independently conceived of the theory.</p>
+                <div class="card">
+                    <h4>Darwin's Key Observations and Inferences</h4>
+                    <ol>
+                        <li><b>Overproduction:</b> Organisms produce more offspring than can survive.</li>
+                        <li><b>Variation:</b> Individuals within a population vary in their heritable traits.</li>
+                        <li><b>Struggle for Existence:</b> Offspring compete for limited resources.</li>
+                        <li><b>Inference - Survival of the Fittest:</b> Individuals with inherited traits that give them a higher probability of surviving and reproducing in a given environment tend to leave more offspring than other individuals.</li>
+                        <li><b>Inference - Descent with Modification:</b> This unequal ability of individuals to survive and reproduce will lead to the accumulation of favorable traits in the population over generations.</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="neo-darwinism">
+                <h2>4. Neo-Darwinism (The Modern Synthesis)</h2>
+                <p>Neo-Darwinism combines Darwin's theory of natural selection with Mendelian genetics. It provides a genetic basis for the variation and inheritance that Darwin observed.</p>
+                <div class="card">
+                    <h4>Key Concepts</h4>
+                    <ul>
+                        <li><b>Population Genetics:</b> The study of how allele frequencies in a population change over time. Evolution is defined as a change in allele frequencies.</li>
+                        <li><b>Hardy-Weinberg Theorem:</b> Describes a non-evolving population where allele and genotype frequencies remain constant from generation to generation, provided that only Mendelian segregation and recombination of alleles are at work.</li>
+                        <li><b>Mechanisms of Allele Frequency Change:</b> Natural selection, genetic drift, and gene flow are the primary mechanisms that cause evolution.</li>
+                    </ul>
+                </div>
+                <h3>Genetic Drift</h3>
+                <p><b>Genetic drift</b> refers to random fluctuations in allele frequencies from one generation to the next, especially in small populations. It can be caused by:</p>
+                <ul>
+                    <li><b>Bottleneck Effect:</b> A sudden reduction in population size due to a disaster, where the surviving population's gene pool may not reflect the original.</li>
+                    <li><b>Founder Effect:</b> When a few individuals become isolated from a larger population and establish a new population whose gene pool differs from the source population.</li>
+                </ul>
+            </section>
+            
+            <section id="speciation">
+                <h2>5. Speciation</h2>
+                <p><b>Speciation</b> is the evolutionary process by which new biological species arise.</p>
+                 <div class="card">
+                    <h4>Mechanisms of Speciation</h4>
+                    <ul>
+                        <li><b>Allopatric Speciation:</b> A population is geographically divided into two isolated subpopulations. Over time, genetic differences accumulate (due to mutation, natural selection, and genetic drift) until they become reproductively isolated.</li>
+                        <li><b>Sympatric Speciation:</b> Speciation occurs in populations that live in the same geographic area. It can result from factors like polyploidy (common in plants), habitat differentiation, or sexual selection.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Evolution:</b> The process of descent with modification, where populations of organisms change over generations.</li>
+                        <li><b>Evidence:</b> Comes from the fossil record, comparative anatomy (homologous and analogous structures), biogeography, and molecular biology.</li>
+                        <li><b>Natural Selection:</b> The primary mechanism of evolution, where individuals with more advantageous heritable traits are more likely to survive and reproduce.</li>
+                        <li><b>Neo-Darwinism:</b> The modern synthesis of Darwinian evolution and Mendelian genetics, focusing on changes in allele frequencies in populations.</li>
+                        <li><b>Speciation:</b> The formation of new species, most commonly occurring when a population becomes reproductively isolated from its parent population (allopatric speciation).</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
