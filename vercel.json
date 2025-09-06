@@ -10,6 +10,10 @@
       "use": "@vercel/static"
     },
     {
+      "src": "pages/**",
+      "use": "@vercel/static"
+    },
+    {
       "src": "physicsbooks/**",
       "use": "@vercel/static"
     },
