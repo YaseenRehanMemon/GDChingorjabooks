@@ -6,6 +6,10 @@
       "use": "@vercel/static"
     },
     {
+      "src": "assets/**",
+      "use": "@vercel/static"
+    },
+    {
       "src": "physicsbooks/**",
       "use": "@vercel/static"
     },
@@ -16,7 +20,22 @@
     {
       "src": "mathbooks/**",
       "use": "@vercel/static"
+    },
+    {
+      "src": "physicsxiibooks/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "biologyxiibooks/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "chemistryxiibooks/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "mathsxiibooks/**",
+      "use": "@vercel/static"
     }
   ]
 }
-
