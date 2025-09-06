@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 8: Acids, Bases, and Salts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f4f7f9; --text-color: #333; --header-bg: #ffffff; --sidebar-bg: #ffffff;
+            --card-bg: #ffffff; --accent-color: #e83e8c; /* Pink/Magenta accent */ --border-color: #e0e0e0;
+            --shadow-color: rgba(0, 0, 0, 0.05); --table-header-bg: #f1f1f1; --theme-toggle-bg: #e0e0e0;
+            --theme-toggle-slider: #fff; --theme-sun-color: #f39c12; --theme-moon-color: #7f8c8d;
+        }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--bg-color); color: var(--text-color); margin: 0; line-height: 1.6; transition: background-color 0.3s, color 0.3s; }
+        .page-container { display: grid; grid-template-columns: 240px 1fr; grid-template-rows: auto 1fr; grid-template-areas: "header header" "sidebar content"; min-height: 100vh; }
+        h1, h2, h3, h4 { color: var(--accent-color); font-weight: 600; }
+        h1 { font-size: 2rem; } h2 { font-size: 1.75rem; border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-top: 40px; } h3 { font-size: 1.4rem; } h4 { font-size: 1.1rem; }
+        p, li { font-size: 1rem; } a { color: var(--accent-color); text-decoration: none; transition: color 0.2s; } a:hover { text-decoration: underline; }
+        header { grid-area: header; background-color: var(--header-bg); padding: 1rem 2rem; border-bottom: 1px solid var(--border-color); box-shadow: 0 2px 5px var(--shadow-color); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .sidebar { grid-area: sidebar; background-color: var(--sidebar-bg); padding: 2rem; border-right: 1px solid var(--border-color); position: sticky; top: 75px; height: calc(100vh - 75px); overflow-y: auto; }
+        .sidebar h2 { margin-top: 0; border-bottom: none; font-size: 1.5rem; } .sidebar ul { list-style: none; padding: 0; }
+        .sidebar li a { display: block; padding: 0.5rem 0; color: var(--text-color); font-weight: 400; border-left: 3px solid transparent; padding-left: 10px; }
+        .sidebar li a:hover { color: var(--accent-color); background-color: var(--bg-color); border-left: 3px solid var(--accent-color); text-decoration: none; }
+        .content { grid-area: content; padding: 2rem 3rem; } section { margin-bottom: 40px; }
+        .card { background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; margin-top: 1rem; box-shadow: 0 4px 8px var(--shadow-color); transition: transform 0.2s, box-shadow 0.2s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 6px 12px var(--shadow-color); }
+        .card.formula { background-color: var(--sidebar-bg); border-left: 5px solid var(--accent-color); font-family: monospace; font-size: 1.1rem; }
+        .card ul, .card ol { padding-left: 20px; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label { background: var(--theme-toggle-bg); border-radius: 50px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; padding: 5px; position: relative; height: 26px; width: 50px; }
+        .theme-toggle-label .sun, .theme-toggle-label .moon { font-size: 14px; line-height: 1; }
+        .theme-toggle-label .sun { color: var(--theme-sun-color); } .theme-toggle-label .moon { color: var(--theme-moon-color); }
+        .theme-toggle-label::after { content: ''; position: absolute; top: 3px; left: 4px; width: 20px; height: 20px; border-radius: 50%; background-color: var(--theme-toggle-slider); transition: transform 0.3s ease; }
+        .theme-toggle-checkbox:checked ~ .page-container { --bg-color: #1a1a2e; --text-color: #e0e0e0; --header-bg: #162447; --sidebar-bg: #162447; --card-bg: #1f4068; --accent-color: #f06292; --border-color: #3a3a5a; --shadow-color: rgba(0, 0, 0, 0.2); --table-header-bg: #1f4068; --theme-toggle-bg: #1f4068; --theme-toggle-slider: #1a1a2e; --theme-sun-color: #bdc3c7; --theme-moon-color: #f1c40f; }
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label::after { transform: translateX(24px); }
+        @media (max-width: 768px) { .page-container { grid-template-columns: 1fr; grid-template-areas: "header" "sidebar" "content"; } .sidebar { position: static; height: auto; border-right: none; border-bottom: 1px solid var(--border-color); padding: 1rem; } .sidebar h2 { display: none; } .sidebar ul { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; } .sidebar li a { padding: 8px 12px; border-radius: 20px; border-left: none; background-color: var(--bg-color); } .sidebar li a:hover { background-color: var(--accent-color); color: var(--header-bg); } header { padding: 1rem; } h1 { font-size: 1.5rem; } .content { padding: 1.5rem; } }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 8: Acids, Bases, and Salts</h1>
+            <label for="theme-toggle" class="theme-toggle-label">
+                <span class="sun">Light</span><span class="moon">Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Acid-Base Theories</a></li>
+                <li><a href="#bronsted">Brønsted-Lowry Theory</a></li>
+                <li><a href="#lewis">Lewis Theory</a></li>
+                <li><a href="#ph">The pH Scale</a></li>
+                <li><a href="#buffers">Buffers</a></li>
+                <li><a href="#salts">Salts & Hydrolysis</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>Introduction to Acids and Bases</h2>
+                <p>Acids and bases are fundamental categories of chemical substances found everywhere, from our kitchens (vinegar is an acid, baking soda is a base) to complex industrial processes. They are defined by their distinct chemical properties and their ability to neutralize each other to form salts.</p>
+            </section>
+
+            <section id="bronsted">
+                <h2>The Brønsted-Lowry Theory</h2>
+                <p>The Brønsted-Lowry theory provides a broad and useful definition for acids and bases based on the transfer of protons (H⁺ ions).</p>
+                <div class="card">
+                    <h4>Key Definitions</h4>
+                    <ul>
+                        <li><b>Brønsted-Lowry Acid:</b> A substance that can <strong>donate</strong> a proton (H⁺).</li>
+                        <li><b>Brønsted-Lowry Base:</b> A substance that can <strong>accept</strong> a proton (H⁺).</li>
+                    </ul>
+                </div>
+                <h3>Conjugate Acid-Base Pairs</h3>
+                <p>In any acid-base reaction, there are two "conjugate pairs." When an acid donates its proton, what remains is called its <strong>conjugate base</strong>. When a base accepts a proton, what is formed is its <strong>conjugate acid</strong>.</p>
+                <div class="card formula">
+                    <p>HCl (acid) + H₂O (base) ⇌ Cl⁻ (conjugate base) + H₃O⁺ (conjugate acid)</p>
+                </div>
+            </section>
+
+            <section id="lewis">
+                <h2>The Lewis Theory</h2>
+                <p>The Lewis theory offers the most general definition of acids and bases, focusing on electron pairs instead of protons.</p>
+                <div class="card">
+                    <h4>Key Definitions</h4>
+                    <ul>
+                        <li><b>Lewis Acid:</b> A substance that can <strong>accept</strong> a pair of electrons.</li>
+                        <li><b>Lewis Base:</b> A substance that can <strong>donate</strong> a pair of electrons.</li>
+                    </ul>
+                    <p>This definition is very broad and includes many reactions that don't involve proton transfer.</p>
+                </div>
+            </section>
+            
+            <section id="ph">
+                <h2>The pH Scale</h2>
+                <p>The pH scale is a convenient way to express the acidity or basicity of an aqueous solution. It is a logarithmic scale ranging from 0 to 14.</p>
+                <div class="card">
+                    <h4>Understanding pH</h4>
+                    <ul>
+                        <li><b>pH < 7:</b> The solution is <strong>acidic</strong>.</li>
+                        <li><b>pH = 7:</b> The solution is <strong>neutral</strong>.</li>
+                        <li><b>pH > 7:</b> The solution is <strong>basic</strong> (or alkaline).</li>
+                    </ul>
+                     <p>Because the scale is logarithmic, a change of one pH unit represents a tenfold change in H⁺ ion concentration.</p>
+                </div>
+                <div class="card formula">
+                    <h4>Formulas for pH and pOH</h4>
+                    <p>pH = -log[H⁺] <br> pOH = -log[OH⁻]</p>
+                    <p>In any aqueous solution: <b>pH + pOH = 14</b></p>
+                </div>
+            </section>
+
+            <section id="buffers">
+                <h2>Buffer Solutions</h2>
+                <p>A buffer is a special solution that can resist significant changes in pH when an acid or a base is added. They act like "chemical sponges" for H⁺ and OH⁻ ions.</p>
+                <div class="card">
+                    <h4>How Buffers Work</h4>
+                    <p>A buffer is made by mixing a weak acid with its conjugate base (e.g., acetic acid and sodium acetate) or a weak base with its conjugate acid (e.g., ammonia and ammonium chloride).</p>
+                    <ul>
+                        <li>If you add acid (H⁺), the weak base component of the buffer neutralizes it.</li>
+                        <li>If you add base (OH⁻), the weak acid component neutralizes it.</li>
+                    </ul>
+                    <p>Buffers are crucial in biological systems; for example, our blood is buffered to maintain a constant pH of about 7.4.</p>
+                </div>
+            </section>
+
+            <section id="salts">
+                <h2>Salts and Hydrolysis</h2>
+                <p>A <strong>salt</strong> is an ionic compound formed from the neutralization reaction between an acid and a base. When dissolved in water, some salts can react with the water in a process called <strong>hydrolysis</strong>, causing the solution to become acidic or basic.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Salt Formed From...</th>
+                            <th>Hydrolysis Behavior</th>
+                            <th>Resulting pH</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Strong Acid + Strong Base</td>
+                            <td>No hydrolysis occurs.</td>
+                            <td>Neutral (pH = 7)</td>
+                        </tr>
+                        <tr>
+                            <td>Strong Acid + Weak Base</td>
+                            <td>The cation from the weak base hydrolyzes to produce H⁺.</td>
+                            <td>Acidic (pH < 7)</td>
+                        </tr>
+                        <tr>
+                            <td>Weak Acid + Strong Base</td>
+                            <td>The anion from the weak acid hydrolyzes to produce OH⁻.</td>
+                            <td>Basic (pH > 7)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Acid-Base Theories:</b> Acids and bases can be defined in several ways. The <b>Brønsted-Lowry</b> definition (proton donor/acceptor) and the <b>Lewis</b> definition (electron-pair acceptor/donor) are the most common.</li>
+                        <li><b>Conjugate Pairs:</b> When a Brønsted-Lowry acid loses a proton, it forms its conjugate base. When a base gains a proton, it forms its conjugate acid.</li>
+                        <li><b>pH Scale:</b> A logarithmic measure of acidity, where pH < 7 is acidic, pH > 7 is basic, and pH = 7 is neutral.</li>
+                        <li><b>Buffers:</b> Solutions of a weak acid/base and its conjugate that resist changes in pH.</li>
+                        <li><b>Salts:</b> Ionic compounds formed from acid-base neutralization. They can undergo <b>hydrolysis</b> in water to create acidic or basic solutions.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

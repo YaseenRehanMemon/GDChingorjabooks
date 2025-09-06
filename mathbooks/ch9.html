@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 9: Linear Inequalities</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to the shared stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+        // MathJax configuration (if you choose to include it for rendering LaTeX)
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body style="--accent-color: #4CAF50;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 9: Linear Inequalities</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Linear Inequalities in One Variable</a></li>
+                <li><a href="#two-variables">Linear Inequalities in Two Variables</a></li>
+                <li><a href="#lp">Linear Programming Problems</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>9.1 Linear Inequalities in One Variable</h2>
+                <p>A <strong>linear inequality</strong> in one variable is a mathematical statement that uses inequality symbols (\(<\), \(>\), \(\le\), \(\ge\)) to compare a linear expression with a constant. Examples include \(x < -5\) or \(2x+4 \ge 10\).</p>
+                
+                <h3>9.1.1 Algebraic Solutions and Number Line Representation</h3>
+                <p>To solve a linear inequality means to find all values of the variable that make the inequality true. The solution is often an interval or a set of numbers, which can be graphically represented on a number line.</p>
+                <div class="card">
+                    <h4>Graphical Representation on a Number Line</h4>
+                    <ul>
+                        <li>For \(< \text{ or } >\), use an open circle or parenthesis to indicate that the endpoint is not included.</li>
+                        <li>For \(\le \text{ or } \ge\), use a closed circle or bracket to indicate that the endpoint is included.</li>
+                    </ul>
+                    <p><b>Example:</b> The solution for \(x < 3\) is represented by an open circle at 3 and a line shaded to the left. In interval notation, this is \((-\infty, 3)\).</p>
+                </div>
+            </section>
+
+            <section id="two-variables">
+                <h2>9.2 Linear Inequalities in Two Variables</h2>
+                <p>A linear inequality in two variables, such as \(ax + by < c\), represents a region (a half-plane) on a two-dimensional coordinate plane. The solution set consists of all ordered pairs \((x, y)\) that satisfy the inequality.</p>
+                
+                <h3>9.2.1 Graphical Interpretation</h3>
+                <p>To graph a linear inequality in two variables:</p>
+                <ol>
+                    <li>Replace the inequality sign with an equality sign to get the equation of the boundary line (e.g., \(ax + by = c\)).</li>
+                    <li>Graph the boundary line. If the original inequality is \(<\) or \(>\), use a dashed line. If it's \(\le\) or \(\ge\), use a solid line.</li>
+                    <li>Choose a test point (e.g., \((0, 0)\) if it's not on the line) and substitute its coordinates into the original inequality.</li>
+                    <li>If the test point satisfies the inequality, shade the region containing the test point. Otherwise, shade the opposite region.</li>
+                </ol>
+            </section>
+
+            <section id="lp">
+                <h2>9.3 Linear Programming Problems</h2>
+                <p><strong>Linear programming (LP)</strong> is a mathematical technique used to find the best possible outcome (maximum or minimum value) of a linear objective function, subject to a set of linear inequalities called <strong>constraints</strong>.</p>
+                
+                <h3>9.3.1 Key Components of an LP Problem</h3>
+                <ul>
+                    <li><b>Objective Function:</b> The linear function to be maximized or minimized (e.g., \(Z = ax + by\)).</li>
+                    <li><b>Decision Variables:</b> The variables \((x, y)\) whose values need to be determined to optimize the objective function.</li>
+                    <li><b>Constraints:</b> The linear inequalities that limit the possible values of the decision variables. These often include non-negativity constraints like \(x \ge 0, y \ge 0\).</li>
+                    <li><b>Feasible Region:</b> The region on the graph that satisfies all the constraints simultaneously. The optimal solution always lies at one of the corner points (vertices) of this region.</li>
+                </ul>
+
+                <h3>9.3.2 Graphical Method for Solving LP Problems</h3>
+                <ol>
+                    <li>Formulate the LP problem by writing the objective function and all constraints.</li>
+                    <li>Graph all the constraint inequalities to identify the <b>feasible region</b>.</li>
+                    <li>Find the coordinates of all <b>corner points</b> (vertices) of the feasible region.</li>
+                    <li>Substitute the coordinates of each corner point into the objective function.</li>
+                    <li>The point that gives the maximum (or minimum) value for the objective function is the optimal solution.</li>
+                </ol>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Linear Inequalities:</b> Mathematical statements using \(<, >, \le, \ge\).</li>
+                        <li><b>One Variable:</b> Solutions are intervals on a number line.</li>
+                        <li><b>Two Variables:</b> Solutions are shaded regions (half-planes) on a coordinate plane.</li>
+                        <li><b>Linear Programming (LP):</b> A method to optimize (maximize/minimize) a linear <b>objective function</b> subject to a set of linear <b>constraints</b>.</li>
+                        <li>The <b>feasible region</b> is where all constraints are satisfied, and the optimal solution for an LP problem is found at one of its <b>corner points</b>.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

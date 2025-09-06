@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6: Solids</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* 1. CSS Variables for Theming */
+        :root {
+            /* Light Theme */
+            --bg-color: #f4f7f9;
+            --text-color: #333;
+            --header-bg: #ffffff;
+            --sidebar-bg: #ffffff;
+            --card-bg: #ffffff;
+            --accent-color: #6f42c1; /* Purple accent for solids */
+            --border-color: #e0e0e0;
+            --shadow-color: rgba(0, 0, 0, 0.05);
+            --table-header-bg: #f1f1f1;
+            --theme-toggle-bg: #e0e0e0;
+            --theme-toggle-slider: #fff;
+            --theme-sun-color: #f39c12;
+            --theme-moon-color: #7f8c8d;
+        }
+
+        /* 2. Base Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .page-container {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            grid-template-rows: auto 1fr;
+            grid-template-areas:
+                "header header"
+                "sidebar content";
+            min-height: 100vh;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.75rem; border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-top: 40px; }
+        h3 { font-size: 1.4rem; }
+        h4 { font-size: 1.1rem; }
+
+        p, li {
+            font-size: 1rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 3. Header */
+        header {
+            grid-area: header;
+            background-color: var(--header-bg);
+            padding: 1rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 2px 5px var(--shadow-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* 4. Sidebar Navigation */
+        .sidebar {
+            grid-area: sidebar;
+            background-color: var(--sidebar-bg);
+            padding: 2rem;
+            border-right: 1px solid var(--border-color);
+            position: sticky;
+            top: 75px; /* Height of header */
+            height: calc(100vh - 75px);
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            border-bottom: none;
+            font-size: 1.5rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li a {
+            display: block;
+            padding: 0.5rem 0;
+            color: var(--text-color);
+            font-weight: 400;
+            border-left: 3px solid transparent;
+            padding-left: 10px;
+        }
+
+        .sidebar li a:hover {
+            color: var(--accent-color);
+            background-color: var(--bg-color);
+            border-left: 3px solid var(--accent-color);
+            text-decoration: none;
+        }
+
+        /* 5. Main Content */
+        .content {
+            grid-area: content;
+            padding: 2rem 3rem;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* 6. Components (Cards, Tables) */
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            box-shadow: 0 4px 8px var(--shadow-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px var(--shadow-color);
+        }
+
+        .card.formula {
+            background-color: var(--sidebar-bg);
+            border-left: 5px solid var(--accent-color);
+            font-family: monospace;
+            font-size: 1.1rem;
+        }
+
+        .card ul, .card ol {
+            padding-left: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        thead {
+            background-color: var(--table-header-bg);
+            font-weight: 600;
+        }
+
+        tbody tr:hover {
+            background-color: var(--bg-color);
+        }
+
+        /* 7. Theme Toggle Switch */
+        .theme-toggle-checkbox {
+            display: none; /* Hide the actual checkbox */
+        }
+
+        .theme-toggle-label {
+            background: var(--theme-toggle-bg);
+            border-radius: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            position: relative;
+            height: 26px;
+            width: 50px;
+        }
+
+        .theme-toggle-label .sun, .theme-toggle-label .moon {
+            font-size: 14px;
+            line-height: 1;
+        }
+        .theme-toggle-label .sun { color: var(--theme-sun-color); }
+        .theme-toggle-label .moon { color: var(--theme-moon-color); }
+
+        .theme-toggle-label::after {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 4px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: var(--theme-toggle-slider);
+            transition: transform 0.3s ease;
+        }
+        
+        .theme-toggle-checkbox:checked ~ .page-container {
+            --bg-color: #1a1a2e;
+            --text-color: #e0e0e0;
+            --header-bg: #162447;
+            --sidebar-bg: #162447;
+            --card-bg: #1f4068;
+            --accent-color: #9b59b6;
+            --border-color: #3a3a5a;
+            --shadow-color: rgba(0, 0, 0, 0.2);
+            --table-header-bg: #1f4068;
+            --theme-toggle-bg: #1f4068;
+            --theme-toggle-slider: #1a1a2e;
+            --theme-sun-color: #bdc3c7;
+            --theme-moon-color: #f1c40f;
+        }
+
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label::after {
+            transform: translateX(24px);
+        }
+
+        /* 8. Responsive Design */
+        @media (max-width: 768px) {
+            .page-container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "content";
+            }
+            .sidebar {
+                position: static; height: auto; border-right: none;
+                border-bottom: 1px solid var(--border-color); padding: 1rem;
+            }
+            .sidebar h2 { display: none; }
+            .sidebar ul {
+                display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
+            }
+            .sidebar li a {
+                padding: 8px 12px; border-radius: 20px; border-left: none; background-color: var(--bg-color);
+            }
+            .sidebar li a:hover {
+                background-color: var(--accent-color); color: var(--header-bg);
+            }
+            header { padding: 1rem; }
+            h1 { font-size: 1.5rem; }
+            .content { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
+    
+    <div class="page-container">
+        <header>
+            <h1>Chapter 6: Solids</h1>
+            <label for="theme-toggle" class="theme-toggle-label">
+                <span class="sun">Light</span>
+                <span class="moon">Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Properties of Solids</a></li>
+                <li><a href="#types-solids">Types of Solids</a></li>
+                <li><a href="#crystalline">Crystalline Solids</a></li>
+                <li><a href="#crystal-structure">Crystal Structure</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>Properties of the Solid State</h2>
+                <p>Solids represent the state of matter where particles are held in fixed positions, vibrating but not moving freely. This rigid arrangement gives solids a definite shape and volume. The strong intermolecular forces lock the particles into a highly ordered structure.</p>
+            </section>
+
+            <section id="types-solids">
+                <h2>Types of Solids: Crystalline vs. Amorphous</h2>
+                <p>Solids can be broadly classified into two main categories based on the arrangement of their particles.</p>
+                <div class="card">
+                    <h4>Comparison of Solid Types</h4>
+                     <table>
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Crystalline Solids</th>
+                                <th>Amorphous Solids</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Particle Arrangement</b></td>
+                                <td>Highly ordered, repeating 3D pattern (crystal lattice).</td>
+                                <td>Disordered, random arrangement of particles.</td>
+                            </tr>
+                            <tr>
+                                <td><b>Melting Point</b></td>
+                                <td>Sharp, distinct melting point.</td>
+                                <td>Soften gradually over a range of temperatures.</td>
+                            </tr>
+                            <tr>
+                                <td><b>Cleavage</b></td>
+                                <td>Break along flat, smooth planes.</td>
+                                <td>Shatter into irregular fragments.</td>
+                            </tr>
+                            <tr>
+                                <td><b>Examples</b></td>
+                                <td>Salt (NaCl), diamond, sugar, metals.</td>
+                                <td>Glass, rubber, plastic.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <section id="crystalline">
+                <h2>The Four Types of Crystalline Solids</h2>
+                <p>Crystalline solids can be further classified based on the type of particles they contain and the forces holding them together. These differences result in widely varying properties.</p>
+                
+                <div class="card">
+                    <h3>1. Ionic Solids</h3>
+                    <p>Composed of positive and negative ions held together by strong electrostatic attractions (ionic bonds). They are hard, brittle, have very high melting points, and conduct electricity only when molten or dissolved.</p>
+                    <p><b>Example:</b> Sodium Chloride (NaCl).</p>
+                </div>
+
+                <div class="card">
+                    <h3>2. Covalent Network Solids</h3>
+                    <p>Atoms are connected by a continuous network of strong covalent bonds. These are among the hardest substances known, with extremely high melting points. They are generally poor conductors of electricity.</p>
+                    <p><b>Example:</b> Diamond (Carbon), Quartz (SiO₂).</p>
+                </div>
+                
+                <div class="card">
+                    <h3>3. Metallic Solids</h3>
+                    <p>Consist of metal cations surrounded by a "sea" of delocalized, mobile electrons. This electron sea is responsible for their excellent conductivity of heat and electricity, as well as their malleability and ductility.</p>
+                    <p><b>Example:</b> Copper (Cu), Iron (Fe), Gold (Au).</p>
+                </div>
+                
+                <div class="card">
+                    <h3>4. Molecular Solids</h3>
+                    <p>Made of individual molecules held together by weak intermolecular forces (London dispersion, dipole-dipole, or hydrogen bonds). They are soft, have low melting points, and are poor conductors.</p>
+                    <p><b>Example:</b> Ice (H₂O), Dry Ice (CO₂), Iodine (I₂).</p>
+                </div>
+            </section>
+            
+            <section id="crystal-structure">
+                <h2>Crystal Structure</h2>
+                <p>The ordered arrangement of particles in a crystalline solid is called a <strong>crystal lattice</strong>. The smallest repeating unit of this lattice is known as the <strong>unit cell</strong>.</p>
+                
+                <div class="card">
+                    <h3>Unit Cells and Close Packing</h3>
+                    <p>The unit cell defines the overall geometry of the crystal. Atoms in metallic solids often pack together as tightly as possible to maximize attractive forces, a concept known as close packing. This efficient packing explains why metals are typically dense.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Lattice Energy</h3>
+                    <p>For an ionic solid, <strong>lattice energy</strong> is the energy released when gaseous ions come together to form one mole of a solid crystal. It is a measure of the strength of the ionic bonds. A higher lattice energy corresponds to a more stable solid with a higher melting point.</p>
+                </div>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <p>This chapter explored the rigid, ordered world of solids. We differentiated between the ordered structure of crystalline solids and the randomness of amorphous solids, and then delved into the four main types of crystalline solids.</p>
+                <div class="card">
+                    <ul>
+                        <li><b>Crystalline vs. Amorphous:</b> Crystalline solids have an ordered internal structure (lattice) and sharp melting points, while amorphous solids are disordered and soften gradually.</li>
+                        <li><b>Ionic Solids:</b> Ions held by electrostatic forces. Hard, high melting point (e.g., NaCl).</li>
+                        <li><b>Covalent Network Solids:</b> Atoms linked by a network of covalent bonds. Extremely hard, very high melting point (e.g., Diamond).</li>
+                        <li><b>Metallic Solids:</b> Metal cations in a "sea" of mobile electrons. Conductive and malleable (e.g., Copper).</li>
+                        <li><b>Molecular Solids:</b> Molecules held by weak IMFs. Soft, low melting point (e.g., Ice).</li>
+                        <li><b>Crystal Structure:</b> The repeating pattern in a crystalline solid is the <b>crystal lattice</b>, and its smallest unit is the <b>unit cell</b>. <b>Lattice energy</b> measures the strength of bonding in ionic solids.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

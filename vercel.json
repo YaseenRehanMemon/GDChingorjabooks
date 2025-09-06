@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "physicsbooks/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "chemistrybooks/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "mathbooks/**",
+      "use": "@vercel/static"
+    }
+  ]
+}
+

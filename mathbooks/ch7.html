@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 7: Mathematical Induction & Binomial Theorem</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to the shared stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+        // MathJax configuration (if you choose to include it for rendering LaTeX)
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body style="--accent-color: #8e44ad;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 7: Mathematical Induction & Binomial Theorem</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Mathematical Induction</a></li>
+                <li><a href="#binomial-theorem">Binomial Theorem</a></li>
+                <li><a href="#binomial-series">Binomial Series</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>7.1 Mathematical Induction</h2>
+                <p>Mathematical induction is a powerful method used in mathematics to prove that a statement, formula, or inequality is true for all positive integers (natural numbers). It's a form of deductive reasoning that establishes conclusions with certainty.</p>
+
+                <h3>7.1.1 Principle of Mathematical Induction</h3>
+                <div class="card">
+                    <h4>To prove a proposition \(P(n)\) is true for all positive integers \(n\), follow these steps:</h4>
+                    <ul>
+                        <li><b>Base Case:</b> Show that \(P(n)\) is true for \(n=1\).</li>
+                        <li><b>Inductive Step:</b> Assume that \(P(n)\) is true for some positive integer \(n=k\) (the inductive hypothesis). Then, prove that \(P(n)\) is also true for \(n=k+1\).</li>
+                    </ul>
+                    <p>If both steps are successfully demonstrated, then \(P(n)\) is true for all positive integers \(n\).</p>
+                </div>
+                 <div class="card">
+                    <h4>Modified Principle for \(P(n)\) not true for first few values</h4>
+                    <p>If \(P(n)\) is true for all successive values after a certain stage, say \(n=i\), then the principle is modified:</p>
+                    <ul>
+                        <li><b>Base Case:</b> Show that \(P(n)\) is true for \(n=i\), where \(i\) is a positive integer.</li>
+                        <li><b>Inductive Step:</b> Assume \(P(n)\) is true for some positive integer \(n=k\) (\(k \ge i\)). Then, prove \(P(n)\) is true for \(n=k+1\).</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="binomial-theorem">
+                <h2>7.2 Binomial Theorem (for Positive Integral Index)</h2>
+                <p>A <strong>binomial expression</strong> consists of two terms connected by a plus or minus sign, like \((x+y)\) or \((2x-3y)\). The <strong>Binomial Theorem</strong> provides a formula to expand binomial expressions raised to a positive integral power \((n)\).</p>
+
+                <h3>7.2.1 Pascal's Triangle: Coefficients of Binomial Expansion</h3>
+                <p>The coefficients of binomial expansions can be found using <strong>Pascal's Triangle</strong>. Each number in the triangle is the sum of the two numbers directly above it. The edges of the triangle are always 1s.</p>
+                <div class="card">
+                    <p>For \((x+y)^0\): 1</p>
+                    <p>For \((x+y)^1\): 1 &nbsp; 1</p>
+                    <p>For \((x+y)^2\): 1 &nbsp; 2 &nbsp; 1</p>
+                    <p>For \((x+y)^3\): 1 &nbsp; 3 &nbsp; 3 &nbsp; 1</p>
+                    <p>For \((x+y)^4\): 1 &nbsp; 4 &nbsp; 6 &nbsp; 4 &nbsp; 1</p>
+                    <p>and so on...</p>
+                </div>
+
+                <h3>7.2.2 Statement and Proof of Binomial Theorem</h3>
+                <div class="card formula">
+                    <h4>Statement: If \(n\) is a positive integer, then</h4>
+                    \[ (a+b)^n = \binom{n}{0}a^n + \binom{n}{1}a^{n-1}b + \binom{n}{2}a^{n-2}b^2 + \dots + \binom{n}{r}a^{n-r}b^r + \dots + \binom{n}{n}b^n \]
+                    <p>where \(\binom{n}{r}\) are binomial coefficients, calculated as:</p>
+                    \[ \binom{n}{r} = \frac{n!}{r!(n-r)!} \]
+                </div>
+                <div class="card">
+                    <h4>Characteristics of Binomial Expansion</h4>
+                    <ul>
+                        <li>The number of terms in the expansion is \(n+1\).</li>
+                        <li>The sum of the powers of \(a\) and \(b\) in each term is always \(n\).</li>
+                        <li>The coefficients are symmetrical: \(\binom{n}{r} = \binom{n}{n-r}\).</li>
+                        <li>The general term (or \((r+1)\)th term) is \(T_{r+1} = \binom{n}{r}a^{n-r}b^r\).</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="binomial-series">
+                <h2>7.3 Binomial Series (for Rational Index)</h2>
+                <p>When the exponent \(n\) is a negative integer or a fraction (rational number), the binomial expansion becomes an infinite series, known as the <strong>Binomial Series</strong>.</p>
+                
+                <h3>7.3.1 Expansion of \((1+x)^n\) for Rational Values of \(n\)</h3>
+                <div class="card formula">
+                    <h4>If \(n\) is a rational number, then</h4>
+                    \[ (1+x)^n = 1 + nx + \frac{n(n-1)}{2!}x^2 + \frac{n(n-1)(n-2)}{3!}x^3 + \dots \]
+                    <h4>Validity / Convergence</h4>
+                    <p>This infinite series is valid (converges) only when \(|x| < 1\).</p>
+                </div>
+                <div class="card">
+                    <h4>Applications of Binomial Series</h4>
+                    <p>The binomial series can be used to approximate values of expressions involving roots or small powers, particularly when \(x\) is very small, allowing us to neglect terms with \(x^2\) and higher powers for a first approximation.</p>
+                </div>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Mathematical Induction:</b> A proof technique used to verify statements for all natural numbers, involving a base case and an inductive step.</li>
+                        <li><b>Binomial Theorem:</b> Provides a formula to expand \((a+b)^n\) for positive integer \(n\), generating \(n+1\) terms with coefficients from Pascal's Triangle or \(\binom{n}{r}\).</li>
+                        <li><b>Binomial Series:</b> An infinite expansion for \((1+x)^n\) when \(n\) is a rational number. It converges for \(|x| < 1\).</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6: Fluid Statics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* 1. CSS Variables for Theming */
+        :root {
+            /* Light Theme */
+            --bg-color: #f4f7f9;
+            --text-color: #333;
+            --header-bg: #ffffff;
+            --sidebar-bg: #ffffff;
+            --card-bg: #ffffff;
+            --accent-color: #007bff;
+            --border-color: #e0e0e0;
+            --shadow-color: rgba(0, 0, 0, 0.05);
+            --table-header-bg: #f1f1f1;
+            --theme-toggle-bg: #e0e0e0;
+            --theme-toggle-slider: #fff;
+            --theme-sun-color: #f39c12;
+            --theme-moon-color: #7f8c8d;
+        }
+
+        /* 2. Base Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .page-container {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            grid-template-rows: auto 1fr;
+            grid-template-areas:
+                "header header"
+                "sidebar content";
+            min-height: 100vh;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.75rem; border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-top: 40px; }
+        h3 { font-size: 1.4rem; }
+        h4 { font-size: 1.1rem; }
+
+        p, li {
+            font-size: 1rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 3. Header */
+        header {
+            grid-area: header;
+            background-color: var(--header-bg);
+            padding: 1rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 2px 5px var(--shadow-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* 4. Sidebar Navigation */
+        .sidebar {
+            grid-area: sidebar;
+            background-color: var(--sidebar-bg);
+            padding: 2rem;
+            border-right: 1px solid var(--border-color);
+            position: sticky;
+            top: 75px; /* Height of header */
+            height: calc(100vh - 75px);
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            border-bottom: none;
+            font-size: 1.5rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li a {
+            display: block;
+            padding: 0.5rem 0;
+            color: var(--text-color);
+            font-weight: 400;
+            border-left: 3px solid transparent;
+            padding-left: 10px;
+        }
+
+        .sidebar li a:hover {
+            color: var(--accent-color);
+            background-color: var(--bg-color);
+            border-left: 3px solid var(--accent-color);
+            text-decoration: none;
+        }
+
+        /* 5. Main Content */
+        .content {
+            grid-area: content;
+            padding: 2rem 3rem;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* 6. Components (Cards, Tables) */
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            box-shadow: 0 4px 8px var(--shadow-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px var(--shadow-color);
+        }
+
+        .card.formula {
+            background-color: var(--sidebar-bg);
+            border-left: 5px solid var(--accent-color);
+            font-family: monospace;
+            font-size: 1.1rem;
+        }
+
+        .card ul, .card ol {
+            padding-left: 20px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        thead {
+            background-color: var(--table-header-bg);
+            font-weight: 600;
+        }
+
+        tbody tr:hover {
+            background-color: var(--bg-color);
+        }
+
+        /* 7. Theme Toggle Switch */
+        .theme-toggle-checkbox {
+            display: none; /* Hide the actual checkbox */
+        }
+
+        .theme-toggle-label {
+            background: var(--theme-toggle-bg);
+            border-radius: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            position: relative;
+            height: 26px;
+            width: 50px;
+        }
+
+        .theme-toggle-label .sun, .theme-toggle-label .moon {
+            font-size: 14px;
+            line-height: 1;
+        }
+        .theme-toggle-label .sun { color: var(--theme-sun-color); }
+        .theme-toggle-label .moon { color: var(--theme-moon-color); }
+
+        .theme-toggle-label::after {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 4px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: var(--theme-toggle-slider);
+            transition: transform 0.3s ease;
+        }
+
+        .theme-toggle-checkbox:checked + .page-container {
+            /* This empty selector is for specificity to trigger theme change */
+        }
+
+        /* Logic to apply dark mode to the body */
+        .theme-toggle-checkbox:checked ~ .page-container {
+            --bg-color: #1a1a2e;
+            --text-color: #e0e0e0;
+            --header-bg: #162447;
+            --sidebar-bg: #162447;
+            --card-bg: #1f4068;
+            --accent-color: #17e9e0;
+            --border-color: #3a3a5a;
+            --shadow-color: rgba(0, 0, 0, 0.2);
+            --table-header-bg: #1f4068;
+            --theme-toggle-bg: #1f4068;
+            --theme-toggle-slider: #1a1a2e;
+            --theme-sun-color: #bdc3c7;
+            --theme-moon-color: #f1c40f;
+        }
+
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label::after {
+            transform: translateX(24px);
+        }
+
+
+        /* 8. Responsive Design */
+        @media (max-width: 768px) {
+            .page-container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "content";
+            }
+
+            .sidebar {
+                position: static;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+                padding: 1rem;
+            }
+
+            .sidebar h2 {
+                display: none;
+            }
+
+            .sidebar ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+            }
+            
+            .sidebar li a {
+                padding: 8px 12px;
+                border-radius: 20px;
+                border-left: none;
+                background-color: var(--bg-color);
+            }
+
+            .sidebar li a:hover {
+                background-color: var(--accent-color);
+                color: var(--header-bg);
+            }
+
+            header {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .content {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+
+        // MathJax configuration for rendering LaTeX
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
+    
+    <div class="page-container">
+        <header>
+            <h1>Chapter 6: Fluid Statics</h1>
+            <label for="theme-toggle" class="theme-toggle-label">
+                <span class="sun">Light</span>
+                <span class="moon">Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Introduction to Fluids</a></li>
+                <li><a href="#pressure">Pressure & Pascal's Law</a></li>
+                <li><a href="#archimedes">Archimedes' Principle</a></li>
+                <li><a href="#buoyancy">Buoyancy & Flotation</a></li>
+                <li><a href="#surface-tension">Surface Tension</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>Introduction to Fluid Statics</h2>
+                <p><b>Fluids</b> are substances that can flow, including liquids and gases. <b>Fluid statics</b> is the study of fluids at rest. This field is essential for understanding everything from how ships float to how hydraulic brakes work.</p>
+                
+                <h3>Key Properties of Fluids at Rest</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Density (&rho;)</b></td>
+                            <td>Mass per unit volume (kg/m³). It measures how tightly packed the matter in a substance is.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Pressure (P)</b></td>
+                            <td>Force per unit area (N/m² or Pascals, Pa). In a static fluid, pressure increases with depth.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="pressure">
+                <h2>Pressure & Pascal's Law</h2>
+                <p>Pressure is a fundamental concept in fluids. The pressure at a certain depth in a fluid is determined by the weight of the fluid above it.</p>
+                
+                <div class="card formula">
+                    <h4>Pressure at Depth</h4>
+                    <b>P = P<sub>atm</sub> + &rho;gh</b>
+                    <p><b>P</b> = Absolute pressure at depth h<br>
+                       <b>P<sub>atm</sub></b> = Atmospheric pressure at the surface<br>
+                       <b>&rho;</b> = Density of the fluid<br>
+                       <b>g</b> = Acceleration due to gravity<br>
+                       <b>h</b> = Depth</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Pascal's Law</h3>
+                    <p>Pascal's Law states that a change in pressure applied to an enclosed, incompressible fluid is transmitted undiminished to every portion of the fluid and to the walls of the containing vessel.</p>
+                    <h4>Application: Hydraulic Systems</h4>
+                    <p>This principle is the basis for hydraulic lifts and brakes. A small force applied to a small area (piston) creates a pressure that is transmitted through the fluid, generating a much larger force on a larger area (piston).</p>
+                    <div class="card formula">
+                       <b>F<sub>1</sub> / A<sub>1</sub> = F<sub>2</sub> / A<sub>2</sub></b>
+                    </div>
+                </div>
+            </section>
+
+            <section id="archimedes">
+                <h2>Archimedes' Principle & Upthrust</h2>
+                <p>Archimedes, a Greek physicist, discovered a fundamental principle of fluids while taking a bath. This principle explains why objects feel lighter in water.</p>
+
+                <div class="card">
+                    <h3>Archimedes' Principle</h3>
+                    <p>Any object wholly or partially immersed in a fluid is buoyed up by a force equal to the weight of the fluid displaced by the object.</p>
+                    <ul>
+                        <li>This upward force is called the <b>buoyant force</b> or <b>upthrust</b>.</li>
+                        <li>The buoyant force arises because the pressure at the bottom of a submerged object is greater than the pressure at the top.</li>
+                    </ul>
+                    <div class="card formula">
+                       <h4>Buoyant Force (F<sub>B</sub>)</h4>
+                       <b>F<sub>B</sub> = &rho;<sub>fluid</sub> V<sub>displaced</sub> g</b>
+                       <p>Where V<sub>displaced</sub> is the volume of the fluid displaced by the object.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="buoyancy">
+                <h2>Buoyancy & The Law of Flotation</h2>
+                <p>The relationship between an object's weight and the buoyant force determines whether it will sink, float, or remain suspended.</p>
+
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Conditions for Sinking/Floating</h3>
+                        <ul>
+                           <li>If <b>Weight > Buoyant Force</b>, the object sinks. (Object is denser than the fluid).</li>
+                           <li>If <b>Weight < Buoyant Force</b>, the object rises to the surface and floats.</li>
+                           <li>If <b>Weight = Buoyant Force</b>, the object remains suspended at any depth. (Object has the same density as the fluid).</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>The Law of Flotation</h3>
+                        <p>A floating object displaces a weight of fluid equal to its own weight.</p>
+                        <p>This is why a massive steel ship can float. Its shape displaces a huge volume of water, and the buoyant force generated is equal to the ship's total weight.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="surface-tension">
+                <h2>Surface Tension</h2>
+                <p>Surface tension is the tendency of liquid surfaces to shrink into the minimum surface area possible. It is what allows insects to walk on water and causes droplets to form a spherical shape.</p>
+                
+                <div class="card">
+                    <h3>Cause of Surface Tension</h3>
+                    <p>Surface tension is caused by <b>cohesive forces</b>—the attraction between like molecules. Molecules inside the liquid are pulled equally in all directions by their neighbors. However, molecules at the surface are pulled inwards by the molecules below them, creating a "film" or "skin" on the surface.</p>
+                </div>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <p>Fluid statics explores the principles governing fluids at rest, with wide-ranging applications in science and engineering.</p>
+                <div class="card">
+                    <ul>
+                        <li><b>Pressure</b> in a fluid increases with depth (<b>P = &rho;gh</b>) and is exerted equally in all directions.</li>
+                        <li><b>Pascal's Law</b> explains that pressure applied to an enclosed fluid is transmitted everywhere, forming the basis for hydraulic systems.</li>
+                        <li><b>Archimedes' Principle</b> states that the upward <b>buoyant force (upthrust)</b> on a submerged object is equal to the weight of the fluid it displaces.</li>
+                        <li>The <b>Law of Flotation</b> is a special case of Archimedes' Principle: a floating object displaces a weight of fluid equal to its own weight.</li>
+                        <li><b>Surface Tension</b> is a property of liquid surfaces caused by molecular cohesion, allowing them to resist external forces and minimize surface area.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

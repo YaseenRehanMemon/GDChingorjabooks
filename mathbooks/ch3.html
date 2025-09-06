@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3: Vectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to the shared stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+        // MathJax configuration (for rendering LaTeX)
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body style="--accent-color: #FFC107;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 3: Vectors</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Scalars & Vectors</a></li>
+                <li><a href="#vector-representation">Vector Representation</a></li>
+                <li><a href="#vector-operations">Vector Operations</a></li>
+                <li><a href="#dot-product">Dot Product</a></li>
+                <li><a href="#cross-product">Cross Product</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>3.1 Scalars and Vectors</h2>
+                <p>Physical quantities can be classified based on whether they have direction. This chapter introduces <strong>vectors</strong>, quantities that require both magnitude and direction for their complete specification.</p>
+                <div class="card">
+                    <h4>3.1.1 Scalar Quantity</h4>
+                    <p>A <strong>scalar quantity</strong> is completely specified by its magnitude and an appropriate unit. It has no direction.</p>
+                    <p><b>Examples:</b> Mass, volume, area, distance, speed, energy, time.</p>
+                </div>
+                <div class="card">
+                    <h4>3.1.2 Vector Quantity</h4>
+                    <p>A <strong>vector quantity</strong> is specified by both its magnitude and its direction, along with an appropriate unit.</p>
+                    <p><b>Examples:</b> Weight, force, displacement, velocity, acceleration, momentum.</p>
+                </div>
+            </section>
+
+            <section id="vector-representation">
+                <h2>3.2 Geometrical and Analytical Representation of a Vector</h2>
+                <h3>3.2.1 Geometrical Representation</h3>
+                <p>Geometrically, a vector is represented by a directed line segment (an arrow). The length of the arrow represents the magnitude, and the arrowhead indicates the direction.</p>
+                <ul>
+                    <li>The starting point is the <b>initial point</b> (tail).</li>
+                    <li>The ending point is the <b>terminal point</b> (tip).</li>
+                </ul>
+                <h3>3.2.2 Unit Vectors (\(\hat{i}, \hat{j}, \hat{k}\))</h3>
+                <p>A <strong>unit vector</strong> is a vector with a magnitude of 1. The fundamental unit vectors in 3D Cartesian space are \(\hat{i}\), \(\hat{j}\), and \(\hat{k}\), representing the positive x, y, and z directions, respectively.</p>
+                <h3>3.2.3 Analytic Representation</h3>
+                <p>Any vector \(\vec{A}\) in 3D space can be expressed in terms of its components along the coordinate axes using unit vectors:</p>
+                \[ \vec{A} = A_x\hat{i} + A_y\hat{j} + A_z\hat{k} \]
+                <p>The numbers \(A_x, A_y, A_z\) are the scalar components of \(\vec{A}\).</p>
+                <h4>Magnitude of a Vector</h4>
+                <p>The magnitude of a vector \(\vec{A} = A_x\hat{i} + A_y\hat{j} + A_z\hat{k}\) is given by:</p>
+                \[ |\vec{A}| = \sqrt{A_x^2 + A_y^2 + A_z^2} \]
+                <h4>Direction Cosines</h4>
+                <p>The <strong>direction cosines</strong> of a vector are the cosines of the angles it makes with the positive x, y, and z axes. They are denoted by \(l, m, n\).</p>
+                \[ l = \cos \alpha = \frac{A_x}{|\vec{A}|}, \quad m = \cos \beta = \frac{A_y}{|\vec{A}|}, \quad n = \cos \gamma = \frac{A_z}{|\vec{A}|} \]
+                <p>A key property is \(l^2 + m^2 + n^2 = 1\).</p>
+            </section>
+
+            <section id="vector-operations">
+                <h2>3.3 Vector Operations</h2>
+                <h3>3.3.1 Addition and Subtraction of Vectors</h3>
+                <p>Vectors can be added or subtracted component-wise.</p>
+                <div class="card formula">
+                    \[ \vec{A} + \vec{B} = (A_x+B_x)\hat{i} + (A_y+B_y)\hat{j} + (A_z+B_z)\hat{k} \]
+                    \[ \vec{A} - \vec{B} = (A_x-B_x)\hat{i} + (A_y-B_y)\hat{j} + (A_z-B_z)\hat{k} \]
+                </div>
+                <h4>Laws of Vector Addition</h4>
+                <ul>
+                    <li><b>Triangle Law:</b> If two vectors are represented by two sides of a triangle taken in order, their resultant is the third side taken in opposite order.</li>
+                    <li><b>Parallelogram Law:</b> If two vectors from a common initial point represent adjacent sides of a parallelogram, their resultant is the diagonal from that common point.</li>
+                    <li><b>Polygon Law:</b> For multiple vectors, if represented by consecutive sides of a polygon, their resultant is the closing side in opposite order.</li>
+                    <li><b>Commutative Law:</b> \(\vec{A} + \vec{B} = \vec{B} + \vec{A}\).</li>
+                    <li><b>Associative Law:</b> \((\vec{A} + \vec{B}) + \vec{C} = \vec{A} + (\vec{B} + \vec{C})\).</li>
+                </ul>
+                <h3>3.3.2 Scalar Multiplication of Vectors</h3>
+                <p>Multiplying a vector \(\vec{A}\) by a scalar \(k\) results in a new vector \(k\vec{A}\) whose magnitude is \(|k|\) times the magnitude of \(\vec{A}\). Its direction is the same as \(\vec{A}\) if \(k>0\), and opposite if \(k<0\).</p>
+                \[ k\vec{A} = (kA_x)\hat{i} + (kA_y)\hat{j} + (kA_z)\hat{k} \]
+                <h4>Properties of Scalar Multiplication</h4>
+                <ul>
+                    <li>Commutative: \(k\vec{A} = \vec{A}k\).</li>
+                    <li>Associative: \(m(n\vec{A}) = (mn)\vec{A}\).</li>
+                    <li>Distributive: \(k(\vec{A} + \vec{B}) = k\vec{A} + k\vec{B}\) and \((m+n)\vec{A} = m\vec{A} + n\vec{A}\).</li>
+                </ul>
+            </section>
+
+            <section id="dot-product">
+                <h2>3.4 Dot (Scalar) Product of Vectors</h2>
+                <p>The <strong>dot product</strong> (or scalar product) of two vectors \(\vec{A}\) and \(\vec{B}\) is a scalar quantity defined as:</p>
+                <div class="card formula">
+                    \[ \vec{A} \cdot \vec{B} = |\vec{A}||\vec{B}| \cos \theta \]
+                    <p>Where \(\theta\) is the angle between the vectors. The dot product can also be calculated from components:</p>
+                    \[ \vec{A} \cdot \vec{B} = A_x B_x + A_y B_y + A_z B_z \]
+                </div>
+                <h3>Properties of the Dot Product</h3>
+                <ul>
+                    <li><b>Commutative:</b> \(\vec{A} \cdot \vec{B} = \vec{B} \cdot \vec{A}\).</li>
+                    <li><b>Distributive:</b> \(\vec{A} \cdot (\vec{B} + \vec{C}) = \vec{A} \cdot \vec{B} + \vec{A} \cdot \vec{C}\).</li>
+                    <li><b>Orthogonality Condition:</b> If \(\vec{A} \cdot \vec{B} = 0\) (and \(\vec{A}, \vec{B} \neq 0\)), then \(\vec{A}\) and \(\vec{B}\) are perpendicular (orthogonal).</li>
+                    <li><b>Work Done:</b> The work done by a constant force \(\vec{F}\) causing displacement \(\vec{d}\) is given by \(W = \vec{F} \cdot \vec{d}\).</li>
+                </ul>
+            </section>
+
+            <section id="cross-product">
+                <h2>3.5 Cross (Vector) Product of Vectors</h2>
+                <p>The <strong>cross product</strong> (or vector product) of two vectors \(\vec{A}\) and \(\vec{B}\) is a vector quantity that is perpendicular to both \(\vec{A}\) and \(\vec{B}\). Its magnitude and direction are defined as:</p>
+                <div class="card formula">
+                    \[ \vec{A} \times \vec{B} = (|\vec{A}||\vec{B}| \sin \theta) \hat{n} \]
+                    <p>Where \(\theta\) is the angle between the vectors, and \(\hat{n}\) is a unit vector perpendicular to the plane of \(\vec{A}\) and \(\vec{B}\), determined by the right-hand rule.</p>
+                    <p>The cross product can also be calculated from components using a determinant:</p>
+                    \[ \vec{A} \times \vec{B} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ A_x & A_y & A_z \\ B_x & B_y & B_z \end{vmatrix} \]
+                </div>
+                <h3>Properties of the Cross Product</h3>
+                <ul>
+                    <li><b>Anti-Commutative:</b> \(\vec{A} \times \vec{B} = -(\vec{B} \times \vec{A})\).</li>
+                    <li><b>Distributive:</b> \(\vec{A} \times (\vec{B} + \vec{C}) = (\vec{A} \times \vec{B}) + (\vec{A} \times \vec{C})\).</li>
+                    <li><b>Parallelism Condition:</b> If \(\vec{A} \times \vec{B} = \vec{0}\) (and \(\vec{A}, \vec{B} \neq \vec{0}\)), then \(\vec{A}\) and \(\vec{B}\) are parallel.</li>
+                    <li><b>Area of Parallelogram:</b> The magnitude \(|\vec{A} \times \vec{B}|\) represents the area of the parallelogram formed by vectors \(\vec{A}\) and \(\vec{B}\).</li>
+                    <li><b>Area of Triangle:</b> The area of a triangle formed by vectors \(\vec{A}\) and \(\vec{B}\) is \(\frac{1}{2}|\vec{A} \times \vec{B}|\).</li>
+                </ul>
+                <h3>3.5.1 Scalar Triple Product</h3>
+                <p>The <strong>scalar triple product</strong> of three vectors \(\vec{A}, \vec{B}, \vec{C}\) is a scalar quantity defined as \(\vec{A} \cdot (\vec{B} \times \vec{C})\). It represents the volume of the parallelepiped formed by the three vectors.</p>
+                \[ \vec{A} \cdot (\vec{B} \times \vec{C}) = \begin{vmatrix} A_x & A_y & A_z \\ B_x & B_y & B_z \\ C_x & C_y & C_z \end{vmatrix} \]
+                <p>If the scalar triple product is zero, the three vectors are <strong>coplanar</strong> (lie on the same plane).</p>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Scalars:</b> Magnitude only (e.g., mass, speed). <b>Vectors:</b> Magnitude and direction (e.g., force, velocity).</li>
+                        <li><b>Representation:</b> Geometrically by arrows; analytically by components using unit vectors \(\hat{i}, \hat{j}, \hat{k}\).</li>
+                        <li><b>Vector Operations:</b> Addition/subtraction (component-wise, obeys Triangle/Parallelogram Laws), scalar multiplication.</li>
+                        <li><b>Dot Product (\(\vec{A} \cdot \vec{B}\)):</b> A scalar, \(|\vec{A}||\vec{B}| \cos \theta\), used to find angles and check orthogonality (\(\vec{A} \cdot \vec{B} = 0\)).</li>
+                        <li><b>Cross Product (\(\vec{A} \times \vec{B}\)):</b> A vector, \(|\vec{A}||\vec{B}| \sin \theta \, \hat{n}\), used to find perpendicular vectors, areas of parallelograms/triangles, and check parallelism (\(\vec{A} \times \vec{B} = \vec{0}\)).</li>
+                        <li><b>Scalar Triple Product:</b> \(\vec{A} \cdot (\vec{B} \times \vec{C})\), gives the volume of a parallelepiped and checks coplanarity (\(= 0\)).</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4: Sequences & Series</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to the shared stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+        // MathJax configuration (for rendering LaTeX)
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body style="--accent-color: #E91E63;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 4: Sequences & Series</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro-seq">Introduction to Sequences</a></li>
+                <li><a href="#arithmetic-seq">Arithmetic Sequences & Series</a></li>
+                <li><a href="#geometric-seq">Geometric Sequences & Series</a></li>
+                <li><a href="#harmonic-seq">Harmonic Sequences & Means</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro-seq">
+                <h2>4.1 Introduction to Sequences</h2>
+                <p>A <strong>sequence</strong> (or progression) is an ordered set of numbers formed according to a definite rule. Each number in the sequence is called a <strong>term</strong> or <strong>element</strong>.</p>
+                <div class="card">
+                    <h4>4.1.1 General Term (\(a_n\))</h4>
+                    <p>A sequence is often defined by its general term \(a_n\), which is a formula that expresses any term in relation to its position \(n\) in the sequence.</p>
+                    <p><b>Example:</b> For \(a_n = 5n+1\), the terms are \(6, 11, 16, 21, \dots\).</p>
+                </div>
+                <h3>4.1.2 Special Sequences</h3>
+                <ul>
+                    <li><b>Triangular Sequence:</b> Numbers of dots that form equilateral triangles (\(1, 3, 6, 10, \dots\)). The \(n\)-th term is \(T_n = \frac{n(n+1)}{2}\).</li>
+                    <li><b>Factorial Sequence:</b> Involves factorials (\(n!\)), where \(n! = n \times (n-1) \times \dots \times 1\). For example, \(\frac{1}{n!}\).</li>
+                    <li><b>Pascal Sequence:</b> The coefficients in Pascal's Triangle, related to binomial expansions.</li>
+                </ul>
+            </section>
+
+            <section id="arithmetic-seq">
+                <h2>4.2 Arithmetic Sequences & Series</h2>
+                <h3>4.2.1 Arithmetic Sequence (A.P.)</h3>
+                <p>An <strong>arithmetic sequence</strong> (or arithmetic progression) is a sequence where each term after the first is obtained by adding a fixed number, called the <strong>common difference (\(d\))</strong>, to the preceding term.</p>
+                <div class="card formula">
+                    <h4>General Term (\(a_n\)) of an A.P.</h4>
+                    \[ a_n = a_1 + (n-1)d \]
+                    <p>Where \(a_1\) is the first term and \(d\) is the common difference.</p>
+                </div>
+                <h3>4.2.2 Arithmetic Series</h3>
+                <p>An <strong>arithmetic series</strong> is the sum of the terms of an arithmetic sequence.</p>
+                <div class="card formula">
+                    <h4>Sum of \(n\) terms (\(S_n\)) of an A.P.</h4>
+                    \[ S_n = \frac{n}{2}(2a_1 + (n-1)d) \]
+                    <p>or, if \(a_l\) is the last term:</p>
+                    \[ S_n = \frac{n}{2}(a_1 + a_l) \]
+                </div>
+                <h3>4.2.3 Arithmetic Mean (A.M.)</h3>
+                <p>The <strong>arithmetic mean</strong> between two numbers \(a\) and \(b\) is \(\frac{a+b}{2}\). We can insert \(n\) arithmetic means between \(a\) and \(b\) to form an A.P.</p>
+            </section>
+
+            <section id="geometric-seq">
+                <h2>4.3 Geometric Sequences & Series</h2>
+                <h3>4.3.1 Geometric Sequence (G.P.)</h3>
+                <p>A <strong>geometric sequence</strong> (or geometric progression) is a sequence where each term after the first is obtained by multiplying the preceding term by a fixed non-zero number, called the <strong>common ratio (\(r\))</strong>.</p>
+                <div class="card formula">
+                    <h4>General Term (\(a_n\)) of a G.P.</h4>
+                    \[ a_n = a_1 r^{n-1} \]
+                    <p>Where \(a_1\) is the first term and \(r\) is the common ratio.</p>
+                </div>
+                <h3>4.3.2 Geometric Series</h3>
+                <p>A <strong>geometric series</strong> is the sum of the terms of a geometric sequence.</p>
+                <div class="card formula">
+                    <h4>Sum of \(n\) terms (\(S_n\)) of a G.P.</h4>
+                    \[ S_n = \frac{a_1(1-r^n)}{1-r} \quad \text{if } r \neq 1 \]
+                    <p>If \(r=1\), \(S_n = na_1\).</p>
+                </div>
+                <h3>4.3.3 Infinite Geometric Series</h3>
+                <p>An infinite geometric series converges (has a finite sum) if \(|r| < 1\).</p>
+                <div class="card formula">
+                    <h4>Sum to Infinity (\(S_\infty\)) of a G.P.</h4>
+                    \[ S_\infty = \frac{a_1}{1-r} \quad \text{if } |r| < 1 \]
+                </div>
+                <h3>4.3.4 Geometric Mean (G.M.)</h3>
+                <p>The <strong>geometric mean</strong> between two positive numbers \(a\) and \(b\) is \(\pm\sqrt{ab}\).</p>
+            </section>
+
+            <section id="harmonic-seq">
+                <h2>4.4 Harmonic Sequences & Means</h2>
+                <h3>4.4.1 Harmonic Sequence (H.P.)</h3>
+                <p>A <strong>harmonic sequence</strong> (or harmonic progression) is a sequence where the reciprocals of its terms form an arithmetic sequence.</p>
+                <div class="card">
+                    <h4>General Term (\(T_n\)) of an H.P.</h4>
+                    <p>If \(\frac{1}{a_1}, \frac{1}{a_2}, \frac{1}{a_3}, \dots\) is an A.P. with first term \(A\) and common difference \(D\), then the terms of the H.P. are \(T_n = \frac{1}{A + (n-1)D}\).</p>
+                </div>
+                <h3>4.4.2 Harmonic Mean (H.M.)</h3>
+                <p>The <strong>harmonic mean</strong> between two numbers \(a\) and \(b\) is \(\frac{2ab}{a+b}\).</p>
+                <h3>4.4.3 Relation between A.M., G.M., and H.M.</h3>
+                <p>For any two positive numbers \(a\) and \(b\), the arithmetic mean (A.M.), geometric mean (G.M.), and harmonic mean (H.M.) are related:</p>
+                <ul>
+                    <li>\(A \ge G \ge H\).</li>
+                    <li>\(G^2 = AH\).</li>
+                </ul>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Sequence:</b> Ordered list of numbers following a rule.</li>
+                        <li><b>Arithmetic Progression (A.P.):</b> Constant common difference \((d)\). \(a_n = a_1 + (n-1)d\), \(S_n = \frac{n}{2}(a_1 + a_l)\).</li>
+                        <li><b>Geometric Progression (G.P.):</b> Constant common ratio \((r)\). \(a_n = a_1 r^{n-1}\), \(S_n = \frac{a_1(1-r^n)}{1-r}\). Infinite G.P. sums to \(\frac{a_1}{1-r}\) if \(|r|<1\).</li>
+                        <li><b>Harmonic Progression (H.P.):</b> Reciprocals form an A.P.</li>
+                        <li><b>Means:</b> Arithmetic Mean \((A = \frac{a+b}{2})\), Geometric Mean \((G = \sqrt{ab})\), Harmonic Mean \((H = \frac{2ab}{a+b})\).</li>
+                        <li>Relationship: \(A \ge G \ge H\) and \(G^2 = AH\).</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

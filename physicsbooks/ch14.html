@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 14: Communication Systems</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* 1. CSS Variables for Theming */
+        :root {
+            /* Light Theme */
+            --bg-color: #f4f7f9;
+            --text-color: #333;
+            --header-bg: #ffffff;
+            --sidebar-bg: #ffffff;
+            --card-bg: #ffffff;
+            --accent-color: #007bff;
+            --border-color: #e0e0e0;
+            --shadow-color: rgba(0, 0, 0, 0.05);
+            --table-header-bg: #f1f1f1;
+            --theme-toggle-bg: #e0e0e0;
+            --theme-toggle-slider: #fff;
+            --theme-sun-color: #f39c12;
+            --theme-moon-color: #7f8c8d;
+        }
+
+        /* 2. Base Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .page-container {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            grid-template-rows: auto 1fr;
+            grid-template-areas:
+                "header header"
+                "sidebar content";
+            min-height: 100vh;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.75rem; border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-top: 40px; }
+        h3 { font-size: 1.4rem; }
+        h4 { font-size: 1.1rem; }
+
+        p, li {
+            font-size: 1rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 3. Header */
+        header {
+            grid-area: header;
+            background-color: var(--header-bg);
+            padding: 1rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 2px 5px var(--shadow-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* 4. Sidebar Navigation */
+        .sidebar {
+            grid-area: sidebar;
+            background-color: var(--sidebar-bg);
+            padding: 2rem;
+            border-right: 1px solid var(--border-color);
+            position: sticky;
+            top: 75px; /* Height of header */
+            height: calc(100vh - 75px);
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            border-bottom: none;
+            font-size: 1.5rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li a {
+            display: block;
+            padding: 0.5rem 0;
+            color: var(--text-color);
+            font-weight: 400;
+            border-left: 3px solid transparent;
+            padding-left: 10px;
+        }
+
+        .sidebar li a:hover {
+            color: var(--accent-color);
+            background-color: var(--bg-color);
+            border-left: 3px solid var(--accent-color);
+            text-decoration: none;
+        }
+
+        /* 5. Main Content */
+        .content {
+            grid-area: content;
+            padding: 2rem 3rem;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* 6. Components (Cards, Tables) */
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            box-shadow: 0 4px 8px var(--shadow-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px var(--shadow-color);
+        }
+
+        .card.formula {
+            background-color: var(--sidebar-bg);
+            border-left: 5px solid var(--accent-color);
+            font-family: monospace;
+            font-size: 1.1rem;
+        }
+
+        .card ul, .card ol {
+            padding-left: 20px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        thead {
+            background-color: var(--table-header-bg);
+            font-weight: 600;
+        }
+
+        tbody tr:hover {
+            background-color: var(--bg-color);
+        }
+
+        /* 7. Theme Toggle Switch */
+        .theme-toggle-checkbox {
+            display: none; /* Hide the actual checkbox */
+        }
+
+        .theme-toggle-label {
+            background: var(--theme-toggle-bg);
+            border-radius: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            position: relative;
+            height: 26px;
+            width: 50px;
+        }
+
+        .theme-toggle-label .sun, .theme-toggle-label .moon {
+            font-size: 14px;
+            line-height: 1;
+        }
+        .theme-toggle-label .sun { color: var(--theme-sun-color); }
+        .theme-toggle-label .moon { color: var(--theme-moon-color); }
+
+        .theme-toggle-label::after {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 4px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: var(--theme-toggle-slider);
+            transition: transform 0.3s ease;
+        }
+
+        .theme-toggle-checkbox:checked + .page-container {
+            /* This empty selector is for specificity to trigger theme change */
+        }
+
+        /* Logic to apply dark mode to the body */
+        .theme-toggle-checkbox:checked ~ .page-container {
+            --bg-color: #1a1a2e;
+            --text-color: #e0e0e0;
+            --header-bg: #162447;
+            --sidebar-bg: #162447;
+            --card-bg: #1f4068;
+            --accent-color: #17e9e0;
+            --border-color: #3a3a5a;
+            --shadow-color: rgba(0, 0, 0, 0.2);
+            --table-header-bg: #1f4068;
+            --theme-toggle-bg: #1f4068;
+            --theme-toggle-slider: #1a1a2e;
+            --theme-sun-color: #bdc3c7;
+            --theme-moon-color: #f1c40f;
+        }
+
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label::after {
+            transform: translateX(24px);
+        }
+
+
+        /* 8. Responsive Design */
+        @media (max-width: 768px) {
+            .page-container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "content";
+            }
+
+            .sidebar {
+                position: static;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+                padding: 1rem;
+            }
+
+            .sidebar h2 {
+                display: none;
+            }
+
+            .sidebar ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+            }
+            
+            .sidebar li a {
+                padding: 8px 12px;
+                border-radius: 20px;
+                border-left: none;
+                background-color: var(--bg-color);
+            }
+
+            .sidebar li a:hover {
+                background-color: var(--accent-color);
+                color: var(--header-bg);
+            }
+
+            header {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .content {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+
+        // MathJax configuration for rendering LaTeX
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\(', '\)']],
+                displayMath: [['\[', '\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
+    
+    <div class="page-container">
+        <header>
+            <h1>Chapter 14: Communication Systems</h1>
+            <label for="theme-toggle" class="theme-toggle-label">
+                <span class="sun">Light</span>
+                <span class="moon">Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#channels">Communication Channels</a></li>
+                <li><a href="#modulation">Modulation</a></li>
+                <li><a href="#digital-vs-analog">Digital vs. Analog</a></li>
+                <li><a href="#adc">Digital Transmission</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="channels">
+                <h2>Communication Channels</h2>
+                <p>A communication channel is the medium used to transmit a signal from a sender (transmitter) to a receiver. Modern communication relies on a variety of advanced channels.</p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Channel Type</th>
+                            <th>Description</th>
+                            <th>Relative Merits</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Wire-Pairs</b></td>
+                            <td>Two insulated copper wires twisted together (e.g., telephone lines, Ethernet cables).</td>
+                            <td>Inexpensive, easy to install, but susceptible to interference and limited bandwidth.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Coaxial Cables</b></td>
+                            <td>A central copper core surrounded by an insulator and a braided metal shield (e.g., cable TV).</td>
+                            <td>Higher bandwidth and less interference than wire-pairs.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Optical Fibers</b></td>
+                            <td>Thin strands of glass or plastic that transmit information as pulses of light.</td>
+                            <td>Extremely high bandwidth, immune to electromagnetic interference, very secure, low signal loss.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Radio & Microwave Links</b></td>
+                            <td>Uses electromagnetic waves to transmit signals through the air. Requires line-of-sight for microwaves.</td>
+                            <td>Wireless, covers large areas, but can be affected by weather and obstacles.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Satellites</b></td>
+                            <td>Acts as a relay station in space, receiving signals from Earth and retransmitting them to other locations.</td>
+                            <td>Provides global coverage, ideal for broadcasting and reaching remote areas.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="modulation">
+                <h2>Modulation: Encoding Information</h2>
+                <p><b>Modulation</b> is the process of superimposing a low-frequency information signal (like voice or data) onto a high-frequency carrier wave. This is necessary for efficient transmission, especially over radio waves.</p>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Amplitude Modulation (AM)</h3>
+                        <p>The <b>amplitude</b> of the carrier wave is varied in proportion to the information signal, while the frequency remains constant.</p>
+                        <p><b>Advantages:</b> Simple, requires less bandwidth. <br><b>Disadvantages:</b> Highly susceptible to noise and interference.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Frequency Modulation (FM)</h3>
+                        <p>The <b>frequency</b> of the carrier wave is varied in proportion to the information signal, while the amplitude remains constant.</p>
+                        <p><b>Advantages:</b> High-quality transmission, resistant to noise. <br><b>Disadvantages:</b> Requires a wider bandwidth.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Bandwidth</h3>
+                    <p><b>Bandwidth</b> refers to the range of frequencies required to transmit a signal without significant distortion. FM requires a larger bandwidth than AM.</p>
+                </div>
+            </section>
+
+            <section id="digital-vs-analog">
+                <h2>Digital vs. Analog Transmission</h2>
+                <p>Information can be transmitted in two forms: analog or digital.</p>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Analog Transmission</h3>
+                        <p>The signal is a continuous wave that is analogous to the original information (e.g., a vinyl record). It is prone to degradation by noise.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Digital Transmission</h3>
+                        <p>The information is converted into a series of discrete binary values (1s and 0s). This form is much more robust and is the basis of modern communication.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Advantages of Digital Transmission</h3>
+                    <ul>
+                        <li><b>Noise Immunity:</b> Digital signals are much less affected by noise. Repeaters can regenerate the signal perfectly.</li>
+                        <li><b>Data Compression:</b> Digital data can be easily compressed to save bandwidth.</li>
+                        <li><b>Security:</b> Digital signals can be encrypted for secure communication.</li>
+                        <li><b>Multiplexing:</b> It is easier to combine multiple digital signals into one channel.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="adc">
+                <h2>Digital Transmission of Analog Signals</h2>
+                <p>Since most real-world information (like sound) is analog, it must be converted to a digital format before transmission. This is done by an <b>Analog-to-Digital Converter (ADC)</b>.</p>
+                <div class="card">
+                    <h3>The ADC Process</h3>
+                    <ol>
+                        <li><b>Sampling:</b> The amplitude of the continuous analog signal is measured at regular, discrete time intervals. The sampling rate must be at least twice the highest frequency in the signal (Nyquist theorem).</li>
+                        <li><b>Quantizing:</b> Each sample's amplitude is rounded to the nearest value on a finite scale of discrete levels.</li>
+                        <li><b>Encoding:</b> Each quantized level is assigned a unique binary code (a string of 1s and 0s).</li>
+                    </ol>
+                    <p>After transmission, a <b>Digital-to-Analog Converter (DAC)</b> at the receiver reverses the process to reconstruct an approximation of the original analog signal.</p>
+                </div>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <p>Modern communication systems rely on transmitting information efficiently and accurately over various channels.</p>
+                <div class="card">
+                    <ul>
+                        <li>Information is carried through channels like <b>wire-pairs, coaxial cables, optical fibers, and wireless links</b> (radio, microwave, satellite).</li>
+                        <li><b>Modulation</b> is the process of encoding an information signal onto a high-frequency carrier wave. Key types are <b>Amplitude Modulation (AM)</b> and <b>Frequency Modulation (FM)</b>.</li>
+                        <li><b>Digital transmission</b> offers significant advantages over <b>analog</b>, including better noise immunity, security, and efficiency.</li>
+                        <li>To transmit analog information digitally, it must first be converted using an <b>Analog-to-Digital Converter (ADC)</b> through a process of sampling, quantizing, and encoding.</li>
+                        <li>At the receiving end, a <b>Digital-to-Analog Converter (DAC)</b> reconstructs the original signal.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

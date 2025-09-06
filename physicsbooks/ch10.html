@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 10: D.C. Circuits</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* 1. CSS Variables for Theming */
+        :root {
+            /* Light Theme */
+            --bg-color: #f4f7f9;
+            --text-color: #333;
+            --header-bg: #ffffff;
+            --sidebar-bg: #ffffff;
+            --card-bg: #ffffff;
+            --accent-color: #007bff;
+            --border-color: #e0e0e0;
+            --shadow-color: rgba(0, 0, 0, 0.05);
+            --table-header-bg: #f1f1f1;
+            --theme-toggle-bg: #e0e0e0;
+            --theme-toggle-slider: #fff;
+            --theme-sun-color: #f39c12;
+            --theme-moon-color: #7f8c8d;
+        }
+
+        /* 2. Base Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .page-container {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            grid-template-rows: auto 1fr;
+            grid-template-areas:
+                "header header"
+                "sidebar content";
+            min-height: 100vh;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.75rem; border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-top: 40px; }
+        h3 { font-size: 1.4rem; }
+        h4 { font-size: 1.1rem; }
+
+        p, li {
+            font-size: 1rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 3. Header */
+        header {
+            grid-area: header;
+            background-color: var(--header-bg);
+            padding: 1rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 2px 5px var(--shadow-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* 4. Sidebar Navigation */
+        .sidebar {
+            grid-area: sidebar;
+            background-color: var(--sidebar-bg);
+            padding: 2rem;
+            border-right: 1px solid var(--border-color);
+            position: sticky;
+            top: 75px; /* Height of header */
+            height: calc(100vh - 75px);
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            border-bottom: none;
+            font-size: 1.5rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li a {
+            display: block;
+            padding: 0.5rem 0;
+            color: var(--text-color);
+            font-weight: 400;
+            border-left: 3px solid transparent;
+            padding-left: 10px;
+        }
+
+        .sidebar li a:hover {
+            color: var(--accent-color);
+            background-color: var(--bg-color);
+            border-left: 3px solid var(--accent-color);
+            text-decoration: none;
+        }
+
+        /* 5. Main Content */
+        .content {
+            grid-area: content;
+            padding: 2rem 3rem;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* 6. Components (Cards, Tables) */
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            box-shadow: 0 4px 8px var(--shadow-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px var(--shadow-color);
+        }
+
+        .card.formula {
+            background-color: var(--sidebar-bg);
+            border-left: 5px solid var(--accent-color);
+            font-family: monospace;
+            font-size: 1.1rem;
+        }
+
+        .card ul, .card ol {
+            padding-left: 20px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        thead {
+            background-color: var(--table-header-bg);
+            font-weight: 600;
+        }
+
+        tbody tr:hover {
+            background-color: var(--bg-color);
+        }
+
+        /* 7. Theme Toggle Switch */
+        .theme-toggle-checkbox {
+            display: none; /* Hide the actual checkbox */
+        }
+
+        .theme-toggle-label {
+            background: var(--theme-toggle-bg);
+            border-radius: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            position: relative;
+            height: 26px;
+            width: 50px;
+        }
+
+        .theme-toggle-label .sun, .theme-toggle-label .moon {
+            font-size: 14px;
+            line-height: 1;
+        }
+        .theme-toggle-label .sun { color: var(--theme-sun-color); }
+        .theme-toggle-label .moon { color: var(--theme-moon-color); }
+
+        .theme-toggle-label::after {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 4px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: var(--theme-toggle-slider);
+            transition: transform 0.3s ease;
+        }
+
+        .theme-toggle-checkbox:checked + .page-container {
+            /* This empty selector is for specificity to trigger theme change */
+        }
+
+        /* Logic to apply dark mode to the body */
+        .theme-toggle-checkbox:checked ~ .page-container {
+            --bg-color: #1a1a2e;
+            --text-color: #e0e0e0;
+            --header-bg: #162447;
+            --sidebar-bg: #162447;
+            --card-bg: #1f4068;
+            --accent-color: #17e9e0;
+            --border-color: #3a3a5a;
+            --shadow-color: rgba(0, 0, 0, 0.2);
+            --table-header-bg: #1f4068;
+            --theme-toggle-bg: #1f4068;
+            --theme-toggle-slider: #1a1a2e;
+            --theme-sun-color: #bdc3c7;
+            --theme-moon-color: #f1c40f;
+        }
+
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label::after {
+            transform: translateX(24px);
+        }
+
+
+        /* 8. Responsive Design */
+        @media (max-width: 768px) {
+            .page-container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "content";
+            }
+
+            .sidebar {
+                position: static;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+                padding: 1rem;
+            }
+
+            .sidebar h2 {
+                display: none;
+            }
+
+            .sidebar ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+            }
+            
+            .sidebar li a {
+                padding: 8px 12px;
+                border-radius: 20px;
+                border-left: none;
+                background-color: var(--bg-color);
+            }
+
+            .sidebar li a:hover {
+                background-color: var(--accent-color);
+                color: var(--header-bg);
+            }
+
+            header {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .content {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+
+        // MathJax configuration for rendering LaTeX
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
+    
+    <div class="page-container">
+        <header>
+            <h1>Chapter 10: D.C. Circuits</h1>
+            <label for="theme-toggle" class="theme-toggle-label">
+                <span class="sun">Light</span>
+                <span class="moon">Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#emf">EMF and Potential Difference</a></li>
+                <li><a href="#resistance">Resistance and Ohm's Law</a></li>
+                <li><a href="#power">Electric Power</a></li>
+                <li><a href="#resistor-combos">Resistor Combinations</a></li>
+                <li><a href="#kirchhoff">Kirchhoff's Rules</a></li>
+                <li><a href="#circuits">Measuring Circuits</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="emf">
+                <h2>EMF and Potential Difference</h2>
+                <p>To make a direct current (D.C.) flow, we need a source of energy. This is provided by a source of electromotive force (emf).</p>
+                <div class="card">
+                    <h3>Electromotive Force (EMF, &mathcal;E})</h3>
+                    <p>EMF is the work done per unit charge by a source (like a battery) to move charge completely around a circuit. It's the "push" that drives the current. Despite its name, it is a potential (voltage), not a force.</p>
+                </div>
+                <div class="card">
+                    <h3>Terminal Voltage and Internal Resistance</h3>
+                    <p>Real batteries have <b>internal resistance (r)</b>, which causes a voltage drop inside the source. The actual voltage available to the external circuit is called the <b>terminal voltage (V<sub>t</sub>)</b>.</p>
+                    <div class="card formula">
+                        <b>V<sub>t</sub> = &mathcal;E} - Ir</b>
+                    </div>
+                    <p>The terminal voltage is only equal to the EMF when no current is flowing (I=0).</p>
+                </div>
+            </section>
+
+            <section id="resistance">
+                <h2>Resistance and Ohm's Law</h2>
+                <p>Resistance is the opposition to the flow of electric current.</p>
+                <div class="card formula">
+                    <h4>Ohm's Law</h4>
+                    <b>V = IR</b>
+                    <p><b>V</b> = Voltage (Potential Difference)<br>
+                       <b>I</b> = Current (in Amperes, A)<br>
+                       <b>R</b> = Resistance (in Ohms, &Omega;)</p>
+                </div>
+                <div class="card">
+                    <h3>Resistivity (&rho;)</h3>
+                    <p>Resistance depends on the material's properties and its shape. <b>Resistivity</b> is an intrinsic property of a material that describes how strongly it resists electric current.</p>
+                    <div class="card formula">
+                        <b>R = &rho;L / A</b>
+                    </div>
+                    <p>Resistance increases with length (L) and decreases with cross-sectional area (A).</p>
+                    <h4>Temperature Dependence</h4>
+                    <p>For most conductors, resistivity (and thus resistance) increases as temperature increases.</p>
+                </div>
+            </section>
+            
+            <section id="power">
+                <h2>Electric Power</h2>
+                <p>Power is the rate at which energy is delivered or dissipated in a circuit.</p>
+                <div class="card formula">
+                    <h4>Formulas for Electric Power (P)</h4>
+                    <b>P = IV = I²R = V²/R</b>
+                    <p>The unit of power is the Watt (W), where 1 Watt = 1 Joule/second.</p>
+                </div>
+                <div class="card">
+                    <h3>Maximum Power Transfer</h3>
+                    <p>For a source with a fixed internal resistance (r), the maximum power is delivered to an external load resistor (R) when the load resistance is equal to the internal resistance (<b>R = r</b>).</p>
+                </div>
+            </section>
+
+            <section id="resistor-combos">
+                <h2>Combinations of Resistors</h2>
+                <p>Resistors can be combined to achieve a desired equivalent resistance (R<sub>eq</sub>).</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Combination</th>
+                            <th>Description</th>
+                            <th>Equivalent Resistance (R<sub>eq</sub>)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Series</b></td>
+                            <td>Resistors are connected end-to-end. The current is the same through each.</td>
+                            <td><b>R<sub>eq</sub> = R₁ + R₂ + R₃ + ...</b></td>
+                        </tr>
+                        <tr>
+                            <td><b>Parallel</b></td>
+                            <td>Resistors are connected side-by-side. The voltage is the same across each.</td>
+                            <td><b>1/R<sub>eq</sub> = 1/R₁ + 1/R₂ + 1/R₃ + ...</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="kirchhoff">
+                <h2>Kirchhoff's Rules for Complex Circuits</h2>
+                <p>For circuits that cannot be simplified by series and parallel combinations, we use Kirchhoff's rules.</p>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>1. Junction Rule (Conservation of Charge)</h3>
+                        <p>The sum of the currents entering any junction must equal the sum of the currents leaving that junction.</p>
+                        <div class="card formula">
+                            <b>&Sigma;I<sub>in</sub> = &Sigma;I<sub>out</sub></b>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>2. Loop Rule (Conservation of Energy)</h3>
+                        <p>The sum of the potential differences (voltages) around any closed circuit loop must be zero.</p>
+                        <div class="card formula">
+                            <b>&Sigma;V = 0</b>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="circuits">
+                <h2>Measuring Circuits</h2>
+                <p>Specialized circuits are used to measure unknown resistances and EMFs accurately.</p>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Wheatstone Bridge</h3>
+                        <p>A circuit used to precisely measure an unknown resistance. It consists of four resistors. When the bridge is "balanced" (zero current flows through the central galvanometer), the unknown resistance can be calculated from the other three known resistances.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Potentiometer</h3>
+                        <p>A device used to measure an unknown EMF or potential difference accurately without drawing any current from the source being measured. It works by balancing the unknown voltage against a known voltage along a uniform wire.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <p>D.C. circuits involve the steady flow of charge, governed by fundamental principles of energy and charge conservation.</p>
+                <div class="card">
+                    <ul>
+                        <li><b>EMF</b> is the energy source that drives current, while <b>terminal voltage</b> is the actual voltage supplied to the circuit due to <b>internal resistance</b>.</li>
+                        <li><b>Ohm's Law (V=IR)</b> relates voltage, current, and resistance for many materials.</li>
+                        <li><b>Resistance (R=&rho;L/A)</b> depends on a material's resistivity and its dimensions.</li>
+                        <li><b>Electric Power (P=IV)</b> is the rate at which energy is consumed in a circuit.</li>
+                        <li>Resistors in <b>series add directly</b> (R<sub>eq</sub> = R₁ + R₂), while resistors in <b>parallel add as reciprocals</b> (1/R<sub>eq</sub> = 1/R₁ + 1/R₂).</li>
+                        <li><b>Kirchhoff's Rules</b> (Junction Rule and Loop Rule) are used to analyze complex circuits.</li>
+                        <li>The <b>Wheatstone Bridge</b> and <b>Potentiometer</b> are precision instruments for measuring resistance and EMF.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

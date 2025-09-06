@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2: Atomic Structure</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* 1. CSS Variables for Theming */
+        :root {
+            /* Light Theme */
+            --bg-color: #f4f7f9;
+            --text-color: #333;
+            --header-bg: #ffffff;
+            --sidebar-bg: #ffffff;
+            --card-bg: #ffffff;
+            --accent-color: #007bff;
+            --border-color: #e0e0e0;
+            --shadow-color: rgba(0, 0, 0, 0.05);
+            --table-header-bg: #f1f1f1;
+            --theme-toggle-bg: #e0e0e0;
+            --theme-toggle-slider: #fff;
+            --theme-sun-color: #f39c12;
+            --theme-moon-color: #7f8c8d;
+        }
+
+        /* 2. Base Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .page-container {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            grid-template-rows: auto 1fr;
+            grid-template-areas:
+                "header header"
+                "sidebar content";
+            min-height: 100vh;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.75rem; border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-top: 40px; }
+        h3 { font-size: 1.4rem; }
+        h4 { font-size: 1.1rem; }
+
+        p, li {
+            font-size: 1rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 3. Header */
+        header {
+            grid-area: header;
+            background-color: var(--header-bg);
+            padding: 1rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 2px 5px var(--shadow-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* 4. Sidebar Navigation */
+        .sidebar {
+            grid-area: sidebar;
+            background-color: var(--sidebar-bg);
+            padding: 2rem;
+            border-right: 1px solid var(--border-color);
+            position: sticky;
+            top: 75px; /* Height of header */
+            height: calc(100vh - 75px);
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            border-bottom: none;
+            font-size: 1.5rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li a {
+            display: block;
+            padding: 0.5rem 0;
+            color: var(--text-color);
+            font-weight: 400;
+            border-left: 3px solid transparent;
+            padding-left: 10px;
+        }
+
+        .sidebar li a:hover {
+            color: var(--accent-color);
+            background-color: var(--bg-color);
+            border-left: 3px solid var(--accent-color);
+            text-decoration: none;
+        }
+
+        /* 5. Main Content */
+        .content {
+            grid-area: content;
+            padding: 2rem 3rem;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* 6. Components (Cards, Tables) */
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            box-shadow: 0 4px 8px var(--shadow-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px var(--shadow-color);
+        }
+
+        .card.formula {
+            background-color: var(--sidebar-bg);
+            border-left: 5px solid var(--accent-color);
+            font-family: monospace;
+            font-size: 1.1rem;
+        }
+
+        .card ul, .card ol {
+            padding-left: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        thead {
+            background-color: var(--table-header-bg);
+            font-weight: 600;
+        }
+
+        tbody tr:hover {
+            background-color: var(--bg-color);
+        }
+
+        /* 7. Theme Toggle Switch */
+        .theme-toggle-checkbox {
+            display: none; /* Hide the actual checkbox */
+        }
+
+        .theme-toggle-label {
+            background: var(--theme-toggle-bg);
+            border-radius: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            position: relative;
+            height: 26px;
+            width: 50px;
+        }
+
+        .theme-toggle-label .sun, .theme-toggle-label .moon {
+            font-size: 14px;
+            line-height: 1;
+        }
+        .theme-toggle-label .sun { color: var(--theme-sun-color); }
+        .theme-toggle-label .moon { color: var(--theme-moon-color); }
+
+        .theme-toggle-label::after {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 4px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: var(--theme-toggle-slider);
+            transition: transform 0.3s ease;
+        }
+        
+        .theme-toggle-checkbox:checked ~ .page-container {
+            --bg-color: #1a1a2e;
+            --text-color: #e0e0e0;
+            --header-bg: #162447;
+            --sidebar-bg: #162447;
+            --card-bg: #1f4068;
+            --accent-color: #17e9e0;
+            --border-color: #3a3a5a;
+            --shadow-color: rgba(0, 0, 0, 0.2);
+            --table-header-bg: #1f4068;
+            --theme-toggle-bg: #1f4068;
+            --theme-toggle-slider: #1a1a2e;
+            --theme-sun-color: #bdc3c7;
+            --theme-moon-color: #f1c40f;
+        }
+
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label::after {
+            transform: translateX(24px);
+        }
+
+        /* 8. Responsive Design */
+        @media (max-width: 768px) {
+            .page-container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "content";
+            }
+            .sidebar {
+                position: static; height: auto; border-right: none;
+                border-bottom: 1px solid var(--border-color); padding: 1rem;
+            }
+            .sidebar h2 { display: none; }
+            .sidebar ul {
+                display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
+            }
+            .sidebar li a {
+                padding: 8px 12px; border-radius: 20px; border-left: none; background-color: var(--bg-color);
+            }
+            .sidebar li a:hover {
+                background-color: var(--accent-color); color: var(--header-bg);
+            }
+            header { padding: 1rem; }
+            h1 { font-size: 1.5rem; }
+            .content { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
+    
+    <div class="page-container">
+        <header>
+            <h1>Chapter 2: Atomic Structure</h1>
+            <label for="theme-toggle" class="theme-toggle-label">
+                <span class="sun">Light</span>
+                <span class="moon">Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">What is an Atom?</a></li>
+                <li><a href="#subatomic-particles">Subatomic Particles</a></li>
+                <li><a href="#bohrs-model">Bohr's Atomic Model</a></li>
+                <li><a href="#quantum-model">Quantum Model</a></li>
+                <li><a href="#e-config">Electronic Configuration</a></li>
+                <li><a href="#radioactivity">Radioactivity</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>What is an Atom?</h2>
+                <p>Everything in the universe is made of tiny building blocks called <strong>atoms</strong>. For centuries, they were thought to be indivisible. However, we now know that atoms have an internal structure, composed of even smaller <strong>subatomic particles</strong>.</p>
+                <p>Understanding this structure is key to understanding chemistry. The arrangement of these particles defines an element's identity and its chemical behavior.</p>
+            </section>
+
+            <section id="subatomic-particles">
+                <h2>The Three Key Subatomic Particles</h2>
+                <p>An atom consists of a tiny, dense <strong>nucleus</strong> at its center, containing protons and neutrons. Electrons orbit this nucleus in specific regions.</p>
+                <div class="card">
+                    <h4>Properties of Subatomic Particles</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Particle</th>
+                                <th>Charge</th>
+                                <th>Location</th>
+                                <th>Relative Mass (amu)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Proton (p⁺)</b></td>
+                                <td>Positive (+1)</td>
+                                <td>Nucleus</td>
+                                <td>~1</td>
+                            </tr>
+                            <tr>
+                                <td><b>Neutron (n⁰)</b></td>
+                                <td>Neutral (0)</td>
+                                <td>Nucleus</td>
+                                <td>~1</td>
+                            </tr>
+                            <tr>
+                                <td><b>Electron (e⁻)</b></td>
+                                <td>Negative (-1)</td>
+                                <td>Outside Nucleus</td>
+                                <td>~1/1836 (negligible)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <section id="bohrs-model">
+                <h2>Bohr's Atomic Model</h2>
+                <p>Niels Bohr developed a revolutionary model of the atom in 1913, primarily for hydrogen. While it has been replaced by a more accurate model, it introduced critical concepts about electron energy.</p>
+                <div class="card">
+                    <h3>Key Postulates of Bohr's Model</h3>
+                    <ul>
+                        <li><b>Fixed Orbits:</b> Electrons revolve around the nucleus in fixed, circular paths called <strong>orbits</strong> or <strong>energy levels</strong>.</li>
+                        <li><b>Quantized Energy:</b> Each orbit has a specific, constant energy. An electron in a particular orbit does not radiate energy.</li>
+                        <li><b>Energy Jumps:</b> An electron can jump to a higher energy level by absorbing a specific amount of energy (a photon). It can fall back to a lower level by emitting a photon of light with a specific energy.</li>
+                    </ul>
+                </div>
+                <h4>Atomic Spectra Explained</h4>
+                <p>Bohr's model explained why elements emit light only at specific frequencies when heated, creating a <strong>line spectrum</strong>. Each line corresponds to an electron falling from a higher to a lower, specific energy level.</p>
+            </section>
+            
+            <section id="quantum-model">
+                <h2>The Quantum Mechanical Model</h2>
+                <p>The modern view of the atom is more probabilistic. We can't know the exact path of an electron; we can only describe the region where it is most likely to be found.</p>
+                <div class="card">
+                    <h4>From Orbits to Orbitals</h4>
+                    An <strong>orbital</strong> is a three-dimensional region around the nucleus that indicates the probable location of an electron. Unlike a 2D orbit, an orbital is a "cloud of probability" with a specific shape and energy.
+                </div>
+
+                <h3>Quantum Numbers: The Electron's Address</h3>
+                <p>Four quantum numbers are used to describe the state of an electron in an atom completely.</p>
+                 <table>
+                    <thead>
+                        <tr>
+                            <th>Number</th>
+                            <th>Symbol</th>
+                            <th>What It Describes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Principal</b></td>
+                            <td><em>n</em></td>
+                            <td>Main energy level (shell). Larger <em>n</em> means higher energy. (n = 1, 2, 3...)</td>
+                        </tr>
+                        <tr>
+                            <td><b>Azimuthal</b></td>
+                            <td><em>l</em></td>
+                            <td>Shape of the orbital (subshell). (l = 0 is 's', 1 is 'p', 2 is 'd')</td>
+                        </tr>
+                        <tr>
+                            <td><b>Magnetic</b></td>
+                            <td><em>m</em></td>
+                            <td>Orientation of the orbital in space (e.g., pₓ, pᵧ, p₂)</td>
+                        </tr>
+                        <tr>
+                            <td><b>Spin</b></td>
+                            <td><em>s</em></td>
+                            <td>Electron's intrinsic spin (either +½ or -½).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section id="e-config">
+                <h2>Electronic Configuration</h2>
+                <p>The distribution of electrons among the various atomic orbitals is called its <strong>electronic configuration</strong>. Filling these orbitals follows a set of rules.</p>
+                
+                <div class="card">
+                    <h3>Rules for Electron Filling</h3>
+                    <ol>
+                        <li><b>Aufbau Principle:</b> Electrons enter the lowest energy orbitals available first. The general order is 1s, 2s, 2p, 3s, 3p, 4s, 3d, etc.</li>
+                        <li><b>Pauli Exclusion Principle:</b> No two electrons in an atom can have the same four quantum numbers. This means an orbital can hold a maximum of two electrons, and they must have opposite spins.</li>
+                        <li><b>Hund's Rule:</b> When filling orbitals of equal energy (like the three p orbitals), electrons will occupy each orbital singly before any orbital is doubly occupied.</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="radioactivity">
+                <h2>Radioactivity</h2>
+                <p><strong>Radioactivity</strong> is the spontaneous emission of particles or energy from an unstable atomic nucleus. This process, called radioactive decay, transforms the nucleus into a more stable state.</p>
+                
+                <div class="card">
+                  <h4>Types of Nuclear Radiation</h4>
+                  <p>The three main types of radiation are:</p>
+                   <ul>
+                        <li><b>Alpha (α) particles:</b> Positively charged particles (helium nuclei) with low penetrating power.</li>
+                        <li><b>Beta (β) particles:</b> Negatively charged particles (electrons) with medium penetrating power.</li>
+                        <li><b>Gamma (γ) rays:</b> High-energy electromagnetic waves with no charge and very high penetrating power.</li>
+                    </ul>
+                    <h4>Uses in Daily Life</h4>
+                    <p>Controlled radiation is used in medicine for cancer therapy and medical imaging, and in agriculture to improve crop varieties and preserve food.</p>
+                </div>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <p>This chapter outlined the fundamental structure of the atom. We explored the subatomic particles, the evolution from Bohr's simple model to the complex Quantum Mechanical model, and the rules governing how electrons are organized within an atom. Key concepts include:</p>
+                <div class="card">
+                    <ul>
+                        <li><b>Subatomic Particles:</b> Atoms are made of protons (+), neutrons (0), and electrons (-). Protons and neutrons reside in the nucleus.</li>
+                        <li><b>Bohr's Model:</b> Introduced the concept of quantized energy levels (orbits) for electrons.</li>
+                        <li><b>Quantum Model:</b> Describes electrons in terms of <b>orbitals</b> (probability clouds) defined by four <b>quantum numbers</b>.</li>
+                        <li><b>Electronic Configuration:</b> The arrangement of electrons, determined by the Aufbau Principle, Pauli Exclusion Principle, and Hund's Rule.</li>
+                        <li><b>Radioactivity:</b> The emission of radiation from unstable nuclei, with important applications in medicine and industry.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

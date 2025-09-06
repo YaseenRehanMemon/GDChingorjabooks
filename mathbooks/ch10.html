@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 10: Trigonometric Identities of Sum & Difference of Angles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to the shared stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+        // MathJax configuration (if you choose to include it for rendering LaTeX)
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body style="--accent-color: #FF5722;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 10: Trigonometric Identities of Sum & Difference of Angles</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Trigonometric Ratios</a></li>
+                <li><a href="#fundamental-law">Fundamental Law of Trigonometry</a></li>
+                <li><a href="#allied-angles">Trigonometric Ratios of Allied Angles</a></li>
+                <li><a href="#double-half-triple">Double, Half & Triple Angle Identities</a></li>
+                <li><a href="#sum-to-product">Sum/Difference to Product Identities</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>10.1 Fundamental Trigonometric Ratios</h2>
+                <p>Trigonometry deals with the relationships between the angles and sides of triangles. For a right-angled triangle, the six basic <strong>trigonometric ratios</strong> are defined relative to an acute angle \(\theta\):</p>
+                <div class="card">
+                    <ul>
+                        <li>\(\sin \theta = \frac{\text{Opposite}}{\text{Hypotenuse}}\)</li>
+                        <li>\(\cos \theta = \frac{\text{Adjacent}}{\text{Hypotenuse}}\)</li>
+                        <li>\(\tan \theta = \frac{\text{Opposite}}{\text{Adjacent}}\)</li>
+                        <li>\(\csc \theta = \frac{1}{\sin \theta}\)</li>
+                        <li>\(\sec \theta = \frac{1}{\cos \theta}\)</li>
+                        <li>\(\cot \theta = \frac{1}{\tan \theta}\)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="fundamental-law">
+                <h2>10.1.2 Fundamental Law of Trigonometry & Deductions</h2>
+                <p>The <strong>fundamental law of trigonometry</strong>, derived from the distance formula on a unit circle, is crucial for deriving many other identities.</p>
+                <div class="card formula">
+                    <h4>Fundamental Law:</h4>
+                    \[ \cos(\alpha - \beta) = \cos \alpha \cos \beta + \sin \alpha \sin \beta \]
+                    <h4>Deductions from the Fundamental Law:</h4>
+                    <ul>
+                        <li>\(\cos(\alpha + \beta) = \cos \alpha \cos \beta - \sin \alpha \sin \beta\)</li>
+                        <li>\(\sin(\alpha + \beta) = \sin \alpha \cos \beta + \cos \alpha \sin \beta\)</li>
+                        <li>\(\sin(\alpha - \beta) = \sin \alpha \cos \beta - \cos \alpha \sin \beta\)</li>
+                        <li>\(\tan(\alpha + \beta) = \frac{\tan \alpha + \tan \beta}{1 - \tan \alpha \tan \beta}\)</li>
+                        <li>\(\tan(\alpha - \beta) = \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta}\)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="allied-angles">
+                <h2>10.2 Trigonometric Ratios of Allied Angles</h2>
+                <p><strong>Allied angles</strong> are angles whose sum or difference with a basic angle \(\theta\) is an integral multiple of \(90^\circ\) or \(\frac{\pi}{2}\) radians. These include angles like \(90^\circ \pm \theta\), \(180^\circ \pm \theta\), \(270^\circ \pm \theta\), and \(360^\circ \pm \theta\).</p>
+                
+                <h3>10.2.1 General Rules for Allied Angles</h3>
+                <p>The trigonometric ratio of an allied angle depends on two things:</p>
+                <ol>
+                    <li><b>Quadrant:</b> The sign (\(+\) or \(-\)) depends on the quadrant in which the allied angle lies.</li>
+                    <li><b>Multiple of \(90^\circ\):</b>
+                        <ul>
+                            <li>If the multiple is <b>even</b> (\(180^\circ \pm \theta\), \(360^\circ \pm \theta\)), the ratio remains the same (e.g., \(\sin \to \sin\), \(\cos \to \cos\)).</li>
+                            <li>If the multiple is <b>odd</b> (\(90^\circ \pm \theta\), \(270^\circ \pm \theta\)), the ratio changes to its co-ratio (e.g., \(\sin \to \cos\), \(\tan \to \cot\)).</li>
+                        </ul>
+                    </li>
+                </ol>
+                <div class="card">
+                    <h4>Examples of Allied Angle Identities:</h4>
+                    <ul>
+                        <li>\(\sin(90^\circ + \theta) = \cos \theta\)</li>
+                        <li>\(\cos(180^\circ - \theta) = -\cos \theta\)</li>
+                        <li>\(\tan(360^\circ - \theta) = -\tan \theta\)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="double-half-triple">
+                <h2>10.3 Double, Half, and Triple Angle Identities</h2>
+                <p>These identities are derived from the fundamental sum and difference formulas by replacing \(\alpha\) and \(\beta\) with specific values (e.g., setting \(\alpha = \beta = \theta\) for double angles).</p>
+                <h3>10.3.1 Double Angle Identities</h3>
+                <div class="card formula">
+                    <ul>
+                        <li>\(\sin(2\theta) = 2 \sin \theta \cos \theta\)</li>
+                        <li>\(\cos(2\theta) = \cos^2 \theta - \sin^2 \theta\)</li>
+                        <li>\(\cos(2\theta) = 2 \cos^2 \theta - 1\)</li>
+                        <li>\(\cos(2\theta) = 1 - 2 \sin^2 \theta\)</li>
+                        <li>\(\tan(2\theta) = \frac{2 \tan \theta}{1 - \tan^2 \theta}\)</li>
+                    </ul>
+                </div>
+                <h3>10.3.2 Half Angle Identities</h3>
+                <p>Derived from double angle identities by setting \(\theta = \frac{\alpha}{2}\).</p>
+                <div class="card formula">
+                    <ul>
+                        <li>\(\sin\left(\frac{\theta}{2}\right) = \pm\sqrt{\frac{1 - \cos \theta}{2}}\)</li>
+                        <li>\(\cos\left(\frac{\theta}{2}\right) = \pm\sqrt{\frac{1 + \cos \theta}{2}}\)</li>
+                        <li>\(\tan\left(\frac{\theta}{2}\right) = \frac{1 - \cos \theta}{\sin \theta} = \frac{\sin \theta}{1 + \cos \theta}\)</li>
+                    </ul>
+                </div>
+                <h3>10.3.3 Triple Angle Identities</h3>
+                <div class="card formula">
+                    <ul>
+                        <li>\(\sin(3\theta) = 3 \sin \theta - 4 \sin^3 \theta\)</li>
+                        <li>\(\cos(3\theta) = 4 \cos^3 \theta - 3 \cos \theta\)</li>
+                        <li>\(\tan(3\theta) = \frac{3 \tan \theta - \tan^3 \theta}{1 - 3 \tan^2 \theta}\)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="sum-to-product">
+                <h2>10.4 Sum and Difference to Product Identities</h2>
+                <p>These formulas convert sums or differences of sines and cosines into products, which can simplify expressions and help in solving trigonometric equations.</p>
+                <div class="card formula">
+                    <ul>
+                        <li>\(\sin u + \sin v = 2 \sin\left(\frac{u+v}{2}\right) \cos\left(\frac{u-v}{2}\right)\)</li>
+                        <li>\(\sin u - \sin v = 2 \cos\left(\frac{u+v}{2}\right) \sin\left(\frac{u-v}{2}\right)\)</li>
+                        <li>\(\cos u + \cos v = 2 \cos\left(\frac{u+v}{2}\right) \cos\left(\frac{u-v}{2}\right)\)</li>
+                        <li>\(\cos u - \cos v = -2 \sin\left(\frac{u+v}{2}\right) \sin\left(\frac{u-v}{2}\right)\)</li>
+                    </ul>
+                </div>
+                <h3>10.4.1 Product to Sum and Difference Identities</h3>
+                <p>These are the reverse of the above, converting products of sines and cosines into sums or differences.</p>
+                <div class="card formula">
+                    <ul>
+                        <li>\(2 \sin \alpha \cos \beta = \sin(\alpha + \beta) + \sin(\alpha - \beta)\)</li>
+                        <li>\(2 \cos \alpha \sin \beta = \sin(\alpha + \beta) - \sin(\alpha - \beta)\)</li>
+                        <li>\(2 \cos \alpha \cos \beta = \cos(\alpha + \beta) + \cos(\alpha - \beta)\)</li>
+                        <li>\(2 \sin \alpha \sin \beta = \cos(\alpha - \beta) - \cos(\alpha + \beta)\)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li>The <b>fundamental law</b> \(\cos(\alpha - \beta) = \cos \alpha \cos \beta + \sin \alpha \sin \beta\) is the basis for sum and difference identities for sine, cosine, and tangent.</li>
+                        <li><b>Allied angles</b> (\(90^\circ \pm \theta\), \(180^\circ \pm \theta\), etc.) have trigonometric ratios whose signs and functions depend on the quadrant and multiple of \(90^\circ\).</li>
+                        <li><b>Double, half, and triple angle identities</b> are derived from sum/difference formulas to express trigonometric functions of multiples or fractions of an angle.</li>
+                        <li><b>Sum/difference to product</b> and <b>product to sum/difference</b> formulas convert expressions between sums/differences and products of trigonometric functions.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

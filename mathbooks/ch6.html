@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6: Permutation, Combination & Probability</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to the shared stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+        // MathJax configuration (for rendering LaTeX)
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body style="--accent-color: #3F51B5;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 6: Permutation, Combination & Probability</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#counting-principles">Fundamental Counting Principles</a></li>
+                <li><a href="#permutation">Permutation</a></li>
+                <li><a href="#combination">Combination</a></li>
+                <li><a href="#probability">Probability</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="counting-principles">
+                <h2>6.1 Fundamental Counting Principles</h2>
+                <p>Before delving into permutations and combinations, it's essential to understand the basic principles of counting, which help determine the number of possible outcomes for a series of events.</p>
+
+                <h3>6.1.1 Factorial Notation (\(n!\))</h3>
+                <p>The <strong>factorial</strong> of a non-negative integer \(n\), denoted by \(n!\), is the product of all positive integers less than or equal to \(n\).</p>
+                <div class="card formula">
+                    \[ n! = n \times (n-1) \times (n-2) \times \dots \times 3 \times 2 \times 1 \]
+                    <p>By definition, \(0! = 1\).</p>
+                </div>
+                <h3>6.1.2 Sum Principle of Counting</h3>
+                <p>If two events are mutually exclusive (cannot happen at the same time), and one can occur in \(m\) ways and the other in \(n\) ways, then the total number of ways for either event to occur is \(m+n\).</p>
+                <h3>6.1.3 Product Principle of Counting</h3>
+                <p>If an event can occur in \(m\) ways, and after it occurs, a second independent event can occur in \(n\) ways, then the total number of ways both events can occur in sequence is \(m \times n\).</p>
+                <div class="card">
+                    <h4>Tree Diagrams</h4>
+                    <p>Tree diagrams are useful visual tools to represent all possible outcomes of a sequence of events, especially when the number of choices at each step might vary.</p>
+                </div>
+            </section>
+
+            <section id="permutation">
+                <h2>6.2 Permutation</h2>
+                <p>A <strong>permutation</strong> is an arrangement of objects in a specific order. The order of arrangement matters in permutations.</p>
+                
+                <h3>6.2.1 Permutation of \(n\) Different Objects Taken \(r\) at a Time (\(n P_r\))</h3>
+                <p>The number of permutations of \(n\) distinct objects taken \(r\) at a time is given by:</p>
+                <div class="card formula">
+                    \[ n P_r = \frac{n!}{(n-r)!} \]
+                </div>
+                <h3>6.2.2 Permutation of \(n\) Objects with Repetition</h3>
+                <p>If there are \(n\) objects where \(n_1\) are alike of one kind, \(n_2\) are alike of a second kind, and so on, then the number of distinct permutations of these \(n\) objects is:</p>
+                <div class="card formula">
+                    \[ P = \frac{n!}{n_1! n_2! \dots n_k!} \]
+                </div>
+                <h3>6.2.3 Circular Permutation</h3>
+                <p>For arrangements in a circle, the starting point is not fixed, so we consider relative positions.</p>
+                <ul>
+                    <li>If clockwise and anticlockwise arrangements are considered distinct, the number of circular permutations of \(n\) distinct objects is \((n-1)!\).</li>
+                    <li>If clockwise and anticlockwise arrangements are considered identical (e.g., a necklace), the number is \(\frac{1}{2}(n-1)!\).</li>
+                </ul>
+            </section>
+
+            <section id="combination">
+                <h2>6.3 Combination</h2>
+                <p>A <strong>combination</strong> is a selection of objects where the order of selection does NOT matter. It is about choosing a subset from a larger set.</p>
+                
+                <h3>6.3.1 Combination of \(n\) Different Objects Taken \(r\) at a Time (\(n C_r\))</h3>
+                <p>The number of combinations of \(n\) distinct objects taken \(r\) at a time is given by:</p>
+                <div class="card formula">
+                    \[ n C_r = \binom{n}{r} = \frac{n!}{r!(n-r)!} \]
+                </div>
+                <h3>6.3.2 Properties of Combinations</h3>
+                <ul>
+                    <li>\(\binom{n}{r} = \binom{n}{n-r}\) (Complementary combinations are equal).</li>
+                    <li>\(\binom{n}{0} = \binom{n}{n} = 1\).</li>
+                    <li>\(\binom{n}{r} + \binom{n}{r-1} = \binom{n+1}{r}\) (Pascal's Identity).</li>
+                </ul>
+            </section>
+
+            <section id="probability">
+                <h2>6.4 Probability</h2>
+                <p><strong>Probability</strong> is a numerical measure of the likelihood that an event will occur. It is expressed as a value between 0 and 1, inclusive.</p>
+                
+                <h3>6.4.1 Key Definitions</h3>
+                <ul>
+                    <li><b>Statistical Experiment:</b> A process that leads to well-defined outcomes.</li>
+                    <li><b>Sample Space (\(S\)):</b> The set of all possible outcomes of an experiment.</li>
+                    <li><b>Event (\(E\)):</b> Any subset of the sample space.</li>
+                    <li><b>Mutually Exclusive Events:</b> Events that cannot occur at the same time (\(E_1 \cap E_2 = \emptyset\)).</li>
+                    <li><b>Equally Likely Events:</b> Events that have the same chance of occurring.</li>
+                    <li><b>Independent Events:</b> The occurrence of one event does not affect the probability of another.</li>
+                    <li><b>Dependent Events:</b> The occurrence of one event affects the probability of another.</li>
+                    <li><b>Exhaustive Events:</b> Events whose union covers the entire sample space.</li>
+                </ul>
+                <h3>6.4.2 Formula for Probability</h3>
+                <div class="card formula">
+                    \[ P(E) = \frac{\text{Number of favorable outcomes for E}}{\text{Total number of possible outcomes in S}} = \frac{n(E)}{n(S)} \]
+                    <p>Properties: \(0 \le P(E) \le 1\).</p>
+                </div>
+                <h3>6.4.3 Conditional Probability</h3>
+                <p>The probability of event \(A\) occurring given that event \(B\) has already occurred is called <strong>conditional probability</strong>, denoted by \(P(A|B)\).</p>
+                <div class="card formula">
+                    \[ P(A|B) = \frac{P(A \cap B)}{P(B)} \quad \text{if } P(B) \neq 0 \]
+                </div>
+                <h3>6.4.4 Multiplication and Addition Theorems of Probability</h3>
+                <ul>
+                    <li><b>Multiplication Rule:</b> \(P(A \cap B) = P(A) \times P(B|A)\). If \(A\) and \(B\) are independent, \(P(A \cap B) = P(A) \times P(B)\).</li>
+                    <li><b>Addition Rule:</b> \(P(A \cup B) = P(A) + P(B) - P(A \cap B)\). If \(A\) and \(B\) are mutually exclusive, \(P(A \cup B) = P(A) + P(B)\).</li>
+                </ul>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Factorial (\(n!\)):</b> Product of integers from 1 to \(n\).</li>
+                        <li><b>Permutation (\(n P_r\)):</b> Ordered arrangement of \(r\) objects from \(n\) distinct objects (\(n P_r = \frac{n!}{(n-r)!}\)). Order matters.</li>
+                        <li><b>Combination (\(n C_r\)):</b> Unordered selection of \(r\) objects from \(n\) distinct objects (\(n C_r = \frac{n!}{r!(n-r)!}\)). Order does not matter.</li>
+                        <li><b>Probability:</b> Measure of likelihood \((P(E) = \frac{n(E)}{n(S)})\). Key concepts include sample space, events, mutually exclusive/independent events.</li>
+                        <li><b>Theorems:</b> Addition rule for \((P(A \cup B))\) and multiplication rule for \((P(A \cap B))\), including conditional probability.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

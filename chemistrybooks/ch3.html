@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3: Covalent Bonding & Shapes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* 1. CSS Variables for Theming */
+        :root {
+            /* Light Theme */
+            --bg-color: #f4f7f9;
+            --text-color: #333;
+            --header-bg: #ffffff;
+            --sidebar-bg: #ffffff;
+            --card-bg: #ffffff;
+            --accent-color: #28a745; /* Green accent for this chapter */
+            --border-color: #e0e0e0;
+            --shadow-color: rgba(0, 0, 0, 0.05);
+            --table-header-bg: #f1f1f1;
+            --theme-toggle-bg: #e0e0e0;
+            --theme-toggle-slider: #fff;
+            --theme-sun-color: #f39c12;
+            --theme-moon-color: #7f8c8d;
+        }
+
+        /* 2. Base Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .page-container {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            grid-template-rows: auto 1fr;
+            grid-template-areas:
+                "header header"
+                "sidebar content";
+            min-height: 100vh;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.75rem; border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-top: 40px; }
+        h3 { font-size: 1.4rem; }
+        h4 { font-size: 1.1rem; }
+
+        p, li {
+            font-size: 1rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 3. Header */
+        header {
+            grid-area: header;
+            background-color: var(--header-bg);
+            padding: 1rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 2px 5px var(--shadow-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* 4. Sidebar Navigation */
+        .sidebar {
+            grid-area: sidebar;
+            background-color: var(--sidebar-bg);
+            padding: 2rem;
+            border-right: 1px solid var(--border-color);
+            position: sticky;
+            top: 75px; /* Height of header */
+            height: calc(100vh - 75px);
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            border-bottom: none;
+            font-size: 1.5rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li a {
+            display: block;
+            padding: 0.5rem 0;
+            color: var(--text-color);
+            font-weight: 400;
+            border-left: 3px solid transparent;
+            padding-left: 10px;
+        }
+
+        .sidebar li a:hover {
+            color: var(--accent-color);
+            background-color: var(--bg-color);
+            border-left: 3px solid var(--accent-color);
+            text-decoration: none;
+        }
+
+        /* 5. Main Content */
+        .content {
+            grid-area: content;
+            padding: 2rem 3rem;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* 6. Components (Cards, Tables) */
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            box-shadow: 0 4px 8px var(--shadow-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px var(--shadow-color);
+        }
+
+        .card.formula {
+            background-color: var(--sidebar-bg);
+            border-left: 5px solid var(--accent-color);
+            font-family: monospace;
+            font-size: 1.1rem;
+        }
+
+        .card ul, .card ol {
+            padding-left: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        thead {
+            background-color: var(--table-header-bg);
+            font-weight: 600;
+        }
+
+        tbody tr:hover {
+            background-color: var(--bg-color);
+        }
+
+        /* 7. Theme Toggle Switch */
+        .theme-toggle-checkbox {
+            display: none; /* Hide the actual checkbox */
+        }
+
+        .theme-toggle-label {
+            background: var(--theme-toggle-bg);
+            border-radius: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            position: relative;
+            height: 26px;
+            width: 50px;
+        }
+
+        .theme-toggle-label .sun, .theme-toggle-label .moon {
+            font-size: 14px;
+            line-height: 1;
+        }
+        .theme-toggle-label .sun { color: var(--theme-sun-color); }
+        .theme-toggle-label .moon { color: var(--theme-moon-color); }
+
+        .theme-toggle-label::after {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 4px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: var(--theme-toggle-slider);
+            transition: transform 0.3s ease;
+        }
+        
+        .theme-toggle-checkbox:checked ~ .page-container {
+            --bg-color: #1a1a2e;
+            --text-color: #e0e0e0;
+            --header-bg: #162447;
+            --sidebar-bg: #162447;
+            --card-bg: #1f4068;
+            --accent-color: #28a745;
+            --border-color: #3a3a5a;
+            --shadow-color: rgba(0, 0, 0, 0.2);
+            --table-header-bg: #1f4068;
+            --theme-toggle-bg: #1f4068;
+            --theme-toggle-slider: #1a1a2e;
+            --theme-sun-color: #bdc3c7;
+            --theme-moon-color: #f1c40f;
+        }
+
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label::after {
+            transform: translateX(24px);
+        }
+
+        /* 8. Responsive Design */
+        @media (max-width: 768px) {
+            .page-container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "content";
+            }
+            .sidebar {
+                position: static; height: auto; border-right: none;
+                border-bottom: 1px solid var(--border-color); padding: 1rem;
+            }
+            .sidebar h2 { display: none; }
+            .sidebar ul {
+                display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
+            }
+            .sidebar li a {
+                padding: 8px 12px; border-radius: 20px; border-left: none; background-color: var(--bg-color);
+            }
+            .sidebar li a:hover {
+                background-color: var(--accent-color); color: var(--header-bg);
+            }
+            header { padding: 1rem; }
+            h1 { font-size: 1.5rem; }
+            .content { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
+    
+    <div class="page-container">
+        <header>
+            <h1>Chapter 3: Covalent Bonding & Shapes</h1>
+            <label for="theme-toggle" class="theme-toggle-label">
+                <span class="sun">Light</span>
+                <span class="moon">Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Intro to Bonding</a></li>
+                <li><a href="#vbt">Valence Bond Theory</a></li>
+                <li><a href="#vsepr">VSEPR & Shapes</a></li>
+                <li><a href="#hybridization">Hybridization</a></li>
+                <li><a href="#bond-props">Bond Properties</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>Introduction to Chemical Bonding</h2>
+                <p>Why do atoms join together to form molecules? The simple answer is to become more stable. A <strong>chemical bond</strong> is the attractive force that holds atoms together in a compound. By forming bonds, atoms can achieve a more stable, lower-energy state, often by completing their outer shell of electrons (the octet rule).</p>
+                <p>This chapter focuses on <strong>covalent bonds</strong>, where atoms achieve stability by sharing electrons.</p>
+            </section>
+
+            <section id="vbt">
+                <h2>Valence Bond Theory (VBT)</h2>
+                <p>Valence Bond Theory explains covalent bond formation as the <strong>overlap of atomic orbitals</strong>. When two half-filled orbitals from different atoms overlap, the electrons are shared, and a bond is formed. The greater the overlap, the stronger the bond.</p>
+                
+                <h3>Sigma (σ) and Pi (π) Bonds</h3>
+                <p>There are two primary ways orbitals can overlap:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Bond Type</th>
+                            <th>Description</th>
+                            <th>Key Features</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Sigma (σ) Bond</b></td>
+                            <td>Formed by the direct, "head-on" overlap of orbitals along the axis connecting the two nuclei.</td>
+                            <td>Strongest type of covalent bond. All single bonds are sigma bonds.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Pi (π) Bond</b></td>
+                            <td>Formed by the "sideways" overlap of parallel p-orbitals, above and below the axis of the nuclei.</td>
+                            <td>Weaker than sigma bonds. Present in double (1σ, 1π) and triple (1σ, 2π) bonds.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section id="vsepr">
+                <h2>VSEPR Theory & Molecular Shapes</h2>
+                <p>The shape of a molecule is determined by the arrangement of electron pairs around the central atom. The <strong>Valence Shell Electron Pair Repulsion (VSEPR)</strong> theory provides a simple model to predict these shapes.</p>
+                <div class="card">
+                    <h4>The Core Idea of VSEPR</h4>
+                    <p>Electron pairs in the valence shell of a central atom repel each other. They will arrange themselves in 3D space to be as far apart as possible, which minimizes repulsion and determines the molecule's geometry.</p>
+                    <p><b>Important:</b> Both bonding pairs (in covalent bonds) and lone pairs (non-bonding pairs) contribute to this repulsion.</p>
+                </div>
+
+                <h3>Common Molecular Shapes</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Electron Pairs</th>
+                            <th>Arrangement</th>
+                            <th>Shape Name</th>
+                            <th>Bond Angle</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2 Bonding, 0 Lone</td>
+                            <td>Electron pairs are 180° apart</td>
+                            <td><b>Linear</b></td>
+                            <td>180°</td>
+                            <td>CO₂</td>
+                        </tr>
+                        <tr>
+                            <td>3 Bonding, 0 Lone</td>
+                            <td>Pairs form a flat triangle</td>
+                            <td><b>Trigonal Planar</b></td>
+                            <td>120°</td>
+                            <td>BF₃</td>
+                        </tr>
+                        <tr>
+                            <td>4 Bonding, 0 Lone</td>
+                            <td>Pairs point to corners of a tetrahedron</td>
+                            <td><b>Tetrahedral</b></td>
+                            <td>109.5°</td>
+                            <td>CH₄</td>
+                        </tr>
+                         <tr>
+                            <td>3 Bonding, 1 Lone</td>
+                            <td>Based on tetrahedral, but lone pair repels more</td>
+                            <td><b>Trigonal Pyramidal</b></td>
+                            <td>~107°</td>
+                            <td>NH₃</td>
+                        </tr>
+                         <tr>
+                            <td>2 Bonding, 2 Lone</td>
+                             <td>Based on tetrahedral, with two strong lone pair repulsions</td>
+                            <td><b>Bent (or Angular)</b></td>
+                            <td>~104.5°</td>
+                            <td>H₂O</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="hybridization">
+                <h2>Hybridization of Orbitals</h2>
+                <p>Hybridization is the concept of mixing atomic orbitals to form a new set of identical <strong>hybrid orbitals</strong>. This helps explain how atoms like carbon can form four identical single bonds (as in methane) when its valence electrons are in different types of orbitals (s and p).</p>
+                
+                <div class="card">
+                    <h4>sp³ Hybridization</h4>
+                    <p>One 's' orbital mixes with three 'p' orbitals to form four identical <strong>sp³ hybrid orbitals</strong>.</p>
+                    <ul>
+                        <li><b>Arrangement:</b> Tetrahedral</li>
+                        <li><b>Bond Angle:</b> 109.5°</li>
+                        <li><b>Example:</b> Methane (CH₄), Ammonia (NH₃), Water (H₂O)</li>
+                    </ul>
+                </div>
+                 <div class="card">
+                    <h4>sp² Hybridization</h4>
+                    <p>One 's' orbital mixes with two 'p' orbitals to form three identical <strong>sp² hybrid orbitals</strong> (one 'p' orbital remains unhybridized to form a π bond).</p>
+                    <ul>
+                        <li><b>Arrangement:</b> Trigonal Planar</li>
+                        <li><b>Bond Angle:</b> 120°</li>
+                        <li><b>Example:</b> Ethene (C₂H₄), Boron Trifluoride (BF₃)</li>
+                    </ul>
+                </div>
+                 <div class="card">
+                    <h4>sp Hybridization</h4>
+                    <p>One 's' orbital mixes with one 'p' orbital to form two identical <strong>sp hybrid orbitals</strong> (two 'p' orbitals remain unhybridized for π bonds).</p>
+                    <ul>
+                        <li><b>Arrangement:</b> Linear</li>
+                        <li><b>Bond Angle:</b> 180°</li>
+                        <li><b>Example:</b> Ethyne (C₂H₂), Beryllium Chloride (BeCl₂)</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="bond-props">
+                <h2>Bond Properties</h2>
+                <p>Several properties help us describe and compare covalent bonds.</p>
+                <div class="card">
+                    <h3>Bond Energy & Bond Length</h3>
+                    <ul>
+                        <li><b>Bond Energy:</b> The energy required to break one mole of a particular bond. Stronger bonds have higher bond energies.</li>
+                        <li><b>Bond Length:</b> The average distance between the nuclei of two bonded atoms. Stronger bonds are shorter.</li>
+                    </ul>
+                    <p><b>General Trend:</b> Triple Bonds > Double Bonds > Single Bonds (in terms of energy and shortness).</p>
+                </div>
+                 <div class="card">
+                    <h3>Bond Polarity and Dipole Moment</h3>
+                    <p>When two different atoms share electrons, the more <strong>electronegative</strong> atom pulls the electrons closer, creating a slight negative charge (δ-) on that atom and a slight positive charge (δ+) on the other. This separation of charge is called a <strong>polar covalent bond</strong> or a dipole.</p>
+                    <p>While individual bonds can be polar, the overall molecule might be nonpolar if its shape is symmetrical, causing the dipoles to cancel out (e.g., CO₂ is nonpolar, but H₂O is polar).</p>
+                </div>
+            </section>
+            
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <p>This chapter explored how atoms share electrons to form stable covalent bonds and how the repulsion between these electron pairs dictates the 3D shape of molecules.</p>
+                <div class="card">
+                    <ul>
+                        <li><b>Valence Bond Theory:</b> Covalent bonds form from the <b>overlap</b> of atomic orbitals. Head-on overlap creates strong <b>sigma (σ) bonds</b>, while sideways overlap creates weaker <b>pi (π) bonds</b>.</li>
+                        <li><b>VSEPR Theory:</b> Predicts molecular geometry based on the principle that electron pairs (bonding and lone) repel each other and spread out as much as possible.</li>
+                        <li><b>Hybridization:</b> The mixing of atomic orbitals (s, p, d) to form new, identical hybrid orbitals (sp³, sp², sp) that explain observed bond angles and shapes.</li>
+                        <li><b>Bond Properties:</b> Bond strength is measured by <b>bond energy</b>, and bond distance is measured by <b>bond length</b>. Unequal electron sharing due to electronegativity differences leads to <b>polar bonds</b>.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

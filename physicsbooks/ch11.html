@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 11: Oscillations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* 1. CSS Variables for Theming */
+        :root {
+            /* Light Theme */
+            --bg-color: #f4f7f9;
+            --text-color: #333;
+            --header-bg: #ffffff;
+            --sidebar-bg: #ffffff;
+            --card-bg: #ffffff;
+            --accent-color: #007bff;
+            --border-color: #e0e0e0;
+            --shadow-color: rgba(0, 0, 0, 0.05);
+            --table-header-bg: #f1f1f1;
+            --theme-toggle-bg: #e0e0e0;
+            --theme-toggle-slider: #fff;
+            --theme-sun-color: #f39c12;
+            --theme-moon-color: #7f8c8d;
+        }
+
+        /* 2. Base Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .page-container {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            grid-template-rows: auto 1fr;
+            grid-template-areas:
+                "header header"
+                "sidebar content";
+            min-height: 100vh;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.75rem; border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-top: 40px; }
+        h3 { font-size: 1.4rem; }
+        h4 { font-size: 1.1rem; }
+
+        p, li {
+            font-size: 1rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 3. Header */
+        header {
+            grid-area: header;
+            background-color: var(--header-bg);
+            padding: 1rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 2px 5px var(--shadow-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* 4. Sidebar Navigation */
+        .sidebar {
+            grid-area: sidebar;
+            background-color: var(--sidebar-bg);
+            padding: 2rem;
+            border-right: 1px solid var(--border-color);
+            position: sticky;
+            top: 75px; /* Height of header */
+            height: calc(100vh - 75px);
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            border-bottom: none;
+            font-size: 1.5rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li a {
+            display: block;
+            padding: 0.5rem 0;
+            color: var(--text-color);
+            font-weight: 400;
+            border-left: 3px solid transparent;
+            padding-left: 10px;
+        }
+
+        .sidebar li a:hover {
+            color: var(--accent-color);
+            background-color: var(--bg-color);
+            border-left: 3px solid var(--accent-color);
+            text-decoration: none;
+        }
+
+        /* 5. Main Content */
+        .content {
+            grid-area: content;
+            padding: 2rem 3rem;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* 6. Components (Cards, Tables) */
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            box-shadow: 0 4px 8px var(--shadow-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px var(--shadow-color);
+        }
+
+        .card.formula {
+            background-color: var(--sidebar-bg);
+            border-left: 5px solid var(--accent-color);
+            font-family: monospace;
+            font-size: 1.1rem;
+        }
+
+        .card ul, .card ol {
+            padding-left: 20px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        thead {
+            background-color: var(--table-header-bg);
+            font-weight: 600;
+        }
+
+        tbody tr:hover {
+            background-color: var(--bg-color);
+        }
+
+        /* 7. Theme Toggle Switch */
+        .theme-toggle-checkbox {
+            display: none; /* Hide the actual checkbox */
+        }
+
+        .theme-toggle-label {
+            background: var(--theme-toggle-bg);
+            border-radius: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            position: relative;
+            height: 26px;
+            width: 50px;
+        }
+
+        .theme-toggle-label .sun, .theme-toggle-label .moon {
+            font-size: 14px;
+            line-height: 1;
+        }
+        .theme-toggle-label .sun { color: var(--theme-sun-color); }
+        .theme-toggle-label .moon { color: var(--theme-moon-color); }
+
+        .theme-toggle-label::after {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 4px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: var(--theme-toggle-slider);
+            transition: transform 0.3s ease;
+        }
+
+        .theme-toggle-checkbox:checked + .page-container {
+            /* This empty selector is for specificity to trigger theme change */
+        }
+
+        /* Logic to apply dark mode to the body */
+        .theme-toggle-checkbox:checked ~ .page-container {
+            --bg-color: #1a1a2e;
+            --text-color: #e0e0e0;
+            --header-bg: #162447;
+            --sidebar-bg: #162447;
+            --card-bg: #1f4068;
+            --accent-color: #17e9e0;
+            --border-color: #3a3a5a;
+            --shadow-color: rgba(0, 0, 0, 0.2);
+            --table-header-bg: #1f4068;
+            --theme-toggle-bg: #1f4068;
+            --theme-toggle-slider: #1a1a2e;
+            --theme-sun-color: #bdc3c7;
+            --theme-moon-color: #f1c40f;
+        }
+
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label::after {
+            transform: translateX(24px);
+        }
+
+
+        /* 8. Responsive Design */
+        @media (max-width: 768px) {
+            .page-container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "content";
+            }
+
+            .sidebar {
+                position: static;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+                padding: 1rem;
+            }
+
+            .sidebar h2 {
+                display: none;
+            }
+
+            .sidebar ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+            }
+            
+            .sidebar li a {
+                padding: 8px 12px;
+                border-radius: 20px;
+                border-left: none;
+                background-color: var(--bg-color);
+            }
+
+            .sidebar li a:hover {
+                background-color: var(--accent-color);
+                color: var(--header-bg);
+            }
+
+            header {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .content {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+
+        // MathJax configuration for rendering LaTeX
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
+    
+    <div class="page-container">
+        <header>
+            <h1>Chapter 11: Oscillations</h1>
+            <label for="theme-toggle" class="theme-toggle-label">
+                <span class="sun">Light</span>
+                <span class="moon">Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#shm">Simple Harmonic Motion</a></li>
+                <li><a href="#energy-shm">Energy in SHM</a></li>
+                <li><a href="#systems">Oscillating Systems</a></li>
+                <li><a href="#damping">Damping</a></li>
+                <li><a href="#resonance">Resonance</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="shm">
+                <h2>Simple Harmonic Motion (SHM)</h2>
+                <p>An oscillation is a repetitive, back-and-forth motion about an equilibrium position. <b>Simple Harmonic Motion (SHM)</b> is the simplest and most fundamental type of oscillation.</p>
+                <div class="card">
+                    <h3>Conditions for SHM</h3>
+                    <p>An object undergoes SHM if it experiences a <b>restoring force</b> that is directly proportional to its displacement from the equilibrium position and always acts towards that position.</p>
+                    <div class="card formula">
+                        <h4>Hooke's Law: F = -kx</h4>
+                        <p>This is the defining condition for SHM.<br>
+                           <b>F</b> = Restoring Force<br>
+                           <b>k</b> = Force constant (a measure of stiffness)<br>
+                           <b>x</b> = Displacement from equilibrium<br>
+                           The negative sign indicates the force is always opposite to the displacement.</p>
+                    </div>
+                </div>
+                <h3>Key Terms in SHM</h3>
+                <table>
+                    <thead>
+                        <tr><th>Term</th><th>Symbol</th><th>Description</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><b>Amplitude</b></td><td>A or x₀</td><td>The maximum displacement from the equilibrium position.</td></tr>
+                        <tr><td><b>Period</b></td><td>T</td><td>The time taken to complete one full oscillation.</td></tr>
+                        <tr><td><b>Frequency</b></td><td>f</td><td>The number of complete oscillations per second (f = 1/T). Unit: Hertz (Hz).</td></tr>
+                        <tr><td><b>Angular Frequency</b></td><td>&omega;</td><td>Related to frequency by &omega; = 2&pi;f. It represents the rate of oscillation in radians per second.</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="energy-shm">
+                <h2>Energy in Simple Harmonic Motion</h2>
+                <p>In SHM, there is a continuous conversion between potential energy and kinetic energy. Assuming no friction, the total mechanical energy of the system is conserved.</p>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Potential Energy (PE)</h3>
+                        <p>The energy stored due to the object's position. For a mass on a spring, this is elastic potential energy.</p>
+                        <div class="card formula"><b>PE = &frac12;kx²</b></div>
+                        <p>PE is maximum at the amplitude (extreme positions) and zero at equilibrium.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Kinetic Energy (KE)</h3>
+                        <p>The energy of motion.</p>
+                        <div class="card formula"><b>KE = &frac12;mv²</b></div>
+                        <p>KE is maximum at the equilibrium position (where speed is greatest) and zero at the amplitude.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Total Mechanical Energy (E)</h3>
+                    <p>The total energy is the sum of KE and PE. It remains constant throughout the motion.</p>
+                    <div class="card formula">
+                        <b>E = KE + PE = &frac12;kA² = Constant</b>
+                    </div>
+                </div>
+            </section>
+
+            <section id="systems">
+                <h2>Examples of Oscillating Systems</h2>
+                <p>Two classic examples of systems that exhibit SHM are the mass-spring system and the simple pendulum.</p>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Mass-Spring System</h3>
+                        <p>A mass attached to a spring oscillating horizontally or vertically. Its motion is described by Hooke's Law.</p>
+                        <div class="card formula">
+                            <b>Period (T) = 2&pi;&radic;(m/k)</b>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Simple Pendulum</h3>
+                        <p>A point mass suspended from a string. For small angles of swing, its motion is approximately SHM.</p>
+                        <div class="card formula">
+                            <b>Period (T) = 2&pi;&radic;(L/g)</b>
+                        </div>
+                        <p>Note: The period of a simple pendulum does not depend on its mass.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="damping">
+                <h2>Damped Oscillations</h2>
+                <p>In real-world systems, friction and air resistance cause the energy of an oscillator to gradually dissipate. This effect is called <b>damping</b>. Damped oscillations are oscillations where the amplitude decreases over time.</p>
+                <div class="card">
+                    <h3>Practical Example: Shock Absorbers</h3>
+                    <p>A car's suspension system uses shock absorbers to create damped oscillations. When the car hits a bump, the springs oscillate, but the shock absorbers quickly dissipate the energy to prevent the car from bouncing up and down for a long time. This is an example of <b>critical damping</b>, where the system returns to equilibrium as quickly as possible without oscillating.</p>
+                </div>
+            </section>
+
+            <section id="resonance">
+                <h2>Forced Oscillations and Resonance</h2>
+                <p><b>Forced oscillations</b> occur when a periodic driving force is applied to an oscillating system. The system is forced to oscillate at the frequency of the driving force.</p>
+                <div class="card">
+                    <h3>Resonance</h3>
+                    <p><b>Resonance</b> is a phenomenon that occurs when the frequency of the driving force is equal or very close to the <b>natural frequency</b> of the oscillating system. When this happens, the system absorbs energy very efficiently from the driving force, leading to a dramatic increase in the amplitude of the oscillations.</p>
+                    <h4>Examples of Resonance:</h4>
+                    <ul>
+                        <li><b>Pushing a swing:</b> To get a swing to go higher, you push it in time with its natural frequency.</li>
+                        <li><b>Shattering a glass with sound:</b> If a singer matches the natural frequency of a wine glass, the sound waves can cause the glass to vibrate with such a large amplitude that it shatters.</li>
+                        <li><b>The Tacoma Narrows Bridge collapse:</b> Wind provided a periodic driving force that matched the bridge's natural frequency, leading to a catastrophic structural failure.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <p>Oscillations are a fundamental type of motion found everywhere in nature and technology.</p>
+                <div class="card">
+                    <ul>
+                        <li><b>Simple Harmonic Motion (SHM)</b> is a special type of oscillation where the restoring force is proportional to the displacement (<b>F = -kx</b>).</li>
+                        <li>The key parameters of SHM are <b>amplitude</b>, <b>period (T)</b>, and <b>frequency (f)</b>.</li>
+                        <li>In SHM, energy is continuously converted between <b>kinetic</b> and <b>potential</b> forms, with the total mechanical energy remaining constant (in the absence of friction).</li>
+                        <li>The periods of a <b>mass-spring system (T = 2&pi;&radic;(m/k))</b> and a <b>simple pendulum (T = 2&pi;&radic;(L/g))</b> depend on their physical properties.</li>
+                        <li><b>Damping</b> is the gradual decrease in amplitude of an oscillation due to energy loss from forces like friction.</li>
+                        <li><b>Resonance</b> is the large increase in amplitude that occurs when a system is driven at its natural frequency.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

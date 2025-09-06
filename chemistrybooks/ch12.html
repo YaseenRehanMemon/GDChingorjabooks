@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 12: Electrochemistry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f4f7f9; --text-color: #333; --header-bg: #ffffff; --sidebar-bg: #ffffff;
+            --card-bg: #ffffff; --accent-color: #6c757d; /* Gray accent */ --border-color: #e0e0e0;
+            --shadow-color: rgba(0, 0, 0, 0.05); --table-header-bg: #f1f1f1; --theme-toggle-bg: #e0e0e0;
+            --theme-toggle-slider: #fff; --theme-sun-color: #f39c12; --theme-moon-color: #7f8c8d;
+        }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--bg-color); color: var(--text-color); margin: 0; line-height: 1.6; transition: background-color 0.3s, color 0.3s; }
+        .page-container { display: grid; grid-template-columns: 240px 1fr; grid-template-rows: auto 1fr; grid-template-areas: "header header" "sidebar content"; min-height: 100vh; }
+        h1, h2, h3, h4 { color: var(--accent-color); font-weight: 600; }
+        h1 { font-size: 2rem; } h2 { font-size: 1.75rem; border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-top: 40px; } h3 { font-size: 1.4rem; } h4 { font-size: 1.1rem; }
+        p, li { font-size: 1rem; } a { color: var(--accent-color); text-decoration: none; transition: color 0.2s; } a:hover { text-decoration: underline; }
+        header { grid-area: header; background-color: var(--header-bg); padding: 1rem 2rem; border-bottom: 1px solid var(--border-color); box-shadow: 0 2px 5px var(--shadow-color); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .sidebar { grid-area: sidebar; background-color: var(--sidebar-bg); padding: 2rem; border-right: 1px solid var(--border-color); position: sticky; top: 75px; height: calc(100vh - 75px); overflow-y: auto; }
+        .sidebar h2 { margin-top: 0; border-bottom: none; font-size: 1.5rem; } .sidebar ul { list-style: none; padding: 0; }
+        .sidebar li a { display: block; padding: 0.5rem 0; color: var(--text-color); font-weight: 400; border-left: 3px solid transparent; padding-left: 10px; }
+        .sidebar li a:hover { color: var(--accent-color); background-color: var(--bg-color); border-left: 3px solid var(--accent-color); text-decoration: none; }
+        .content { grid-area: content; padding: 2rem 3rem; } section { margin-bottom: 40px; }
+        .card { background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; margin-top: 1rem; box-shadow: 0 4px 8px var(--shadow-color); transition: transform 0.2s, box-shadow 0.2s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 6px 12px var(--shadow-color); }
+        .card.formula { background-color: var(--sidebar-bg); border-left: 5px solid var(--accent-color); font-family: monospace; font-size: 1.1rem; }
+        .card ul, .card ol { padding-left: 20px; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label { background: var(--theme-toggle-bg); border-radius: 50px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; padding: 5px; position: relative; height: 26px; width: 50px; }
+        .theme-toggle-label .sun, .theme-toggle-label .moon { font-size: 14px; line-height: 1; }
+        .theme-toggle-label .sun { color: var(--theme-sun-color); } .theme-toggle-label .moon { color: var(--theme-moon-color); }
+        .theme-toggle-label::after { content: ''; position: absolute; top: 3px; left: 4px; width: 20px; height: 20px; border-radius: 50%; background-color: var(--theme-toggle-slider); transition: transform 0.3s ease; }
+        .theme-toggle-checkbox:checked ~ .page-container { --bg-color: #1a1a2e; --text-color: #e0e0e0; --header-bg: #162447; --sidebar-bg: #162447; --card-bg: #1f4068; --accent-color: #adb5bd; --border-color: #3a3a5a; --shadow-color: rgba(0, 0, 0, 0.2); --table-header-bg: #1f4068; --theme-toggle-bg: #1f4068; --theme-toggle-slider: #1a1a2e; --theme-sun-color: #bdc3c7; --theme-moon-color: #f1c40f; }
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label::after { transform: translateX(24px); }
+        @media (max-width: 768px) { .page-container { grid-template-columns: 1fr; grid-template-areas: "header" "sidebar" "content"; } .sidebar { position: static; height: auto; border-right: none; border-bottom: 1px solid var(--border-color); padding: 1rem; } .sidebar h2 { display: none; } .sidebar ul { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; } .sidebar li a { padding: 8px 12px; border-radius: 20px; border-left: none; background-color: var(--bg-color); } .sidebar li a:hover { background-color: var(--accent-color); color: var(--header-bg); } header { padding: 1rem; } h1 { font-size: 1.5rem; } .content { padding: 1.5rem; } }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header><h1>Chapter 12: Electrochemistry</h1><label for="theme-toggle" class="theme-toggle-label"><span class="sun">Light</span><span class="moon">Dark</span></label></header>
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Redox Reactions</a></li>
+                <li><a href="#cells">Electrochemical Cells</a></li>
+                <li><a href="#batteries">Batteries</a></li>
+                <li><a href="#corrosion">Corrosion</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <section id="intro">
+                <h2>Redox Reactions</h2>
+                <p><strong>Electrochemistry</strong> is the study of the relationship between chemical reactions and electrical energy. It is centered around <strong>oxidation-reduction (redox)</strong> reactions, where electrons are transferred from one substance to another.</p>
+                <div class="card">
+                    <h4>Key Definitions (OIL RIG)</h4>
+                    <ul>
+                        <li><b>Oxidation</b> Is <b>Loss</b> of electrons. The substance that is oxidized is called the <b>reducing agent</b>.</li>
+                        <li><b>Reduction</b> Is <b>Gain</b> of electrons. The substance that is reduced is called the <b>oxidizing agent</b>.</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="cells">
+                <h2>Electrochemical Cells</h2>
+                <p>Electrochemical cells are devices that either generate electrical energy from a spontaneous chemical reaction or use electrical energy to drive a non-spontaneous reaction.</p>
+                <table>
+                    <thead><tr><th>Cell Type</th><th>Energy Conversion</th><th>Spontaneity</th><th>Anode</th><th>Cathode</th><th>Example</th></tr></thead>
+                    <tbody>
+                        <tr><td><b>Galvanic (Voltaic) Cell</b></td><td>Chemical → Electrical</td><td>Spontaneous</td><td>Negative (-)</td><td>Positive (+)</td><td>A typical battery</td></tr>
+                        <tr><td><b>Electrolytic Cell</b></td><td>Electrical → Chemical</td><td>Non-spontaneous</td><td>Positive (+)</td><td>Negative (-)</td><td>Electroplating, Recharging a battery</td></tr>
+                    </tbody>
+                </table>
+                 <div class="card">
+                    <h4>Anodes and Cathodes</h4>
+                    <p>Regardless of the cell type, the definitions of the electrodes remain the same:</p>
+                    <ul>
+                       <li>The <b>Anode</b> is the electrode where <b>Oxidation</b> occurs (<b>An Ox</b>).</li>
+                       <li>The <b>Cathode</b> is the electrode where <b>Reduction</b> occurs (<b>Red Cat</b>).</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="batteries">
+                <h2>Batteries</h2>
+                <p>A battery is a portable, self-contained electrochemical power source, typically consisting of one or more galvanic cells connected in series.</p>
+                <div class="card">
+                    <h4>Primary vs. Secondary Batteries</h4>
+                    <ul>
+                        <li><b>Primary Batteries</b> (e.g., a dry cell) are single-use. The redox reaction cannot be easily reversed, so they are discarded when depleted.</li>
+                        <li><b>Secondary Batteries</b> (e.g., a lead-acid car battery) are rechargeable. The reaction can be reversed by applying an external electric current, restoring the reactants.</li>
+                    </ul>
+                </div>
+                <h3>Fuel Cells</h3>
+                <p>A fuel cell is a special type of galvanic cell where the reactants (like hydrogen and oxygen) are continuously supplied from an external source to produce electricity. They don't store energy; they convert it as long as fuel is available.</p>
+            </section>
+            <section id="corrosion">
+                <h2>Corrosion</h2>
+                <p><strong>Corrosion</strong> is the gradual destruction of a metal through an unwanted electrochemical (redox) process. The most common example is the rusting of iron.</p>
+                <div class="card">
+                    <h4>The Electrochemistry of Rusting</h4>
+                    <p>In the presence of water and oxygen, iron acts as the anode (it is oxidized) while another site on the iron acts as the cathode (where oxygen is reduced). This creates a tiny galvanic cell that leads to the formation of iron(III) oxide, or rust.</p>
+                </div>
+                <h3>Preventing Corrosion</h3>
+                <p>Corrosion can be prevented by several methods:</p>
+                <ul>
+                    <li><b>Protective Coatings:</b> Painting or greasing the metal to prevent contact with air and moisture.</li>
+                    <li><b>Electroplating:</b> Coating the metal with a thin layer of a different, more resistant metal like chromium or tin.</li>
+                    <li><b>Galvanizing:</b> Coating iron with zinc. Since zinc is more easily oxidized than iron, it corrodes first, acting as a "sacrificial" anode.</li>
+                </ul>
+            </section>
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Electrochemistry</b> links chemical reactions to electrical energy through <b>redox reactions</b> (transfer of electrons).</li>
+                        <li><b>Oxidation</b> is the loss of electrons; <b>Reduction</b> is the gain of electrons (OIL RIG).</li>
+                        <li><b>Galvanic Cells</b> (batteries) use spontaneous redox reactions to produce electricity.</li>
+                        <li><b>Electrolytic Cells</b> use electricity to force non-spontaneous reactions to occur (e.g., recharging, electroplating).</li>
+                        <li><b>Batteries</b> can be single-use (primary) or rechargeable (secondary). <b>Fuel cells</b> generate power by continuously consuming fuel.</li>
+                        <li><b>Corrosion</b> (like rusting) is an undesirable electrochemical process that can be prevented with coatings or by using a sacrificial anode (<b>galvanizing</b>).</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

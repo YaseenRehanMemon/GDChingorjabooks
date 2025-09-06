@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4: Gases</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* 1. CSS Variables for Theming */
+        :root {
+            /* Light Theme */
+            --bg-color: #f4f7f9;
+            --text-color: #333;
+            --header-bg: #ffffff;
+            --sidebar-bg: #ffffff;
+            --card-bg: #ffffff;
+            --accent-color: #dc3545; /* Red accent for this chapter */
+            --border-color: #e0e0e0;
+            --shadow-color: rgba(0, 0, 0, 0.05);
+            --table-header-bg: #f1f1f1;
+            --theme-toggle-bg: #e0e0e0;
+            --theme-toggle-slider: #fff;
+            --theme-sun-color: #f39c12;
+            --theme-moon-color: #7f8c8d;
+        }
+
+        /* 2. Base Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .page-container {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            grid-template-rows: auto 1fr;
+            grid-template-areas:
+                "header header"
+                "sidebar content";
+            min-height: 100vh;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.75rem; border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-top: 40px; }
+        h3 { font-size: 1.4rem; }
+        h4 { font-size: 1.1rem; }
+
+        p, li {
+            font-size: 1rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 3. Header */
+        header {
+            grid-area: header;
+            background-color: var(--header-bg);
+            padding: 1rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 2px 5px var(--shadow-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* 4. Sidebar Navigation */
+        .sidebar {
+            grid-area: sidebar;
+            background-color: var(--sidebar-bg);
+            padding: 2rem;
+            border-right: 1px solid var(--border-color);
+            position: sticky;
+            top: 75px; /* Height of header */
+            height: calc(100vh - 75px);
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            border-bottom: none;
+            font-size: 1.5rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li a {
+            display: block;
+            padding: 0.5rem 0;
+            color: var(--text-color);
+            font-weight: 400;
+            border-left: 3px solid transparent;
+            padding-left: 10px;
+        }
+
+        .sidebar li a:hover {
+            color: var(--accent-color);
+            background-color: var(--bg-color);
+            border-left: 3px solid var(--accent-color);
+            text-decoration: none;
+        }
+
+        /* 5. Main Content */
+        .content {
+            grid-area: content;
+            padding: 2rem 3rem;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* 6. Components (Cards, Tables) */
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            box-shadow: 0 4px 8px var(--shadow-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px var(--shadow-color);
+        }
+
+        .card.formula {
+            background-color: var(--sidebar-bg);
+            border-left: 5px solid var(--accent-color);
+            font-family: monospace;
+            font-size: 1.1rem;
+        }
+
+        .card ul, .card ol {
+            padding-left: 20px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        thead {
+            background-color: var(--table-header-bg);
+            font-weight: 600;
+        }
+
+        tbody tr:hover {
+            background-color: var(--bg-color);
+        }
+
+        /* 7. Theme Toggle Switch */
+        .theme-toggle-checkbox {
+            display: none; /* Hide the actual checkbox */
+        }
+
+        .theme-toggle-label {
+            background: var(--theme-toggle-bg);
+            border-radius: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            position: relative;
+            height: 26px;
+            width: 50px;
+        }
+
+        .theme-toggle-label .sun, .theme-toggle-label .moon {
+            font-size: 14px;
+            line-height: 1;
+        }
+        .theme-toggle-label .sun { color: var(--theme-sun-color); }
+        .theme-toggle-label .moon { color: var(--theme-moon-color); }
+
+        .theme-toggle-label::after {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 4px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: var(--theme-toggle-slider);
+            transition: transform 0.3s ease;
+        }
+        
+        .theme-toggle-checkbox:checked ~ .page-container {
+            --bg-color: #1a1a2e;
+            --text-color: #e0e0e0;
+            --header-bg: #162447;
+            --sidebar-bg: #162447;
+            --card-bg: #1f4068;
+            --accent-color: #e74c3c;
+            --border-color: #3a3a5a;
+            --shadow-color: rgba(0, 0, 0, 0.2);
+            --table-header-bg: #1f4068;
+            --theme-toggle-bg: #1f4068;
+            --theme-toggle-slider: #1a1a2e;
+            --theme-sun-color: #bdc3c7;
+            --theme-moon-color: #f1c40f;
+        }
+
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label::after {
+            transform: translateX(24px);
+        }
+
+        /* 8. Responsive Design */
+        @media (max-width: 768px) {
+            .page-container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "content";
+            }
+            .sidebar {
+                position: static; height: auto; border-right: none;
+                border-bottom: 1px solid var(--border-color); padding: 1rem;
+            }
+            .sidebar h2 { display: none; }
+            .sidebar ul {
+                display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
+            }
+            .sidebar li a {
+                padding: 8px 12px; border-radius: 20px; border-left: none; background-color: var(--bg-color);
+            }
+            .sidebar li a:hover {
+                background-color: var(--accent-color); color: var(--header-bg);
+            }
+            header { padding: 1rem; }
+            h1 { font-size: 1.5rem; }
+            .content { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
+    
+    <div class="page-container">
+        <header>
+            <h1>Chapter 4: Gases</h1>
+            <label for="theme-toggle" class="theme-toggle-label">
+                <span class="sun">Light</span>
+                <span class="moon">Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Properties of Gases</a></li>
+                <li><a href="#kmt">Kinetic Molecular Theory</a></li>
+                <li><a href="#gas-laws">The Gas Laws</a></li>
+                <li><a href="#ideal-gas">Ideal Gas Law</a></li>
+                <li><a href="#real-gases">Real Gases</a></li>
+                <li><a href="#other-laws">Other Gas Laws</a></li>
+                <li><a href="#plasma">Plasma</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>Properties of Gases</h2>
+                <p>Gases are a unique state of matter. Unlike solids and liquids, gases have no fixed shape or volume. Their particles are far apart and move rapidly and randomly, allowing them to expand to fill any container they occupy. This behavior is governed by a set of physical laws that we will explore in this chapter.</p>
+            </section>
+
+            <section id="kmt">
+                <h2>The Kinetic Molecular Theory of Gases (KMT)</h2>
+                <p>The KMT is a model that helps explain the behavior of gases. It is based on a series of assumptions about gas particles.</p>
+                <div class="card">
+                    <h3>Core Postulates of KMT</h3>
+                    <ul>
+                        <li><b>Particle Motion:</b> Gases consist of tiny particles (atoms or molecules) that are in continuous, random, straight-line motion.</li>
+                        <li><b>Particle Volume:</b> The volume of the individual gas particles is negligible compared to the total volume of the container.</li>
+                        <li><b>Intermolecular Forces:</b> There are no significant attractive or repulsive forces between gas particles.</li>
+                        <li><b>Collisions:</b> Collisions between particles (and with the container walls) are perfectly elastic, meaning kinetic energy is conserved.</li>
+                        <li><b>Kinetic Energy & Temperature:</b> The average kinetic energy of the gas particles is directly proportional to the absolute temperature (in Kelvin).</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="gas-laws">
+                <h2>The Fundamental Gas Laws</h2>
+                <p>Several laws describe the relationships between the four main properties of a gas: pressure (P), volume (V), temperature (T), and the number of moles (n).</p>
+
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Boyle's Law</h3>
+                        <p>At constant temperature, the volume of a gas is inversely proportional to its pressure. (As pressure increases, volume decreases).</p>
+                        <div class="card formula">
+                           <b>P₁V₁ = P₂V₂</b>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Charles's Law</h3>
+                        <p>At constant pressure, the volume of a gas is directly proportional to its absolute temperature (in Kelvin). (As temperature increases, volume increases).</p>
+                        <div class="card formula">
+                           <b>\frac{V₁}{T₁} = \frac{V₂}{T₂}</b>
+                        </div>
+                    </div>
+                     <div class="card">
+                        <h3>Avogadro's Law</h3>
+                        <p>At constant temperature and pressure, the volume of a gas is directly proportional to the number of moles. (More gas means more volume).</p>
+                        <div class="card formula">
+                           <b>\frac{V₁}{n₁} = \frac{V₂}{n₂}</b>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="ideal-gas">
+                <h2>The Ideal Gas Law</h2>
+                <p>The three fundamental gas laws can be combined into a single, more powerful equation known as the Ideal Gas Law. It describes the state of a hypothetical "ideal" gas.</p>
+                
+                <div class="card formula">
+                    <h4>Formula: PV = nRT</h4>
+                    <p><b>P</b> = Pressure (in atm, kPa, etc.)<br>
+                       <b>V</b> = Volume (in Liters, L)<br>
+                       <b>n</b> = Number of Moles (mol)<br>
+                       <b>R</b> = The Ideal Gas Constant (e.g., 0.0821 L·atm/mol·K)<br>
+                       <b>T</b> = Temperature (<b>must be in Kelvin, K</b>)
+                    </p>
+                </div>
+                <div class="card">
+                    <h4>What is an Ideal Gas?</h4>
+                    <p>An ideal gas is a theoretical gas that perfectly follows all the postulates of the KMT. While no real gas is truly ideal, most gases behave very closely to ideal at <strong>low pressure</strong> and <strong>high temperature</strong>.</p>
+                </div>
+            </section>
+
+            <section id="real-gases">
+                <h2>Real Gases: Deviation from Ideal Behavior</h2>
+                <p>Real gases deviate from ideal behavior because two of the KMT assumptions are not always true:</p>
+                <div class="card">
+                    <h3>Why Real Gases Deviate</h3>
+                    <ol>
+                        <li><b>Real particles have volume:</b> At high pressures, the particles are squeezed so close together that their own volume becomes significant compared to the container volume.</li>
+                        <li><b>Real particles have attractions:</b> At low temperatures, particles move slowly enough that intermolecular forces (attractions) become significant and pull the particles together.</li>
+                    </ol>
+                    <p>The <strong>Van der Waals equation</strong> is a modified version of the ideal gas law that accounts for these factors in real gases.</p>
+                </div>
+            </section>
+            
+             <section id="other-laws">
+                <h2>Other Important Gas Laws</h2>
+                <p>Two other laws are essential for understanding gas mixtures and movement.</p>
+                 <div class="card">
+                    <h3>Dalton's Law of Partial Pressures</h3>
+                    <p>The total pressure of a mixture of gases is equal to the sum of the partial pressures of the individual gases.</p>
+                     <div class="card formula">
+                        <b>P<sub>total</sub> = P₁ + P₂ + P₃ + ...</b>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Graham's Law of Effusion</h3>
+                    <p>The rate of effusion (or diffusion) of a gas is inversely proportional to the square root of its molar mass. In simple terms: <strong>lighter gases move faster</strong>.</p>
+                </div>
+            </section>
+
+            <section id="plasma">
+                <h2>Plasma: The Fourth State of Matter</h2>
+                <p>Beyond solid, liquid, and gas, there is a fourth state of matter: <strong>plasma</strong>. Plasma is formed when a gas is heated to extremely high temperatures, causing electrons to be stripped from the atoms.</p>
+                 <div class="card">
+                    <h4>What is Plasma?</h4>
+                    <p>Plasma is an ionized gas consisting of a mixture of positive ions and free electrons. It is the most abundant state of matter in the universe.</p>
+                    <ul>
+                        <li><b>Examples:</b> The Sun and other stars, lightning, the aurora borealis, and the gas inside a neon sign.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <p>This chapter covered the properties and behaviors of gases, explained by the Kinetic Molecular Theory and a set of fundamental laws.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Concept</th>
+                            <th>Key Idea</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Kinetic Molecular Theory</b></td>
+                            <td>A model explaining gas behavior based on particle motion, volume, forces, collisions, and energy.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Gas Laws</b></td>
+                            <td>Boyle's (P-V), Charles's (V-T), and Avogadro's (V-n) laws describe the relationships between gas properties.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Ideal Gas Law</b></td>
+                            <td>The combined equation <b>PV = nRT</b> relates all four gas properties.</td>
+                        </tr>
+                         <tr>
+                            <td><b>Real Gases</b></td>
+                            <td>Deviate from ideal behavior at high pressure and low temperature due to particle volume and attractions.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Dalton's & Graham's Laws</b></td>
+                            <td>Govern the behavior of gas mixtures (partial pressures) and gas movement (diffusion/effusion).</td>
+                        </tr>
+                        <tr>
+                            <td><b>Plasma</b></td>
+                            <td>The fourth state of matter, an ionized gas found in stars and lightning.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

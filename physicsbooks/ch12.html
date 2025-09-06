@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 12: Acoustics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* 1. CSS Variables for Theming */
+        :root {
+            /* Light Theme */
+            --bg-color: #f4f7f9;
+            --text-color: #333;
+            --header-bg: #ffffff;
+            --sidebar-bg: #ffffff;
+            --card-bg: #ffffff;
+            --accent-color: #007bff;
+            --border-color: #e0e0e0;
+            --shadow-color: rgba(0, 0, 0, 0.05);
+            --table-header-bg: #f1f1f1;
+            --theme-toggle-bg: #e0e0e0;
+            --theme-toggle-slider: #fff;
+            --theme-sun-color: #f39c12;
+            --theme-moon-color: #7f8c8d;
+        }
+
+        /* 2. Base Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .page-container {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            grid-template-rows: auto 1fr;
+            grid-template-areas:
+                "header header"
+                "sidebar content";
+            min-height: 100vh;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.75rem; border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-top: 40px; }
+        h3 { font-size: 1.4rem; }
+        h4 { font-size: 1.1rem; }
+
+        p, li {
+            font-size: 1rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 3. Header */
+        header {
+            grid-area: header;
+            background-color: var(--header-bg);
+            padding: 1rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 2px 5px var(--shadow-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* 4. Sidebar Navigation */
+        .sidebar {
+            grid-area: sidebar;
+            background-color: var(--sidebar-bg);
+            padding: 2rem;
+            border-right: 1px solid var(--border-color);
+            position: sticky;
+            top: 75px; /* Height of header */
+            height: calc(100vh - 75px);
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            border-bottom: none;
+            font-size: 1.5rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li a {
+            display: block;
+            padding: 0.5rem 0;
+            color: var(--text-color);
+            font-weight: 400;
+            border-left: 3px solid transparent;
+            padding-left: 10px;
+        }
+
+        .sidebar li a:hover {
+            color: var(--accent-color);
+            background-color: var(--bg-color);
+            border-left: 3px solid var(--accent-color);
+            text-decoration: none;
+        }
+
+        /* 5. Main Content */
+        .content {
+            grid-area: content;
+            padding: 2rem 3rem;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* 6. Components (Cards, Tables) */
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            box-shadow: 0 4px 8px var(--shadow-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px var(--shadow-color);
+        }
+
+        .card.formula {
+            background-color: var(--sidebar-bg);
+            border-left: 5px solid var(--accent-color);
+            font-family: monospace;
+            font-size: 1.1rem;
+        }
+
+        .card ul, .card ol {
+            padding-left: 20px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        thead {
+            background-color: var(--table-header-bg);
+            font-weight: 600;
+        }
+
+        tbody tr:hover {
+            background-color: var(--bg-color);
+        }
+
+        /* 7. Theme Toggle Switch */
+        .theme-toggle-checkbox {
+            display: none; /* Hide the actual checkbox */
+        }
+
+        .theme-toggle-label {
+            background: var(--theme-toggle-bg);
+            border-radius: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            position: relative;
+            height: 26px;
+            width: 50px;
+        }
+
+        .theme-toggle-label .sun, .theme-toggle-label .moon {
+            font-size: 14px;
+            line-height: 1;
+        }
+        .theme-toggle-label .sun { color: var(--theme-sun-color); }
+        .theme-toggle-label .moon { color: var(--theme-moon-color); }
+
+        .theme-toggle-label::after {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 4px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: var(--theme-toggle-slider);
+            transition: transform 0.3s ease;
+        }
+
+        .theme-toggle-checkbox:checked + .page-container {
+            /* This empty selector is for specificity to trigger theme change */
+        }
+
+        /* Logic to apply dark mode to the body */
+        .theme-toggle-checkbox:checked ~ .page-container {
+            --bg-color: #1a1a2e;
+            --text-color: #e0e0e0;
+            --header-bg: #162447;
+            --sidebar-bg: #162447;
+            --card-bg: #1f4068;
+            --accent-color: #17e9e0;
+            --border-color: #3a3a5a;
+            --shadow-color: rgba(0, 0, 0, 0.2);
+            --table-header-bg: #1f4068;
+            --theme-toggle-bg: #1f4068;
+            --theme-toggle-slider: #1a1a2e;
+            --theme-sun-color: #bdc3c7;
+            --theme-moon-color: #f1c40f;
+        }
+
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label::after {
+            transform: translateX(24px);
+        }
+
+
+        /* 8. Responsive Design */
+        @media (max-width: 768px) {
+            .page-container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "content";
+            }
+
+            .sidebar {
+                position: static;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+                padding: 1rem;
+            }
+
+            .sidebar h2 {
+                display: none;
+            }
+
+            .sidebar ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+            }
+            
+            .sidebar li a {
+                padding: 8px 12px;
+                border-radius: 20px;
+                border-left: none;
+                background-color: var(--bg-color);
+            }
+
+            .sidebar li a:hover {
+                background-color: var(--accent-color);
+                color: var(--header-bg);
+            }
+
+            header {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .content {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+
+        // MathJax configuration for rendering LaTeX
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
+    
+    <div class="page-container">
+        <header>
+            <h1>Chapter 12: Acoustics</h1>
+            <label for="theme-toggle" class="theme-toggle-label">
+                <span class="sun">Light</span>
+                <span class="moon">Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#sound-waves">Sound Waves</a></li>
+                <li><a href="#speed">Speed of Sound</a></li>
+                <li><a href="#interference">Interference & Beats</a></li>
+                <li><a href="#standing-waves">Standing Waves</a></li>
+                <li><a href="#doppler">The Doppler Effect</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="sound-waves">
+                <h2>Sound Waves</h2>
+                <p><b>Sound</b> is a mechanical wave that propagates through a medium (like air, water, or solids) as vibrations. Specifically, it is a <b>longitudinal wave</b>, meaning the particles of the medium vibrate parallel to the direction of wave travel.</p>
+                <div class="card">
+                    <h3>Characteristics of Sound</h3>
+                    <ul>
+                        <li><b>Production:</b> Sound is produced by vibrating objects (e.g., vocal cords, guitar strings, speaker cones).</li>
+                        <li><b>Propagation:</b> It travels through a medium by creating alternating regions of high pressure (<b>compressions</b>) and low pressure (<b>rarefactions</b>).</li>
+                        <li><b>Medium Requirement:</b> Sound cannot travel in a vacuum because there are no particles to vibrate.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="speed">
+                <h2>Speed of Sound</h2>
+                <p>The speed of sound depends on the properties of the medium it is traveling through, primarily its elasticity and density.</p>
+                <div class="card formula">
+                    <h4>General Formula: v = &radic;(Elastic Modulus / Density)</h4>
+                </div>
+                <h3>Factors Affecting the Speed of Sound in Air</h3>
+                <ul>
+                    <li><b>Temperature:</b> The speed of sound increases as the temperature increases. At 0°C, the speed is about 331 m/s; it increases by about 0.6 m/s for every 1°C rise.</li>
+                    <li><b>Density:</b> Sound travels faster in less dense media.</li>
+                    <li><b>Medium:</b> Sound travels fastest in solids, slower in liquids, and slowest in gases because of the differences in particle spacing and intermolecular forces.</li>
+                </ul>
+                <div class="card">
+                    <h3>Newton's Formula & Laplace's Correction</h3>
+                    <p>Newton initially assumed the propagation of sound was an isothermal (constant temperature) process, which gave a value about 16% lower than the experimental speed. Laplace corrected this by proposing that the process is <b>adiabatic</b> (no heat exchange), as the compressions and rarefactions happen too quickly. This correction led to the accurate formula for the speed of sound.</p>
+                </div>
+            </section>
+
+            <section id="interference">
+                <h2>Interference and Beats</h2>
+                <p>When two or more sound waves overlap, they interfere with each other according to the principle of superposition.</p>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Constructive Interference</h3>
+                        <p>Occurs when waves are in phase (crest meets crest). The resultant amplitude is the sum of the individual amplitudes, resulting in a louder sound.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Destructive Interference</h3>
+                        <p>Occurs when waves are out of phase (crest meets trough). The resultant amplitude is the difference of the individual amplitudes, resulting in a softer sound. If amplitudes are equal, it results in silence.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Beats</h3>
+                    <p><b>Beats</b> are the periodic variations in loudness (amplitude) produced by the interference of two sound waves with slightly different frequencies. The number of beats heard per second is equal to the difference between the two frequencies.</p>
+                    <div class="card formula">
+                        <b>f<sub>beat</sub> = |f₁ - f₂|</b>
+                    </div>
+                    <p>This phenomenon is used to tune musical instruments.</p>
+                </div>
+            </section>
+            
+            <section id="standing-waves">
+                <h2>Standing Waves in Sound</h2>
+                <p>A <b>standing wave</b> is formed from the interference of two waves traveling in opposite directions. In sound, this occurs when waves reflect from a boundary, such as in an organ pipe or on a guitar string.</p>
+                <div class="card">
+                    <h3>Nodes and Antinodes</h3>
+                    <ul>
+                        <li><b>Nodes:</b> Points of zero amplitude (destructive interference).</li>
+                        <li><b>Antinodes:</b> Points of maximum amplitude (constructive interference).</li>
+                    </ul>
+                    <h3>Modes of Vibration (Harmonics)</h3>
+                    <p>Strings and air columns can vibrate at specific frequencies called harmonics or overtones.
+                        <ul>
+                            <li><b>Fundamental Frequency (First Harmonic):</b> The lowest possible frequency of vibration.</li>
+                            <li><b>Overtones:</b> Higher frequencies, which are integer multiples of the fundamental.</li>
+                        </ul>
+                    </p>
+                </div>
+            </section>
+
+            <section id="doppler">
+                <h2>The Doppler Effect</h2>
+                <p>The <b>Doppler effect</b> is the apparent change in the frequency of a wave in relation to an observer who is moving relative to the wave source. It is the reason the pitch of a siren changes as an ambulance passes you.</p>
+                <div class="card">
+                    <h3>Key Scenarios</h3>
+                    <ul>
+                        <li><b>Source Moving Towards Observer:</b> The observer perceives a <b>higher frequency</b> (higher pitch).</li>
+                        <li><b>Source Moving Away From Observer:</b> The observer perceives a <b>lower frequency</b> (lower pitch).</li>
+                    </ul>
+                    <h4>Applications:</h4>
+                    <p>The Doppler effect is used in many technologies, including RADAR for weather forecasting and speed detection, SONAR for mapping the ocean floor, and in astronomy to determine the motion of stars and galaxies.</p>
+                </div>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <p>Acoustics is the study of sound, a longitudinal mechanical wave that requires a medium to travel.</p>
+                <div class="card">
+                    <ul>
+                        <li>The <b>speed of sound</b> depends on the medium's elasticity, density, and temperature.</li>
+                        <li><b>Interference</b> occurs when sound waves overlap. Interference of two waves with slightly different frequencies produces <b>beats</b> (<b>f<sub>beat</sub> = |f₁ - f₂|</b>).</li>
+                        <li><b>Standing waves</b> are produced by the interference of a wave with its reflection, creating points of no vibration (nodes) and maximum vibration (antinodes). They are responsible for the sounds made by musical instruments.</li>
+                        <li>The <b>Doppler effect</b> is the observed change in frequency due to relative motion between a sound source and an observer. The frequency increases as they approach and decreases as they move apart.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+

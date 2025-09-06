@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3: Dynamics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* 1. CSS Variables for Theming */
+        :root {
+            /* Light Theme */
+            --bg-color: #f4f7f9;
+            --text-color: #333;
+            --header-bg: #ffffff;
+            --sidebar-bg: #ffffff;
+            --card-bg: #ffffff;
+            --accent-color: #007bff;
+            --border-color: #e0e0e0;
+            --shadow-color: rgba(0, 0, 0, 0.05);
+            --table-header-bg: #f1f1f1;
+            --theme-toggle-bg: #e0e0e0;
+            --theme-toggle-slider: #fff;
+            --theme-sun-color: #f39c12;
+            --theme-moon-color: #7f8c8d;
+        }
+
+        /* 2. Base Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .page-container {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            grid-template-rows: auto 1fr;
+            grid-template-areas:
+                "header header"
+                "sidebar content";
+            min-height: 100vh;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.75rem; border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-top: 40px; }
+        h3 { font-size: 1.4rem; }
+        h4 { font-size: 1.1rem; }
+
+        p, li {
+            font-size: 1rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 3. Header */
+        header {
+            grid-area: header;
+            background-color: var(--header-bg);
+            padding: 1rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 2px 5px var(--shadow-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* 4. Sidebar Navigation */
+        .sidebar {
+            grid-area: sidebar;
+            background-color: var(--sidebar-bg);
+            padding: 2rem;
+            border-right: 1px solid var(--border-color);
+            position: sticky;
+            top: 75px; /* Height of header */
+            height: calc(100vh - 75px);
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            border-bottom: none;
+            font-size: 1.5rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li a {
+            display: block;
+            padding: 0.5rem 0;
+            color: var(--text-color);
+            font-weight: 400;
+            border-left: 3px solid transparent;
+            padding-left: 10px;
+        }
+
+        .sidebar li a:hover {
+            color: var(--accent-color);
+            background-color: var(--bg-color);
+            border-left: 3px solid var(--accent-color);
+            text-decoration: none;
+        }
+
+        /* 5. Main Content */
+        .content {
+            grid-area: content;
+            padding: 2rem 3rem;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* 6. Components (Cards, Tables) */
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            box-shadow: 0 4px 8px var(--shadow-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px var(--shadow-color);
+        }
+
+        .card.formula {
+            background-color: var(--sidebar-bg);
+            border-left: 5px solid var(--accent-color);
+            font-family: monospace;
+            font-size: 1.1rem;
+        }
+
+        .card ul, .card ol {
+            padding-left: 20px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        thead {
+            background-color: var(--table-header-bg);
+            font-weight: 600;
+        }
+
+        tbody tr:hover {
+            background-color: var(--bg-color);
+        }
+
+        /* 7. Theme Toggle Switch */
+        .theme-toggle-checkbox {
+            display: none; /* Hide the actual checkbox */
+        }
+
+        .theme-toggle-label {
+            background: var(--theme-toggle-bg);
+            border-radius: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            position: relative;
+            height: 26px;
+            width: 50px;
+        }
+
+        .theme-toggle-label .sun, .theme-toggle-label .moon {
+            font-size: 14px;
+            line-height: 1;
+        }
+        .theme-toggle-label .sun { color: var(--theme-sun-color); }
+        .theme-toggle-label .moon { color: var(--theme-moon-color); }
+
+        .theme-toggle-label::after {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 4px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: var(--theme-toggle-slider);
+            transition: transform 0.3s ease;
+        }
+
+        .theme-toggle-checkbox:checked + .page-container {
+            /* This empty selector is for specificity to trigger theme change */
+        }
+
+        /* Logic to apply dark mode to the body */
+        .theme-toggle-checkbox:checked ~ .page-container {
+            --bg-color: #1a1a2e;
+            --text-color: #e0e0e0;
+            --header-bg: #162447;
+            --sidebar-bg: #162447;
+            --card-bg: #1f4068;
+            --accent-color: #17e9e0;
+            --border-color: #3a3a5a;
+            --shadow-color: rgba(0, 0, 0, 0.2);
+            --table-header-bg: #1f4068;
+            --theme-toggle-bg: #1f4068;
+            --theme-toggle-slider: #1a1a2e;
+            --theme-sun-color: #bdc3c7;
+            --theme-moon-color: #f1c40f;
+        }
+
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label::after {
+            transform: translateX(24px);
+        }
+
+
+        /* 8. Responsive Design */
+        @media (max-width: 768px) {
+            .page-container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "content";
+            }
+
+            .sidebar {
+                position: static;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+                padding: 1rem;
+            }
+
+            .sidebar h2 {
+                display: none;
+            }
+
+            .sidebar ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+            }
+            
+            .sidebar li a {
+                padding: 8px 12px;
+                border-radius: 20px;
+                border-left: none;
+                background-color: var(--bg-color);
+            }
+
+            .sidebar li a:hover {
+                background-color: var(--accent-color);
+                color: var(--header-bg);
+            }
+
+            header {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .content {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+
+        // MathJax configuration for rendering LaTeX
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
+    
+    <div class="page-container">
+        <header>
+            <h1>Chapter 3: Dynamics</h1>
+            <label for="theme-toggle" class="theme-toggle-label">
+                <span class="sun">Light</span>
+                <span class="moon">Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">What is Dynamics?</a></li>
+                <li><a href="#newtons-laws">Newton's Laws of Motion</a></li>
+                <li><a href="#momentum-impulse">Momentum & Impulse</a></li>
+                <li><a href="#collisions">Collisions</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>What is Dynamics?</h2>
+                <p>Dynamics is the branch of mechanics that studies why objects move the way they do. It focuses on **forces** and how they cause changes in motion (acceleration). While kinematics describes motion, dynamics explains the causes behind it.</p>
+            </section>
+
+            <section id="newtons-laws">
+                <h2>Newton's Laws of Motion</h2>
+                <p>Sir Isaac Newton formulated three fundamental laws that form the foundation of classical mechanics. They explain the relationship between a physical object and the forces acting upon it.</p>
+                
+                <div class="card">
+                    <h3>1. Newton's First Law: The Law of Inertia</h3>
+                    <p>An object will remain at rest or in uniform motion in a straight line unless acted upon by a net external force.</p>
+                    <ul>
+                        <li><b>Inertia</b> is the property of a body to resist changes in its state of motion.</li>
+                        <li>The more mass an object has, the more inertia it has. Mass is a measure of inertia.</li>
+                        <li>If you're in a car that suddenly stops, your body continues to move forward because of inertia.</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3>2. Newton's Second Law: Force and Acceleration</h3>
+                    <p>The acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass. The direction of the acceleration is in the direction of the net force.</p>
+                    <div class="card formula">
+                        <h4>Formula: F = ma</h4>
+                        <p><b>F</b> = Net Force (in Newtons, N)<br>
+                           <b>m</b> = Mass (in kilograms, kg)<br>
+                           <b>a</b> = Acceleration (in m/s²)</p>
+                    </div>
+                     <p>This law also defines **weight** as the force of gravity acting on a mass: <b>Weight (W) = mg</b>, where 'g' is the acceleration due to gravity.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>3. Newton's Third Law: Action and Reaction</h3>
+                    <p>For every action, there is an equal and opposite reaction.</p>
+                    <ul>
+                        <li>Forces always occur in pairs. If Object A exerts a force on Object B, then Object B simultaneously exerts an equal and opposite force on Object A.</li>
+                        <li><b>Example:</b> A rocket pushes hot gases downward (action), and the gases push the rocket upward (reaction).</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="momentum-impulse">
+                <h2>Momentum & Impulse</h2>
+                <p>To understand complex interactions like collisions, we need the concepts of momentum and impulse.</p>
+
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Linear Momentum (p)</h3>
+                        <p>Momentum is often called the "quantity of motion." It is the product of an object's mass and its velocity.</p>
+                        <div class="card formula">
+                           <b>p = mv</b>
+                        </div>
+                        <p>Momentum is a vector quantity, meaning it has both magnitude and direction.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Impulse (J)</h3>
+                        <p>Impulse is the change in momentum of an object. It is equal to the force applied multiplied by the time interval over which the force acts.</p>
+                        <div class="card formula">
+                           <b>J = FΔt = Δp</b>
+                        </div>
+                        <p>A large force for a short time can produce the same impulse as a small force for a long time.</p>
+                    </div>
+                </div>
+
+                 <div class="card">
+                    <h3>Relation between Force and Momentum</h3>
+                    <p>Newton's Second Law can also be stated in terms of momentum: "The net force acting on an object is equal to the rate of change of its momentum."</p>
+                    <div class="card formula">
+                       <b>F = Δp / Δt</b>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="collisions">
+                <h2>Collisions</h2>
+                <p>A collision is any event in which two or more bodies exert forces on each other in a relatively short time. The law of conservation of momentum is crucial for analyzing all collisions.</p>
+
+                <div class="card formula">
+                    <h4>Law of Conservation of Linear Momentum</h4>
+                    <p>If no net external force acts on a system, the total linear momentum of the system remains constant.</p>
+                    <b>Total p<sub>initial</sub> = Total p<sub>final</sub></b>
+                    <p>This principle is always true for any isolated collision, whether it's between billiard balls or galaxies.</p>
+                </div>
+
+                <h3>Types of Collisions</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Type of Collision</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Elastic Collision</b></td>
+                            <td>Both momentum and kinetic energy are conserved. Objects bounce off each other perfectly without any loss of energy.</td>
+                            <td>Collisions between billiard balls or atoms.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Inelastic Collision</b></td>
+                            <td>Momentum is conserved, but kinetic energy is not. Some energy is converted into heat, sound, or deformation. If objects stick together, it's a perfectly inelastic collision.</td>
+                            <td>A car crash where the vehicles get damaged; a clay ball hitting a wall and sticking to it.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                 <div class="card">
+                    <h3>Application: How a Rocket Works</h3>
+                    <p>A rocket is a prime example of momentum conservation. It expels hot gas (fuel) at high velocity out of its back. By the law of conservation of momentum, as the gas gains momentum in one direction, the rocket must gain an equal and opposite momentum, pushing it forward. This works even in the vacuum of space because the rocket is not pushing against anything external—it's an isolated system.</p>
+                </div>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <p>Dynamics explains the 'why' behind motion, focusing on forces. Here are the core concepts for revision:</p>
+                <div class="card">
+                    <ul>
+                        <li><b>Newton's First Law:</b> Objects resist changes in motion (inertia). Mass is the measure of inertia.</li>
+                        <li><b>Newton's Second Law:</b> The relationship between force, mass, and acceleration is defined by <b>F = ma</b>. It also defines weight as <b>W = mg</b>.</li>
+                        <li><b>Newton's Third Law:</b> Forces always come in equal and opposite action-reaction pairs.</li>
+                        <li><b>Momentum (p = mv)</b> is the quantity of motion. <b>Impulse (J = FΔt)</b> is the change in momentum.</li>
+                        <li><b>Law of Conservation of Momentum:</b> In any isolated system (like a collision or a rocket firing), the total momentum before the event is equal to the total momentum after.</li>
+                        <li><b>Elastic collisions</b> conserve both momentum and kinetic energy. <b>Inelastic collisions</b> conserve momentum but lose kinetic energy.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

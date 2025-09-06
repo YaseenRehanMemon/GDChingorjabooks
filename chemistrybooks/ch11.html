@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 11: Thermochemistry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f4f7f9; --text-color: #333; --header-bg: #ffffff; --sidebar-bg: #ffffff;
+            --card-bg: #ffffff; --accent-color: #ffc107; /* Amber accent */ --border-color: #e0e0e0;
+            --shadow-color: rgba(0, 0, 0, 0.05); --table-header-bg: #f1f1f1; --theme-toggle-bg: #e0e0e0;
+            --theme-toggle-slider: #fff; --theme-sun-color: #f39c12; --theme-moon-color: #7f8c8d;
+        }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--bg-color); color: var(--text-color); margin: 0; line-height: 1.6; transition: background-color 0.3s, color 0.3s; }
+        .page-container { display: grid; grid-template-columns: 240px 1fr; grid-template-rows: auto 1fr; grid-template-areas: "header header" "sidebar content"; min-height: 100vh; }
+        h1, h2, h3, h4 { color: var(--accent-color); font-weight: 600; }
+        h1 { font-size: 2rem; } h2 { font-size: 1.75rem; border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-top: 40px; } h3 { font-size: 1.4rem; } h4 { font-size: 1.1rem; }
+        p, li { font-size: 1rem; } a { color: var(--accent-color); text-decoration: none; transition: color 0.2s; } a:hover { text-decoration: underline; }
+        header { grid-area: header; background-color: var(--header-bg); padding: 1rem 2rem; border-bottom: 1px solid var(--border-color); box-shadow: 0 2px 5px var(--shadow-color); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .sidebar { grid-area: sidebar; background-color: var(--sidebar-bg); padding: 2rem; border-right: 1px solid var(--border-color); position: sticky; top: 75px; height: calc(100vh - 75px); overflow-y: auto; }
+        .sidebar h2 { margin-top: 0; border-bottom: none; font-size: 1.5rem; } .sidebar ul { list-style: none; padding: 0; }
+        .sidebar li a { display: block; padding: 0.5rem 0; color: var(--text-color); font-weight: 400; border-left: 3px solid transparent; padding-left: 10px; }
+        .sidebar li a:hover { color: var(--accent-color); background-color: var(--bg-color); border-left: 3px solid var(--accent-color); text-decoration: none; }
+        .content { grid-area: content; padding: 2rem 3rem; } section { margin-bottom: 40px; }
+        .card { background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; margin-top: 1rem; box-shadow: 0 4px 8px var(--shadow-color); transition: transform 0.2s, box-shadow 0.2s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 6px 12px var(--shadow-color); }
+        .card.formula { background-color: var(--sidebar-bg); border-left: 5px solid var(--accent-color); font-family: monospace; font-size: 1.1rem; }
+        .card ul, .card ol { padding-left: 20px; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label { background: var(--theme-toggle-bg); border-radius: 50px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; padding: 5px; position: relative; height: 26px; width: 50px; }
+        .theme-toggle-label .sun, .theme-toggle-label .moon { font-size: 14px; line-height: 1; }
+        .theme-toggle-label .sun { color: var(--theme-sun-color); } .theme-toggle-label .moon { color: var(--theme-moon-color); }
+        .theme-toggle-label::after { content: ''; position: absolute; top: 3px; left: 4px; width: 20px; height: 20px; border-radius: 50%; background-color: var(--theme-toggle-slider); transition: transform 0.3s ease; }
+        .theme-toggle-checkbox:checked ~ .page-container { --bg-color: #1a1a2e; --text-color: #e0e0e0; --header-bg: #162447; --sidebar-bg: #162447; --card-bg: #1f4068; --accent-color: #ffca28; --border-color: #3a3a5a; --shadow-color: rgba(0, 0, 0, 0.2); --table-header-bg: #1f4068; --theme-toggle-bg: #1f4068; --theme-toggle-slider: #1a1a2e; --theme-sun-color: #bdc3c7; --theme-moon-color: #f1c40f; }
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label::after { transform: translateX(24px); }
+        @media (max-width: 768px) { .page-container { grid-template-columns: 1fr; grid-template-areas: "header" "sidebar" "content"; } .sidebar { position: static; height: auto; border-right: none; border-bottom: 1px solid var(--border-color); padding: 1rem; } .sidebar h2 { display: none; } .sidebar ul { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; } .sidebar li a { padding: 8px 12px; border-radius: 20px; border-left: none; background-color: var(--bg-color); } .sidebar li a:hover { background-color: var(--accent-color); color: var(--header-bg); } header { padding: 1rem; } h1 { font-size: 1.5rem; } .content { padding: 1.5rem; } }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header><h1>Chapter 11: Thermochemistry</h1><label for="theme-toggle" class="theme-toggle-label"><span class="sun">Light</span><span class="moon">Dark</span></label></header>
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Energy in Reactions</a></li>
+                <li><a href="#first-law">First Law of Thermodynamics</a></li>
+                <li><a href="#enthalpy">Enthalpy</a></li>
+                <li><a href="#hess-law">Hess's Law</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <section id="intro">
+                <h2>Energy in Chemical Reactions</h2>
+                <p><strong>Thermochemistry</strong> is the study of heat changes that accompany chemical reactions and phase transitions. Every chemical reaction involves an energy change, as energy is required to break bonds in reactants and released when new bonds form in products.</p>
+                <div class="card">
+                    <h4>System, Surroundings, and Universe</h4>
+                    <ul>
+                        <li><b>System:</b> The part of the universe we are studying (e.g., the chemicals in a beaker).</li>
+                        <li><b>Surroundings:</b> Everything else in the universe outside the system.</li>
+                        <li><b>Universe</b> = System + Surroundings.</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="first-law">
+                <h2>The First Law of Thermodynamics</h2>
+                <p>This is essentially the <strong>Law of Conservation of Energy</strong> applied to thermodynamic systems. It states that energy cannot be created or destroyed, only transferred or transformed.</p>
+                <div class="card formula">
+                    <h4>ΔE = q + w</h4>
+                    <p><b>ΔE</b> = Change in the system's internal energy<br>
+                       <b>q</b> = Heat added to the system<br>
+                       <b>w</b> = Work done on the system</p>
+                </div>
+            </section>
+            <section id="enthalpy">
+                <h2>Enthalpy (H)</h2>
+                <p><strong>Enthalpy (H)</strong> is a measure of the total heat content of a system at constant pressure. We are usually interested in the <strong>change in enthalpy (ΔH)</strong>, which is the heat absorbed or released during a reaction.</p>
+                <div class="card">
+                    <h4>Exothermic vs. Endothermic Reactions</h4>
+                    <table>
+                        <thead><tr><th>Process</th><th>Description</th><th>Sign of ΔH</th><th>Example</th></tr></thead>
+                        <tbody>
+                            <tr><td><b>Exothermic</b></td><td>The system <b>releases</b> heat into the surroundings (feels hot).</td><td>Negative (<b>-ΔH</b>)</td><td>Combustion of fuel</td></tr>
+                            <tr><td><b>Endothermic</b></td><td>The system <b>absorbs</b> heat from the surroundings (feels cold).</td><td>Positive (<b>+ΔH</b>)</td><td>Melting ice, photosynthesis</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3>Standard Enthalpy of Formation (ΔH°<sub>f</sub>)</h3>
+                <p>The standard enthalpy of formation is the enthalpy change when one mole of a compound is formed from its elements in their standard states (usually at 25°C and 1 atm).</p>
+            </section>
+            <section id="hess-law">
+                <h2>Hess's Law</h2>
+                <p>Enthalpy is a <strong>state function</strong>, meaning the change in enthalpy depends only on the initial and final states, not on the path taken between them.</p>
+                <div class="card">
+                    <h4>Hess's Law of Heat Summation</h4>
+                    <p>If a reaction is carried out in a series of steps, the ΔH for the overall reaction is equal to the sum of the enthalpy changes for the individual steps.</p>
+                    <p>This law is incredibly useful because it allows us to calculate the enthalpy change for a reaction that is difficult to measure directly by using data from other, easier-to-measure reactions.</p>
+                </div>
+                <h4>The Born-Haber Cycle</h4>
+                <p>The Born-Haber cycle is a specific application of Hess's Law used to calculate the lattice energy of an ionic compound, which cannot be measured directly.</p>
+            </section>
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Thermochemistry</b> is the study of heat changes in chemical reactions.</li>
+                        <li>The <b>First Law of Thermodynamics</b> (ΔE = q + w) states that energy is conserved.</li>
+                        <li><b>Enthalpy (ΔH)</b> is the heat absorbed or released in a reaction at constant pressure. <b>Exothermic</b> reactions release heat (-ΔH), while <b>Endothermic</b> reactions absorb heat (+ΔH).</li>
+                        <li><b>Hess's Law</b> states that the total enthalpy change for a reaction is independent of the pathway taken, allowing us to calculate unknown ΔH values by combining known ones.</li>
+                        <li>The <b>Standard Enthalpy of Formation (ΔH°<sub>f</sub>)</b> is a key value used in these calculations.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

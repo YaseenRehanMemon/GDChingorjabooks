@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1: Stoichiometry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
+    
+    <div class="page-container">
+        <header>
+            <h1>Chapter 1: Stoichiometry</h1>
+            <label for="theme-toggle" class="theme-toggle-label">
+                <span class="sun">Light</span>
+                <span class="moon">Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#mole-concept">The Mole Concept</a></li>
+                <li><a href="#calculations">Calculations</a></li>
+                <li><a href="#limiting-reactant">Limiting Reactant</a></li>
+                <li><a href="#yield">Reaction Yield</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>What is Stoichiometry?</h2>
+                <p>Think of a chemical reaction like a recipe. To bake a cake, you need specific amounts of flour, sugar, and eggs. <strong>Stoichiometry</strong> (pronounced stoy-kee-AHM-uh-tree) is the "recipe math" for chemistry. It's the study of the numerical relationships between the reactants (ingredients) and products (the final cake) in a chemical reaction.</p>
+                <div class="card">
+                    <h4>Why is it important?</h4>
+                    <p>Stoichiometry allows chemists and engineers to predict exactly how much product a reaction will create, or how much reactant is needed. This is essential in everything from manufacturing medicine to designing rocket fuel.</p>
+                </div>
+            </section>
+
+            <section id="mole-concept">
+                <h2>The Mole and Avogadro's Number</h2>
+                <p>Atoms are too small to count individually. To solve this, chemists use a unit called the <strong>mole</strong>. It's a specific, very large number that lets us count particles by weighing them.</p>
+                
+                <div class="card">
+                    <h3>The Mole: A Chemist's Dozen</h3>
+                    <p>Just like a "dozen" always means 12, a "mole" always means the same number of particles.</p>
+                    <ul>
+                        <li><b>1 Mole = 6.022 × 10²³ particles</b></li>
+                    </ul>
+                    <p>This huge number is called <strong>Avogadro's Number (Nₐ)</strong>. So, one mole of carbon has 6.022 × 10²³ carbon atoms, and one mole of water has 6.022 × 10²³ water molecules.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Molar Mass: The Bridge to Grams</h3>
+                    <p>The <strong>molar mass</strong> is the mass of one mole of a substance in grams. It's numerically equal to the atomic mass on the periodic table. This is how we connect the invisible world of atoms to the measurable world of grams.</p>
+                     <p><b>Example:</b> Carbon's atomic mass is 12.01 amu. Therefore, its molar mass is 12.01 \frac{g}{mol}. This means 12.01 grams of carbon contains exactly one mole (6.022 × 10²³) of carbon atoms.</p>
+                </div>
+            </section>
+
+            <section id="calculations">
+                <h2>Core Stoichiometric Calculations</h2>
+                <p>Using the mole concept, we can convert between mass, moles, and the number of particles. These are the most fundamental calculations in chemistry.</p>
+
+                <div class="card formula">
+                    <h4>Formula 1: Mass ↔ Moles</h4>
+                    <p>Number of Moles = \frac{Mass (g)}{Molar Mass (g/mol)}</p>
+                </div>
+                <div class="card formula">
+                    <h4>Formula 2: Moles ↔ Particles</h4>
+                    <p>Number of Particles = Moles × (6.022 × 10²³)</p>
+                </div>
+                <div class="card">
+                    <h3>Calculations for Gases at STP</h3>
+                    <p>For gases, it's often easier to measure volume. At <strong>Standard Temperature and Pressure (STP)</strong>, which is 0°C and 1 atm, one mole of any ideal gas occupies a volume of 22.4 liters (or dm³).</p>
+                     <div class="card formula">
+                        <h4>Formula 3: Moles ↔ Gas Volume (at STP)</h4>
+                        <p>Volume (L) = Moles × 22.4 L/mol</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="limiting-reactant">
+                <h2>The Limiting Reactant</h2>
+                <p>In a real reaction, you rarely have the perfect recipe amounts of all reactants. Usually, one reactant gets completely used up before the others. This is the "limiting" factor for the reaction.</p>
+                 <div class="card">
+                    <h3>Key Definitions</h3>
+                    <ul>
+                        <li><b>Limiting Reactant:</b> The reactant that runs out first and determines the maximum amount of product that can be formed.</li>
+                        <li><b>Excess Reactant:</b> The reactant(s) that are leftover after the reaction is complete.</li>
+                    </ul>
+                    <p><b>Analogy:</b> If you have 10 slices of bread and 3 slices of cheese, you can only make 3 sandwiches. The cheese is the <b>limiting reactant</b>.</p>
+                </div>
+            </section>
+
+             <section id="yield">
+                <h2>Reaction Yield</h2>
+                <p>Calculations tell us the perfect, ideal outcome. In the real world, things are less than perfect. This is where we compare our calculated result to our actual result.</p>
+                
+                <div class="card">
+                    <h3>Theoretical vs. Actual Yield</h3>
+                    <ul>
+                        <li><b>Theoretical Yield:</b> The maximum amount of product you can make, calculated from the limiting reactant. This is the "on paper" result.</li>
+                        <li><b>Actual Yield:</b> The amount of product you actually get when you perform the experiment in the lab.</li>
+                    </ul>
+                </div>
+                
+                 <div class="card">
+                    <h3>Percent Yield</h3>
+                    <p>Percent yield is a measure of a reaction's efficiency. It tells you how close your actual yield was to the perfect theoretical yield.</p>
+                    <div class="card formula">
+                       <h4>Percent Yield = \frac{Actual Yield}{Theoretical Yield} × 100%</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <p>Stoichiometry provides the quantitative tools to understand chemical reactions. Here are the core concepts for revision:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Concept</th>
+                            <th>Key Idea</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Stoichiometry</b></td>
+                            <td>The "recipe math" of chemistry, relating amounts of reactants and products.</td>
+                        </tr>
+                        <tr>
+                            <td><b>The Mole</b></td>
+                            <td>A counting unit for particles. 1 mole = 6.022 × 10²³ particles (Avogadro's Number).</td>
+                        </tr>
+                         <tr>
+                            <td><b>Molar Mass</b></td>
+                            <td>The mass of one mole of a substance in grams (g/mol). It connects moles to mass.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Limiting Reactant</b></td>
+                            <td>The reactant that runs out first and controls how much product can be made.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Reaction Yield</b></td>
+                            <td><b>Theoretical Yield</b> is the calculated max product. <b>Actual Yield</b> is the measured result. <b>Percent Yield</b> measures the reaction's efficiency.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

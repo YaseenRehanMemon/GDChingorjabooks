@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 12: Graphs of Trigonometric & Inverse Trigonometric Functions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to the shared stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+        // MathJax configuration (if you choose to include it for rendering LaTeX)
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body style="--accent-color: #00BCD4;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 12: Graphs of Trigonometric & Inverse Trigonometric Functions</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#trig-functions">Trigonometric Functions</a></li>
+                <li><a href="#inverse-trig">Inverse Trigonometric Functions</a></li>
+                <li><a href="#trig-equations">Solving Trigonometric Equations</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="trig-functions">
+                <h2>12.1 Periodicity and Graphs of Trigonometric Functions</h2>
+                <p>Trigonometric functions (sine, cosine, tangent, etc.) describe oscillating behavior and are inherently periodic, meaning their values repeat over a regular interval.</p>
+                
+                <h3>12.1.1 Domain and Range</h3>
+                <div class="card">
+                    <table>
+                        <thead>
+                            <tr><th>Function</th><th>Domain</th><th>Range</th><th>Period</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>\(\sin \theta\)</td><td>\(\mathbb{R}\)</td><td>\([-1, 1]\)</td><td>\(2\pi\)</td></tr>
+                            <tr><td>\(\cos \theta\)</td><td>\(\mathbb{R}\)</td><td>\([-1, 1]\)</td><td>\(2\pi\)</td></tr>
+                            <tr><td>\(\tan \theta\)</td><td>\(\mathbb{R} \setminus \left\{\frac{\pi}{2} + n\pi\right\}\)</td><td>\(\mathbb{R}\)</td><td>\(\pi\)</td></tr>
+                            <tr><td>\(\csc \theta\)</td><td>\(\mathbb{R} \setminus \{n\pi\}\)</td><td>\((-\infty, -1] \cup [1, \infty)\)</td><td>\(2\pi\)</td></tr>
+                            <tr><td>\(\sec \theta\)</td><td>\(\mathbb{R} \setminus \left\{\frac{\pi}{2} + n\pi\right\}\)</td><td>\((-\infty, -1] \cup [1, \infty)\)</td><td>\(2\pi\)</td></tr>
+                            <tr><td>\(\cot \theta\)</td><td>\(\mathbb{R} \setminus \{n\pi\}\)</td><td>\(\mathbb{R}\)</td><td>\(\pi\)</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>12.1.2 Even and Odd Functions</h3>
+                <div class="card">
+                    <ul>
+                        <li><b>Even Functions:</b> \(f(-x) = f(x)\) (e.g., \(\cos x\), \(\sec x\)). Their graphs are symmetric about the y-axis.</li>
+                        <li><b>Odd Functions:</b> \(f(-x) = -f(x)\) (e.g., \(\sin x\), \(\tan x\), \(\csc x\), \(\cot x\)). Their graphs are symmetric about the origin.</li>
+                    </ul>
+                </div>
+                <h3>12.1.3 Periodicity and Amplitude</h3>
+                <p>The <strong>period</strong> of a trigonometric function is the smallest positive value \(P\) for which \(f(x+P) = f(x)\). The <strong>amplitude</strong> is half the distance between the maximum and minimum values of the function.</p>
+                <div class="card formula">
+                    <h4>Period for \(f(kx)\):</h4>
+                    <p>For \(\sin(kx)\), \(\cos(kx)\), \(\csc(kx)\), \(\sec(kx)\), period is \(\frac{2\pi}{|k|}\).</p>
+                    <p>For \(\tan(kx)\), \(\cot(kx)\), period is \(\frac{\pi}{|k|}\).</p>
+                </div>
+            </section>
+
+            <section id="inverse-trig">
+                <h2>12.2 Inverse Trigonometric Functions</h2>
+                <p>Since trigonometric functions are periodic, they are not one-to-one over their entire domain. To define inverse functions, we restrict their domains to create <strong>principal trigonometric functions</strong>, which are bijective.</p>
+
+                <h3>12.2.1 Definitions and Properties</h3>
+                <div class="card">
+                    <ul>
+                        <li><b>Inverse Sine (\(\arcsin x\) or \(\sin^{-1} x\)):</b>
+                            <ul>
+                                <li>Domain: \([-1, 1]\)</li>
+                                <li>Range: \(\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]\)</li>
+                            </ul>
+                        </li>
+                        <li><b>Inverse Cosine (\(\arccos x\) or \(\cos^{-1} x\)):</b>
+                            <ul>
+                                <li>Domain: \([-1, 1]\)</li>
+                                <li>Range: \([0, \pi]\)</li>
+                            </ul>
+                        </li>
+                        <li><b>Inverse Tangent (\(\arctan x\) or \(\tan^{-1} x\)):</b>
+                            <ul>
+                                <li>Domain: \(\mathbb{R}\)</li>
+                                <li>Range: \(\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)\)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>And similarly for \(\sec^{-1}x\), \(\csc^{-1}x\), and \(\cot^{-1}x\).</p>
+                </div>
+                <h3>12.2.2 Addition and Subtraction Formulas for Inverse Trigonometric Functions</h3>
+                <div class="card formula">
+                    <ul>
+                        <li>\(\sin^{-1}A + \sin^{-1}B = \sin^{-1}\left(A\sqrt{1-B^2} + B\sqrt{1-A^2}\right)\)</li>
+                        <li>\(\cos^{-1}A + \cos^{-1}B = \cos^{-1}\left(AB - \sqrt{1-A^2}\sqrt{1-B^2}\right)\)</li>
+                        <li>\(\tan^{-1}A + \tan^{-1}B = \tan^{-1}\left(\frac{A+B}{1-AB}\right)\)</li>
+                    </ul>
+                    <p>(with appropriate conditions on A and B for the formulas to hold true).</p>
+                </div>
+            </section>
+
+            <section id="trig-equations">
+                <h2>12.3 Solving Trigonometric Equations</h2>
+                <p>A <strong>trigonometric equation</strong> is an equation that involves one or more trigonometric functions. Due to the periodic nature of these functions, trigonometric equations often have an infinite number of solutions.</p>
+
+                <h3>12.3.1 General Solution of Trigonometric Equations</h3>
+                <p>To find the general solution, we first find the principal solutions within a specific interval (e.g., \(0 \le \theta < 2\pi\) or \(-\frac{\pi}{2} \le \theta \le \frac{\pi}{2}\)), and then add integer multiples of the function's period.</p>
+                <div class="card">
+                    <h4>Example: Solving \(\sin \theta = k\)</h4>
+                    <p>If \(\sin \theta = k\), where \(|k| \le 1\), and \(\alpha\) is the principal value \(\left(-\frac{\pi}{2} \le \alpha \le \frac{\pi}{2}\right)\), then the general solution is:</p>
+                    \[ \theta = n\pi + (-1)^n \alpha, \quad n \in \mathbb{Z} \]
+                    <h4>Example: Solving \(\cos \theta = k\)</h4>
+                    <p>If \(\cos \theta = k\), where \(|k| \le 1\), and \(\alpha\) is the principal value \((0 \le \alpha \le \pi)\), then the general solution is:</p>
+                    \[ \theta = 2n\pi \pm \alpha, \quad n \in \mathbb{Z} \]
+                    <h4>Example: Solving \(\tan \theta = k\)</h4>
+                    <p>If \(\tan \theta = k\), and \(\alpha\) is the principal value \(\left(-\frac{\pi}{2} < \alpha < \frac{\pi}{2}\right)\), then the general solution is:</p>
+                    \[ \theta = n\pi + \alpha, \quad n \in \mathbb{Z} \]
+                </div>
+                <h3>12.3.2 Graphical Solution of Trigonometric Equations</h3>
+                <p>Trigonometric equations can also be solved graphically by plotting the graphs of the functions involved and finding their points of intersection. For example, to solve \(\sin \theta = \frac{1}{2}\), you would graph \(y = \sin \theta\) and \(y = \frac{1}{2}\) and find where they intersect.</p>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Trigonometric Functions:</b> Are periodic, with specific domains, ranges, and properties (even/odd). Their graphs are sinusoidal (sine, cosine) or repetitive curves (tangent, cotangent).</li>
+                        <li><b>Inverse Trigonometric Functions:</b> Defined by restricting the domains of trig functions to make them bijective. They have specific domains and ranges (principal values).</li>
+                        <li><b>Trigonometric Equations:</b> Equations involving trig functions, often having infinite solutions due to periodicity. General solutions are found by adding integer multiples of the period to principal values. Graphical methods can also be used.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

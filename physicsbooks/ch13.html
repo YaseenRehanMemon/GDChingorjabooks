@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 13: Physical Optics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* 1. CSS Variables for Theming */
+        :root {
+            /* Light Theme */
+            --bg-color: #f4f7f9;
+            --text-color: #333;
+            --header-bg: #ffffff;
+            --sidebar-bg: #ffffff;
+            --card-bg: #ffffff;
+            --accent-color: #007bff;
+            --border-color: #e0e0e0;
+            --shadow-color: rgba(0, 0, 0, 0.05);
+            --table-header-bg: #f1f1f1;
+            --theme-toggle-bg: #e0e0e0;
+            --theme-toggle-slider: #fff;
+            --theme-sun-color: #f39c12;
+            --theme-moon-color: #7f8c8d;
+        }
+
+        /* 2. Base Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .page-container {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            grid-template-rows: auto 1fr;
+            grid-template-areas:
+                "header header"
+                "sidebar content";
+            min-height: 100vh;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.75rem; border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-top: 40px; }
+        h3 { font-size: 1.4rem; }
+        h4 { font-size: 1.1rem; }
+
+        p, li {
+            font-size: 1rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 3. Header */
+        header {
+            grid-area: header;
+            background-color: var(--header-bg);
+            padding: 1rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 2px 5px var(--shadow-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* 4. Sidebar Navigation */
+        .sidebar {
+            grid-area: sidebar;
+            background-color: var(--sidebar-bg);
+            padding: 2rem;
+            border-right: 1px solid var(--border-color);
+            position: sticky;
+            top: 75px; /* Height of header */
+            height: calc(100vh - 75px);
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            border-bottom: none;
+            font-size: 1.5rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li a {
+            display: block;
+            padding: 0.5rem 0;
+            color: var(--text-color);
+            font-weight: 400;
+            border-left: 3px solid transparent;
+            padding-left: 10px;
+        }
+
+        .sidebar li a:hover {
+            color: var(--accent-color);
+            background-color: var(--bg-color);
+            border-left: 3px solid var(--accent-color);
+            text-decoration: none;
+        }
+
+        /* 5. Main Content */
+        .content {
+            grid-area: content;
+            padding: 2rem 3rem;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* 6. Components (Cards, Tables) */
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            box-shadow: 0 4px 8px var(--shadow-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px var(--shadow-color);
+        }
+
+        .card.formula {
+            background-color: var(--sidebar-bg);
+            border-left: 5px solid var(--accent-color);
+            font-family: monospace;
+            font-size: 1.1rem;
+        }
+
+        .card ul, .card ol {
+            padding-left: 20px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        thead {
+            background-color: var(--table-header-bg);
+            font-weight: 600;
+        }
+
+        tbody tr:hover {
+            background-color: var(--bg-color);
+        }
+
+        /* 7. Theme Toggle Switch */
+        .theme-toggle-checkbox {
+            display: none; /* Hide the actual checkbox */
+        }
+
+        .theme-toggle-label {
+            background: var(--theme-toggle-bg);
+            border-radius: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            position: relative;
+            height: 26px;
+            width: 50px;
+        }
+
+        .theme-toggle-label .sun, .theme-toggle-label .moon {
+            font-size: 14px;
+            line-height: 1;
+        }
+        .theme-toggle-label .sun { color: var(--theme-sun-color); }
+        .theme-toggle-label .moon { color: var(--theme-moon-color); }
+
+        .theme-toggle-label::after {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 4px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: var(--theme-toggle-slider);
+            transition: transform 0.3s ease;
+        }
+
+        .theme-toggle-checkbox:checked + .page-container {
+            /* This empty selector is for specificity to trigger theme change */
+        }
+
+        /* Logic to apply dark mode to the body */
+        .theme-toggle-checkbox:checked ~ .page-container {
+            --bg-color: #1a1a2e;
+            --text-color: #e0e0e0;
+            --header-bg: #162447;
+            --sidebar-bg: #162447;
+            --card-bg: #1f4068;
+            --accent-color: #17e9e0;
+            --border-color: #3a3a5a;
+            --shadow-color: rgba(0, 0, 0, 0.2);
+            --table-header-bg: #1f4068;
+            --theme-toggle-bg: #1f4068;
+            --theme-toggle-slider: #1a1a2e;
+            --theme-sun-color: #bdc3c7;
+            --theme-moon-color: #f1c40f;
+        }
+
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label::after {
+            transform: translateX(24px);
+        }
+
+
+        /* 8. Responsive Design */
+        @media (max-width: 768px) {
+            .page-container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "content";
+            }
+
+            .sidebar {
+                position: static;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+                padding: 1rem;
+            }
+
+            .sidebar h2 {
+                display: none;
+            }
+
+            .sidebar ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+            }
+            
+            .sidebar li a {
+                padding: 8px 12px;
+                border-radius: 20px;
+                border-left: none;
+                background-color: var(--bg-color);
+            }
+
+            .sidebar li a:hover {
+                background-color: var(--accent-color);
+                color: var(--header-bg);
+            }
+
+            header {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .content {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+
+        // MathJax configuration for rendering LaTeX
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
+    
+    <div class="page-container">
+        <header>
+            <h1>Chapter 13: Physical Optics</h1>
+            <label for="theme-toggle" class="theme-toggle-label">
+                <span class="sun">Light</span>
+                <span class="moon">Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#nature-light">The Nature of Light</a></li>
+                <li><a href="#interference">Interference</a></li>
+                <li><a href="#youngs">Young's Double-Slit</a></li>
+                <li><a href="#thin-films">Thin-Film Interference</a></li>
+                <li><a href="#diffraction">Diffraction</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="nature-light">
+                <h2>The Nature of Light: Wave-Particle Duality</h2>
+                <p>Physical optics explores phenomena that can only be explained by treating light as a <b>wave</b>. This contrasts with geometric optics, which treats light as rays. Light is an electromagnetic wave, a transverse wave consisting of oscillating electric and magnetic fields.</p>
+                <div class="card">
+                    <h3>Huygens' Principle</h3>
+                    <p>This principle provides a model for how waves propagate. It states that every point on a wavefront can be considered a source of secondary spherical wavelets. The new wavefront at a later time is the surface tangent to all these wavelets. This principle is key to understanding both interference and diffraction.</p>
+                </div>
+            </section>
+
+            <section id="interference">
+                <h2>Interference of Light</h2>
+                <p><b>Interference</b> is the phenomenon that occurs when two or more waves overlap, resulting in a new wave of greater, lower, or the same amplitude. For this to be easily observed with light, the sources must be <b>coherent</b> (having a constant phase relationship).</p>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Constructive Interference</h3>
+                        <p>Occurs when waves meet in phase (crest meets crest). This results in a brighter light (a bright fringe or maximum).</p>
+                        <p><b>Condition:</b> Path difference = n&lambda;</p>
+                    </div>
+                    <div class="card">
+                        <h3>Destructive Interference</h3>
+                        <p>Occurs when waves meet out of phase (crest meets trough). This results in darkness (a dark fringe or minimum).</p>
+                        <p><b>Condition:</b> Path difference = (n + &frac12;)&lambda;</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="youngs">
+                <h2>Young's Double-Slit Experiment</h2>
+                <p>This classic experiment, performed by Thomas Young, provided the first definitive evidence for the wave theory of light. It demonstrated that light exhibits interference.</p>
+                <div class="card">
+                    <h3>The Setup</h3>
+                    <p>Monochromatic light is passed through a single slit and then through two parallel, closely spaced slits. The light waves diffract at the slits and then interfere with each other, creating a pattern of alternating bright and dark fringes on a screen.</p>
+                    <div class="card formula">
+                        <h4>Fringe Position & Spacing</h4>
+                        <p>Position of bright fringes: <b>d sin(&theta;) = n&lambda;</b><br>
+                        Position of dark fringes: <b>d sin(&theta;) = (n + &frac12;)&lambda;</b><br>
+                        Fringe spacing: <b>&Delta;x = &lambda;L / d</b></p>
+                        <p>Where 'd' is the slit separation, 'L' is the distance to the screen, and '&lambda;' is the wavelength of light.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="thin-films">
+                <h2>Interference in Thin Films</h2>
+                <p>The shimmering colors seen in soap bubbles, oil slicks, and peacock feathers are caused by the interference of light waves reflecting off the top and bottom surfaces of a thin film.</p>
+                <div class="card">
+                    <h3>Phase Change on Reflection</h3>
+                    <p>A crucial factor is that light undergoes a 180° phase change when it reflects from a medium with a higher refractive index. This is equivalent to adding half a wavelength to the path difference.</p>
+                    <h4>Newton's Rings</h4>
+                    <p>A specific example is Newton's rings, an interference pattern created by the reflection of light between a spherical surface and an adjacent flat surface. This creates a circular pattern of bright and dark rings.</p>
+                </div>
+            </section>
+
+            <section id="diffraction">
+                <h2>Diffraction: The Bending of Waves</h2>
+                <p><b>Diffraction</b> is the bending of waves as they pass through an opening (aperture) or around an obstacle. The effect is most noticeable when the size of the opening is comparable to the wavelength of the wave.</p>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Single-Slit Diffraction</h3>
+                        <p>When light passes through a single narrow slit, it diffracts and creates a pattern with a large, bright central maximum, flanked by dimmer and narrower secondary maxima.</p>
+                        <div class="card formula">
+                            <p>Condition for minima (dark fringes):<br><b>a sin(&theta;) = n&lambda;</b></p>
+                             <p>(Here 'a' is the width of the slit)</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Diffraction Grating</h3>
+                        <p>A diffraction grating is a device with a large number of equally spaced parallel slits. It produces interference patterns that are much sharper and brighter than a double slit, making it ideal for separating light into its constituent wavelengths (like a prism).</p>
+                        <div class="card formula">
+                             <p>Condition for maxima (bright fringes):<br><b>d sin(&theta;) = n&lambda;</b></p>
+                             <p>(Here 'd' is the distance between slits)</p>
+                        </div>
+                    </div>
+                </div>
+                <h3>X-Ray Diffraction</h3>
+                <p>Because X-rays have very short wavelengths, they can be diffracted by the regularly spaced atoms in a crystal lattice. This technique is a powerful tool for determining the atomic structure of crystalline solids.</p>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <p>Physical optics demonstrates the wave nature of light through the phenomena of interference and diffraction.</p>
+                <div class="card">
+                    <ul>
+                        <li><b>Huygens' Principle</b> describes how waves propagate and is the basis for understanding wave optics.</li>
+                        <li><b>Interference</b> occurs when coherent waves superpose, leading to constructive (bright) and destructive (dark) patterns. <b>Young's double-slit experiment</b> was a key proof of this.</li>
+                        <li>The colorful patterns on <b>thin films</b> (like soap bubbles) are caused by the interference of reflected light waves.</li>
+                        <li><b>Diffraction</b> is the bending of light as it passes an obstacle or through a narrow opening.</li>
+                        <li>A <b>diffraction grating</b> uses many slits to separate light into a spectrum, based on the principle of diffraction and interference.</li>
+                        <li><b>X-ray diffraction</b> uses the atoms in a crystal as a natural grating to study crystal structures.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4: Rotational and Circular Motion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* 1. CSS Variables for Theming */
+        :root {
+            /* Light Theme */
+            --bg-color: #f4f7f9;
+            --text-color: #333;
+            --header-bg: #ffffff;
+            --sidebar-bg: #ffffff;
+            --card-bg: #ffffff;
+            --accent-color: #007bff;
+            --border-color: #e0e0e0;
+            --shadow-color: rgba(0, 0, 0, 0.05);
+            --table-header-bg: #f1f1f1;
+            --theme-toggle-bg: #e0e0e0;
+            --theme-toggle-slider: #fff;
+            --theme-sun-color: #f39c12;
+            --theme-moon-color: #7f8c8d;
+        }
+
+        /* 2. Base Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .page-container {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            grid-template-rows: auto 1fr;
+            grid-template-areas:
+                "header header"
+                "sidebar content";
+            min-height: 100vh;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.75rem; border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-top: 40px; }
+        h3 { font-size: 1.4rem; }
+        h4 { font-size: 1.1rem; }
+
+        p, li {
+            font-size: 1rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 3. Header */
+        header {
+            grid-area: header;
+            background-color: var(--header-bg);
+            padding: 1rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 2px 5px var(--shadow-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* 4. Sidebar Navigation */
+        .sidebar {
+            grid-area: sidebar;
+            background-color: var(--sidebar-bg);
+            padding: 2rem;
+            border-right: 1px solid var(--border-color);
+            position: sticky;
+            top: 75px; /* Height of header */
+            height: calc(100vh - 75px);
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            border-bottom: none;
+            font-size: 1.5rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li a {
+            display: block;
+            padding: 0.5rem 0;
+            color: var(--text-color);
+            font-weight: 400;
+            border-left: 3px solid transparent;
+            padding-left: 10px;
+        }
+
+        .sidebar li a:hover {
+            color: var(--accent-color);
+            background-color: var(--bg-color);
+            border-left: 3px solid var(--accent-color);
+            text-decoration: none;
+        }
+
+        /* 5. Main Content */
+        .content {
+            grid-area: content;
+            padding: 2rem 3rem;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* 6. Components (Cards, Tables) */
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            box-shadow: 0 4px 8px var(--shadow-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px var(--shadow-color);
+        }
+
+        .card.formula {
+            background-color: var(--sidebar-bg);
+            border-left: 5px solid var(--accent-color);
+            font-family: monospace;
+            font-size: 1.1rem;
+        }
+
+        .card ul, .card ol {
+            padding-left: 20px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        thead {
+            background-color: var(--table-header-bg);
+            font-weight: 600;
+        }
+
+        tbody tr:hover {
+            background-color: var(--bg-color);
+        }
+
+        /* 7. Theme Toggle Switch */
+        .theme-toggle-checkbox {
+            display: none; /* Hide the actual checkbox */
+        }
+
+        .theme-toggle-label {
+            background: var(--theme-toggle-bg);
+            border-radius: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            position: relative;
+            height: 26px;
+            width: 50px;
+        }
+
+        .theme-toggle-label .sun, .theme-toggle-label .moon {
+            font-size: 14px;
+            line-height: 1;
+        }
+        .theme-toggle-label .sun { color: var(--theme-sun-color); }
+        .theme-toggle-label .moon { color: var(--theme-moon-color); }
+
+        .theme-toggle-label::after {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 4px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: var(--theme-toggle-slider);
+            transition: transform 0.3s ease;
+        }
+
+        .theme-toggle-checkbox:checked + .page-container {
+            /* This empty selector is for specificity to trigger theme change */
+        }
+
+        /* Logic to apply dark mode to the body */
+        .theme-toggle-checkbox:checked ~ .page-container {
+            --bg-color: #1a1a2e;
+            --text-color: #e0e0e0;
+            --header-bg: #162447;
+            --sidebar-bg: #162447;
+            --card-bg: #1f4068;
+            --accent-color: #17e9e0;
+            --border-color: #3a3a5a;
+            --shadow-color: rgba(0, 0, 0, 0.2);
+            --table-header-bg: #1f4068;
+            --theme-toggle-bg: #1f4068;
+            --theme-toggle-slider: #1a1a2e;
+            --theme-sun-color: #bdc3c7;
+            --theme-moon-color: #f1c40f;
+        }
+
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label::after {
+            transform: translateX(24px);
+        }
+
+
+        /* 8. Responsive Design */
+        @media (max-width: 768px) {
+            .page-container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "content";
+            }
+
+            .sidebar {
+                position: static;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+                padding: 1rem;
+            }
+
+            .sidebar h2 {
+                display: none;
+            }
+
+            .sidebar ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+            }
+            
+            .sidebar li a {
+                padding: 8px 12px;
+                border-radius: 20px;
+                border-left: none;
+                background-color: var(--bg-color);
+            }
+
+            .sidebar li a:hover {
+                background-color: var(--accent-color);
+                color: var(--header-bg);
+            }
+
+            header {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .content {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+
+        // MathJax configuration for rendering LaTeX
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
+    
+    <div class="page-container">
+        <header>
+            <h1>Chapter 4: Rotational and Circular Motion</h1>
+            <label for="theme-toggle" class="theme-toggle-label">
+                <span class="sun">Light</span>
+                <span class="moon">Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#angular-kinematics">Angular Kinematics</a></li>
+                <li><a href="#centripetal">Centripetal Force & Acceleration</a></li>
+                <li><a href="#orbital">Orbital Motion</a></li>
+                <li><a href="#rotational-dynamics">Rotational Dynamics</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="angular-kinematics">
+                <h2>Angular Kinematics: The Language of Rotation</h2>
+                <p>When an object spins or revolves, we use angular quantities to describe its motion instead of linear ones. This is the kinematics of rotation.</p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Angular Quantity</th>
+                            <th>Symbol</th>
+                            <th>Description</th>
+                            <th>Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Angular Displacement</b></td>
+                            <td>&theta;</td>
+                            <td>The angle through which an object has rotated.</td>
+                            <td>radians (rad)</td>
+                        </tr>
+                        <tr>
+                            <td><b>Angular Velocity</b></td>
+                            <td>&omega;</td>
+                            <td>The rate of change of angular displacement (how fast it's spinning).</td>
+                            <td>rad/s</td>
+                        </tr>
+                        <tr>
+                            <td><b>Angular Acceleration</b></td>
+                            <td>&alpha;</td>
+                            <td>The rate of change of angular velocity (how fast its spin is changing).</td>
+                            <td>rad/s²</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="card">
+                    <h3>Connecting Linear and Angular Motion</h3>
+                    <p>For any point at a distance 'r' from the axis of rotation, its linear (or tangential) motion is related to the angular motion of the object.</p>
+                    <div class="card formula">
+                        <p>Arc Length: <b>s = r&theta;</b><br>
+                           Tangential Velocity: <b>v = r&omega;</b><br>
+                           Tangential Acceleration: <b>a = r&alpha;</b></p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="centripetal">
+                <h2>Centripetal Force & Acceleration</h2>
+                <p>An object moving in a circle is constantly changing its direction, which means it is accelerating, even if its speed is constant. This is called centripetal acceleration.</p>
+                
+                <div class="card">
+                    <h3>Centripetal Acceleration (a<sub>c</sub>)</h3>
+                    <p>This is the acceleration that an object experiences when moving in a curved path. It is always directed <b>towards the center</b> of the circle.</p>
+                    <div class="card formula">
+                        <b>a<sub>c</sub> = v²/r = &omega;²r</b>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Centripetal Force (F<sub>c</sub>)</h3>
+                    <p>According to Newton's Second Law, if there's an acceleration, there must be a net force. The force that causes centripetal acceleration is called centripetal force. It is also directed <b>towards the center</b> of the circle.</p>
+                     <div class="card formula">
+                        <b>F<sub>c</sub> = ma<sub>c</sub> = mv²/r</b>
+                    </div>
+                     <p><b>Important:</b> Centripetal force is not a new kind of force. It is simply the net force that points towards the center of the circular path. This role can be played by tension, friction, gravity, or a normal force.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Banked Curves</h3>
+                    <p>Roads are "banked" on curves to help vehicles turn safely. On a banked curve, a component of the normal force provides the necessary centripetal force, reducing the reliance on friction.</p>
+                    <div class="card formula">
+                        Ideal Banking Angle: <b>tan&theta; = v²/rg</b>
+                    </div>
+                </div>
+            </section>
+
+            <section id="orbital">
+                <h2>Orbital Motion</h2>
+                <p>Orbital motion, like a satellite orbiting the Earth, is a perfect example of circular motion where gravity provides the centripetal force.</p>
+
+                <div class="card">
+                    <h3>Orbital Velocity</h3>
+                    <p>To stay in a stable orbit of radius R around a celestial body of mass M, a satellite must travel at a specific speed called orbital velocity.</p>
+                    <div class="card formula">
+                       <b>v<sub>orbital</sub> = &radic;(GM/R)</b>
+                    </div>
+                    <p>Here, the centripetal force (mv²/R) is provided by the gravitational force (GMm/R²).</p>
+                </div>
+            </section>
+
+            <section id="rotational-dynamics">
+                <h2>Rotational Dynamics</h2>
+                <p>Just as force causes linear acceleration, torque causes angular acceleration. This section explores the dynamics of spinning objects.</p>
+                
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Torque (&tau;)</h3>
+                        <p>Torque is the rotational equivalent of force. It's the "twist" or "turning effect" that a force produces. It is the cross product of the position vector (r) and the force (F).</p>
+                        <div class="card formula">
+                            <b>&tau; = r &times; F</b>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Moment of Inertia (I)</h3>
+                        <p>Moment of inertia is the rotational equivalent of mass. It measures an object's resistance to changes in its rotational motion. It depends not just on mass, but also on how that mass is distributed relative to the axis of rotation.</p>
+                        <div class="card formula">
+                            <b>I = &Sigma;mr²</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Newton's Second Law for Rotation</h3>
+                    <p>The relationship between torque, moment of inertia, and angular acceleration is the rotational version of F = ma.</p>
+                    <div class="card formula">
+                        <b>&tau;<sub>net</sub> = I&alpha;</b>
+                    </div>
+                </div>
+
+                 <div class="card">
+                    <h3>Angular Momentum (L)</h3>
+                    <p>Angular momentum is the rotational equivalent of linear momentum. For a rigid body, it is the product of its moment of inertia and its angular velocity.</p>
+                    <div class="card formula">
+                        <b>L = I&omega;</b>
+                    </div>
+                    <h4>Law of Conservation of Angular Momentum</h4>
+                    <p>If the net external torque on a system is zero, its total angular momentum remains constant. This is why an ice skater spins faster when she pulls her arms in (decreasing her moment of inertia 'I', which causes her angular velocity '&omega;' to increase).</p>
+                </div>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <p>This chapter connects linear motion to the spinning and revolving world of rotational and circular motion.</p>
+                <div class="card">
+                    <ul>
+                        <li><b>Angular Kinematics:</b> Motion is described by angular displacement (&theta;), velocity (&omega;), and acceleration (&alpha;). These relate to linear quantities by the radius 'r' (e.g., v = r&omega;).</li>
+                        <li><b>Circular Motion:</b> Requires a <b>centripetal force</b> (F<sub>c</sub> = mv²/r) directed towards the center of the circle to produce a <b>centripetal acceleration</b> (a<sub>c</sub> = v²/r).</li>
+                        <li><b>Orbital Velocity:</b> A specific case where gravity provides the centripetal force required to keep an object in orbit.</li>
+                        <li><b>Torque (&tau;):</b> The rotational equivalent of force; it causes an object to rotate.</li>
+                        <li><b>Moment of Inertia (I):</b> The rotational equivalent of mass; it's the resistance to angular acceleration.</li>
+                        <li><b>Angular Momentum (L = I&omega;):</b> The rotational equivalent of linear momentum. It is conserved when no net external torque acts on a system.</li>
+                        <li><b>Newton's Second Law for Rotation:</b> The net torque on an object is equal to its moment of inertia times its angular acceleration (<b>&tau; = I&alpha;</b>).</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

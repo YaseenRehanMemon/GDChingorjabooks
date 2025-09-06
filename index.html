@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Books</title>
+    <!-- Use Tailwind CSS for rapid styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #111827;
+            color: #d1d5db;
+            /* Simple, subtle animation for a modern feel */
+            animation: background-pan 15s ease infinite;
+            background-size: 200% 200%;
+        }
+
+        @keyframes background-pan {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .subject-card {
+            background-color: #1f2937;
+            border: 1px solid #374151;
+        }
+
+        .chapter-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+        }
+        .chapter-list.active {
+            max-height: 1000px; /* A large value to allow the transition */
+        }
+
+        .chapter-link {
+            background-color: #374151;
+            transition: background-color 0.2s ease;
+        }
+        .chapter-link:hover {
+            background-color: #4b5563;
+        }
+
+        .loader {
+            border: 4px solid #374151;
+            border-top: 4px solid #4b5563;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="p-6 md:p-12">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Main title with animation -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4 animate-pulse">Our Books</h1>
+            <p class="text-gray-400 text-lg md:text-xl">Select a subject to start your learning journey.</p>
+        </header>
+
+        <!-- Subject Selection -->
+        <section id="subject-selection" class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <!-- Chemistry Card -->
+            <div id="chemistry" class="subject-card rounded-xl p-8 cursor-pointer card">
+                <h2 class="text-2xl font-bold text-teal-400 mb-2">Chemistry</h2>
+                <p class="text-gray-400">Delve into the study of matter and its properties.</p>
+            </div>
+            <!-- Physics Card -->
+            <div id="physics" class="subject-card rounded-xl p-8 cursor-pointer card">
+                <h2 class="text-2xl font-bold text-pink-400 mb-2">Physics</h2>
+                <p class="text-gray-400">Explore the laws of motion, energy, and the physical universe.</p>
+            </div>
+            <!-- Mathematics Card -->
+            <div id="mathematics" class="subject-card rounded-xl p-8 cursor-pointer card">
+                <h2 class="text-2xl font-bold text-indigo-400 mb-2">Mathematics</h2>
+                <p class="text-gray-400">Master the science of numbers, shapes, and patterns.</p>
+            </div>
+        </section>
+
+        <!-- Chapter Display Section -->
+        <section id="chapter-display" class="hidden">
+            <div class="flex items-center gap-4 mb-6">
+                <button id="back-button" class="text-gray-400 hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                </button>
+                <h2 id="chapter-title" class="text-3xl font-bold text-white"></h2>
+            </div>
+            <div id="chapter-list-container" class="space-y-4">
+                <!-- Chapter links will be dynamically injected here -->
+            </div>
+
+            <!-- Summary section -->
+            <div id="summary-section" class="mt-8 p-6 rounded-xl bg-gray-800 hidden">
+                <h3 class="text-xl font-bold text-gray-200 mb-4">Chapter Summary</h3>
+                <div id="summary-content" class="text-gray-400"></div>
+                <div id="summary-loader" class="mt-4 flex justify-center hidden">
+                    <div class="loader"></div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        // Data structure for subjects and chapters
+        const subjects = {
+            chemistry: {
+                title: "Chemistry Chapters",
+                path: "chemistrybooks",
+                chapters: [
+                    "Stoichiometry",
+                    "Atomic Structure",
+                    "Theories of Covalent Bonding and Shapes of Molecules",
+                    "States of Matter I: Gases",
+                    "States of Matter II: Liquids",
+                    "States of Matter III: Solids",
+                    "Chemical Equilibrium",
+                    "Acids, Bases, and Salts",
+                    "Chemical Kinetics",
+                    "Solutions and Colloids",
+                    "Thermochemistry",
+                    "Electrochemistry"
+                ]
+            },
+            physics: {
+                title: "Physics Chapters",
+                path: "physicsbooks",
+                chapters: [
+                    "Physics and Measurements",
+                    "Kinematics",
+                    "Dynamics",
+                    "Rotational and Circular Motion",
+                    "Work, Energy and Power",
+                    "Fluid Statics",
+                    "Fluid Dynamics",
+                    "Electric Fields",
+                    "Capacitors",
+                    "D.C Circuits",
+                    "Oscillations",
+                    "Acoustics",
+                    "Physical Optics",
+                    "Communication"
+                ]
+            },
+            mathematics: {
+                title: "Mathematics Chapters",
+                path: "mathbooks",
+                chapters: [
+                    "Complex Numbers",
+                    "Matrices & Determinants",
+                    "Vectors",
+                    "Sequences & Series",
+                    "Miscellaneous Series",
+                    "Permutation, Combination & Probability",
+                    "Mathematical Induction & Binomial Theorem",
+                    "Functions & Graphs",
+                    "Linear Inequalities",
+                    "Trigonometric Identities of Sum & Difference of Angles",
+                    "Application of Trigonometry",
+                    "Graphs of Trigonometric & Inverse Trigonometric Functions & Solution of Trigonometric Equations"
+                ]
+            }
+        };
+
+        const subjectSelection = document.getElementById('subject-selection');
+        const chapterDisplay = document.getElementById('chapter-display');
+        const chapterTitle = document.getElementById('chapter-title');
+        const chapterListContainer = document.getElementById('chapter-list-container');
+        const backButton = document.getElementById('back-button');
+        const summarySection = document.getElementById('summary-section');
+        const summaryContent = document.getElementById('summary-content');
+        const summaryLoader = document.getElementById('summary-loader');
+
+        // Function to show chapters for a selected subject
+        function showChapters(subject) {
+            const data = subjects[subject];
+            chapterTitle.textContent = data.title;
+            chapterListContainer.innerHTML = '';
+            summarySection.classList.add('hidden'); // Hide summary when changing subject
+
+            data.chapters.forEach((chapterName, index) => {
+                const chapterNumber = index + 1;
+                const chapterLinkContainer = document.createElement('div');
+                chapterLinkContainer.className = 'flex items-center justify-between p-4 rounded-lg bg-gray-700 transition-colors';
+
+                const chapterLink = document.createElement('a');
+                chapterLink.href = `${data.path}/ch${chapterNumber}.html`;
+                chapterLink.className = 'chapter-link block text-gray-300 hover:text-white';
+                chapterLink.textContent = `Chapter ${chapterNumber}: ${chapterName}`;
+
+                const summaryButton = document.createElement('button');
+                summaryButton.textContent = 'Get Summary ✨';
+                summaryButton.className = 'bg-gray-600 hover:bg-gray-500 text-sm text-white font-semibold py-1 px-3 rounded-full transition-colors';
+                summaryButton.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    getChapterSummary(data.title, chapterName);
+                });
+
+                chapterLinkContainer.appendChild(chapterLink);
+                chapterLinkContainer.appendChild(summaryButton);
+                chapterListContainer.appendChild(chapterLinkContainer);
+            });
+
+            subjectSelection.classList.add('hidden');
+            chapterDisplay.classList.remove('hidden');
+        }
+
+        // Function to get summary using Gemini API
+        async function getChapterSummary(subjectTitle, chapterName) {
+            summarySection.classList.remove('hidden');
+            summaryContent.innerHTML = '';
+            summaryLoader.classList.remove('hidden');
+
+            const apiKey = "";
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+
+            const prompt = `Provide a concise summary of the ${chapterName} chapter from a ${subjectTitle} textbook. Focus on key concepts and principles.`;
+
+            const payload = {
+                contents: [{
+                    parts: [{ text: prompt }]
+                }],
+                tools: [{ "google_search": {} }],
+                systemInstruction: {
+                    parts: [{ text: "You are a helpful study assistant. Provide clear and concise summaries for textbook chapters." }]
+                }
+            };
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const result = await response.json();
+                const text = result?.candidates?.[0]?.content?.parts?.[0]?.text || "Failed to get summary. Please try again.";
+                summaryContent.textContent = text;
+            } catch (error) {
+                summaryContent.textContent = "An error occurred while fetching the summary.";
+                console.error("Gemini API error:", error);
+            } finally {
+                summaryLoader.classList.add('hidden');
+            }
+        }
+
+        // Add event listeners to subject cards
+        document.getElementById('chemistry').addEventListener('click', () => showChapters('chemistry'));
+        document.getElementById('physics').addEventListener('click', () => showChapters('physics'));
+        document.getElementById('mathematics').addEventListener('click', () => showChapters('mathematics'));
+
+        // Add event listener to back button
+        backButton.addEventListener('click', () => {
+            chapterDisplay.classList.add('hidden');
+            subjectSelection.classList.remove('hidden');
+            summarySection.classList.add('hidden');
+        });
+    </script>
+</body>
+</html>

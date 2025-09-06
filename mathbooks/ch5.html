@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5: Miscellaneous Series</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to the shared stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+        // MathJax configuration (for rendering LaTeX)
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body style="--accent-color: #4CAF50;">
+    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+    <div class="page-container">
+        <header>
+            <h1>Chapter 5: Miscellaneous Series</h1>
+            <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                <span class="sun">☀️ Light</span><span class="moon">🌙 Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#sigma-notation">Sigma (\(\Sigma\)) Notation</a></li>
+                <li><a href="#sum-of-powers">Sum of Powers of Natural Numbers</a></li>
+                <li><a href="#arithmetico-geometric">Arithmetico-Geometric Series</a></li>
+                <li><a href="#method-of-differences">Method of Differences</a></li>
+                <li><a href="#partial-fractions">Summation using Partial Fractions</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="sigma-notation">
+                <h2>5.1 Sigma (\(\Sigma\)) Notation</h2>
+                <p>The Greek letter <strong>Sigma (\(\Sigma\))</strong> is used in mathematics to denote <strong>summation</strong>. It provides a concise way to represent the sum of a series of terms.</p>
+                <div class="card">
+                    <h4>Definition of Sigma Notation</h4>
+                    <p>If \(x_1, x_2, x_3, \dots, x_n\) is a series of terms, their sum is denoted by:</p>
+                    \[ \sum_{i=1}^{n} x_i = x_1 + x_2 + x_3 + \dots + x_n \]
+                    <ul>
+                        <li>\(i\) is the <b>index</b> of summation.</li>
+                        <li>\(x_i\) is the \(i\)-th element of the series.</li>
+                        <li>\(1\) is the <b>lower limit</b> and \(n\) is the <b>upper limit</b> of summation.</li>
+                    </ul>
+                    <p><b>Example:</b> \(\sum_{i=1}^{10} x_i = x_1 + x_2 + \dots + x_{10}\).</p>
+                </div>
+            </section>
+
+            <section id="sum-of-powers">
+                <h2>5.2 Sum of Powers of Natural Numbers</h2>
+                <p>Formulas exist to directly calculate the sum of the first \(n\) natural numbers, their squares, and their cubes.</p>
+                <div class="card formula">
+                    <h4>Sum of First \(n\) Natural Numbers:</h4>
+                    \[ \sum_{k=1}^{n} k = \frac{n(n+1)}{2} \]
+                </div>
+                <div class="card formula">
+                    <h4>Sum of Squares of First \(n\) Natural Numbers:</h4>
+                    \[ \sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6} \]
+                </div>
+                <div class="card formula">
+                    <h4>Sum of Cubes of First \(n\) Natural Numbers:</h4>
+                    \[ \sum_{k=1}^{n} k^3 = \left[\frac{n(n+1)}{2}\right]^2 \]
+                </div>
+            </section>
+
+            <section id="arithmetico-geometric">
+                <h2>5.3 Arithmetico-Geometric Series (A.G. Series)</h2>
+                <p>An <strong>arithmetico-geometric series</strong> is formed by multiplying the corresponding terms of an Arithmetic Progression (A.P.) and a Geometric Progression (G.P.).</p>
+                <div class="card">
+                    <h4>Form of an A.G. Series:</h4>
+                    \[ a + (a+d)r + (a+2d)r^2 + \dots + \{a+(n-1)d\}r^{n-1} \]
+                </div>
+                <h3>5.3.1 Finding the Sum to \(n\) Terms of an A.G. Series</h3>
+                <p>The sum of \(n\) terms of an A.G. series can be found using a specific method involving multiplying the series by the common ratio of the G.P. and then subtracting the two series.</p>
+                <div class="card formula">
+                    \[ S_n = \frac{a}{1-r} + \frac{dr(1-r^{n-1})}{(1-r)^2} - \frac{\{a+(n-1)d\}r^n}{1-r} \]
+                    <p>This formula applies when \(r \neq 1\).</p>
+                </div>
+            </section>
+
+            <section id="method-of-differences">
+                <h2>5.4 Method of Differences</h2>
+                <p>The <strong>Method of Differences</strong> is a technique used to find the sum of a series when the differences between consecutive terms form an arithmetic or geometric sequence.</p>
+                <div class="card">
+                    <h4>Theorem:</h4>
+                    <p>If a series can be expressed in the form \(\sum_{r=1}^{n} [f(r+1) - f(r)]\), then its sum is \(f(n+1) - f(1)\).</p>
+                    <p>Similarly, if it's \(\sum_{r=1}^{n} [f(r) - f(r+1)]\), then its sum is \(f(1) - f(n+1)\).</p>
+                </div>
+            </section>
+
+            <section id="partial-fractions">
+                <h2>5.5 Summation of Series using Partial Fractions</h2>
+                <p>Some series whose general terms are rational expressions can be summed by first decomposing the general term into <strong>partial fractions</strong>. This transforms the series into a telescoping sum that can be easily evaluated.</p>
+                <div class="card">
+                    <h4>Example:</h4>
+                    <p>To sum a series where the general term is \(\frac{1}{(r+1)(r+2)}\), we first use partial fractions to write it as \(\frac{1}{r+1} - \frac{1}{r+2}\). When summed, intermediate terms cancel out.</p>
+                </div>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <div class="card">
+                    <ul>
+                        <li><b>Sigma Notation (\(\Sigma\)):</b> A compact way to represent the sum of a series.</li>
+                        <li><b>Sum of Powers:</b> Formulas exist for \(\sum k\), \(\sum k^2\), and \(\sum k^3\).</li>
+                        <li><b>Arithmetico-Geometric Series:</b> A series formed by multiplying terms of an A.P. and a G.P. Special formula for its sum.</li>
+                        <li><b>Method of Differences:</b> A technique to sum series where consecutive term differences simplify.</li>
+                        <li><b>Partial Fractions:</b> Used to decompose complex rational terms into simpler fractions, often leading to telescoping sums.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

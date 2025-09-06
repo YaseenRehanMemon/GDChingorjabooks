@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1: Physics and Measurements</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* 1. CSS Variables for Theming */
+        :root {
+            /* Light Theme */
+            --bg-color: #f4f7f9;
+            --text-color: #333;
+            --header-bg: #ffffff;
+            --sidebar-bg: #ffffff;
+            --card-bg: #ffffff;
+            --accent-color: #007bff;
+            --border-color: #e0e0e0;
+            --shadow-color: rgba(0, 0, 0, 0.05);
+            --table-header-bg: #f1f1f1;
+            --theme-toggle-bg: #e0e0e0;
+            --theme-toggle-slider: #fff;
+            --theme-sun-color: #f39c12;
+            --theme-moon-color: #7f8c8d;
+        }
+
+        /* 2. Base Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .page-container {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            grid-template-rows: auto 1fr;
+            grid-template-areas:
+                "header header"
+                "sidebar content";
+            min-height: 100vh;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.75rem; border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-top: 40px; }
+        h3 { font-size: 1.4rem; }
+        h4 { font-size: 1.1rem; }
+
+        p, li {
+            font-size: 1rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 3. Header */
+        header {
+            grid-area: header;
+            background-color: var(--header-bg);
+            padding: 1rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 2px 5px var(--shadow-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* 4. Sidebar Navigation */
+        .sidebar {
+            grid-area: sidebar;
+            background-color: var(--sidebar-bg);
+            padding: 2rem;
+            border-right: 1px solid var(--border-color);
+            position: sticky;
+            top: 75px; /* Height of header */
+            height: calc(100vh - 75px);
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            border-bottom: none;
+            font-size: 1.5rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li a {
+            display: block;
+            padding: 0.5rem 0;
+            color: var(--text-color);
+            font-weight: 400;
+            border-left: 3px solid transparent;
+            padding-left: 10px;
+        }
+
+        .sidebar li a:hover {
+            color: var(--accent-color);
+            background-color: var(--bg-color);
+            border-left: 3px solid var(--accent-color);
+            text-decoration: none;
+        }
+
+        /* 5. Main Content */
+        .content {
+            grid-area: content;
+            padding: 2rem 3rem;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* 6. Components (Cards, Tables) */
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            box-shadow: 0 4px 8px var(--shadow-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px var(--shadow-color);
+        }
+
+        .card.formula {
+            background-color: var(--sidebar-bg);
+            border-left: 5px solid var(--accent-color);
+            font-family: monospace;
+            font-size: 1.1rem;
+        }
+
+        .card ul, .card ol {
+            padding-left: 20px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        thead {
+            background-color: var(--table-header-bg);
+            font-weight: 600;
+        }
+
+        tbody tr:hover {
+            background-color: var(--bg-color);
+        }
+
+        /* 7. Theme Toggle Switch */
+        .theme-toggle-checkbox {
+            display: none; /* Hide the actual checkbox */
+        }
+
+        .theme-toggle-label {
+            background: var(--theme-toggle-bg);
+            border-radius: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            position: relative;
+            height: 26px;
+            width: 50px;
+        }
+
+        .theme-toggle-label .sun, .theme-toggle-label .moon {
+            font-size: 14px;
+            line-height: 1;
+        }
+        .theme-toggle-label .sun { color: var(--theme-sun-color); }
+        .theme-toggle-label .moon { color: var(--theme-moon-color); }
+
+        .theme-toggle-label::after {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 4px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: var(--theme-toggle-slider);
+            transition: transform 0.3s ease;
+        }
+
+        .theme-toggle-checkbox:checked + .page-container {
+            /* This empty selector is for specificity to trigger theme change */
+        }
+
+        /* Logic to apply dark mode to the body */
+        .theme-toggle-checkbox:checked ~ .page-container {
+            --bg-color: #1a1a2e;
+            --text-color: #e0e0e0;
+            --header-bg: #162447;
+            --sidebar-bg: #162447;
+            --card-bg: #1f4068;
+            --accent-color: #17e9e0;
+            --border-color: #3a3a5a;
+            --shadow-color: rgba(0, 0, 0, 0.2);
+            --table-header-bg: #1f4068;
+            --theme-toggle-bg: #1f4068;
+            --theme-toggle-slider: #1a1a2e;
+            --theme-sun-color: #bdc3c7;
+            --theme-moon-color: #f1c40f;
+        }
+
+        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label::after {
+            transform: translateX(24px);
+        }
+
+
+        /* 8. Responsive Design */
+        @media (max-width: 768px) {
+            .page-container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "content";
+            }
+
+            .sidebar {
+                position: static;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+                padding: 1rem;
+            }
+
+            .sidebar h2 {
+                display: none;
+            }
+
+            .sidebar ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+            }
+            
+            .sidebar li a {
+                padding: 8px 12px;
+                border-radius: 20px;
+                border-left: none;
+                background-color: var(--bg-color);
+            }
+
+            .sidebar li a:hover {
+                background-color: var(--accent-color);
+                color: var(--header-bg);
+            }
+
+            header {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .content {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+            const body = document.body;
+
+            function applyTheme(isDarkMode) {
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark') {
+                themeToggleCheckbox.checked = true;
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                themeToggleCheckbox.checked = false;
+                applyTheme(false);
+            } else {
+                themeToggleCheckbox.checked = prefersDark;
+                applyTheme(prefersDark);
+            }
+
+            themeToggleCheckbox.addEventListener('change', () => {
+                const isDarkMode = themeToggleCheckbox.checked;
+                applyTheme(isDarkMode);
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+
+        // MathJax configuration for rendering LaTeX
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
+    
+    <div class="page-container">
+        <header>
+            <h1>Chapter 1: Physics and Measurements</h1>
+            <label for="theme-toggle" class="theme-toggle-label">
+                <span class="sun">Light</span>
+                <span class="moon">Dark</span>
+            </label>
+        </header>
+
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#intro">Introduction to Physics</a></li>
+                <li><a href="#units">Physical Quantities & SI Units</a></li>
+                <li><a href="#dimensions">Dimensional Analysis</a></li>
+                <li><a href="#errors">Errors & Uncertainty</a></li>
+                <li><a href="#precision">Measurement & Precision</a></li>
+                <li><a href="#graphs">Working with Graphs</a></li>
+                <li><a href="#summary">Chapter Summary</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="intro">
+                <h2>Introduction to Physics</h2>
+                <p>Physics is the fundamental science that studies matter, energy, and their interactions. From the smallest subatomic particles to the largest galaxies, physics explains how the universe works. Everything around us—a flying bird, a moving car, or a smartphone—operates on the principles of physics.</p>
+                <div class="card">
+                    <h3>Scope of Physics in Our World</h3>
+                    <ul>
+                        <li><b>Science:</b> It provides the fundamental laws that form the basis for other sciences like chemistry and biology.</li>
+                        <li><b>Technology:</b> Principles of physics are behind almost all modern technology, including electricity, computers, and medical imaging (like X-rays and MRI).</li>
+                        <li><b>Society:</b> Physics helps us understand and address global challenges like climate change, energy production, and space exploration.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="units">
+                <h2>Physical Quantities & SI Units</h2>
+                <p>To measure and describe the world, we use physical quantities. To keep measurements consistent everywhere, scientists use the **International System of Units (SI)**.</p>
+                
+                <div class="card">
+                    <h3>Three Types of SI Units</h3>
+                    <ol>
+                        <li><b>Base Units:</b> The seven fundamental units upon which all others are built.</li>
+                        <li><b>Derived Units:</b> Formed by combining base units (e.g., speed is \(\frac{meters}{second}\)).</li>
+                        <li><b>Supplementary Units:</b> Dimensionless units for measuring angles (radian and steradian).</li>
+                    </ol>
+                </div>
+
+                <h3>SI Base Quantities and Units</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Quantity</th>
+                            <th>Unit</th>
+                            <th>Symbol</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Length</td><td>meter</td><td>m</td></tr>
+                        <tr><td>Mass</td><td>kilogram</td><td>kg</td></tr>
+                        <tr><td>Time</td><td>second</td><td>s</td></tr>
+                        <tr><td>Electric Current</td><td>ampere</td><td>A</td></tr>
+                        <tr><td>Temperature</td><td>kelvin</td><td>K</td></tr>
+                        <tr><td>Amount of Substance</td><td>mole</td><td>mol</td></tr>
+                        <tr><td>Luminous Intensity</td><td>candela</td><td>cd</td></tr>
+                    </tbody>
+                </table>
+
+                <h3>Examples of Derived Units</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Quantity</th>
+                            <th>Derived Unit</th>
+                            <th>In Base Units</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Force</td><td>newton (N)</td><td>\(\frac{kg·m}{s²}\)</td></tr>
+                        <tr><td>Energy / Work</td><td>joule (J)</td><td>\(\frac{kg·m²}{s²}\)</td></tr>
+                        <tr><td>Power</td><td>watt (W)</td><td>\(\frac{kg·m²}{s³}\)</td></tr>
+                        <tr><td>Pressure</td><td>pascal (Pa)</td><td>\(\frac{kg}{m·s²}\)</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="dimensions">
+                <h2>Dimensional Analysis</h2>
+                <p>Dimensional analysis is a powerful tool used to check if a physics equation is consistent. Every physical quantity has a dimension, represented by symbols like [L] for length, [M] for mass, and [T] for time.</p>
+                
+                <div class="card formula">
+                    <h4>Principle of Homogeneity</h4>
+                    An equation is dimensionally correct only if the dimensions on both sides are the same. You can't add apples and oranges, and you can't equate length to time!
+                    <br><br>
+                    Example: For the equation <code>Speed = Distance / Time</code>
+                    <br>
+                    Dimensions: <code>[L]/[T] = [L]/[T]</code>. The equation is correct.
+                </div>
+                <p>We can also use dimensions to derive formulas in simple cases, though it doesn't give us the value of dimensionless constants (like 2π).</p>
+            </section>
+
+            <section id="errors">
+                <h2>Errors & Uncertainty</h2>
+                <p>No measurement is ever perfect. Every measurement has some uncertainty, which reflects the limitations of the instrument and the person making the measurement.</p>
+
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Systematic Errors</h3>
+                        <p>These are consistent, repeatable errors caused by faulty equipment or a flawed experimental setup (e.g., a scale that always reads 2g too high). They can often be identified and corrected.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Random Errors</h3>
+                        <p>These are unpredictable fluctuations in measurements (e.g., slight variations in reading a ruler). They can be minimized by taking multiple readings and calculating an average.</p>
+                    </div>
+                </div>
+
+                <div class="card formula">
+                    <h4>Assessing Uncertainty</h4>
+                    Uncertainty tells us the range within which the true value likely lies.
+                    <ul>
+                        <li><b>Absolute Uncertainty:</b> The direct uncertainty in a measurement (e.g., 5.2 ± 0.1 cm).</li>
+                        <li><b>Fractional Uncertainty:</b> (Absolute Uncertainty) / (Measured Value)</li>
+                        <li><b>Percentage Uncertainty:</b> Fractional Uncertainty × 100%</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="precision">
+                <h2>Measurement & Precision</h2>
+                <p>Understanding the quality of a measurement involves knowing about significant figures, precision, and accuracy.</p>
+                
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Accuracy vs. Precision</h3>
+                        <p><b>Accuracy:</b> How close a measurement is to the true, accepted value.</p>
+                        <p><b>Precision:</b> How close multiple measurements are to each other. You can be precise without being accurate!</p>
+                    </div>
+                     <div class="card">
+                        <h3>Least Count (Resolution)</h3>
+                        <p>The smallest increment a measuring instrument can detect. A smaller least count means a more precise instrument, which is crucial for reducing uncertainty.</p>
+                    </div>
+                </div>
+
+                <h3>Significant Figures</h3>
+                <p>Significant figures are the meaningful digits in a measurement. They indicate the precision of the instrument used.</p>
+                <div class="card">
+                    <h4>Key Rules for Significant Figures</h4>
+                    <ul>
+                        <li>Non-zero digits are always significant. (e.g., <b>123</b> has 3)</li>
+                        <li>Zeros between non-zero digits are significant. (e.g., <b>101</b> has 3)</li>
+                        <li>Leading zeros are not significant. (e.g., 0.0<b>54</b> has 2)</li>
+                        <li>Trailing zeros after a decimal point are significant. (e.g., 2.<b>500</b> has 4)</li>
+                        <li>In calculations (multiplication/division), the result should have the same number of significant figures as the measurement with the fewest significant figures.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="graphs">
+                <h2>Working with Graphs</h2>
+                <p>Graphs are a powerful way to visualize the relationship between variables and analyze experimental data.</p>
+                
+                <div class="card">
+                    <h3>Dependent & Independent Variables</h3>
+                    <ul>
+                        <li><b>Independent Variable:</b> The variable you change or control (plotted on the x-axis).</li>
+                        <li><b>Dependent Variable:</b> The variable you measure, which changes in response (plotted on the y-axis).</li>
+                    </ul>
+                </div>
+
+                <h3>Interpreting Graphs</h3>
+                <ul>
+                    <li><b>Slope:</b> Represents the rate of change (rise/run). In a distance-time graph, the slope is velocity.</li>
+                    <li><b>Intercept:</b> The point where the line crosses an axis, often representing an initial value.</li>
+                    <li><b>Line of Best Fit:</b> A straight line drawn through the center of a group of data points to show the general trend.</li>
+                    <li><b>Error Bars:</b> Lines on data points that show the uncertainty in each measurement. Shorter bars mean more precise data.</li>
+                    <li><b>Extrapolation:</b> Extending a graph beyond the measured data to predict values.</li>
+                </ul>
+            </section>
+
+            <section id="summary">
+                <h2>Chapter Summary</h2>
+                <p>This chapter introduced the fundamentals of physics and measurement. Here are the key takeaways for quick revision:</p>
+                <div class="card">
+                    <ul>
+                        <li><b>Physics</b> is the study of matter, energy, and their interactions, forming the basis for technology and other sciences.</li>
+                        <li><b>SI Units</b> provide a global standard for measurement, categorized into base, derived, and supplementary units.</li>
+                        <li><b>Dimensional Analysis</b> is used to check the consistency of equations by comparing the dimensions ([M], [L], [T]) on both sides.</li>
+                        <li>All measurements have <b>uncertainty</b>. Errors can be systematic (consistent flaws) or random (unpredictable variations).</li>
+                        <li><b>Accuracy</b> is closeness to the true value, while <b>Precision</b> is the consistency of repeated measurements.</li>
+                        <li><b>Significant Figures</b> indicate the precision of a measurement. Rules for their use must be followed in calculations.</li>
+                        <li><b>Graphs</b> are essential tools for analyzing data by visualizing the relationship between independent and dependent variables through slopes, intercepts, and lines of best fit.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
