@@ -1,4 +1,28 @@
-<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Chapter 1: Physics and Measurements</title>\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n    <link href=\"https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" href=\"../assets/css/styles.css\">\n    <!-- MathJax CDN for rendering LaTeX -->\n    <script id=\"MathJax-script\" async src=\"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js\"></script>\n    <script>\n        document.addEventListener('DOMContentLoaded', () => {\n            const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');\n            const body = document.body;\n\n            function applyTheme(isDarkMode) {\n                if (isDarkMode) {\n                    body.classList.add('dark-mode');\n                } else {\n                    body.classList.remove('dark-mode');\n                }\n            }\n\n            const savedTheme = localStorage.getItem('theme');\n            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;\n\n            if (savedTheme === 'dark') {\n                themeToggleCheckbox.checked = true;\n                applyTheme(true);\n            } else if (savedTheme === 'light') {\n                themeToggleCheckbox.checked = false;\n                applyTheme(false);\n            } else {\n                themeToggleCheckbox.checked = prefersDark;\n                applyTheme(prefersDark);\n            }\n\n            themeToggleCheckbox.addEventListener('change', () => {\n                const isDarkMode = themeToggleCheckbox.checked;\n                applyTheme(isDarkMode);\n                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');\n            });\n        });\n\n        // MathJax configuration for rendering LaTeX\n        window.MathJax = {\n            tex: {\n                inlineMath: [['\\\\(', '\\\\)']],\n                displayMath: [['\\\\[', '\\\\]']]\n            },\n            svg: {\n                fontCache: 'global'\n            }\n        };\n    </script>\n</head>\n<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1: Physics and Measurements</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <script>
+        window.MathJax = {
+            tex: {
+                // Ensure all types of delimiters are recognized
+                inlineMath: [['\\(', '\\)'], ['$', '$']],
+                displayMath: [['\\[', '\\]'], ['$$', '$$']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
     <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
     
     <div class="page-container">
@@ -14,10 +38,10 @@
             <h2>Navigation</h2>
             <ul>
                 <li><a href="#intro">Introduction to Physics</a></li>
-                <li><a href="#units">Physical Quantities & SI Units</a></li>
+                <li><a href="#units">Physical Quantities &amp; SI Units</a></li>
                 <li><a href="#dimensions">Dimensional Analysis</a></li>
-                <li><a href="#errors">Errors & Uncertainty</a></li>
-                <li><a href="#precision">Measurement & Precision</a></li>
+                <li><a href="#errors">Errors &amp; Uncertainty</a></li>
+                <li><a href="#precision">Measurement &amp; Precision</a></li>
                 <li><a href="#graphs">Working with Graphs</a></li>
                 <li><a href="#summary">Chapter Summary</a></li>
             </ul>
@@ -38,8 +62,8 @@
             </section>
 
             <section id="units">
-                <h2>Physical Quantities & SI Units</h2>
-                <p>To measure and describe the world, we use physical quantities. To keep measurements consistent everywhere, scientists use the **International System of Units (SI)**.</p>
+                <h2>Physical Quantities &amp; SI Units</h2>
+                <p>To measure and describe the world, we use physical quantities. To keep measurements consistent everywhere, scientists use the <b>International System of Units (SI)</b>.</p>
                 
                 <div class="card">
                     <h3>Three Types of SI Units</h3>
@@ -80,10 +104,10 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td>Force</td><td>newton (N)</td><td>\(\frac{kg·m}{s²}\)</td></tr>
-                        <tr><td>Energy / Work</td><td>joule (J)</td><td>\(\frac{kg·m²}{s²}\)</td></tr>
-                        <tr><td>Power</td><td>watt (W)</td><td>\(\frac{kg·m²}{s³}\)</td></tr>
-                        <tr><td>Pressure</td><td>pascal (Pa)</td><td>\(\frac{kg}{m·s²}\)</td></tr>
+                        <tr><td>Force</td><td>newton (N)</td><td>\(\frac{kg·m}{s^2}\)</td></tr>
+                        <tr><td>Energy / Work</td><td>joule (J)</td><td>\(\frac{kg·m^2}{s^2}\)</td></tr>
+                        <tr><td>Power</td><td>watt (W)</td><td>\(\frac{kg·m^2}{s^3}\)</td></tr>
+                        <tr><td>Pressure</td><td>pascal (Pa)</td><td>\(\frac{kg}{m·s^2}\)</td></tr>
                     </tbody>
                 </table>
             </section>

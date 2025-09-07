@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../assets/css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 1: Stoichiometry</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <!-- MathJax Configuration (for rendering LaTeX) -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!-- MathJax CDN for rendering LaTeX -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
 <body>
     <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
@@ -51,15 +65,15 @@
                     <h3>The Mole: A Chemist's Dozen</h3>
                     <p>Just like a "dozen" always means 12, a "mole" always means the same number of particles.</p>
                     <ul>
-                        <li><b>\(1 \text{ Mole} = 6.022 \times 10^{23} \text{ particles}\)</b></li>
+                        <li><b>$1 \text{ Mole} = 6.022 \times 10^{23} \text{ particles}$</b></li>
                     </ul>
-                    <p>This huge number is called <strong>Avogadro's Number (\(N_A\))</strong>. So, one mole of carbon has \(6.022 \times 10^{23}\) carbon atoms, and one mole of water has \(6.022 \times 10^{23}\) water molecules.</p>
+                    <p>This huge number is called <strong>Avogadro's Number ($N_A$)</strong>. So, one mole of carbon has $6.022 \times 10^{23}$ carbon atoms, and one mole of water has $6.022 \times 10^{23}$ water molecules.</p>
                 </div>
                 
                 <div class="card">
                     <h3>Molar Mass: The Bridge to Grams</h3>
                     <p>The <strong>molar mass</strong> is the mass of one mole of a substance in grams. It's numerically equal to the atomic mass on the periodic table. This is how we connect the invisible world of atoms to the measurable world of grams.</p>
-                     <p><b>Example:</b> Carbon's atomic mass is 12.01 amu. Therefore, its molar mass is \(12.01 \frac{g}{mol}\). This means 12.01 grams of carbon contains exactly one mole (\(6.022 \times 10^{23}\)) of carbon atoms.</p>
+                    <p><b>Example:</b> Carbon's atomic mass is 12.01 amu. Therefore, its molar mass is $12.01 \frac{g}{mol}$. This means 12.01 grams of carbon contains exactly one mole ($6.022 \times 10^{23}$) of carbon atoms.</p>
                 </div>
             </section>
 
@@ -68,19 +82,19 @@
                 <p>Using the mole concept, we can convert between mass, moles, and the number of particles. These are the most fundamental calculations in chemistry.</p>
 
                 <div class="card formula">
-                    <h4>Formula 1: Mass ↔ Moles</h4>
-                    <p>\(\text{Number of Moles} = \frac{\text{Mass (g)}}{\text{Molar Mass (g/mol)}}\)</p>
+                    <h4>Formula 1: Mass $\leftrightarrow$ Moles</h4>
+                    <p>$\text{Number of Moles} = \frac{\text{Mass (g)}}{\text{Molar Mass (g/mol)}}$</p>
                 </div>
                 <div class="card formula">
-                    <h4>Formula 2: Moles ↔ Particles</h4>
-                    <p>\(\text{Number of Particles} = \text{Moles} \times (6.022 \times 10^{23})\)</p>
+                    <h4>Formula 2: Moles $\leftrightarrow$ Particles</h4>
+                    <p>$\text{Number of Particles} = \text{Moles} \times (6.022 \times 10^{23})$</p>
                 </div>
                 <div class="card">
                     <h3>Calculations for Gases at STP</h3>
-                    <p>For gases, it's often easier to measure volume. At <strong>Standard Temperature and Pressure (STP)</strong>, which is \(0^\circ C\) and 1 atm, one mole of any ideal gas occupies a volume of 22.4 liters (or \(dm^3\)).</p>
-                     <div class="card formula">
-                        <h4>Formula 3: Moles ↔ Gas Volume (at STP)</h4>
-                        <p>\(\text{Volume (L)} = \text{Moles} \times 22.4 \text{ L/mol}\)</p>
+                    <p>For gases, it's often easier to measure volume. At <strong>Standard Temperature and Pressure (STP)</strong>, which is $0^\circ C$ and 1 atm, one mole of any ideal gas occupies a volume of 22.4 liters (or $dm^3$).</p>
+                    <div class="card formula">
+                        <h4>Formula 3: Moles $\leftrightarrow$ Gas Volume (at STP)</h4>
+                        <p>$\text{Volume (L)} = \text{Moles} \times 22.4 \text{ L/mol}$</p>
                     </div>
                 </div>
             </section>
@@ -88,7 +102,7 @@
             <section id="limiting-reactant">
                 <h2>The Limiting Reactant</h2>
                 <p>In a real reaction, you rarely have the perfect recipe amounts of all reactants. Usually, one reactant gets completely used up before the others. This is the "limiting" factor for the reaction.</p>
-                 <div class="card">
+                <div class="card">
                     <h3>Key Definitions</h3>
                     <ul>
                         <li><b>Limiting Reactant:</b> The reactant that runs out first and determines the maximum amount of product that can be formed.</li>
@@ -98,7 +112,7 @@
                 </div>
             </section>
 
-             <section id="yield">
+            <section id="yield">
                 <h2>Reaction Yield</h2>
                 <p>Calculations tell us the perfect, ideal outcome. In the real world, things are less than perfect. This is where we compare our calculated result to our actual result.</p>
                 
@@ -110,11 +124,11 @@
                     </ul>
                 </div>
                 
-                 <div class="card">
+                <div class="card">
                     <h3>Percent Yield</h3>
                     <p>Percent yield is a measure of a reaction's efficiency. It tells you how close your actual yield was to the perfect theoretical yield.</p>
                     <div class="card formula">
-                       <h4>\(\text{Percent Yield} = \frac{\text{Actual Yield}}{\text{Theoretical Yield}} \times 100\%\)</h4>
+                        <h4>$\text{Percent Yield} = \frac{\text{Actual Yield}}{\text{Theoretical Yield}} \times 100\%$</h4>
                     </div>
                 </div>
             </section>
@@ -136,9 +150,9 @@
                         </tr>
                         <tr>
                             <td><b>The Mole</b></td>
-                            <td>A counting unit for particles. \(1 \text{ mole} = 6.022 \times 10^{23} \text{ particles}\) (Avogadro's Number).</td>
+                            <td>A counting unit for particles. $1 \text{ mole} = 6.022 \times 10^{23} \text{ particles}$ (Avogadro's Number).</td>
                         </tr>
-                         <tr>
+                        <tr>
                             <td><b>Molar Mass</b></td>
                             <td>The mass of one mole of a substance in grams (g/mol). It connects moles to mass.</td>
                         </tr>

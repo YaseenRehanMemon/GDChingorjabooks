@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../assets/css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 3: Differentiation</title>
@@ -8,36 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <style>
-        :root { --accent-color: #4CAF50; /* Green for Differentiation */ }
-        body { font-family: 'Poppins', sans-serif; margin: 0; background-color: #f4f7f9; color: #333; transition: background-color 0.3s, color 0.3s; }
-        .dark-mode { background-color: #121212; color: #e0e0e0; }
-        .page-container { display: flex; flex-direction: column; }
-        header { background-color: #ffffff; padding: 1rem 2rem; border-bottom: 1px solid #e0e0e0; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
-        .dark-mode header { background-color: #1e1e1e; border-bottom: 1px solid #333; }
-        header h1 { margin: 0; color: var(--accent-color); font-size: 1.8rem; }
-        .theme-toggle-label { cursor: pointer; padding: 8px 12px; border-radius: 20px; background-color: #e9eef2; transition: background-color 0.3s; }
-        .dark-mode .theme-toggle-label { background-color: #242424; }
-        .theme-toggle-checkbox { display: none; }
-        .theme-toggle-label .sun { display: inline; } .theme-toggle-label .moon { display: none; }
-        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label .sun { display: none; }
-        .theme-toggle-checkbox:checked ~ .page-container .theme-toggle-label .moon { display: inline; }
-        .container { display: flex; }
-        .sidebar { width: 260px; background-color: #e9eef2; padding: 1.5rem; height: 100vh; position: fixed; top: 70px; left: 0; overflow-y: auto; border-right: 1px solid #e0e0e0; }
-        .dark-mode .sidebar { background-color: #242424; border-right: 1px solid #333; }
-        .sidebar h2 { font-size: 1.2rem; color: var(--accent-color); margin-top: 0; }
-        .sidebar ul { list-style: none; padding: 0; }
-        .sidebar ul li a { display: block; color: #333; text-decoration: none; padding: 0.75rem 1rem; border-radius: 5px; transition: background-color 0.2s; }
-        .dark-mode .sidebar ul li a { color: #e0e0e0; }
-        .sidebar ul li a:hover { background-color: var(--accent-color); color: white; }
-        .content { flex: 1; padding: 2rem; margin-left: 290px; }
-        .card { background-color: #ffffff; border-left: 5px solid var(--accent-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        .dark-mode .card { background-color: #1e1e1e; border-color: var(--accent-color); }
-        .card.formula { background-color: #e8f5e9; border-color: #66bb6a; }
-        .dark-mode .card.formula { background-color: #2e3c30; border-color: #81c784; }
-        h2 { border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
-        @media (max-width: 768px) { .sidebar { display: none; } .content { margin-left: 0; } header { flex-direction: column; } }
-    </style>
 </head>
 <body>
     <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
