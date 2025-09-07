@@ -82,36 +82,20 @@ class UrduTranslator {
 
     async translateToUrdu() {
         this.isTranslating = true;
-        this.showNotification('Translating to Urdu...', 'info');
+        this.showNotification('Loading Urdu translation...', 'info');
 
         try {
-            // Get the main content
-            const contentElement = document.querySelector('.content');
-            if (!contentElement) {
-                throw new Error('Content element not found');
-            }
-
-            // Check if we have cached translation
-            const pageKey = this.getPageKey();
-            if (this.translationCache.has(pageKey)) {
-                this.applyTranslation(this.translationCache.get(pageKey));
-                this.showNotification('Translation loaded from cache', 'success');
-                return;
-            }
-
-            // Extract text content
-            const textContent = this.extractTextContent(contentElement);
+            // Check if Urdu file exists
+            const urduUrl = this.getUrduFileUrl();
             
-            // Translate using Gemini API
-            const translation = await this.translateWithGemini(textContent);
-            
-            // Cache the translation
-            this.translationCache.set(pageKey, translation);
-            this.saveTranslationCache();
-
-            // Apply translation
-            this.applyTranslation(translation);
-            this.showNotification('Translation completed!', 'success');
+            if (urduUrl) {
+                // Load Urdu file directly
+                await this.loadUrduFile(urduUrl);
+                this.showNotification('Urdu translation loaded!', 'success');
+            } else {
+                // Fallback to API translation if file doesn't exist
+                await this.translateWithAPI();
+            }
 
         } catch (error) {
             console.error('Translation error:', error);
@@ -119,6 +103,92 @@ class UrduTranslator {
         } finally {
             this.isTranslating = false;
         }
+    }
+
+    getUrduFileUrl() {
+        const currentPath = window.location.pathname;
+        const pathParts = currentPath.split('/');
+        
+        // Map current directory to Urdu directory
+        const dirMapping = {
+            'chemistrybooks': 'chemistrybooks_urdu',
+            'chemistryxiibooks': 'chemistryxiibooks_urdu',
+            'physicsbooks': 'physicsbooks_urdu',
+            'physicsxiibooks': 'physicsxiibooks_urdu',
+            'mathbooks': 'mathbooks_urdu',
+            'mathsxiibooks': 'mathsxiibooks_urdu',
+            'biologybooks': 'biologybooks_urdu',
+            'biologyxiibooks': 'biologyxiibooks_urdu'
+        };
+        
+        for (const [originalDir, urduDir] of Object.entries(dirMapping)) {
+            if (currentPath.includes(originalDir)) {
+                const filename = pathParts[pathParts.length - 1];
+                return `/${urduDir}/${filename}`;
+            }
+        }
+        
+        return null;
+    }
+
+    async loadUrduFile(urduUrl) {
+        try {
+            const response = await fetch(urduUrl);
+            if (!response.ok) {
+                throw new Error(`Failed to load Urdu file: ${response.status}`);
+            }
+            
+            const urduHtml = await response.text();
+            
+            // Extract main content from Urdu HTML
+            const parser = new DOMParser();
+            const urduDoc = parser.parseFromString(urduHtml, 'text/html');
+            const urduContent = urduDoc.querySelector('.content');
+            
+            if (urduContent) {
+                this.applyUrduContent(urduContent.innerHTML);
+            } else {
+                throw new Error('Could not extract Urdu content');
+            }
+            
+        } catch (error) {
+            console.error('Error loading Urdu file:', error);
+            throw error;
+        }
+    }
+
+    applyUrduContent(urduHtml) {
+        const contentElement = document.querySelector('.content');
+        if (!contentElement) return;
+
+        // Store original content if not already stored
+        if (!contentElement.dataset.originalContent) {
+            contentElement.dataset.originalContent = contentElement.innerHTML;
+        }
+
+        // Apply Urdu content
+        contentElement.innerHTML = urduHtml;
+        contentElement.setAttribute('dir', 'rtl');
+        contentElement.classList.add('urdu-content');
+
+        // Re-render MathJax if present
+        if (window.MathJax) {
+            MathJax.typesetPromise([contentElement]).catch(err => {
+                console.error('MathJax rendering error:', err);
+            });
+        }
+    }
+
+    async translateWithAPI() {
+        // Fallback API translation (original method)
+        this.showNotification('Translating with AI...', 'info');
+        
+        const contentElement = document.querySelector('.content');
+        const textContent = this.extractTextContent(contentElement);
+        const translation = await this.translateWithGemini(textContent);
+        
+        this.applyTranslation(translation);
+        this.showNotification('AI translation completed!', 'success');
     }
 
     extractTextContent(element) {
@@ -207,6 +277,8 @@ ${text}`;
         if (!contentElement || !contentElement.dataset.originalContent) return;
 
         contentElement.innerHTML = contentElement.dataset.originalContent;
+        contentElement.removeAttribute('dir');
+        contentElement.classList.remove('urdu-content');
 
         // Re-render MathJax if present
         if (window.MathJax) {
