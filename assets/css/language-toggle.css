@@ -1,0 +1,193 @@
+/* Language Toggle Styles */
+.language-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    background: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.lang-btn {
+    background: transparent;
+    border: none;
+    color: #9ca3af;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+}
+
+.lang-btn:hover {
+    background: #374151;
+    color: #e5e7eb;
+}
+
+.lang-btn.active {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.lang-btn span {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Urdu text styling */
+.lang-btn[data-lang="ur"] span {
+    font-family: 'Noto Sans Urdu', 'Arial', sans-serif;
+    direction: rtl;
+}
+
+/* Notification animations */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .language-toggle {
+        top: 15px;
+        right: 15px;
+        border-radius: 10px;
+    }
+    
+    .lang-btn {
+        padding: 8px 12px;
+        font-size: 13px;
+        min-width: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .language-toggle {
+        top: 10px;
+        right: 10px;
+        border-radius: 8px;
+    }
+    
+    .lang-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+        min-width: 60px;
+    }
+}
+
+/* Urdu font loading */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Urdu:wght@400;500;600;700&display=swap');
+
+/* RTL support for Urdu content */
+.content[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+
+.content[dir="rtl"] h1,
+.content[dir="rtl"] h2,
+.content[dir="rtl"] h3,
+.content[dir="rtl"] h4 {
+    text-align: right;
+}
+
+.content[dir="rtl"] p,
+.content[dir="rtl"] li {
+    text-align: right;
+}
+
+.content[dir="rtl"] .card {
+    text-align: right;
+}
+
+.content[dir="rtl"] table {
+    direction: rtl;
+}
+
+.content[dir="rtl"] th,
+.content[dir="rtl"] td {
+    text-align: right;
+}
+
+/* Urdu text styling */
+.urdu-text {
+    font-family: 'Noto Sans Urdu', 'Arial', sans-serif;
+    direction: rtl;
+    text-align: right;
+    line-height: 1.8;
+}
+
+/* Loading state */
+.translating {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.translating::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Translation progress indicator */
+.translation-progress {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1f2937;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 12px;
+    z-index: 10001;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.translation-progress .spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #374151;
+    border-top: 2px solid #667eea;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

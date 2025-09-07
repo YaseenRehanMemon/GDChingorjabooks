@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 4: Bioenergetics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -55,6 +56,12 @@
     </script>
     <!-- MathJax CDN for rendering LaTeX -->
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <!-- Chatbot Styles -->
+    <link rel="stylesheet" href="../assets/css/chatbot.css">
+    <!-- Text Selection Styles -->
+    <link rel="stylesheet" href="../assets/css/text-selection.css">
+    <!-- Language Toggle Styles -->
+    <link rel="stylesheet" href="../assets/css/language-toggle.css">
 </head>
 <body style="--accent-color: #03A9F4;">
     <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
@@ -150,5 +157,55 @@
             </section>
         </main>
     </div>
+    
+    <!-- Chatbot Configuration -->
+    <script src="../assets/js/config.js"></script>
+    <!-- Chatbot Script -->
+    <script src="../assets/js/chatbot.js"></script>
+    <!-- Text Selection Script -->
+    <script src="../assets/js/text-selection.js"></script>
+    <!-- Urdu Translator Script -->
+    <script src="../assets/js/urdu-translator.js"></script>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-700 mt-20">
+        <div class="max-w-7xl mx-auto px-4 py-8 md:py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Brand Section -->
+                <div class="text-center md:text-left">
+                    <h3 class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-400 to-indigo-400 mb-4">Our Books</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Making learning accessible and efficient for college students through digital textbooks and AI-powered assistance.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="text-center md:text-left">
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../pages/about.html" class="text-gray-400 hover:text-white transition-colors text-sm">About Us</a></li>
+                        <li><a href="../pages/faq.html" class="text-gray-400 hover:text-white transition-colors text-sm">FAQs</a></li>
+                        <li><a href="../pages/author.html" class="text-gray-400 hover:text-white transition-colors text-sm">Author Bio</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Legal Links -->
+                <div class="text-center md:text-left">
+                    <h4 class="text-lg font-semibold text-white mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../pages/privacy.html" class="text-gray-400 hover:text-white transition-colors text-sm">Privacy Policy</a></li>
+                        <li><a href="../pages/terms.html" class="text-gray-400 hover:text-white transition-colors text-sm">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2025 Our Books. All rights reserved. Created by Yaseen Rehan Memon.
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaTeX Test - Our Books</title>
+    <link rel="stylesheet" href="assets/css/chatbot.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #1f2937;
+            color: #e5e7eb;
+            padding: 20px;
+        }
+        .test-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #374151;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #4b5563;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #1f2937;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .latex-example {
+            background: #111827;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 10px 0;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>LaTeX Rendering Test</h1>
+        
+        <div class="test-section">
+            <h2>Inline Math Examples</h2>
+            <p>Here are some inline math examples:</p>
+            <div class="latex-example">$E = mc^2$</div>
+            <div class="latex-example">$\frac{a}{b} = \frac{c}{d}$</div>
+            <div class="latex-example">$\sqrt{x^2 + y^2}$</div>
+            <div class="latex-example">$\sum_{i=1}^{n} x_i$</div>
+        </div>
+
+        <div class="test-section">
+            <h2>Display Math Examples</h2>
+            <p>Here are some display math examples:</p>
+            <div class="latex-example">$$\text{Moles} = \frac{\text{Mass}}{\text{Molar Mass}}$$</div>
+            <div class="latex-example">$$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$$</div>
+            <div class="latex-example">$$\begin{pmatrix} a & b \\ c & d \end{pmatrix}$$</div>
+        </div>
+
+        <div class="test-section">
+            <h2>Chemistry Examples</h2>
+            <p>Chemistry-related LaTeX:</p>
+            <div class="latex-example">$$\text{pH} = -\log[H^+]$$</div>
+            <div class="latex-example">$$PV = nRT$$</div>
+            <div class="latex-example">$$\Delta G = \Delta H - T\Delta S$$</div>
+        </div>
+
+        <div class="test-section">
+            <h2>Physics Examples</h2>
+            <p>Physics-related LaTeX:</p>
+            <div class="latex-example">$$F = ma$$</div>
+            <div class="latex-example">$$E = \frac{1}{2}mv^2$$</div>
+            <div class="latex-example">$$\lambda = \frac{h}{p}$$</div>
+        </div>
+
+        <div class="test-section">
+            <h2>Mathematics Examples</h2>
+            <p>Mathematics-related LaTeX:</p>
+            <div class="latex-example">$$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$</div>
+            <div class="latex-example">$$\lim_{x \to \infty} \frac{1}{x} = 0$$</div>
+            <div class="latex-example">$$\frac{d}{dx}[f(x)] = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$</div>
+        </div>
+    </div>
+
+    <!-- MathJax Configuration -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true,
+                processEnvironments: true
+            },
+            svg: {
+                fontCache: 'global'
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+    <!-- Chatbot Configuration -->
+    <script src="assets/js/config.js"></script>
+    <!-- Chatbot Script -->
+    <script src="assets/js/chatbot.js"></script>
+</body>
+</html>

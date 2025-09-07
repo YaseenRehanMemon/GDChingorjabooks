@@ -440,13 +440,19 @@ code {
   
   .content {
     padding: var(--spacing-lg);
+    overflow-x: hidden;
+    word-wrap: break-word;
   }
   
   h1 { font-size: 2rem; }
   h2 { font-size: 1.5rem; }
   h3 { font-size: 1.25rem; }
   h4 { font-size: 1.125rem; }
-  p, li { font-size: 1rem; }
+  p, li { 
+    font-size: 1rem; 
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
   
   .card-container {
     grid-template-columns: 1fr;
@@ -454,6 +460,35 @@ code {
   
   .subject-card h2 { font-size: 1.5rem; }
   .class-card { padding: var(--spacing-lg); }
+  
+  /* Fix text overflow */
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  table {
+    font-size: 0.875rem;
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+  }
+  
+  th, td {
+    padding: 0.5rem;
+    min-width: 100px;
+  }
+  
+  /* MathJax responsive */
+  .MathJax {
+    font-size: 0.9em !important;
+  }
+  
+  /* Code blocks */
+  code {
+    font-size: 0.875rem;
+    word-break: break-all;
+  }
 }
 
 /* Tablet */
@@ -470,6 +505,36 @@ code {
   h2 { font-size: 1.75rem; }
   
   .subject-card h2 { font-size: 1.75rem; }
+}
+
+/* Very Small Mobile */
+@media (max-width: 480px) {
+  .content {
+    padding: var(--spacing-md);
+  }
+  
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.25rem; }
+  h3 { font-size: 1.125rem; }
+  h4 { font-size: 1rem; }
+  p, li { font-size: 0.875rem; }
+  
+  table {
+    font-size: 0.75rem;
+  }
+  
+  th, td {
+    padding: 0.25rem;
+    min-width: 60px;
+  }
+  
+  .MathJax {
+    font-size: 0.8em !important;
+  }
+  
+  code {
+    font-size: 0.75rem;
+  }
 }
 
 /* Desktop */
