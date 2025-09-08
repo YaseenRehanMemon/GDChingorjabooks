@@ -1,0 +1,563 @@
+[
+  {
+    "id": "bio_xi_ch2_mcq_001",
+    "question": "Which of the following statements best describes the chemical nature of most enzymes?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "They are primarily carbohydrates.",
+      "B": "They are primarily lipids.",
+      "C": "They are primarily proteins.",
+      "D": "They are primarily nucleic acids."
+    },
+    "correct_answer": "C",
+    "explanation": "Enzymes are biological catalysts, and the vast majority of them are protein molecules. Their catalytic activity is due to their specific three-dimensional structure. Options A, B, and D are incorrect because carbohydrates, lipids, and nucleic acids, while essential biological molecules, do not typically function as enzymes (with the rare exception of ribozymes, which are RNA molecules with catalytic activity, but proteins are the predominant type).",
+    "difficulty": "easy",
+    "topic": "introduction_to_enzymes",
+    "subtopic": "chemical_nature",
+    "tags": [
+      "enzymes",
+      "proteins",
+      "catalysts",
+      "biological_molecules"
+    ],
+    "learning_objective": "Identify the chemical composition of most enzymes.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch2_mcq_002",
+    "question": "What is the primary function of an enzyme in a biochemical reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "To increase the activation energy.",
+      "B": "To decrease the activation energy.",
+      "C": "To change the equilibrium of the reaction.",
+      "D": "To provide energy for the reaction."
+    },
+    "correct_answer": "B",
+    "explanation": "Enzymes function as biological catalysts by lowering the activation energy required for a biochemical reaction to proceed. By doing so, they increase the rate of the reaction without being consumed in the process. Option A is incorrect because increasing activation energy would slow down the reaction. Option C is incorrect because enzymes only affect the rate at which equilibrium is reached, not the position of the equilibrium itself. Option D is incorrect as enzymes do not provide energy; they facilitate reactions that may consume or release energy.",
+    "difficulty": "easy",
+    "topic": "mechanism_of_enzyme_action",
+    "subtopic": "activation_energy",
+    "tags": [
+      "enzymes",
+      "catalysis",
+      "activation_energy",
+      "reaction_rate"
+    ],
+    "learning_objective": "Explain how enzymes affect reaction rates.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch2_mcq_003",
+    "question": "The specific region on an enzyme where the substrate binds is known as the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Allosteric site",
+      "B": "Regulatory site",
+      "C": "Active site",
+      "D": "Binding pocket"
+    },
+    "correct_answer": "C",
+    "explanation": "The active site is a specific three-dimensional region on the enzyme molecule where the substrate binds and undergoes a chemical reaction. It is typically a small part of the enzyme's total volume. Options A and B refer to sites that can modulate enzyme activity but are not where the primary substrate binding and catalysis occur. Option D is a general term but 'active site' is the precise scientific term.",
+    "difficulty": "easy",
+    "topic": "structure_of_enzymes",
+    "subtopic": "active_site",
+    "tags": [
+      "enzymes",
+      "active_site",
+      "substrate",
+      "binding"
+    ],
+    "learning_objective": "Identify the site of substrate binding on an enzyme.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch2_mcq_004",
+    "question": "Which term describes an enzyme that has lost its three-dimensional structure and, consequently, its activity?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Activated",
+      "B": "Denatured",
+      "C": "Saturated",
+      "D": "Inhibited"
+    },
+    "correct_answer": "B",
+    "explanation": "Denaturation refers to the process where an enzyme (or any protein) loses its specific three-dimensional structure, particularly its tertiary and secondary structures, due to factors like extreme temperature or pH. This loss of structure leads to a loss of its biological activity. Option A means the enzyme is functional. Option C refers to the active sites being fully occupied by substrate. Option D means its activity is reduced by an inhibitor, which may or may not involve denaturation.",
+    "difficulty": "easy",
+    "topic": "factors_affecting_enzyme_activity",
+    "subtopic": "denaturation",
+    "tags": [
+      "enzymes",
+      "denaturation",
+      "protein_structure",
+      "activity"
+    ],
+    "learning_objective": "Define denaturation in the context of enzyme activity.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch2_mcq_005",
+    "question": "Enzymes are highly specific. This means that typically, an enzyme will catalyze:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Any type of reaction.",
+      "B": "A wide range of reactions.",
+      "C": "Only one specific reaction or a very small group of related reactions.",
+      "D": "Reactions involving only large molecules."
+    },
+    "correct_answer": "C",
+    "explanation": "Enzyme specificity is a key characteristic, meaning each enzyme typically catalyzes only one specific type of reaction or acts on a very limited range of structurally similar substrates. This specificity arises from the unique shape and chemical properties of the active site, which can only accommodate certain molecules. Options A and B contradict the concept of specificity. Option D is incorrect as enzymes act on molecules of various sizes.",
+    "difficulty": "easy",
+    "topic": "mechanism_of_enzyme_action",
+    "subtopic": "specificity",
+    "tags": [
+      "enzymes",
+      "specificity",
+      "active_site",
+      "substrate"
+    ],
+    "learning_objective": "Understand the concept of enzyme specificity.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch2_mcq_006",
+    "question": "Which of the following is an inorganic cofactor?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Vitamins",
+      "B": "NAD$^+$",
+      "C": "Metal ions like $Zn^{2+}$ or $Mg^{2+}$",
+      "D": "FAD"
+    },
+    "correct_answer": "C",
+    "explanation": "Cofactors are non-protein chemical compounds that are required for the enzyme's biological activity. They can be inorganic (metal ions) or organic (coenzymes). Metal ions such as $Zn^{2+}$, $Mg^{2+}$, $Fe^{2+}$, $Cu^{2+}$ are common inorganic cofactors. Options A, B, and D are all organic cofactors (coenzymes), with vitamins often serving as precursors for coenzymes like NAD$^+$ (from niacin) and FAD (from riboflavin).",
+    "difficulty": "easy",
+    "topic": "structure_of_enzymes",
+    "subtopic": "cofactors",
+    "tags": [
+      "enzymes",
+      "cofactors",
+      "inorganic_ions",
+      "metal_ions"
+    ],
+    "learning_objective": "Distinguish between organic and inorganic cofactors.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch2_mcq_007",
+    "question": "The 'Lock and Key' model of enzyme action was proposed by:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Daniel Koshland",
+      "B": "Emil Fischer",
+      "C": "Louis Pasteur",
+      "D": "James Watson"
+    },
+    "correct_answer": "B",
+    "explanation": "The 'Lock and Key' model, which suggests that the enzyme's active site has a rigid shape complementary to the substrate, was proposed by Emil Fischer in 1894. Daniel Koshland later proposed the 'Induced Fit' model. Louis Pasteur is known for his work on microbiology and fermentation, and James Watson for the structure of DNA.",
+    "difficulty": "easy",
+    "topic": "mechanism_of_enzyme_action",
+    "subtopic": "lock_and_key_model",
+    "tags": [
+      "enzymes",
+      "lock_and_key",
+      "emil_fischer",
+      "models"
+    ],
+    "learning_objective": "Recall the scientist associated with the Lock and Key model.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "bio_xi_ch2_mcq_008",
+    "question": "Which class of enzymes catalyzes the transfer of functional groups from one molecule to another?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Hydrolases",
+      "B": "Isomerases",
+      "C": "Transferases",
+      "D": "Lyases"
+    },
+    "correct_answer": "C",
+    "explanation": "Transferases are a class of enzymes that catalyze the transfer of a functional group (e.g., methyl, phosphate, amino group) from one substrate to another. Hydrolases catalyze hydrolysis reactions. Isomerases catalyze the rearrangement of atoms within a molecule. Lyases catalyze the cleavage of bonds by elimination, forming double bonds or rings.",
+    "difficulty": "easy",
+    "topic": "classification_of_enzymes",
+    "subtopic": "transferases",
+    "tags": [
+      "enzymes",
+      "classification",
+      "transferases",
+      "functional_groups"
+    ],
+    "learning_objective": "Identify the function of Transferase enzymes.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch2_mcq_009",
+    "question": "What is the effect of increasing substrate concentration on enzyme activity, assuming enzyme concentration is constant and not saturated?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Enzyme activity decreases.",
+      "B": "Enzyme activity remains constant.",
+      "C": "Enzyme activity increases up to a certain point.",
+      "D": "Enzyme activity increases indefinitely."
+    },
+    "correct_answer": "C",
+    "explanation": "At low substrate concentrations, increasing the substrate concentration leads to an increase in enzyme activity because more active sites are occupied. However, once all active sites are continuously occupied (saturation), further increases in substrate concentration will not increase the reaction rate, and the enzyme activity reaches its maximum ($V_{max}$). Therefore, enzyme activity increases up to a certain point, not indefinitely.",
+    "difficulty": "easy",
+    "topic": "factors_affecting_enzyme_activity",
+    "subtopic": "substrate_concentration",
+    "tags": [
+      "enzymes",
+      "substrate_concentration",
+      "reaction_rate",
+      "saturation"
+    ],
+    "learning_objective": "Describe the effect of substrate concentration on enzyme activity.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch2_mcq_010",
+    "question": "The protein part of a holoenzyme, without its cofactor, is called the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Proenzyme",
+      "B": "Apoenzyme",
+      "C": "Coenzyme",
+      "D": "Prosthetic group"
+    },
+    "correct_answer": "B",
+    "explanation": "A holoenzyme is the complete, catalytically active enzyme, consisting of an apoenzyme (the protein part) and a cofactor (a non-protein component). The apoenzyme alone is inactive. Coenzymes and prosthetic groups are types of cofactors. A proenzyme (or zymogen) is an inactive precursor of an enzyme.",
+    "difficulty": "easy",
+    "topic": "structure_of_enzymes",
+    "subtopic": "apoenzyme_holoenzyme",
+    "tags": [
+      "enzymes",
+      "apoenzyme",
+      "holoenzyme",
+      "cofactor"
+    ],
+    "learning_objective": "Define apoenzyme and holoenzyme.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch2_mcq_011",
+    "question": "Which of the following is NOT a general characteristic of enzymes?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "They are consumed in the reactions they catalyze.",
+      "B": "They are highly specific.",
+      "C": "They are sensitive to temperature and pH changes.",
+      "D": "They speed up the rate of biochemical reactions."
+    },
+    "correct_answer": "A",
+    "explanation": "Enzymes are catalysts, meaning they increase the rate of a reaction without being consumed or permanently altered in the process. They can be reused multiple times. Options B, C, and D are all true characteristics of enzymes: they are highly specific, sensitive to environmental conditions (temperature, pH), and accelerate reaction rates.",
+    "difficulty": "easy",
+    "topic": "introduction_to_enzymes",
+    "subtopic": "characteristics",
+    "tags": [
+      "enzymes",
+      "characteristics",
+      "catalyst",
+      "specificity"
+    ],
+    "learning_objective": "Recall the general characteristics of enzymes.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch2_mcq_012",
+    "question": "The optimum temperature for most human enzymes is approximately:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$0^\\circ C$",
+      "B": "$25^\\circ C$",
+      "C": "$37^\\circ C$",
+      "D": "$100^\\circ C$"
+    },
+    "correct_answer": "C",
+    "explanation": "Most enzymes in the human body function optimally at the physiological body temperature, which is approximately $37^\\circ C$. Temperatures significantly above this can lead to denaturation, while much lower temperatures reduce enzyme activity without necessarily denaturing them. Options A, B, and D are not typical optimum temperatures for human enzymes.",
+    "difficulty": "easy",
+    "topic": "factors_affecting_enzyme_activity",
+    "subtopic": "temperature",
+    "tags": [
+      "enzymes",
+      "optimum_temperature",
+      "human_body",
+      "physiological"
+    ],
+    "learning_objective": "State the optimum temperature for human enzymes.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch2_mcq_013",
+    "question": "Which type of enzyme inhibitor binds to the active site of an enzyme?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Non-competitive inhibitor",
+      "B": "Irreversible inhibitor",
+      "C": "Competitive inhibitor",
+      "D": "Allosteric inhibitor"
+    },
+    "correct_answer": "C",
+    "explanation": "A competitive inhibitor is a molecule that structurally resembles the substrate and competes with the substrate for binding to the enzyme's active site. This type of inhibition can often be overcome by increasing the substrate concentration. Non-competitive inhibitors bind to a site other than the active site. Irreversible inhibitors form strong covalent bonds, often at the active site, but the key characteristic of competitive is the direct competition for the active site. Allosteric inhibitors bind to an allosteric site, not the active site.",
+    "difficulty": "easy",
+    "topic": "factors_affecting_enzyme_activity",
+    "subtopic": "competitive_inhibition",
+    "tags": [
+      "enzymes",
+      "inhibitors",
+      "competitive_inhibition",
+      "active_site"
+    ],
+    "learning_objective": "Identify the binding site of competitive inhibitors.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch2_mcq_014",
+    "question": "The suffix commonly used to name enzymes is:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "-ose",
+      "B": "-ol",
+      "C": "-ase",
+      "D": "-ate"
+    },
+    "correct_answer": "C",
+    "explanation": "Most enzymes are named by adding the suffix '-ase' to the name of their substrate or the type of reaction they catalyze. For example, lactase breaks down lactose, and hydrolase catalyzes hydrolysis. '-ose' is common for sugars (e.g., glucose, lactose). '-ol' is common for alcohols (e.g., ethanol). '-ate' is common for salts or esters of acids (e.g., lactate).",
+    "difficulty": "easy",
+    "topic": "classification_of_enzymes",
+    "subtopic": "nomenclature",
+    "tags": [
+      "enzymes",
+      "nomenclature",
+      "suffix",
+      "naming"
+    ],
+    "learning_objective": "Recall the common suffix used in enzyme naming.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch2_mcq_015",
+    "question": "Which of the following is an example of an enzyme that functions optimally in a highly acidic environment (low pH)?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Amylase (saliva)",
+      "B": "Trypsin (small intestine)",
+      "C": "Pepsin (stomach)",
+      "D": "Catalase (peroxisomes)"
+    },
+    "correct_answer": "C",
+    "explanation": "Pepsin is a proteolytic enzyme found in the stomach, where the pH is typically very low (around $1.5$ to $3.5$). It functions optimally in this acidic environment. Amylase in saliva has an optimum pH around $6.7-7.0$. Trypsin in the small intestine has an optimum pH around $8.0$. Catalase typically functions best around neutral pH ($7.0$).",
+    "difficulty": "easy",
+    "topic": "factors_affecting_enzyme_activity",
+    "subtopic": "pH",
+    "tags": [
+      "enzymes",
+      "pH",
+      "optimum_pH",
+      "pepsin",
+      "stomach"
+    ],
+    "learning_objective": "Provide an example of an enzyme with an acidic optimum pH.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch2_mcq_016",
+    "question": "The 'Induced Fit' model of enzyme action suggests that:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The active site is rigid and unchanging.",
+      "B": "The enzyme changes shape slightly upon substrate binding.",
+      "C": "The substrate changes shape to fit the enzyme.",
+      "D": "Enzymes can catalyze any reaction."
+    },
+    "correct_answer": "B",
+    "explanation": "The 'Induced Fit' model, proposed by Daniel Koshland, suggests that the active site of an enzyme is not rigid but is flexible and undergoes a conformational change (slight alteration in shape) upon binding with its specific substrate. This change optimizes the fit between the enzyme and substrate, enhancing catalytic activity. Option A describes the 'Lock and Key' model. Option C is incorrect as the enzyme primarily changes shape. Option D contradicts enzyme specificity.",
+    "difficulty": "medium",
+    "topic": "mechanism_of_enzyme_action",
+    "subtopic": "induced_fit_model",
+    "tags": [
+      "enzymes",
+      "induced_fit",
+      "active_site",
+      "conformational_change"
+    ],
+    "learning_objective": "Explain the concept of the Induced Fit model.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch2_mcq_017",
+    "question": "A coenzyme is an organic molecule that binds to an enzyme to assist in catalysis. Which of the following is a common source of coenzymes?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Minerals",
+      "B": "Amino acids",
+      "C": "Vitamins",
+      "D": "Fatty acids"
+    },
+    "correct_answer": "C",
+    "explanation": "Many coenzymes are derived from vitamins. For example, NAD$^+$ and FAD, crucial coenzymes in metabolic pathways, are derived from niacin (Vitamin B3) and riboflavin (Vitamin B2), respectively. Minerals are inorganic cofactors. Amino acids are the building blocks of proteins (enzymes themselves). Fatty acids are components of lipids.",
+    "difficulty": "medium",
+    "topic": "structure_of_enzymes",
+    "subtopic": "coenzymes_vitamins",
+    "tags": [
+      "enzymes",
+      "coenzymes",
+      "vitamins",
+      "cofactors"
+    ],
+    "learning_objective": "Relate coenzymes to their vitamin precursors.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch2_mcq_018",
+    "question": "If an enzyme has an optimum pH of $7.0$ and is placed in a solution with a pH of $2.0$, what is the most likely outcome?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The enzyme will function at its maximum rate.",
+      "B": "The enzyme will denature and lose its activity.",
+      "C": "The enzyme's activity will be slightly reduced but still significant.",
+      "D": "The enzyme will become more stable."
+    },
+    "correct_answer": "B",
+    "explanation": "Enzymes are highly sensitive to pH changes. A significant deviation from the optimum pH (e.g., from $7.0$ to $2.0$) can alter the ionization state of amino acid residues in the active site and elsewhere, disrupting the enzyme's three-dimensional structure and leading to denaturation and loss of activity. Option A is incorrect as it's far from optimum. Option C is unlikely for such a large pH change. Option D is incorrect as extreme pH usually decreases stability.",
+    "difficulty": "medium",
+    "topic": "factors_affecting_enzyme_activity",
+    "subtopic": "pH_denaturation",
+    "tags": [
+      "enzymes",
+      "pH",
+      "denaturation",
+      "activity_loss"
+    ],
+    "learning_objective": "Predict the effect of extreme pH on enzyme activity.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch2_mcq_019",
+    "question": "In an enzyme-catalyzed reaction, what happens to the enzyme after the products are released?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "It is consumed and broken down.",
+      "B": "It changes into the product.",
+      "C": "It is regenerated and can bind to another substrate molecule.",
+      "D": "It forms a permanent complex with the product."
+    },
+    "correct_answer": "C",
+    "explanation": "A fundamental characteristic of catalysts, including enzymes, is that they are not consumed in the reactions they catalyze. After the substrate is converted into product and released from the active site, the enzyme returns to its original state, ready to bind to another substrate molecule and catalyze the reaction again. Options A, B, and D contradict the definition of a catalyst.",
+    "difficulty": "medium",
+    "topic": "mechanism_of_enzyme_action",
+    "subtopic": "enzyme_recycling",
+    "tags": [
+      "enzymes",
+      "catalyst",
+      "reaction_cycle",
+      "recycling"
+    ],
+    "learning_objective": "Describe the fate of an enzyme after catalysis.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch2_mcq_020",
+    "question": "Which class of enzymes is responsible for catalyzing redox reactions (oxidation-reduction reactions)?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Hydrolases",
+      "B": "Oxidoreductases",
+      "C": "Ligases",
+      "D": "Lyases"
+    },
+    "correct_answer": "B",
+    "explanation": "Oxidoreductases are enzymes that catalyze the transfer of electrons or hydrogen atoms from one molecule to another, thus facilitating oxidation-reduction reactions. Hydrolases break bonds using water. Ligases join two molecules together, often coupled with ATP hydrolysis. Lyases break bonds without hydrolysis or oxidation, often forming double bonds.",
+    "difficulty": "medium",
+    "topic": "classification_of_enzymes",
+    "subtopic": "oxidoreductases",
+    "tags": [
+      "enzymes",
+      "classification",
+      "redox_reactions",
+      "oxidoreductases"
+    ],
+    "learning_objective": "Identify the enzyme class for redox reactions.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

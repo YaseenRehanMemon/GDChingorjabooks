@@ -1,0 +1,395 @@
+[
+  {
+    "id": "chem_xii_ch9_mcq_001",
+    "question": "What are the units for the rate of a chemical reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$mol \\cdot dm^{-3} \\cdot s^{-1}$",
+      "B": "$mol \\cdot dm^3 \\cdot s^{-1}$",
+      "C": "$mol^{-1} \\cdot dm^3 \\cdot s^{-1}$",
+      "D": "$mol \\cdot dm^{-3} \\cdot s$"
+    },
+    "correct_answer": "A",
+    "explanation": "The rate of a chemical reaction is defined as the change in concentration of a reactant or product per unit time. Concentration is typically measured in $mol \\cdot dm^{-3}$ (or $M$), and time in seconds ($s$). Therefore, the units for the rate of reaction are $mol \\cdot dm^{-3} \\cdot s^{-1}$. Option A correctly represents this. Options B, C, and D have incorrect combinations of units for concentration or time.",
+    "difficulty": "easy",
+    "topic": "rate_of_reaction",
+    "subtopic": "units_of_rate",
+    "tags": [
+      "reaction_rate",
+      "units",
+      "kinetics",
+      "basic_definition"
+    ],
+    "learning_objective": "Recall the standard units for the rate of a chemical reaction.",
+    "created_date": "2024-07-30",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch9_mcq_002",
+    "question": "Which of the following factors does NOT typically affect the rate of a chemical reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Temperature",
+      "B": "Concentration of reactants",
+      "C": "Surface area of reactants",
+      "D": "Gibbs free energy change ($\\Delta G$)"
+    },
+    "correct_answer": "D",
+    "explanation": "The rate of a chemical reaction is influenced by several factors: temperature (higher temperature generally increases rate), concentration of reactants (higher concentration generally increases rate), and surface area (for heterogeneous reactions, larger surface area increases rate). Catalysts also affect reaction rate. Gibbs free energy change ($\\Delta G$) determines the spontaneity of a reaction, not its rate. A reaction can be spontaneous ($\\Delta G < 0$) but very slow, or non-spontaneous ($\\Delta G > 0$) and still have a measurable rate if energy is supplied. Therefore, $\\Delta G$ does not directly affect the rate.",
+    "difficulty": "easy",
+    "topic": "factors_affecting_rate",
+    "subtopic": "thermodynamics_vs_kinetics",
+    "tags": [
+      "reaction_rate",
+      "factors",
+      "kinetics",
+      "thermodynamics"
+    ],
+    "learning_objective": "Identify factors that influence reaction rates and distinguish them from thermodynamic properties.",
+    "created_date": "2024-07-30",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch9_mcq_003",
+    "question": "For a reaction $A \rightarrow B$, if the concentration of A decreases from $0.50 \\ M$ to $0.20 \\ M$ in $30 \\ seconds$, what is the average rate of reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$0.01 \\ M \\cdot s^{-1}$",
+      "B": "$0.02 \\ M \\cdot s^{-1}$",
+      "C": "$0.03 \\ M \\cdot s^{-1}$",
+      "D": "$0.04 \\ M \\cdot s^{-1}$"
+    },
+    "correct_answer": "A",
+    "explanation": "The average rate of reaction is calculated as the change in concentration divided by the change in time. For a reactant, the rate is given by: \n$$Rate = -\frac{\\Delta[A]}{\\Delta t}$$ \nGiven: \nInitial concentration $[A]_1 = 0.50 \\ M$ \nFinal concentration $[A]_2 = 0.20 \\ M$ \nTime interval $\\Delta t = 30 \\ s$ \n\nChange in concentration $\\Delta[A] = [A]_2 - [A]_1 = 0.20 \\ M - 0.50 \\ M = -0.30 \\ M$ \n\nAverage rate $= -\frac{(-0.30 \\ M)}{30 \\ s} = \frac{0.30 \\ M}{30 \\ s} = 0.01 \\ M \\cdot s^{-1}$ \n\nTherefore, the average rate of reaction is $0.01 \\ M \\cdot s^{-1}$.",
+    "difficulty": "medium",
+    "topic": "rate_of_reaction",
+    "subtopic": "average_rate_calculation",
+    "tags": [
+      "reaction_rate",
+      "numerical",
+      "average_rate",
+      "kinetics"
+    ],
+    "learning_objective": "Calculate the average rate of reaction given concentration changes over time.",
+    "created_date": "2024-07-30",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "chem_xii_ch9_mcq_004",
+    "question": "For the reaction $2NO_2(g) \rightarrow 2NO(g) + O_2(g)$, which expression correctly represents the rate of reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$Rate = -\frac{1}{2}\frac{d[NO_2]}{dt} = \frac{1}{2}\frac{d[NO]}{dt} = \frac{d[O_2]}{dt}$",
+      "B": "$Rate = -\frac{d[NO_2]}{dt} = \frac{d[NO]}{dt} = \frac{d[O_2]}{dt}$",
+      "C": "$Rate = -2\frac{d[NO_2]}{dt} = 2\frac{d[NO]}{dt} = \frac{d[O_2]}{dt}$",
+      "D": "$Rate = -\frac{1}{2}\frac{d[NO_2]}{dt} = \frac{d[NO]}{dt} = 2\frac{d[O_2]}{dt}$"
+    },
+    "correct_answer": "A",
+    "explanation": "For a general reaction $aA + bB \rightarrow cC + dD$, the rate of reaction is expressed as: \n$$Rate = -\frac{1}{a}\frac{d[A]}{dt} = -\frac{1}{b}\frac{d[B]}{dt} = \frac{1}{c}\frac{d[C]}{dt} = \frac{1}{d}\frac{d[D]}{dt}$$ \nFor the given reaction $2NO_2(g) \rightarrow 2NO(g) + O_2(g)$: \n- The rate of disappearance of $NO_2$ is $-\frac{d[NO_2]}{dt}$. Since its stoichiometric coefficient is 2, we divide by 2: $-\frac{1}{2}\frac{d[NO_2]}{dt}$. \n- The rate of appearance of $NO$ is $\frac{d[NO]}{dt}$. Since its stoichiometric coefficient is 2, we divide by 2: $\frac{1}{2}\frac{d[NO]}{dt}$. \n- The rate of appearance of $O_2$ is $\frac{d[O_2]}{dt}$. Since its stoichiometric coefficient is 1, we divide by 1: $\frac{d[O_2]}{dt}$. \n\nEquating these, we get: \n$$Rate = -\frac{1}{2}\frac{d[NO_2]}{dt} = \frac{1}{2}\frac{d[NO]}{dt} = \frac{d[O_2]}{dt}$$ \nThis matches option A.",
+    "difficulty": "medium",
+    "topic": "rate_of_reaction",
+    "subtopic": "stoichiometry_and_rate",
+    "tags": [
+      "reaction_rate",
+      "stoichiometry",
+      "rate_expression",
+      "kinetics"
+    ],
+    "learning_objective": "Write the rate expression for a given chemical reaction based on its stoichiometry.",
+    "created_date": "2024-07-30",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "chem_xii_ch9_mcq_005",
+    "question": "What is the primary effect of increasing the temperature on the rate of most chemical reactions?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Decreases the activation energy",
+      "B": "Increases the frequency of collisions",
+      "C": "Decreases the kinetic energy of molecules",
+      "D": "Increases the number of effective collisions"
+    },
+    "correct_answer": "D",
+    "explanation": "Increasing the temperature increases the kinetic energy of reactant molecules. This leads to: \n1.  **Increased collision frequency (Option B)**: Molecules move faster and collide more often. \n2.  **Increased energy of collisions**: A larger fraction of collisions will have energy equal to or greater than the activation energy. \n\nThe *primary* reason for the significant increase in reaction rate is the increase in the *number of effective collisions* (Option D), i.e., collisions that possess sufficient energy (activation energy) and proper orientation to lead to product formation. While collision frequency increases, the exponential dependence of rate on temperature (Arrhenius equation) is mainly due to the increased fraction of molecules with sufficient energy. Option A is incorrect; activation energy is a property of the reaction pathway, not directly affected by temperature (though catalysts can lower it). Option C is incorrect; kinetic energy increases with temperature.",
+    "difficulty": "medium",
+    "topic": "factors_affecting_rate",
+    "subtopic": "temperature_effect",
+    "tags": [
+      "temperature",
+      "reaction_rate",
+      "collision_theory",
+      "activation_energy"
+    ],
+    "learning_objective": "Explain how temperature affects reaction rate based on collision theory.",
+    "created_date": "2024-07-30",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch9_mcq_006",
+    "question": "The rate law for a reaction is given as $Rate = k[A]^2[B]^1$. What is the overall order of the reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "First order",
+      "B": "Second order",
+      "C": "Third order",
+      "D": "Fourth order"
+    },
+    "correct_answer": "C",
+    "explanation": "The overall order of a reaction is the sum of the exponents of the concentration terms in the rate law. \nGiven rate law: $Rate = k[A]^2[B]^1$ \nOrder with respect to A is 2. \nOrder with respect to B is 1. \nOverall order $= 2 + 1 = 3$. \nTherefore, the reaction is third order overall.",
+    "difficulty": "easy",
+    "topic": "rate_law_and_order",
+    "subtopic": "overall_order",
+    "tags": [
+      "rate_law",
+      "reaction_order",
+      "kinetics",
+      "definition"
+    ],
+    "learning_objective": "Determine the overall order of a reaction from its rate law.",
+    "created_date": "2024-07-30",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch9_mcq_007",
+    "question": "For a zero-order reaction, the rate of reaction is independent of which of the following?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Temperature",
+      "B": "Concentration of reactants",
+      "C": "Presence of catalyst",
+      "D": "Surface area"
+    },
+    "correct_answer": "B",
+    "explanation": "A zero-order reaction is defined as a reaction whose rate does not depend on the concentration of the reactants. Its rate law is $Rate = k[A]^0 = k$. This means the rate is constant and equal to the rate constant $k$. \nTemperature (A), presence of catalyst (C), and surface area (D) are all factors that can affect the rate constant $k$ and thus the rate of even a zero-order reaction. However, the *concentration* of reactants (B) has no effect on the rate for a zero-order reaction.",
+    "difficulty": "easy",
+    "topic": "rate_law_and_order",
+    "subtopic": "zero_order_reaction",
+    "tags": [
+      "reaction_order",
+      "zero_order",
+      "kinetics",
+      "concentration"
+    ],
+    "learning_objective": "Define and identify characteristics of a zero-order reaction.",
+    "created_date": "2024-07-30",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch9_mcq_008",
+    "question": "The half-life period ($t_{1/2}$) for a first-order reaction is given by which expression?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$t_{1/2} = \frac{0.693}{k}$",
+      "B": "$t_{1/2} = \frac{k}{0.693}$",
+      "C": "$t_{1/2} = \frac{[A]_0}{2k}$",
+      "D": "$t_{1/2} = \frac{1}{k[A]_0}$"
+    },
+    "correct_answer": "A",
+    "explanation": "For a first-order reaction, the integrated rate law is $\\ln[A]_t - \\ln[A]_0 = -kt$. \nAt half-life, $[A]_t = \frac{[A]_0}{2}$. \nSubstituting this into the integrated rate law: \n$\\ln\\left(\frac{[A]_0}{2}\right) - \\ln[A]_0 = -kt_{1/2}$ \n$\\ln[A]_0 - \\ln 2 - \\ln[A]_0 = -kt_{1/2}$ \n$-\\ln 2 = -kt_{1/2}$ \n$t_{1/2} = \frac{\\ln 2}{k}$ \nSince $\\ln 2 \\approx 0.693$, the half-life for a first-order reaction is $t_{1/2} = \frac{0.693}{k}$. \nThis shows that for a first-order reaction, the half-life is independent of the initial concentration of the reactant. Options B, C, and D are incorrect formulas for the half-life of a first-order reaction.",
+    "difficulty": "medium",
+    "topic": "half_life",
+    "subtopic": "first_order_half_life",
+    "tags": [
+      "half_life",
+      "first_order",
+      "kinetics",
+      "formula"
+    ],
+    "learning_objective": "Recall and apply the formula for the half-life of a first-order reaction.",
+    "created_date": "2024-07-30",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "chem_xii_ch9_mcq_009",
+    "question": "A reaction is second order with respect to reactant A and first order with respect to reactant B. If the concentration of A is doubled and the concentration of B is halved, how will the reaction rate change?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Increase by a factor of 2",
+      "B": "Increase by a factor of 4",
+      "C": "Decrease by a factor of 2",
+      "D": "Remain unchanged"
+    },
+    "correct_answer": "A",
+    "explanation": "The rate law for the reaction is $Rate_1 = k[A]^2[B]^1$. \nLet the initial concentrations be $[A]$ and $[B]$. \nNew concentrations: $[A]' = 2[A]$ and $[B]' = \frac{1}{2}[B]$. \n\nThe new rate, $Rate_2$, will be: \n$Rate_2 = k([A]')^2([B]')^1$ \n$Rate_2 = k(2[A])^2(\frac{1}{2}[B])^1$ \n$Rate_2 = k(4[A]^2)(\frac{1}{2}[B])$ \n$Rate_2 = 4 \times \frac{1}{2} \times k[A]^2[B]$ \n$Rate_2 = 2 \times k[A]^2[B]$ \n$Rate_2 = 2 \times Rate_1$ \n\nThus, the reaction rate will increase by a factor of 2.",
+    "difficulty": "medium",
+    "topic": "rate_law_and_order",
+    "subtopic": "effect_of_concentration",
+    "tags": [
+      "rate_law",
+      "reaction_order",
+      "concentration_effect",
+      "numerical"
+    ],
+    "learning_objective": "Predict the change in reaction rate based on changes in reactant concentrations and the rate law.",
+    "created_date": "2024-07-30",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "chem_xii_ch9_mcq_010",
+    "question": "What is the role of a catalyst in a chemical reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "To increase the activation energy",
+      "B": "To shift the equilibrium position towards products",
+      "C": "To provide an alternative reaction pathway with lower activation energy",
+      "D": "To increase the kinetic energy of reactant molecules"
+    },
+    "correct_answer": "C",
+    "explanation": "A catalyst is a substance that increases the rate of a chemical reaction without being consumed in the reaction itself. It achieves this by providing an alternative reaction mechanism or pathway that has a lower activation energy ($E_a$) than the uncatalyzed reaction. \nOption A is incorrect; catalysts decrease activation energy. \nOption B is incorrect; catalysts speed up both forward and reverse reactions equally, thus they do not change the position of equilibrium, only the rate at which equilibrium is reached. \nOption D is incorrect; increasing kinetic energy is achieved by increasing temperature, not by adding a catalyst.",
+    "difficulty": "easy",
+    "topic": "catalysis",
+    "subtopic": "catalyst_mechanism",
+    "tags": [
+      "catalyst",
+      "activation_energy",
+      "reaction_rate",
+      "mechanism"
+    ],
+    "learning_objective": "Describe the function of a catalyst in terms of activation energy and reaction pathway.",
+    "created_date": "2024-07-30",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch9_mcq_011",
+    "question": "The rate constant ($k$) for a reaction has units of $s^{-1}$. What is the order of this reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Zero order",
+      "B": "First order",
+      "C": "Second order",
+      "D": "Third order"
+    },
+    "correct_answer": "B",
+    "explanation": "The general units for the rate constant $k$ are $(concentration)^{1-n} \\cdot time^{-1}$, where $n$ is the order of the reaction. \nLet's assume concentration units are $mol \\cdot dm^{-3}$ and time units are $s$. \nSo, units of $k = (mol \\cdot dm^{-3})^{1-n} \\cdot s^{-1}$. \n\nIf $n=0$ (zero order): units of $k = (mol \\cdot dm^{-3})^{1-0} \\cdot s^{-1} = mol \\cdot dm^{-3} \\cdot s^{-1}$. \nIf $n=1$ (first order): units of $k = (mol \\cdot dm^{-3})^{1-1} \\cdot s^{-1} = (mol \\cdot dm^{-3})^0 \\cdot s^{-1} = s^{-1}$. \nIf $n=2$ (second order): units of $k = (mol \\cdot dm^{-3})^{1-2} \\cdot s^{-1} = mol^{-1} \\cdot dm^3 \\cdot s^{-1}$. \n\nSince the given units for $k$ are $s^{-1}$, the reaction is first order.",
+    "difficulty": "medium",
+    "topic": "rate_constant",
+    "subtopic": "units_of_rate_constant",
+    "tags": [
+      "rate_constant",
+      "reaction_order",
+      "units",
+      "kinetics"
+    ],
+    "learning_objective": "Determine the order of a reaction from the units of its rate constant.",
+    "created_date": "2024-07-30",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "chem_xii_ch9_mcq_012",
+    "question": "According to collision theory, for a reaction to occur, reactant molecules must collide with sufficient energy and:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Be in the gaseous state",
+      "B": "Have the correct orientation",
+      "C": "Be at high pressure",
+      "D": "Be at low temperature"
+    },
+    "correct_answer": "B",
+    "explanation": "Collision theory states that for a chemical reaction to occur, reactant molecules must collide with two conditions met: \n1.  **Sufficient energy**: The collision energy must be equal to or greater than the activation energy ($E_a$). \n2.  **Correct orientation**: The molecules must collide in an orientation that allows the breaking of old bonds and the formation of new bonds. \n\nOptions A, C, and D are not universal requirements for all reactions according to collision theory. While gaseous state and high pressure can increase collision frequency, they are not fundamental conditions for *effective* collisions. Low temperature would decrease reaction rate.",
+    "difficulty": "easy",
+    "topic": "collision_theory",
+    "subtopic": "conditions_for_reaction",
+    "tags": [
+      "collision_theory",
+      "activation_energy",
+      "orientation",
+      "kinetics"
+    ],
+    "learning_objective": "State the conditions for an effective collision according to collision theory.",
+    "created_date": "2024-07-30",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch9_mcq_013",
+    "question": "The activation energy ($E_a$) of a reaction is $50 \\ kJ \\cdot mol^{-1}$. If the temperature is increased from $298 \\ K$ to $308 \\ K$, approximately how much will the rate constant increase (assuming the Arrhenius equation applies)?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "By a factor of 1.5",
+      "B": "By a factor of 2",
+      "C": "By a factor of 3",
+      "D": "By a factor of 4"
+    },
+    "correct_answer": "B",
+    "explanation": "This question refers to the general rule of thumb that for many reactions, the rate approximately doubles for every $10^\\circ C$ (or $10 \\ K$) rise in temperature, especially when activation energy is in the typical range ($50-100 \\ kJ \\cdot mol^{-1}$). \n\nMore precisely, using the Arrhenius equation in its two-point form: \n$$\\ln\\left(\frac{k_2}{k_1}\right) = \frac{E_a}{R}\\left(\frac{1}{T_1} - \frac{1}{T_2}\right)$$ \nGiven: \n$E_a = 50 \\ kJ \\cdot mol^{-1} = 50000 \\ J \\cdot mol^{-1}$ \n$R = 8.314 \\ J \\cdot mol^{-1} \\cdot K^{-1}$ \n$T_1 = 298 \\ K$ \n$T_2 = 308 \\ K$ \n\n$\\ln\\left(\frac{k_2}{k_1}\right) = \frac{50000 \\ J \\cdot mol^{-1}}{8.314 \\ J \\cdot mol^{-1} \\cdot K^{-1}}\\left(\frac{1}{298 \\ K} - \frac{1}{308 \\ K}\right)$ \n$\\ln\\left(\frac{k_2}{k_1}\right) = 6014.07 \\ K \times \\left(\frac{308 - 298}{298 \times 308}\right) \\ K^{-1}$ \n$\\ln\\left(\frac{k_2}{k_1}\right) = 6014.07 \times \frac{10}{91784} \\approx 0.655$ \n\n$\frac{k_2}{k_1} = e^{0.655} \\approx 1.925$ \n\nThis is approximately a factor of 2. So, the rate constant will increase by a factor of approximately 2.",
+    "difficulty": "hard",
+    "topic": "activation_energy",
+    "subtopic": "arrhenius_equation",
+    "tags": [
+      "activation_energy",
+      "temperature_effect",
+      "arrhenius_equation",
+      "numerical",
+      "rate_constant"
+    ],
+    "learning_objective": "Apply the Arrhenius equation to calculate the change in rate constant with temperature.",
+    "created_date": "2024-07-30",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "chem_xii_ch9_mcq_014",
+    "question": "Which statement is true regarding the molecularity of a reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "It can be fractional or zero.",
+      "B": "It is determined experimentally.",
+      "C": "It refers to the number of molecules participating in the slowest step of a complex reaction.",
+      "D": "It is always equal to the order of the reaction."
+    },
+    "correct_answer": "C",
+    "explanation": "Molecularity refers to the number of reactant molecules, atoms, or ions that participate in an elementary step of a reaction. \n- It is always a whole number (1, 2, or 3, rarely higher) and cannot be fractional or zero (A is incorrect). \n- It is a theoretical concept derived from the reaction mechanism, specifically for elementary steps, not determined experimentally (B is incorrect). \n- For a complex reaction, molecularity applies to each elementary step. The molecularity of the rate-determining (slowest) step is often used to describe the overall molecularity in relation to the rate law (C is correct). \n- Molecularity is equal to the order *only* for elementary reactions. For complex reactions, the overall order is determined experimentally and may not be equal to the molecularity of any single step (D is incorrect).",
+    "difficulty": "medium",
+    "topic": "molecularity",
+    "subtopic": "definition_and_properties",
+    "tags": [
+      "molecularity",
+      "reaction_mechanism",
+      "elementary_reaction",
+      "kinetics"
+    ],
+    "learning_objective": "Distinguish between molecularity and order of reaction and understand the concept of molecularity.",
+    "created_date": "2024-07-30",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

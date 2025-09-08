@@ -1,0 +1,592 @@
+[
+  {
+    "id": "chem_xi_ch7_mcq_001",
+    "question": "Which of the following describes a system that can exchange both energy and matter with its surroundings?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Isolated system",
+      "B": "Closed system",
+      "C": "Open system",
+      "D": "Adiabatic system"
+    },
+    "correct_answer": "C",
+    "explanation": "An open system is defined as a system that can exchange both energy (in the form of heat or work) and matter with its surroundings. A closed system can exchange energy but not matter, while an isolated system can exchange neither energy nor matter.",
+    "difficulty": "easy",
+    "topic": "Introduction to Energetics",
+    "subtopic": "Types of Systems",
+    "tags": [
+      "system",
+      "surroundings",
+      "open system",
+      "thermodynamics"
+    ],
+    "learning_objective": "Differentiate between open, closed, and isolated systems.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_7",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch7_mcq_002",
+    "question": "What is the SI unit of energy?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Calorie",
+      "B": "Joule",
+      "C": "Erg",
+      "D": "Electron volt"
+    },
+    "correct_answer": "B",
+    "explanation": "The SI unit of energy is the Joule (J). While calorie, erg, and electron volt are also units of energy, they are not the standard SI unit.",
+    "difficulty": "easy",
+    "topic": "Introduction to Energetics",
+    "subtopic": "Units of Energy",
+    "tags": [
+      "energy",
+      "SI unit",
+      "Joule",
+      "thermodynamics"
+    ],
+    "learning_objective": "Recall the SI unit for energy.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_7",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch7_mcq_003",
+    "question": "Which of the following is a state function?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Heat ($q$)",
+      "B": "Work ($w$)",
+      "C": "Internal energy ($E$)",
+      "D": "Path"
+    },
+    "correct_answer": "C",
+    "explanation": "A state function is a property whose value depends only on the initial and final states of the system, not on the path taken to reach that state. Internal energy ($E$), enthalpy ($H$), entropy ($S$), and Gibbs free energy ($G$) are state functions. Heat ($q$) and work ($w$) are path functions.",
+    "difficulty": "easy",
+    "topic": "Introduction to Energetics",
+    "subtopic": "State Functions",
+    "tags": [
+      "state function",
+      "internal energy",
+      "thermodynamics",
+      "heat",
+      "work"
+    ],
+    "learning_objective": "Identify state functions among thermodynamic properties.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_7",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch7_mcq_004",
+    "question": "For an endothermic reaction, the enthalpy change ($\\Delta H$) is:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Negative",
+      "B": "Positive",
+      "C": "Zero",
+      "D": "Undefined"
+    },
+    "correct_answer": "B",
+    "explanation": "An endothermic reaction absorbs heat from the surroundings, meaning the enthalpy of the system increases. Therefore, the enthalpy change ($\\Delta H$) for an endothermic reaction is positive. For an exothermic reaction, $\\Delta H$ is negative.",
+    "difficulty": "easy",
+    "topic": "Enthalpy Changes",
+    "subtopic": "Endothermic and Exothermic Reactions",
+    "tags": [
+      "endothermic",
+      "enthalpy change",
+      "thermodynamics",
+      "heat"
+    ],
+    "learning_objective": "Distinguish between endothermic and exothermic reactions based on enthalpy change.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_7",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch7_mcq_005",
+    "question": "The First Law of Thermodynamics is a statement of the conservation of:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Mass",
+      "B": "Momentum",
+      "C": "Energy",
+      "D": "Entropy"
+    },
+    "correct_answer": "C",
+    "explanation": "The First Law of Thermodynamics states that energy cannot be created or destroyed, only transformed from one form to another. It is essentially the law of conservation of energy.",
+    "difficulty": "easy",
+    "topic": "First Law of Thermodynamics",
+    "subtopic": "Conservation of Energy",
+    "tags": [
+      "First Law",
+      "thermodynamics",
+      "conservation of energy",
+      "energy"
+    ],
+    "learning_objective": "State the principle behind the First Law of Thermodynamics.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_7",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch7_mcq_006",
+    "question": "What is the standard temperature and pressure (STP) typically used in thermochemistry?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$0^\\circ C$ and $1 \text{ atm}$",
+      "B": "$25^\\circ C$ and $1 \text{ atm}$",
+      "C": "$0 \text{ K}$ and $1 \text{ bar}$",
+      "D": "$298.15 \text{ K}$ and $1 \text{ bar}$"
+    },
+    "correct_answer": "D",
+    "explanation": "In thermochemistry, standard conditions (often denoted with a superscript circle, e.g., $\\Delta H^\\circ$) are typically defined as $298.15 \text{ K}$ ($25^\\circ C$) and $1 \text{ bar}$ pressure. While $0^\\circ C$ and $1 \text{ atm}$ are common for gas laws (STP), thermochemical standard states are different.",
+    "difficulty": "easy",
+    "topic": "Standard Enthalpies",
+    "subtopic": "Standard Conditions",
+    "tags": [
+      "standard conditions",
+      "thermochemistry",
+      "temperature",
+      "pressure"
+    ],
+    "learning_objective": "Recall the standard conditions used in thermochemistry.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_7",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "chem_xi_ch7_mcq_007",
+    "question": "The enthalpy of formation of an element in its standard state is:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Positive",
+      "B": "Negative",
+      "C": "Zero",
+      "D": "Variable"
+    },
+    "correct_answer": "C",
+    "explanation": "By definition, the standard enthalpy of formation ($\\Delta H_f^\\circ$) of an element in its most stable form under standard conditions ($298.15 \text{ K}$, $1 \text{ bar}$) is zero. For example, $\\Delta H_f^\\circ$ for $O_2(g)$ or $C(graphite)$ is zero.",
+    "difficulty": "easy",
+    "topic": "Standard Enthalpies",
+    "subtopic": "Enthalpy of Formation",
+    "tags": [
+      "enthalpy of formation",
+      "standard state",
+      "element",
+      "thermochemistry"
+    ],
+    "learning_objective": "Understand the definition of standard enthalpy of formation for elements.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_7",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch7_mcq_008",
+    "question": "What is the relationship between $\\Delta E$ and $\\Delta H$ for a reaction occurring at constant pressure?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$\\Delta H = \\Delta E - P\\Delta V$",
+      "B": "$\\Delta H = \\Delta E + P\\Delta V$",
+      "C": "$\\Delta H = \\Delta E$",
+      "D": "$\\Delta H = P\\Delta V - \\Delta E$"
+    },
+    "correct_answer": "B",
+    "explanation": "Enthalpy ($H$) is defined as $H = E + PV$. Therefore, at constant pressure, the change in enthalpy ($\\Delta H$) is given by $\\Delta H = \\Delta E + P\\Delta V$. This equation relates the change in internal energy to the change in enthalpy.",
+    "difficulty": "easy",
+    "topic": "First Law of Thermodynamics",
+    "subtopic": "Enthalpy Definition",
+    "tags": [
+      "enthalpy",
+      "internal energy",
+      "pressure-volume work",
+      "thermodynamics"
+    ],
+    "learning_objective": "Recall the relationship between enthalpy and internal energy.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_7",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch7_mcq_009",
+    "question": "A process where no heat is exchanged between the system and surroundings is called:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Isothermal",
+      "B": "Isobaric",
+      "C": "Isochoric",
+      "D": "Adiabatic"
+    },
+    "correct_answer": "D",
+    "explanation": "An adiabatic process is one in which no heat ($q=0$) is exchanged between the system and its surroundings. Isothermal means constant temperature, isobaric means constant pressure, and isochoric means constant volume.",
+    "difficulty": "easy",
+    "topic": "Introduction to Energetics",
+    "subtopic": "Thermodynamic Processes",
+    "tags": [
+      "adiabatic",
+      "heat exchange",
+      "thermodynamic process",
+      "thermodynamics"
+    ],
+    "learning_objective": "Define an adiabatic process.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_7",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch7_mcq_010",
+    "question": "Which of the following statements is true for an exothermic reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Heat is absorbed from the surroundings.",
+      "B": "The system gains energy.",
+      "C": "$\\Delta H$ is positive.",
+      "D": "Heat is released to the surroundings."
+    },
+    "correct_answer": "D",
+    "explanation": "An exothermic reaction releases heat to the surroundings, causing the temperature of the surroundings to increase. Consequently, the enthalpy of the system decreases, and $\\Delta H$ is negative.",
+    "difficulty": "easy",
+    "topic": "Enthalpy Changes",
+    "subtopic": "Exothermic Reactions",
+    "tags": [
+      "exothermic",
+      "enthalpy change",
+      "heat release",
+      "thermodynamics"
+    ],
+    "learning_objective": "Describe the characteristics of an exothermic reaction.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_7",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch7_mcq_011",
+    "question": "The amount of heat required to raise the temperature of $1 \text{ gram}$ of a substance by $1^\\circ C$ is called its:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Heat capacity",
+      "B": "Specific heat capacity",
+      "C": "Molar heat capacity",
+      "D": "Latent heat"
+    },
+    "correct_answer": "B",
+    "explanation": "Specific heat capacity is the amount of heat required to raise the temperature of $1 \text{ gram}$ of a substance by $1^\\circ C$ (or $1 \text{ K}$). Heat capacity refers to the entire sample, and molar heat capacity refers to one mole of the substance.",
+    "difficulty": "easy",
+    "topic": "Heat Capacity",
+    "subtopic": "Specific Heat",
+    "tags": [
+      "specific heat capacity",
+      "heat",
+      "temperature",
+      "thermochemistry"
+    ],
+    "learning_objective": "Define specific heat capacity.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_7",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "chem_xi_ch7_mcq_012",
+    "question": "In the equation $\\Delta E = q + w$, what does $w$ represent?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Heat absorbed",
+      "B": "Work done by the system",
+      "C": "Work done on the system",
+      "D": "Internal energy"
+    },
+    "correct_answer": "C",
+    "explanation": "According to the IUPAC convention, in the First Law of Thermodynamics ($\\Delta E = q + w$), $w$ represents the work done *on* the system. If work is done *by* the system, $w$ would be negative.",
+    "difficulty": "easy",
+    "topic": "First Law of Thermodynamics",
+    "subtopic": "Work",
+    "tags": [
+      "First Law",
+      "work",
+      "internal energy",
+      "thermodynamics"
+    ],
+    "learning_objective": "Understand the sign convention for work in the First Law of Thermodynamics.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_7",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "chem_xi_ch7_mcq_013",
+    "question": "Which of the following processes has a positive value for $\\Delta S$ (entropy change)?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Freezing of water",
+      "B": "Condensation of steam",
+      "C": "Sublimation of dry ice",
+      "D": "Formation of a crystal lattice"
+    },
+    "correct_answer": "C",
+    "explanation": "Entropy is a measure of disorder or randomness. Sublimation (solid to gas) increases the disorder of the system significantly, leading to a positive $\\Delta S$. Freezing, condensation, and crystal formation all lead to a decrease in disorder, hence negative $\\Delta S$.",
+    "difficulty": "easy",
+    "topic": "Spontaneity and Entropy",
+    "subtopic": "Entropy Change",
+    "tags": [
+      "entropy",
+      "disorder",
+      "sublimation",
+      "phase change"
+    ],
+    "learning_objective": "Predict the sign of entropy change for simple physical processes.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_7",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch7_mcq_014",
+    "question": "Hess's Law states that the total enthalpy change for a reaction is independent of the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Initial temperature",
+      "B": "Final pressure",
+      "C": "Number of steps or path taken",
+      "D": "Concentration of reactants"
+    },
+    "correct_answer": "C",
+    "explanation": "Hess's Law of Constant Heat Summation states that if a reaction takes place in several steps, its standard enthalpy of reaction ($\\Delta H^\\circ$) is the sum of the standard enthalpies of the intermediate reactions. This is because enthalpy is a state function, and its change depends only on the initial and final states, not the pathway.",
+    "difficulty": "easy",
+    "topic": "Hess's Law",
+    "subtopic": "Statement of Hess's Law",
+    "tags": [
+      "Hess's Law",
+      "enthalpy change",
+      "state function",
+      "reaction pathway"
+    ],
+    "learning_objective": "State Hess's Law of Constant Heat Summation.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_7",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch7_mcq_015",
+    "question": "The standard enthalpy of combustion is always:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Positive",
+      "B": "Negative",
+      "C": "Zero",
+      "D": "Dependent on the substance"
+    },
+    "correct_answer": "B",
+    "explanation": "Combustion reactions are typically highly exothermic, meaning they release a significant amount of heat. Therefore, the standard enthalpy of combustion ($\\Delta H_c^\\circ$) is always negative.",
+    "difficulty": "easy",
+    "topic": "Standard Enthalpies",
+    "subtopic": "Enthalpy of Combustion",
+    "tags": [
+      "enthalpy of combustion",
+      "exothermic",
+      "combustion",
+      "thermochemistry"
+    ],
+    "learning_objective": "Identify the sign of enthalpy change for combustion reactions.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_7",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch7_mcq_016",
+    "question": "Which term represents the energy required to break one mole of a specific bond in the gaseous state?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Lattice energy",
+      "B": "Ionization energy",
+      "C": "Bond dissociation energy",
+      "D": "Electron affinity"
+    },
+    "correct_answer": "C",
+    "explanation": "Bond dissociation energy (or bond energy) is the energy required to break one mole of a particular type of bond in the gaseous state. Lattice energy relates to ionic compounds, and ionization energy and electron affinity relate to atom formation.",
+    "difficulty": "easy",
+    "topic": "Standard Enthalpies",
+    "subtopic": "Bond Energy",
+    "tags": [
+      "bond energy",
+      "bond dissociation",
+      "chemical bond",
+      "thermochemistry"
+    ],
+    "learning_objective": "Define bond dissociation energy.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_7",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch7_mcq_017",
+    "question": "The process of dissolving a salt in water, where the solution feels cold, is an example of a(n):",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Exothermic process",
+      "B": "Endothermic process",
+      "C": "Isothermal process",
+      "D": "Adiabatic process"
+    },
+    "correct_answer": "B",
+    "explanation": "If the solution feels cold, it means the salt is absorbing heat from the surroundings (the water and your hand). This indicates an endothermic process, where the system gains heat and $\\Delta H$ is positive.",
+    "difficulty": "easy",
+    "topic": "Enthalpy Changes",
+    "subtopic": "Enthalpy of Solution",
+    "tags": [
+      "endothermic",
+      "enthalpy of solution",
+      "heat absorption",
+      "dissolving"
+    ],
+    "learning_objective": "Relate temperature changes during dissolution to endo/exothermic processes.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_7",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "chem_xi_ch7_mcq_018",
+    "question": "Which of the following is an extensive property?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Temperature",
+      "B": "Density",
+      "C": "Volume",
+      "D": "Pressure"
+    },
+    "correct_answer": "C",
+    "explanation": "Extensive properties depend on the amount of matter in the system (e.g., mass, volume, internal energy, enthalpy). Intensive properties do not depend on the amount of matter (e.g., temperature, density, pressure).",
+    "difficulty": "easy",
+    "topic": "Introduction to Energetics",
+    "subtopic": "Extensive and Intensive Properties",
+    "tags": [
+      "extensive property",
+      "volume",
+      "thermodynamics",
+      "intensive property"
+    ],
+    "learning_objective": "Differentiate between extensive and intensive properties.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_7",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch7_mcq_019",
+    "question": "The standard enthalpy of neutralization is the enthalpy change when one mole of water is formed from the reaction of a strong acid and a strong base under standard conditions. Its value is approximately:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$+57.3 \text{ kJ/mol}$",
+      "B": "$-57.3 \text{ kJ/mol}$",
+      "C": "$0 \text{ kJ/mol}$",
+      "D": "$-100 \text{ kJ/mol}$"
+    },
+    "correct_answer": "B",
+    "explanation": "The neutralization of a strong acid by a strong base is a highly exothermic process, releasing approximately $57.3 \text{ kJ}$ of heat per mole of water formed. Thus, $\\Delta H_{neut}^\\circ \\approx -57.3 \text{ kJ/mol}$.",
+    "difficulty": "easy",
+    "topic": "Standard Enthalpies",
+    "subtopic": "Enthalpy of Neutralization",
+    "tags": [
+      "enthalpy of neutralization",
+      "strong acid",
+      "strong base",
+      "exothermic"
+    ],
+    "learning_objective": "Recall the approximate value of standard enthalpy of neutralization for strong acids and bases.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_7",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "chem_xi_ch7_mcq_020",
+    "question": "What is the change in internal energy ($\\Delta E$) for a system that absorbs $200 \text{ J}$ of heat and does $50 \text{ J}$ of work on its surroundings?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$+250 \text{ J}$",
+      "B": "$+150 \text{ J}$",
+      "C": "$-150 \text{ J}$",
+      "D": "$-250 \text{ J}$"
+    },
+    "correct_answer": "B",
+    "explanation": "Using the First Law of Thermodynamics, $\\Delta E = q + w$. \nHeat absorbed by the system: $q = +200 \text{ J}$.\nWork done *by* the system: $w = -50 \text{ J}$ (since work done by the system is negative).\n$\\Delta E = (+200 \text{ J}) + (-50 \text{ J}) = +150 \text{ J}$.",
+    "difficulty": "medium",
+    "topic": "First Law of Thermodynamics",
+    "subtopic": "Calculations of Internal Energy",
+    "tags": [
+      "internal energy",
+      "First Law",
+      "heat",
+      "work",
+      "numerical"
+    ],
+    "learning_objective": "Calculate internal energy change using the First Law of Thermodynamics.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_7",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch7_mcq_021",
+    "question": "Given the reaction: $N_2(g) + 3H_2(g) \rightarrow 2NH_3(g)$, with $\\Delta H^\\circ = -92.2 \text{ kJ}$. What is the standard enthalpy of formation of $NH_3(g)$?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$-92.2 \text{ kJ/mol}$",
+      "B": "$+92.2 \text{ kJ/mol}$",
+      "C": "$-46.1 \text{ kJ/mol}$",
+      "D": "$+46.1 \text{ kJ/mol}$"
+    },
+    "correct_answer": "C",
+    "explanation": "The standard enthalpy of formation ($\\Delta H_f^\\circ$) is for the formation of one mole of a compound from its elements in their standard states. The given reaction forms two moles of $NH_3$. Therefore, to find $\\Delta H_f^\\circ$ for one mole of $NH_3$, we divide the given $\\Delta H^\\circ$ by 2:\n$\\Delta H_f^\\circ (NH_3) = \frac{-92.2 \text{ kJ}}{2 \text{ mol}} = -46.1 \text{ kJ/mol}$.",
+    "difficulty": "medium",
+    "topic": "Standard Enthalpies",
+    "subtopic": "Enthalpy of Formation Calculation",
+    "tags": [
+      "enthalpy of formation",
+      "stoichiometry",
+      "thermochemistry",
+      "numerical"
+    ],
+    "learning_objective": "Calculate standard enthalpy of formation from a reaction enthalpy.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_7",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

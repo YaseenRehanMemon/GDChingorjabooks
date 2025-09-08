@@ -1,0 +1,435 @@
+[
+  {
+    "id": "chem_xi_ch10_mcq_001",
+    "question": "Which type of bond involves the complete transfer of electrons from one atom to another?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Covalent bond",
+      "B": "Ionic bond",
+      "C": "Metallic bond",
+      "D": "Hydrogen bond"
+    },
+    "correct_answer": "B",
+    "explanation": "An ionic bond is formed by the complete transfer of one or more electrons from a metal atom to a non-metal atom, resulting in the formation of oppositely charged ions that are held together by electrostatic forces. Covalent bonds involve sharing of electrons, metallic bonds involve a 'sea' of delocalized electrons, and hydrogen bonds are intermolecular forces.",
+    "difficulty": "easy",
+    "topic": "chemical_bonding",
+    "subtopic": "ionic_bond",
+    "tags": [
+      "ionic_bond",
+      "electron_transfer",
+      "basic_bonding"
+    ],
+    "learning_objective": "Define and identify ionic bonds.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch10_mcq_002",
+    "question": "According to the octet rule, atoms tend to gain, lose, or share electrons to achieve how many electrons in their outermost shell?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "2",
+      "B": "4",
+      "C": "6",
+      "D": "8"
+    },
+    "correct_answer": "D",
+    "explanation": "The octet rule states that atoms tend to combine in such a way that they each have eight electrons in their valence shell, giving them the same electron configuration as a noble gas. Exceptions exist, but 8 is the general target.",
+    "difficulty": "easy",
+    "topic": "chemical_bonding",
+    "subtopic": "octet_rule",
+    "tags": [
+      "octet_rule",
+      "valence_electrons",
+      "stability"
+    ],
+    "learning_objective": "State the octet rule.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch10_mcq_003",
+    "question": "Which of the following molecules contains a triple bond?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$O_2$",
+      "B": "$N_2$",
+      "C": "$CO_2$",
+      "D": "$H_2O$"
+    },
+    "correct_answer": "B",
+    "explanation": "Nitrogen gas (`$N_2$`) consists of two nitrogen atoms sharing three pairs of electrons, forming a triple covalent bond to satisfy the octet rule for both atoms. `$O_2$` has a double bond, `$CO_2$` has two double bonds, and `$H_2O$` has two single bonds.",
+    "difficulty": "easy",
+    "topic": "chemical_bonding",
+    "subtopic": "covalent_bonds",
+    "tags": [
+      "covalent_bond",
+      "triple_bond",
+      "molecular_structure"
+    ],
+    "learning_objective": "Identify molecules with triple bonds.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "chem_xi_ch10_mcq_004",
+    "question": "What is the primary force holding atoms together in a metallic bond?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Electrostatic attraction between positive and negative ions",
+      "B": "Sharing of electron pairs between specific atoms",
+      "C": "Attraction between positive metal ions and a 'sea' of delocalized electrons",
+      "D": "Temporary dipoles induced in adjacent atoms"
+    },
+    "correct_answer": "C",
+    "explanation": "Metallic bonding is characterized by a 'sea' of delocalized valence electrons that are shared among a lattice of positively charged metal ions. The electrostatic attraction between these positive ions and the mobile electron sea holds the metal structure together. Option A describes ionic bonding, B describes covalent bonding, and D describes London dispersion forces.",
+    "difficulty": "easy",
+    "topic": "chemical_bonding",
+    "subtopic": "metallic_bond",
+    "tags": [
+      "metallic_bond",
+      "delocalized_electrons",
+      "electron_sea_model"
+    ],
+    "learning_objective": "Describe the nature of metallic bonding.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch10_mcq_005",
+    "question": "Which theory explains the shapes of molecules based on the repulsion between electron pairs in the valence shell of the central atom?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Valence Bond Theory (VBT)",
+      "B": "Molecular Orbital Theory (MOT)",
+      "C": "VSEPR Theory",
+      "D": "Lewis Theory"
+    },
+    "correct_answer": "C",
+    "explanation": "VSEPR (Valence Shell Electron Pair Repulsion) Theory predicts the geometry of molecules by minimizing the repulsion between electron pairs (both bonding and lone pairs) in the valence shell of the central atom. VBT explains bond formation through orbital overlap, MOT describes molecular orbitals, and Lewis theory focuses on electron dot structures.",
+    "difficulty": "easy",
+    "topic": "molecular_geometry",
+    "subtopic": "vsepr_theory",
+    "tags": [
+      "VSEPR",
+      "molecular_shape",
+      "electron_repulsion"
+    ],
+    "learning_objective": "Identify the theory used to predict molecular shapes.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch10_mcq_006",
+    "question": "What is the term for the sharing of electrons between atoms with unequal electronegativity, leading to a partial positive and partial negative charge?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Nonpolar covalent bond",
+      "B": "Ionic bond",
+      "C": "Polar covalent bond",
+      "D": "Metallic bond"
+    },
+    "correct_answer": "C",
+    "explanation": "A polar covalent bond occurs when electrons are shared unequally between two atoms due to a difference in electronegativity, creating partial positive ($\\delta^+$) and partial negative ($\\delta^-$) charges on the atoms. Nonpolar covalent bonds involve equal sharing, ionic bonds involve transfer, and metallic bonds involve delocalized electrons.",
+    "difficulty": "easy",
+    "topic": "chemical_bonding",
+    "subtopic": "polarity",
+    "tags": [
+      "polar_covalent",
+      "electronegativity",
+      "bond_polarity"
+    ],
+    "learning_objective": "Define polar covalent bonds.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.88
+  },
+  {
+    "id": "chem_xi_ch10_mcq_007",
+    "question": "Which of the following elements is most likely to form an ionic bond with chlorine ($Cl$)?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Carbon ($C$)",
+      "B": "Oxygen ($O$)",
+      "C": "Sodium ($Na$)",
+      "D": "Sulfur ($S$)"
+    },
+    "correct_answer": "C",
+    "explanation": "Ionic bonds typically form between a metal and a non-metal due to a large electronegativity difference. Sodium ($Na$) is an alkali metal, which readily loses an electron to form a positive ion. Chlorine ($Cl$) is a halogen, a non-metal that readily gains an electron. Carbon, Oxygen, and Sulfur are non-metals and would typically form covalent bonds with chlorine.",
+    "difficulty": "easy",
+    "topic": "chemical_bonding",
+    "subtopic": "ionic_bond_formation",
+    "tags": [
+      "ionic_bond",
+      "electronegativity",
+      "metal_nonmetal"
+    ],
+    "learning_objective": "Predict the formation of ionic bonds.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch10_mcq_008",
+    "question": "What is the maximum number of electrons that can be accommodated in the second shell (n=2) of an atom?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "2",
+      "B": "4",
+      "C": "8",
+      "D": "18"
+    },
+    "correct_answer": "C",
+    "explanation": "The maximum number of electrons in a shell can be calculated using the formula `$2n^2$`, where 'n' is the principal quantum number (shell number). For the second shell ($n=2$), the maximum number of electrons is `$2(2^2) = 2 \times 4 = 8$`. This shell contains one 2s orbital (2 electrons) and three 2p orbitals (6 electrons).",
+    "difficulty": "easy",
+    "topic": "atomic_structure",
+    "subtopic": "electron_shells",
+    "tags": [
+      "electron_shells",
+      "quantum_numbers",
+      "electron_capacity"
+    ],
+    "learning_objective": "Recall electron capacity of atomic shells.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "chem_xi_ch10_mcq_009",
+    "question": "Which of the following is an example of a molecule with a nonpolar covalent bond?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$HCl$",
+      "B": "$H_2O$",
+      "C": "$Cl_2$",
+      "D": "$NH_3$"
+    },
+    "correct_answer": "C",
+    "explanation": "A nonpolar covalent bond forms between two atoms with identical or very similar electronegativities, leading to equal sharing of electrons. In `$Cl_2$`, both atoms are chlorine, so their electronegativity difference is zero, resulting in a nonpolar bond. `$HCl$`, `$H_2O$`, and `$NH_3$` all have polar covalent bonds due to differences in electronegativity.",
+    "difficulty": "easy",
+    "topic": "chemical_bonding",
+    "subtopic": "polarity",
+    "tags": [
+      "nonpolar_covalent",
+      "electronegativity",
+      "bond_type"
+    ],
+    "learning_objective": "Identify molecules with nonpolar covalent bonds.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.88
+  },
+  {
+    "id": "chem_xi_ch10_mcq_010",
+    "question": "What is the bond angle in a molecule with a linear geometry, such as `$CO_2$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$90^\\circ$",
+      "B": "$104.5^\\circ$",
+      "C": "$109.5^\\circ$",
+      "D": "$180^\\circ$"
+    },
+    "correct_answer": "D",
+    "explanation": "A linear molecular geometry, as seen in `$CO_2$`, occurs when the central atom is bonded to two other atoms and has no lone pairs. The electron domains arrange themselves as far apart as possible, resulting in a bond angle of `$180^\\circ$`. `$90^\\circ$` is for square planar, `$104.5^\\circ$` for bent (water), and `$109.5^\\circ$` for tetrahedral.",
+    "difficulty": "easy",
+    "topic": "molecular_geometry",
+    "subtopic": "bond_angles",
+    "tags": [
+      "linear_geometry",
+      "VSEPR",
+      "bond_angle"
+    ],
+    "learning_objective": "Recall bond angles for common molecular geometries.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch10_mcq_011",
+    "question": "Which of the following is NOT an intermolecular force?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Hydrogen bonding",
+      "B": "Dipole-dipole forces",
+      "C": "London dispersion forces",
+      "D": "Covalent bonding"
+    },
+    "correct_answer": "D",
+    "explanation": "Intermolecular forces (IMFs) are attractive forces *between* molecules. Hydrogen bonding, dipole-dipole forces, and London dispersion forces are all types of IMFs. Covalent bonding is an *intramolecular* force, meaning it is the force *within* a molecule that holds atoms together.",
+    "difficulty": "easy",
+    "topic": "intermolecular_forces",
+    "subtopic": "types_of_imfs",
+    "tags": [
+      "intermolecular_forces",
+      "covalent_bond",
+      "IMF_vs_intramolecular"
+    ],
+    "learning_objective": "Distinguish between intermolecular and intramolecular forces.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch10_mcq_012",
+    "question": "What is the general trend for electronegativity across a period in the periodic table?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Decreases",
+      "B": "Increases",
+      "C": "Remains constant",
+      "D": "First decreases then increases"
+    },
+    "correct_answer": "B",
+    "explanation": "Electronegativity generally increases across a period (from left to right) in the periodic table. This is because the nuclear charge increases, and the atomic radius decreases, leading to a stronger attraction for valence electrons. Conversely, it generally decreases down a group.",
+    "difficulty": "easy",
+    "topic": "periodic_table",
+    "subtopic": "electronegativity_trends",
+    "tags": [
+      "electronegativity",
+      "periodic_trends",
+      "periodic_table"
+    ],
+    "learning_objective": "Recall periodic trends in electronegativity.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "chem_xi_ch10_mcq_013",
+    "question": "Which of the following compounds has the highest melting point?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$CH_4$",
+      "B": "$H_2O$",
+      "C": "$NaCl$",
+      "D": "$CO_2$"
+    },
+    "correct_answer": "C",
+    "explanation": "Ionic compounds like $NaCl$ form strong electrostatic lattice structures that require a large amount of energy to break, resulting in very high melting points. $CH_4$ and $CO_2$ are nonpolar molecules with weak London dispersion forces. $H_2O$ has strong hydrogen bonding, but it is still a molecular compound and its melting point is significantly lower than that of an ionic compound.",
+    "difficulty": "medium",
+    "topic": "chemical_bonding",
+    "subtopic": "properties_of_compounds",
+    "tags": [
+      "melting_point",
+      "ionic_compounds",
+      "intermolecular_forces"
+    ],
+    "learning_objective": "Relate bond type to physical properties like melting point.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.88
+  },
+  {
+    "id": "chem_xi_ch10_mcq_014",
+    "question": "How many sigma ($\\sigma$) and pi ($\\pi$) bonds are present in a molecule of acetylene ($C_2H_2$)?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "1 $\\sigma$, 2 $\\pi$",
+      "B": "2 $\\sigma$, 1 $\\pi$",
+      "C": "3 $\\sigma$, 2 $\\pi$",
+      "D": "3 $\\sigma$, 1 $\\pi$"
+    },
+    "correct_answer": "C",
+    "explanation": "Acetylene ($C_2H_2$) has a linear structure with a carbon-carbon triple bond and two carbon-hydrogen single bonds. A single bond is always a sigma bond. A triple bond consists of one sigma bond and two pi bonds. Therefore, there are two C-H sigma bonds and one C-C sigma bond, plus two C-C pi bonds. Total: 3 sigma bonds and 2 pi bonds.",
+    "difficulty": "medium",
+    "topic": "valence_bond_theory",
+    "subtopic": "sigma_pi_bonds",
+    "tags": [
+      "sigma_bond",
+      "pi_bond",
+      "acetylene",
+      "VBT"
+    ],
+    "learning_objective": "Count sigma and pi bonds in a given molecule.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch10_mcq_015",
+    "question": "What is the hybridization of the central atom in a molecule with a trigonal planar electron geometry?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$sp$",
+      "B": "$sp^2$",
+      "C": "$sp^3$",
+      "D": "$sp^3d$"
+    },
+    "correct_answer": "B",
+    "explanation": "Trigonal planar electron geometry corresponds to three electron domains around the central atom. To accommodate three electron domains, the central atom undergoes $sp^2$ hybridization, forming three hybrid orbitals that are `$120^\\circ$` apart. $sp$ is linear, $sp^3$ is tetrahedral, and $sp^3d$ is trigonal bipyramidal.",
+    "difficulty": "medium",
+    "topic": "hybridization",
+    "subtopic": "hybrid_orbitals",
+    "tags": [
+      "hybridization",
+      "trigonal_planar",
+      "electron_geometry"
+    ],
+    "learning_objective": "Relate electron geometry to hybridization.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch10_mcq_016",
+    "question": "Which of the following molecules has a net dipole moment of zero?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$H_2O$",
+      "B": "$NH_3$",
+      "C": "$CO_2$",
+      "D": "$HCl$"
+    },
+    "correct_answer": "C",
+    "explanation": "A molecule has a net dipole moment of zero if its individual bond dipoles cancel each other out due to its symmetrical molecular geometry. `$CO_2$` has two polar C=O bonds, but its linear geometry means these bond dipoles are equal in magnitude and opposite in direction, thus canceling out. `$H_2O$` (bent), `$NH_3$` (trigonal pyramidal), and `$HCl$` (linear, but only one bond) are all polar molecules with non-zero dipole moments.",
+    "difficulty": "medium",
+    "topic": "molecular_polarity",
+    "subtopic": "dipole_moment",
+    "tags": [
+      "dipole_moment",
+      "molecular_geometry",
+      "polarity"
+    ],
+    "learning_objective": "Determine molecular polarity based on geometry and bond polarity.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

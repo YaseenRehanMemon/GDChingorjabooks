@@ -1,0 +1,636 @@
+[
+  {
+    "id": "bio_xii_ch21_mcq_001",
+    "question": "Which of the following terms refers to the process by which an unspecialized cell becomes a specialized cell type?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Cleavage",
+      "B": "Differentiation",
+      "C": "Gastrulation",
+      "D": "Fertilization"
+    },
+    "correct_answer": "B",
+    "explanation": "Differentiation is the process where a less specialized cell becomes a more specialized cell type. Cleavage is rapid cell division without growth, gastrulation is the formation of germ layers, and fertilization is the fusion of gametes.",
+    "difficulty": "easy",
+    "topic": "early_development",
+    "subtopic": "cell_differentiation",
+    "tags": [
+      "differentiation",
+      "development",
+      "cell_biology"
+    ],
+    "learning_objective": "Define key terms in developmental biology.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_21",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch21_mcq_002",
+    "question": "The fusion of male and female gametes is known as:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Ovulation",
+      "B": "Implantation",
+      "C": "Fertilization",
+      "D": "Gametogenesis"
+    },
+    "correct_answer": "C",
+    "explanation": "Fertilization is the process of fusion of male and female gametes to form a zygote. Ovulation is the release of an egg, implantation is the attachment of the embryo to the uterine wall, and gametogenesis is the formation of gametes.",
+    "difficulty": "easy",
+    "topic": "early_development",
+    "subtopic": "fertilization",
+    "tags": [
+      "fertilization",
+      "reproduction",
+      "gametes"
+    ],
+    "learning_objective": "Recall the definition of fertilization.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_21",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch21_mcq_003",
+    "question": "Which of the following germ layers gives rise to the nervous system?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Mesoderm",
+      "B": "Endoderm",
+      "C": "Ectoderm",
+      "D": "Blastoderm"
+    },
+    "correct_answer": "C",
+    "explanation": "The ectoderm is the outermost germ layer and develops into the nervous system (brain, spinal cord), epidermis, and sensory organs. The mesoderm forms muscles, bones, and circulatory system, while the endoderm forms the lining of the digestive and respiratory tracts.",
+    "difficulty": "easy",
+    "topic": "early_development",
+    "subtopic": "germ_layers",
+    "tags": [
+      "germ_layers",
+      "ectoderm",
+      "nervous_system",
+      "gastrulation"
+    ],
+    "learning_objective": "Identify derivatives of the primary germ layers.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_21",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch21_mcq_004",
+    "question": "The rapid mitotic divisions of the zygote immediately after fertilization are called:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Gastrulation",
+      "B": "Organogenesis",
+      "C": "Cleavage",
+      "D": "Neurulation"
+    },
+    "correct_answer": "C",
+    "explanation": "Cleavage refers to the rapid series of mitotic cell divisions that occur in the zygote immediately after fertilization, leading to the formation of a multicellular embryo (morula, then blastula) without significant increase in overall size. Gastrulation forms germ layers, organogenesis forms organs, and neurulation forms the neural tube.",
+    "difficulty": "easy",
+    "topic": "early_development",
+    "subtopic": "cleavage",
+    "tags": [
+      "cleavage",
+      "embryonic_development",
+      "mitosis"
+    ],
+    "learning_objective": "Describe the process of cleavage.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_21",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch21_mcq_005",
+    "question": "Which extraembryonic membrane forms the primary component of the placenta?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Amnion",
+      "B": "Yolk sac",
+      "C": "Allantois",
+      "D": "Chorion"
+    },
+    "correct_answer": "D",
+    "explanation": "The chorion is the outermost extraembryonic membrane that develops villi and contributes significantly to the formation of the placenta, facilitating nutrient and gas exchange. The amnion encloses the embryo in amniotic fluid, the yolk sac provides early nutrition, and the allantois contributes to the umbilical cord and bladder.",
+    "difficulty": "easy",
+    "topic": "extraembryonic_membranes",
+    "subtopic": "chorion",
+    "tags": [
+      "chorion",
+      "placenta",
+      "extraembryonic_membranes"
+    ],
+    "learning_objective": "Identify the function of extraembryonic membranes.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_21",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch21_mcq_006",
+    "question": "The process of aging is scientifically known as:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Metamorphosis",
+      "B": "Senescence",
+      "C": "Regeneration",
+      "D": "Homeostasis"
+    },
+    "correct_answer": "B",
+    "explanation": "Senescence is the biological process of aging, characterized by a gradual deterioration of functional characteristics. Metamorphosis is a biological process by which an animal physically develops after birth or hatching, involving a conspicuous and relatively abrupt change in the animal's body structure. Regeneration is the process of renewal, restoration, and growth. Homeostasis is the maintenance of stable internal conditions.",
+    "difficulty": "easy",
+    "topic": "aging",
+    "subtopic": "definition_of_aging",
+    "tags": [
+      "senescence",
+      "aging",
+      "gerontology"
+    ],
+    "learning_objective": "Define the scientific term for aging.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_21",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch21_mcq_007",
+    "question": "Which hormone is primarily responsible for maintaining the uterine lining during pregnancy?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Estrogen",
+      "B": "Testosterone",
+      "C": "Progesterone",
+      "D": "Follicle-stimulating hormone (FSH)"
+    },
+    "correct_answer": "C",
+    "explanation": "Progesterone is crucial for maintaining the uterine lining (endometrium) during pregnancy, preventing its shedding and supporting the developing embryo/fetus. Estrogen also plays a role but progesterone is dominant for maintenance. FSH and testosterone have different primary roles.",
+    "difficulty": "easy",
+    "topic": "fetal_development",
+    "subtopic": "hormonal_role_in_pregnancy",
+    "tags": [
+      "progesterone",
+      "pregnancy",
+      "hormones",
+      "placenta"
+    ],
+    "learning_objective": "Identify the role of key hormones in pregnancy.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_21",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch21_mcq_008",
+    "question": "The inner cell mass of the blastocyst eventually develops into the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Trophoblast",
+      "B": "Placenta",
+      "C": "Embryo proper",
+      "D": "Amniotic fluid"
+    },
+    "correct_answer": "C",
+    "explanation": "The inner cell mass (embryoblast) is a cluster of cells inside the blastocyst that will eventually form the embryo proper. The trophoblast forms the outer layer of the blastocyst and contributes to the placenta. The placenta is formed from both maternal and embryonic tissues, and amniotic fluid fills the amniotic sac.",
+    "difficulty": "easy",
+    "topic": "early_development",
+    "subtopic": "blastocyst_structure",
+    "tags": [
+      "inner_cell_mass",
+      "blastocyst",
+      "embryo"
+    ],
+    "learning_objective": "Describe the fate of the inner cell mass.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_21",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch21_mcq_009",
+    "question": "Which of the following is NOT a primary germ layer?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Ectoderm",
+      "B": "Mesoderm",
+      "C": "Endoderm",
+      "D": "Epiderm"
+    },
+    "correct_answer": "D",
+    "explanation": "The three primary germ layers formed during gastrulation are the ectoderm, mesoderm, and endoderm. The epiderm (epidermis) is a tissue derived from the ectoderm, not a germ layer itself.",
+    "difficulty": "easy",
+    "topic": "early_development",
+    "subtopic": "germ_layers",
+    "tags": [
+      "germ_layers",
+      "gastrulation",
+      "embryology"
+    ],
+    "learning_objective": "List the primary germ layers.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_21",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch21_mcq_010",
+    "question": "The process of programmed cell death is known as:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Necrosis",
+      "B": "Apoptosis",
+      "C": "Mitosis",
+      "D": "Meiosis"
+    },
+    "correct_answer": "B",
+    "explanation": "Apoptosis is a highly regulated process of programmed cell death that plays a crucial role in development, tissue homeostasis, and aging. Necrosis is uncontrolled cell death due to injury. Mitosis and meiosis are types of cell division.",
+    "difficulty": "easy",
+    "topic": "apoptosis",
+    "subtopic": "definition",
+    "tags": [
+      "apoptosis",
+      "programmed_cell_death",
+      "cell_biology"
+    ],
+    "learning_objective": "Define apoptosis.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_21",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch21_mcq_011",
+    "question": "Which stage of embryonic development involves the formation of the neural tube?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Gastrulation",
+      "B": "Cleavage",
+      "C": "Neurulation",
+      "D": "Organogenesis"
+    },
+    "correct_answer": "C",
+    "explanation": "Neurulation is the process by which the neural plate folds to form the neural tube, which will eventually develop into the brain and spinal cord. Gastrulation forms germ layers, cleavage is early cell division, and organogenesis is the general formation of organs.",
+    "difficulty": "medium",
+    "topic": "early_development",
+    "subtopic": "neurulation",
+    "tags": [
+      "neurulation",
+      "neural_tube",
+      "nervous_system",
+      "embryonic_development"
+    ],
+    "learning_objective": "Describe the sequence of early embryonic events.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_21",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "bio_xii_ch21_mcq_012",
+    "question": "A human embryo is typically referred to as a fetus after how many weeks of gestation?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$2$ weeks",
+      "B": "$4$ weeks",
+      "C": "$8$ weeks",
+      "D": "$12$ weeks"
+    },
+    "correct_answer": "C",
+    "explanation": "In human development, the embryonic period lasts from fertilization until the end of the $8^{th}$ week of gestation. After this point, the developing organism is referred to as a fetus, as most major organ systems have begun to form.",
+    "difficulty": "medium",
+    "topic": "human_development_stages",
+    "subtopic": "fetal_period",
+    "tags": [
+      "fetus",
+      "embryo",
+      "gestation",
+      "human_development"
+    ],
+    "learning_objective": "Distinguish between embryonic and fetal stages.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_21",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "bio_xii_ch21_mcq_013",
+    "question": "Which of the following is a primary function of the placenta?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Production of sperm",
+      "B": "Exchange of nutrients and waste products between mother and fetus",
+      "C": "Storage of genetic material",
+      "D": "Regulation of body temperature in the mother"
+    },
+    "correct_answer": "B",
+    "explanation": "The placenta is a vital organ that develops during pregnancy, providing oxygen and nutrients to the growing baby and removing waste products from the baby's blood. It also produces hormones necessary for maintaining pregnancy. It is not involved in sperm production, genetic material storage, or maternal temperature regulation.",
+    "difficulty": "medium",
+    "topic": "placenta",
+    "subtopic": "function",
+    "tags": [
+      "placenta",
+      "nutrient_exchange",
+      "waste_removal",
+      "pregnancy"
+    ],
+    "learning_objective": "Explain the functions of the placenta.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_21",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch21_mcq_014",
+    "question": "The theory of aging that suggests accumulated damage from reactive oxygen species is a major cause is the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Genetic programming theory",
+      "B": "Wear-and-tear theory",
+      "C": "Free radical theory",
+      "D": "Immune system decline theory"
+    },
+    "correct_answer": "C",
+    "explanation": "The free radical theory of aging proposes that organisms age due to the accumulation of damage from free radicals (reactive oxygen species) over time. The wear-and-tear theory suggests that cells and tissues simply wear out. Genetic programming theories focus on genes controlling aging, and immune system decline is a consequence, not a primary theory of aging's root cause.",
+    "difficulty": "medium",
+    "topic": "aging_theories",
+    "subtopic": "free_radical_theory",
+    "tags": [
+      "aging",
+      "free_radicals",
+      "senescence",
+      "theories_of_aging"
+    ],
+    "learning_objective": "Describe different theories of aging.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_21",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "bio_xii_ch21_mcq_015",
+    "question": "Which of the following describes the correct sequence of early human embryonic development?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Zygote $\rightarrow$ Gastrula $\rightarrow$ Morula $\rightarrow$ Blastocyst",
+      "B": "Zygote $\rightarrow$ Morula $\rightarrow$ Blastocyst $\rightarrow$ Gastrula",
+      "C": "Morula $\rightarrow$ Zygote $\rightarrow$ Blastocyst $\rightarrow$ Gastrula",
+      "D": "Blastocyst $\rightarrow$ Zygote $\rightarrow$ Morula $\rightarrow$ Gastrula"
+    },
+    "correct_answer": "B",
+    "explanation": "After fertilization, the zygote undergoes cleavage to form a solid ball of cells called a morula. The morula then develops into a blastocyst, which implants in the uterus. Following implantation, the blastocyst undergoes gastrulation to form the three germ layers.",
+    "difficulty": "medium",
+    "topic": "early_development",
+    "subtopic": "sequence_of_stages",
+    "tags": [
+      "embryonic_development",
+      "zygote",
+      "morula",
+      "blastocyst",
+      "gastrula"
+    ],
+    "learning_objective": "Sequence the stages of early embryonic development.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_21",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch21_mcq_016",
+    "question": "Stem cells that can differentiate into any cell type, including extraembryonic tissues, are called:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Multipotent",
+      "B": "Pluripotent",
+      "C": "Totipotent",
+      "D": "Unipotent"
+    },
+    "correct_answer": "C",
+    "explanation": "Totipotent stem cells (like the zygote and early blastomeres) have the ability to differentiate into all cell types, including the extraembryonic membranes and placenta, thus forming a complete organism. Pluripotent cells can form all cell types of the embryo proper but not extraembryonic tissues. Multipotent cells can differentiate into a limited range of cell types within a specific lineage. Unipotent cells can only differentiate into one cell type.",
+    "difficulty": "medium",
+    "topic": "stem_cells",
+    "subtopic": "types_of_stem_cells",
+    "tags": [
+      "stem_cells",
+      "totipotent",
+      "pluripotent",
+      "differentiation"
+    ],
+    "learning_objective": "Classify different types of stem cells based on their potency.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_21",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch21_mcq_017",
+    "question": "Which of the following physiological changes is commonly associated with aging?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Increased bone density",
+      "B": "Decreased elasticity of blood vessels",
+      "C": "Enhanced immune response",
+      "D": "Improved short-term memory"
+    },
+    "correct_answer": "B",
+    "explanation": "Aging is associated with a decrease in the elasticity of blood vessels, leading to conditions like arteriosclerosis and increased blood pressure. Bone density typically decreases (osteoporosis), immune response declines, and short-term memory often shows some decline with age.",
+    "difficulty": "medium",
+    "topic": "aging",
+    "subtopic": "physiological_changes",
+    "tags": [
+      "aging",
+      "physiological_changes",
+      "blood_vessels",
+      "senescence"
+    ],
+    "learning_objective": "Identify common physiological changes during aging.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_21",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "bio_xii_ch21_mcq_018",
+    "question": "The process of organ formation during embryonic development is called:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Gastrulation",
+      "B": "Organogenesis",
+      "C": "Histogenesis",
+      "D": "Morphogenesis"
+    },
+    "correct_answer": "B",
+    "explanation": "Organogenesis is the process by which the three germ layers (ectoderm, mesoderm, and endoderm) differentiate and interact to form the various organs and organ systems of the body. Gastrulation is germ layer formation, histogenesis is tissue formation, and morphogenesis is the development of form and structure.",
+    "difficulty": "medium",
+    "topic": "early_development",
+    "subtopic": "organogenesis",
+    "tags": [
+      "organogenesis",
+      "embryonic_development",
+      "organ_formation"
+    ],
+    "learning_objective": "Define organogenesis.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_21",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch21_mcq_019",
+    "question": "Which extraembryonic membrane is responsible for forming the umbilical cord in mammals?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Amnion",
+      "B": "Yolk sac",
+      "C": "Allantois",
+      "D": "Chorion"
+    },
+    "correct_answer": "C",
+    "explanation": "The allantois, along with the yolk sac, contributes to the formation of the umbilical cord, which connects the embryo to the placenta. The amnion forms the amniotic sac, and the chorion forms the fetal part of the placenta.",
+    "difficulty": "medium",
+    "topic": "extraembryonic_membranes",
+    "subtopic": "allantois",
+    "tags": [
+      "allantois",
+      "umbilical_cord",
+      "extraembryonic_membranes"
+    ],
+    "learning_objective": "Identify the contribution of extraembryonic membranes to fetal structures.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_21",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "bio_xii_ch21_mcq_020",
+    "question": "If a cell has a limited number of divisions it can undergo before entering senescence, this phenomenon is known as the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Hayflick limit",
+      "B": "Telomere extension",
+      "C": "Apoptotic threshold",
+      "D": "Mitochondrial decay"
+    },
+    "correct_answer": "A",
+    "explanation": "The Hayflick limit refers to the finite number of times human cells can divide in culture before they stop dividing and enter a state of senescence. This limit is linked to the shortening of telomeres with each cell division. Telomere extension would counteract this, and apoptotic threshold and mitochondrial decay are related but distinct concepts.",
+    "difficulty": "medium",
+    "topic": "aging_theories",
+    "subtopic": "cellular_senescence",
+    "tags": [
+      "Hayflick_limit",
+      "cellular_senescence",
+      "aging",
+      "telomeres"
+    ],
+    "learning_objective": "Explain the concept of the Hayflick limit.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_21",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch21_mcq_021",
+    "question": "The process of gastrulation primarily involves:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Rapid cell division to increase cell number.",
+      "B": "Formation of the three primary germ layers.",
+      "C": "Attachment of the embryo to the uterine wall.",
+      "D": "Development of the neural tube."
+    },
+    "correct_answer": "B",
+    "explanation": "Gastrulation is a critical stage in early embryonic development during which the single-layered blastula is reorganized into a trilaminar (three-layered) structure known as the gastrula. These three layers are the ectoderm, mesoderm, and endoderm, which will eventually give rise to all the tissues and organs of the body. Rapid cell division is cleavage, attachment is implantation, and neural tube development is neurulation.",
+    "difficulty": "medium",
+    "topic": "early_development",
+    "subtopic": "gastrulation",
+    "tags": [
+      "gastrulation",
+      "germ_layers",
+      "embryonic_development"
+    ],
+    "learning_objective": "Describe the key events of gastrulation.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_21",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch21_mcq_022",
+    "question": "Which of the following is a characteristic of the first trimester of human pregnancy?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Rapid increase in fetal weight",
+      "B": "Development of major organ systems",
+      "C": "Maturation of lungs for breathing air",
+      "D": "Significant fat deposition"
+    },
+    "correct_answer": "B",
+    "explanation": "The first trimester (weeks $1-12$) is characterized by rapid cell division, differentiation, and the formation of all major organ systems (organogenesis). While the fetus grows, rapid weight gain and lung maturation are more characteristic of the second and third trimesters.",
+    "difficulty": "medium",
+    "topic": "human_development_stages",
+    "subtopic": "trimesters",
+    "tags": [
+      "first_trimester",
+      "pregnancy",
+      "organogenesis",
+      "fetal_development"
+    ],
+    "learning_objective": "Identify key developmental events in each trimester.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_21",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "bio_xii_ch21_mcq_023",
+    "question": "The primary role of the amniotic fluid is to:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Provide nutrients to the embryo.",
+      "B": "Facilitate gas exchange.",
+      "C": "Protect the embryo from physical shock and temperature fluctuations.",
+      "D": "Form the umbilical cord."
+    },
+    "correct_answer": "C",
+    "explanation": "Amniotic fluid surrounds the developing embryo/fetus within the amniotic sac, providing a protective cushion against physical trauma and maintaining a stable temperature. Nutrient provision and gas exchange are primarily functions of the placenta, and the umbilical cord is formed from other extraembryonic membranes.",
+    "difficulty": "medium",
+    "topic": "extraembryonic_membranes",
+    "subtopic": "amnion",
+    "tags": [
+      "amniotic_fluid",
+      "amnion",
+      "fetal_protection",
+      "pregnancy"
+    ],
+    "learning_objective": "State the function of amniotic fluid.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_21",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

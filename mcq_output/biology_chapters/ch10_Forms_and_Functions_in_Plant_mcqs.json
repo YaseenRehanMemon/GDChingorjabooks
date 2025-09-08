@@ -1,0 +1,570 @@
+[
+  {
+    "id": "bio_xi_ch10_mcq_001",
+    "question": "Which of the following plant tissues is responsible for primary growth, leading to an increase in the length of the plant?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Parenchyma",
+      "B": "Sclerenchyma",
+      "C": "Apical meristem",
+      "D": "Vascular cambium"
+    },
+    "correct_answer": "C",
+    "explanation": "Apical meristems are located at the tips of roots and shoots and are responsible for primary growth, which increases the length of the plant. Parenchyma is a type of permanent tissue involved in storage and photosynthesis. Sclerenchyma provides mechanical support. Vascular cambium is a lateral meristem responsible for secondary growth, increasing the girth of the plant.",
+    "difficulty": "easy",
+    "topic": "plant_tissues",
+    "subtopic": "meristematic_tissues",
+    "tags": [
+      "meristem",
+      "primary_growth",
+      "plant_anatomy"
+    ],
+    "learning_objective": "Identify the tissue responsible for primary growth in plants.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch10_mcq_002",
+    "question": "The primary function of root hairs is to:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Anchor the plant firmly in the soil",
+      "B": "Absorb water and mineral salts from the soil",
+      "C": "Store food reserves for the plant",
+      "D": "Protect the root tip from damage"
+    },
+    "correct_answer": "B",
+    "explanation": "Root hairs are epidermal outgrowths that significantly increase the surface area of the root, enhancing the absorption of water and dissolved mineral salts from the soil. Anchoring is a general function of the root system, not specifically root hairs. Food storage occurs in the root cortex. The root cap protects the root tip.",
+    "difficulty": "easy",
+    "topic": "plant_organs",
+    "subtopic": "roots",
+    "tags": [
+      "root_hairs",
+      "absorption",
+      "water_uptake"
+    ],
+    "learning_objective": "State the primary function of root hairs.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch10_mcq_003",
+    "question": "Which of the following is NOT a component of the xylem tissue?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Tracheids",
+      "B": "Vessel elements",
+      "C": "Sieve tubes",
+      "D": "Xylem parenchyma"
+    },
+    "correct_answer": "C",
+    "explanation": "Xylem tissue consists of tracheids, vessel elements, xylem parenchyma, and xylem fibers. Sieve tubes are a component of phloem tissue, responsible for the transport of sugars.",
+    "difficulty": "easy",
+    "topic": "plant_tissues",
+    "subtopic": "vascular_tissues",
+    "tags": [
+      "xylem",
+      "phloem",
+      "vascular_tissue"
+    ],
+    "learning_objective": "Identify the components of xylem tissue.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch10_mcq_004",
+    "question": "The process by which plants lose water vapor through stomata is called:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Photosynthesis",
+      "B": "Respiration",
+      "C": "Transpiration",
+      "D": "Guttation"
+    },
+    "correct_answer": "C",
+    "explanation": "Transpiration is the process of water movement through a plant and its evaporation from aerial parts, such as leaves, stems, and flowers. Water is lost as vapor through small pores called stomata. Photosynthesis is the process of food production. Respiration is the breakdown of food for energy. Guttation is the exudation of xylem sap from the tips or edges of leaves.",
+    "difficulty": "easy",
+    "topic": "water_relations",
+    "subtopic": "transpiration",
+    "tags": [
+      "transpiration",
+      "stomata",
+      "water_loss"
+    ],
+    "learning_objective": "Define transpiration.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch10_mcq_005",
+    "question": "Which plant hormone is primarily responsible for cell elongation and apical dominance?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Gibberellin",
+      "B": "Cytokinin",
+      "C": "Auxin",
+      "D": "Abscisic acid"
+    },
+    "correct_answer": "C",
+    "explanation": "Auxins are a class of plant hormones that promote cell elongation, especially in shoots, and are primarily responsible for apical dominance, where the apical bud inhibits the growth of lateral buds. Gibberellins promote stem elongation and seed germination. Cytokinins promote cell division. Abscisic acid is a growth inhibitor.",
+    "difficulty": "easy",
+    "topic": "plant_hormones",
+    "subtopic": "auxins",
+    "tags": [
+      "auxin",
+      "plant_growth_regulators",
+      "apical_dominance"
+    ],
+    "learning_objective": "Identify the primary function of auxins.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch10_mcq_006",
+    "question": "The outermost protective layer of a young stem is called the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Cortex",
+      "B": "Pith",
+      "C": "Epidermis",
+      "D": "Endodermis"
+    },
+    "correct_answer": "C",
+    "explanation": "The epidermis is the outermost protective layer of a young stem, leaf, and root. The cortex is located beneath the epidermis. The pith is the central part of the stem. The endodermis is an inner layer of the cortex, particularly prominent in roots.",
+    "difficulty": "easy",
+    "topic": "plant_organs",
+    "subtopic": "stems",
+    "tags": [
+      "stem_anatomy",
+      "epidermis",
+      "protective_tissue"
+    ],
+    "learning_objective": "Identify the outermost protective layer of a young stem.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch10_mcq_007",
+    "question": "Which of the following tissues provides mechanical support and flexibility to young plant parts, such as petioles and young stems?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Parenchyma",
+      "B": "Collenchyma",
+      "C": "Sclerenchyma",
+      "D": "Xylem"
+    },
+    "correct_answer": "B",
+    "explanation": "Collenchyma tissue provides flexible support to young plant organs and petioles. Its cells have unevenly thickened primary cell walls. Parenchyma is for storage and photosynthesis. Sclerenchyma provides rigid support. Xylem is for water transport.",
+    "difficulty": "easy",
+    "topic": "plant_tissues",
+    "subtopic": "permanent_tissues",
+    "tags": [
+      "collenchyma",
+      "mechanical_support",
+      "plant_anatomy"
+    ],
+    "learning_objective": "Identify the tissue providing flexible support to young plant parts.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch10_mcq_008",
+    "question": "The main site of photosynthesis in most plants is the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Root",
+      "B": "Stem",
+      "C": "Flower",
+      "D": "Leaf"
+    },
+    "correct_answer": "D",
+    "explanation": "Leaves are the primary organs for photosynthesis in most plants, due to their broad, flat surface area, presence of chlorophyll-containing cells (mesophyll), and stomata for gas exchange.",
+    "difficulty": "easy",
+    "topic": "plant_organs",
+    "subtopic": "leaves",
+    "tags": [
+      "leaves",
+      "photosynthesis",
+      "plant_function"
+    ],
+    "learning_objective": "Identify the main site of photosynthesis in plants.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch10_mcq_009",
+    "question": "Which of the following is a macronutrient required by plants?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Iron",
+      "B": "Zinc",
+      "C": "Nitrogen",
+      "D": "Boron"
+    },
+    "correct_answer": "C",
+    "explanation": "Macronutrients are required in relatively large quantities by plants. Nitrogen (N), Phosphorus (P), Potassium (K), Calcium (Ca), Magnesium (Mg), and Sulfur (S) are macronutrients. Iron, Zinc, and Boron are micronutrients, required in smaller amounts.",
+    "difficulty": "easy",
+    "topic": "mineral_nutrition",
+    "subtopic": "macronutrients",
+    "tags": [
+      "macronutrients",
+      "plant_nutrition",
+      "minerals"
+    ],
+    "learning_objective": "Distinguish between macronutrients and micronutrients.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch10_mcq_010",
+    "question": "The vascular bundles in monocot stems are typically described as:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Scattered and open",
+      "B": "Arranged in a ring and open",
+      "C": "Scattered and closed",
+      "D": "Arranged in a ring and closed"
+    },
+    "correct_answer": "C",
+    "explanation": "In monocot stems, vascular bundles are typically scattered throughout the ground tissue and are 'closed,' meaning they lack a vascular cambium between the xylem and phloem, thus preventing secondary growth. In dicots, they are arranged in a ring and are 'open'.",
+    "difficulty": "easy",
+    "topic": "plant_anatomy",
+    "subtopic": "stem_anatomy",
+    "tags": [
+      "monocot_stem",
+      "vascular_bundles",
+      "plant_anatomy"
+    ],
+    "learning_objective": "Describe the arrangement of vascular bundles in monocot stems.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "bio_xi_ch10_mcq_011",
+    "question": "Which part of the flower develops into the fruit after fertilization?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Ovary",
+      "B": "Ovule",
+      "C": "Stigma",
+      "D": "Anther"
+    },
+    "correct_answer": "A",
+    "explanation": "After fertilization, the ovary of the flower develops into the fruit, which encloses the seeds. The ovule develops into the seed. The stigma and anther are involved in pollination but do not form the fruit.",
+    "difficulty": "easy",
+    "topic": "plant_reproduction",
+    "subtopic": "flower_structure",
+    "tags": [
+      "fruit_development",
+      "ovary",
+      "fertilization"
+    ],
+    "learning_objective": "Identify the floral part that develops into a fruit.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch10_mcq_012",
+    "question": "The Casparian strip is found in the endodermis of roots and is made of:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Cellulose",
+      "B": "Lignin",
+      "C": "Suberin",
+      "D": "Pectin"
+    },
+    "correct_answer": "C",
+    "explanation": "The Casparian strip is a band of suberin, a waxy substance, in the cell walls of the endodermis in plant roots. It forces water and solutes to pass through the endodermal cells (symplastic pathway) rather than between them (apoplastic pathway), regulating water and mineral uptake.",
+    "difficulty": "easy",
+    "topic": "plant_anatomy",
+    "subtopic": "root_anatomy",
+    "tags": [
+      "casparian_strip",
+      "endodermis",
+      "suberin",
+      "water_transport"
+    ],
+    "learning_objective": "Identify the composition of the Casparian strip.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch10_mcq_013",
+    "question": "Which of the following is a characteristic of xerophytes?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Abundant stomata on the upper epidermis",
+      "B": "Large, broad leaves",
+      "C": "Sunken stomata and thick cuticle",
+      "D": "Poorly developed root system"
+    },
+    "correct_answer": "C",
+    "explanation": "Xerophytes are plants adapted to arid conditions. They often have adaptations to reduce water loss, such as sunken stomata (to create a humid microenvironment), a thick cuticle (to reduce cuticular transpiration), and reduced leaf surface area. Large leaves, abundant stomata, and a poorly developed root system are not typical xerophytic adaptations.",
+    "difficulty": "easy",
+    "topic": "plant_adaptations",
+    "subtopic": "xerophytes",
+    "tags": [
+      "xerophytes",
+      "adaptations",
+      "water_conservation"
+    ],
+    "learning_objective": "Identify characteristics of xerophytic plants.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch10_mcq_014",
+    "question": "The vascular cambium is responsible for:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Primary growth in roots",
+      "B": "Primary growth in stems",
+      "C": "Secondary growth in stems and roots",
+      "D": "Formation of root hairs"
+    },
+    "correct_answer": "C",
+    "explanation": "The vascular cambium is a lateral meristem that produces secondary xylem (wood) and secondary phloem, leading to an increase in the girth (secondary growth) of stems and roots in woody plants. Primary growth is due to apical meristems. Root hairs are epidermal outgrowths.",
+    "difficulty": "easy",
+    "topic": "plant_growth",
+    "subtopic": "secondary_growth",
+    "tags": [
+      "vascular_cambium",
+      "secondary_growth",
+      "meristem"
+    ],
+    "learning_objective": "State the function of the vascular cambium.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch10_mcq_015",
+    "question": "Which of the following describes the arrangement of vascular bundles in a dicot root?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Scattered throughout the cortex",
+      "B": "Arranged in a ring around the pith",
+      "C": "Radial, with xylem and phloem alternating",
+      "D": "Conjoint and collateral"
+    },
+    "correct_answer": "C",
+    "explanation": "Dicot roots typically have a radial arrangement of vascular bundles, where xylem and phloem tissues are arranged in separate strands, alternating with each other around a central core. Scattered bundles are characteristic of monocot stems. Arranged in a ring is typical for dicot stems. Conjoint and collateral bundles are found in stems.",
+    "difficulty": "easy",
+    "topic": "plant_anatomy",
+    "subtopic": "root_anatomy",
+    "tags": [
+      "dicot_root",
+      "vascular_bundles",
+      "radial_arrangement"
+    ],
+    "learning_objective": "Describe the vascular bundle arrangement in a dicot root.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "bio_xi_ch10_mcq_016",
+    "question": "The main function of phloem is to transport:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Water and minerals from roots to leaves",
+      "B": "Sugars (food) from leaves to other parts of the plant",
+      "C": "Oxygen from leaves to roots",
+      "D": "Carbon dioxide from roots to leaves"
+    },
+    "correct_answer": "B",
+    "explanation": "Phloem is the vascular tissue responsible for the translocation of sugars (produced during photosynthesis in leaves) to other parts of the plant where they are needed for growth or storage. Xylem transports water and minerals.",
+    "difficulty": "easy",
+    "topic": "plant_tissues",
+    "subtopic": "vascular_tissues",
+    "tags": [
+      "phloem",
+      "translocation",
+      "sugar_transport"
+    ],
+    "learning_objective": "State the main function of phloem.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch10_mcq_017",
+    "question": "Which of the following is an example of a modified stem for food storage?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Carrot",
+      "B": "Potato",
+      "C": "Radish",
+      "D": "Sweet potato"
+    },
+    "correct_answer": "B",
+    "explanation": "A potato is a tuber, which is a modified underground stem specialized for storing starch. Carrots, radishes, and sweet potatoes are modified roots for food storage.",
+    "difficulty": "easy",
+    "topic": "plant_organs",
+    "subtopic": "modified_stems",
+    "tags": [
+      "modified_stem",
+      "potato",
+      "food_storage"
+    ],
+    "learning_objective": "Identify examples of modified stems for food storage.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "bio_xi_ch10_mcq_018",
+    "question": "The opening and closing of stomata are primarily regulated by the turgor pressure of which cells?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Epidermal cells",
+      "B": "Mesophyll cells",
+      "C": "Guard cells",
+      "D": "Companion cells"
+    },
+    "correct_answer": "C",
+    "explanation": "Guard cells surround the stomatal pore. Changes in their turgor pressure, regulated by the movement of potassium ions and water, cause them to change shape, thereby opening or closing the stomata. Epidermal cells form the outer layer, mesophyll cells are involved in photosynthesis, and companion cells are part of the phloem.",
+    "difficulty": "easy",
+    "topic": "plant_organs",
+    "subtopic": "leaves",
+    "tags": [
+      "stomata",
+      "guard_cells",
+      "turgor_pressure"
+    ],
+    "learning_objective": "Explain the mechanism of stomatal opening and closing.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch10_mcq_019",
+    "question": "Which of the following plant hormones promotes cell division and delays senescence (aging) in leaves?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Auxin",
+      "B": "Gibberellin",
+      "C": "Cytokinin",
+      "D": "Ethylene"
+    },
+    "correct_answer": "C",
+    "explanation": "Cytokinins are plant hormones that primarily promote cell division (cytokinesis) and are known to delay the aging process (senescence) in leaves. Auxins promote cell elongation. Gibberellins promote stem elongation. Ethylene promotes fruit ripening and senescence.",
+    "difficulty": "easy",
+    "topic": "plant_hormones",
+    "subtopic": "cytokinins",
+    "tags": [
+      "cytokinins",
+      "cell_division",
+      "senescence"
+    ],
+    "learning_objective": "Identify the function of cytokinins in plants.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch10_mcq_020",
+    "question": "The process of transfer of pollen grains from the anther to the stigma is known as:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Fertilization",
+      "B": "Germination",
+      "C": "Pollination",
+      "D": "Dispersal"
+    },
+    "correct_answer": "C",
+    "explanation": "Pollination is the transfer of pollen from the anther (male part) to the stigma (female part) of a flower. Fertilization is the fusion of male and female gametes. Germination is the sprouting of a seed. Dispersal refers to the spreading of seeds or fruits.",
+    "difficulty": "easy",
+    "topic": "plant_reproduction",
+    "subtopic": "pollination",
+    "tags": [
+      "pollination",
+      "flower_reproduction",
+      "pollen"
+    ],
+    "learning_objective": "Define pollination.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch10_mcq_021",
+    "question": "Which type of permanent tissue is composed of dead cells with highly thickened, lignified walls, providing rigid support?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Parenchyma",
+      "B": "Collenchyma",
+      "C": "Sclerenchyma",
+      "D": "Epidermis"
+    },
+    "correct_answer": "C",
+    "explanation": "Sclerenchyma tissue consists of dead cells with thick, lignified secondary walls, providing strong, rigid support to mature plant parts. Parenchyma cells are living and thin-walled. Collenchyma cells are living and provide flexible support. Epidermis is the protective outer layer.",
+    "difficulty": "medium",
+    "topic": "plant_tissues",
+    "subtopic": "permanent_tissues",
+    "tags": [
+      "sclerenchyma",
+      "lignification",
+      "mechanical_support"
+    ],
+    "learning_objective": "Differentiate between types of permanent tissues based on their structure and function.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

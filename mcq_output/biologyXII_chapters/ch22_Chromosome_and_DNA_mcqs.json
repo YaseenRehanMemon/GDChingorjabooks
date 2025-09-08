@@ -1,0 +1,454 @@
+[
+  {
+    "id": "bio_xi_ch22_mcq_001",
+    "question": "Which of the following is the primary component of chromatin?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Lipids and Carbohydrates",
+      "B": "DNA and Proteins",
+      "C": "RNA and Lipids",
+      "D": "Proteins and Carbohydrates"
+    },
+    "correct_answer": "B",
+    "explanation": "Chromatin, found in the nucleus of eukaryotic cells, is a complex of DNA and proteins. The proteins are mainly histones, which help package the long DNA molecules into a more compact structure.",
+    "difficulty": "easy",
+    "topic": "chromosome_structure",
+    "subtopic": "chromatin_composition",
+    "tags": [
+      "chromatin",
+      "DNA",
+      "proteins",
+      "histones",
+      "eukaryotic_cell"
+    ],
+    "learning_objective": "Identify the basic components of chromatin.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_22",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch22_mcq_002",
+    "question": "What is the basic repeating unit of chromatin, consisting of DNA wrapped around a core of histone proteins?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Centromere",
+      "B": "Telomere",
+      "C": "Nucleosome",
+      "D": "Chromatid"
+    },
+    "correct_answer": "C",
+    "explanation": "A nucleosome is the fundamental repeating unit of chromatin. It consists of a segment of DNA wound around eight histone protein cores, often referred to as a histone octamer. This structure helps compact DNA within the cell nucleus.",
+    "difficulty": "easy",
+    "topic": "chromosome_structure",
+    "subtopic": "nucleosome",
+    "tags": [
+      "nucleosome",
+      "chromatin",
+      "histones",
+      "DNA_packaging"
+    ],
+    "learning_objective": "Define the term nucleosome and its components.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_22",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch22_mcq_003",
+    "question": "Which nitrogenous base is found in DNA but not in RNA?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Adenine",
+      "B": "Guanine",
+      "C": "Cytosine",
+      "D": "Thymine"
+    },
+    "correct_answer": "D",
+    "explanation": "DNA contains the nitrogenous bases Adenine (A), Guanine (G), Cytosine (C), and Thymine (T). RNA, on the other hand, contains Adenine (A), Guanine (G), Cytosine (C), and Uracil (U) instead of Thymine.",
+    "difficulty": "easy",
+    "topic": "DNA_structure",
+    "subtopic": "nitrogenous_bases",
+    "tags": [
+      "DNA",
+      "RNA",
+      "nitrogenous_bases",
+      "Thymine",
+      "Uracil"
+    ],
+    "learning_objective": "Differentiate between the nitrogenous bases present in DNA and RNA.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_22",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch22_mcq_004",
+    "question": "The two strands of a DNA molecule are held together by which type of bonds?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Covalent bonds",
+      "B": "Ionic bonds",
+      "C": "Hydrogen bonds",
+      "D": "Phosphodiester bonds"
+    },
+    "correct_answer": "C",
+    "explanation": "The two complementary strands of the DNA double helix are held together by hydrogen bonds formed between specific base pairs: Adenine (A) pairs with Thymine (T) via two hydrogen bonds, and Guanine (G) pairs with Cytosine (C) via three hydrogen bonds. Phosphodiester bonds form the sugar-phosphate backbone of each individual strand.",
+    "difficulty": "easy",
+    "topic": "DNA_structure",
+    "subtopic": "double_helix_bonding",
+    "tags": [
+      "DNA",
+      "double_helix",
+      "hydrogen_bonds",
+      "base_pairing"
+    ],
+    "learning_objective": "Identify the type of bonds holding the two DNA strands together.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_22",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch22_mcq_005",
+    "question": "Which enzyme is responsible for unwinding the DNA double helix during replication?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "DNA ligase",
+      "B": "DNA polymerase",
+      "C": "Helicase",
+      "D": "Primase"
+    },
+    "correct_answer": "C",
+    "explanation": "Helicase is the enzyme that unwinds the DNA double helix by breaking the hydrogen bonds between complementary base pairs, separating the two strands to allow replication to proceed. DNA polymerase synthesizes new DNA strands, primase synthesizes RNA primers, and DNA ligase joins Okazaki fragments.",
+    "difficulty": "easy",
+    "topic": "DNA_replication",
+    "subtopic": "enzymes_of_replication",
+    "tags": [
+      "DNA_replication",
+      "helicase",
+      "enzymes",
+      "unwinding"
+    ],
+    "learning_objective": "Recall the function of helicase in DNA replication.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_22",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch22_mcq_006",
+    "question": "What is the process by which genetic information from DNA is copied into RNA?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Replication",
+      "B": "Translation",
+      "C": "Transcription",
+      "D": "Mutation"
+    },
+    "correct_answer": "C",
+    "explanation": "Transcription is the process where the genetic information encoded in DNA is used as a template to synthesize a complementary RNA molecule. Replication is DNA synthesis, and translation is protein synthesis from RNA.",
+    "difficulty": "easy",
+    "topic": "gene_expression",
+    "subtopic": "transcription",
+    "tags": [
+      "transcription",
+      "DNA",
+      "RNA",
+      "gene_expression"
+    ],
+    "learning_objective": "Define transcription as part of gene expression.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_22",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch22_mcq_007",
+    "question": "Which type of RNA carries genetic information from DNA to the ribosome for protein synthesis?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "tRNA",
+      "B": "rRNA",
+      "C": "mRNA",
+      "D": "snRNA"
+    },
+    "correct_answer": "C",
+    "explanation": "Messenger RNA (mRNA) carries the genetic code from the DNA in the nucleus to the ribosomes in the cytoplasm, where it serves as a template for protein synthesis. tRNA carries amino acids, and rRNA is a component of ribosomes.",
+    "difficulty": "easy",
+    "topic": "RNA_types",
+    "subtopic": "mRNA_function",
+    "tags": [
+      "mRNA",
+      "RNA_types",
+      "protein_synthesis",
+      "genetic_code"
+    ],
+    "learning_objective": "Identify the role of mRNA in protein synthesis.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_22",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch22_mcq_008",
+    "question": "What is the term for a three-nucleotide sequence on mRNA that specifies a particular amino acid?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Anticodon",
+      "B": "Codon",
+      "C": "Promoter",
+      "D": "Exon"
+    },
+    "correct_answer": "B",
+    "explanation": "A codon is a sequence of three nucleotides on an mRNA molecule that codes for a specific amino acid or signals the termination of protein synthesis. An anticodon is found on tRNA and complements the mRNA codon.",
+    "difficulty": "easy",
+    "topic": "genetic_code",
+    "subtopic": "codon",
+    "tags": [
+      "codon",
+      "mRNA",
+      "amino_acid",
+      "genetic_code"
+    ],
+    "learning_objective": "Define a codon and its function.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_22",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch22_mcq_009",
+    "question": "Which of the following is NOT a characteristic of the genetic code?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "It is universal",
+      "B": "It is overlapping",
+      "C": "It is degenerate",
+      "D": "It is commaless"
+    },
+    "correct_answer": "B",
+    "explanation": "The genetic code is non-overlapping, meaning that each nucleotide is part of only one codon. It is universal (same in most organisms), degenerate (multiple codons for one amino acid), and commaless (no intervening nucleotides between codons).",
+    "difficulty": "easy",
+    "topic": "genetic_code",
+    "subtopic": "properties_of_genetic_code",
+    "tags": [
+      "genetic_code",
+      "non_overlapping",
+      "universal",
+      "degenerate",
+      "commaless"
+    ],
+    "learning_objective": "Identify the key characteristics of the genetic code.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_22",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch22_mcq_010",
+    "question": "What is the name of the process by which a cell makes an exact copy of its DNA?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Transcription",
+      "B": "Translation",
+      "C": "Replication",
+      "D": "Mutation"
+    },
+    "correct_answer": "C",
+    "explanation": "DNA replication is the biological process of producing two identical replicas of DNA from one original DNA molecule. Transcription is DNA to RNA, and translation is RNA to protein.",
+    "difficulty": "easy",
+    "topic": "DNA_replication",
+    "subtopic": "definition",
+    "tags": [
+      "DNA_replication",
+      "DNA_synthesis",
+      "genetic_information"
+    ],
+    "learning_objective": "Define DNA replication.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_22",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch22_mcq_011",
+    "question": "In eukaryotes, where does transcription primarily occur?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Cytoplasm",
+      "B": "Ribosome",
+      "C": "Nucleus",
+      "D": "Mitochondria"
+    },
+    "correct_answer": "C",
+    "explanation": "In eukaryotic cells, DNA is located in the nucleus, and therefore transcription (the synthesis of RNA from a DNA template) primarily occurs in the nucleus. Translation, however, occurs in the cytoplasm on ribosomes.",
+    "difficulty": "easy",
+    "topic": "gene_expression",
+    "subtopic": "transcription_location",
+    "tags": [
+      "transcription",
+      "eukaryotes",
+      "nucleus",
+      "gene_expression"
+    ],
+    "learning_objective": "Identify the cellular location of transcription in eukaryotes.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_22",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch22_mcq_012",
+    "question": "Which of the following describes the structure of DNA proposed by Watson and Crick?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Single helix",
+      "B": "Triple helix",
+      "C": "Double helix",
+      "D": "Linear strand"
+    },
+    "correct_answer": "C",
+    "explanation": "James Watson and Francis Crick proposed the double helix model for the structure of DNA in 1953. This model describes DNA as two polynucleotide strands coiled around each other.",
+    "difficulty": "easy",
+    "topic": "DNA_structure",
+    "subtopic": "Watson_Crick_model",
+    "tags": [
+      "DNA",
+      "double_helix",
+      "Watson_Crick",
+      "molecular_structure"
+    ],
+    "learning_objective": "Recall the structural model of DNA.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_22",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch22_mcq_013",
+    "question": "If a DNA molecule contains $20\\%$ Adenine, what percentage of Guanine would it contain?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$20\\%$",
+      "B": "$30\\%$",
+      "C": "$40\\%$",
+      "D": "$60\\%$"
+    },
+    "correct_answer": "B",
+    "explanation": "According to Chargaff's rules, in a DNA molecule, the amount of Adenine (A) is equal to the amount of Thymine (T), and the amount of Guanine (G) is equal to the amount of Cytosine (C). So, if Adenine is $20\\%$, then Thymine is also $20\\%$. The total percentage of A and T is $20\\% + 20\\% = 40\\%$. The remaining percentage for G and C is $100\\% - 40\\% = 60\\%$. Since G and C are equal, Guanine would be $60\\% / 2 = 30\\%$.",
+    "difficulty": "medium",
+    "topic": "DNA_structure",
+    "subtopic": "Chargaffs_rules",
+    "tags": [
+      "DNA",
+      "Chargaffs_rules",
+      "base_pairing",
+      "numerical"
+    ],
+    "learning_objective": "Apply Chargaff's rules to determine base percentages in DNA.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_22",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "bio_xi_ch22_mcq_014",
+    "question": "Which of the following is the correct order of organization from smallest to largest in a eukaryotic chromosome?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "DNA $\rightarrow$ Nucleosome $\rightarrow$ Chromatin fiber $\rightarrow$ Chromosome",
+      "B": "Nucleosome $\rightarrow$ DNA $\rightarrow$ Chromatin fiber $\rightarrow$ Chromosome",
+      "C": "Chromosome $\rightarrow$ Chromatin fiber $\rightarrow$ Nucleosome $\rightarrow$ DNA",
+      "D": "DNA $\rightarrow$ Chromatin fiber $\rightarrow$ Nucleosome $\rightarrow$ Chromosome"
+    },
+    "correct_answer": "A",
+    "explanation": "The hierarchical packaging of DNA in eukaryotes starts with the DNA double helix. This DNA wraps around histone proteins to form nucleosomes. Multiple nucleosomes then coil to form a $30 \text{ nm}$ chromatin fiber (solenoid). This fiber further folds into loops and domains, eventually forming the highly condensed metaphase chromosome.",
+    "difficulty": "medium",
+    "topic": "chromosome_structure",
+    "subtopic": "DNA_packaging",
+    "tags": [
+      "DNA_packaging",
+      "chromosome",
+      "nucleosome",
+      "chromatin_fiber",
+      "eukaryotic_chromosome"
+    ],
+    "learning_objective": "Describe the levels of DNA packaging in eukaryotic chromosomes.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_22",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch22_mcq_015",
+    "question": "The semi-conservative nature of DNA replication means that each new DNA molecule consists of:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Two entirely new strands",
+      "B": "Two entirely old strands",
+      "C": "One new strand and one old strand",
+      "D": "A mixture of new and old fragments on both strands"
+    },
+    "correct_answer": "C",
+    "explanation": "The semi-conservative model of DNA replication, famously demonstrated by Meselson and Stahl, states that each new DNA molecule produced after replication consists of one original (template) strand and one newly synthesized strand. This ensures genetic continuity.",
+    "difficulty": "medium",
+    "topic": "DNA_replication",
+    "subtopic": "semi_conservative_model",
+    "tags": [
+      "DNA_replication",
+      "semi_conservative",
+      "Meselson_Stahl",
+      "genetic_continuity"
+    ],
+    "learning_objective": "Explain the semi-conservative nature of DNA replication.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_22",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch22_mcq_016",
+    "question": "During DNA replication, the lagging strand is synthesized in short fragments called Okazaki fragments. Why does this occur?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "DNA polymerase can only synthesize DNA in the $3' \rightarrow 5'$ direction.",
+      "B": "DNA ligase can only join fragments, not synthesize continuously.",
+      "C": "The replication fork moves in the opposite direction of lagging strand synthesis.",
+      "D": "Helicase unwinds DNA too slowly for continuous synthesis on the lagging strand."
+    },
+    "correct_answer": "C",
+    "explanation": "DNA polymerase can only add nucleotides to the $3'$ end of a growing strand, meaning synthesis always proceeds in the $5' \rightarrow 3'$ direction. On the lagging strand, the template runs $5' \rightarrow 3'$, which is opposite to the direction of replication fork movement. Therefore, DNA polymerase must synthesize in short, discontinuous segments (Okazaki fragments) moving away from the fork, which are later joined by DNA ligase.",
+    "difficulty": "medium",
+    "topic": "DNA_replication",
+    "subtopic": "lagging_strand_synthesis",
+    "tags": [
+      "DNA_replication",
+      "lagging_strand",
+      "Okazaki_fragments",
+      "DNA_polymerase",
+      "replication_fork"
+    ],
+    "learning_objective": "Explain the mechanism of lagging strand synthesis.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_22",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  }
+]

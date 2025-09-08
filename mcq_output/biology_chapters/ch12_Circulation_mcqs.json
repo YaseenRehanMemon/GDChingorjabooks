@@ -1,0 +1,561 @@
+[
+  {
+    "id": "bio_xii_ch12_mcq_001",
+    "question": "Which type of circulatory system involves blood flowing freely within a body cavity, bathing the organs directly?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Closed circulatory system",
+      "B": "Open circulatory system",
+      "C": "Single circulatory system",
+      "D": "Double circulatory system"
+    },
+    "correct_answer": "B",
+    "explanation": "An open circulatory system, found in arthropods and molluscs, involves hemolymph (blood and interstitial fluid) flowing into a hemocoel (body cavity) where it directly bathes the organs. In contrast, a closed circulatory system keeps blood confined within vessels.",
+    "difficulty": "easy",
+    "topic": "types_of_circulation",
+    "subtopic": "open_vs_closed",
+    "tags": [
+      "circulatory_system",
+      "open_circulation",
+      "hemolymph"
+    ],
+    "learning_objective": "Differentiate between open and closed circulatory systems.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_12",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch12_mcq_002",
+    "question": "What percentage of human blood plasma is typically composed of water?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Approximately $55\\%$",
+      "B": "Approximately $70\\%$",
+      "C": "Approximately $80\\%$",
+      "D": "Approximately $90-92\\%$"
+    },
+    "correct_answer": "D",
+    "explanation": "Blood plasma, the liquid matrix of blood, is primarily composed of water, typically making up about $90-92\\%$ of its volume. The remaining $8-10\\%$ consists of plasma proteins, salts, nutrients, hormones, and waste products.",
+    "difficulty": "easy",
+    "topic": "blood_composition",
+    "subtopic": "plasma",
+    "tags": [
+      "blood",
+      "plasma",
+      "water_content",
+      "composition"
+    ],
+    "learning_objective": "Recall the major components and their proportions in blood plasma.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_12",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch12_mcq_003",
+    "question": "Which of the following blood components is responsible for oxygen transport?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Leukocytes",
+      "B": "Thrombocytes",
+      "C": "Erythrocytes",
+      "D": "Plasma proteins"
+    },
+    "correct_answer": "C",
+    "explanation": "Erythrocytes, also known as red blood cells, contain hemoglobin, a protein that binds to oxygen in the lungs and releases it in the tissues, thus facilitating oxygen transport throughout the body.",
+    "difficulty": "easy",
+    "topic": "blood_components",
+    "subtopic": "erythrocytes",
+    "tags": [
+      "blood",
+      "RBCs",
+      "oxygen_transport",
+      "hemoglobin"
+    ],
+    "learning_objective": "Identify the function of erythrocytes in blood.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_12",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch12_mcq_004",
+    "question": "The bicuspid valve is located between which two chambers of the human heart?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Right atrium and right ventricle",
+      "B": "Left atrium and left ventricle",
+      "C": "Right ventricle and pulmonary artery",
+      "D": "Left ventricle and aorta"
+    },
+    "correct_answer": "B",
+    "explanation": "The bicuspid valve, also known as the mitral valve, is situated between the left atrium and the left ventricle. It prevents the backflow of oxygenated blood into the left atrium during ventricular systole.",
+    "difficulty": "easy",
+    "topic": "heart_structure",
+    "subtopic": "valves",
+    "tags": [
+      "heart",
+      "valves",
+      "bicuspid_valve",
+      "mitral_valve"
+    ],
+    "learning_objective": "Locate the major valves within the human heart.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_12",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch12_mcq_005",
+    "question": "Which blood vessel carries deoxygenated blood from the heart to the lungs?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Aorta",
+      "B": "Pulmonary vein",
+      "C": "Pulmonary artery",
+      "D": "Superior vena cava"
+    },
+    "correct_answer": "C",
+    "explanation": "The pulmonary artery carries deoxygenated blood from the right ventricle of the heart to the lungs for oxygenation. It is unique among arteries for carrying deoxygenated blood.",
+    "difficulty": "easy",
+    "topic": "blood_vessels",
+    "subtopic": "pulmonary_circulation",
+    "tags": [
+      "blood_vessels",
+      "pulmonary_artery",
+      "deoxygenated_blood",
+      "circulation"
+    ],
+    "learning_objective": "Identify the major blood vessels involved in pulmonary circulation.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_12",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch12_mcq_006",
+    "question": "What is the primary function of the lymphatic system?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Transporting oxygen to tissues",
+      "B": "Maintaining fluid balance and immunity",
+      "C": "Pumping blood throughout the body",
+      "D": "Digesting fats and proteins"
+    },
+    "correct_answer": "B",
+    "explanation": "The lymphatic system plays crucial roles in maintaining fluid balance by returning interstitial fluid to the bloodstream and in immunity by producing and housing lymphocytes and filtering pathogens.",
+    "difficulty": "easy",
+    "topic": "lymphatic_system",
+    "subtopic": "functions",
+    "tags": [
+      "lymphatic_system",
+      "fluid_balance",
+      "immunity",
+      "lymph"
+    ],
+    "learning_objective": "State the primary functions of the lymphatic system.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_12",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch12_mcq_007",
+    "question": "Which component of blood is primarily involved in blood clotting?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Erythrocytes",
+      "B": "Leukocytes",
+      "C": "Thrombocytes",
+      "D": "Plasma"
+    },
+    "correct_answer": "C",
+    "explanation": "Thrombocytes, also known as platelets, are small, irregular cell fragments that play a vital role in hemostasis (blood clotting) by forming a plug at the site of injury and releasing factors that promote coagulation.",
+    "difficulty": "easy",
+    "topic": "blood_components",
+    "subtopic": "thrombocytes",
+    "tags": [
+      "blood",
+      "platelets",
+      "blood_clotting",
+      "hemostasis"
+    ],
+    "learning_objective": "Identify the role of thrombocytes in blood clotting.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_12",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch12_mcq_008",
+    "question": "The 'lubb' sound of the heart is produced by the closure of which valves?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Semilunar valves",
+      "B": "Aortic valve",
+      "C": "Pulmonary valve",
+      "D": "Atrioventricular valves"
+    },
+    "correct_answer": "D",
+    "explanation": "The first heart sound, 'lubb' (S1), is caused by the closure of the atrioventricular (AV) valves – the tricuspid and bicuspid (mitral) valves – at the beginning of ventricular systole.",
+    "difficulty": "easy",
+    "topic": "cardiac_cycle",
+    "subtopic": "heart_sounds",
+    "tags": [
+      "heart",
+      "cardiac_cycle",
+      "heart_sounds",
+      "AV_valves"
+    ],
+    "learning_objective": "Relate heart sounds to the closure of specific heart valves.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_12",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch12_mcq_009",
+    "question": "Which of the following is a characteristic of arteries?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Thin, collapsible walls",
+      "B": "Presence of valves to prevent backflow",
+      "C": "Carry blood away from the heart",
+      "D": "Site of nutrient and waste exchange"
+    },
+    "correct_answer": "C",
+    "explanation": "Arteries are blood vessels that carry blood away from the heart to the rest of the body. They typically have thick, muscular, and elastic walls to withstand high pressure, and generally do not contain valves (except for semilunar valves at their origin). Capillaries are the site of exchange.",
+    "difficulty": "easy",
+    "topic": "blood_vessels",
+    "subtopic": "arteries",
+    "tags": [
+      "arteries",
+      "blood_vessels",
+      "circulation",
+      "structure_function"
+    ],
+    "learning_objective": "Describe the structural and functional characteristics of arteries.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_12",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch12_mcq_010",
+    "question": "What is the term for the contraction phase of the heart chambers?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Diastole",
+      "B": "Systole",
+      "C": "Repolarization",
+      "D": "Depolarization"
+    },
+    "correct_answer": "B",
+    "explanation": "Systole refers to the contraction phase of the heart chambers (atria or ventricles), during which blood is pumped out. Diastole is the relaxation phase, when chambers fill with blood.",
+    "difficulty": "easy",
+    "topic": "cardiac_cycle",
+    "subtopic": "systole_diastole",
+    "tags": [
+      "heart",
+      "cardiac_cycle",
+      "systole",
+      "diastole"
+    ],
+    "learning_objective": "Define systole and diastole in the context of the cardiac cycle.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_12",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch12_mcq_011",
+    "question": "Which of the following is NOT a type of white blood cell (leukocyte)?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Neutrophil",
+      "B": "Lymphocyte",
+      "C": "Erythrocyte",
+      "D": "Monocyte"
+    },
+    "correct_answer": "C",
+    "explanation": "Erythrocytes are red blood cells, responsible for oxygen transport. Neutrophils, lymphocytes, and monocytes are all types of leukocytes (white blood cells), which are involved in the body's immune defense.",
+    "difficulty": "easy",
+    "topic": "blood_components",
+    "subtopic": "leukocytes",
+    "tags": [
+      "blood",
+      "WBCs",
+      "leukocytes",
+      "erythrocytes"
+    ],
+    "learning_objective": "Distinguish between different types of blood cells.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_12",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch12_mcq_012",
+    "question": "The SA node is also known as the heart's natural:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Pacemaker",
+      "B": "Volume regulator",
+      "C": "Pressure sensor",
+      "D": "Valve controller"
+    },
+    "correct_answer": "A",
+    "explanation": "The sinoatrial (SA) node is a specialized group of cells in the right atrium that spontaneously generates electrical impulses, setting the rhythm of the heart. Therefore, it is often called the heart's natural pacemaker.",
+    "difficulty": "easy",
+    "topic": "heart_function",
+    "subtopic": "cardiac_conduction",
+    "tags": [
+      "heart",
+      "SA_node",
+      "pacemaker",
+      "cardiac_rhythm"
+    ],
+    "learning_objective": "Identify the role of the SA node in cardiac function.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_12",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch12_mcq_013",
+    "question": "Which blood group is considered the universal recipient?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "AB",
+      "D": "O"
+    },
+    "correct_answer": "C",
+    "explanation": "Individuals with blood group AB have both A and B antigens on their red blood cells and neither anti-A nor anti-B antibodies in their plasma. This allows them to receive blood from any ABO blood group, making them universal recipients.",
+    "difficulty": "easy",
+    "topic": "blood_groups",
+    "subtopic": "ABO_system",
+    "tags": [
+      "blood_groups",
+      "ABO",
+      "universal_recipient",
+      "antigens_antibodies"
+    ],
+    "learning_objective": "Identify the universal recipient blood group.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_12",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch12_mcq_014",
+    "question": "The outermost layer of an artery wall is called the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Tunica intima",
+      "B": "Tunica media",
+      "C": "Tunica externa (adventitia)",
+      "D": "Endothelium"
+    },
+    "correct_answer": "C",
+    "explanation": "Blood vessels, including arteries, have three main layers: the tunica intima (innermost), tunica media (middle, muscular layer), and tunica externa or adventitia (outermost, connective tissue layer).",
+    "difficulty": "easy",
+    "topic": "blood_vessels",
+    "subtopic": "artery_structure",
+    "tags": [
+      "artery",
+      "blood_vessels",
+      "tunica_externa",
+      "histology"
+    ],
+    "learning_objective": "Recall the layers of an artery wall.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_12",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch12_mcq_015",
+    "question": "What is the normal range for the number of red blood cells in an adult male, approximately?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$1-2$ million cells/$\text{mm}^3$",
+      "B": "$3-4$ million cells/$\text{mm}^3$",
+      "C": "$4.5-5.5$ million cells/$\text{mm}^3$",
+      "D": "$6-7$ million cells/$\text{mm}^3$"
+    },
+    "correct_answer": "C",
+    "explanation": "The normal range for red blood cell count in adult males is typically around $4.5-5.5$ million cells per cubic millimeter ($\text{mm}^3$) of blood. Females usually have a slightly lower count.",
+    "difficulty": "medium",
+    "topic": "blood_components",
+    "subtopic": "RBC_count",
+    "tags": [
+      "RBCs",
+      "blood_count",
+      "hematology",
+      "normal_values"
+    ],
+    "learning_objective": "Recall the approximate normal range for red blood cell count.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_12",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "bio_xii_ch12_mcq_016",
+    "question": "If a person has A antigens on their red blood cells and anti-B antibodies in their plasma, what is their blood type?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Type A",
+      "B": "Type B",
+      "C": "Type AB",
+      "D": "Type O"
+    },
+    "correct_answer": "A",
+    "explanation": "Blood type A is characterized by the presence of A antigens on the surface of red blood cells and anti-B antibodies in the plasma. Type B has B antigens and anti-A antibodies. Type AB has both A and B antigens and no antibodies. Type O has no antigens but both anti-A and anti-B antibodies.",
+    "difficulty": "medium",
+    "topic": "blood_groups",
+    "subtopic": "ABO_system",
+    "tags": [
+      "blood_groups",
+      "ABO",
+      "antigens",
+      "antibodies"
+    ],
+    "learning_objective": "Determine blood type based on antigen and antibody presence.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_12",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch12_mcq_017",
+    "question": "During the cardiac cycle, what event immediately follows the closure of the AV valves?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Ventricular filling",
+      "B": "Atrial systole",
+      "C": "Ventricular ejection",
+      "D": "Isovolumetric contraction"
+    },
+    "correct_answer": "D",
+    "explanation": "The closure of the AV valves (tricuspid and mitral) marks the beginning of ventricular systole. Initially, both AV and semilunar valves are closed, leading to a period of isovolumetric contraction where ventricular pressure rises without a change in volume, until it exceeds aortic/pulmonary pressure.",
+    "difficulty": "medium",
+    "topic": "cardiac_cycle",
+    "subtopic": "phases",
+    "tags": [
+      "cardiac_cycle",
+      "heart",
+      "AV_valves",
+      "isovolumetric_contraction"
+    ],
+    "learning_objective": "Sequence the events of the cardiac cycle.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_12",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch12_mcq_018",
+    "question": "Which of the following statements accurately describes the flow of blood through the human heart?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Right atrium $\rightarrow$ Left atrium $\rightarrow$ Right ventricle $\rightarrow$ Left ventricle",
+      "B": "Right atrium $\rightarrow$ Right ventricle $\rightarrow$ Lungs $\rightarrow$ Left atrium $\rightarrow$ Left ventricle",
+      "C": "Left atrium $\rightarrow$ Left ventricle $\rightarrow$ Lungs $\rightarrow$ Right atrium $\rightarrow$ Right ventricle",
+      "D": "Right ventricle $\rightarrow$ Right atrium $\rightarrow$ Lungs $\rightarrow$ Left ventricle $\rightarrow$ Left atrium"
+    },
+    "correct_answer": "B",
+    "explanation": "Deoxygenated blood enters the right atrium, then passes to the right ventricle, which pumps it to the lungs. Oxygenated blood returns from the lungs to the left atrium, then to the left ventricle, which pumps it to the rest of the body.",
+    "difficulty": "medium",
+    "topic": "heart_function",
+    "subtopic": "blood_flow_pathway",
+    "tags": [
+      "heart",
+      "blood_flow",
+      "circulation",
+      "pulmonary_systemic"
+    ],
+    "learning_objective": "Trace the path of blood through the human heart and circulatory system.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_12",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch12_mcq_019",
+    "question": "A patient's ECG shows an abnormally long PR interval. This could indicate a problem with the conduction of electrical impulses from the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "SA node to the atria",
+      "B": "Atria to the ventricles",
+      "C": "Ventricles during repolarization",
+      "D": "Bundle of His to Purkinje fibers"
+    },
+    "correct_answer": "B",
+    "explanation": "The PR interval on an ECG represents the time taken for electrical impulses to travel from the SA node through the atria and the AV node to the ventricles. An abnormally long PR interval suggests a delay in conduction through the AV node or the His-Purkinje system, indicating a first-degree AV block.",
+    "difficulty": "medium",
+    "topic": "ECG",
+    "subtopic": "interpretation",
+    "tags": [
+      "ECG",
+      "cardiac_conduction",
+      "PR_interval",
+      "heart_block"
+    ],
+    "learning_objective": "Interpret basic abnormalities in an ECG tracing.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_12",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch12_mcq_020",
+    "question": "If a person has a heart rate of $75$ beats per minute and a stroke volume of $70$ mL, what is their cardiac output?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$5.25$ L/min",
+      "B": "$525$ mL/min",
+      "C": "$1.07$ L/min",
+      "D": "$52.5$ L/min"
+    },
+    "correct_answer": "A",
+    "explanation": "Cardiac output (CO) is calculated by multiplying heart rate (HR) by stroke volume (SV): $CO = HR \times SV$. \nGiven $HR = 75$ beats/min and $SV = 70$ mL/beat. \n$CO = 75 \text{ beats/min} \times 70 \text{ mL/beat} = 5250 \text{ mL/min}$. \nTo convert to liters per minute: $5250 \text{ mL/min} \\div 1000 \text{ mL/L} = 5.25 \text{ L/min}$.",
+    "difficulty": "medium",
+    "topic": "cardiac_output",
+    "subtopic": "calculation",
+    "tags": [
+      "cardiac_output",
+      "heart_rate",
+      "stroke_volume",
+      "calculation"
+    ],
+    "learning_objective": "Calculate cardiac output given heart rate and stroke volume.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_12",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

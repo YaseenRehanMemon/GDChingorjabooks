@@ -1,0 +1,409 @@
+[
+  {
+    "id": "math_xii_ch4_mcq_001",
+    "question": "If `$y = x^4 - 3x^3 + 2x^2 - 5x + 7$`, what is the second derivative, `$\frac{d^2y}{dx^2}$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$4x^3 - 9x^2 + 4x - 5$",
+      "B": "$12x^2 - 18x + 4$",
+      "C": "$24x - 18$",
+      "D": "$4x^3 - 3x^2 + 2x - 5$"
+    },
+    "correct_answer": "B",
+    "explanation": "To find the second derivative, we first find the first derivative and then differentiate it again.\nGiven `$y = x^4 - 3x^3 + 2x^2 - 5x + 7$`.\nFirst derivative: `$\frac{dy}{dx} = \frac{d}{dx}(x^4 - 3x^3 + 2x^2 - 5x + 7) = 4x^3 - 9x^2 + 4x - 5$`.\nSecond derivative: `$\frac{d^2y}{dx^2} = \frac{d}{dx}(4x^3 - 9x^2 + 4x - 5) = 12x^2 - 18x + 4$`.\nTherefore, the correct option is B.",
+    "difficulty": "easy",
+    "topic": "higher_order_derivatives",
+    "subtopic": "second_derivative_explicit",
+    "tags": [
+      "second_derivative",
+      "polynomial",
+      "explicit_function",
+      "differentiation"
+    ],
+    "learning_objective": "Calculate the second derivative of a polynomial function.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch4_mcq_002",
+    "question": "What is the second derivative of `$y = \\sin(2x)$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$2\\cos(2x)$",
+      "B": "$-4\\sin(2x)$",
+      "C": "$4\\cos(2x)$",
+      "D": "$-2\\sin(2x)$"
+    },
+    "correct_answer": "B",
+    "explanation": "Given `$y = \\sin(2x)$`.\nFirst derivative: `$\frac{dy}{dx} = \frac{d}{dx}(\\sin(2x)) = \\cos(2x) \\cdot \frac{d}{dx}(2x) = 2\\cos(2x)$`.\nSecond derivative: `$\frac{d^2y}{dx^2} = \frac{d}{dx}(2\\cos(2x)) = 2 \\cdot (-\\sin(2x)) \\cdot \frac{d}{dx}(2x) = -2\\sin(2x) \\cdot 2 = -4\\sin(2x)$`.\nThus, the correct option is B.",
+    "difficulty": "easy",
+    "topic": "higher_order_derivatives",
+    "subtopic": "second_derivative_trigonometric",
+    "tags": [
+      "second_derivative",
+      "trigonometric_function",
+      "chain_rule"
+    ],
+    "learning_objective": "Compute the second derivative of trigonometric functions using the chain rule.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch4_mcq_003",
+    "question": "If `$f(x) = e^{3x}$`, find `$f''(x)$`.",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$3e^{3x}$",
+      "B": "$e^{3x}$",
+      "C": "$9e^{3x}$",
+      "D": "$6e^{3x}$"
+    },
+    "correct_answer": "C",
+    "explanation": "Given `$f(x) = e^{3x}$`.\nFirst derivative: `$f'(x) = \frac{d}{dx}(e^{3x}) = e^{3x} \\cdot \frac{d}{dx}(3x) = 3e^{3x}$`.\nSecond derivative: `$f''(x) = \frac{d}{dx}(3e^{3x}) = 3 \\cdot e^{3x} \\cdot \frac{d}{dx}(3x) = 3 \\cdot e^{3x} \\cdot 3 = 9e^{3x}$`.\nHence, the correct option is C.",
+    "difficulty": "easy",
+    "topic": "higher_order_derivatives",
+    "subtopic": "second_derivative_exponential",
+    "tags": [
+      "second_derivative",
+      "exponential_function",
+      "chain_rule"
+    ],
+    "learning_objective": "Calculate the second derivative of exponential functions.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch4_mcq_004",
+    "question": "For a function `$f(x)$`, if `$f''(x) > 0$` on an interval, what does this imply about the function's graph on that interval?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The function is increasing.",
+      "B": "The function is decreasing.",
+      "C": "The function is concave up.",
+      "D": "The function is concave down."
+    },
+    "correct_answer": "C",
+    "explanation": "The second derivative `$f''(x)$` determines the concavity of a function.\nIf `$f''(x) > 0$` on an interval, the graph of `$f(x)$` is concave up on that interval.\nIf `$f''(x) < 0$` on an interval, the graph of `$f(x)$` is concave down on that interval.\nIf `$f''(x) = 0$` and changes sign, it indicates a point of inflection.\nTherefore, the correct option is C.",
+    "difficulty": "easy",
+    "topic": "applications_of_second_derivative",
+    "subtopic": "concavity",
+    "tags": [
+      "concavity",
+      "second_derivative_test",
+      "graph_analysis"
+    ],
+    "learning_objective": "Relate the sign of the second derivative to the concavity of a function.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch4_mcq_005",
+    "question": "What is the third derivative of `$y = x^5$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$5x^4$",
+      "B": "$20x^3$",
+      "C": "$60x^2$",
+      "D": "$120x$"
+    },
+    "correct_answer": "C",
+    "explanation": "Given `$y = x^5$`.\nFirst derivative: `$\frac{dy}{dx} = 5x^4$`.\nSecond derivative: `$\frac{d^2y}{dx^2} = \frac{d}{dx}(5x^4) = 20x^3$`.\nThird derivative: `$\frac{d^3y}{dx^3} = \frac{d}{dx}(20x^3) = 60x^2$`.\nHence, the correct option is C.",
+    "difficulty": "easy",
+    "topic": "higher_order_derivatives",
+    "subtopic": "third_derivative_explicit",
+    "tags": [
+      "third_derivative",
+      "polynomial",
+      "explicit_function"
+    ],
+    "learning_objective": "Calculate the third derivative of a polynomial function.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch4_mcq_006",
+    "question": "If the position of a particle is given by `$s(t) = t^3 - 6t^2 + 9t$`, what is its acceleration at `$t=2$` seconds?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$3t^2 - 12t + 9$",
+      "B": "$6t - 12$",
+      "C": "$0$",
+      "D": "$-6$"
+    },
+    "correct_answer": "C",
+    "explanation": "Given position function `$s(t) = t^3 - 6t^2 + 9t$`.\nVelocity is the first derivative of position: `$v(t) = s'(t) = \frac{d}{dt}(t^3 - 6t^2 + 9t) = 3t^2 - 12t + 9$`.\nAcceleration is the second derivative of position (or first derivative of velocity): `$a(t) = v'(t) = s''(t) = \frac{d}{dt}(3t^2 - 12t + 9) = 6t - 12$`.\nNow, substitute `$t=2$` into the acceleration function:\n`$a(2) = 6(2) - 12 = 12 - 12 = 0$`.\nTherefore, the acceleration at `$t=2$` seconds is `$0$`. The correct option is C.",
+    "difficulty": "easy",
+    "topic": "applications_of_second_derivative",
+    "subtopic": "kinematics_acceleration",
+    "tags": [
+      "acceleration",
+      "kinematics",
+      "second_derivative",
+      "physics_application"
+    ],
+    "learning_objective": "Apply the second derivative to calculate acceleration in kinematic problems.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch4_mcq_007",
+    "question": "A point of inflection for a function `$f(x)$` occurs where the concavity changes. Which condition is typically associated with a point of inflection?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$f'(x) = 0$",
+      "B": "$f''(x) = 0$",
+      "C": "$f(x) = 0$",
+      "D": "$f'(x) > 0$"
+    },
+    "correct_answer": "B",
+    "explanation": "A point of inflection is a point on the graph of a function where the concavity changes (from concave up to concave down, or vice versa). This typically occurs where the second derivative `$f''(x)$` is equal to zero or undefined, and `$f''(x)$` changes sign around that point.\nOption A relates to critical points (local maxima/minima or saddle points).\nOption C relates to roots or x-intercepts of the function.\nOption D implies the function is increasing.\nTherefore, the correct option is B.",
+    "difficulty": "easy",
+    "topic": "applications_of_second_derivative",
+    "subtopic": "points_of_inflection",
+    "tags": [
+      "point_of_inflection",
+      "concavity",
+      "second_derivative_test"
+    ],
+    "learning_objective": "Identify the condition for a point of inflection.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch4_mcq_008",
+    "question": "If `$y = \\ln(x)$`, what is `$\frac{d^2y}{dx^2}$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$\frac{1}{x}$",
+      "B": "$-\frac{1}{x^2}$",
+      "C": "$\frac{1}{x^2}$",
+      "D": "$-\frac{2}{x^3}$"
+    },
+    "correct_answer": "B",
+    "explanation": "Given `$y = \\ln(x)$`.\nFirst derivative: `$\frac{dy}{dx} = \frac{1}{x} = x^{-1}$`.\nSecond derivative: `$\frac{d^2y}{dx^2} = \frac{d}{dx}(x^{-1}) = -1 \\cdot x^{-1-1} = -x^{-2} = -\frac{1}{x^2}$`.\nHence, the correct option is B.",
+    "difficulty": "easy",
+    "topic": "higher_order_derivatives",
+    "subtopic": "second_derivative_logarithmic",
+    "tags": [
+      "second_derivative",
+      "logarithmic_function"
+    ],
+    "learning_objective": "Calculate the second derivative of logarithmic functions.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch4_mcq_009",
+    "question": "Which derivative is used to determine if a critical point is a local maximum or minimum using the Second Derivative Test?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "First derivative",
+      "B": "Second derivative",
+      "C": "Third derivative",
+      "D": "Fourth derivative"
+    },
+    "correct_answer": "B",
+    "explanation": "The Second Derivative Test uses the sign of the second derivative at a critical point to determine if it's a local maximum or minimum.\nIf `$f'(c) = 0$` and `$f''(c) < 0$`, then `$f(c)$` is a local maximum.\nIf `$f'(c) = 0$` and `$f''(c) > 0$`, then `$f(c)$` is a local minimum.\nIf `$f'(c) = 0$` and `$f''(c) = 0$`, the test is inconclusive, and one must use the First Derivative Test or higher-order derivatives.\nTherefore, the correct option is B.",
+    "difficulty": "easy",
+    "topic": "applications_of_second_derivative",
+    "subtopic": "second_derivative_test_extrema",
+    "tags": [
+      "second_derivative_test",
+      "local_maxima",
+      "local_minima",
+      "extrema"
+    ],
+    "learning_objective": "Understand the role of the second derivative in the Second Derivative Test for extrema.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch4_mcq_010",
+    "question": "If `$y = \\cos(x)$`, what is `$\frac{d^4y}{dx^4}$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$-\\sin(x)$",
+      "B": "$-\\cos(x)$",
+      "C": "$\\sin(x)$",
+      "D": "$\\cos(x)$"
+    },
+    "correct_answer": "D",
+    "explanation": "Given `$y = \\cos(x)$`.\nFirst derivative: `$\frac{dy}{dx} = -\\sin(x)$`.\nSecond derivative: `$\frac{d^2y}{dx^2} = -\\cos(x)$`.\nThird derivative: `$\frac{d^3y}{dx^3} = \\sin(x)$`.\nFourth derivative: `$\frac{d^4y}{dx^4} = \\cos(x)$`.\nThe derivatives of `$\\sin(x)$` and `$\\cos(x)$` follow a cycle of 4. Therefore, the correct option is D.",
+    "difficulty": "easy",
+    "topic": "higher_order_derivatives",
+    "subtopic": "fourth_derivative_trigonometric",
+    "tags": [
+      "fourth_derivative",
+      "trigonometric_function",
+      "periodic_derivatives"
+    ],
+    "learning_objective": "Calculate higher-order derivatives of trigonometric functions.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch4_mcq_011",
+    "question": "For what value of `$x$` is the function `$f(x) = x^3 - 3x^2 + 1$` concave up?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$x < 1$",
+      "B": "$x > 1$",
+      "C": "$x = 1$",
+      "D": "All real `$x$`"
+    },
+    "correct_answer": "B",
+    "explanation": "To determine concavity, we need the second derivative.\nGiven `$f(x) = x^3 - 3x^2 + 1$`.\nFirst derivative: `$f'(x) = 3x^2 - 6x$`.\nSecond derivative: `$f''(x) = 6x - 6$`.\nThe function is concave up when `$f''(x) > 0$`.\n`$6x - 6 > 0$`\n`$6x > 6$`\n`$x > 1$`.\nTherefore, the function is concave up for `$x > 1$`. The correct option is B.",
+    "difficulty": "easy",
+    "topic": "applications_of_second_derivative",
+    "subtopic": "concavity_interval",
+    "tags": [
+      "concavity",
+      "second_derivative",
+      "interval_analysis"
+    ],
+    "learning_objective": "Determine intervals of concavity for a polynomial function.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch4_mcq_012",
+    "question": "If `$y = \frac{1}{x}$`, what is `$\frac{d^2y}{dx^2}$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$-\frac{1}{x^2}$",
+      "B": "$\frac{2}{x^3}$",
+      "C": "$-\frac{2}{x^3}$",
+      "D": "$\frac{1}{x^3}$"
+    },
+    "correct_answer": "B",
+    "explanation": "Given `$y = \frac{1}{x} = x^{-1}$`.\nFirst derivative: `$\frac{dy}{dx} = -1 \\cdot x^{-2} = -\frac{1}{x^2}$`.\nSecond derivative: `$\frac{d^2y}{dx^2} = \frac{d}{dx}(-x^{-2}) = -(-2)x^{-3} = 2x^{-3} = \frac{2}{x^3}$`.\nHence, the correct option is B.",
+    "difficulty": "easy",
+    "topic": "higher_order_derivatives",
+    "subtopic": "second_derivative_rational",
+    "tags": [
+      "second_derivative",
+      "rational_function"
+    ],
+    "learning_objective": "Calculate the second derivative of rational functions.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch4_mcq_013",
+    "question": "The rate of change of acceleration is known as:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Velocity",
+      "B": "Speed",
+      "C": "Jerk",
+      "D": "Displacement"
+    },
+    "correct_answer": "C",
+    "explanation": "In kinematics:\n- Velocity is the first derivative of displacement with respect to time.\n- Acceleration is the first derivative of velocity (second derivative of displacement) with respect to time.\n- Jerk is the first derivative of acceleration (third derivative of displacement) with respect to time.\nTherefore, the rate of change of acceleration is jerk. The correct option is C.",
+    "difficulty": "easy",
+    "topic": "applications_of_higher_order_derivatives",
+    "subtopic": "kinematics_jerk",
+    "tags": [
+      "jerk",
+      "kinematics",
+      "third_derivative",
+      "physics_application"
+    ],
+    "learning_objective": "Define jerk as the third derivative of position.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch4_mcq_014",
+    "question": "If `$f''(x) < 0$` on an interval, the function `$f(x)$` is:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Concave up",
+      "B": "Concave down",
+      "C": "Increasing",
+      "D": "Decreasing"
+    },
+    "correct_answer": "B",
+    "explanation": "The sign of the second derivative determines the concavity of a function.\nIf `$f''(x) < 0$` on an interval, the graph of `$f(x)$` is concave down on that interval. This means the tangent lines are above the curve.\nIf `$f''(x) > 0$`, the function is concave up.\nOptions C and D relate to the sign of the first derivative `$f'(x)$`.\nTherefore, the correct option is B.",
+    "difficulty": "easy",
+    "topic": "applications_of_second_derivative",
+    "subtopic": "concavity",
+    "tags": [
+      "concavity",
+      "second_derivative_test",
+      "graph_analysis"
+    ],
+    "learning_objective": "Interpret the meaning of a negative second derivative in terms of concavity.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch4_mcq_015",
+    "question": "For a function `$f(x)$`, if `$f'(c) = 0$` and `$f''(c) > 0$`, then `$x=c$` corresponds to a:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Local maximum",
+      "B": "Local minimum",
+      "C": "Point of inflection",
+      "D": "Saddle point"
+    },
+    "correct_answer": "B",
+    "explanation": "According to the Second Derivative Test:\n- If `$f'(c) = 0$` and `$f''(c) > 0$`, then `$f(c)$` is a local minimum.\n- If `$f'(c) = 0$` and `$f''(c) < 0$`, then `$f(c)$` is a local maximum.\n- If `$f'(c) = 0$` and `$f''(c) = 0$`, the test is inconclusive.\nTherefore, `$x=c$` corresponds to a local minimum. The correct option is B.",
+    "difficulty": "easy",
+    "topic": "applications_of_second_derivative",
+    "subtopic": "second_derivative_test_extrema",
+    "tags": [
+      "second_derivative_test",
+      "local_minimum",
+      "extrema"
+    ],
+    "learning_objective": "Apply the Second Derivative Test to identify local minima.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

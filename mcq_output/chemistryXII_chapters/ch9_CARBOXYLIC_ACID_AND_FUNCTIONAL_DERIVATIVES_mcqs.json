@@ -1,0 +1,543 @@
+[
+  {
+    "id": "chem_xii_ch9_mcq_001",
+    "question": "Which of the following functional groups characterizes a carboxylic acid?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$-OH$",
+      "B": "$-CHO$",
+      "C": "$-COOH$",
+      "D": "$-COOR$"
+    },
+    "correct_answer": "C",
+    "explanation": "A carboxylic acid is characterized by the carboxyl functional group, which is represented as `$-COOH$`. This group consists of a carbonyl group (`$C=O$`) and a hydroxyl group (`$-OH$`) attached to the same carbon atom. Option A is a hydroxyl group (alcohols), Option B is an aldehyde group, and Option D is an ester group.",
+    "difficulty": "easy",
+    "topic": "carboxylic_acids",
+    "subtopic": "functional_group",
+    "tags": [
+      "functional_group",
+      "carboxylic_acid",
+      "definition"
+    ],
+    "learning_objective": "Identify the functional group of carboxylic acids.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch9_mcq_002",
+    "question": "What is the IUPAC name for `$\text{CH}_3\text{CH}_2\text{COOH}$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Ethanoic acid",
+      "B": "Propanoic acid",
+      "C": "Butanoic acid",
+      "D": "Formic acid"
+    },
+    "correct_answer": "B",
+    "explanation": "To name a carboxylic acid using IUPAC nomenclature, count the total number of carbon atoms in the longest chain including the carboxyl carbon. For `$\text{CH}_3\text{CH}_2\text{COOH}$`, there are three carbon atoms. The alkane with three carbons is propane, so the corresponding carboxylic acid is propanoic acid. Ethanoic acid has two carbons, butanoic acid has four carbons, and formic acid has one carbon.",
+    "difficulty": "easy",
+    "topic": "carboxylic_acids",
+    "subtopic": "nomenclature",
+    "tags": [
+      "IUPAC",
+      "nomenclature",
+      "propanoic_acid"
+    ],
+    "learning_objective": "Apply IUPAC rules for naming simple carboxylic acids.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch9_mcq_003",
+    "question": "Which of the following carboxylic acids is commonly known as acetic acid?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Methanoic acid",
+      "B": "Ethanoic acid",
+      "C": "Propanoic acid",
+      "D": "Butanoic acid"
+    },
+    "correct_answer": "B",
+    "explanation": "Acetic acid is the common name for ethanoic acid, which has the chemical formula `$\text{CH}_3\text{COOH}$`. It is a two-carbon carboxylic acid. Methanoic acid is formic acid, propanoic acid has three carbons, and butanoic acid has four carbons.",
+    "difficulty": "easy",
+    "topic": "carboxylic_acids",
+    "subtopic": "common_names",
+    "tags": [
+      "common_names",
+      "acetic_acid",
+      "ethanoic_acid"
+    ],
+    "learning_objective": "Recall common names of simple carboxylic acids.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch9_mcq_004",
+    "question": "Carboxylic acids have higher boiling points than alcohols of comparable molecular mass due to:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Stronger van der Waals forces",
+      "B": "Formation of dimeric hydrogen bonds",
+      "C": "Increased polarity of the C-O bond",
+      "D": "Presence of a carbonyl group"
+    },
+    "correct_answer": "B",
+    "explanation": "Carboxylic acids form strong intermolecular hydrogen bonds, specifically forming stable cyclic dimers in both liquid and vapor phases. This dimeric structure effectively doubles the molecular mass and requires significantly more energy to break, leading to much higher boiling points compared to alcohols of similar molecular mass, which form only linear hydrogen bond chains.",
+    "difficulty": "medium",
+    "topic": "carboxylic_acids",
+    "subtopic": "physical_properties",
+    "tags": [
+      "boiling_point",
+      "hydrogen_bonding",
+      "dimerization"
+    ],
+    "learning_objective": "Explain the high boiling points of carboxylic acids.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch9_mcq_005",
+    "question": "Which of the following is the strongest acid?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Formic acid",
+      "B": "Acetic acid",
+      "C": "Propanoic acid",
+      "D": "Butanoic acid"
+    },
+    "correct_answer": "A",
+    "explanation": "The acidity of carboxylic acids is influenced by the electron-donating or electron-withdrawing nature of the alkyl group. Alkyl groups are electron-donating, which destabilizes the carboxylate anion and decreases acidity. Formic acid (`$\text{HCOOH}$`) has no alkyl group, while acetic acid (`$\text{CH}_3\text{COOH}$`), propanoic acid (`$\text{CH}_3\text{CH}_2\text{COOH}$`), and butanoic acid (`$\text{CH}_3\text{CH}_2\text{CH}_2\text{COOH}$`) have increasingly larger electron-donating alkyl groups. Therefore, formic acid is the strongest among these simple carboxylic acids.",
+    "difficulty": "medium",
+    "topic": "carboxylic_acids",
+    "subtopic": "acidity",
+    "tags": [
+      "acidity",
+      "electron_donating_group",
+      "formic_acid"
+    ],
+    "learning_objective": "Relate the structure of carboxylic acids to their acidity.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch9_mcq_006",
+    "question": "Carboxylic acids are generally soluble in water if they have up to how many carbon atoms?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "2",
+      "B": "4",
+      "C": "6",
+      "D": "8"
+    },
+    "correct_answer": "B",
+    "explanation": "Lower molecular mass carboxylic acids (up to four carbon atoms) are miscible with water due to the formation of hydrogen bonds between the carboxyl group and water molecules. As the length of the nonpolar alkyl chain increases, the hydrophobic character dominates, and solubility in water decreases significantly.",
+    "difficulty": "easy",
+    "topic": "carboxylic_acids",
+    "subtopic": "solubility",
+    "tags": [
+      "solubility",
+      "hydrogen_bonding",
+      "hydrophobic"
+    ],
+    "learning_objective": "Describe the solubility trend of carboxylic acids in water.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "chem_xii_ch9_mcq_007",
+    "question": "Which reagent is typically used to convert a primary alcohol into a carboxylic acid?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "PCC (Pyridinium chlorochromate)",
+      "B": "LiAlH4 (Lithium aluminum hydride)",
+      "C": "K2Cr2O7/H2SO4 (Potassium dichromate/sulfuric acid)",
+      "D": "NaBH4 (Sodium borohydride)"
+    },
+    "correct_answer": "C",
+    "explanation": "Primary alcohols can be oxidized to carboxylic acids using strong oxidizing agents like acidified potassium dichromate (`$\text{K}_2\text{Cr}_2\text{O}_7/\text{H}_2\text{SO}_4$`) or potassium permanganate (`$\text{KMnO}_4$`). PCC is a mild oxidizing agent that converts primary alcohols to aldehydes. `$\text{LiAlH}_4$` and `$\text{NaBH}_4$` are reducing agents.",
+    "difficulty": "medium",
+    "topic": "carboxylic_acids",
+    "subtopic": "preparation",
+    "tags": [
+      "oxidation",
+      "primary_alcohol",
+      "potassium_dichromate"
+    ],
+    "learning_objective": "Identify reagents for the preparation of carboxylic acids from alcohols.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch9_mcq_008",
+    "question": "The reaction of a carboxylic acid with an alcohol in the presence of an acid catalyst produces:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "An aldehyde",
+      "B": "A ketone",
+      "C": "An ester",
+      "D": "An ether"
+    },
+    "correct_answer": "C",
+    "explanation": "This reaction is known as Fischer esterification. A carboxylic acid reacts with an alcohol in the presence of an acid catalyst (e.g., `$\text{H}_2\text{SO}_4$`) to form an ester and water. The general reaction is: `$\text{RCOOH} + \text{R'OH} \rightleftharpoons \text{RCOOR'} + \text{H}_2\text{O}$`.",
+    "difficulty": "easy",
+    "topic": "carboxylic_acids",
+    "subtopic": "reactions",
+    "tags": [
+      "esterification",
+      "ester",
+      "alcohol"
+    ],
+    "learning_objective": "Describe the esterification reaction of carboxylic acids.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch9_mcq_009",
+    "question": "What is the product when acetic acid reacts with sodium hydroxide?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Sodium ethoxide",
+      "B": "Sodium acetate",
+      "C": "Ethyl acetate",
+      "D": "Acetamide"
+    },
+    "correct_answer": "B",
+    "explanation": "Carboxylic acids are acidic and react with strong bases like sodium hydroxide (`$\text{NaOH}$`) to form a salt and water. Acetic acid (`$\text{CH}_3\text{COOH}$`) reacts with `$\text{NaOH}$` to form sodium acetate (`$\text{CH}_3\text{COONa}$`) and water. This is a neutralization reaction: `$\text{CH}_3\text{COOH} + \text{NaOH} \rightarrow \text{CH}_3\text{COONa} + \text{H}_2\text{O}$`.",
+    "difficulty": "easy",
+    "topic": "carboxylic_acids",
+    "subtopic": "reactions",
+    "tags": [
+      "neutralization",
+      "salt_formation",
+      "acetic_acid"
+    ],
+    "learning_objective": "Predict the product of a carboxylic acid reacting with a base.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch9_mcq_010",
+    "question": "Which of the following reagents can reduce a carboxylic acid to a primary alcohol?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "NaBH4",
+      "B": "H2/Pd",
+      "C": "LiAlH4",
+      "D": "Zn/HCl"
+    },
+    "correct_answer": "C",
+    "explanation": "Lithium aluminum hydride (`$\text{LiAlH}_4$`) is a powerful reducing agent capable of reducing carboxylic acids to primary alcohols. Sodium borohydride (`$\text{NaBH}_4$`) is not strong enough to reduce carboxylic acids. `$\text{H}_2/\text{Pd}$` is used for hydrogenation of alkenes/alkynes or reduction of aldehydes/ketones. `$\text{Zn}/\text{HCl}$` is typically used for Clemmensen reduction of ketones/aldehydes.",
+    "difficulty": "medium",
+    "topic": "carboxylic_acids",
+    "subtopic": "reactions",
+    "tags": [
+      "reduction",
+      "LiAlH4",
+      "primary_alcohol"
+    ],
+    "learning_objective": "Identify reagents for the reduction of carboxylic acids.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch9_mcq_011",
+    "question": "What is the product of the Hell-Volhard-Zelinsky (HVZ) reaction of propanoic acid?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "2-Chloropropanoic acid",
+      "B": "3-Chloropropanoic acid",
+      "C": "Propionyl chloride",
+      "D": "Propane"
+    },
+    "correct_answer": "A",
+    "explanation": "The Hell-Volhard-Zelinsky (HVZ) reaction involves the $\\alpha$-halogenation of carboxylic acids. Propanoic acid (`$\text{CH}_3\text{CH}_2\text{COOH}$`) reacts with `$\text{Cl}_2$` (or `$\text{Br}_2$`) in the presence of a small amount of red phosphorus to substitute a hydrogen atom on the $\\alpha$-carbon with a halogen. Therefore, propanoic acid will yield 2-chloropropanoic acid (`$\text{CH}_3\text{CHClCOOH}$`).",
+    "difficulty": "hard",
+    "topic": "carboxylic_acids",
+    "subtopic": "reactions",
+    "tags": [
+      "HVZ_reaction",
+      "alpha_halogenation",
+      "propanoic_acid"
+    ],
+    "learning_objective": "Predict the product of the Hell-Volhard-Zelinsky reaction.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch9_mcq_012",
+    "question": "Which of the following is an acid derivative?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Ether",
+      "B": "Amine",
+      "C": "Ester",
+      "D": "Alcohol"
+    },
+    "correct_answer": "C",
+    "explanation": "Carboxylic acid derivatives are compounds that can be hydrolyzed back to carboxylic acids. Common derivatives include acid halides, acid anhydrides, esters, and amides. Ethers, amines, and alcohols are distinct functional groups and not considered carboxylic acid derivatives.",
+    "difficulty": "easy",
+    "topic": "acid_derivatives",
+    "subtopic": "definition",
+    "tags": [
+      "acid_derivatives",
+      "ester",
+      "functional_groups"
+    ],
+    "learning_objective": "Identify common carboxylic acid derivatives.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "chem_xii_ch9_mcq_013",
+    "question": "What is the general formula for an acid anhydride?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "RCOOR'",
+      "B": "RCONHR'",
+      "C": "RCOCl",
+      "D": "RCOOCOR'"
+    },
+    "correct_answer": "D",
+    "explanation": "An acid anhydride is formed by the dehydration of two carboxylic acid molecules. Its general formula is `$\text{RCOOCOR'}$`, where two acyl groups are linked by an oxygen atom. Option A is an ester, B is an amide, and C is an acid chloride.",
+    "difficulty": "easy",
+    "topic": "acid_derivatives",
+    "subtopic": "acid_anhydrides",
+    "tags": [
+      "acid_anhydride",
+      "general_formula",
+      "functional_group"
+    ],
+    "learning_objective": "Recognize the general formula of an acid anhydride.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch9_mcq_014",
+    "question": "Which of the following acid derivatives is the most reactive towards nucleophilic acyl substitution?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Amide",
+      "B": "Ester",
+      "C": "Acid anhydride",
+      "D": "Acid chloride"
+    },
+    "correct_answer": "D",
+    "explanation": "The reactivity of carboxylic acid derivatives towards nucleophilic acyl substitution depends on the leaving group ability. A better leaving group leads to higher reactivity. Chloride ion (`$\text{Cl}^-$`) is an excellent leaving group, making acid chlorides (`$\text{RCOCl}$`) the most reactive. The order of reactivity is typically: Acid chlorides > Acid anhydrides > Esters > Amides.",
+    "difficulty": "hard",
+    "topic": "acid_derivatives",
+    "subtopic": "reactivity",
+    "tags": [
+      "reactivity",
+      "nucleophilic_acyl_substitution",
+      "acid_chloride"
+    ],
+    "learning_objective": "Compare the reactivity of different carboxylic acid derivatives.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch9_mcq_015",
+    "question": "What is the IUPAC name for `$\text{CH}_3\text{COOCH}_2\text{CH}_3$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Methyl acetate",
+      "B": "Ethyl ethanoate",
+      "C": "Propyl methanoate",
+      "D": "Ethyl propanoate"
+    },
+    "correct_answer": "B",
+    "explanation": "To name an ester, the alkyl group attached to the oxygen is named first, followed by the name of the carboxylic acid from which it is derived, with the '-oic acid' suffix replaced by '-oate'. In `$\text{CH}_3\text{COOCH}_2\text{CH}_3$`, the alkyl group attached to oxygen is ethyl (`$\text{CH}_2\text{CH}_3$`). The acyl part (`$\text{CH}_3\text{COO}$`) is derived from ethanoic acid (acetic acid). Thus, the name is ethyl ethanoate.",
+    "difficulty": "medium",
+    "topic": "acid_derivatives",
+    "subtopic": "esters",
+    "tags": [
+      "IUPAC",
+      "nomenclature",
+      "ester",
+      "ethyl_ethanoate"
+    ],
+    "learning_objective": "Apply IUPAC rules for naming esters.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch9_mcq_016",
+    "question": "The hydrolysis of an ester in the presence of a base (saponification) yields:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "A carboxylic acid and an alcohol",
+      "B": "A carboxylate salt and an alcohol",
+      "C": "An aldehyde and an alcohol",
+      "D": "A ketone and an alcohol"
+    },
+    "correct_answer": "B",
+    "explanation": "Saponification is the base-catalyzed hydrolysis of an ester. It produces a carboxylate salt and an alcohol. The carboxylic acid formed initially reacts with the base to form its salt. For example, `$\text{RCOOR'} + \text{NaOH} \rightarrow \text{RCOONa} + \text{R'OH}$`.",
+    "difficulty": "medium",
+    "topic": "acid_derivatives",
+    "subtopic": "esters",
+    "tags": [
+      "hydrolysis",
+      "saponification",
+      "ester_reactions"
+    ],
+    "learning_objective": "Describe the products of ester hydrolysis under basic conditions.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch9_mcq_017",
+    "question": "Which of the following is used in the preparation of aspirin?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Benzoic acid",
+      "B": "Salicylic acid",
+      "C": "Phthalic acid",
+      "D": "Adipic acid"
+    },
+    "correct_answer": "B",
+    "explanation": "Aspirin (acetylsalicylic acid) is synthesized by the esterification of the phenolic hydroxyl group of salicylic acid with acetic anhydride or acetyl chloride. Salicylic acid is the key starting material.",
+    "difficulty": "medium",
+    "topic": "applications",
+    "subtopic": "aspirin",
+    "tags": [
+      "aspirin",
+      "salicylic_acid",
+      "synthesis"
+    ],
+    "learning_objective": "Identify the starting material for aspirin synthesis.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch9_mcq_018",
+    "question": "The reaction of an acid chloride with ammonia produces:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "An ester",
+      "B": "An amide",
+      "C": "A nitrile",
+      "D": "A carboxylic acid"
+    },
+    "correct_answer": "B",
+    "explanation": "Acid chlorides are highly reactive and readily undergo nucleophilic acyl substitution with ammonia (`$\text{NH}_3$`) to form amides. The reaction also produces hydrogen chloride (`$\text{HCl}$`), which reacts with excess ammonia to form ammonium chloride (`$\text{NH}_4\text{Cl}$`). For example, `$\text{RCOCl} + 2\text{NH}_3 \rightarrow \text{RCONH}_2 + \text{NH}_4\text{Cl}$`.",
+    "difficulty": "medium",
+    "topic": "acid_derivatives",
+    "subtopic": "acid_chlorides",
+    "tags": [
+      "amide_synthesis",
+      "acid_chloride_reactions",
+      "ammonia"
+    ],
+    "learning_objective": "Predict the product of an acid chloride reacting with ammonia.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch9_mcq_019",
+    "question": "Which of the following compounds will undergo decarboxylation most readily upon heating?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Acetic acid",
+      "B": "Benzoic acid",
+      "C": "Malonic acid",
+      "D": "Succinic acid"
+    },
+    "correct_answer": "C",
+    "explanation": "Decarboxylation is the removal of a carboxyl group as `$\text{CO}_2$`. $\beta$-keto acids and malonic acids (1,3-dicarboxylic acids) readily undergo decarboxylation upon heating. Malonic acid (`$\text{HOOC-CH}_2\text{-COOH}$`) is a 1,3-dicarboxylic acid, and heating it leads to the formation of acetic acid and `$\text{CO}_2$`. Other simple carboxylic acids require much harsher conditions or specific reagents for decarboxylation.",
+    "difficulty": "hard",
+    "topic": "carboxylic_acids",
+    "subtopic": "reactions",
+    "tags": [
+      "decarboxylation",
+      "malonic_acid",
+      "beta_keto_acid"
+    ],
+    "learning_objective": "Identify carboxylic acids prone to decarboxylation.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch9_mcq_020",
+    "question": "What is the product of the reaction between acetic anhydride and ethanol?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Ethyl acetate and acetic acid",
+      "B": "Ethyl acetate and water",
+      "C": "Acetic acid and ethanol",
+      "D": "Diethyl ether"
+    },
+    "correct_answer": "A",
+    "explanation": "Acid anhydrides react with alcohols to form an ester and a carboxylic acid. Acetic anhydride (`$\text{(CH}_3\text{CO)}_2\text{O}$`) reacts with ethanol (`$\text{CH}_3\text{CH}_2\text{OH}$`) to produce ethyl acetate (`$\text{CH}_3\text{COOCH}_2\text{CH}_3$`) and acetic acid (`$\text{CH}_3\text{COOH}$`). The reaction is: `$\text{(CH}_3\text{CO)}_2\text{O} + \text{CH}_3\text{CH}_2\text{OH} \rightarrow \text{CH}_3\text{COOCH}_2\text{CH}_3 + \text{CH}_3\text{COOH}$`.",
+    "difficulty": "medium",
+    "topic": "acid_derivatives",
+    "subtopic": "acid_anhydrides",
+    "tags": [
+      "esterification",
+      "acid_anhydride_reactions",
+      "ethanol"
+    ],
+    "learning_objective": "Predict the products of an acid anhydride reacting with an alcohol.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

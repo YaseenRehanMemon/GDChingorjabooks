@@ -1,0 +1,543 @@
+[
+  {
+    "id": "chem_xi_ch1_mcq_001",
+    "question": "Which of the following is a fundamental property of matter that represents its resistance to change in motion?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Volume",
+      "B": "Density",
+      "C": "Mass",
+      "D": "Temperature"
+    },
+    "correct_answer": "C",
+    "explanation": "Mass is a fundamental property of matter that quantifies its inertia, or resistance to change in motion. Volume is the space occupied, density is mass per unit volume, and temperature is a measure of average kinetic energy.",
+    "difficulty": "easy",
+    "topic": "basic_definitions",
+    "subtopic": "mass",
+    "tags": [
+      "matter",
+      "mass",
+      "fundamental_property"
+    ],
+    "learning_objective": "Define fundamental properties of matter.",
+    "created_date": "2024-05-10",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_002",
+    "question": "What is the SI unit for the amount of substance?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Kilogram",
+      "B": "Mole",
+      "C": "Gram",
+      "D": "Liter"
+    },
+    "correct_answer": "B",
+    "explanation": "The mole is the SI unit for the amount of substance, defined as the amount of substance that contains as many elementary entities as there are atoms in `$0.012 \text{ kg}$` of carbon-12. Kilogram is for mass, gram is a non-SI unit of mass, and liter is for volume.",
+    "difficulty": "easy",
+    "topic": "mole_concept",
+    "subtopic": "si_units",
+    "tags": [
+      "mole",
+      "si_unit",
+      "amount_of_substance"
+    ],
+    "learning_objective": "Identify the SI unit for amount of substance.",
+    "created_date": "2024-05-10",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_003",
+    "question": "Which of the following represents an element?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$H_2O$",
+      "B": "$CO_2$",
+      "C": "$O_3$",
+      "D": "$NaCl$"
+    },
+    "correct_answer": "C",
+    "explanation": "An element is a pure substance consisting only of atoms that all have the same numbers of protons. `$O_3$` (ozone) is an allotrope of oxygen, which is an element. `$H_2O$`, `$CO_2$`, and `$NaCl$` are all compounds, formed from two or more different elements chemically bonded together.",
+    "difficulty": "easy",
+    "topic": "basic_definitions",
+    "subtopic": "elements_compounds",
+    "tags": [
+      "element",
+      "compound",
+      "ozone"
+    ],
+    "learning_objective": "Distinguish between elements and compounds.",
+    "created_date": "2024-05-10",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_004",
+    "question": "The number of atoms in `$1 \text{ mole}$` of any substance is equal to:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Molar mass",
+      "B": "Atomic number",
+      "C": "Avogadro's number",
+      "D": "Mass number"
+    },
+    "correct_answer": "C",
+    "explanation": "Avogadro's number (`$6.022 \times 10^{23}$`) represents the number of elementary entities (atoms, molecules, ions, etc.) in one mole of any substance. Molar mass is the mass of one mole, atomic number is the number of protons, and mass number is the total number of protons and neutrons.",
+    "difficulty": "easy",
+    "topic": "mole_concept",
+    "subtopic": "avogadros_number",
+    "tags": [
+      "mole",
+      "avogadro",
+      "atoms"
+    ],
+    "learning_objective": "Recall Avogadro's number and its significance.",
+    "created_date": "2024-05-10",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_005",
+    "question": "What is the empirical formula of glucose, `$C_6H_{12}O_6$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$C_6H_{12}O_6$",
+      "B": "$CH_2O$",
+      "C": "$CHO$",
+      "D": "$C_2H_4O_2$"
+    },
+    "correct_answer": "B",
+    "explanation": "The empirical formula represents the simplest whole-number ratio of atoms in a compound. For glucose (`$C_6H_{12}O_6$`), the subscripts `$6, 12, 6$` can all be divided by `$6$`, resulting in the simplest ratio `$1:2:1$`. Thus, the empirical formula is `$CH_2O$`.",
+    "difficulty": "easy",
+    "topic": "empirical_molecular_formula",
+    "subtopic": "empirical_formula",
+    "tags": [
+      "empirical_formula",
+      "glucose",
+      "molecular_formula"
+    ],
+    "learning_objective": "Determine the empirical formula from a molecular formula.",
+    "created_date": "2024-05-10",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_006",
+    "question": "The molar mass of water (`$H_2O$`) is approximately:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$1 \text{ g/mol}$",
+      "B": "$16 \text{ g/mol}$",
+      "C": "$18 \text{ g/mol}$",
+      "D": "$2 \text{ g/mol}$"
+    },
+    "correct_answer": "C",
+    "explanation": "The molar mass of water is calculated by summing the atomic masses of its constituent atoms. Atomic mass of H is approximately `$1 \text{ g/mol}$`, and O is approximately `$16 \text{ g/mol}$`. So, for `$H_2O$`, molar mass = `$2 \times (1 \text{ g/mol}) + 1 \times (16 \text{ g/mol}) = 2 + 16 = 18 \text{ g/mol}$`.",
+    "difficulty": "easy",
+    "topic": "molar_mass",
+    "subtopic": "calculation",
+    "tags": [
+      "molar_mass",
+      "water",
+      "calculation"
+    ],
+    "learning_objective": "Calculate the molar mass of a simple compound.",
+    "created_date": "2024-05-10",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_007",
+    "question": "Which of the following is a homogeneous mixture?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Sand and water",
+      "B": "Oil and water",
+      "C": "Salt solution",
+      "D": "Iron filings and sulfur"
+    },
+    "correct_answer": "C",
+    "explanation": "A homogeneous mixture has a uniform composition throughout. A salt solution (salt dissolved in water) is an example of a homogeneous mixture because the salt is evenly distributed. Sand and water, oil and water, and iron filings and sulfur are all heterogeneous mixtures, where components are visibly distinct or separate.",
+    "difficulty": "easy",
+    "topic": "basic_definitions",
+    "subtopic": "mixtures",
+    "tags": [
+      "mixture",
+      "homogeneous",
+      "heterogeneous"
+    ],
+    "learning_objective": "Differentiate between homogeneous and heterogeneous mixtures.",
+    "created_date": "2024-05-10",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_008",
+    "question": "The law of conservation of mass states that:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Mass can be created but not destroyed.",
+      "B": "Mass can be destroyed but not created.",
+      "C": "Mass is conserved in a chemical reaction.",
+      "D": "Mass is always converted into energy."
+    },
+    "correct_answer": "C",
+    "explanation": "The law of conservation of mass, proposed by Antoine Lavoisier, states that in an isolated system, mass is neither created nor destroyed by chemical reactions or physical transformations. The total mass of reactants equals the total mass of products.",
+    "difficulty": "easy",
+    "topic": "stoichiometry",
+    "subtopic": "laws_of_chemistry",
+    "tags": [
+      "conservation_of_mass",
+      "chemical_reaction",
+      "stoichiometry"
+    ],
+    "learning_objective": "State the law of conservation of mass.",
+    "created_date": "2024-05-10",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_009",
+    "question": "How many moles are present in `$36 \text{ g}$` of water (`$H_2O$`)?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$1 \text{ mole}$",
+      "B": "$2 \text{ moles}$",
+      "C": "$3 \text{ moles}$",
+      "D": "$4 \text{ moles}$"
+    },
+    "correct_answer": "B",
+    "explanation": "The molar mass of `$H_2O$` is `$18 \text{ g/mol}$`. To find the number of moles, use the formula: `$\text{moles} = \frac{\text{mass}}{\text{molar mass}}$`. So, `$\text{moles} = \frac{36 \text{ g}}{18 \text{ g/mol}} = 2 \text{ moles}$`.",
+    "difficulty": "easy",
+    "topic": "mole_concept",
+    "subtopic": "mass_to_moles",
+    "tags": [
+      "mole_calculation",
+      "water",
+      "molar_mass"
+    ],
+    "learning_objective": "Calculate moles from given mass and molar mass.",
+    "created_date": "2024-05-10",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_010",
+    "question": "What is the relative atomic mass of an element?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The mass of an atom in kilograms.",
+      "B": "The mass of an atom relative to `$1/12^{th}$` the mass of a carbon-12 atom.",
+      "C": "The sum of protons and neutrons in an atom.",
+      "D": "The number of protons in an atom."
+    },
+    "correct_answer": "B",
+    "explanation": "Relative atomic mass is defined as the ratio of the average mass of atoms of an element to `$1/12^{th}$` of the mass of a carbon-12 atom. This provides a convenient scale for comparing atomic masses. The sum of protons and neutrons is the mass number, and the number of protons is the atomic number.",
+    "difficulty": "easy",
+    "topic": "atomic_mass",
+    "subtopic": "relative_atomic_mass",
+    "tags": [
+      "atomic_mass",
+      "relative_atomic_mass",
+      "carbon-12"
+    ],
+    "learning_objective": "Define relative atomic mass.",
+    "created_date": "2024-05-10",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_011",
+    "question": "Which of the following is a characteristic of a chemical change?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Change in state (e.g., melting ice)",
+      "B": "Dissolving sugar in water",
+      "C": "Formation of new substances",
+      "D": "Breaking a glass"
+    },
+    "correct_answer": "C",
+    "explanation": "A chemical change (or chemical reaction) results in the formation of new substances with different chemical properties. Changes in state, dissolving, and breaking are all physical changes, where the chemical identity of the substance remains the same.",
+    "difficulty": "easy",
+    "topic": "basic_definitions",
+    "subtopic": "chemical_physical_change",
+    "tags": [
+      "chemical_change",
+      "physical_change",
+      "reaction"
+    ],
+    "learning_objective": "Distinguish between physical and chemical changes.",
+    "created_date": "2024-05-10",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_012",
+    "question": "What is the mass of `$0.5 \text{ moles}$` of `$CO_2$`? (Atomic mass: C = 12, O = 16)",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$22 \text{ g}$",
+      "B": "$44 \text{ g}$",
+      "C": "$11 \text{ g}$",
+      "D": "$88 \text{ g}$"
+    },
+    "correct_answer": "A",
+    "explanation": "First, calculate the molar mass of `$CO_2$`: `$12 + (2 \times 16) = 12 + 32 = 44 \text{ g/mol}$`. Then, use the formula: `$\text{mass} = \text{moles} \times \text{molar mass}$`. So, `$\text{mass} = 0.5 \text{ mol} \times 44 \text{ g/mol} = 22 \text{ g}$`.",
+    "difficulty": "easy",
+    "topic": "mole_concept",
+    "subtopic": "moles_to_mass",
+    "tags": [
+      "mole_calculation",
+      "carbon_dioxide",
+      "molar_mass"
+    ],
+    "learning_objective": "Calculate mass from given moles and molar mass.",
+    "created_date": "2024-05-10",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_013",
+    "question": "Which term describes the smallest particle of an element that can take part in a chemical reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Molecule",
+      "B": "Ion",
+      "C": "Atom",
+      "D": "Compound"
+    },
+    "correct_answer": "C",
+    "explanation": "An atom is the smallest unit of an element that retains the chemical identity of that element and can participate in chemical reactions. Molecules are formed from two or more atoms, ions are charged atoms or molecules, and compounds are substances formed from two or more different elements.",
+    "difficulty": "easy",
+    "topic": "basic_definitions",
+    "subtopic": "atom",
+    "tags": [
+      "atom",
+      "element",
+      "chemical_reaction"
+    ],
+    "learning_objective": "Define an atom.",
+    "created_date": "2024-05-10",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_014",
+    "question": "The percentage by mass of oxygen in water (`$H_2O$`) is approximately:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$11.1\\%$",
+      "B": "$88.9\\%$",
+      "C": "$50\\%$",
+      "D": "$75\\%$"
+    },
+    "correct_answer": "B",
+    "explanation": "Molar mass of `$H_2O = 18 \text{ g/mol}$`. Mass of oxygen in `$H_2O = 16 \text{ g/mol}$`. Percentage by mass of oxygen = `$\frac{\text{mass of oxygen}}{\text{molar mass of } H_2O} \times 100\\%$`. So, `$\frac{16}{18} \times 100\\% \\approx 88.9\\%$`.",
+    "difficulty": "easy",
+    "topic": "percentage_composition",
+    "subtopic": "calculation",
+    "tags": [
+      "percentage_composition",
+      "water",
+      "oxygen"
+    ],
+    "learning_objective": "Calculate percentage composition by mass.",
+    "created_date": "2024-05-10",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_015",
+    "question": "Which of the following is NOT a postulate of Dalton's atomic theory?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Atoms are indivisible particles.",
+      "B": "Atoms of the same element are identical.",
+      "C": "Atoms combine in simple whole-number ratios.",
+      "D": "Atoms contain subatomic particles like electrons and protons."
+    },
+    "correct_answer": "D",
+    "explanation": "Dalton's atomic theory (1808) proposed that atoms are indivisible and indestructible, and that atoms of the same element are identical. It did not account for subatomic particles (electrons, protons, neutrons), which were discovered later. The concept of isotopes also later disproved that all atoms of the same element are identical in mass.",
+    "difficulty": "easy",
+    "topic": "atomic_theory",
+    "subtopic": "daltons_theory",
+    "tags": [
+      "dalton's_atomic_theory",
+      "postulates",
+      "history_of_chemistry"
+    ],
+    "learning_objective": "Recall the postulates of Dalton's atomic theory.",
+    "created_date": "2024-05-10",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_016",
+    "question": "The term 'mole' was introduced by:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Amedeo Avogadro",
+      "B": "Wilhelm Ostwald",
+      "C": "John Dalton",
+      "D": "Antoine Lavoisier"
+    },
+    "correct_answer": "B",
+    "explanation": "The term 'mole' was introduced by Wilhelm Ostwald in 1896, derived from the German word 'Mol' meaning 'heap' or 'pile'. Avogadro is associated with Avogadro's number and hypothesis, Dalton with atomic theory, and Lavoisier with the law of conservation of mass.",
+    "difficulty": "easy",
+    "topic": "mole_concept",
+    "subtopic": "history",
+    "tags": [
+      "mole",
+      "wilhelm_ostwald",
+      "history_of_chemistry"
+    ],
+    "learning_objective": "Identify the scientist who introduced the term 'mole'.",
+    "created_date": "2024-05-10",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "chem_xi_ch1_mcq_017",
+    "question": "Which of the following is a diatomic molecule?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$He$",
+      "B": "$H_2O$",
+      "C": "$O_2$",
+      "D": "$CH_4$"
+    },
+    "correct_answer": "C",
+    "explanation": "A diatomic molecule consists of two atoms of the same element chemically bonded together. `$O_2$` (oxygen gas) is a diatomic molecule. `$He$` is a monatomic element, `$H_2O$` is a triatomic molecule (compound), and `$CH_4$` is a polyatomic molecule (compound).",
+    "difficulty": "easy",
+    "topic": "basic_definitions",
+    "subtopic": "molecules",
+    "tags": [
+      "diatomic",
+      "molecule",
+      "oxygen"
+    ],
+    "learning_objective": "Identify diatomic molecules.",
+    "created_date": "2024-05-10",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_018",
+    "question": "The mass of one atom of carbon-12 is exactly:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$1 \text{ amu}$",
+      "B": "$12 \text{ amu}$",
+      "C": "$1 \text{ g}$",
+      "D": "$12 \text{ g}$"
+    },
+    "correct_answer": "B",
+    "explanation": "By definition, the atomic mass unit (amu) is `$1/12^{th}$` the mass of a carbon-12 atom. Therefore, one atom of carbon-12 has a mass of exactly `$12 \text{ amu}$`.",
+    "difficulty": "easy",
+    "topic": "atomic_mass",
+    "subtopic": "amu",
+    "tags": [
+      "atomic_mass_unit",
+      "carbon-12",
+      "definition"
+    ],
+    "learning_objective": "Recall the definition of atomic mass unit.",
+    "created_date": "2024-05-10",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_019",
+    "question": "Which of the following contains the greatest number of atoms?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$1 \text{ mole of } H_2O$",
+      "B": "$1 \text{ mole of } O_2$",
+      "C": "$1 \text{ mole of } NH_3$",
+      "D": "$1 \text{ mole of } CH_4$"
+    },
+    "correct_answer": "D",
+    "explanation": "One mole of any substance contains Avogadro's number of molecules. To find the greatest number of atoms, we need to find the molecule with the most atoms per molecule: \n- `$H_2O$` has `$2+1=3$` atoms per molecule.\n- `$O_2$` has `$2$` atoms per molecule.\n- `$NH_3$` has `$1+3=4$` atoms per molecule.\n- `$CH_4$` has `$1+4=5$` atoms per molecule.\nTherefore, `$1 \text{ mole of } CH_4$` contains the greatest number of atoms (`$5 \times 6.022 \times 10^{23}$` atoms).",
+    "difficulty": "medium",
+    "topic": "mole_concept",
+    "subtopic": "number_of_atoms",
+    "tags": [
+      "mole",
+      "avogadro's_number",
+      "atoms_in_molecules"
+    ],
+    "learning_objective": "Compare the number of atoms in different molar quantities.",
+    "created_date": "2024-05-10",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_020",
+    "question": "A compound has an empirical formula of `$CH_2$` and a molar mass of `$56 \text{ g/mol}$`. What is its molecular formula? (Atomic mass: C = 12, H = 1)",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$C_2H_4$",
+      "B": "$C_3H_6$",
+      "C": "$C_4H_8$",
+      "D": "$C_5H_{10}$"
+    },
+    "correct_answer": "C",
+    "explanation": "First, calculate the empirical formula mass (EFM) of `$CH_2$`: `$12 + (2 \times 1) = 14 \text{ g/mol}$`. Next, find the ratio `n` by dividing the molar mass by the EFM: `$n = \frac{\text{Molar Mass}}{\text{EFM}} = \frac{56 \text{ g/mol}}{14 \text{ g/mol}} = 4$`. Finally, multiply the subscripts in the empirical formula by `n`: `$(CH_2)_4 = C_4H_8$`.",
+    "difficulty": "medium",
+    "topic": "empirical_molecular_formula",
+    "subtopic": "molecular_formula_determination",
+    "tags": [
+      "empirical_formula",
+      "molecular_formula",
+      "molar_mass",
+      "calculation"
+    ],
+    "learning_objective": "Determine molecular formula from empirical formula and molar mass.",
+    "created_date": "2024-05-10",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

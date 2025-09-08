@@ -1,0 +1,98 @@
+{
+  "database_version": "1.0",
+  "subjects": {
+    "chemistry": {
+      "xi": {
+        "ch1": {
+          "chapter_title": "Stoichiometry",
+          "chapter_number": 1,
+          "total_mcqs": 0,
+          "mcqs": [
+            {
+              "id": "chem_xi_ch1_mcq_001",
+              "question": "What is the molecular formula of water?",
+              "question_type": "multiple_choice",
+              "options": {
+                "A": "$H_2O$",
+                "B": "$H_2O_2$",
+                "C": "$HO$",
+                "D": "$H_3O$"
+              },
+              "correct_answer": "A",
+              "explanation": "Water has the molecular formula $H_2O$, consisting of 2 hydrogen atoms and 1 oxygen atom. Option B ($H_2O_2$) is hydrogen peroxide, Option C ($HO$) is hydroxyl radical, and Option D ($H_3O$) is hydronium ion.",
+              "difficulty": "easy",
+              "topic": "molecular_formula",
+              "subtopic": "water",
+              "tags": ["molecular_formula", "water", "basic_chemistry"],
+              "learning_objective": "Understand basic molecular formulas",
+              "created_date": "2024-01-01",
+              "source": "textbook_chapter_1",
+              "ai_generated": true,
+              "reviewed": false,
+              "quality_score": 0.8
+            }
+          ]
+        }
+      }
+    }
+  },
+  "question_types": {
+    "multiple_choice": {
+      "description": "Multiple Choice Questions with 4 options",
+      "required_fields": ["question", "options", "correct_answer", "explanation"]
+    },
+    "true_false": {
+      "description": "True/False statements",
+      "required_fields": ["question", "correct_answer", "explanation"]
+    },
+    "fill_blank": {
+      "description": "Fill in the blank questions",
+      "required_fields": ["question", "correct_answer", "explanation"]
+    }
+  },
+  "difficulty_levels": {
+    "easy": {
+      "description": "Basic concepts, direct recall",
+      "target_audience": "beginners"
+    },
+    "medium": {
+      "description": "Application of concepts, some analysis required",
+      "target_audience": "intermediate"
+    },
+    "hard": {
+      "description": "Complex problem solving, multiple concepts",
+      "target_audience": "advanced"
+    },
+    "expert": {
+      "description": "Advanced synthesis, critical thinking",
+      "target_audience": "expert_level"
+    }
+  },
+  "topics_by_subject": {
+    "chemistry": [
+      "stoichiometry", "molecular_formula", "balancing_equations", "moles", 
+      "molar_mass", "percent_composition", "empirical_formula", "limiting_reagent",
+      "theoretical_yield", "actual_yield", "percent_yield"
+    ],
+    "physics": [
+      "mechanics", "kinematics", "dynamics", "work_energy", "momentum",
+      "thermodynamics", "heat_transfer", "gas_laws", "electromagnetism",
+      "electric_fields", "magnetic_fields", "optics", "waves"
+    ],
+    "mathematics": [
+      "algebra", "functions", "trigonometry", "calculus", "limits",
+      "derivatives", "integrals", "geometry", "coordinate_geometry",
+      "probability", "statistics"
+    ],
+    "biology": [
+      "cell_biology", "molecular_biology", "genetics", "evolution",
+      "ecology", "physiology", "biochemistry", "microbiology"
+    ]
+  },
+  "metadata": {
+    "total_questions": 0,
+    "last_updated": "2024-01-01",
+    "ai_model_used": "gemini-2.5-pro",
+    "quality_threshold": 0.7
+  }
+}

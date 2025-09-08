@@ -1,0 +1,434 @@
+[
+  {
+    "id": "math_xii_ch11_mcq_001",
+    "question": "A function `$f(x, y)$` of two variables is defined for all points `$(x, y)$` in a region `R`. What is this region `R` called?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Range",
+      "B": "Domain",
+      "C": "Codomain",
+      "D": "Image"
+    },
+    "correct_answer": "B",
+    "explanation": "The set of all possible input values `$(x, y)$` for which a function `$f(x, y)$` is defined is called its domain. The range is the set of all output values.",
+    "difficulty": "easy",
+    "topic": "functions_of_several_variables",
+    "subtopic": "domain_and_range",
+    "tags": [
+      "domain",
+      "multivariable_functions",
+      "definition"
+    ],
+    "learning_objective": "Define the domain of a function of two variables.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch11_mcq_002",
+    "question": "If `$f(x, y) = x^2 + 3xy + y^3$`, what is `$\frac{\\partial f}{\\partial x}$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$2x + 3y$",
+      "B": "$3x + 3y^2$",
+      "C": "$2x + 3y + 3y^2$",
+      "D": "$2x + 3x + 3y^2$"
+    },
+    "correct_answer": "A",
+    "explanation": "To find `$\frac{\\partial f}{\\partial x}$`, we treat `$y$` as a constant. \n`$\frac{\\partial}{\\partial x}(x^2) = 2x$`\n`$\frac{\\partial}{\\partial x}(3xy) = 3y$` (since `$3y$` is a constant multiplier for `$x$`)\n`$\frac{\\partial}{\\partial x}(y^3) = 0$` (since `$y^3$` is treated as a constant)\nSo, `$\frac{\\partial f}{\\partial x} = 2x + 3y + 0 = 2x + 3y$`.",
+    "difficulty": "easy",
+    "topic": "partial_derivatives",
+    "subtopic": "first_order_partial_derivatives",
+    "tags": [
+      "partial_derivative",
+      "basic_calculation",
+      "differentiation"
+    ],
+    "learning_objective": "Calculate first-order partial derivatives.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "math_xii_ch11_mcq_003",
+    "question": "Which of the following notations represents the partial derivative of `$f$` with respect to `$y$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$f_x$",
+      "B": "$f_y$",
+      "C": "$f'$",
+      "D": "$\frac{df}{dy}$"
+    },
+    "correct_answer": "B",
+    "explanation": "The notation `$f_y$` is a common shorthand for `$\frac{\\partial f}{\\partial y}$`, representing the partial derivative of `$f$` with respect to `$y$`. `$f_x$` represents the partial derivative with respect to `$x$`. `$\frac{df}{dy}$` is used for total derivatives of single-variable functions.",
+    "difficulty": "easy",
+    "topic": "partial_derivatives",
+    "subtopic": "notation",
+    "tags": [
+      "notation",
+      "partial_derivative",
+      "symbols"
+    ],
+    "learning_objective": "Recognize standard notations for partial derivatives.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch11_mcq_004",
+    "question": "For a function `$f(x, y)$`, the partial derivative `$\frac{\\partial f}{\\partial x}$` is found by treating which variable as a constant?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$x$",
+      "B": "$y$",
+      "C": "Both $x$ and $y$",
+      "D": "Neither $x$ nor $y$"
+    },
+    "correct_answer": "B",
+    "explanation": "When calculating the partial derivative `$\frac{\\partial f}{\\partial x}$`, we differentiate with respect to `$x$` while holding all other variables (in this case, `$y$`) constant. Conversely, for `$\frac{\\partial f}{\\partial y}$`, we hold `$x$` constant.",
+    "difficulty": "easy",
+    "topic": "partial_derivatives",
+    "subtopic": "concept",
+    "tags": [
+      "partial_derivative",
+      "definition",
+      "concept"
+    ],
+    "learning_objective": "Understand the process of calculating partial derivatives.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch11_mcq_005",
+    "question": "What is the domain of the function `$f(x, y) = \\sqrt{x - y}$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$x \\ge 0$",
+      "B": "$y \\ge 0$",
+      "C": "$x \\ge y$",
+      "D": "$x \\le y$"
+    },
+    "correct_answer": "C",
+    "explanation": "For the square root function `$\\sqrt{A}$` to be defined, the expression inside the square root must be non-negative. Therefore, we must have `$x - y \\ge 0$`, which implies `$x \\ge y$`. The domain consists of all points `$(x, y)$` in the `xy`-plane such that `$x \\ge y$`.",
+    "difficulty": "easy",
+    "topic": "functions_of_several_variables",
+    "subtopic": "domain_calculation",
+    "tags": [
+      "domain",
+      "multivariable_functions",
+      "inequalities"
+    ],
+    "learning_objective": "Determine the domain of a given function of two variables.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch11_mcq_006",
+    "question": "If `$f(x, y) = e^{xy}$`, what is `$\frac{\\partial f}{\\partial y}$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$ye^{xy}$",
+      "B": "$xe^{xy}$",
+      "C": "$e^{xy}$",
+      "D": "$xye^{xy}$"
+    },
+    "correct_answer": "B",
+    "explanation": "To find `$\frac{\\partial f}{\\partial y}$`, we treat `$x$` as a constant. Using the chain rule for `$\frac{\\partial}{\\partial y}(e^{xy})$`, we differentiate `$e^{u}$` with respect to `$u$` (which is `$e^{u}$`) and then multiply by the derivative of `$u = xy$` with respect to `$y$` (which is `$x$`).\nSo, `$\frac{\\partial f}{\\partial y} = e^{xy} \\cdot \frac{\\partial}{\\partial y}(xy) = e^{xy} \\cdot x = xe^{xy}$`.",
+    "difficulty": "easy",
+    "topic": "partial_derivatives",
+    "subtopic": "first_order_partial_derivatives",
+    "tags": [
+      "partial_derivative",
+      "exponential_function",
+      "chain_rule"
+    ],
+    "learning_objective": "Calculate partial derivatives involving exponential functions.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "math_xii_ch11_mcq_007",
+    "question": "The level curves of the function `$f(x, y) = x^2 + y^2$` are:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Straight lines",
+      "B": "Parabolas",
+      "C": "Circles",
+      "D": "Hyperbolas"
+    },
+    "correct_answer": "C",
+    "explanation": "Level curves are defined by setting `$f(x, y) = k$` for some constant `$k$`. So, `$x^2 + y^2 = k$`. If `$k > 0$`, this equation represents a circle centered at the origin with radius `$\\sqrt{k}$`. If `$k = 0$`, it's a single point (the origin). If `$k < 0$`, there are no real solutions.",
+    "difficulty": "easy",
+    "topic": "functions_of_several_variables",
+    "subtopic": "level_curves",
+    "tags": [
+      "level_curves",
+      "geometric_interpretation",
+      "circles"
+    ],
+    "learning_objective": "Identify the shape of level curves for basic functions.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "math_xii_ch11_mcq_008",
+    "question": "If `$z = \\ln(x^2 + y^2)$`, then `$\frac{\\partial z}{\\partial x}$` is:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$\frac{2x}{x^2 + y^2}$",
+      "B": "$\frac{2y}{x^2 + y^2}$",
+      "C": "$\frac{1}{x^2 + y^2}$",
+      "D": "$2x \\ln(x^2 + y^2)$"
+    },
+    "correct_answer": "A",
+    "explanation": "To find `$\frac{\\partial z}{\\partial x}$`, we treat `$y$` as a constant. Using the chain rule, `$\frac{\\partial}{\\partial x}(\\ln(u)) = \frac{1}{u} \frac{\\partial u}{\\partial x}$` where `$u = x^2 + y^2$`.\n`$\frac{\\partial}{\\partial x}(x^2 + y^2) = 2x + 0 = 2x$`.\nSo, `$\frac{\\partial z}{\\partial x} = \frac{1}{x^2 + y^2} \\cdot 2x = \frac{2x}{x^2 + y^2}$`.",
+    "difficulty": "easy",
+    "topic": "partial_derivatives",
+    "subtopic": "first_order_partial_derivatives",
+    "tags": [
+      "partial_derivative",
+      "logarithmic_function",
+      "chain_rule"
+    ],
+    "learning_objective": "Calculate partial derivatives involving logarithmic functions.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "math_xii_ch11_mcq_009",
+    "question": "What is the value of `$\frac{\\partial}{\\partial y}(5x^3 - 2y^4)$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$15x^2 - 8y^3$",
+      "B": "$15x^2$",
+      "C": "$-8y^3$",
+      "D": "$5x^3 - 8y^3$"
+    },
+    "correct_answer": "C",
+    "explanation": "To find `$\frac{\\partial}{\\partial y}(5x^3 - 2y^4)$`, we treat `$x$` as a constant.\n`$\frac{\\partial}{\\partial y}(5x^3) = 0$` (since `$5x^3$` is a constant with respect to `$y$`)\n`$\frac{\\partial}{\\partial y}(-2y^4) = -2 \\cdot 4y^{4-1} = -8y^3$`\nSo, the partial derivative is `$0 - 8y^3 = -8y^3$`.",
+    "difficulty": "easy",
+    "topic": "partial_derivatives",
+    "subtopic": "first_order_partial_derivatives",
+    "tags": [
+      "partial_derivative",
+      "polynomial",
+      "basic_calculation"
+    ],
+    "learning_objective": "Calculate basic partial derivatives of polynomial functions.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch11_mcq_010",
+    "question": "If `$f(x, y) = \\sin(x) \\cos(y)$`, then `$f_x$` is:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$\\cos(x) \\cos(y)$",
+      "B": "$-\\sin(x) \\sin(y)$",
+      "C": "$\\cos(x) \\sin(y)$",
+      "D": "$-\\sin(x) \\cos(y)$"
+    },
+    "correct_answer": "A",
+    "explanation": "To find `$f_x = \frac{\\partial f}{\\partial x}$`, we treat `$y$` as a constant. The derivative of `$\\sin(x)$` with respect to `$x$` is `$\\cos(x)$`, and `$\\cos(y)$` is a constant multiplier.\nSo, `$f_x = \frac{\\partial}{\\partial x}(\\sin(x) \\cos(y)) = \\cos(y) \\cdot \frac{\\partial}{\\partial x}(\\sin(x)) = \\cos(y) \\cos(x)$`.",
+    "difficulty": "easy",
+    "topic": "partial_derivatives",
+    "subtopic": "first_order_partial_derivatives",
+    "tags": [
+      "partial_derivative",
+      "trigonometric_functions",
+      "basic_calculation"
+    ],
+    "learning_objective": "Calculate partial derivatives of trigonometric functions.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch11_mcq_011",
+    "question": "What is the definition of a homogeneous function of degree `$n$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$f(tx, ty) = t f(x, y)$",
+      "B": "$f(tx, ty) = t^n f(x, y)$",
+      "C": "$f(x, y) = n f(x, y)$",
+      "D": "$f(x, y) = t^n$"
+    },
+    "correct_answer": "B",
+    "explanation": "A function `$f(x, y)$` is said to be a homogeneous function of degree `$n$` if, for any scalar `$t > 0$`, `$f(tx, ty) = t^n f(x, y)$`. This definition is fundamental to understanding Euler's Theorem.",
+    "difficulty": "easy",
+    "topic": "homogeneous_functions",
+    "subtopic": "definition",
+    "tags": [
+      "homogeneous_function",
+      "definition",
+      "degree"
+    ],
+    "learning_objective": "Define a homogeneous function and its degree.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch11_mcq_012",
+    "question": "If `$f(x, y) = x^3 + y^3$`, what is `$f_{xx}$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$3x^2$",
+      "B": "$6x$",
+      "C": "$3y^2$",
+      "D": "$6y$"
+    },
+    "correct_answer": "B",
+    "explanation": "First, find `$f_x$`: \n`$f_x = \frac{\\partial}{\\partial x}(x^3 + y^3) = 3x^2 + 0 = 3x^2$`.\nNext, find `$f_{xx}$` by differentiating `$f_x$` with respect to `$x$`:\n`$f_{xx} = \frac{\\partial}{\\partial x}(3x^2) = 6x$`.",
+    "difficulty": "easy",
+    "topic": "higher_order_partial_derivatives",
+    "subtopic": "second_order_partial_derivatives",
+    "tags": [
+      "second_order_derivative",
+      "partial_derivative",
+      "polynomial"
+    ],
+    "learning_objective": "Calculate second-order partial derivatives.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch11_mcq_013",
+    "question": "Which theorem states that under certain continuity conditions, `$f_{xy} = f_{yx}$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Green's Theorem",
+      "B": "Stokes' Theorem",
+      "C": "Clairaut's Theorem",
+      "D": "Divergence Theorem"
+    },
+    "correct_answer": "C",
+    "explanation": "Clairaut's Theorem (also known as Schwarz's Theorem) states that if the mixed partial derivatives `$f_{xy}$` and `$f_{yx}$` are continuous on an open disk, then they are equal on that disk. The other theorems are from vector calculus.",
+    "difficulty": "easy",
+    "topic": "higher_order_partial_derivatives",
+    "subtopic": "clairauts_theorem",
+    "tags": [
+      "clairauts_theorem",
+      "mixed_partials",
+      "theorem"
+    ],
+    "learning_objective": "Recall Clairaut's Theorem regarding mixed partial derivatives.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch11_mcq_014",
+    "question": "For a function `$z = f(x, y)$` where `$x = g(t)$` and `$y = h(t)$`, the chain rule for `$\frac{dz}{dt}$` is given by:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$\frac{\\partial z}{\\partial x} \frac{dx}{dt} + \frac{\\partial z}{\\partial y} \frac{dy}{dt}$",
+      "B": "$\frac{dz}{dx} \frac{dx}{dt} + \frac{dz}{dy} \frac{dy}{dt}$",
+      "C": "$\frac{\\partial z}{\\partial x} + \frac{\\partial z}{\\partial y}$",
+      "D": "$\frac{dz}{dt} = \frac{dx}{dt} + \frac{dy}{dt}$"
+    },
+    "correct_answer": "A",
+    "explanation": "This is the standard form of the chain rule for a function `$z$` that depends on `$x$` and `$y$`, which in turn depend on a single variable `$t$`. It correctly uses partial derivatives for `$z$` with respect to `$x$` and `$y$` and total derivatives for `$x$` and `$y$` with respect to `$t$`.",
+    "difficulty": "easy",
+    "topic": "chain_rule",
+    "subtopic": "single_parameter_chain_rule",
+    "tags": [
+      "chain_rule",
+      "formula",
+      "differentiation"
+    ],
+    "learning_objective": "State the chain rule for a function of two variables depending on a single parameter.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "math_xii_ch11_mcq_015",
+    "question": "If `$f(x, y) = x^2y - xy^2$`, then `$f_y$` is:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$2xy - y^2$",
+      "B": "$x^2 - 2xy$",
+      "C": "$2x - 2y$",
+      "D": "$x^2y - 2xy$"
+    },
+    "correct_answer": "B",
+    "explanation": "To find `$f_y = \frac{\\partial f}{\\partial y}$`, we treat `$x$` as a constant.\n`$\frac{\\partial}{\\partial y}(x^2y) = x^2 \\cdot \frac{\\partial}{\\partial y}(y) = x^2 \\cdot 1 = x^2$`\n`$\frac{\\partial}{\\partial y}(-xy^2) = -x \\cdot \frac{\\partial}{\\partial y}(y^2) = -x \\cdot 2y = -2xy$`\nSo, `$f_y = x^2 - 2xy$`.",
+    "difficulty": "easy",
+    "topic": "partial_derivatives",
+    "subtopic": "first_order_partial_derivatives",
+    "tags": [
+      "partial_derivative",
+      "polynomial",
+      "basic_calculation"
+    ],
+    "learning_objective": "Calculate first-order partial derivatives of polynomial functions.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch11_mcq_016",
+    "question": "The total differential `$df$` of a function `$f(x, y)$` is given by:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$df = \frac{\\partial f}{\\partial x} dx + \frac{\\partial f}{\\partial y} dy$",
+      "B": "$df = \frac{df}{dx} dx + \frac{df}{dy} dy$",
+      "C": "$df = dx + dy$",
+      "D": "$df = \frac{\\partial f}{\\partial x} + \frac{\\partial f}{\\partial y}$"
+    },
+    "correct_answer": "A",
+    "explanation": "The total differential `$df$` represents the approximate change in `$f$` due to small changes `$dx$` and `$dy$` in `$x$` and `$y$` respectively. Its formula is `$df = \frac{\\partial f}{\\partial x} dx + \frac{\\partial f}{\\partial y} dy$`. This is a fundamental concept for error estimation and approximation.",
+    "difficulty": "easy",
+    "topic": "total_differential",
+    "subtopic": "definition_formula",
+    "tags": [
+      "total_differential",
+      "formula",
+      "approximation"
+    ],
+    "learning_objective": "State the formula for the total differential of a function of two variables.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

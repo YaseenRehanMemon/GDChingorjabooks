@@ -1,0 +1,543 @@
+[
+  {
+    "id": "math_xi_ch1_mcq_001",
+    "question": "Which of the following best describes the primary function of a symbolic computation package like Maple?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Primarily for word processing and document creation.",
+      "B": "To perform exact mathematical operations on symbols and expressions.",
+      "C": "Exclusively for numerical simulations and data analysis.",
+      "D": "Mainly for graphic design and image manipulation."
+    },
+    "correct_answer": "B",
+    "explanation": "Symbolic computation packages like Maple are designed to perform exact mathematical operations on symbols, variables, and expressions, rather than just numerical approximations. This includes algebraic manipulation, calculus, and solving equations symbolically.",
+    "difficulty": "easy",
+    "topic": "introduction_to_maple",
+    "subtopic": "definition",
+    "tags": [
+      "symbolic_computation",
+      "maple",
+      "introduction"
+    ],
+    "learning_objective": "Understand the core purpose of symbolic computation software.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xi_ch1_mcq_002",
+    "question": "In Maple, what is the purpose of terminating a command with a semicolon (`;`)?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "To suppress the output of the command.",
+      "B": "To execute the command and display its output.",
+      "C": "To indicate that the command is incomplete.",
+      "D": "To comment out the command."
+    },
+    "correct_answer": "B",
+    "explanation": "In Maple, terminating a command with a semicolon (`;`) executes the command and displays its result. If you wish to execute a command but suppress its output, you would use a colon (`:`) instead.",
+    "difficulty": "easy",
+    "topic": "basic_syntax",
+    "subtopic": "command_termination",
+    "tags": [
+      "syntax",
+      "semicolon",
+      "output"
+    ],
+    "learning_objective": "Identify the correct command termination for displaying output.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xi_ch1_mcq_003",
+    "question": "Which command would you use in Maple to get help on a specific function, for example, `sin`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`help(sin);`",
+      "B": "`?sin;`",
+      "C": "`man sin;`",
+      "D": "`info(sin);`"
+    },
+    "correct_answer": "B",
+    "explanation": "The standard way to access help for a specific command or function in Maple is by preceding its name with a question mark (`?`). For example, `?sin;` will open the help page for the `sin` function.",
+    "difficulty": "easy",
+    "topic": "help_system",
+    "subtopic": "accessing_help",
+    "tags": [
+      "help",
+      "documentation",
+      "syntax"
+    ],
+    "learning_objective": "Recall how to access the help system in Maple.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xi_ch1_mcq_004",
+    "question": "What is the correct Maple syntax for assigning the value `$5$` to a variable named `x`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`x = 5;`",
+      "B": "`x := 5;`",
+      "C": "`assign x = 5;`",
+      "D": "`let x = 5;`"
+    },
+    "correct_answer": "B",
+    "explanation": "In Maple, the assignment operator is `:=`. So, to assign the value `$5$` to the variable `x`, the correct syntax is `x := 5;`. The `=` operator is used for equality testing or defining equations.",
+    "difficulty": "easy",
+    "topic": "variables_and_assignment",
+    "subtopic": "assignment_operator",
+    "tags": [
+      "variables",
+      "assignment",
+      "syntax"
+    ],
+    "learning_objective": "Apply the correct syntax for variable assignment in Maple.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xi_ch1_mcq_005",
+    "question": "Which of the following Maple commands would calculate the exact value of `$\frac{1}{2} + \frac{1}{3}$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`evalf(1/2 + 1/3);`",
+      "B": "`1/2 + 1/3;`",
+      "C": "`add(1/2, 1/3);`",
+      "D": "`sum(1/2, 1/3);`"
+    },
+    "correct_answer": "B",
+    "explanation": "Maple performs exact arithmetic by default. Simply entering `1/2 + 1/3;` will yield the exact fractional result `$\frac{5}{6}$`. `evalf` would convert it to a floating-point approximation.",
+    "difficulty": "easy",
+    "topic": "basic_arithmetic",
+    "subtopic": "exact_arithmetic",
+    "tags": [
+      "arithmetic",
+      "fractions",
+      "exact_calculation"
+    ],
+    "learning_objective": "Perform basic exact arithmetic operations in Maple.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xi_ch1_mcq_006",
+    "question": "To unassign a variable `x` in Maple, returning it to its symbolic state, which command is used?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`delete x;`",
+      "B": "`x := 'x';`",
+      "C": "`clear x;`",
+      "D": "`unassign(x);`"
+    },
+    "correct_answer": "B",
+    "explanation": "In Maple, to unassign a variable `x` and make it represent itself symbolically again, you assign it to its own name enclosed in single quotes: `x := 'x';`. This is a common idiom in Maple.",
+    "difficulty": "easy",
+    "topic": "variables_and_assignment",
+    "subtopic": "unassigning_variables",
+    "tags": [
+      "variables",
+      "unassign",
+      "syntax"
+    ],
+    "learning_objective": "Learn how to unassign variables in Maple.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xi_ch1_mcq_007",
+    "question": "What is the output of the Maple command `evalf(Pi, 10);`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`3.141592653`",
+      "B": "`Pi`",
+      "C": "`3.1415926535`",
+      "D": "`3.141592654`"
+    },
+    "correct_answer": "C",
+    "explanation": "The `evalf` command evaluates an expression to a floating-point number. The second argument, `10`, specifies the number of digits of precision. So, `evalf(Pi, 10);` will return the value of `$\\pi$` to 10 significant digits, which is `3.1415926535`.",
+    "difficulty": "medium",
+    "topic": "numerical_evaluation",
+    "subtopic": "evalf_precision",
+    "tags": [
+      "evalf",
+      "precision",
+      "numerical_calculation"
+    ],
+    "learning_objective": "Use `evalf` to obtain numerical approximations with specified precision.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "math_xi_ch1_mcq_008",
+    "question": "Which Maple command is used to expand an algebraic expression like `$(x+y)^2$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`factor((x+y)^2);`",
+      "B": "`simplify((x+y)^2);`",
+      "C": "`expand((x+y)^2);`",
+      "D": "`collect((x+y)^2);`"
+    },
+    "correct_answer": "C",
+    "explanation": "The `expand` command in Maple is used to multiply out products and powers in an algebraic expression. For `$(x+y)^2$`, `expand((x+y)^2);` would yield `$x^2 + 2xy + y^2$`.",
+    "difficulty": "easy",
+    "topic": "algebraic_manipulation",
+    "subtopic": "expand",
+    "tags": [
+      "algebra",
+      "expand",
+      "symbolic_manipulation"
+    ],
+    "learning_objective": "Perform algebraic expansion using Maple commands.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xi_ch1_mcq_009",
+    "question": "What is the Maple command to factor the expression `$x^2 - 4$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`expand(x^2 - 4);`",
+      "B": "`solve(x^2 - 4);`",
+      "C": "`factor(x^2 - 4);`",
+      "D": "`simplify(x^2 - 4);`"
+    },
+    "correct_answer": "C",
+    "explanation": "The `factor` command in Maple is used to factor an algebraic expression into its irreducible components. For `$x^2 - 4$`, `factor(x^2 - 4);` would yield `$(x-2)(x+2)$`.",
+    "difficulty": "easy",
+    "topic": "algebraic_manipulation",
+    "subtopic": "factor",
+    "tags": [
+      "algebra",
+      "factor",
+      "symbolic_manipulation"
+    ],
+    "learning_objective": "Perform algebraic factorization using Maple commands.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xi_ch1_mcq_010",
+    "question": "Consider the Maple command `diff(x^3 + 2*x, x);`. What is its output?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`x^2 + 2`",
+      "B": "`3*x^2 + 2*x`",
+      "C": "`3*x^2 + 2`",
+      "D": "`x^4/4 + x^2`"
+    },
+    "correct_answer": "C",
+    "explanation": "The `diff` command in Maple calculates the derivative of an expression with respect to a specified variable. The derivative of `$x^3$` is `$3x^2$`, and the derivative of `$2x$` is `$2$`. Therefore, `diff(x^3 + 2*x, x);` results in `$3x^2 + 2$`.",
+    "difficulty": "medium",
+    "topic": "calculus_operations",
+    "subtopic": "differentiation",
+    "tags": [
+      "calculus",
+      "differentiation",
+      "diff"
+    ],
+    "learning_objective": "Calculate derivatives of functions using Maple's `diff` command.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xi_ch1_mcq_011",
+    "question": "What is the Maple command to compute the indefinite integral of `$x^2$` with respect to `x`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`diff(x^2, x);`",
+      "B": "`integrate(x^2, x);`",
+      "C": "`int(x^2, x);`",
+      "D": "`sum(x^2, x);`"
+    },
+    "correct_answer": "C",
+    "explanation": "The `int` command in Maple is used for integration. To compute the indefinite integral of `$x^2$` with respect to `x`, the correct command is `int(x^2, x);`, which would yield `$\frac{1}{3}x^3$` (plus an arbitrary constant, which Maple typically omits in indefinite integrals).",
+    "difficulty": "medium",
+    "topic": "calculus_operations",
+    "subtopic": "integration",
+    "tags": [
+      "calculus",
+      "integration",
+      "int"
+    ],
+    "learning_objective": "Compute indefinite integrals using Maple's `int` command.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xi_ch1_mcq_012",
+    "question": "Which Maple command is used to solve an equation symbolically, such as `$x^2 - 4 = 0$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`fsolve(x^2 - 4 = 0, x);`",
+      "B": "`solve(x^2 - 4 = 0, x);`",
+      "C": "`find(x^2 - 4 = 0, x);`",
+      "D": "`roots(x^2 - 4 = 0, x);`"
+    },
+    "correct_answer": "B",
+    "explanation": "The `solve` command in Maple is used to find symbolic solutions to equations. For `$x^2 - 4 = 0$`, `solve(x^2 - 4 = 0, x);` would return `$\\{2, -2\\}$`. `fsolve` is used for numerical solutions.",
+    "difficulty": "medium",
+    "topic": "solving_equations",
+    "subtopic": "symbolic_solve",
+    "tags": [
+      "equations",
+      "solve",
+      "symbolic_solution"
+    ],
+    "learning_objective": "Solve algebraic equations symbolically using Maple.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xi_ch1_mcq_013",
+    "question": "To obtain a numerical approximation of the roots of `$e^x = x+2$`, which Maple command would be most appropriate?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`solve(exp(x) = x+2, x);`",
+      "B": "`factor(exp(x) - x - 2);`",
+      "C": "`fsolve(exp(x) = x+2, x);`",
+      "D": "`simplify(exp(x) - x - 2);`"
+    },
+    "correct_answer": "C",
+    "explanation": "The `fsolve` command in Maple is specifically designed to find numerical solutions (floating-point approximations) to equations. For equations that do not have simple symbolic solutions, `fsolve` is the go-to command. `solve` attempts symbolic solutions, which might not exist or be complex for transcendental equations.",
+    "difficulty": "medium",
+    "topic": "solving_equations",
+    "subtopic": "numerical_solve",
+    "tags": [
+      "equations",
+      "fsolve",
+      "numerical_solution"
+    ],
+    "learning_objective": "Find numerical solutions to equations using Maple's `fsolve` command.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "math_xi_ch1_mcq_014",
+    "question": "Which Maple command is used to plot a 2D function, for example, `$y = x^2$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`plot3d(x^2, x);`",
+      "B": "`graph(x^2, x);`",
+      "C": "`plot(x^2, x);`",
+      "D": "`draw(x^2, x);`"
+    },
+    "correct_answer": "C",
+    "explanation": "The `plot` command in Maple is used to generate 2D plots of functions. The basic syntax is `plot(expression, variable_range);`. So, `plot(x^2, x);` would plot the parabola `$y=x^2$` over a default range for `x`.",
+    "difficulty": "easy",
+    "topic": "plotting",
+    "subtopic": "2d_plots",
+    "tags": [
+      "plotting",
+      "graphing",
+      "plot"
+    ],
+    "learning_objective": "Generate 2D plots of functions using Maple.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xi_ch1_mcq_015",
+    "question": "What is the purpose of the `subs` command in Maple?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "To substitute numerical values or expressions into another expression.",
+      "B": "To subtract one expression from another.",
+      "C": "To find the sub-expressions within a larger expression.",
+      "D": "To create a subscript in an expression."
+    },
+    "correct_answer": "A",
+    "explanation": "The `subs` command (short for substitute) is used to replace occurrences of variables or sub-expressions with new values or expressions within a given expression. For example, `subs(x=2, x^2+1);` would yield `$5$`.",
+    "difficulty": "medium",
+    "topic": "algebraic_manipulation",
+    "subtopic": "substitution",
+    "tags": [
+      "subs",
+      "substitution",
+      "symbolic_manipulation"
+    ],
+    "learning_objective": "Apply the `subs` command for substitution in expressions.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "math_xi_ch1_mcq_016",
+    "question": "Which Maple command would you use to load a package, for example, the `LinearAlgebra` package?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`import LinearAlgebra;`",
+      "B": "`load LinearAlgebra;`",
+      "C": "`with(LinearAlgebra);`",
+      "D": "`use LinearAlgebra;`"
+    },
+    "correct_answer": "C",
+    "explanation": "In Maple, packages are loaded using the `with` command. For example, `with(LinearAlgebra);` makes the functions within the `LinearAlgebra` package available for use in the current session.",
+    "difficulty": "easy",
+    "topic": "packages",
+    "subtopic": "loading_packages",
+    "tags": [
+      "packages",
+      "with",
+      "linear_algebra"
+    ],
+    "learning_objective": "Load and use Maple packages.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xi_ch1_mcq_017",
+    "question": "What is the result of the Maple command `limit(sin(x)/x, x=0);`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`0`",
+      "B": "`1`",
+      "C": "`undefined`",
+      "D": "`infinity`"
+    },
+    "correct_answer": "B",
+    "explanation": "The `limit` command calculates the limit of an expression. The limit of `$\frac{\\sin(x)}{x}$` as `$x \rightarrow 0$` is a fundamental limit in calculus, equal to `$1$`. So, `limit(sin(x)/x, x=0);` correctly returns `1`.",
+    "difficulty": "medium",
+    "topic": "calculus_operations",
+    "subtopic": "limits",
+    "tags": [
+      "calculus",
+      "limits",
+      "limit"
+    ],
+    "learning_objective": "Calculate limits of functions using Maple's `limit` command.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xi_ch1_mcq_018",
+    "question": "Which of the following is NOT a valid way to represent a sequence of numbers in Maple?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`1, 2, 3, 4`",
+      "B": "`[1, 2, 3, 4]`",
+      "C": "`{1, 2, 3, 4}`",
+      "D": "`seq(i, i=1..4)`"
+    },
+    "correct_answer": "C",
+    "explanation": "In Maple: `1, 2, 3, 4` is a sequence. `[1, 2, 3, 4]` is a list. `seq(i, i=1..4)` generates a sequence. `{1, 2, 3, 4}` represents a set, which does not maintain order and does not allow duplicate elements, making it distinct from a general sequence.",
+    "difficulty": "medium",
+    "topic": "data_structures",
+    "subtopic": "sequences_lists_sets",
+    "tags": [
+      "sequences",
+      "lists",
+      "sets",
+      "data_types"
+    ],
+    "learning_objective": "Distinguish between sequences, lists, and sets in Maple.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "math_xi_ch1_mcq_019",
+    "question": "What is the purpose of the colon (`:`) at the end of a Maple command?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "To display the output of the command.",
+      "B": "To indicate a syntax error.",
+      "C": "To suppress the output of the command.",
+      "D": "To start a new line without executing the command."
+    },
+    "correct_answer": "C",
+    "explanation": "Terminating a Maple command with a colon (`:`) executes the command but suppresses its output. This is useful for long computations or when assigning values to variables without cluttering the output.",
+    "difficulty": "easy",
+    "topic": "basic_syntax",
+    "subtopic": "command_termination",
+    "tags": [
+      "syntax",
+      "colon",
+      "output_suppression"
+    ],
+    "learning_objective": "Identify the correct command termination for suppressing output.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xi_ch1_mcq_020",
+    "question": "Which Maple command would you use to simplify the expression `$\\sin^2(x) + \\cos^2(x)$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`expand(sin(x)^2 + cos(x)^2);`",
+      "B": "`factor(sin(x)^2 + cos(x)^2);`",
+      "C": "`simplify(sin(x)^2 + cos(x)^2);`",
+      "D": "`evalf(sin(x)^2 + cos(x)^2);`"
+    },
+    "correct_answer": "C",
+    "explanation": "The `simplify` command in Maple is used to apply mathematical identities and rules to reduce an expression to a simpler form. For the trigonometric identity `$\\sin^2(x) + \\cos^2(x) = 1$`, `simplify(sin(x)^2 + cos(x)^2);` would correctly return `1`.",
+    "difficulty": "medium",
+    "topic": "algebraic_manipulation",
+    "subtopic": "simplify",
+    "tags": [
+      "simplify",
+      "trigonometry",
+      "identities"
+    ],
+    "learning_objective": "Simplify expressions using Maple's `simplify` command.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

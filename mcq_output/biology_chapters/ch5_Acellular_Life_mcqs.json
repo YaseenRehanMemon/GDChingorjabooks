@@ -1,0 +1,559 @@
+[
+  {
+    "id": "bio_xi_ch5_mcq_001",
+    "question": "Which of the following is a defining characteristic of acellular life forms?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Presence of a cell wall",
+      "B": "Ability to self-replicate independently",
+      "C": "Lack of cellular organization",
+      "D": "Possession of ribosomes for protein synthesis"
+    },
+    "correct_answer": "C",
+    "explanation": "Acellular life forms, such as viruses, viroids, and prions, are characterized by their lack of a cellular structure. They do not have organelles, cytoplasm, or a nucleus like true cells. They are obligate intracellular parasites, meaning they require a host cell's machinery to replicate.",
+    "difficulty": "easy",
+    "topic": "introduction_acellular_life",
+    "subtopic": "characteristics",
+    "tags": [
+      "acellular_life",
+      "viruses",
+      "viroids",
+      "prions",
+      "basic_definition"
+    ],
+    "learning_objective": "Define and identify characteristics of acellular life.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch5_mcq_002",
+    "question": "Who first demonstrated that the causative agent of Tobacco Mosaic Disease could pass through bacterial filters, suggesting it was smaller than bacteria?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Louis Pasteur",
+      "B": "Dmitri Ivanovsky",
+      "C": "Martinus Beijerinck",
+      "D": "Wendell Stanley"
+    },
+    "correct_answer": "B",
+    "explanation": "Dmitri Ivanovsky, in 1892, first demonstrated that the extract from diseased tobacco plants could still cause infection even after passing through filters known to retain bacteria, indicating the infectious agent was much smaller than bacteria. Martinus Beijerinck later coined the term 'virus' and described it as 'contagium vivum fluidum'.",
+    "difficulty": "easy",
+    "topic": "viruses",
+    "subtopic": "discovery",
+    "tags": [
+      "virus_discovery",
+      "ivanovsky",
+      "TMV",
+      "history_virology"
+    ],
+    "learning_objective": "Recall key historical figures in virology.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch5_mcq_003",
+    "question": "What is the primary genetic material found in all viruses?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Only DNA",
+      "B": "Only RNA",
+      "C": "Both DNA and RNA simultaneously",
+      "D": "Either DNA or RNA, but never both"
+    },
+    "correct_answer": "D",
+    "explanation": "Viruses are unique in that their genetic material can be either DNA or RNA, but a single virus particle (virion) will never contain both simultaneously. This genetic material can be single-stranded or double-stranded.",
+    "difficulty": "easy",
+    "topic": "viruses",
+    "subtopic": "structure_genetic_material",
+    "tags": [
+      "virus_structure",
+      "genetic_material",
+      "DNA",
+      "RNA"
+    ],
+    "learning_objective": "Identify the types of genetic material found in viruses.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch5_mcq_004",
+    "question": "The protein coat surrounding the nucleic acid of a virus is called the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Envelope",
+      "B": "Capsid",
+      "C": "Peplomer",
+      "D": "Matrix"
+    },
+    "correct_answer": "B",
+    "explanation": "The capsid is the protein shell that encloses the genetic material of a virus. It is composed of protein subunits called capsomeres. The envelope is an outer lipid layer found in some viruses, derived from the host cell membrane.",
+    "difficulty": "easy",
+    "topic": "viruses",
+    "subtopic": "structure_capsid",
+    "tags": [
+      "virus_structure",
+      "capsid",
+      "protein_coat"
+    ],
+    "learning_objective": "Identify the components of a virus.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch5_mcq_005",
+    "question": "Which of the following is NOT a characteristic of a virion?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "It is a complete, infectious viral particle.",
+      "B": "It contains genetic material (DNA or RNA).",
+      "C": "It is capable of independent metabolism.",
+      "D": "It possesses a protein capsid."
+    },
+    "correct_answer": "C",
+    "explanation": "A virion is a complete, infectious viral particle. While it contains genetic material and a protein capsid (and sometimes an envelope), it is an obligate intracellular parasite and lacks the metabolic machinery for independent metabolism. It relies entirely on the host cell for replication and energy.",
+    "difficulty": "easy",
+    "topic": "viruses",
+    "subtopic": "virion_definition",
+    "tags": [
+      "virion",
+      "virus_definition",
+      "infectious_particle"
+    ],
+    "learning_objective": "Define the term 'virion'.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch5_mcq_006",
+    "question": "The process by which a bacteriophage injects its genetic material into a host bacterial cell is called:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Adsorption",
+      "B": "Penetration",
+      "C": "Biosynthesis",
+      "D": "Maturation"
+    },
+    "correct_answer": "B",
+    "explanation": "Penetration is the stage where the viral genetic material enters the host cell. Adsorption is the attachment of the virus to the host cell surface. Biosynthesis involves the replication of viral genetic material and synthesis of viral proteins. Maturation is the assembly of new virions.",
+    "difficulty": "easy",
+    "topic": "viruses",
+    "subtopic": "bacteriophage_replication",
+    "tags": [
+      "bacteriophage",
+      "viral_replication",
+      "penetration",
+      "lytic_cycle"
+    ],
+    "learning_objective": "Describe the stages of bacteriophage replication.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch5_mcq_007",
+    "question": "Which of the following diseases is caused by a prion?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Influenza",
+      "B": "Polio",
+      "C": "Scrapie",
+      "D": "Measles"
+    },
+    "correct_answer": "C",
+    "explanation": "Scrapie is a fatal, degenerative disease affecting the nervous systems of sheep and goats, caused by prions. Influenza, Polio, and Measles are all viral diseases.",
+    "difficulty": "easy",
+    "topic": "prions",
+    "subtopic": "prion_diseases",
+    "tags": [
+      "prions",
+      "scrapie",
+      "TSEs",
+      "neurodegenerative_diseases"
+    ],
+    "learning_objective": "Identify diseases caused by prions.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch5_mcq_008",
+    "question": "Viroids are primarily known to cause diseases in which type of organism?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Humans",
+      "B": "Animals",
+      "C": "Bacteria",
+      "D": "Plants"
+    },
+    "correct_answer": "D",
+    "explanation": "Viroids are small, circular RNA molecules that are known to cause a variety of diseases in plants, such as Potato Spindle Tuber Disease. They have not been found to infect humans, animals, or bacteria.",
+    "difficulty": "easy",
+    "topic": "viroids",
+    "subtopic": "viroid_diseases",
+    "tags": [
+      "viroids",
+      "plant_diseases",
+      "PSTV"
+    ],
+    "learning_objective": "Identify the primary hosts of viroids.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch5_mcq_009",
+    "question": "Which scientist successfully crystallized the Tobacco Mosaic Virus (TMV), demonstrating that viruses could exist as particles?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Dmitri Ivanovsky",
+      "B": "Martinus Beijerinck",
+      "C": "Wendell Stanley",
+      "D": "Robert Koch"
+    },
+    "correct_answer": "C",
+    "explanation": "Wendell Stanley, in 1935, successfully crystallized TMV, showing that it behaved like a chemical rather than a living organism when outside a host, yet retained its infectivity. This was a crucial step in understanding the nature of viruses.",
+    "difficulty": "easy",
+    "topic": "viruses",
+    "subtopic": "discovery",
+    "tags": [
+      "virus_discovery",
+      "stanley",
+      "TMV",
+      "crystallization"
+    ],
+    "learning_objective": "Recall key historical figures in virology.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch5_mcq_010",
+    "question": "The outermost layer of an enveloped virus is primarily composed of:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Proteins only",
+      "B": "Lipids and proteins",
+      "C": "Carbohydrates only",
+      "D": "Nucleic acids"
+    },
+    "correct_answer": "B",
+    "explanation": "An enveloped virus acquires its envelope, which is a lipid bilayer, from the host cell membrane during budding. This envelope is studded with viral glycoproteins (proteins) that are crucial for attachment to new host cells. Thus, it's composed of both lipids and proteins.",
+    "difficulty": "easy",
+    "topic": "viruses",
+    "subtopic": "structure_envelope",
+    "tags": [
+      "virus_structure",
+      "envelope",
+      "lipids",
+      "proteins",
+      "glycoproteins"
+    ],
+    "learning_objective": "Describe the structure of enveloped viruses.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch5_mcq_011",
+    "question": "Which of the following viral shapes is characteristic of bacteriophages like T-phages?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Helical",
+      "B": "Icosahedral",
+      "C": "Complex",
+      "D": "Spherical"
+    },
+    "correct_answer": "C",
+    "explanation": "Bacteriophages, particularly the T-even phages, have a complex structure consisting of an icosahedral head, a helical tail, and tail fibers. Helical and icosahedral are simpler shapes found in other viruses.",
+    "difficulty": "easy",
+    "topic": "viruses",
+    "subtopic": "viral_morphology",
+    "tags": [
+      "virus_shape",
+      "bacteriophage",
+      "complex_virus",
+      "T-phage"
+    ],
+    "learning_objective": "Identify different viral morphologies.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch5_mcq_012",
+    "question": "The term 'prophage' refers to:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "A virus that infects plants.",
+      "B": "The protein coat of a virus.",
+      "C": "Bacteriophage DNA integrated into the host bacterial chromosome.",
+      "D": "A viral particle outside a host cell."
+    },
+    "correct_answer": "C",
+    "explanation": "A prophage is the genetic material of a bacteriophage (a virus that infects bacteria) that has become integrated into the DNA of a host bacterial cell. This occurs during the lysogenic cycle.",
+    "difficulty": "easy",
+    "topic": "viruses",
+    "subtopic": "lysogenic_cycle",
+    "tags": [
+      "prophage",
+      "lysogeny",
+      "bacteriophage",
+      "viral_replication"
+    ],
+    "learning_objective": "Define key terms related to viral replication.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch5_mcq_013",
+    "question": "Which of the following is a common symptom of viral infection in plants?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Formation of galls",
+      "B": "Chlorosis (yellowing of leaves)",
+      "C": "Excessive root growth",
+      "D": "Increased fruit production"
+    },
+    "correct_answer": "B",
+    "explanation": "Chlorosis, or the yellowing of leaves due to a lack of chlorophyll, is a very common symptom of viral infections in plants, such as Tobacco Mosaic Virus. Other symptoms include mosaic patterns, stunting, and leaf curling.",
+    "difficulty": "easy",
+    "topic": "viruses",
+    "subtopic": "plant_viral_diseases",
+    "tags": [
+      "plant_viruses",
+      "viral_symptoms",
+      "chlorosis",
+      "TMV"
+    ],
+    "learning_objective": "Identify symptoms of viral diseases in plants.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch5_mcq_014",
+    "question": "The infectious agent responsible for Mad Cow Disease (BSE) is a:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Virus",
+      "B": "Bacterium",
+      "C": "Prion",
+      "D": "Viroid"
+    },
+    "correct_answer": "C",
+    "explanation": "Mad Cow Disease, or Bovine Spongiform Encephalopathy (BSE), is a neurodegenerative disease caused by prions. Prions are misfolded proteins that can induce normal proteins to misfold, leading to disease.",
+    "difficulty": "easy",
+    "topic": "prions",
+    "subtopic": "prion_diseases",
+    "tags": [
+      "prions",
+      "BSE",
+      "mad_cow_disease",
+      "TSEs"
+    ],
+    "learning_objective": "Identify diseases caused by prions.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch5_mcq_015",
+    "question": "Which of the following is unique to viroids compared to viruses?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "They contain DNA.",
+      "B": "They have a protein coat.",
+      "C": "They are naked RNA molecules.",
+      "D": "They infect animal cells."
+    },
+    "correct_answer": "C",
+    "explanation": "Viroids are unique in that they consist of a single, circular, naked RNA molecule without any protein coat (capsid). Viruses always have a protein coat, and their genetic material can be DNA or RNA. Viroids primarily infect plants.",
+    "difficulty": "easy",
+    "topic": "viroids",
+    "subtopic": "characteristics",
+    "tags": [
+      "viroids",
+      "naked_RNA",
+      "no_capsid",
+      "plant_pathogen"
+    ],
+    "learning_objective": "Differentiate viroids from viruses.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch5_mcq_016",
+    "question": "The stage of viral replication where new viral components are synthesized using the host cell's machinery is called:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Adsorption",
+      "B": "Penetration",
+      "C": "Biosynthesis",
+      "D": "Release"
+    },
+    "correct_answer": "C",
+    "explanation": "Biosynthesis is the stage where the host cell's metabolic machinery (ribosomes, enzymes, ATP) is hijacked by the virus to synthesize viral nucleic acids and proteins. Adsorption is attachment, penetration is entry, and release is the exit of new virions.",
+    "difficulty": "easy",
+    "topic": "viruses",
+    "subtopic": "viral_replication_stages",
+    "tags": [
+      "viral_replication",
+      "biosynthesis",
+      "lytic_cycle",
+      "host_machinery"
+    ],
+    "learning_objective": "Describe the stages of viral replication.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch5_mcq_017",
+    "question": "Which of these is an example of a DNA virus?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Influenza virus",
+      "B": "HIV",
+      "C": "Herpes simplex virus",
+      "D": "Poliovirus"
+    },
+    "correct_answer": "C",
+    "explanation": "Herpes simplex virus (HSV) is a double-stranded DNA virus. Influenza virus, HIV, and Poliovirus are all RNA viruses.",
+    "difficulty": "easy",
+    "topic": "viruses",
+    "subtopic": "viral_classification",
+    "tags": [
+      "DNA_virus",
+      "herpes_virus",
+      "viral_genetic_material"
+    ],
+    "learning_objective": "Classify viruses based on their genetic material.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch5_mcq_018",
+    "question": "The term 'contagium vivum fluidum' was coined by Martinus Beijerinck to describe:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Bacteria",
+      "B": "Fungi",
+      "C": "Viruses",
+      "D": "Protozoa"
+    },
+    "correct_answer": "C",
+    "explanation": "Martinus Beijerinck, in 1898, used the phrase 'contagium vivum fluidum' (contagious living fluid) to describe the infectious agent of Tobacco Mosaic Disease, emphasizing its liquid nature and ability to reproduce, distinguishing it from particulate bacteria.",
+    "difficulty": "easy",
+    "topic": "viruses",
+    "subtopic": "discovery",
+    "tags": [
+      "beijerinck",
+      "contagium_vivum_fluidum",
+      "virus_discovery",
+      "history_virology"
+    ],
+    "learning_objective": "Recall key historical figures and their contributions to virology.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch5_mcq_019",
+    "question": "Which component is always present in a virus?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Envelope",
+      "B": "Ribosomes",
+      "C": "Capsid",
+      "D": "Mitochondria"
+    },
+    "correct_answer": "C",
+    "explanation": "All viruses possess a protein capsid that encloses their genetic material. An envelope is only present in enveloped viruses. Ribosomes and mitochondria are cellular organelles and are absent in acellular viruses.",
+    "difficulty": "easy",
+    "topic": "viruses",
+    "subtopic": "structure_components",
+    "tags": [
+      "virus_structure",
+      "capsid",
+      "essential_components"
+    ],
+    "learning_objective": "Identify the essential components of a virus.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch5_mcq_020",
+    "question": "The lytic cycle of a bacteriophage typically ends with:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Integration of viral DNA into host chromosome.",
+      "B": "Formation of a prophage.",
+      "C": "Lysis of the host cell and release of new virions.",
+      "D": "Dormancy of the viral genome."
+    },
+    "correct_answer": "C",
+    "explanation": "The lytic cycle is characterized by the rapid replication of the virus, leading to the destruction (lysis) of the host cell and the release of numerous new viral particles. Integration and prophage formation are characteristic of the lysogenic cycle.",
+    "difficulty": "easy",
+    "topic": "viruses",
+    "subtopic": "lytic_cycle",
+    "tags": [
+      "lytic_cycle",
+      "bacteriophage",
+      "viral_replication",
+      "lysis"
+    ],
+    "learning_objective": "Describe the outcome of the lytic cycle.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

@@ -1,0 +1,517 @@
+[
+  {
+    "id": "chem_xi_ch5_mcq_001",
+    "question": "Which of the following intermolecular forces is present in all types of molecules, regardless of their polarity?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Dipole-dipole forces",
+      "B": "Hydrogen bonding",
+      "C": "London dispersion forces",
+      "D": "Ion-dipole forces"
+    },
+    "correct_answer": "C",
+    "explanation": "London dispersion forces (also known as instantaneous dipole-induced dipole forces) arise from temporary fluctuations in electron distribution, creating instantaneous dipoles. These forces are present in all atoms and molecules, whether polar or nonpolar, because electrons are constantly in motion. Dipole-dipole forces occur between polar molecules, hydrogen bonding is a special type of dipole-dipole interaction involving hydrogen bonded to a highly electronegative atom (N, O, F), and ion-dipole forces occur between an ion and a polar molecule.",
+    "difficulty": "easy",
+    "topic": "intermolecular_forces",
+    "subtopic": "london_dispersion_forces",
+    "tags": [
+      "intermolecular_forces",
+      "london_dispersion",
+      "nonpolar_molecules",
+      "basic_concept"
+    ],
+    "learning_objective": "Identify the universal intermolecular force",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch5_mcq_002",
+    "question": "What is the primary reason for the high boiling point of water ($H_2O$) compared to hydrogen sulfide ($H_2S$)?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Water has a smaller molecular mass.",
+      "B": "Water molecules are nonpolar.",
+      "C": "Water forms extensive hydrogen bonds.",
+      "D": "Hydrogen sulfide has stronger London dispersion forces."
+    },
+    "correct_answer": "C",
+    "explanation": "Water ($H_2O$) has a significantly higher boiling point than hydrogen sulfide ($H_2S$) primarily due to the presence of extensive hydrogen bonding between water molecules. Oxygen is much more electronegative than sulfur, leading to a highly polar $O-H$ bond. This allows hydrogen atoms in water to form strong hydrogen bonds with oxygen atoms of adjacent water molecules. Although $H_2S$ is also polar and has a higher molecular mass (which would suggest stronger London dispersion forces), the absence of hydrogen bonding makes its intermolecular forces much weaker than those in water. Option A is incorrect because a smaller molecular mass usually correlates with a lower boiling point. Option B is incorrect as water is a highly polar molecule. Option D is incorrect because while $H_2S$ has stronger London dispersion forces due to higher molecular mass, these are not as strong as hydrogen bonds in water.",
+    "difficulty": "medium",
+    "topic": "intermolecular_forces",
+    "subtopic": "hydrogen_bonding",
+    "tags": [
+      "hydrogen_bonding",
+      "boiling_point",
+      "water",
+      "electronegativity",
+      "properties_of_liquids"
+    ],
+    "learning_objective": "Explain the effect of hydrogen bonding on boiling point",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "chem_xi_ch5_mcq_003",
+    "question": "Which of the following substances is expected to have the highest vapor pressure at a given temperature?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Ethanol ($CH_3CH_2OH$)",
+      "B": "Diethyl ether ($CH_3CH_2OCH_2CH_3$)",
+      "C": "Water ($H_2O$)",
+      "D": "Glycerol ($C_3H_8O_3$)"
+    },
+    "correct_answer": "B",
+    "explanation": "Vapor pressure is inversely related to the strength of intermolecular forces. Substances with weaker intermolecular forces evaporate more easily and thus have higher vapor pressures. Glycerol has three hydroxyl groups, leading to extensive hydrogen bonding and very strong intermolecular forces. Water also forms strong hydrogen bonds. Ethanol forms hydrogen bonds but to a lesser extent than water or glycerol. Diethyl ether, while having a polar $C-O-C$ bond, cannot form hydrogen bonds with itself (it can act as a hydrogen bond acceptor but lacks a hydrogen bond donor site). Its primary intermolecular forces are dipole-dipole and London dispersion forces, which are weaker than the hydrogen bonds in the other options. Therefore, diethyl ether has the weakest intermolecular forces among the given options and consequently the highest vapor pressure.",
+    "difficulty": "medium",
+    "topic": "properties_of_liquids",
+    "subtopic": "vapor_pressure",
+    "tags": [
+      "vapor_pressure",
+      "intermolecular_forces",
+      "hydrogen_bonding",
+      "polarity",
+      "liquids"
+    ],
+    "learning_objective": "Relate intermolecular forces to vapor pressure",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.92
+  },
+  {
+    "id": "chem_xi_ch5_mcq_004",
+    "question": "The phenomenon where a liquid rises or falls in a narrow tube is known as:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Viscosity",
+      "B": "Surface tension",
+      "C": "Capillarity",
+      "D": "Evaporation"
+    },
+    "correct_answer": "C",
+    "explanation": "Capillarity (or capillary action) is the ability of a liquid to flow in narrow spaces without the assistance of, or even in opposition to, external forces like gravity. This phenomenon is due to the interplay of cohesive forces (between liquid molecules) and adhesive forces (between liquid and tube surface). Viscosity is a measure of a fluid's resistance to flow. Surface tension is the cohesive force at the surface of a liquid. Evaporation is the process of a substance in a liquid state changing to a gaseous state.",
+    "difficulty": "easy",
+    "topic": "properties_of_liquids",
+    "subtopic": "capillarity",
+    "tags": [
+      "capillarity",
+      "liquids",
+      "cohesive_forces",
+      "adhesive_forces",
+      "definition"
+    ],
+    "learning_objective": "Define capillarity",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.88
+  },
+  {
+    "id": "chem_xi_ch5_mcq_005",
+    "question": "Which of the following statements correctly describes the relationship between temperature and viscosity for most liquids?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Viscosity increases with increasing temperature.",
+      "B": "Viscosity decreases with increasing temperature.",
+      "C": "Viscosity is independent of temperature.",
+      "D": "Viscosity first increases then decreases with temperature."
+    },
+    "correct_answer": "B",
+    "explanation": "For most liquids, viscosity decreases as temperature increases. This is because increasing the temperature provides the molecules with more kinetic energy, allowing them to overcome the intermolecular forces more easily and move past each other with less resistance. This leads to a reduction in the internal friction, hence a decrease in viscosity.",
+    "difficulty": "easy",
+    "topic": "properties_of_liquids",
+    "subtopic": "viscosity",
+    "tags": [
+      "viscosity",
+      "temperature_dependence",
+      "liquids",
+      "kinetic_energy"
+    ],
+    "learning_objective": "Understand the effect of temperature on viscosity",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch5_mcq_006",
+    "question": "A liquid boils when its vapor pressure becomes equal to the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Atmospheric pressure",
+      "B": "Critical pressure",
+      "C": "Standard pressure ($1 \text{ atm}$)",
+      "D": "Internal pressure of the liquid"
+    },
+    "correct_answer": "A",
+    "explanation": "Boiling occurs when the vapor pressure of a liquid becomes equal to the external pressure (usually atmospheric pressure) exerted on its surface. At this point, bubbles of vapor can form throughout the liquid and rise to the surface. If the external pressure is lower, the liquid will boil at a lower temperature, and vice versa. Critical pressure is the pressure required to liquefy a gas at its critical temperature. Standard pressure is a specific value of atmospheric pressure, not the general condition for boiling.",
+    "difficulty": "easy",
+    "topic": "properties_of_liquids",
+    "subtopic": "boiling_point",
+    "tags": [
+      "boiling_point",
+      "vapor_pressure",
+      "atmospheric_pressure",
+      "liquids"
+    ],
+    "learning_objective": "Define boiling point in terms of vapor pressure",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch5_mcq_007",
+    "question": "Which type of solid is characterized by a regular, repeating three-dimensional arrangement of atoms, ions, or molecules?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Amorphous solid",
+      "B": "Crystalline solid",
+      "C": "Polymeric solid",
+      "D": "Colloidal solid"
+    },
+    "correct_answer": "B",
+    "explanation": "Crystalline solids possess a highly ordered, repeating three-dimensional arrangement of their constituent particles (atoms, ions, or molecules) in a crystal lattice. This regular arrangement gives them sharp melting points and anisotropic properties. Amorphous solids, in contrast, lack this long-range order. Polymeric solids are a type of amorphous or semi-crystalline solid made of long chain molecules. Colloidal solids refer to particles in a colloidal dispersion, not a fundamental type of solid structure.",
+    "difficulty": "easy",
+    "topic": "types_of_solids",
+    "subtopic": "crystalline_solids",
+    "tags": [
+      "crystalline_solids",
+      "amorphous_solids",
+      "crystal_lattice",
+      "solids",
+      "definition"
+    ],
+    "learning_objective": "Distinguish between crystalline and amorphous solids",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.89
+  },
+  {
+    "id": "chem_xi_ch5_mcq_008",
+    "question": "Ionic solids typically have high melting points and are poor electrical conductors in the solid state but good conductors when molten or dissolved. This is because:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "They are composed of neutral molecules.",
+      "B": "Their ions are fixed in a lattice in the solid state.",
+      "C": "They have strong covalent bonds.",
+      "D": "They possess delocalized electrons."
+    },
+    "correct_answer": "B",
+    "explanation": "Ionic solids are composed of positive and negative ions held together by strong electrostatic forces in a crystal lattice. In the solid state, these ions are fixed in their positions and cannot move freely, hence they are poor electrical conductors. However, when molten or dissolved in a polar solvent, the ions become mobile and can carry an electric current, making them good conductors. Option A is incorrect as they are composed of ions. Option C is incorrect as they are held by ionic bonds, not covalent. Option D is incorrect as delocalized electrons are characteristic of metallic solids.",
+    "difficulty": "medium",
+    "topic": "types_of_solids",
+    "subtopic": "ionic_solids",
+    "tags": [
+      "ionic_solids",
+      "electrical_conductivity",
+      "melting_point",
+      "crystal_lattice",
+      "ionic_bonding"
+    ],
+    "learning_objective": "Explain properties of ionic solids based on their structure",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.93
+  },
+  {
+    "id": "chem_xi_ch5_mcq_009",
+    "question": "Which of the following is an example of a covalent network solid?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Ice ($H_2O$)",
+      "B": "Sodium chloride ($NaCl$)",
+      "C": "Diamond ($C$)",
+      "D": "Dry ice ($CO_2$)"
+    },
+    "correct_answer": "C",
+    "explanation": "Covalent network solids are characterized by atoms held together by an extensive network of covalent bonds throughout the entire crystal. Diamond is a prime example, where each carbon atom is covalently bonded to four other carbon atoms in a tetrahedral arrangement, forming a giant macromolecule. Ice is a molecular solid held by hydrogen bonds. Sodium chloride is an ionic solid. Dry ice (solid carbon dioxide) is a molecular solid held by weak London dispersion forces.",
+    "difficulty": "easy",
+    "topic": "types_of_solids",
+    "subtopic": "covalent_network_solids",
+    "tags": [
+      "covalent_network_solids",
+      "diamond",
+      "types_of_solids",
+      "covalent_bonding"
+    ],
+    "learning_objective": "Identify examples of covalent network solids",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch5_mcq_010",
+    "question": "The energy required to convert one mole of a liquid into its gaseous state at its boiling point is called the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Enthalpy of fusion",
+      "B": "Enthalpy of sublimation",
+      "C": "Enthalpy of vaporization",
+      "D": "Heat capacity"
+    },
+    "correct_answer": "C",
+    "explanation": "The enthalpy of vaporization ($\\Delta H_{vap}$) is the amount of energy (heat) required to transform a given quantity of a substance from a liquid into a gas at a constant temperature (usually its boiling point) and pressure. Enthalpy of fusion is the energy required to melt a solid to a liquid. Enthalpy of sublimation is the energy required to convert a solid directly to a gas. Heat capacity is the amount of heat required to raise the temperature of a substance by a certain amount.",
+    "difficulty": "easy",
+    "topic": "phase_changes",
+    "subtopic": "enthalpy_of_vaporization",
+    "tags": [
+      "enthalpy_of_vaporization",
+      "phase_change",
+      "liquids",
+      "gases",
+      "thermodynamics"
+    ],
+    "learning_objective": "Define enthalpy of vaporization",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.88
+  },
+  {
+    "id": "chem_xi_ch5_mcq_011",
+    "question": "Which of the following properties is characteristic of amorphous solids?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Sharp melting point",
+      "B": "Anisotropic nature",
+      "C": "Long-range order",
+      "D": "Irregular shape upon cutting"
+    },
+    "correct_answer": "D",
+    "explanation": "Amorphous solids lack a regular, long-range ordered structure. Consequently, they do not have sharp melting points; instead, they soften gradually over a range of temperatures. They are isotropic, meaning their physical properties are the same in all directions. When cut with a sharp-edged tool, they break into pieces with irregular surfaces, unlike crystalline solids which cleave along specific planes. Option C is incorrect as amorphous solids lack long-range order.",
+    "difficulty": "medium",
+    "topic": "types_of_solids",
+    "subtopic": "amorphous_solids",
+    "tags": [
+      "amorphous_solids",
+      "properties_of_solids",
+      "melting_point",
+      "isotropy"
+    ],
+    "learning_objective": "Identify characteristics of amorphous solids",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.91
+  },
+  {
+    "id": "chem_xi_ch5_mcq_012",
+    "question": "The unit cell of a crystal lattice represents the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Entire crystal structure",
+      "B": "Smallest repeating unit of the crystal lattice",
+      "C": "Arrangement of atoms on the crystal surface only",
+      "D": "Type of bonding within the crystal"
+    },
+    "correct_answer": "B",
+    "explanation": "A unit cell is the smallest repeating structural unit of a crystal lattice. When unit cells are repeated in three dimensions, they generate the entire crystal structure. It contains all the information about the crystal's symmetry and the positions of atoms within it. It does not represent the entire crystal structure itself, nor just the surface, nor the type of bonding directly, though bonding influences the unit cell structure.",
+    "difficulty": "easy",
+    "topic": "crystalline_solids",
+    "subtopic": "unit_cell",
+    "tags": [
+      "unit_cell",
+      "crystal_lattice",
+      "crystalline_solids",
+      "definition"
+    ],
+    "learning_objective": "Define a unit cell",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.87
+  },
+  {
+    "id": "chem_xi_ch5_mcq_013",
+    "question": "Which of the following factors increases the surface tension of a liquid?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Increasing temperature",
+      "B": "Adding a surfactant",
+      "C": "Increasing intermolecular forces",
+      "D": "Decreasing atmospheric pressure"
+    },
+    "correct_answer": "C",
+    "explanation": "Surface tension is a measure of the cohesive forces present at the surface of a liquid. Stronger intermolecular forces lead to greater cohesion between liquid molecules, resulting in higher surface tension. Increasing temperature generally decreases surface tension because the increased kinetic energy of molecules weakens the intermolecular forces. Adding a surfactant (surface-active agent) reduces surface tension by interfering with the cohesive forces at the surface. Atmospheric pressure has a negligible direct effect on surface tension.",
+    "difficulty": "medium",
+    "topic": "properties_of_liquids",
+    "subtopic": "surface_tension",
+    "tags": [
+      "surface_tension",
+      "intermolecular_forces",
+      "cohesive_forces",
+      "liquids",
+      "temperature_effect"
+    ],
+    "learning_objective": "Identify factors affecting surface tension",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.92
+  },
+  {
+    "id": "chem_xi_ch5_mcq_014",
+    "question": "Calculate the energy required to vaporize $180 \text{ g}$ of water at $100^\\circ C$, given that the molar enthalpy of vaporization of water is $40.7 \text{ kJ/mol}$.",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$40.7 \text{ kJ}$",
+      "B": "$407 \text{ kJ}$",
+      "C": "$81.4 \text{ kJ}$",
+      "D": "$180 \text{ kJ}$"
+    },
+    "correct_answer": "B",
+    "explanation": "First, calculate the number of moles of water:\nMass of water $= 180 \text{ g}$\nMolar mass of water ($H_2O$) $= 2(1.008) + 16.00 = 18.016 \text{ g/mol}$\nNumber of moles ($n$) $= \frac{\text{Mass}}{\text{Molar mass}} = \frac{180 \text{ g}}{18.016 \text{ g/mol}} \\approx 9.99 \text{ mol} \\approx 10 \text{ mol}$\n\nNow, calculate the total energy required:\nEnergy ($Q$) $= n \times \\Delta H_{vap}$\n$Q = 10 \text{ mol} \times 40.7 \text{ kJ/mol} = 407 \text{ kJ}$\n\nTherefore, $407 \text{ kJ}$ of energy is required.",
+    "difficulty": "medium",
+    "topic": "phase_changes",
+    "subtopic": "enthalpy_of_vaporization_calculation",
+    "tags": [
+      "enthalpy_of_vaporization",
+      "numerical_problem",
+      "moles",
+      "energy_calculation",
+      "water"
+    ],
+    "learning_objective": "Calculate energy required for vaporization",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.94
+  },
+  {
+    "id": "chem_xi_ch5_mcq_015",
+    "question": "Which of the following substances would exhibit hydrogen bonding as its strongest intermolecular force?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$CH_4$",
+      "B": "$HBr$",
+      "C": "$NH_3$",
+      "D": "$PH_3$"
+    },
+    "correct_answer": "C",
+    "explanation": "Hydrogen bonding occurs when hydrogen is directly bonded to a highly electronegative atom like Nitrogen (N), Oxygen (O), or Fluorine (F). Among the given options:\n- $CH_4$ (methane) is a nonpolar molecule, exhibiting only London dispersion forces.\n- $HBr$ (hydrogen bromide) is a polar molecule, exhibiting dipole-dipole forces and London dispersion forces.\n- $NH_3$ (ammonia) has hydrogen directly bonded to nitrogen, allowing for strong hydrogen bonding.\n- $PH_3$ (phosphine) is polar but phosphorus is not electronegative enough to form hydrogen bonds; it primarily exhibits dipole-dipole and London dispersion forces.\nTherefore, $NH_3$ exhibits hydrogen bonding as its strongest intermolecular force.",
+    "difficulty": "medium",
+    "topic": "intermolecular_forces",
+    "subtopic": "hydrogen_bonding_identification",
+    "tags": [
+      "hydrogen_bonding",
+      "intermolecular_forces",
+      "electronegativity",
+      "molecular_structure"
+    ],
+    "learning_objective": "Identify molecules capable of hydrogen bonding",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.93
+  },
+  {
+    "id": "chem_xi_ch5_mcq_016",
+    "question": "The critical temperature of a substance is the temperature above which:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "It can only exist as a solid.",
+      "B": "It can only exist as a liquid.",
+      "C": "It cannot be liquefied, no matter how much pressure is applied.",
+      "D": "Its vapor pressure equals atmospheric pressure."
+    },
+    "correct_answer": "C",
+    "explanation": "The critical temperature ($T_c$) is the highest temperature at which a substance can exist as a liquid. Above this temperature, the substance exists only as a gas (or supercritical fluid) and cannot be liquefied by increasing pressure alone, because the kinetic energy of the molecules is too high to allow intermolecular forces to hold them together in a liquid state. Option D describes the boiling point, not critical temperature.",
+    "difficulty": "medium",
+    "topic": "properties_of_liquids",
+    "subtopic": "critical_temperature",
+    "tags": [
+      "critical_temperature",
+      "phase_transition",
+      "liquefaction",
+      "gases",
+      "liquids"
+    ],
+    "learning_objective": "Define critical temperature",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.91
+  },
+  {
+    "id": "chem_xi_ch5_mcq_017",
+    "question": "Which of the following is an example of a metallic solid?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Sulfur ($S_8$)",
+      "B": "Copper ($Cu$)",
+      "C": "Silicon dioxide ($SiO_2$)",
+      "D": "Potassium iodide ($KI$)"
+    },
+    "correct_answer": "B",
+    "explanation": "Metallic solids are composed of metal atoms held together by metallic bonds, which involve a 'sea' of delocalized electrons. Copper is a metal and thus forms a metallic solid, characterized by high electrical and thermal conductivity, malleability, and ductility. Sulfur ($S_8$) is a molecular solid. Silicon dioxide ($SiO_2$) is a covalent network solid. Potassium iodide ($KI$) is an ionic solid.",
+    "difficulty": "easy",
+    "topic": "types_of_solids",
+    "subtopic": "metallic_solids",
+    "tags": [
+      "metallic_solids",
+      "metals",
+      "metallic_bonding",
+      "conductivity",
+      "examples"
+    ],
+    "learning_objective": "Identify examples of metallic solids",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.89
+  },
+  {
+    "id": "chem_xi_ch5_mcq_018",
+    "question": "The process by which a solid directly changes into a gas without passing through the liquid state is called:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Evaporation",
+      "B": "Condensation",
+      "C": "Sublimation",
+      "D": "Melting"
+    },
+    "correct_answer": "C",
+    "explanation": "Sublimation is the phase transition of a substance directly from the solid to the gas state, without passing through the liquid state. A common example is dry ice ($CO_2$) at room temperature and atmospheric pressure. Evaporation is liquid to gas. Condensation is gas to liquid. Melting is solid to liquid.",
+    "difficulty": "easy",
+    "topic": "phase_changes",
+    "subtopic": "sublimation",
+    "tags": [
+      "sublimation",
+      "phase_change",
+      "solids",
+      "gases",
+      "definition"
+    ],
+    "learning_objective": "Define sublimation",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_5",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.87
+  }
+]

@@ -1,0 +1,473 @@
+[
+  {
+    "id": "chem_xi_ch1_mcq_001",
+    "question": "Which of the following is a homogeneous mixture?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Sand and water",
+      "B": "Oil and water",
+      "C": "Salt solution",
+      "D": "Iron filings and sulfur"
+    },
+    "correct_answer": "C",
+    "explanation": "A homogeneous mixture has a uniform composition throughout. Salt solution, where salt is completely dissolved in water, exhibits uniform properties and composition, making it a homogeneous mixture. Sand and water, oil and water, and iron filings and sulfur are all heterogeneous mixtures because their components remain distinct.",
+    "difficulty": "easy",
+    "topic": "basic_definitions",
+    "subtopic": "mixtures",
+    "tags": [
+      "mixture",
+      "homogeneous",
+      "heterogeneous",
+      "solution"
+    ],
+    "learning_objective": "Differentiate between homogeneous and heterogeneous mixtures.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_002",
+    "question": "What is the SI unit for amount of substance?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Kilogram",
+      "B": "Mole",
+      "C": "Gram",
+      "D": "Liter"
+    },
+    "correct_answer": "B",
+    "explanation": "The SI unit for the amount of substance is the mole. Kilogram is the SI unit for mass, and liter is a common unit for volume, though the SI unit for volume is cubic meter (`$m^3$`). Gram is a non-SI unit of mass.",
+    "difficulty": "easy",
+    "topic": "mole_concept",
+    "subtopic": "si_units",
+    "tags": [
+      "mole",
+      "SI_unit",
+      "amount_of_substance"
+    ],
+    "learning_objective": "Recall the SI unit for amount of substance.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_003",
+    "question": "The atomic mass unit (amu) is defined as one-twelfth the mass of an atom of which isotope?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Hydrogen-1",
+      "B": "Oxygen-16",
+      "C": "Carbon-12",
+      "D": "Nitrogen-14"
+    },
+    "correct_answer": "C",
+    "explanation": "The atomic mass unit (amu) is precisely defined as one-twelfth (`$\frac{1}{12}$`) the mass of a single atom of the carbon-12 isotope. This standard allows for the relative comparison of atomic masses of all other elements.",
+    "difficulty": "easy",
+    "topic": "atomic_mass",
+    "subtopic": "amu",
+    "tags": [
+      "atomic_mass_unit",
+      "amu",
+      "carbon-12",
+      "isotope"
+    ],
+    "learning_objective": "Define the atomic mass unit (amu).",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_004",
+    "question": "How many significant figures are in the number `$0.00250$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
+    },
+    "correct_answer": "B",
+    "explanation": "Leading zeros (zeros before non-zero digits) are not significant. Trailing zeros (zeros at the end of the number) are significant only if the number contains a decimal point. In `$0.00250$`, the two leading zeros are not significant. The '2' and '5' are significant. The trailing '0' after the '5' is significant because there is a decimal point. Therefore, there are 3 significant figures.",
+    "difficulty": "easy",
+    "topic": "significant_figures",
+    "subtopic": "counting_significant_figures",
+    "tags": [
+      "significant_figures",
+      "measurement",
+      "precision"
+    ],
+    "learning_objective": "Apply rules for counting significant figures.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "chem_xi_ch1_mcq_005",
+    "question": "What is the molar mass of water (`$H_2O$`)? (Atomic masses: H = 1.008 amu, O = 15.999 amu)",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$17.007 \text{ g/mol}$",
+      "B": "$18.015 \text{ g/mol}$",
+      "C": "$16.991 \text{ g/mol}$",
+      "D": "$19.000 \text{ g/mol}$"
+    },
+    "correct_answer": "B",
+    "explanation": "The molecular formula of water is `$H_2O$`. To calculate its molar mass, we sum the atomic masses of its constituent atoms:\nMolar mass of `$H_2O = (2 \times \text{Atomic mass of H}) + (1 \times \text{Atomic mass of O})$\nMolar mass of `$H_2O = (2 \times 1.008 \text{ g/mol}) + (1 \times 15.999 \text{ g/mol})$\nMolar mass of `$H_2O = 2.016 \text{ g/mol} + 15.999 \text{ g/mol}$`\nMolar mass of `$H_2O = 18.015 \text{ g/mol}$`",
+    "difficulty": "easy",
+    "topic": "molar_mass",
+    "subtopic": "calculation_molar_mass",
+    "tags": [
+      "molar_mass",
+      "water",
+      "molecular_mass",
+      "calculation"
+    ],
+    "learning_objective": "Calculate the molar mass of a simple compound.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_006",
+    "question": "Avogadro's number represents the number of particles (atoms, molecules, ions) in one:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Gram",
+      "B": "Liter",
+      "C": "Mole",
+      "D": "Kilogram"
+    },
+    "correct_answer": "C",
+    "explanation": "Avogadro's number (`$6.022 \times 10^{23}$`) is defined as the number of constituent particles (atoms, molecules, or other particles) that are contained in one mole of a substance. It links the macroscopic world (grams) to the microscopic world (atoms/molecules).",
+    "difficulty": "easy",
+    "topic": "mole_concept",
+    "subtopic": "avogadro_number",
+    "tags": [
+      "avogadro_number",
+      "mole",
+      "particles"
+    ],
+    "learning_objective": "Define Avogadro's number in relation to the mole.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_007",
+    "question": "Which of the following is a physical change?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Burning of wood",
+      "B": "Rusting of iron",
+      "C": "Melting of ice",
+      "D": "Digestion of food"
+    },
+    "correct_answer": "C",
+    "explanation": "A physical change alters the form of a substance but not its chemical composition. Melting of ice (water) changes its state from solid to liquid, but it remains `$H_2O$`. Burning of wood, rusting of iron, and digestion of food are all chemical changes, as new substances are formed.",
+    "difficulty": "easy",
+    "topic": "matter",
+    "subtopic": "physical_chemical_changes",
+    "tags": [
+      "physical_change",
+      "chemical_change",
+      "states_of_matter"
+    ],
+    "learning_objective": "Distinguish between physical and chemical changes.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "chem_xi_ch1_mcq_008",
+    "question": "What is the standard temperature and pressure (STP) for gases?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$0^\\circ C$ and $1 \text{ atm}$",
+      "B": "$25^\\circ C$ and $1 \text{ atm}$",
+      "C": "$0 \text{ K}$ and $1 \text{ atm}$",
+      "D": "$273 \text{ K}$ and $1 \text{ mmHg}$"
+    },
+    "correct_answer": "A",
+    "explanation": "Standard Temperature and Pressure (STP) are defined as `$0^\\circ C$` (`$273.15 \text{ K}$`) and `$1 \text{ atmosphere}$` (`$101.325 \text{ kPa}$` or `$760 \text{ mmHg}$`). This is a standard condition used for comparing properties of gases.",
+    "difficulty": "easy",
+    "topic": "mole_concept",
+    "subtopic": "stp",
+    "tags": [
+      "STP",
+      "standard_conditions",
+      "gases"
+    ],
+    "learning_objective": "Recall the definition of Standard Temperature and Pressure (STP).",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_009",
+    "question": "Which of the following represents an element?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$H_2O$",
+      "B": "$CO_2$",
+      "C": "$O_3$",
+      "D": "$NaCl$"
+    },
+    "correct_answer": "C",
+    "explanation": "An element is a pure substance consisting only of atoms that all have the same numbers of protons in their atomic nuclei. `$O_3$` (ozone) is an allotrope of oxygen, consisting only of oxygen atoms, hence it is an element. `$H_2O$`, `$CO_2$`, and `$NaCl$` are all compounds, formed from two or more different elements chemically bonded together.",
+    "difficulty": "easy",
+    "topic": "basic_definitions",
+    "subtopic": "elements_compounds",
+    "tags": [
+      "element",
+      "compound",
+      "allotrope",
+      "pure_substance"
+    ],
+    "learning_objective": "Identify elements from given chemical formulas.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "chem_xi_ch1_mcq_010",
+    "question": "The mass of one mole of any substance is called its:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Atomic mass",
+      "B": "Molecular mass",
+      "C": "Molar mass",
+      "D": "Equivalent mass"
+    },
+    "correct_answer": "C",
+    "explanation": "The molar mass of a substance is defined as the mass in grams of one mole of that substance. It is numerically equal to the atomic mass (for elements) or molecular/formula mass (for compounds) but expressed in grams per mole (`$\text{g/mol}$`).",
+    "difficulty": "easy",
+    "topic": "mole_concept",
+    "subtopic": "molar_mass_definition",
+    "tags": [
+      "molar_mass",
+      "mole",
+      "definition"
+    ],
+    "learning_objective": "Define molar mass.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_011",
+    "question": "Which of the following is a characteristic of a compound?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Components can be separated by physical means.",
+      "B": "It has a variable composition.",
+      "C": "Its properties are different from its constituent elements.",
+      "D": "It is always a mixture of two or more elements."
+    },
+    "correct_answer": "C",
+    "explanation": "A compound is formed when two or more elements chemically combine in a fixed ratio. The resulting compound has properties entirely different from its constituent elements. For example, water (`$H_2O$`) has different properties than hydrogen gas (`$H_2$`) and oxygen gas (`$O_2$`). Components of a compound cannot be separated by physical means, it has a fixed (not variable) composition, and it is a pure substance, not a mixture.",
+    "difficulty": "easy",
+    "topic": "basic_definitions",
+    "subtopic": "compounds",
+    "tags": [
+      "compound",
+      "properties",
+      "chemical_combination"
+    ],
+    "learning_objective": "Identify characteristics of a chemical compound.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "chem_xi_ch1_mcq_012",
+    "question": "What is the number of atoms in `$0.5$` moles of oxygen gas (`$O_2$`)?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$6.022 \times 10^{23}$ atoms",
+      "B": "$3.011 \times 10^{23}$ atoms",
+      "C": "$1.204 \times 10^{24}$ atoms",
+      "D": "$6.022 \times 10^{22}$ atoms"
+    },
+    "correct_answer": "A",
+    "explanation": "One mole of `$O_2$` molecules contains `$6.022 \times 10^{23}$` molecules. Each `$O_2$` molecule contains 2 oxygen atoms. So, `$0.5$` moles of `$O_2$` molecules contain `$0.5 \times 6.022 \times 10^{23}$` molecules. The number of atoms would be:\nNumber of atoms = (Moles of `$O_2$`) `$\times$` (Avogadro's number) `$\times$` (Atoms per molecule)\nNumber of atoms = `$0.5 \text{ mol} \times 6.022 \times 10^{23} \text{ molecules/mol} \times 2 \text{ atoms/molecule}$`\nNumber of atoms = `$6.022 \times 10^{23}$` atoms.\n\nAlternatively, `$0.5$` moles of `$O_2$` molecules means `$0.5 \times 2 = 1$` mole of oxygen atoms. Thus, it contains `$1 \times 6.022 \times 10^{23}$` atoms.",
+    "difficulty": "medium",
+    "topic": "mole_concept",
+    "subtopic": "atoms_in_molecules",
+    "tags": [
+      "mole",
+      "avogadro_number",
+      "atoms",
+      "oxygen_gas"
+    ],
+    "learning_objective": "Calculate the number of atoms in a given amount of a diatomic molecule.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_013",
+    "question": "What is the volume occupied by `$16 \text{ g}$` of oxygen gas (`$O_2$`) at STP? (Atomic mass: O = 16 amu)",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$11.2 \text{ dm}^3$",
+      "B": "$22.4 \text{ dm}^3$",
+      "C": "$5.6 \text{ dm}^3$",
+      "D": "$44.8 \text{ dm}^3$"
+    },
+    "correct_answer": "A",
+    "explanation": "First, calculate the molar mass of `$O_2$`: `$2 \times 16 = 32 \text{ g/mol}$`.\nNext, calculate the number of moles of `$O_2$`:\nMoles = `$\frac{\text{Mass}}{\text{Molar mass}} = \frac{16 \text{ g}}{32 \text{ g/mol}} = 0.5 \text{ mol}$`.\nAt STP, 1 mole of any gas occupies `$22.4 \text{ dm}^3$`. Therefore, `$0.5$` moles of `$O_2$` will occupy:\nVolume = Moles `$\times$` Molar volume at STP\nVolume = `$0.5 \text{ mol} \times 22.4 \text{ dm}^3/\text{mol} = 11.2 \text{ dm}^3$`.",
+    "difficulty": "medium",
+    "topic": "mole_concept",
+    "subtopic": "molar_volume_stp",
+    "tags": [
+      "molar_volume",
+      "STP",
+      "oxygen_gas",
+      "calculation",
+      "mole"
+    ],
+    "learning_objective": "Calculate the volume of a gas at STP given its mass.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_014",
+    "question": "A compound contains `$40\\%$` carbon, `$6.7\\%$` hydrogen, and `$53.3\\%$` oxygen by mass. What is its empirical formula? (Atomic masses: C = 12, H = 1, O = 16)",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$CH_2O$",
+      "B": "$C_2H_4O_2$",
+      "C": "$CH_4O$",
+      "D": "$CHO$"
+    },
+    "correct_answer": "A",
+    "explanation": "Assume `$100 \text{ g}$` of the compound.\nMass of C = `$40 \text{ g}$`, Mass of H = `$6.7 \text{ g}$`, Mass of O = `$53.3 \text{ g}$`.\n\nCalculate moles of each element:\nMoles of C = `$\frac{40 \text{ g}}{12 \text{ g/mol}} = 3.33 \text{ mol}$`\nMoles of H = `$\frac{6.7 \text{ g}}{1 \text{ g/mol}} = 6.7 \text{ mol}$`\nMoles of O = `$\frac{53.3 \text{ g}}{16 \text{ g/mol}} = 3.33 \text{ mol}$`\n\nDivide by the smallest number of moles (3.33):\nC: `$\frac{3.33}{3.33} = 1$`\nH: `$\frac{6.7}{3.33} \\approx 2$`\nO: `$\frac{3.33}{3.33} = 1$`\n\nThe empirical formula is `$CH_2O$`. This corresponds to carbohydrates.",
+    "difficulty": "medium",
+    "topic": "empirical_molecular_formula",
+    "subtopic": "empirical_formula_calculation",
+    "tags": [
+      "empirical_formula",
+      "percentage_composition",
+      "calculation",
+      "stoichiometry"
+    ],
+    "learning_objective": "Determine the empirical formula from percentage composition.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "chem_xi_ch1_mcq_015",
+    "question": "What is the molarity of a solution prepared by dissolving `$9.8 \text{ g}$` of sulfuric acid (`$H_2SO_4$`) in enough water to make `$250 \text{ mL}$` of solution? (Molar mass of `$H_2SO_4 = 98 \text{ g/mol}$`)",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$0.1 \text{ M}$",
+      "B": "$0.2 \text{ M}$",
+      "C": "$0.4 \text{ M}$",
+      "D": "$0.8 \text{ M}$"
+    },
+    "correct_answer": "C",
+    "explanation": "First, calculate the moles of `$H_2SO_4$`:\nMoles = `$\frac{\text{Mass}}{\text{Molar mass}} = \frac{9.8 \text{ g}}{98 \text{ g/mol}} = 0.1 \text{ mol}$`\nNext, convert the volume of solution from mL to L:\nVolume = `$250 \text{ mL} = 0.250 \text{ L}$`\nNow, calculate molarity:\nMolarity (M) = `$\frac{\text{Moles of solute}}{\text{Volume of solution (L)}} = \frac{0.1 \text{ mol}}{0.250 \text{ L}} = 0.4 \text{ M}$`.",
+    "difficulty": "medium",
+    "topic": "concentration_units",
+    "subtopic": "molarity_calculation",
+    "tags": [
+      "molarity",
+      "concentration",
+      "sulfuric_acid",
+      "solution",
+      "calculation"
+    ],
+    "learning_objective": "Calculate the molarity of a solution.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "chem_xi_ch1_mcq_016",
+    "question": "In the reaction `$2H_2 + O_2 \rightarrow 2H_2O$`, if `$4 \text{ moles}$` of `$H_2$` react with `$2 \text{ moles}$` of `$O_2$`, which is the limiting reactant?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$H_2$",
+      "B": "$O_2$",
+      "C": "Both are limiting reactants",
+      "D": "Neither is a limiting reactant"
+    },
+    "correct_answer": "D",
+    "explanation": "From the balanced equation, the stoichiometric ratio of `$H_2$` to `$O_2$` is `$2:1$`. This means for every 2 moles of `$H_2$`, 1 mole of `$O_2$` is required.\nGiven: `$4 \text{ moles}$` of `$H_2$` and `$2 \text{ moles}$` of `$O_2$`.\nIf `$4 \text{ moles}$` of `$H_2$` react, they would require `$\frac{4 \text{ mol } H_2}{2 \text{ mol } H_2} \times 1 \text{ mol } O_2 = 2 \text{ moles}$` of `$O_2$`.\nSince exactly `$2 \text{ moles}$` of `$O_2$` are available, both reactants are consumed completely. Therefore, neither is a limiting reactant; they are in stoichiometric proportion.",
+    "difficulty": "medium",
+    "topic": "stoichiometry",
+    "subtopic": "limiting_reactant",
+    "tags": [
+      "limiting_reactant",
+      "stoichiometry",
+      "chemical_reaction",
+      "mole_ratio"
+    ],
+    "learning_objective": "Identify the limiting reactant in a given reaction.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch1_mcq_017",
+    "question": "What is the percentage by mass of oxygen in `$CO_2$`? (Atomic masses: C = 12.01, O = 16.00)",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$27.29\\%$",
+      "B": "$72.71\\%$",
+      "C": "$50.00\\%$",
+      "D": "$66.67\\%$"
+    },
+    "correct_answer": "B",
+    "explanation": "Molar mass of `$CO_2 = 12.01 + (2 \times 16.00) = 12.01 + 32.00 = 44.01 \text{ g/mol}$`.\nMass of oxygen in one mole of `$CO_2 = 2 \times 16.00 = 32.00 \text{ g}$`.\nPercentage by mass of oxygen = `$\frac{\text{Mass of oxygen}}{\text{Molar mass of } CO_2} \times 100\\%$`\nPercentage by mass of oxygen = `$\frac{32.00 \text{ g}}{44.01 \text{ g}} \times 100\\% = 72.71\\%$`.",
+    "difficulty": "medium",
+    "topic": "percentage_composition",
+    "subtopic": "mass_percentage_calculation",
+    "tags": [
+      "percentage_composition",
+      "carbon_dioxide",
+      "molar_mass",
+      "calculation"
+    ],
+    "learning_objective": "Calculate the percentage by mass of an element in a compound.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_1",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

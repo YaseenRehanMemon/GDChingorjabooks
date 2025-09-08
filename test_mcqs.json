@@ -1,0 +1,86 @@
+[
+  {
+    "id": "stoichiometry_mcq_001",
+    "question": "How many moles are present in 49.0 g of sulfuric acid ($H_2SO_4$)? (Atomic masses: H=1.0, S=32.1, O=16.0)",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "0.25 mol",
+      "B": "0.50 mol",
+      "C": "1.0 mol",
+      "D": "2.0 mol"
+    },
+    "correct_answer": "B",
+    "explanation": "First, calculate the molar mass of $H_2SO_4$: (2 \u00d7 1.0) + (1 \u00d7 32.1) + (4 \u00d7 16.0) = 2.0 + 32.1 + 64.0 = 98.1 g/mol. \nThen, divide the given mass by the molar mass to find the number of moles: 49.0 g / 98.1 g/mol \u2248 0.50 mol.",
+    "difficulty": "medium",
+    "topic": "stoichiometry",
+    "subtopic": "mole_concept",
+    "tags": [
+      "moles",
+      "molar_mass",
+      "sulfuric_acid",
+      "calculation"
+    ],
+    "learning_objective": "Calculate the number of moles from a given mass and molar mass.",
+    "created_date": "2024-04-23",
+    "source": "AI_generated",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "stoichiometry_mcq_002",
+    "question": "Consider the reaction: $2H_2(g) + O_2(g) \\rightarrow 2H_2O(l)$. If 8.0 g of hydrogen gas ($H_2$) reacts completely with oxygen, what mass of water ($H_2O$) will be produced? (Atomic masses: H=1.0, O=16.0)",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "36.0 g",
+      "B": "72.0 g",
+      "C": "18.0 g",
+      "D": "9.0 g"
+    },
+    "correct_answer": "B",
+    "explanation": "1. Calculate moles of $H_2$: Molar mass of $H_2$ = 2 \u00d7 1.0 = 2.0 g/mol. Moles of $H_2$ = 8.0 g / 2.0 g/mol = 4.0 mol.\n2. Use stoichiometry to find moles of $H_2O$: From the balanced equation, 2 moles of $H_2$ produce 2 moles of $H_2O$. So, 4.0 moles of $H_2$ will produce 4.0 moles of $H_2O$.\n3. Calculate mass of $H_2O$: Molar mass of $H_2O$ = (2 \u00d7 1.0) + (1 \u00d7 16.0) = 18.0 g/mol. Mass of $H_2O$ = 4.0 mol \u00d7 18.0 g/mol = 72.0 g.",
+    "difficulty": "medium",
+    "topic": "stoichiometry",
+    "subtopic": "mass_to_mass_calculation",
+    "tags": [
+      "stoichiometry",
+      "mass_calculation",
+      "balanced_equation",
+      "water"
+    ],
+    "learning_objective": "Perform mass-to-mass stoichiometric calculations using a balanced chemical equation.",
+    "created_date": "2024-04-23",
+    "source": "AI_generated",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "stoichiometry_mcq_003",
+    "question": "For the reaction $N_2(g) + 3H_2(g) \\rightarrow 2NH_3(g)$, if 28.0 g of nitrogen gas ($N_2$) reacts with 9.0 g of hydrogen gas ($H_2$), which reactant is the limiting reactant? (Atomic masses: N=14.0, H=1.0)",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$N_2$",
+      "B": "$H_2$",
+      "C": "$NH_3$",
+      "D": "Both are consumed completely"
+    },
+    "correct_answer": "A",
+    "explanation": "1. Calculate moles of each reactant:\n   - Molar mass of $N_2$ = 2 \u00d7 14.0 = 28.0 g/mol. Moles of $N_2$ = 28.0 g / 28.0 g/mol = 1.0 mol.\n   - Molar mass of $H_2$ = 2 \u00d7 1.0 = 2.0 g/mol. Moles of $H_2$ = 9.0 g / 2.0 g/mol = 4.5 mol.\n2. Determine the limiting reactant using the mole ratio from the balanced equation (1 mol $N_2$ : 3 mol $H_2$):\n   - If 1.0 mol of $N_2$ reacts, it requires 1.0 mol $N_2$ \u00d7 (3 mol $H_2$ / 1 mol $N_2$) = 3.0 mol $H_2$.\n   - We have 4.5 mol of $H_2$ available, which is more than the 3.0 mol required. Therefore, $H_2$ is in excess, and $N_2$ is the limiting reactant.",
+    "difficulty": "hard",
+    "topic": "stoichiometry",
+    "subtopic": "limiting_reactant",
+    "tags": [
+      "limiting_reactant",
+      "stoichiometry",
+      "mole_ratio",
+      "ammonia_synthesis"
+    ],
+    "learning_objective": "Identify the limiting reactant in a chemical reaction given the masses of reactants.",
+    "created_date": "2024-04-23",
+    "source": "AI_generated",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  }
+]

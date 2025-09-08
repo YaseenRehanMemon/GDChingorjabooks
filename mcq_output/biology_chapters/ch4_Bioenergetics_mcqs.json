@@ -1,0 +1,622 @@
+[
+  {
+    "id": "bio_xi_ch4_mcq_001",
+    "question": "Which of the following is considered the universal energy currency of the cell?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Glucose",
+      "B": "ATP",
+      "C": "NADPH",
+      "D": "FADH2"
+    },
+    "correct_answer": "B",
+    "explanation": "ATP (Adenosine Triphosphate) is the primary molecule used by cells to store and transfer energy for various metabolic processes, hence it is known as the universal energy currency. Glucose is a fuel source, while NADPH and FADH2 are electron carriers.",
+    "difficulty": "easy",
+    "topic": "ATP",
+    "subtopic": "energy_currency",
+    "tags": [
+      "ATP",
+      "energy",
+      "bioenergetics",
+      "cellular_energy"
+    ],
+    "learning_objective": "Identify ATP as the primary energy currency.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch4_mcq_002",
+    "question": "The process of breaking down complex organic molecules into simpler ones to release energy is known as:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Anabolism",
+      "B": "Catabolism",
+      "C": "Metabolism",
+      "D": "Photosynthesis"
+    },
+    "correct_answer": "B",
+    "explanation": "Catabolism refers to the metabolic pathways that break down molecules into smaller units to release energy. Anabolism is the synthesis of complex molecules from simpler ones, requiring energy. Metabolism encompasses both anabolism and catabolism. Photosynthesis is an anabolic process.",
+    "difficulty": "easy",
+    "topic": "Metabolism",
+    "subtopic": "catabolism",
+    "tags": [
+      "metabolism",
+      "catabolism",
+      "anabolism",
+      "energy_release"
+    ],
+    "learning_objective": "Differentiate between catabolism and anabolism.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "bio_xi_ch4_mcq_003",
+    "question": "Which component is NOT part of an ATP molecule?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Adenine",
+      "B": "Ribose sugar",
+      "C": "Three phosphate groups",
+      "D": "Deoxyribose sugar"
+    },
+    "correct_answer": "D",
+    "explanation": "ATP stands for Adenosine Triphosphate. It is composed of an adenine base, a ribose sugar, and three phosphate groups. Deoxyribose sugar is found in DNA, not ATP.",
+    "difficulty": "easy",
+    "topic": "ATP",
+    "subtopic": "ATP_structure",
+    "tags": [
+      "ATP",
+      "structure",
+      "nucleotide",
+      "ribose"
+    ],
+    "learning_objective": "Recall the structural components of ATP.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch4_mcq_004",
+    "question": "The energy released from the hydrolysis of ATP is primarily used for:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Increasing entropy",
+      "B": "Driving endergonic reactions",
+      "C": "Decreasing temperature",
+      "D": "Synthesizing water"
+    },
+    "correct_answer": "B",
+    "explanation": "ATP hydrolysis releases energy, which is then coupled with endergonic (energy-requiring) reactions to make them proceed. This process is known as energy coupling. Increasing entropy is a natural tendency, but not the primary use of ATP energy. Decreasing temperature and synthesizing water are not direct primary uses.",
+    "difficulty": "medium",
+    "topic": "ATP",
+    "subtopic": "ATP_function",
+    "tags": [
+      "ATP",
+      "hydrolysis",
+      "energy_coupling",
+      "endergonic"
+    ],
+    "learning_objective": "Explain how ATP provides energy for cellular processes.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.88
+  },
+  {
+    "id": "bio_xi_ch4_mcq_005",
+    "question": "Which of the following processes is an example of an oxidation reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Gain of electrons",
+      "B": "Loss of hydrogen atoms",
+      "C": "Decrease in oxidation state",
+      "D": "Formation of a more reduced compound"
+    },
+    "correct_answer": "B",
+    "explanation": "Oxidation is the loss of electrons, loss of hydrogen atoms, or gain of oxygen atoms. Conversely, reduction is the gain of electrons, gain of hydrogen atoms, or loss of oxygen atoms. A decrease in oxidation state and formation of a more reduced compound are characteristics of reduction.",
+    "difficulty": "easy",
+    "topic": "Redox Reactions",
+    "subtopic": "oxidation",
+    "tags": [
+      "redox",
+      "oxidation",
+      "reduction",
+      "electron_transfer"
+    ],
+    "learning_objective": "Define oxidation in biological contexts.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "bio_xi_ch4_mcq_006",
+    "question": "The primary electron acceptor in Photosystem II is:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Plastoquinone (Pq)",
+      "B": "Ferredoxin (Fd)",
+      "C": "NADP+",
+      "D": "Cytochrome complex"
+    },
+    "correct_answer": "A",
+    "explanation": "After chlorophyll P680 in Photosystem II absorbs light energy and releases electrons, the primary electron acceptor is Plastoquinone (Pq). Ferredoxin is involved in Photosystem I, NADP+ is the final electron acceptor in non-cyclic photophosphorylation, and the cytochrome complex is part of the electron transport chain between PSII and PSI.",
+    "difficulty": "medium",
+    "topic": "Photosynthesis",
+    "subtopic": "light_dependent_reactions",
+    "tags": [
+      "photosynthesis",
+      "PSII",
+      "electron_acceptor",
+      "plastoquinone"
+    ],
+    "learning_objective": "Identify key components of the light-dependent reactions.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.88
+  },
+  {
+    "id": "bio_xi_ch4_mcq_007",
+    "question": "Which pigment is directly involved in converting light energy into chemical energy during photosynthesis?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Chlorophyll b",
+      "B": "Carotenoids",
+      "C": "Chlorophyll a",
+      "D": "Xanthophylls"
+    },
+    "correct_answer": "C",
+    "explanation": "Chlorophyll a is the primary photosynthetic pigment that directly participates in the light reactions by absorbing light energy and initiating the electron transport chain. Chlorophyll b, carotenoids, and xanthophylls are accessory pigments that broaden the absorption spectrum and transfer energy to chlorophyll a.",
+    "difficulty": "easy",
+    "topic": "Photosynthesis",
+    "subtopic": "pigments",
+    "tags": [
+      "photosynthesis",
+      "chlorophyll_a",
+      "pigments",
+      "light_energy"
+    ],
+    "learning_objective": "Distinguish between primary and accessory photosynthetic pigments.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch4_mcq_008",
+    "question": "The splitting of water molecules during the light-dependent reactions of photosynthesis is called:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Hydrolysis",
+      "B": "Photolysis",
+      "C": "Phosphorylation",
+      "D": "Carbon fixation"
+    },
+    "correct_answer": "B",
+    "explanation": "Photolysis is the process where water molecules are split using light energy, releasing electrons, protons ($H^+$), and oxygen gas ($O_2$). These electrons replenish those lost by Photosystem II. Hydrolysis is a general term for water splitting, but photolysis specifically refers to light-driven splitting. Phosphorylation is adding a phosphate group, and carbon fixation is incorporating $CO_2$ into organic molecules.",
+    "difficulty": "easy",
+    "topic": "Photosynthesis",
+    "subtopic": "photolysis",
+    "tags": [
+      "photosynthesis",
+      "photolysis",
+      "water_splitting",
+      "light_reactions"
+    ],
+    "learning_objective": "Describe the role of water in light-dependent reactions.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch4_mcq_009",
+    "question": "In non-cyclic photophosphorylation, the final electron acceptor is:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "P680",
+      "B": "P700",
+      "C": "NADP+",
+      "D": "Oxygen"
+    },
+    "correct_answer": "C",
+    "explanation": "In non-cyclic photophosphorylation, electrons flow from water to Photosystem II, then to Photosystem I, and finally reduce NADP+ to NADPH. P680 and P700 are reaction centers. Oxygen is released from water photolysis, not an electron acceptor in this context.",
+    "difficulty": "medium",
+    "topic": "Photosynthesis",
+    "subtopic": "non_cyclic_photophosphorylation",
+    "tags": [
+      "photosynthesis",
+      "NADP+",
+      "electron_acceptor",
+      "light_reactions"
+    ],
+    "learning_objective": "Trace the path of electrons in non-cyclic photophosphorylation.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.88
+  },
+  {
+    "id": "bio_xi_ch4_mcq_010",
+    "question": "The Calvin cycle takes place in which part of the chloroplast?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Thylakoid membrane",
+      "B": "Grana",
+      "C": "Stroma",
+      "D": "Outer membrane"
+    },
+    "correct_answer": "C",
+    "explanation": "The Calvin cycle (light-independent reactions) occurs in the stroma, the fluid-filled space within the chloroplast. The light-dependent reactions occur on the thylakoid membranes, which are stacked into grana.",
+    "difficulty": "easy",
+    "topic": "Photosynthesis",
+    "subtopic": "Calvin_cycle",
+    "tags": [
+      "photosynthesis",
+      "Calvin_cycle",
+      "stroma",
+      "chloroplast"
+    ],
+    "learning_objective": "Identify the location of the Calvin cycle.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch4_mcq_011",
+    "question": "How many molecules of $CO_2$ are required to produce one molecule of glucose in the Calvin cycle?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "1",
+      "B": "3",
+      "C": "6",
+      "D": "12"
+    },
+    "correct_answer": "C",
+    "explanation": "The Calvin cycle fixes one $CO_2$ molecule at a time. To produce one molecule of glucose ($C_6H_{12}O_6$), which has six carbon atoms, the cycle must turn six times, thus requiring six molecules of $CO_2$.",
+    "difficulty": "medium",
+    "topic": "Photosynthesis",
+    "subtopic": "Calvin_cycle_stoichiometry",
+    "tags": [
+      "photosynthesis",
+      "Calvin_cycle",
+      "CO2_fixation",
+      "glucose"
+    ],
+    "learning_objective": "Calculate the inputs for glucose synthesis in the Calvin cycle.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.88
+  },
+  {
+    "id": "bio_xi_ch4_mcq_012",
+    "question": "The enzyme responsible for carbon fixation in the Calvin cycle is:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "ATP synthase",
+      "B": "NADP reductase",
+      "C": "RuBisCO",
+      "D": "Phosphofructokinase"
+    },
+    "correct_answer": "C",
+    "explanation": "RuBisCO (Ribulose-1,5-bisphosphate carboxylase/oxygenase) is the enzyme that catalyzes the first step of the Calvin cycle, where $CO_2$ is combined with RuBP (ribulose-1,5-bisphosphate). ATP synthase produces ATP, NADP reductase reduces NADP+, and phosphofructokinase is involved in glycolysis.",
+    "difficulty": "easy",
+    "topic": "Photosynthesis",
+    "subtopic": "Calvin_cycle_enzymes",
+    "tags": [
+      "photosynthesis",
+      "RuBisCO",
+      "carbon_fixation",
+      "Calvin_cycle"
+    ],
+    "learning_objective": "Identify the key enzyme in carbon fixation.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch4_mcq_013",
+    "question": "Which of the following is a product of the light-dependent reactions and is used in the Calvin cycle?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Glucose",
+      "B": "Oxygen",
+      "C": "ATP and NADPH",
+      "D": "Water"
+    },
+    "correct_answer": "C",
+    "explanation": "The light-dependent reactions produce ATP and NADPH, which are then used as energy and reducing power, respectively, in the Calvin cycle to synthesize glucose. Glucose and oxygen are products of the overall photosynthesis, and water is a reactant in light reactions.",
+    "difficulty": "easy",
+    "topic": "Photosynthesis",
+    "subtopic": "light_dark_connection",
+    "tags": [
+      "photosynthesis",
+      "light_reactions",
+      "Calvin_cycle",
+      "ATP",
+      "NADPH"
+    ],
+    "learning_objective": "Explain the link between light-dependent and light-independent reactions.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch4_mcq_014",
+    "question": "The overall equation for photosynthesis can be written as:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$C_6H_{12}O_6 + 6O_2 \\rightarrow 6CO_2 + 6H_2O + Energy$",
+      "B": "$6CO_2 + 6H_2O + Energy \\rightarrow C_6H_{12}O_6 + 6O_2$",
+      "C": "$6CO_2 + 12H_2O + Light \\rightarrow C_6H_{12}O_6 + 6O_2 + 6H_2O$",
+      "D": "$C_6H_{12}O_6 + 6O_2 \\rightarrow 6CO_2 + 12H_2O + Energy$"
+    },
+    "correct_answer": "C",
+    "explanation": "The balanced equation for photosynthesis is $6CO_2 + 12H_2O + Light \\rightarrow C_6H_{12}O_6 + 6O_2 + 6H_2O$. Option B is a simplified version often used, but option C includes the $12H_2O$ on the reactant side and $6H_2O$ on the product side, which accounts for the water consumed and produced. Option A and D represent cellular respiration.",
+    "difficulty": "medium",
+    "topic": "Photosynthesis",
+    "subtopic": "overall_equation",
+    "tags": [
+      "photosynthesis",
+      "chemical_equation",
+      "reactants",
+      "products"
+    ],
+    "learning_objective": "Write the balanced chemical equation for photosynthesis.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.88
+  },
+  {
+    "id": "bio_xi_ch4_mcq_015",
+    "question": "Where does glycolysis occur in a eukaryotic cell?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Mitochondrial matrix",
+      "B": "Inner mitochondrial membrane",
+      "C": "Cytoplasm",
+      "D": "Outer mitochondrial membrane"
+    },
+    "correct_answer": "C",
+    "explanation": "Glycolysis, the first stage of cellular respiration, occurs in the cytoplasm of both prokaryotic and eukaryotic cells. The subsequent stages (Krebs cycle, ETC) occur in the mitochondria.",
+    "difficulty": "easy",
+    "topic": "Cellular Respiration",
+    "subtopic": "glycolysis",
+    "tags": [
+      "cellular_respiration",
+      "glycolysis",
+      "cytoplasm",
+      "eukaryotic_cell"
+    ],
+    "learning_objective": "Identify the cellular location of glycolysis.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch4_mcq_016",
+    "question": "What are the net products of glycolysis from one molecule of glucose?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "2 Pyruvate, 2 ATP, 2 NADH",
+      "B": "1 Pyruvate, 2 ATP, 2 NADH",
+      "C": "2 Acetyl-CoA, 2 ATP, 2 NADH",
+      "D": "2 Pyruvate, 4 ATP, 2 NADH"
+    },
+    "correct_answer": "A",
+    "explanation": "For one molecule of glucose, glycolysis yields a net of 2 molecules of pyruvate, 2 molecules of ATP (4 produced, 2 consumed), and 2 molecules of NADH. Acetyl-CoA is formed after pyruvate oxidation.",
+    "difficulty": "medium",
+    "topic": "Cellular Respiration",
+    "subtopic": "glycolysis_products",
+    "tags": [
+      "cellular_respiration",
+      "glycolysis",
+      "ATP",
+      "NADH",
+      "pyruvate"
+    ],
+    "learning_objective": "Recall the net products of glycolysis.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.88
+  },
+  {
+    "id": "bio_xi_ch4_mcq_017",
+    "question": "The Krebs cycle (Citric Acid Cycle) occurs in which part of the mitochondrion?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Outer membrane",
+      "B": "Inner membrane",
+      "C": "Intermembrane space",
+      "D": "Matrix"
+    },
+    "correct_answer": "D",
+    "explanation": "The Krebs cycle takes place in the mitochondrial matrix, the innermost compartment of the mitochondrion. The electron transport chain is located on the inner mitochondrial membrane.",
+    "difficulty": "easy",
+    "topic": "Cellular Respiration",
+    "subtopic": "Krebs_cycle",
+    "tags": [
+      "cellular_respiration",
+      "Krebs_cycle",
+      "mitochondria",
+      "matrix"
+    ],
+    "learning_objective": "Identify the cellular location of the Krebs cycle.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch4_mcq_018",
+    "question": "For each molecule of acetyl-CoA entering the Krebs cycle, how many molecules of $CO_2$ are released?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
+    "correct_answer": "B",
+    "explanation": "Each acetyl-CoA molecule (2 carbons) enters the Krebs cycle and is completely oxidized, releasing two molecules of $CO_2$. Since one glucose molecule yields two acetyl-CoA molecules, a total of four $CO_2$ molecules are released per glucose in the Krebs cycle (plus two from pyruvate oxidation).",
+    "difficulty": "medium",
+    "topic": "Cellular Respiration",
+    "subtopic": "Krebs_cycle_products",
+    "tags": [
+      "cellular_respiration",
+      "Krebs_cycle",
+      "CO2_release",
+      "acetyl_CoA"
+    ],
+    "learning_objective": "Quantify $CO_2$ release in the Krebs cycle.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.88
+  },
+  {
+    "id": "bio_xi_ch4_mcq_019",
+    "question": "The primary role of oxygen in aerobic respiration is to:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Accept electrons at the end of the electron transport chain",
+      "B": "Act as a substrate for glycolysis",
+      "C": "Generate ATP directly",
+      "D": "Oxidize glucose in the Krebs cycle"
+    },
+    "correct_answer": "A",
+    "explanation": "Oxygen serves as the final electron acceptor in the electron transport chain. It combines with electrons and protons ($H^+$) to form water. Without oxygen, the electron transport chain would halt, and ATP production would cease.",
+    "difficulty": "medium",
+    "topic": "Cellular Respiration",
+    "subtopic": "electron_transport_chain",
+    "tags": [
+      "cellular_respiration",
+      "oxygen",
+      "electron_acceptor",
+      "ETC"
+    ],
+    "learning_objective": "Explain the role of oxygen in aerobic respiration.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch4_mcq_020",
+    "question": "Which process generates the most ATP during aerobic respiration?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Glycolysis",
+      "B": "Krebs cycle",
+      "C": "Oxidative phosphorylation",
+      "D": "Pyruvate oxidation"
+    },
+    "correct_answer": "C",
+    "explanation": "Oxidative phosphorylation, which includes the electron transport chain and chemiosmosis, generates the vast majority of ATP (approximately 28-34 ATP molecules) during aerobic respiration. Glycolysis yields a net of 2 ATP, and the Krebs cycle yields 2 ATP (or GTP) per glucose.",
+    "difficulty": "medium",
+    "topic": "Cellular Respiration",
+    "subtopic": "ATP_yield",
+    "tags": [
+      "cellular_respiration",
+      "ATP",
+      "oxidative_phosphorylation",
+      "ETC",
+      "chemiosmosis"
+    ],
+    "learning_objective": "Compare ATP yield from different stages of respiration.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch4_mcq_021",
+    "question": "In the electron transport chain, the energy released from electron movement is used to pump protons ($H^+$) from the mitochondrial matrix to the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Cytoplasm",
+      "B": "Outer mitochondrial membrane",
+      "C": "Intermembrane space",
+      "D": "Thylakoid lumen"
+    },
+    "correct_answer": "C",
+    "explanation": "The electron transport chain complexes pump protons ($H^+$) from the mitochondrial matrix into the intermembrane space, creating an electrochemical proton gradient. This gradient is then used by ATP synthase to produce ATP.",
+    "difficulty": "medium",
+    "topic": "Cellular Respiration",
+    "subtopic": "chemiosmosis",
+    "tags": [
+      "cellular_respiration",
+      "ETC",
+      "proton_gradient",
+      "intermembrane_space",
+      "chemiosmosis"
+    ],
+    "learning_objective": "Describe the mechanism of proton pumping in chemiosmosis.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.88
+  },
+  {
+    "id": "bio_xi_ch4_mcq_022",
+    "question": "Fermentation is an anaerobic process that occurs when oxygen is absent. Its main purpose is to regenerate which molecule?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "ATP",
+      "B": "Glucose",
+      "C": "NAD+",
+      "D": "Pyruvate"
+    },
+    "correct_answer": "C",
+    "explanation": "Fermentation's primary role is to regenerate NAD+ from NADH, allowing glycolysis to continue producing a small amount of ATP in the absence of oxygen. Without NAD+, glycolysis would stop. ATP is produced by glycolysis, glucose is the initial substrate, and pyruvate is the product of glycolysis.",
+    "difficulty": "medium",
+    "topic": "Cellular Respiration",
+    "subtopic": "fermentation",
+    "tags": [
+      "anaerobic_respiration",
+      "fermentation",
+      "NAD+",
+      "glycolysis"
+    ],
+    "learning_objective": "Explain the purpose of fermentation.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

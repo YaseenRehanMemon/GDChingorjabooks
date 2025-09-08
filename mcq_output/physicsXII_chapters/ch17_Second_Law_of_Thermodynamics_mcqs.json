@@ -1,0 +1,530 @@
+[
+  {
+    "id": "physics_xii_ch17_mcq_001",
+    "question": "Which of the following statements is the Kelvin-Planck statement of the Second Law of Thermodynamics?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "It is impossible to construct a device that operates in a cycle and produces no effect other than the transfer of heat from a cooler body to a hotter body.",
+      "B": "It is impossible to construct a device that operates in a cycle and produces no effect other than the absorption of heat from a single reservoir and the performance of an equivalent amount of work.",
+      "C": "The entropy of an isolated system never decreases.",
+      "D": "The total energy of an isolated system remains constant."
+    },
+    "correct_answer": "B",
+    "explanation": "The Kelvin-Planck statement of the Second Law of Thermodynamics states that it is impossible to construct a device that operates in a cycle and produces no effect other than the absorption of heat from a single reservoir and the performance of an equivalent amount of work. This implies that no heat engine can have $100\\%$ efficiency. Option A is the Clausius statement, C is related to entropy, and D is the First Law of Thermodynamics.",
+    "difficulty": "easy",
+    "topic": "second_law_statements",
+    "subtopic": "kelvin_planck",
+    "tags": [
+      "second_law",
+      "thermodynamics",
+      "kelvin_planck",
+      "heat_engine"
+    ],
+    "learning_objective": "Recall the Kelvin-Planck statement of the Second Law of Thermodynamics.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch17_mcq_002",
+    "question": "The efficiency of a Carnot engine operating between a hot reservoir at temperature $T_H$ and a cold reservoir at temperature $T_C$ is given by:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$\\eta = 1 - \frac{T_H}{T_C}$",
+      "B": "$\\eta = 1 - \frac{Q_C}{Q_H}$",
+      "C": "$\\eta = \frac{T_H - T_C}{T_C}$",
+      "D": "$\\eta = \frac{Q_H}{Q_C}$"
+    },
+    "correct_answer": "B",
+    "explanation": "The general definition of efficiency for any heat engine is $\\eta = 1 - \frac{Q_C}{Q_H}$, where $Q_C$ is the heat rejected to the cold reservoir and $Q_H$ is the heat absorbed from the hot reservoir. For a Carnot engine, this can also be expressed in terms of absolute temperatures as $\\eta = 1 - \frac{T_C}{T_H}$. Option A is incorrect as the ratio should be $T_C/T_H$. Option C is related to COP of a heat pump, and D is an inverse ratio.",
+    "difficulty": "easy",
+    "topic": "heat_engines",
+    "subtopic": "carnot_efficiency",
+    "tags": [
+      "carnot_engine",
+      "efficiency",
+      "thermodynamics",
+      "heat_engine"
+    ],
+    "learning_objective": "State the formula for the efficiency of a heat engine.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch17_mcq_003",
+    "question": "Which of the following processes is NOT part of a Carnot cycle?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Isothermal expansion",
+      "B": "Adiabatic compression",
+      "C": "Isobaric heating",
+      "D": "Isothermal compression"
+    },
+    "correct_answer": "C",
+    "explanation": "A Carnot cycle consists of four reversible processes: 1. Isothermal expansion, 2. Adiabatic expansion, 3. Isothermal compression, and 4. Adiabatic compression. Isobaric heating (constant pressure heating) is not a part of the ideal Carnot cycle.",
+    "difficulty": "easy",
+    "topic": "carnot_cycle",
+    "subtopic": "processes",
+    "tags": [
+      "carnot_cycle",
+      "thermodynamic_processes",
+      "isothermal",
+      "adiabatic"
+    ],
+    "learning_objective": "Identify the processes involved in a Carnot cycle.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch17_mcq_004",
+    "question": "A refrigerator works on the principle of:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Transferring heat from a hotter body to a colder body naturally.",
+      "B": "Converting all absorbed heat into work.",
+      "C": "Transferring heat from a colder body to a hotter body with external work.",
+      "D": "Increasing the entropy of the working substance only."
+    },
+    "correct_answer": "C",
+    "explanation": "A refrigerator is a device that transfers heat from a colder body (inside the refrigerator) to a hotter body (the surroundings) by consuming external work. This is in accordance with the Clausius statement of the Second Law, which states that heat cannot spontaneously flow from cold to hot.",
+    "difficulty": "easy",
+    "topic": "refrigerators",
+    "subtopic": "working_principle",
+    "tags": [
+      "refrigerator",
+      "heat_pump",
+      "second_law",
+      "clausius_statement"
+    ],
+    "learning_objective": "Understand the basic working principle of a refrigerator.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch17_mcq_005",
+    "question": "What is the unit of entropy?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Joules (J)",
+      "B": "Watts (W)",
+      "C": "Joules per Kelvin (J/K)",
+      "D": "Kelvin (K)"
+    },
+    "correct_answer": "C",
+    "explanation": "Entropy is defined as the change in heat divided by the absolute temperature, $\\Delta S = \frac{Q_{rev}}{T}$. Therefore, its unit is Joules per Kelvin ($J/K$). Joules are units of energy, Watts are units of power, and Kelvin are units of temperature.",
+    "difficulty": "easy",
+    "topic": "entropy",
+    "subtopic": "unit",
+    "tags": [
+      "entropy",
+      "units",
+      "thermodynamics"
+    ],
+    "learning_objective": "Recall the unit of entropy.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch17_mcq_006",
+    "question": "According to the Second Law of Thermodynamics, the entropy of an isolated system during an irreversible process:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Decreases",
+      "B": "Remains constant",
+      "C": "Increases",
+      "D": "Can either increase or decrease"
+    },
+    "correct_answer": "C",
+    "explanation": "The Second Law of Thermodynamics, specifically the entropy statement, dictates that for an isolated system, the entropy either increases (for irreversible processes) or remains constant (for reversible processes). It never decreases. Thus, for an irreversible process, the entropy of an isolated system increases.",
+    "difficulty": "easy",
+    "topic": "entropy",
+    "subtopic": "isolated_system",
+    "tags": [
+      "entropy",
+      "second_law",
+      "irreversible_process",
+      "isolated_system"
+    ],
+    "learning_objective": "Describe the change in entropy for an isolated system during an irreversible process.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch17_mcq_007",
+    "question": "Which of the following is a characteristic of a reversible process?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "It occurs spontaneously.",
+      "B": "It can be reversed without leaving any change in the surroundings.",
+      "C": "It always involves friction.",
+      "D": "It leads to an increase in the entropy of the universe."
+    },
+    "correct_answer": "B",
+    "explanation": "A reversible process is an idealized process that can be reversed without leaving any net change in the system or its surroundings. This implies that the system is always in equilibrium during the process and no dissipative effects like friction are present. Irreversible processes occur spontaneously and lead to an increase in the entropy of the universe.",
+    "difficulty": "easy",
+    "topic": "thermodynamic_processes",
+    "subtopic": "reversible_irreversible",
+    "tags": [
+      "reversible_process",
+      "thermodynamics",
+      "entropy"
+    ],
+    "learning_objective": "Define a reversible process.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch17_mcq_008",
+    "question": "The coefficient of performance (COP) for an ideal refrigerator is given by:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$\text{COP} = \frac{T_H}{T_H - T_C}$",
+      "B": "$\text{COP} = \frac{T_C}{T_H - T_C}$",
+      "C": "$\text{COP} = \frac{T_H - T_C}{T_C}$",
+      "D": "$\text{COP} = \frac{T_H - T_C}{T_H}$"
+    },
+    "correct_answer": "B",
+    "explanation": "The coefficient of performance (COP) for an ideal refrigerator is defined as the ratio of the heat extracted from the cold reservoir ($Q_C$) to the work input ($W$). For an ideal (Carnot) refrigerator, this can be expressed in terms of absolute temperatures as $\text{COP}_{ref} = \frac{T_C}{T_H - T_C}$. Option A is the COP for a heat pump. Options C and D are incorrect formulations.",
+    "difficulty": "easy",
+    "topic": "refrigerators",
+    "subtopic": "cop",
+    "tags": [
+      "refrigerator",
+      "cop",
+      "thermodynamics",
+      "carnot_refrigerator"
+    ],
+    "learning_objective": "Recall the formula for the coefficient of performance of an ideal refrigerator.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch17_mcq_009",
+    "question": "Which of the following statements is equivalent to the Kelvin-Planck statement?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "It is impossible to reach absolute zero temperature.",
+      "B": "Heat cannot flow spontaneously from a colder body to a hotter body.",
+      "C": "The entropy of the universe always increases.",
+      "D": "The total energy of the universe is constant."
+    },
+    "correct_answer": "B",
+    "explanation": "The Kelvin-Planck statement (no $100\\%$ efficient heat engine) and the Clausius statement (heat cannot spontaneously flow from cold to hot) are equivalent forms of the Second Law of Thermodynamics. Option A relates to the Third Law. Option C is a consequence of the Second Law, and D is the First Law.",
+    "difficulty": "easy",
+    "topic": "second_law_statements",
+    "subtopic": "equivalence",
+    "tags": [
+      "second_law",
+      "kelvin_planck",
+      "clausius_statement",
+      "equivalence"
+    ],
+    "learning_objective": "Identify statements equivalent to the Kelvin-Planck statement.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch17_mcq_010",
+    "question": "The efficiency of a heat engine is always less than 1 ($100\\%$) because:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Some heat is always lost to the surroundings.",
+      "B": "It is impossible to convert all heat into work.",
+      "C": "The working substance has internal energy.",
+      "D": "The process is always reversible."
+    },
+    "correct_answer": "B",
+    "explanation": "According to the Kelvin-Planck statement of the Second Law of Thermodynamics, it is impossible to construct a device that operates in a cycle and produces no effect other than the absorption of heat from a single reservoir and the performance of an equivalent amount of work. This means that some heat must always be rejected to a cold reservoir, making $100\\%$ conversion of heat into work impossible. Option A is a practical limitation, but B is a fundamental law.",
+    "difficulty": "easy",
+    "topic": "heat_engines",
+    "subtopic": "efficiency_limit",
+    "tags": [
+      "heat_engine",
+      "efficiency",
+      "second_law",
+      "kelvin_planck"
+    ],
+    "learning_objective": "Explain why the efficiency of a heat engine cannot be 100%.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch17_mcq_011",
+    "question": "A heat engine absorbs $500\\,J$ of heat from a hot reservoir and rejects $300\\,J$ of heat to a cold reservoir. What is the work done by the engine?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$800\\,J$",
+      "B": "$500\\,J$",
+      "C": "$300\\,J$",
+      "D": "$200\\,J$"
+    },
+    "correct_answer": "D",
+    "explanation": "According to the First Law of Thermodynamics for a cyclic process, the net work done ($W$) by the engine is the difference between the heat absorbed from the hot reservoir ($Q_H$) and the heat rejected to the cold reservoir ($Q_C$).\n$W = Q_H - Q_C$\n$W = 500\\,J - 300\\,J$\n$W = 200\\,J$",
+    "difficulty": "easy",
+    "topic": "heat_engines",
+    "subtopic": "work_done",
+    "tags": [
+      "heat_engine",
+      "work_done",
+      "first_law",
+      "numerical"
+    ],
+    "learning_objective": "Calculate the work done by a heat engine given heat absorbed and rejected.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch17_mcq_012",
+    "question": "If a system undergoes a reversible adiabatic process, what is the change in entropy?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Increases",
+      "B": "Decreases",
+      "C": "Remains zero",
+      "D": "Cannot be determined"
+    },
+    "correct_answer": "C",
+    "explanation": "For any reversible process, the change in entropy is given by $\\Delta S = \frac{Q_{rev}}{T}$. In an adiabatic process, there is no heat exchange with the surroundings, meaning $Q_{rev} = 0$. Therefore, for a reversible adiabatic process, the change in entropy is zero ($\\Delta S = 0$). Such a process is also called an isentropic process.",
+    "difficulty": "easy",
+    "topic": "entropy",
+    "subtopic": "adiabatic_process",
+    "tags": [
+      "entropy",
+      "adiabatic_process",
+      "reversible_process",
+      "isentropic"
+    ],
+    "learning_objective": "Determine the change in entropy for a reversible adiabatic process.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch17_mcq_013",
+    "question": "The concept of entropy is a measure of:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Total energy of a system",
+      "B": "Order or disorder of a system",
+      "C": "Temperature of a system",
+      "D": "Pressure of a system"
+    },
+    "correct_answer": "B",
+    "explanation": "Entropy is a thermodynamic property that is a measure of the disorder or randomness of a system. A higher entropy corresponds to a more disordered state, while lower entropy corresponds to a more ordered state. It is often described as the 'arrow of time' because natural processes tend towards states of higher entropy.",
+    "difficulty": "easy",
+    "topic": "entropy",
+    "subtopic": "definition",
+    "tags": [
+      "entropy",
+      "disorder",
+      "thermodynamics"
+    ],
+    "learning_objective": "Understand the conceptual meaning of entropy.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch17_mcq_014",
+    "question": "Which of the following processes is inherently irreversible?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Melting of ice at $0^\\circ C$",
+      "B": "Expansion of a gas against a vacuum",
+      "C": "Slow compression of a gas in a cylinder with a frictionless piston",
+      "D": "Isothermal expansion of an ideal gas"
+    },
+    "correct_answer": "B",
+    "explanation": "An irreversible process is one that cannot be reversed without leaving a change in the surroundings. The expansion of a gas against a vacuum is a free expansion, which is highly irreversible because the gas does no work and there is no way to restore the initial state without external intervention. Options A, C, and D can be considered reversible under ideal conditions (e.g., slow, quasi-static processes).",
+    "difficulty": "easy",
+    "topic": "thermodynamic_processes",
+    "subtopic": "irreversibility",
+    "tags": [
+      "irreversible_process",
+      "entropy",
+      "free_expansion"
+    ],
+    "learning_objective": "Identify examples of irreversible processes.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch17_mcq_015",
+    "question": "The maximum possible efficiency of a heat engine is determined by:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The type of working substance used.",
+      "B": "The amount of heat absorbed.",
+      "C": "The temperatures of the hot and cold reservoirs.",
+      "D": "The speed of the engine."
+    },
+    "correct_answer": "C",
+    "explanation": "Carnot's theorem states that no heat engine operating between two given temperatures can be more efficient than a Carnot engine operating between the same two temperatures. The efficiency of a Carnot engine is given by $\\eta_{Carnot} = 1 - \frac{T_C}{T_H}$, which depends only on the absolute temperatures of the hot ($T_H$) and cold ($T_C$) reservoirs. The type of working substance, amount of heat, or speed do not determine the *maximum possible* efficiency.",
+    "difficulty": "easy",
+    "topic": "heat_engines",
+    "subtopic": "carnot_theorem",
+    "tags": [
+      "carnot_engine",
+      "efficiency",
+      "thermodynamics",
+      "temperature_reservoirs"
+    ],
+    "learning_objective": "Understand the factors determining the maximum efficiency of a heat engine.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch17_mcq_016",
+    "question": "A heat pump is essentially a refrigerator operating in reverse. Its purpose is to:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Cool a cold space.",
+      "B": "Generate electricity.",
+      "C": "Heat a warm space.",
+      "D": "Convert heat into work."
+    },
+    "correct_answer": "C",
+    "explanation": "While a refrigerator extracts heat from a cold space and rejects it to a warmer one, a heat pump's primary purpose is to transfer heat from a colder outdoor environment to a warmer indoor space, thereby heating the indoor space. It uses work input to achieve this.",
+    "difficulty": "easy",
+    "topic": "heat_pumps",
+    "subtopic": "purpose",
+    "tags": [
+      "heat_pump",
+      "refrigerator",
+      "thermodynamics",
+      "heating"
+    ],
+    "learning_objective": "Understand the primary function of a heat pump.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch17_mcq_017",
+    "question": "The Clausius statement of the Second Law of Thermodynamics implies that:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Heat can spontaneously flow from a colder body to a hotter body.",
+      "B": "Heat cannot spontaneously flow from a colder body to a hotter body.",
+      "C": "All heat can be converted into work.",
+      "D": "The total energy of the universe is constant."
+    },
+    "correct_answer": "B",
+    "explanation": "The Clausius statement explicitly states that 'It is impossible to construct a device that operates in a cycle and produces no effect other than the transfer of heat from a cooler body to a hotter body.' In simpler terms, heat cannot spontaneously flow from a colder body to a hotter body without external work input.",
+    "difficulty": "easy",
+    "topic": "second_law_statements",
+    "subtopic": "clausius",
+    "tags": [
+      "second_law",
+      "thermodynamics",
+      "clausius_statement",
+      "heat_transfer"
+    ],
+    "learning_objective": "Recall the Clausius statement of the Second Law of Thermodynamics.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch17_mcq_018",
+    "question": "If the temperature of the cold reservoir of a Carnot engine is increased, its efficiency will:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Increase",
+      "B": "Decrease",
+      "C": "Remain the same",
+      "D": "Become $100\\%$"
+    },
+    "correct_answer": "B",
+    "explanation": "The efficiency of a Carnot engine is given by $\\eta = 1 - \frac{T_C}{T_H}$. If $T_C$ (temperature of the cold reservoir) increases, the ratio $\frac{T_C}{T_H}$ increases. Consequently, $1 - \frac{T_C}{T_H}$ will decrease. Therefore, the efficiency of the Carnot engine will decrease.",
+    "difficulty": "easy",
+    "topic": "carnot_engine",
+    "subtopic": "efficiency_factors",
+    "tags": [
+      "carnot_engine",
+      "efficiency",
+      "temperature",
+      "thermodynamics"
+    ],
+    "learning_objective": "Analyze the effect of changing reservoir temperatures on Carnot engine efficiency.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch17_mcq_019",
+    "question": "The Third Law of Thermodynamics states that:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Energy cannot be created or destroyed.",
+      "B": "The entropy of a perfect crystal at absolute zero is zero.",
+      "C": "Heat cannot spontaneously flow from cold to hot.",
+      "D": "It is impossible to reach absolute zero temperature in a finite number of steps."
+    },
+    "correct_answer": "B",
+    "explanation": "The Third Law of Thermodynamics states that the entropy of a perfect crystal at absolute zero temperature ($0\\,K$) is zero. Option A is the First Law. Option C is the Clausius statement of the Second Law. Option D is a consequence of the Third Law, often referred to as the unattainability principle.",
+    "difficulty": "easy",
+    "topic": "third_law_of_thermodynamics",
+    "subtopic": "statement",
+    "tags": [
+      "third_law",
+      "entropy",
+      "absolute_zero",
+      "perfect_crystal"
+    ],
+    "learning_objective": "Recall the statement of the Third Law of Thermodynamics.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

@@ -1,0 +1,569 @@
+[
+  {
+    "id": "bio_xii_ch23_mcq_001",
+    "question": "Who is known as the 'Father of Genetics' for his work on pea plants?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Charles Darwin",
+      "B": "Gregor Mendel",
+      "C": "James Watson",
+      "D": "Francis Crick"
+    },
+    "correct_answer": "B",
+    "explanation": "Gregor Mendel, an Austrian monk, conducted pioneering experiments on pea plants in the mid-19th century, establishing the fundamental principles of heredity. His work laid the foundation for modern genetics, earning him the title 'Father of Genetics'. Charles Darwin is known for evolution, and Watson and Crick for DNA structure.",
+    "difficulty": "easy",
+    "topic": "mendelian_genetics",
+    "subtopic": "history_of_genetics",
+    "tags": [
+      "mendel",
+      "genetics",
+      "history"
+    ],
+    "learning_objective": "Identify the founder of modern genetics.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_23",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch23_mcq_002",
+    "question": "What is an allele?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "A segment of DNA that codes for a protein",
+      "B": "A specific location on a chromosome",
+      "C": "An alternative form of a gene",
+      "D": "A type of chromosome"
+    },
+    "correct_answer": "C",
+    "explanation": "An allele is one of two or more alternative forms of a gene that arise by mutation and are found at the same place on a chromosome. For example, the gene for pea plant height can have two alleles: 'tall' and 'dwarf'. Option A describes a gene, and Option B describes a locus.",
+    "difficulty": "easy",
+    "topic": "mendelian_genetics",
+    "subtopic": "basic_terminology",
+    "tags": [
+      "allele",
+      "gene",
+      "genetics_terms"
+    ],
+    "learning_objective": "Define key genetic terms.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_23",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch23_mcq_003",
+    "question": "If an individual has two identical alleles for a particular gene, they are considered:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Heterozygous",
+      "B": "Homozygous",
+      "C": "Dominant",
+      "D": "Recessive"
+    },
+    "correct_answer": "B",
+    "explanation": "Homozygous refers to an individual having two identical alleles for a particular gene (e.g., `$AA$` or `$aa$`). Heterozygous means having two different alleles (e.g., `$Aa$`). Dominant and recessive describe the expression of alleles.",
+    "difficulty": "easy",
+    "topic": "mendelian_genetics",
+    "subtopic": "basic_terminology",
+    "tags": [
+      "homozygous",
+      "heterozygous",
+      "genetics_terms"
+    ],
+    "learning_objective": "Differentiate between homozygous and heterozygous genotypes.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_23",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch23_mcq_004",
+    "question": "The observable characteristics of an organism are collectively called its:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Genotype",
+      "B": "Phenotype",
+      "C": "Allele",
+      "D": "Locus"
+    },
+    "correct_answer": "B",
+    "explanation": "The phenotype is the set of observable characteristics of an individual resulting from the interaction of its genotype with the environment. The genotype refers to the genetic makeup. An allele is a form of a gene, and a locus is a gene's position on a chromosome.",
+    "difficulty": "easy",
+    "topic": "mendelian_genetics",
+    "subtopic": "basic_terminology",
+    "tags": [
+      "phenotype",
+      "genotype",
+      "genetics_terms"
+    ],
+    "learning_objective": "Distinguish between genotype and phenotype.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_23",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch23_mcq_005",
+    "question": "Which of Mendel's laws states that allele pairs separate during gamete formation and randomly unite at fertilization?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Law of Independent Assortment",
+      "B": "Law of Segregation",
+      "C": "Law of Dominance",
+      "D": "Law of Purity of Gametes"
+    },
+    "correct_answer": "B",
+    "explanation": "Mendel's Law of Segregation states that during the formation of gametes, the two alleles for a heritable character separate (segregate) from each other such that each gamete carries only one allele. The Law of Independent Assortment deals with the segregation of alleles for two different genes. The Law of Dominance states that one allele can mask the expression of another.",
+    "difficulty": "easy",
+    "topic": "mendelian_genetics",
+    "subtopic": "mendel's_laws",
+    "tags": [
+      "law_of_segregation",
+      "mendel's_laws",
+      "gamete_formation"
+    ],
+    "learning_objective": "State Mendel's Law of Segregation.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_23",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch23_mcq_006",
+    "question": "A cross between a homozygous dominant individual and a homozygous recessive individual will produce an F1 generation that is entirely:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Homozygous dominant",
+      "B": "Homozygous recessive",
+      "C": "Heterozygous",
+      "D": "Phenotypically recessive"
+    },
+    "correct_answer": "C",
+    "explanation": "If a homozygous dominant individual (e.g., `$AA$`) is crossed with a homozygous recessive individual (e.g., `$aa$`), all offspring in the F1 generation will inherit one dominant allele from the first parent and one recessive allele from the second parent, resulting in a heterozygous genotype (e.g., `$Aa$`).",
+    "difficulty": "easy",
+    "topic": "mendelian_genetics",
+    "subtopic": "monohybrid_cross",
+    "tags": [
+      "monohybrid_cross",
+      "F1_generation",
+      "genotype"
+    ],
+    "learning_objective": "Predict the genotype of F1 generation in a monohybrid cross.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_23",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch23_mcq_007",
+    "question": "What is the purpose of a test cross?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "To determine the genotype of a dominant phenotype",
+      "B": "To determine the genotype of a recessive phenotype",
+      "C": "To determine the number of chromosomes in an organism",
+      "D": "To determine the sex of an organism"
+    },
+    "correct_answer": "A",
+    "explanation": "A test cross is performed to determine the genotype of an individual showing a dominant phenotype. This individual is crossed with a homozygous recessive individual. If any offspring show the recessive phenotype, the dominant parent must have been heterozygous. If all offspring show the dominant phenotype, the dominant parent was homozygous dominant.",
+    "difficulty": "easy",
+    "topic": "mendelian_genetics",
+    "subtopic": "test_cross",
+    "tags": [
+      "test_cross",
+      "genotype_determination",
+      "dominant_phenotype"
+    ],
+    "learning_objective": "Explain the purpose of a test cross.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_23",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch23_mcq_008",
+    "question": "In a monohybrid cross between two heterozygous individuals (e.g., `$Aa \times Aa$`), what is the expected genotypic ratio in the offspring?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$1:2:1$",
+      "B": "$3:1$",
+      "C": "$9:3:3:1$",
+      "D": "$1:1$"
+    },
+    "correct_answer": "A",
+    "explanation": "For a monohybrid cross between two heterozygotes (`$Aa \times Aa$`), the Punnett square shows the following genotypes: `$AA$`, `$Aa$`, `$Aa$`, `$aa$`. This results in a genotypic ratio of `$1 AA : 2 Aa : 1 aa$`, or `$1:2:1$`. The phenotypic ratio would be `$3:1$ (dominant:recessive).",
+    "difficulty": "easy",
+    "topic": "mendelian_genetics",
+    "subtopic": "monohybrid_cross_ratios",
+    "tags": [
+      "monohybrid_cross",
+      "genotypic_ratio",
+      "punnett_square"
+    ],
+    "learning_objective": "Calculate genotypic ratios for monohybrid crosses.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_23",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch23_mcq_009",
+    "question": "Which term describes the specific position of a gene on a chromosome?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Allele",
+      "B": "Genome",
+      "C": "Locus",
+      "D": "Centromere"
+    },
+    "correct_answer": "C",
+    "explanation": "A locus (plural: loci) is the specific physical location or position of a gene or DNA sequence on a chromosome. An allele is a variant form of a gene. A genome is the complete set of genetic material. A centromere is a constricted region of a chromosome.",
+    "difficulty": "easy",
+    "topic": "chromosomal_basis_of_inheritance",
+    "subtopic": "chromosome_structure",
+    "tags": [
+      "locus",
+      "chromosome",
+      "gene_position"
+    ],
+    "learning_objective": "Define the term 'locus'.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_23",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch23_mcq_010",
+    "question": "In humans, how many pairs of autosomes are typically present?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$1$",
+      "B": "$2$",
+      "C": "$22$",
+      "D": "$23$"
+    },
+    "correct_answer": "C",
+    "explanation": "Humans have a total of 23 pairs of chromosomes. Of these, 22 pairs are autosomes (non-sex chromosomes), and 1 pair consists of sex chromosomes (XX for females, XY for males).",
+    "difficulty": "easy",
+    "topic": "chromosomal_basis_of_inheritance",
+    "subtopic": "human_chromosomes",
+    "tags": [
+      "autosomes",
+      "chromosomes",
+      "human_genetics"
+    ],
+    "learning_objective": "Recall the number of autosomes in humans.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_23",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch23_mcq_011",
+    "question": "Which of the following is an example of a sex-linked trait in humans?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Cystic fibrosis",
+      "B": "Sickle cell anemia",
+      "C": "Color blindness",
+      "D": "Huntington's disease"
+    },
+    "correct_answer": "C",
+    "explanation": "Color blindness (specifically red-green color blindness) is a classic example of an X-linked recessive trait in humans. Cystic fibrosis, sickle cell anemia, and Huntington's disease are autosomal genetic disorders.",
+    "difficulty": "easy",
+    "topic": "sex_linked_inheritance",
+    "subtopic": "x_linked_traits",
+    "tags": [
+      "sex_linked",
+      "color_blindness",
+      "x_linked_recessive"
+    ],
+    "learning_objective": "Identify examples of sex-linked traits.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_23",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch23_mcq_012",
+    "question": "What is the term for a change in the DNA sequence of a gene?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Recombination",
+      "B": "Mutation",
+      "C": "Segregation",
+      "D": "Assortment"
+    },
+    "correct_answer": "B",
+    "explanation": "A mutation is a permanent alteration in the DNA sequence that makes up a gene. Recombination is the rearrangement of genetic material. Segregation and assortment are terms related to allele distribution during meiosis.",
+    "difficulty": "easy",
+    "topic": "mutations",
+    "subtopic": "gene_mutations",
+    "tags": [
+      "mutation",
+      "dna_change",
+      "gene_alteration"
+    ],
+    "learning_objective": "Define mutation.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_23",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch23_mcq_013",
+    "question": "If a red flower (RR) is crossed with a white flower (WW) and the offspring are all pink (RW), this is an example of:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Complete dominance",
+      "B": "Codominance",
+      "C": "Incomplete dominance",
+      "D": "Epistasis"
+    },
+    "correct_answer": "C",
+    "explanation": "Incomplete dominance occurs when the heterozygous phenotype is intermediate between the two homozygous phenotypes. Here, pink is intermediate between red and white. Codominance would mean both red and white traits are expressed simultaneously (e.g., red and white patches). Complete dominance would result in all red flowers.",
+    "difficulty": "easy",
+    "topic": "non_mendelian_inheritance",
+    "subtopic": "incomplete_dominance",
+    "tags": [
+      "incomplete_dominance",
+      "non_mendelian",
+      "phenotype"
+    ],
+    "learning_objective": "Identify examples of incomplete dominance.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_23",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch23_mcq_014",
+    "question": "The ABO blood group system in humans is an example of:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Incomplete dominance",
+      "B": "Multiple alleles",
+      "C": "Polygenic inheritance",
+      "D": "Sex-linked inheritance"
+    },
+    "correct_answer": "B",
+    "explanation": "The ABO blood group system is an example of multiple alleles because there are three different alleles (`$I^A$`, `$I^B$`, and `$i$`) for the single gene that determines blood type. It also exhibits codominance between `$I^A$` and `$I^B$`. However, 'multiple alleles' is the primary characteristic described.",
+    "difficulty": "easy",
+    "topic": "non_mendelian_inheritance",
+    "subtopic": "multiple_alleles",
+    "tags": [
+      "multiple_alleles",
+      "abo_blood_group",
+      "human_genetics"
+    ],
+    "learning_objective": "Recognize multiple alleles in human traits.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_23",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch23_mcq_015",
+    "question": "What is the genotype of a male human?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "XX",
+      "B": "XY",
+      "C": "XO",
+      "D": "YY"
+    },
+    "correct_answer": "B",
+    "explanation": "In humans, biological sex is determined by the sex chromosomes. Females typically have two X chromosomes (XX), while males typically have one X and one Y chromosome (XY). XO is associated with Turner Syndrome, and YY is not a viable human genotype.",
+    "difficulty": "easy",
+    "topic": "sex_determination",
+    "subtopic": "human_sex_chromosomes",
+    "tags": [
+      "sex_chromosomes",
+      "male_genotype",
+      "human_genetics"
+    ],
+    "learning_objective": "Identify the sex chromosome combination for human males.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_23",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch23_mcq_016",
+    "question": "The failure of homologous chromosomes or sister chromatids to separate during meiosis is called:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Crossing over",
+      "B": "Nondisjunction",
+      "C": "Translocation",
+      "D": "Inversion"
+    },
+    "correct_answer": "B",
+    "explanation": "Nondisjunction is the failure of homologous chromosomes or sister chromatids to separate properly during cell division (meiosis I or meiosis II). This leads to gametes with an abnormal number of chromosomes, which can result in conditions like Down Syndrome. Crossing over is the exchange of genetic material. Translocation and inversion are types of chromosomal structural changes.",
+    "difficulty": "easy",
+    "topic": "chromosomal_aberrations",
+    "subtopic": "nondisjunction",
+    "tags": [
+      "nondisjunction",
+      "meiosis",
+      "chromosomal_abnormality"
+    ],
+    "learning_objective": "Define nondisjunction.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_23",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch23_mcq_017",
+    "question": "Which of the following is a genetic disorder caused by trisomy of chromosome 21?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Klinefelter syndrome",
+      "B": "Turner syndrome",
+      "C": "Down syndrome",
+      "D": "Sickle cell anemia"
+    },
+    "correct_answer": "C",
+    "explanation": "Down syndrome is caused by the presence of an extra copy of chromosome 21 (trisomy 21). Klinefelter syndrome is XXY, Turner syndrome is XO (sex chromosome aneuploidies). Sickle cell anemia is a gene mutation.",
+    "difficulty": "easy",
+    "topic": "genetic_disorders",
+    "subtopic": "chromosomal_disorders",
+    "tags": [
+      "down_syndrome",
+      "trisomy_21",
+      "chromosomal_disorder"
+    ],
+    "learning_objective": "Identify common chromosomal disorders.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_23",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch23_mcq_018",
+    "question": "A pedigree chart is used to:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Map the location of genes on chromosomes",
+      "B": "Trace the inheritance of a trait through generations",
+      "C": "Determine the sequence of DNA",
+      "D": "Identify the number of chromosomes in a cell"
+    },
+    "correct_answer": "B",
+    "explanation": "A pedigree chart is a diagram that shows the occurrence and appearance of phenotypes of a particular gene or organism and its ancestors from one generation to the next, often used to trace genetic disorders. Gene mapping, DNA sequencing, and karyotyping serve different purposes.",
+    "difficulty": "easy",
+    "topic": "pedigree_analysis",
+    "subtopic": "pedigree_charts",
+    "tags": [
+      "pedigree",
+      "inheritance_pattern",
+      "family_history"
+    ],
+    "learning_objective": "Understand the purpose of a pedigree chart.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_23",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch23_mcq_019",
+    "question": "Which of the following is a characteristic of an autosomal recessive trait in a pedigree?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Affected individuals always have at least one affected parent.",
+      "B": "The trait appears in every generation.",
+      "C": "Affected individuals can have unaffected parents (carriers).",
+      "D": "Males are more frequently affected than females."
+    },
+    "correct_answer": "C",
+    "explanation": "For an autosomal recessive trait, affected individuals must inherit two copies of the recessive allele. Therefore, unaffected parents who are both heterozygous carriers can have affected offspring. Options A and B describe autosomal dominant traits. Option D describes X-linked recessive traits.",
+    "difficulty": "easy",
+    "topic": "pedigree_analysis",
+    "subtopic": "autosomal_recessive",
+    "tags": [
+      "pedigree",
+      "autosomal_recessive",
+      "inheritance_pattern"
+    ],
+    "learning_objective": "Identify characteristics of autosomal recessive inheritance.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_23",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch23_mcq_020",
+    "question": "What is the term for the exchange of genetic material between homologous chromosomes during meiosis?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Segregation",
+      "B": "Independent assortment",
+      "C": "Crossing over",
+      "D": "Replication"
+    },
+    "correct_answer": "C",
+    "explanation": "Crossing over (or recombination) is the process where homologous chromosomes exchange segments of genetic material during prophase I of meiosis. This leads to new combinations of alleles on the chromatids. Segregation and independent assortment are Mendel's laws. Replication is DNA synthesis.",
+    "difficulty": "easy",
+    "topic": "chromosomal_basis_of_inheritance",
+    "subtopic": "crossing_over",
+    "tags": [
+      "crossing_over",
+      "meiosis",
+      "recombination"
+    ],
+    "learning_objective": "Define crossing over.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_23",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch23_mcq_021",
+    "question": "If a gene has two alleles, 'A' (dominant) and 'a' (recessive), what is the probability of an offspring being homozygous recessive (`$aa$`) from a cross between two heterozygous parents (`$Aa \times Aa$`)?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "0.25",
+      "B": "0.50",
+      "C": "0.75",
+      "D": "1.00"
+    },
+    "correct_answer": "A",
+    "explanation": "In a cross between two heterozygous parents (`$Aa \times Aa$`), the possible genotypes are `$AA$`, `$Aa$`, `$Aa$`, and `$aa$`. The probability of `$aa$` is `$1$ out of $4$`, which is `$0.25$` or `$25\\%$`. This corresponds to the `$1:2:1$` genotypic ratio.",
+    "difficulty": "medium",
+    "topic": "mendelian_genetics",
+    "subtopic": "monohybrid_cross_probability",
+    "tags": [
+      "probability",
+      "monohybrid_cross",
+      "genotype_prediction"
+    ],
+    "learning_objective": "Calculate probabilities of genotypes in monohybrid crosses.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_23",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

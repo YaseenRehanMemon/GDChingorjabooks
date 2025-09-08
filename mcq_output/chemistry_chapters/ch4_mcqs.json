@@ -1,0 +1,547 @@
+[
+  {
+    "id": "chem_xi_ch4_mcq_001",
+    "question": "What is the primary characteristic of the particles of a gas, according to the Kinetic Molecular Theory?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "They are orderly arranged and have strong attractive forces.",
+      "B": "They are in constant, random, and rapid motion.",
+      "C": "They vibrate in a fixed position.",
+      "D": "They have strong intermolecular forces."
+    },
+    "correct_answer": "B",
+    "explanation": "The text states that according to the Kinetic Molecular Theory, the particles of a gas are in a state of constant, random, and rapid motion.",
+    "difficulty": "easy",
+    "topic": "kinetic_molecular_theory",
+    "subtopic": "postulates",
+    "tags": [
+      "KMT",
+      "gas_particles",
+      "motion"
+    ],
+    "learning_objective": "List the postulates of Kinetic Molecular Theory.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch4_mcq_002",
+    "question": "The word 'gas' is derived from a Greek word meaning:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Vapor",
+      "B": "Emptiness or gap",
+      "C": "Fluid",
+      "D": "Mixture"
+    },
+    "correct_answer": "B",
+    "explanation": "The document mentions that the word 'gas' is derived from the Greek word 'Khaos', which means emptiness or gap.",
+    "difficulty": "easy",
+    "topic": "introduction_to_gases",
+    "subtopic": "etymology",
+    "tags": [
+      "gas",
+      "Greek_origin",
+      "definition"
+    ],
+    "learning_objective": "Understand the characteristics of gases",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch4_mcq_003",
+    "question": "According to the Kinetic Molecular Theory, what happens to the average kinetic energy of gas particles as the temperature increases?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "It decreases.",
+      "B": "It remains constant.",
+      "C": "It increases.",
+      "D": "It first increases, then decreases."
+    },
+    "correct_answer": "C",
+    "explanation": "A postulate of the Kinetic Molecular Theory is that 'The average kinetic energy of gas molecules is directly proportional to the absolute temperature.' Therefore, as temperature increases, the kinetic energy increases.",
+    "difficulty": "easy",
+    "topic": "kinetic_molecular_theory",
+    "subtopic": "kinetic_energy",
+    "tags": [
+      "KMT",
+      "kinetic_energy",
+      "temperature",
+      "gas_laws"
+    ],
+    "learning_objective": "Relate temperature to the average kinetic energy of the particles in a substance.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch4_mcq_004",
+    "question": "What is the value of absolute zero in degrees Celsius?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$0^o$C",
+      "B": "$-273^o$C",
+      "C": "$273^o$C",
+      "D": "$100^o$C"
+    },
+    "correct_answer": "B",
+    "explanation": "The text defines absolute zero as the lowest possible temperature at which a substance would have zero kinetic energy, and its value is $-273.15^o$C (or approximately $-273^o$C).",
+    "difficulty": "easy",
+    "topic": "absolute_zero",
+    "subtopic": "definition",
+    "tags": [
+      "absolute_zero",
+      "temperature",
+      "Kelvin"
+    ],
+    "learning_objective": "Describe the significance of absolute zero, giving its value in degree Celsius and Kelvin.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch4_mcq_005",
+    "question": "Which of the following describes the relationship between the volume and the number of moles of a gas at constant temperature and pressure?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The volume is inversely proportional to the number of moles.",
+      "B": "The volume is directly proportional to the number of moles.",
+      "C": "The volume is independent of the number of moles.",
+      "D": "The relationship is described by Boyle's law."
+    },
+    "correct_answer": "B",
+    "explanation": "Avogadro's Law states that at constant temperature and pressure, the volume of a gas is directly proportional to the number of moles of the gas ($V \\propto n$).",
+    "difficulty": "easy",
+    "topic": "gas_laws",
+    "subtopic": "Avogadro's_Law",
+    "tags": [
+      "Avogadro's_Law",
+      "volume",
+      "moles"
+    ],
+    "learning_objective": "State and explain the significance of Avogadro's Law.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch4_mcq_006",
+    "question": "What is the value of the ideal gas constant (R) in units of $dm^3$ atm $K^{-1}$ $mol^{-1}$?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "8.314",
+      "B": "0.0821",
+      "C": "1.987",
+      "D": "6.022 \\times 10^{23}"
+    },
+    "correct_answer": "B",
+    "explanation": "The document gives the value of the ideal gas constant (R) as $0.0821$ $dm^3$ atm $K^{-1}$ $mol^{-1}$.",
+    "difficulty": "easy",
+    "topic": "ideal_gas_equation",
+    "subtopic": "ideal_gas_constant",
+    "tags": [
+      "ideal_gas_constant",
+      "R",
+      "units"
+    ],
+    "learning_objective": "Explain the significance and different units of ideal gas constant.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch4_mcq_007",
+    "question": "Why do real gases deviate from the ideal gas laws?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "They have zero volume and no intermolecular forces.",
+      "B": "They have no definite volume and strong intermolecular forces.",
+      "C": "They have a definite volume and some intermolecular forces.",
+      "D": "They have a definite volume, and there are no intermolecular forces."
+    },
+    "correct_answer": "C",
+    "explanation": "The text explains that real gases deviate from ideal gas behavior because they 'have definite volume, and there are some intermolecular attractive forces between gas molecules'. The postulates of the Kinetic Molecular Theory for ideal gases assume these factors are negligible.",
+    "difficulty": "medium",
+    "topic": "real_and_ideal_gases",
+    "subtopic": "deviations",
+    "tags": [
+      "real_gases",
+      "ideal_gases",
+      "deviation"
+    ],
+    "learning_objective": "Explain why real gases deviate from the gas laws.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch4_mcq_008",
+    "question": "Which of the following is NOT a fundamental state of matter mentioned in the document?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Solid",
+      "B": "Liquid",
+      "C": "Gel",
+      "D": "Plasma"
+    },
+    "correct_answer": "C",
+    "explanation": "The introduction states that there are 'four fundamental states of matters solid, liquid, gas and plasma.' Gel is not one of these.",
+    "difficulty": "easy",
+    "topic": "state_of_matter",
+    "subtopic": "classification",
+    "tags": [
+      "states_of_matter",
+      "fundamental_states"
+    ],
+    "learning_objective": "Define and describe the properties of Plasma.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch4_mcq_009",
+    "question": "What is the main reason for gas pressure, according to the Kinetic Molecular Theory?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The attractive forces between gas particles.",
+      "B": "The collisions of gas particles with the walls of the container.",
+      "C": "The volume occupied by the gas particles.",
+      "D": "The chemical reactions occurring in the gas."
+    },
+    "correct_answer": "B",
+    "explanation": "The document explains that 'Gas pressure is due to the collisions of gas molecules with the walls of the container.'",
+    "difficulty": "easy",
+    "topic": "gas_pressure",
+    "subtopic": "KMT",
+    "tags": [
+      "gas_pressure",
+      "collisions",
+      "KMT"
+    ],
+    "learning_objective": "Use kinetic theory to explain gas pressure.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch4_mcq_010",
+    "question": "The Ideal Gas Equation is a combination of which three gas laws?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Boyle's Law, Dalton's Law, and Charles' Law.",
+      "B": "Boyle's Law, Charles' Law, and Avogadro's Law.",
+      "C": "Charles' Law, Graham's Law, and Avogadro's Law.",
+      "D": "Dalton's Law, Graham's Law, and Boyle's Law."
+    },
+    "correct_answer": "B",
+    "explanation": "The learning objective mentions: 'Derive Ideal Gas Equation using Boyle's, Charles' and Avogadro's law.'",
+    "difficulty": "easy",
+    "topic": "ideal_gas_equation",
+    "subtopic": "derivation",
+    "tags": [
+      "ideal_gas_equation",
+      "Boyle's_law",
+      "Charles'_law",
+      "Avogadro's_law"
+    ],
+    "learning_objective": "Derive Ideal Gas Equation using Boyle's, Charles' and Avogadro's law.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch4_mcq_011",
+    "question": "According to Boyle's law, what is the relationship between the volume and pressure of a fixed amount of gas at constant temperature?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Directly proportional ($V \\propto P$).",
+      "B": "Inversely proportional ($V \\propto 1/P$).",
+      "C": "Exponentially proportional ($V \\propto P^2$).",
+      "D": "The product of volume and pressure is constant."
+    },
+    "correct_answer": "B",
+    "explanation": "Boyle's law states that at constant temperature, the volume of a given amount of gas is inversely proportional to its pressure ($V \\propto 1/P$).",
+    "difficulty": "easy",
+    "topic": "gas_laws",
+    "subtopic": "Boyle's_Law",
+    "tags": [
+      "Boyle's_law",
+      "pressure",
+      "volume"
+    ],
+    "learning_objective": "Understand Boyle's Law",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch4_mcq_012",
+    "question": "What is the value of standard temperature and pressure (STP)?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$25^o$C and 1 atm",
+      "B": "$0^o$C and 1 atm",
+      "C": "$273^o$C and 1 atm",
+      "D": "$100^o$C and 1 atm"
+    },
+    "correct_answer": "B",
+    "explanation": "The text defines Standard Temperature and Pressure (STP) as $0^o$C (273 K) and 1 atmosphere (atm).",
+    "difficulty": "easy",
+    "topic": "gas_laws",
+    "subtopic": "STP",
+    "tags": [
+      "STP",
+      "standard_conditions",
+      "temperature",
+      "pressure"
+    ],
+    "learning_objective": "State the values of standard temperature and pressure (STP).",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch4_mcq_013",
+    "question": "According to Charles's law, what is the relationship between the volume of a gas and its temperature at constant pressure?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Inversely proportional ($V \\propto 1/T$).",
+      "B": "Directly proportional ($V \\propto T$).",
+      "C": "Exponentially proportional ($V \\propto T^2$).",
+      "D": "The ratio of volume to temperature is not constant."
+    },
+    "correct_answer": "B",
+    "explanation": "Charles's law states that at constant pressure, the volume of a given amount of gas is directly proportional to its absolute temperature ($V \\propto T$).",
+    "difficulty": "easy",
+    "topic": "gas_laws",
+    "subtopic": "Charles'_Law",
+    "tags": [
+      "Charles'_law",
+      "temperature",
+      "volume"
+    ],
+    "learning_objective": "Understand Charles's Law",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch4_mcq_014",
+    "question": "Which of the following is a postulate of the Kinetic Molecular Theory?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Gas particles have a strong gravitational attraction to each other.",
+      "B": "The volume of gas particles is significant compared to the container volume.",
+      "C": "The collisions between gas particles are elastic and do not result in energy loss.",
+      "D": "The motion of gas particles is orderly and predictable."
+    },
+    "correct_answer": "C",
+    "explanation": "One of the key postulates of KMT is that 'the collisions of gas particles with each other and with the walls of the container are perfectly elastic which means that no energy is lost during collisions.'",
+    "difficulty": "medium",
+    "topic": "kinetic_molecular_theory",
+    "subtopic": "postulates",
+    "tags": [
+      "KMT",
+      "postulates",
+      "elastic_collisions"
+    ],
+    "learning_objective": "List the postulates of Kinetic Molecular Theory.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch4_mcq_015",
+    "question": "When is the deviation of real gases from ideal behavior most significant?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "At high temperature and low pressure.",
+      "B": "At low temperature and high pressure.",
+      "C": "At high temperature and high pressure.",
+      "D": "At low temperature and low pressure."
+    },
+    "correct_answer": "B",
+    "explanation": "Real gases show more deviation from ideal behavior 'at low temperature and high pressure' because at these conditions, the volume of the gas particles becomes significant and intermolecular forces become more prominent.",
+    "difficulty": "medium",
+    "topic": "real_and_ideal_gases",
+    "subtopic": "deviations",
+    "tags": [
+      "real_gases",
+      "deviation",
+      "temperature",
+      "pressure"
+    ],
+    "learning_objective": "Explain why real gases deviate from the gas laws.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch4_mcq_016",
+    "question": "Which state of matter is described as a 'collection of atoms or molecules in which most of the electrons have been stripped away from the atoms'?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Solid",
+      "B": "Liquid",
+      "C": "Gas",
+      "D": "Plasma"
+    },
+    "correct_answer": "D",
+    "explanation": "The document defines plasma as 'a collection of atoms or molecules in which most of the electrons have been stripped away from the atoms to form positively charged ions and negatively charged electrons.'",
+    "difficulty": "easy",
+    "topic": "plasma",
+    "subtopic": "definition",
+    "tags": [
+      "plasma",
+      "definition",
+      "ionized_gas"
+    ],
+    "learning_objective": "Define and describe the properties of Plasma.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch4_mcq_017",
+    "question": "What happens to the pressure of a gas if the volume is doubled at a constant temperature?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The pressure is halved.",
+      "B": "The pressure is doubled.",
+      "C": "The pressure remains the same.",
+      "D": "The pressure is quadrupled."
+    },
+    "correct_answer": "A",
+    "explanation": "According to Boyle's Law, pressure and volume are inversely proportional. Therefore, if the volume doubles, the pressure will be halved.",
+    "difficulty": "medium",
+    "topic": "gas_laws",
+    "subtopic": "Boyle's_Law",
+    "tags": [
+      "Boyle's_law",
+      "pressure_volume_relationship",
+      "calculation"
+    ],
+    "learning_objective": "Apply Boyle's Law to problem-solving.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch4_mcq_018",
+    "question": "Why are gas particles able to move in all directions?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "They have strong attractive forces.",
+      "B": "They are held together by strong bonds.",
+      "C": "There are empty spaces between them.",
+      "D": "They are a fluid."
+    },
+    "correct_answer": "C",
+    "explanation": "The text states that 'Due to the empty spaces, gas particles move in all directions.'",
+    "difficulty": "easy",
+    "topic": "introduction_to_gases",
+    "subtopic": "particle_motion",
+    "tags": [
+      "gas_particles",
+      "empty_space",
+      "motion"
+    ],
+    "learning_objective": "Describe the motion of particles of a gas according to kinetic theory.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch4_mcq_019",
+    "question": "What is the relationship between the volume and temperature of a gas at constant pressure, as described by Charles's law?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$V_1 P_1 = V_2 P_2$",
+      "B": "$V_1 / T_1 = V_2 / T_2$",
+      "C": "$P_1 V_1 / T_1 = P_2 V_2 / T_2$",
+      "D": "$V \\propto 1/T$"
+    },
+    "correct_answer": "B",
+    "explanation": "Charles's law can be expressed mathematically as $V_1 / T_1 = V_2 / T_2$, which shows that the ratio of volume to temperature is constant at constant pressure.",
+    "difficulty": "medium",
+    "topic": "gas_laws",
+    "subtopic": "Charles'_Law",
+    "tags": [
+      "Charles'_law",
+      "formula",
+      "temperature",
+      "volume"
+    ],
+    "learning_objective": "Understand Charles's Law",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch4_mcq_020",
+    "question": "If the temperature of a gas is in Celsius, what must be done to use it in calculations with the ideal gas equation?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Subtract 273.",
+      "B": "Multiply by 273.",
+      "C": "Add 273.",
+      "D": "Divide by 273."
+    },
+    "correct_answer": "C",
+    "explanation": "The ideal gas equation and other gas laws require the use of absolute temperature (Kelvin). To convert Celsius to Kelvin, you must add 273 ($K = ^oC + 273$).",
+    "difficulty": "easy",
+    "topic": "ideal_gas_equation",
+    "subtopic": "temperature_units",
+    "tags": [
+      "ideal_gas_equation",
+      "temperature",
+      "Kelvin",
+      "Celsius"
+    ],
+    "learning_objective": "Derive Ideal Gas Equation using Boyle's, Charles' and Avogadro's law.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

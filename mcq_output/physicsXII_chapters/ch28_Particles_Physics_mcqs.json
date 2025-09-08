@@ -1,0 +1,599 @@
+[
+  {
+    "id": "physics_xii_ch28_mcq_001",
+    "question": "Which of the following is NOT considered a fundamental force in nature?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Strong nuclear force",
+      "B": "Weak nuclear force",
+      "C": "Frictional force",
+      "D": "Electromagnetic force"
+    },
+    "correct_answer": "C",
+    "explanation": "The four fundamental forces of nature are the strong nuclear force, weak nuclear force, electromagnetic force, and gravitational force. Frictional force is a macroscopic force that arises from the electromagnetic interactions between atoms and molecules, and is not considered a fundamental force.",
+    "difficulty": "easy",
+    "topic": "fundamental_forces",
+    "subtopic": "introduction",
+    "tags": [
+      "fundamental_forces",
+      "basic_concepts"
+    ],
+    "learning_objective": "Identify the four fundamental forces of nature.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_28",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch28_mcq_002",
+    "question": "What is the approximate range of the strong nuclear force?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Infinite",
+      "B": "Short range (approximately $10^{-15}$ m)",
+      "C": "Long range (up to $10^{-9}$ m)",
+      "D": "Medium range (approximately $10^{-12}$ m)"
+    },
+    "correct_answer": "B",
+    "explanation": "The strong nuclear force is a very short-range force, acting only over distances comparable to the size of an atomic nucleus, approximately $10^{-15}$ meters (1 femtometer). This short range is why it only binds quarks within hadrons and nucleons within the nucleus, but does not extend beyond the nucleus.",
+    "difficulty": "easy",
+    "topic": "fundamental_forces",
+    "subtopic": "strong_force",
+    "tags": [
+      "strong_force",
+      "range",
+      "nuclear_physics"
+    ],
+    "learning_objective": "Recall the range of the strong nuclear force.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_28",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "physics_xii_ch28_mcq_003",
+    "question": "Which particle is the mediator of the electromagnetic force?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Gluon",
+      "B": "Photon",
+      "C": "W and Z bosons",
+      "D": "Graviton"
+    },
+    "correct_answer": "B",
+    "explanation": "According to the Standard Model, the electromagnetic force is mediated by the exchange of photons. Gluons mediate the strong force, W and Z bosons mediate the weak force, and gravitons are hypothesized mediators of gravity.",
+    "difficulty": "easy",
+    "topic": "fundamental_forces",
+    "subtopic": "electromagnetic_force",
+    "tags": [
+      "electromagnetic_force",
+      "mediator_particles",
+      "photon"
+    ],
+    "learning_objective": "Identify the mediator particle for the electromagnetic force.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_28",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch28_mcq_004",
+    "question": "Particles that experience the strong nuclear force are called:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Leptons",
+      "B": "Bosons",
+      "C": "Hadrons",
+      "D": "Photons"
+    },
+    "correct_answer": "C",
+    "explanation": "Hadrons are composite particles made of quarks (e.g., protons, neutrons, pions) and are therefore subject to the strong nuclear force. Leptons (e.g., electrons, neutrinos) do not experience the strong force. Bosons are force-carrying particles, and photons are mediators of the electromagnetic force.",
+    "difficulty": "easy",
+    "topic": "particle_classification",
+    "subtopic": "hadrons",
+    "tags": [
+      "hadrons",
+      "strong_force",
+      "quarks"
+    ],
+    "learning_objective": "Classify particles based on their interaction with fundamental forces.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_28",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.88
+  },
+  {
+    "id": "physics_xii_ch28_mcq_005",
+    "question": "Which of the following is a lepton?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Proton",
+      "B": "Neutron",
+      "C": "Electron",
+      "D": "Pion"
+    },
+    "correct_answer": "C",
+    "explanation": "Leptons are fundamental particles that do not experience the strong nuclear force. The electron is a fundamental lepton. Protons, neutrons, and pions are all hadrons, meaning they are composed of quarks and experience the strong force.",
+    "difficulty": "easy",
+    "topic": "particle_classification",
+    "subtopic": "leptons",
+    "tags": [
+      "leptons",
+      "electron",
+      "fundamental_particles"
+    ],
+    "learning_objective": "Identify examples of leptons.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_28",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch28_mcq_006",
+    "question": "What is the electric charge of an up quark?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$+\frac{1}{3}e$",
+      "B": "$-\frac{1}{3}e$",
+      "C": "$+\frac{2}{3}e$",
+      "D": "$-\frac{2}{3}e$"
+    },
+    "correct_answer": "C",
+    "explanation": "Up (u), charm (c), and top (t) quarks have an electric charge of $q = +\frac{2}{3}e$. Down (d), strange (s), and bottom (b) quarks have an electric charge of $q = -\frac{1}{3}e$.",
+    "difficulty": "easy",
+    "topic": "quarks",
+    "subtopic": "quark_properties",
+    "tags": [
+      "quarks",
+      "charge",
+      "up_quark"
+    ],
+    "learning_objective": "Recall the electric charge of an up quark.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_28",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "physics_xii_ch28_mcq_007",
+    "question": "Which of the following particles is an antiparticle of the electron?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Proton",
+      "B": "Neutron",
+      "C": "Positron",
+      "D": "Photon"
+    },
+    "correct_answer": "C",
+    "explanation": "An antiparticle has the same mass as its corresponding particle but opposite charge and other quantum numbers. The positron is the antiparticle of the electron, having the same mass but a charge of $+e$ instead of $-e$.",
+    "difficulty": "easy",
+    "topic": "antiparticles",
+    "subtopic": "electron_positron",
+    "tags": [
+      "antiparticles",
+      "positron",
+      "electron"
+    ],
+    "learning_objective": "Identify the antiparticle of the electron.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_28",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch28_mcq_008",
+    "question": "What is the baryon number of a proton?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$0$",
+      "B": "$+1$",
+      "C": "$-1$",
+      "D": "$+\frac{1}{3}$"
+    },
+    "correct_answer": "B",
+    "explanation": "Baryons (like protons and neutrons) have a baryon number of $+1$. Antibaryons have a baryon number of $-1$. Quarks have a baryon number of $+\frac{1}{3}$, and antiquarks have $-\frac{1}{3}$. Leptons and mesons have a baryon number of $0$.",
+    "difficulty": "easy",
+    "topic": "conservation_laws",
+    "subtopic": "baryon_number",
+    "tags": [
+      "baryon_number",
+      "proton",
+      "conservation_laws"
+    ],
+    "learning_objective": "Recall the baryon number of a proton.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_28",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.88
+  },
+  {
+    "id": "physics_xii_ch28_mcq_009",
+    "question": "Which of the following is a type of hadron that consists of three quarks?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Meson",
+      "B": "Baryon",
+      "C": "Lepton",
+      "D": "Photon"
+    },
+    "correct_answer": "B",
+    "explanation": "Hadrons are composite particles made of quarks. Baryons are hadrons composed of three quarks (e.g., protons, neutrons). Mesons are hadrons composed of a quark-antiquark pair. Leptons and photons are not hadrons.",
+    "difficulty": "easy",
+    "topic": "hadrons",
+    "subtopic": "baryons",
+    "tags": [
+      "hadrons",
+      "baryons",
+      "quarks"
+    ],
+    "learning_objective": "Distinguish between baryons and mesons based on quark composition.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_28",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch28_mcq_010",
+    "question": "The Standard Model of particle physics describes which fundamental forces?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Strong, weak, and gravitational",
+      "B": "Electromagnetic, weak, and gravitational",
+      "C": "Strong, weak, and electromagnetic",
+      "D": "All four fundamental forces"
+    },
+    "correct_answer": "C",
+    "explanation": "The Standard Model successfully describes the strong, weak, and electromagnetic forces and their interactions. It does not, however, incorporate gravity. Gravity is described by Einstein's theory of general relativity, and a quantum theory of gravity that unifies it with the other forces is still an active area of research.",
+    "difficulty": "easy",
+    "topic": "standard_model",
+    "subtopic": "overview",
+    "tags": [
+      "standard_model",
+      "fundamental_forces",
+      "limitations"
+    ],
+    "learning_objective": "State which fundamental forces are described by the Standard Model.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_28",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.88
+  },
+  {
+    "id": "physics_xii_ch28_mcq_011",
+    "question": "What is the primary function of a particle accelerator?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "To detect cosmic rays",
+      "B": "To increase the kinetic energy of charged particles",
+      "C": "To measure the mass of particles",
+      "D": "To observe distant galaxies"
+    },
+    "correct_answer": "B",
+    "explanation": "Particle accelerators are designed to accelerate charged particles (like electrons or protons) to very high kinetic energies, often approaching the speed of light. These high-energy particles are then used to probe the structure of matter or create new particles in collisions.",
+    "difficulty": "easy",
+    "topic": "particle_accelerators",
+    "subtopic": "function",
+    "tags": [
+      "particle_accelerators",
+      "kinetic_energy",
+      "experimental_physics"
+    ],
+    "learning_objective": "Understand the basic function of a particle accelerator.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_28",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "physics_xii_ch28_mcq_012",
+    "question": "Which quantum number is conserved in all known particle interactions?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Strangeness",
+      "B": "Isospin",
+      "C": "Electric charge",
+      "D": "Lepton number (for individual lepton families)"
+    },
+    "correct_answer": "C",
+    "explanation": "Electric charge is a strictly conserved quantity in all known particle interactions (strong, weak, electromagnetic, and gravitational). Strangeness and isospin are conserved in strong and electromagnetic interactions but not necessarily in weak interactions. Lepton number for each family (electron, muon, tau) is generally conserved, but there are theoretical possibilities of slight violations (e.g., neutrino oscillations).",
+    "difficulty": "easy",
+    "topic": "conservation_laws",
+    "subtopic": "charge_conservation",
+    "tags": [
+      "conservation_laws",
+      "electric_charge",
+      "fundamental_principles"
+    ],
+    "learning_objective": "Identify universally conserved quantum numbers.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_28",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch28_mcq_013",
+    "question": "What is the spin of a fermion?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Integer spin ($0, 1, 2, ...$)",
+      "B": "Half-integer spin ($\frac{1}{2}, \frac{3}{2}, \frac{5}{2}, ...$)",
+      "C": "Zero spin only",
+      "D": "Any real number spin"
+    },
+    "correct_answer": "B",
+    "explanation": "Fermions are particles with half-integer spin ($\frac{1}{2}, \frac{3}{2}, \frac{5}{2}, ...$). They obey Fermi-Dirac statistics and the Pauli exclusion principle. Bosons, on the other hand, have integer spin ($0, 1, 2, ...$) and obey Bose-Einstein statistics.",
+    "difficulty": "easy",
+    "topic": "particle_classification",
+    "subtopic": "fermions_bosons",
+    "tags": [
+      "fermions",
+      "spin",
+      "quantum_numbers"
+    ],
+    "learning_objective": "Recall the characteristic spin of fermions.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_28",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "physics_xii_ch28_mcq_014",
+    "question": "Which of the following is a fundamental particle according to the Standard Model?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Proton",
+      "B": "Neutron",
+      "C": "Muon",
+      "D": "Alpha particle"
+    },
+    "correct_answer": "C",
+    "explanation": "Fundamental particles are not composed of smaller particles. Protons and neutrons are baryons, composed of three quarks. Alpha particles are atomic nuclei (two protons and two neutrons). Muons are leptons, which are fundamental particles.",
+    "difficulty": "easy",
+    "topic": "fundamental_particles",
+    "subtopic": "leptons",
+    "tags": [
+      "fundamental_particles",
+      "muon",
+      "leptons"
+    ],
+    "learning_objective": "Distinguish between fundamental and composite particles.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_28",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.88
+  },
+  {
+    "id": "physics_xii_ch28_mcq_015",
+    "question": "What is the primary role of gluons in particle physics?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Mediating the weak force",
+      "B": "Mediating the electromagnetic force",
+      "C": "Binding quarks together within hadrons",
+      "D": "Carrying gravitational force"
+    },
+    "correct_answer": "C",
+    "explanation": "Gluons are the exchange particles (gauge bosons) of the strong nuclear force. They mediate the strong interaction between quarks, effectively binding them together to form hadrons (protons, neutrons, mesons).",
+    "difficulty": "easy",
+    "topic": "quantum_chromodynamics",
+    "subtopic": "gluons",
+    "tags": [
+      "gluons",
+      "strong_force",
+      "quarks",
+      "QCD"
+    ],
+    "learning_objective": "Describe the role of gluons in the strong interaction.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_28",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch28_mcq_016",
+    "question": "The process of a neutron decaying into a proton, an electron, and an antineutrino is an example of which fundamental interaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Strong interaction",
+      "B": "Electromagnetic interaction",
+      "C": "Weak interaction",
+      "D": "Gravitational interaction"
+    },
+    "correct_answer": "C",
+    "explanation": "Neutron beta decay ($n \rightarrow p + e^- + \bar{\nu}_e$) involves a change in quark flavor (a down quark changes to an up quark) and the creation of leptons. These processes are characteristic of the weak nuclear force, mediated by W and Z bosons.",
+    "difficulty": "medium",
+    "topic": "fundamental_forces",
+    "subtopic": "weak_force",
+    "tags": [
+      "weak_force",
+      "beta_decay",
+      "neutron_decay"
+    ],
+    "learning_objective": "Identify the weak interaction in particle decay processes.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_28",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch28_mcq_017",
+    "question": "A particle has a quark composition of `udd`. What is its electric charge?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$+1e$",
+      "B": "$0$",
+      "C": "$-1e$",
+      "D": "$+\frac{1}{3}e$"
+    },
+    "correct_answer": "B",
+    "explanation": "The electric charge of an up quark (u) is $+\frac{2}{3}e$, and the electric charge of a down quark (d) is $-\frac{1}{3}e$. For a particle with `udd` composition, the total charge is: $Q = (+\frac{2}{3}e) + (-\frac{1}{3}e) + (-\frac{1}{3}e) = (\frac{2}{3} - \frac{1}{3} - \frac{1}{3})e = 0e$. This composition corresponds to a neutron.",
+    "difficulty": "medium",
+    "topic": "quarks",
+    "subtopic": "quark_composition_charge",
+    "tags": [
+      "quarks",
+      "charge_calculation",
+      "neutron"
+    ],
+    "learning_objective": "Calculate the charge of a hadron from its quark composition.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_28",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.92
+  },
+  {
+    "id": "physics_xii_ch28_mcq_018",
+    "question": "If a particle has a baryon number of $+1$ and a charge of $+1e$, which of the following quark compositions is possible?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`uud`",
+      "B": "`udd`",
+      "C": "`uuu`",
+      "D": "`ud`"
+    },
+    "correct_answer": "A",
+    "explanation": "A baryon number of $+1$ means the particle is a baryon, composed of three quarks. So, option D (`ud`) which is a meson, is incorrect. Let's check the charge for the remaining options:\n*   A) `uud`: Charge $= (+\frac{2}{3}e) + (+\frac{2}{3}e) + (-\frac{1}{3}e) = (\frac{4}{3} - \frac{1}{3})e = +1e$. This matches the properties of a proton.\n*   B) `udd`: Charge $= (+\frac{2}{3}e) + (-\frac{1}{3}e) + (-\frac{1}{3}e) = 0e$. This is a neutron.\n*   C) `uuu`: Charge $= (+\frac{2}{3}e) + (+\frac{2}{3}e) + (+\frac{2}{3}e) = +2e$. This is a Delta baryon.",
+    "difficulty": "medium",
+    "topic": "quarks",
+    "subtopic": "hadron_composition",
+    "tags": [
+      "quarks",
+      "baryon_number",
+      "charge_calculation",
+      "proton"
+    ],
+    "learning_objective": "Determine possible quark compositions for given particle properties.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_28",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "physics_xii_ch28_mcq_019",
+    "question": "The range of the weak nuclear force is much shorter than the electromagnetic force because:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Its mediator particles (W and Z bosons) are massless.",
+      "B": "Its mediator particles (W and Z bosons) are very massive.",
+      "C": "It only acts on uncharged particles.",
+      "D": "It is a repulsive force."
+    },
+    "correct_answer": "B",
+    "explanation": "The range of a force mediated by exchange particles is inversely proportional to the mass of the mediator particles. The W and Z bosons, which mediate the weak force, are very massive (around $80-90 \text{ GeV}/c^2$). In contrast, the photon, which mediates the electromagnetic force, is massless, giving the electromagnetic force an infinite range. The massive nature of W and Z bosons severely limits the range of the weak force.",
+    "difficulty": "medium",
+    "topic": "fundamental_forces",
+    "subtopic": "weak_force_range",
+    "tags": [
+      "weak_force",
+      "range",
+      "mediator_particles",
+      "W_Z_bosons"
+    ],
+    "learning_objective": "Explain the short range of the weak nuclear force.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_28",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch28_mcq_020",
+    "question": "A meson is composed of:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Three quarks",
+      "B": "Three antiquarks",
+      "C": "A quark and an antiquark",
+      "D": "Two quarks"
+    },
+    "correct_answer": "C",
+    "explanation": "Mesons are a type of hadron that consists of a quark and an antiquark pair. Baryons consist of three quarks, and antibaryons consist of three antiquarks.",
+    "difficulty": "easy",
+    "topic": "hadrons",
+    "subtopic": "mesons",
+    "tags": [
+      "mesons",
+      "quark_antiquark",
+      "hadrons"
+    ],
+    "learning_objective": "Define the quark composition of a meson.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_28",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.88
+  },
+  {
+    "id": "physics_xii_ch28_mcq_021",
+    "question": "Which of the following particles is its own antiparticle?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Electron",
+      "B": "Proton",
+      "C": "Neutron",
+      "D": "Photon"
+    },
+    "correct_answer": "D",
+    "explanation": "A particle is its own antiparticle if it has no distinguishing quantum numbers (like charge, baryon number, lepton number, strangeness) that are opposite for its antiparticle. The photon has zero charge, zero baryon number, zero lepton number, and zero strangeness, making it its own antiparticle. Electrons, protons, and neutrons all have distinct antiparticles (positron, antiproton, antineutron, respectively).",
+    "difficulty": "medium",
+    "topic": "antiparticles",
+    "subtopic": "self_antiparticle",
+    "tags": [
+      "antiparticles",
+      "photon",
+      "quantum_numbers"
+    ],
+    "learning_objective": "Identify particles that are their own antiparticles.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_28",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch28_mcq_022",
+    "question": "The phenomenon where quarks are never observed in isolation, but only within hadrons, is known as:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Asymptotic freedom",
+      "B": "Confinement",
+      "C": "Color neutrality",
+      "D": "Chiral symmetry breaking"
+    },
+    "correct_answer": "B",
+    "explanation": "Confinement is the phenomenon in quantum chromodynamics (QCD) where quarks and gluons cannot be isolated from hadrons. The strong force between quarks increases with distance, making it energetically impossible to separate them. Asymptotic freedom describes the weakening of the strong force at very short distances (high energies). Color neutrality refers to the requirement that all observable hadrons must be colorless.",
+    "difficulty": "medium",
+    "topic": "quantum_chromodynamics",
+    "subtopic": "confinement",
+    "tags": [
+      "QCD",
+      "confinement",
+      "quarks",
+      "strong_force"
+    ],
+    "learning_objective": "Define quark confinement.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_28",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.92
+  }
+]

@@ -1,0 +1,558 @@
+[
+  {
+    "id": "bio_xii_ch19_mcq_001",
+    "question": "Which of the following best defines ethology?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The study of human behavior in social contexts.",
+      "B": "The scientific study of animal behavior, usually in natural conditions.",
+      "C": "The study of plant responses to environmental stimuli.",
+      "D": "The analysis of animal anatomy and physiology."
+    },
+    "correct_answer": "B",
+    "explanation": "Ethology is the scientific study of animal behavior, often focusing on behavior in natural environments. It seeks to understand the 'why' and 'how' of animal actions. Option A is sociology/psychology, C is botany, and D is anatomy/physiology.",
+    "difficulty": "easy",
+    "topic": "introduction_to_ethology",
+    "subtopic": "definition",
+    "tags": [
+      "ethology",
+      "animal_behavior",
+      "definition"
+    ],
+    "learning_objective": "Define ethology and its scope.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch19_mcq_002",
+    "question": "A fixed action pattern (FAP) is an example of what type of behavior?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Learned behavior",
+      "B": "Conditioned behavior",
+      "C": "Innate behavior",
+      "D": "Habituated behavior"
+    },
+    "correct_answer": "C",
+    "explanation": "Fixed action patterns (FAPs) are highly stereotyped, unlearned, and unchangeable behavioral sequences that are carried to completion once initiated. They are characteristic of innate behaviors, which are genetically programmed and do not require prior experience.",
+    "difficulty": "easy",
+    "topic": "innate_behavior",
+    "subtopic": "fixed_action_patterns",
+    "tags": [
+      "innate_behavior",
+      "FAP",
+      "fixed_action_pattern",
+      "genetics"
+    ],
+    "learning_objective": "Identify fixed action patterns as innate behaviors.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch19_mcq_003",
+    "question": "Which scientist is famously associated with the study of imprinting in geese?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Ivan Pavlov",
+      "B": "B.F. Skinner",
+      "C": "Konrad Lorenz",
+      "D": "Niko Tinbergen"
+    },
+    "correct_answer": "C",
+    "explanation": "Konrad Lorenz was a pioneer in ethology, particularly known for his work on imprinting in greylag geese. He demonstrated that goslings would follow the first moving object they saw during a critical period after hatching, often imprinting on him.",
+    "difficulty": "easy",
+    "topic": "learned_behavior",
+    "subtopic": "imprinting",
+    "tags": [
+      "imprinting",
+      "Lorenz",
+      "ethology",
+      "scientists"
+    ],
+    "learning_objective": "Recall key figures in ethology and their contributions.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch19_mcq_004",
+    "question": "A dog salivates at the sound of a bell after being repeatedly fed immediately after the bell rings. This is an example of:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Operant conditioning",
+      "B": "Classical conditioning",
+      "C": "Habituation",
+      "D": "Imprinting"
+    },
+    "correct_answer": "B",
+    "explanation": "This scenario describes classical conditioning, where an animal learns to associate a neutral stimulus (the bell) with a significant stimulus (food), leading to a conditioned response (salivation). Ivan Pavlov's experiments with dogs are the classic example.",
+    "difficulty": "medium",
+    "topic": "learned_behavior",
+    "subtopic": "classical_conditioning",
+    "tags": [
+      "classical_conditioning",
+      "Pavlov",
+      "associative_learning",
+      "dogs"
+    ],
+    "learning_objective": "Distinguish between classical and operant conditioning.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch19_mcq_005",
+    "question": "Which type of communication involves the release of chemical signals that influence the behavior of other individuals of the same species?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Visual communication",
+      "B": "Auditory communication",
+      "C": "Tactile communication",
+      "D": "Chemical communication"
+    },
+    "correct_answer": "D",
+    "explanation": "Chemical communication involves the use of pheromones or other chemical signals to convey information between individuals. This is common in insects for mating, alarm, and trail marking. Visual, auditory, and tactile communication use different sensory modalities.",
+    "difficulty": "easy",
+    "topic": "communication",
+    "subtopic": "types_of_communication",
+    "tags": [
+      "communication",
+      "chemical_signals",
+      "pheromones"
+    ],
+    "learning_objective": "Identify different modes of animal communication.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch19_mcq_006",
+    "question": "A bird learns to avoid eating monarch butterflies after a negative experience (vomiting) due to their toxicity. This is an example of:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Habituation",
+      "B": "Sensitization",
+      "C": "Trial-and-error learning",
+      "D": "Imprinting"
+    },
+    "correct_answer": "C",
+    "explanation": "Trial-and-error learning, a form of operant conditioning, is where an animal learns to associate a behavior with a consequence. In this case, the bird tries eating the butterfly (trial), experiences a negative outcome (error/punishment), and learns to avoid that behavior in the future.",
+    "difficulty": "medium",
+    "topic": "learned_behavior",
+    "subtopic": "operant_conditioning",
+    "tags": [
+      "operant_conditioning",
+      "trial_and_error",
+      "learning",
+      "avoidance_behavior"
+    ],
+    "learning_objective": "Apply concepts of operant conditioning to real-world examples.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch19_mcq_007",
+    "question": "Which of the following describes a proximate cause of behavior?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "A bird sings to attract a mate and reproduce.",
+      "B": "A bird sings because increasing day length stimulates hormone production.",
+      "C": "A bird sings to defend its territory from rivals.",
+      "D": "A bird sings because singing increases its fitness."
+    },
+    "correct_answer": "B",
+    "explanation": "Proximate causes address the 'how' a behavior occurs, focusing on the immediate physiological, neurological, and developmental mechanisms. Option B describes the hormonal mechanism. Options A, C, and D describe ultimate causes, which address the 'why' a behavior evolved, focusing on its evolutionary significance and contribution to fitness.",
+    "difficulty": "medium",
+    "topic": "introduction_to_ethology",
+    "subtopic": "proximate_vs_ultimate_causes",
+    "tags": [
+      "proximate_cause",
+      "ultimate_cause",
+      "ethology",
+      "mechanisms"
+    ],
+    "learning_objective": "Differentiate between proximate and ultimate causes of behavior.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch19_mcq_008",
+    "question": "The 'waggle dance' of honeybees is a complex form of communication primarily used to:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Signal danger to the hive.",
+      "B": "Indicate the location and distance of food sources.",
+      "C": "Attract mates during breeding season.",
+      "D": "Establish dominance hierarchies within the hive."
+    },
+    "correct_answer": "B",
+    "explanation": "The waggle dance, studied extensively by Karl von Frisch, is a sophisticated form of communication used by honeybees to inform other bees about the direction and distance to rich food sources. The angle of the waggle run relative to the sun indicates direction, and the duration of the waggle indicates distance.",
+    "difficulty": "medium",
+    "topic": "communication",
+    "subtopic": "bee_waggle_dance",
+    "tags": [
+      "communication",
+      "honeybees",
+      "waggle_dance",
+      "von_Frisch"
+    ],
+    "learning_objective": "Describe specific examples of animal communication.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch19_mcq_009",
+    "question": "Which of the following is an example of a circadian rhythm?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Bird migration patterns occurring annually.",
+      "B": "The daily sleep-wake cycle in humans.",
+      "C": "Tidal rhythms influencing marine organisms.",
+      "D": "Seasonal changes in fur color in arctic animals."
+    },
+    "correct_answer": "B",
+    "explanation": "Circadian rhythms are biological processes that oscillate with a period of approximately 24 hours, such as the sleep-wake cycle, hormone secretion, and body temperature regulation. Annual migration (A) and seasonal fur changes (D) are circannual rhythms. Tidal rhythms (C) are typically circatidal.",
+    "difficulty": "easy",
+    "topic": "biological_rhythms",
+    "subtopic": "circadian_rhythms",
+    "tags": [
+      "biological_rhythms",
+      "circadian",
+      "sleep_wake_cycle"
+    ],
+    "learning_objective": "Define and identify examples of circadian rhythms.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch19_mcq_010",
+    "question": "A male stickleback fish attacks any red-bellied object entering its territory. The red belly acts as a:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Conditioned stimulus",
+      "B": "Sign stimulus (releaser)",
+      "C": "Reinforcer",
+      "D": "Habituating stimulus"
+    },
+    "correct_answer": "B",
+    "explanation": "The red belly is a classic example of a sign stimulus or releaser. It is a specific external sensory cue that triggers a fixed action pattern (FAP), in this case, the aggressive behavior of the male stickleback. This was famously studied by Niko Tinbergen.",
+    "difficulty": "medium",
+    "topic": "innate_behavior",
+    "subtopic": "sign_stimuli",
+    "tags": [
+      "sign_stimulus",
+      "releaser",
+      "FAP",
+      "stickleback",
+      "Tinbergen"
+    ],
+    "learning_objective": "Explain the concept of sign stimuli and their role in innate behavior.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch19_mcq_011",
+    "question": "Which of the following is NOT a characteristic of innate behavior?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Genetically programmed",
+      "B": "Requires prior experience",
+      "C": "Stereotyped and predictable",
+      "D": "Performed correctly the first time"
+    },
+    "correct_answer": "B",
+    "explanation": "Innate behaviors are genetically programmed and do not require prior experience or learning. They are often stereotyped, predictable, and performed correctly upon the first encounter with the appropriate stimulus. Behaviors requiring prior experience are learned behaviors.",
+    "difficulty": "easy",
+    "topic": "innate_behavior",
+    "subtopic": "characteristics",
+    "tags": [
+      "innate_behavior",
+      "characteristics",
+      "genetics",
+      "learning"
+    ],
+    "learning_objective": "List the characteristics of innate behavior.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch19_mcq_012",
+    "question": "A rat learns to press a lever to receive a food pellet. This is an example of:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Classical conditioning",
+      "B": "Habituation",
+      "C": "Operant conditioning",
+      "D": "Imprinting"
+    },
+    "correct_answer": "C",
+    "explanation": "This is a classic example of operant conditioning, specifically positive reinforcement. The rat performs a voluntary action (pressing the lever) and receives a reward (food pellet), which increases the likelihood of repeating the action. B.F. Skinner's work with 'Skinner boxes' demonstrated this.",
+    "difficulty": "medium",
+    "topic": "learned_behavior",
+    "subtopic": "operant_conditioning",
+    "tags": [
+      "operant_conditioning",
+      "Skinner",
+      "reinforcement",
+      "learning"
+    ],
+    "learning_objective": "Identify examples of operant conditioning.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch19_mcq_013",
+    "question": "What is the term for a temporary loss of responsiveness to a stimulus that conveys little or no new information?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Sensitization",
+      "B": "Imprinting",
+      "C": "Habituation",
+      "D": "Conditioning"
+    },
+    "correct_answer": "C",
+    "explanation": "Habituation is a simple form of learning where an animal decreases or ceases its response to a repeated stimulus that is harmless and irrelevant. For example, birds in a city eventually ignore the sounds of traffic.",
+    "difficulty": "easy",
+    "topic": "learned_behavior",
+    "subtopic": "habituation",
+    "tags": [
+      "habituation",
+      "learning",
+      "stimulus_response"
+    ],
+    "learning_objective": "Define habituation and provide an example.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch19_mcq_014",
+    "question": "The study of the neural mechanisms underlying animal behavior is known as:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Ethology",
+      "B": "Ecology",
+      "C": "Neuroethology",
+      "D": "Physiology"
+    },
+    "correct_answer": "C",
+    "explanation": "Neuroethology is a multidisciplinary field that combines neuroscience and ethology to study the neural control of natural animal behavior. It investigates how the nervous system translates sensory information into motor commands that result in specific behaviors.",
+    "difficulty": "medium",
+    "topic": "neuroethology",
+    "subtopic": "definition",
+    "tags": [
+      "neuroethology",
+      "nervous_system",
+      "behavior",
+      "ethology"
+    ],
+    "learning_objective": "Understand the scope of neuroethology.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch19_mcq_015",
+    "question": "Which of the following behaviors is most likely to be influenced by a critical period?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "A dog learning new tricks at any age.",
+      "B": "A bird's song development, requiring exposure to adult songs early in life.",
+      "C": "A fish avoiding a predator after a near-miss.",
+      "D": "A spider spinning a web without prior instruction."
+    },
+    "correct_answer": "B",
+    "explanation": "A critical period is a limited developmental phase during which certain behaviors can be learned. Imprinting is a classic example, but bird song learning also often has a critical period where exposure to the species-specific song is necessary for proper development. Option A is general learning, C is associative learning, and D is innate behavior.",
+    "difficulty": "medium",
+    "topic": "learned_behavior",
+    "subtopic": "critical_period",
+    "tags": [
+      "critical_period",
+      "imprinting",
+      "bird_song",
+      "development"
+    ],
+    "learning_objective": "Explain the concept of a critical period in learning.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch19_mcq_016",
+    "question": "A group of meerkats takes turns standing guard while others forage. This behavior, where an individual risks itself for the benefit of the group, is an example of:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Selfish behavior",
+      "B": "Altruism",
+      "C": "Dominance hierarchy",
+      "D": "Territoriality"
+    },
+    "correct_answer": "B",
+    "explanation": "Altruism is behavior that reduces an individual's fitness while increasing the fitness of other individuals in the population. The meerkat on guard duty is at higher risk of predation but benefits the foraging group. This is often explained by kin selection or reciprocal altruism.",
+    "difficulty": "medium",
+    "topic": "social_behavior",
+    "subtopic": "altruism",
+    "tags": [
+      "altruism",
+      "social_behavior",
+      "kin_selection",
+      "meerkats"
+    ],
+    "learning_objective": "Define altruism and provide examples.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch19_mcq_017",
+    "question": "Which type of learning involves solving a problem without prior experience, often through a sudden understanding?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Habituation",
+      "B": "Classical conditioning",
+      "C": "Insight learning",
+      "D": "Imprinting"
+    },
+    "correct_answer": "C",
+    "explanation": "Insight learning, or cognition, is a complex form of learning where an animal applies past experiences to solve a new problem without trial and error. It often appears as a sudden 'aha!' moment. Chimpanzees stacking boxes to reach food is a classic example.",
+    "difficulty": "medium",
+    "topic": "learned_behavior",
+    "subtopic": "insight_learning",
+    "tags": [
+      "insight_learning",
+      "cognition",
+      "problem_solving"
+    ],
+    "learning_objective": "Describe insight learning and its characteristics.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch19_mcq_018",
+    "question": "Migration is an example of a behavior often influenced by:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Only learned experiences.",
+      "B": "Only innate programming.",
+      "C": "A combination of innate and learned factors.",
+      "D": "Random environmental cues."
+    },
+    "correct_answer": "C",
+    "explanation": "Migration is a complex behavior often involving both innate components (e.g., the urge to migrate, general direction) and learned components (e.g., specific routes, landmarks, navigation cues learned from parents or other individuals). It's a prime example of how nature and nurture interact.",
+    "difficulty": "medium",
+    "topic": "migration",
+    "subtopic": "innate_vs_learned",
+    "tags": [
+      "migration",
+      "innate",
+      "learned",
+      "nature_nurture"
+    ],
+    "learning_objective": "Explain the interplay of innate and learned factors in complex behaviors like migration.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch19_mcq_019",
+    "question": "A male bird performs an elaborate dance to attract a female. This is an example of:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Territorial defense",
+      "B": "Foraging behavior",
+      "C": "Courtship display",
+      "D": "Alarm signal"
+    },
+    "correct_answer": "C",
+    "explanation": "A courtship display is a set of ritualized behaviors performed by animals to attract and choose mates. These displays often involve visual, auditory, or chemical signals and are crucial for successful reproduction.",
+    "difficulty": "easy",
+    "topic": "social_behavior",
+    "subtopic": "reproductive_behavior",
+    "tags": [
+      "courtship",
+      "reproductive_behavior",
+      "communication",
+      "birds"
+    ],
+    "learning_objective": "Identify examples of reproductive behaviors.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch19_mcq_020",
+    "question": "In a study, a group of birds was observed foraging. On average, they spent `$60\\%$` of their time searching for food and `$40\\%$` of their time consuming it. If a bird forages for `$10$` hours, how much time (in hours) is spent consuming food?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$4$ hours",
+      "B": "$6$ hours",
+      "C": "$2.4$ hours",
+      "D": "$4.8$ hours"
+    },
+    "correct_answer": "A",
+    "explanation": "The birds spend `$40\\%$` of their time consuming food. If they forage for `$10$` hours, the time spent consuming food is calculated as: `$0.40 \times 10 \text{ hours} = 4 \text{ hours}$`.",
+    "difficulty": "easy",
+    "topic": "foraging_behavior",
+    "subtopic": "time_allocation",
+    "tags": [
+      "numerical_problem",
+      "foraging",
+      "percentages",
+      "time_allocation"
+    ],
+    "learning_objective": "Calculate time allocation based on percentages.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

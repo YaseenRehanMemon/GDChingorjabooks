@@ -1,0 +1,519 @@
+[
+  {
+    "id": "bio_xii_ch17_mcq_001",
+    "question": "Which of the following is the primary function of the nervous system?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Digestion of food",
+      "B": "Coordination and control of body activities",
+      "C": "Production of hormones",
+      "D": "Transport of oxygen"
+    },
+    "correct_answer": "B",
+    "explanation": "The nervous system is responsible for receiving stimuli, processing information, and coordinating the body's responses, thus controlling and integrating various body activities. Digestion, hormone production, and oxygen transport are functions of other organ systems.",
+    "difficulty": "easy",
+    "topic": "introduction_to_nervous_system",
+    "subtopic": "functions",
+    "tags": [
+      "nervous_system",
+      "coordination",
+      "control"
+    ],
+    "learning_objective": "Identify the primary role of the nervous system.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch17_mcq_002",
+    "question": "The structural and functional unit of the nervous system is the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Nephron",
+      "B": "Alveolus",
+      "C": "Neuron",
+      "D": "Sarcomere"
+    },
+    "correct_answer": "C",
+    "explanation": "The neuron is the basic structural and functional unit of the nervous system, specialized for transmitting electrical signals. Nephrons are units of the kidney, alveoli are in the lungs, and sarcomeres are in muscle cells.",
+    "difficulty": "easy",
+    "topic": "neuron_structure",
+    "subtopic": "basic_unit",
+    "tags": [
+      "neuron",
+      "nervous_system",
+      "basic_unit"
+    ],
+    "learning_objective": "Recall the basic unit of the nervous system.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch17_mcq_003",
+    "question": "Which part of a neuron receives incoming signals from other neurons?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Axon",
+      "B": "Cell body",
+      "C": "Dendrite",
+      "D": "Myelin sheath"
+    },
+    "correct_answer": "C",
+    "explanation": "Dendrites are tree-like extensions of the neuron that receive chemical signals from other neurons and transmit them towards the cell body. The axon transmits signals away from the cell body, and the myelin sheath insulates the axon.",
+    "difficulty": "easy",
+    "topic": "neuron_structure",
+    "subtopic": "dendrites",
+    "tags": [
+      "neuron",
+      "dendrite",
+      "signal_reception"
+    ],
+    "learning_objective": "Identify the part of a neuron responsible for receiving signals.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch17_mcq_004",
+    "question": "The resting membrane potential of a neuron is typically around:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$+30 \text{ mV}$",
+      "B": "$0 \text{ mV}$",
+      "C": "$-70 \text{ mV}$",
+      "D": "$-90 \text{ mV}$"
+    },
+    "correct_answer": "C",
+    "explanation": "The resting membrane potential of a neuron is maintained at approximately `$-70 \text{ mV}$`, meaning the inside of the neuron is negatively charged relative to the outside. This is primarily due to the action of the `$Na^+/K^+$` pump and differential ion permeability.",
+    "difficulty": "easy",
+    "topic": "nerve_impulse",
+    "subtopic": "resting_potential",
+    "tags": [
+      "resting_potential",
+      "neuron",
+      "membrane_potential"
+    ],
+    "learning_objective": "State the typical value of the resting membrane potential.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch17_mcq_005",
+    "question": "Which ion primarily rushes into the neuron during the depolarization phase of an action potential?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$K^+$",
+      "B": "$Na^+$",
+      "C": "$Cl^-$",
+      "D": "$Ca^{2+}$"
+    },
+    "correct_answer": "B",
+    "explanation": "During depolarization, voltage-gated `$Na^+$` channels open, allowing `$Na^+$` ions to rapidly flow into the cell, making the inside of the membrane more positive. `$K^+$` ions are primarily involved in repolarization.",
+    "difficulty": "easy",
+    "topic": "nerve_impulse",
+    "subtopic": "depolarization",
+    "tags": [
+      "action_potential",
+      "depolarization",
+      "sodium_ions"
+    ],
+    "learning_objective": "Identify the ion responsible for depolarization.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch17_mcq_006",
+    "question": "The part of the brain responsible for maintaining balance and coordination is the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Cerebrum",
+      "B": "Thalamus",
+      "C": "Cerebellum",
+      "D": "Medulla oblongata"
+    },
+    "correct_answer": "C",
+    "explanation": "The cerebellum is crucial for coordinating voluntary movements, maintaining posture, balance, and equilibrium. The cerebrum is involved in higher cognitive functions, the thalamus is a relay station, and the medulla oblongata controls vital involuntary functions.",
+    "difficulty": "easy",
+    "topic": "central_nervous_system",
+    "subtopic": "cerebellum",
+    "tags": [
+      "brain",
+      "cerebellum",
+      "balance",
+      "coordination"
+    ],
+    "learning_objective": "Identify the brain region for balance and coordination.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch17_mcq_007",
+    "question": "Which type of neuron carries signals from sensory receptors to the central nervous system?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Motor neuron",
+      "B": "Interneuron",
+      "C": "Sensory neuron",
+      "D": "Glial cell"
+    },
+    "correct_answer": "C",
+    "explanation": "Sensory (afferent) neurons transmit impulses from sensory receptors (e.g., in the skin, eyes) towards the central nervous system. Motor (efferent) neurons carry signals from the CNS to effectors, and interneurons connect neurons within the CNS.",
+    "difficulty": "easy",
+    "topic": "neuron_types",
+    "subtopic": "sensory_neuron",
+    "tags": [
+      "neuron_types",
+      "sensory_neuron",
+      "afferent"
+    ],
+    "learning_objective": "Distinguish between different types of neurons.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch17_mcq_008",
+    "question": "The 'all-or-none' law states that:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "A neuron either fires completely or not at all.",
+      "B": "All neurons in a nerve fire simultaneously.",
+      "C": "The strength of an action potential depends on the strength of the stimulus.",
+      "D": "Only strong stimuli can generate an action potential."
+    },
+    "correct_answer": "A",
+    "explanation": "The 'all-or-none' law dictates that if a stimulus reaches the threshold potential, an action potential of a fixed magnitude will be generated. If the stimulus is below the threshold, no action potential will occur. The strength of the action potential is independent of the stimulus strength once the threshold is met.",
+    "difficulty": "easy",
+    "topic": "nerve_impulse",
+    "subtopic": "all_or_none_law",
+    "tags": [
+      "action_potential",
+      "all_or_none",
+      "threshold"
+    ],
+    "learning_objective": "Define the 'all-or-none' law of nerve impulse.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch17_mcq_009",
+    "question": "Which neurotransmitter is primarily associated with the 'fight or flight' response in the sympathetic nervous system?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Acetylcholine",
+      "B": "Dopamine",
+      "C": "Norepinephrine",
+      "D": "GABA"
+    },
+    "correct_answer": "C",
+    "explanation": "Norepinephrine (also known as noradrenaline) is the primary neurotransmitter released by postganglionic sympathetic neurons, mediating the 'fight or flight' responses. Acetylcholine is the primary neurotransmitter for the parasympathetic system and preganglionic sympathetic neurons.",
+    "difficulty": "easy",
+    "topic": "autonomic_nervous_system",
+    "subtopic": "sympathetic_neurotransmitters",
+    "tags": [
+      "neurotransmitter",
+      "sympathetic",
+      "norepinephrine",
+      "fight_or_flight"
+    ],
+    "learning_objective": "Identify key neurotransmitters in the ANS.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch17_mcq_010",
+    "question": "The myelin sheath around an axon is formed by which type of cells in the peripheral nervous system?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Astrocytes",
+      "B": "Oligodendrocytes",
+      "C": "Schwann cells",
+      "D": "Microglia"
+    },
+    "correct_answer": "C",
+    "explanation": "In the peripheral nervous system (PNS), Schwann cells form the myelin sheath that insulates axons. Oligodendrocytes perform this function in the central nervous system (CNS). Astrocytes and microglia are other types of glial cells with different functions.",
+    "difficulty": "easy",
+    "topic": "neuron_structure",
+    "subtopic": "myelin_sheath",
+    "tags": [
+      "myelin_sheath",
+      "schwann_cells",
+      "PNS",
+      "glial_cells"
+    ],
+    "learning_objective": "Recall the cells forming the myelin sheath in the PNS.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch17_mcq_011",
+    "question": "Which part of the brain is responsible for regulating vital involuntary functions like breathing, heart rate, and blood pressure?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Cerebrum",
+      "B": "Cerebellum",
+      "C": "Medulla oblongata",
+      "D": "Hypothalamus"
+    },
+    "correct_answer": "C",
+    "explanation": "The medulla oblongata, part of the brainstem, contains centers that control essential involuntary functions such as respiration, heart rate, and blood pressure. The cerebrum handles higher thought, the cerebellum coordinates movement, and the hypothalamus regulates homeostasis.",
+    "difficulty": "easy",
+    "topic": "central_nervous_system",
+    "subtopic": "medulla_oblongata",
+    "tags": [
+      "brain",
+      "medulla_oblongata",
+      "vital_functions",
+      "involuntary_control"
+    ],
+    "learning_objective": "Identify the brain region controlling vital involuntary functions.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch17_mcq_012",
+    "question": "The junction between two neurons where a nerve impulse is transmitted is called a:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Node of Ranvier",
+      "B": "Synapse",
+      "C": "Axon hillock",
+      "D": "Dendrite"
+    },
+    "correct_answer": "B",
+    "explanation": "A synapse is the specialized junction where one neuron communicates with another neuron or an effector cell, typically through the release of neurotransmitters. Nodes of Ranvier are gaps in the myelin sheath, and the axon hillock is where the action potential is initiated.",
+    "difficulty": "easy",
+    "topic": "synaptic_transmission",
+    "subtopic": "synapse_definition",
+    "tags": [
+      "synapse",
+      "nerve_impulse",
+      "neurotransmission"
+    ],
+    "learning_objective": "Define a synapse.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch17_mcq_013",
+    "question": "Which component of a reflex arc acts as the decision-making center, often involving interneurons?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Receptor",
+      "B": "Effector",
+      "C": "Sensory neuron",
+      "D": "Integration center"
+    },
+    "correct_answer": "D",
+    "explanation": "The integration center, typically located in the central nervous system (spinal cord or brain), processes the sensory information and determines the appropriate motor response. It often involves interneurons connecting sensory and motor neurons. The receptor detects the stimulus, the sensory neuron carries the signal to the CNS, and the effector carries out the response.",
+    "difficulty": "easy",
+    "topic": "reflex_arc",
+    "subtopic": "integration_center",
+    "tags": [
+      "reflex_arc",
+      "integration_center",
+      "interneuron"
+    ],
+    "learning_objective": "Identify the components of a reflex arc.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch17_mcq_014",
+    "question": "The process of nerve impulse jumping from one Node of Ranvier to the next is called:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Continuous conduction",
+      "B": "Saltatory conduction",
+      "C": "Synaptic transmission",
+      "D": "Depolarization"
+    },
+    "correct_answer": "B",
+    "explanation": "Saltatory conduction is the propagation of action potentials along myelinated axons from one Node of Ranvier to the next, significantly increasing the speed of impulse transmission. Continuous conduction occurs in unmyelinated axons, and synaptic transmission is across a synapse.",
+    "difficulty": "easy",
+    "topic": "nerve_impulse",
+    "subtopic": "saltatory_conduction",
+    "tags": [
+      "nerve_impulse",
+      "saltatory_conduction",
+      "myelinated_axon"
+    ],
+    "learning_objective": "Describe saltatory conduction.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch17_mcq_015",
+    "question": "Which division of the autonomic nervous system is responsible for 'rest and digest' functions?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Somatic nervous system",
+      "B": "Sympathetic nervous system",
+      "C": "Parasympathetic nervous system",
+      "D": "Central nervous system"
+    },
+    "correct_answer": "C",
+    "explanation": "The parasympathetic nervous system is responsible for promoting 'rest and digest' activities, such as slowing heart rate, increasing digestion, and conserving energy. The sympathetic nervous system mediates 'fight or flight' responses.",
+    "difficulty": "easy",
+    "topic": "autonomic_nervous_system",
+    "subtopic": "parasympathetic_functions",
+    "tags": [
+      "ANS",
+      "parasympathetic",
+      "rest_and_digest"
+    ],
+    "learning_objective": "Differentiate between sympathetic and parasympathetic functions.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch17_mcq_016",
+    "question": "The primary role of the `$Na^+/K^+$` pump in maintaining resting membrane potential is to:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Pump `$Na^+$` into the cell and `$K^+$` out of the cell.",
+      "B": "Pump `$K^+$` into the cell and `$Na^+$` out of the cell.",
+      "C": "Allow `$Na^+$` and `$K^+$` to diffuse freely across the membrane.",
+      "D": "Generate the action potential."
+    },
+    "correct_answer": "B",
+    "explanation": "The `$Na^+/K^+$` pump actively transports three `$Na^+$` ions out of the cell for every two `$K^+$` ions pumped into the cell. This unequal exchange, along with differential membrane permeability to these ions, helps establish and maintain the negative resting membrane potential.",
+    "difficulty": "medium",
+    "topic": "nerve_impulse",
+    "subtopic": "resting_potential_mechanism",
+    "tags": [
+      "resting_potential",
+      "NaK_pump",
+      "ion_transport"
+    ],
+    "learning_objective": "Explain the role of the Na/K pump in resting potential.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch17_mcq_017",
+    "question": "During the repolarization phase of an action potential, which event primarily occurs?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Voltage-gated `$Na^+$` channels open.",
+      "B": "Voltage-gated `$K^+$` channels open.",
+      "C": "The `$Na^+/K^+$` pump becomes inactive.",
+      "D": "Neurotransmitters are released."
+    },
+    "correct_answer": "B",
+    "explanation": "Repolarization occurs when voltage-gated `$K^+$` channels open, allowing `$K^+$` ions to rapidly flow out of the cell, restoring the negative charge inside the membrane. Voltage-gated `$Na^+$` channels open during depolarization, and the `$Na^+/K^+$` pump is always active to maintain gradients.",
+    "difficulty": "medium",
+    "topic": "nerve_impulse",
+    "subtopic": "repolarization",
+    "tags": [
+      "action_potential",
+      "repolarization",
+      "potassium_ions"
+    ],
+    "learning_objective": "Describe the events of repolarization.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch17_mcq_018",
+    "question": "A neuron's threshold potential is the membrane potential at which:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The neuron returns to its resting state.",
+      "B": "Voltage-gated `$Na^+$` channels open, initiating an action potential.",
+      "C": "Voltage-gated `$K^+$` channels open, causing repolarization.",
+      "D": "Neurotransmitter release occurs."
+    },
+    "correct_answer": "B",
+    "explanation": "The threshold potential (typically around `$-55 \text{ mV}$`) is the critical level of depolarization that must be reached for voltage-gated `$Na^+$` channels to open rapidly, triggering a full-blown action potential. If the stimulus does not reach this threshold, no action potential will be generated.",
+    "difficulty": "medium",
+    "topic": "nerve_impulse",
+    "subtopic": "threshold_potential",
+    "tags": [
+      "action_potential",
+      "threshold",
+      "depolarization"
+    ],
+    "learning_objective": "Define threshold potential.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch17_mcq_019",
+    "question": "Which of the following statements about the refractory period is correct?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "During the absolute refractory period, another action potential can be generated with a stronger stimulus.",
+      "B": "The relative refractory period ensures unidirectional propagation of the action potential.",
+      "C": "During the relative refractory period, a stronger stimulus is required to generate another action potential.",
+      "D": "The refractory period is the time when the neuron is at its resting potential."
+    },
+    "correct_answer": "C",
+    "explanation": "During the relative refractory period, the membrane is hyperpolarized, and some `$K^+$` channels are still open, making it harder to reach the threshold. Therefore, a stronger-than-normal stimulus is required to trigger another action potential. The absolute refractory period prevents any new action potential, ensuring unidirectional propagation.",
+    "difficulty": "medium",
+    "topic": "nerve_impulse",
+    "subtopic": "refractory_period",
+    "tags": [
+      "action_potential",
+      "refractory_period",
+      "unidirectional_propagation"
+    ],
+    "learning_objective": "Understand the concept and types of refractory periods.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_17",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

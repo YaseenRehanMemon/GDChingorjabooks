@@ -1,0 +1,30 @@
+[
+  {
+    "id": "chem_xi_ch17_mcq_001",
+    "question": "Which of the following is an SI base unit for amount of substance?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Kilogram",
+      "B": "Mole",
+      "C": "Liter",
+      "D": "Gram"
+    },
+    "correct_answer": "B",
+    "explanation": "The mole (mol) is the SI base unit used to measure the amount of substance. Kilogram (kg) is for mass, liter (L) is a non-SI unit for volume, and gram (g) is a unit of mass, but not an SI base unit.",
+    "difficulty": "easy",
+    "topic": "SI_units",
+    "subtopic": "base_units",
+    "tags": [
+      "SI_units",
+      "mole",
+      "base_unit",
+      "chemistry_fundamentals"
+    ],
+    "learning_objective": "Identify SI base units for fundamental quantities.",
+    "created_date": "2024-07-28",
+    "source": "textbook_appendix_4",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

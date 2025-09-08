@@ -1,0 +1,564 @@
+[
+  {
+    "id": "bio_xii_ch26_mcq_001",
+    "question": "Which of the following is considered the 'molecular scissor' in genetic engineering?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "DNA ligase",
+      "B": "RNA polymerase",
+      "C": "Restriction endonuclease",
+      "D": "Helicase"
+    },
+    "correct_answer": "C",
+    "explanation": "Restriction endonucleases are enzymes that cut DNA at specific recognition sequences, acting like 'molecular scissors' to create DNA fragments for genetic engineering. DNA ligase joins DNA fragments, RNA polymerase synthesizes RNA, and helicase unwinds DNA.",
+    "difficulty": "easy",
+    "topic": "tools_of_biotechnology",
+    "subtopic": "restriction_enzymes",
+    "tags": [
+      "genetic_engineering",
+      "restriction_enzymes",
+      "molecular_scissors",
+      "biotechnology_tools"
+    ],
+    "learning_objective": "Identify the function of restriction enzymes in genetic engineering.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_26",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch26_mcq_002",
+    "question": "What is the primary function of DNA ligase in recombinant DNA technology?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "To cut DNA at specific sites",
+      "B": "To synthesize new DNA strands",
+      "C": "To join DNA fragments",
+      "D": "To unwind the DNA helix"
+    },
+    "correct_answer": "C",
+    "explanation": "DNA ligase is an enzyme that catalyzes the formation of phosphodiester bonds between adjacent nucleotides, thereby joining DNA fragments together. This is crucial for inserting a foreign DNA fragment into a vector to create recombinant DNA.",
+    "difficulty": "easy",
+    "topic": "tools_of_biotechnology",
+    "subtopic": "dna_ligase",
+    "tags": [
+      "genetic_engineering",
+      "dna_ligase",
+      "recombinant_dna",
+      "biotechnology_tools"
+    ],
+    "learning_objective": "Describe the role of DNA ligase in recombinant DNA technology.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_26",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch26_mcq_003",
+    "question": "Which of the following is commonly used as a vector for cloning genes in bacteria?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Ribosome",
+      "B": "Mitochondria",
+      "C": "Plasmid",
+      "D": "Lysosome"
+    },
+    "correct_answer": "C",
+    "explanation": "Plasmids are small, circular, extra-chromosomal DNA molecules found in bacteria that can replicate independently. They are widely used as vectors in genetic engineering to carry and transfer foreign DNA into host cells. Ribosomes, mitochondria, and lysosomes are cellular organelles with different functions.",
+    "difficulty": "easy",
+    "topic": "tools_of_biotechnology",
+    "subtopic": "vectors",
+    "tags": [
+      "genetic_engineering",
+      "plasmids",
+      "vectors",
+      "gene_cloning"
+    ],
+    "learning_objective": "Identify common vectors used in gene cloning.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_26",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch26_mcq_004",
+    "question": "What does PCR stand for in biotechnology?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Protein Chain Reaction",
+      "B": "Polymerase Chain Reaction",
+      "C": "Plasmid Cloning Replication",
+      "D": "Peptide Cleavage Reaction"
+    },
+    "correct_answer": "B",
+    "explanation": "PCR stands for Polymerase Chain Reaction. It is a molecular biology technique used to amplify a single copy or a few copies of a piece of DNA across several orders of magnitude, generating thousands to millions of copies of a particular DNA sequence.",
+    "difficulty": "easy",
+    "topic": "techniques_in_biotechnology",
+    "subtopic": "pcr",
+    "tags": [
+      "pcr",
+      "dna_amplification",
+      "molecular_biology",
+      "biotechnology_techniques"
+    ],
+    "learning_objective": "Recall the full form of PCR.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_26",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch26_mcq_005",
+    "question": "Which of the following is a common application of biotechnology in medicine?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Production of biofertilizers",
+      "B": "Development of herbicide-resistant crops",
+      "C": "Synthesis of human insulin",
+      "D": "Bioremediation of oil spills"
+    },
+    "correct_answer": "C",
+    "explanation": "The synthesis of human insulin using recombinant DNA technology in bacteria (e.g., E. coli) is a landmark application of biotechnology in medicine, providing a safe and abundant source of insulin for diabetic patients. The other options are applications in agriculture or environmental biotechnology.",
+    "difficulty": "easy",
+    "topic": "applications_of_biotechnology",
+    "subtopic": "medical_applications",
+    "tags": [
+      "medical_biotechnology",
+      "human_insulin",
+      "recombinant_dna",
+      "diabetes"
+    ],
+    "learning_objective": "Identify a key medical application of biotechnology.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_26",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch26_mcq_006",
+    "question": "What is the term for an organism that has been genetically modified by inserting a foreign gene?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Hybrid",
+      "B": "Mutant",
+      "C": "Transgenic",
+      "D": "Clone"
+    },
+    "correct_answer": "C",
+    "explanation": "A transgenic organism is one that contains genetic material from another species, which has been artificially introduced. A hybrid results from sexual reproduction between two different species or varieties. A mutant has a spontaneous or induced change in its own genetic material. A clone is a genetically identical copy of an organism.",
+    "difficulty": "easy",
+    "topic": "genetic_engineering_concepts",
+    "subtopic": "transgenic_organisms",
+    "tags": [
+      "transgenic",
+      "gmo",
+      "genetic_modification",
+      "biotechnology_terminology"
+    ],
+    "learning_objective": "Define the term 'transgenic organism'.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_26",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch26_mcq_007",
+    "question": "Which enzyme is used to synthesize DNA from an RNA template?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "DNA polymerase",
+      "B": "RNA ligase",
+      "C": "Reverse transcriptase",
+      "D": "Primase"
+    },
+    "correct_answer": "C",
+    "explanation": "Reverse transcriptase is an enzyme used by retroviruses to synthesize DNA from an RNA template. This enzyme is crucial in biotechnology for creating cDNA (complementary DNA) libraries from mRNA, as cDNA lacks introns and can be directly expressed in prokaryotic systems.",
+    "difficulty": "easy",
+    "topic": "tools_of_biotechnology",
+    "subtopic": "enzymes",
+    "tags": [
+      "reverse_transcriptase",
+      "cdna",
+      "rna_to_dna",
+      "enzymes_in_biotechnology"
+    ],
+    "learning_objective": "Identify the enzyme responsible for reverse transcription.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_26",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch26_mcq_008",
+    "question": "What is the purpose of a selectable marker in a cloning vector?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "To cut the DNA at specific sites",
+      "B": "To allow the vector to replicate independently",
+      "C": "To help identify transformed cells",
+      "D": "To carry the foreign DNA"
+    },
+    "correct_answer": "C",
+    "explanation": "A selectable marker gene (e.g., antibiotic resistance gene) allows for the identification and selection of host cells that have successfully taken up the vector (transformed cells) from those that have not. Cells without the vector will die in the presence of the antibiotic, while transformed cells will survive.",
+    "difficulty": "easy",
+    "topic": "tools_of_biotechnology",
+    "subtopic": "vectors",
+    "tags": [
+      "selectable_marker",
+      "cloning_vector",
+      "transformation",
+      "gene_cloning"
+    ],
+    "learning_objective": "Explain the role of a selectable marker in a cloning vector.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_26",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch26_mcq_009",
+    "question": "Which technique is used to separate DNA fragments based on their size?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "PCR",
+      "B": "ELISA",
+      "C": "Gel electrophoresis",
+      "D": "Chromatography"
+    },
+    "correct_answer": "C",
+    "explanation": "Gel electrophoresis is a technique used to separate DNA (or RNA or protein) fragments based on their size and charge. DNA fragments, being negatively charged, migrate towards the positive electrode, with smaller fragments moving faster and further through the gel matrix.",
+    "difficulty": "easy",
+    "topic": "techniques_in_biotechnology",
+    "subtopic": "gel_electrophoresis",
+    "tags": [
+      "gel_electrophoresis",
+      "dna_separation",
+      "molecular_biology_techniques",
+      "biotechnology"
+    ],
+    "learning_objective": "Identify the technique for separating DNA fragments by size.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_26",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch26_mcq_010",
+    "question": "What is the full form of GMO?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Genetically Modified Organism",
+      "B": "Globally Managed Operation",
+      "C": "Genetic Material Optimization",
+      "D": "General Microbial Output"
+    },
+    "correct_answer": "A",
+    "explanation": "GMO stands for Genetically Modified Organism. It refers to an organism whose genetic material has been altered using genetic engineering techniques, often by introducing a gene from another species.",
+    "difficulty": "easy",
+    "topic": "genetic_engineering_concepts",
+    "subtopic": "gmo",
+    "tags": [
+      "gmo",
+      "genetically_modified_organism",
+      "biotechnology_terminology"
+    ],
+    "learning_objective": "Recall the full form of GMO.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_26",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch26_mcq_011",
+    "question": "Which of the following is a characteristic of a good cloning vector?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Large size to accommodate more DNA",
+      "B": "Presence of multiple restriction sites within the gene of interest",
+      "C": "Ability to replicate independently within the host cell",
+      "D": "Lack of a selectable marker"
+    },
+    "correct_answer": "C",
+    "explanation": "A good cloning vector must have an origin of replication (ori) that allows it to replicate independently within the host cell, ensuring that multiple copies of the inserted gene are produced. Small size is generally preferred for easier manipulation and entry into host cells. Multiple restriction sites within the gene of interest would make cloning difficult, and a selectable marker is essential for identifying transformed cells.",
+    "difficulty": "medium",
+    "topic": "tools_of_biotechnology",
+    "subtopic": "vectors",
+    "tags": [
+      "cloning_vector",
+      "vector_characteristics",
+      "genetic_engineering",
+      "replication_origin"
+    ],
+    "learning_objective": "Identify key characteristics of an effective cloning vector.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_26",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "bio_xii_ch26_mcq_012",
+    "question": "A restriction enzyme recognizes the sequence `$5'-GAATTC-3'$' and cuts between G and A. What type of ends will it produce?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Blunt ends",
+      "B": "Sticky ends",
+      "C": "Loop ends",
+      "D": "Hairpin ends"
+    },
+    "correct_answer": "B",
+    "explanation": "If a restriction enzyme cuts between G and A in the sequence `$5'-GAATTC-3'$', it will produce an overhang: `$5'-G \\downarrow AATTC-3'$'. The complementary strand will also be cut to produce an overhang: `$3'-CTTAA \\uparrow G-5'$'. These single-stranded overhangs are called sticky ends because they can readily base-pair with complementary sticky ends from other DNA fragments, facilitating ligation.",
+    "difficulty": "medium",
+    "topic": "tools_of_biotechnology",
+    "subtopic": "restriction_enzymes",
+    "tags": [
+      "restriction_enzymes",
+      "sticky_ends",
+      "blunt_ends",
+      "dna_cutting",
+      "palindromic_sequence"
+    ],
+    "learning_objective": "Determine the type of DNA ends produced by a given restriction enzyme cut.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_26",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.88
+  },
+  {
+    "id": "bio_xii_ch26_mcq_013",
+    "question": "In PCR, what is the role of Taq polymerase?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "To denature the DNA strands",
+      "B": "To anneal the primers to the DNA template",
+      "C": "To synthesize new DNA strands at high temperatures",
+      "D": "To ligate the DNA fragments"
+    },
+    "correct_answer": "C",
+    "explanation": "Taq polymerase is a heat-stable DNA polymerase isolated from the bacterium *Thermus aquaticus*. Its primary role in PCR is to synthesize new DNA strands complementary to the template DNA at high temperatures (typically `$72^\\circ C$'), which are required after the denaturation step. Other polymerases would denature and become inactive at these temperatures.",
+    "difficulty": "medium",
+    "topic": "techniques_in_biotechnology",
+    "subtopic": "pcr",
+    "tags": [
+      "pcr",
+      "taq_polymerase",
+      "dna_synthesis",
+      "heat_stable_enzyme"
+    ],
+    "learning_objective": "Explain the specific function of Taq polymerase in PCR.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_26",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch26_mcq_014",
+    "question": "Which step in recombinant DNA technology involves introducing the recombinant plasmid into a host bacterium?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Ligation",
+      "B": "Transformation",
+      "C": "Restriction digestion",
+      "D": "Amplification"
+    },
+    "correct_answer": "B",
+    "explanation": "Transformation is the process by which a host cell takes up foreign DNA (e.g., a recombinant plasmid) from its surroundings. Ligation is joining DNA fragments, restriction digestion is cutting DNA, and amplification is increasing the number of DNA copies (e.g., via PCR).",
+    "difficulty": "medium",
+    "topic": "recombinant_dna_process",
+    "subtopic": "transformation",
+    "tags": [
+      "recombinant_dna",
+      "transformation",
+      "gene_transfer",
+      "host_cell"
+    ],
+    "learning_objective": "Identify the step of introducing recombinant DNA into a host cell.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_26",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch26_mcq_015",
+    "question": "Golden rice is a genetically modified crop designed to produce which nutrient?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Vitamin C",
+      "B": "Iron",
+      "C": "Vitamin A (beta-carotene)",
+      "D": "Protein"
+    },
+    "correct_answer": "C",
+    "explanation": "Golden rice is a genetically engineered variety of rice (Oryza sativa) that produces beta-carotene, a precursor to Vitamin A, in the edible part of the grain. It was developed to combat Vitamin A deficiency, which is a major public health problem in many developing countries.",
+    "difficulty": "medium",
+    "topic": "applications_of_biotechnology",
+    "subtopic": "agricultural_biotechnology",
+    "tags": [
+      "golden_rice",
+      "gmo_crops",
+      "vitamin_a",
+      "agricultural_biotechnology",
+      "nutritional_enhancement"
+    ],
+    "learning_objective": "Recall the specific nutritional enhancement in Golden Rice.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_26",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch26_mcq_016",
+    "question": "Which of the following is NOT a component required for a typical PCR reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "DNA template",
+      "B": "Primers",
+      "C": "DNA ligase",
+      "D": "dNTPs (deoxynucleotide triphosphates)"
+    },
+    "correct_answer": "C",
+    "explanation": "A typical PCR reaction requires a DNA template (the DNA to be amplified), primers (short DNA sequences that define the region to be amplified), dNTPs (the building blocks for new DNA strands), and a heat-stable DNA polymerase (like Taq polymerase). DNA ligase is used to join DNA fragments, primarily in cloning, but not directly in PCR amplification.",
+    "difficulty": "medium",
+    "topic": "techniques_in_biotechnology",
+    "subtopic": "pcr",
+    "tags": [
+      "pcr_components",
+      "dna_amplification",
+      "molecular_biology"
+    ],
+    "learning_objective": "Identify the essential components of a PCR reaction.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_26",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.88
+  },
+  {
+    "id": "bio_xii_ch26_mcq_017",
+    "question": "What is the primary advantage of using cDNA over genomic DNA for expressing eukaryotic genes in prokaryotic cells?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "cDNA is more stable than genomic DNA.",
+      "B": "cDNA is easier to isolate.",
+      "C": "cDNA lacks introns, which prokaryotes cannot splice.",
+      "D": "cDNA contains regulatory sequences for prokaryotic expression."
+    },
+    "correct_answer": "C",
+    "explanation": "Eukaryotic genes contain non-coding regions called introns, which are removed during mRNA processing (splicing). Prokaryotic cells lack the machinery for splicing introns. cDNA (complementary DNA) is synthesized from mature mRNA, meaning it already lacks introns, making it suitable for direct expression in prokaryotic systems.",
+    "difficulty": "medium",
+    "topic": "recombinant_dna_process",
+    "subtopic": "cdna",
+    "tags": [
+      "cdna",
+      "genomic_dna",
+      "introns",
+      "prokaryotic_expression",
+      "eukaryotic_genes"
+    ],
+    "learning_objective": "Explain the advantage of using cDNA for gene expression in prokaryotes.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_26",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch26_mcq_018",
+    "question": "Which bacterium is commonly used as a natural genetic engineer for introducing genes into plants?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Escherichia coli",
+      "B": "Bacillus subtilis",
+      "C": "Agrobacterium tumefaciens",
+      "D": "Lactobacillus acidophilus"
+    },
+    "correct_answer": "C",
+    "explanation": "*Agrobacterium tumefaciens* is a soil bacterium that naturally transfers a segment of its plasmid DNA (T-DNA) into plant cells, causing crown gall disease. This natural ability has been harnessed in biotechnology to introduce desired genes into plants, making it a crucial tool for creating transgenic plants.",
+    "difficulty": "medium",
+    "topic": "tools_of_biotechnology",
+    "subtopic": "plant_vectors",
+    "tags": [
+      "agrobacterium_tumefaciens",
+      "plant_genetic_engineering",
+      "ti_plasmid",
+      "transgenic_plants"
+    ],
+    "learning_objective": "Identify the bacterium used for plant genetic transformation.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_26",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch26_mcq_019",
+    "question": "If a DNA fragment of `$1000$ base pairs (bp) is amplified using PCR, and the reaction runs for `$20$` cycles, approximately how many copies of the DNA fragment will be produced?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$20$",
+      "B": "$40$",
+      "C": "$1024$",
+      "D": "$1,048,576$"
+    },
+    "correct_answer": "D",
+    "explanation": "In an ideal PCR reaction, the amount of DNA doubles with each cycle. Therefore, after `$n$` cycles, the number of DNA copies will be `$2^n$'. For `$20$` cycles, the number of copies will be `$2^{20}$'.\n\n`$2^{10} = 1024$`\n`$2^{20} = 2^{10} \times 2^{10} = 1024 \times 1024 = 1,048,576$`\n\nSo, approximately `$1,048,576$` copies will be produced.",
+    "difficulty": "medium",
+    "topic": "techniques_in_biotechnology",
+    "subtopic": "pcr_calculations",
+    "tags": [
+      "pcr",
+      "dna_amplification",
+      "numerical_problem",
+      "exponential_growth"
+    ],
+    "learning_objective": "Calculate the approximate number of DNA copies after a given number of PCR cycles.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_26",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.88
+  },
+  {
+    "id": "bio_xii_ch26_mcq_020",
+    "question": "What is the primary ethical concern associated with germline gene therapy?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "High cost of treatment",
+      "B": "Potential for allergic reactions",
+      "C": "Changes being heritable and affecting future generations",
+      "D": "Ineffectiveness of the therapy"
+    },
+    "correct_answer": "C",
+    "explanation": "Germline gene therapy involves altering the genes in germ cells (sperm or egg), meaning that the genetic changes would be passed on to all future generations. This raises significant ethical concerns about unintended consequences, the concept of 'designer babies,' and altering the human gene pool without full understanding of long-term effects. Somatic gene therapy, in contrast, affects only the treated individual and is not heritable.",
+    "difficulty": "medium",
+    "topic": "ethical_issues_in_biotechnology",
+    "subtopic": "gene_therapy_ethics",
+    "tags": [
+      "germline_gene_therapy",
+      "ethics",
+      "heritable_changes",
+      "designer_babies",
+      "biotechnology_ethics"
+    ],
+    "learning_objective": "Identify the main ethical concern regarding germline gene therapy.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_26",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

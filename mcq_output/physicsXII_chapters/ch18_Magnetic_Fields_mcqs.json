@@ -1,0 +1,443 @@
+[
+  {
+    "id": "phys_xii_ch18_mcq_001",
+    "question": "Which of the following statements is true regarding magnetic field lines?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "They originate from the south pole and end at the north pole.",
+      "B": "They always intersect each other at high magnetic field strengths.",
+      "C": "They form closed loops.",
+      "D": "They are parallel to the conductor carrying current."
+    },
+    "correct_answer": "C",
+    "explanation": "Magnetic field lines are continuous and form closed loops, extending from the north pole to the south pole outside the magnet and from the south pole to the north pole inside the magnet. They never intersect each other.",
+    "difficulty": "easy",
+    "topic": "magnetic_field_lines",
+    "subtopic": "properties",
+    "tags": [
+      "magnetic_field",
+      "field_lines",
+      "basic_magnetism"
+    ],
+    "learning_objective": "Understand the basic properties of magnetic field lines",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_18",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "phys_xii_ch18_mcq_002",
+    "question": "The direction of the magnetic field around a straight current-carrying conductor is given by:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Fleming's Left-Hand Rule",
+      "B": "Fleming's Right-Hand Rule",
+      "C": "Right-Hand Grip Rule (Maxwell's Corkscrew Rule)",
+      "D": "Lenz's Law"
+    },
+    "correct_answer": "C",
+    "explanation": "The Right-Hand Grip Rule (also known as Maxwell's Corkscrew Rule) is used to determine the direction of the magnetic field lines around a straight current-carrying conductor. If the thumb points in the direction of the current, the curled fingers indicate the direction of the magnetic field.",
+    "difficulty": "easy",
+    "topic": "magnetic_field_direction",
+    "subtopic": "right_hand_rule",
+    "tags": [
+      "magnetic_field",
+      "current_carrying_wire",
+      "right_hand_rule"
+    ],
+    "learning_objective": "Identify the rule for determining magnetic field direction around a current",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_18",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "phys_xii_ch18_mcq_003",
+    "question": "What is the SI unit of magnetic field strength (magnetic flux density)?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Ampere (A)",
+      "B": "Weber (Wb)",
+      "C": "Tesla (T)",
+      "D": "Henry (H)"
+    },
+    "correct_answer": "C",
+    "explanation": "The SI unit of magnetic field strength, also known as magnetic flux density, is the Tesla (T). Weber (Wb) is the unit for magnetic flux, Ampere (A) for current, and Henry (H) for inductance.",
+    "difficulty": "easy",
+    "topic": "magnetic_field_units",
+    "subtopic": "tesla",
+    "tags": [
+      "magnetic_field",
+      "units",
+      "tesla"
+    ],
+    "learning_objective": "Recall the SI unit of magnetic field strength",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_18",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "phys_xii_ch18_mcq_004",
+    "question": "A current of `$5 \text{ A}$` flows through a straight wire. What is the magnetic field strength at a perpendicular distance of `$0.1 \text{ m}$` from the wire? (Permeability of free space `$\\mu_0 = 4\\pi \times 10^{-7} \text{ T}\\cdot\text{m/A}$`)",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`$1 \times 10^{-5} \text{ T}$`",
+      "B": "`$2 \times 10^{-5} \text{ T}$`",
+      "C": "`$5 \times 10^{-6} \text{ T}$`",
+      "D": "`$1 \times 10^{-6} \text{ T}$`"
+    },
+    "correct_answer": "A",
+    "explanation": "The magnetic field strength `$B$` at a distance `$r$` from a long straight current-carrying wire is given by `$B = \frac{\\mu_0 I}{2\\pi r}$`. \nGiven: `$I = 5 \text{ A}$`, `$r = 0.1 \text{ m}$`, `$\\mu_0 = 4\\pi \times 10^{-7} \text{ T}\\cdot\text{m/A}$`.\n`$B = \frac{(4\\pi \times 10^{-7} \text{ T}\\cdot\text{m/A})(5 \text{ A})}{2\\pi (0.1 \text{ m})} = \frac{20\\pi \times 10^{-7}}{0.2\\pi} \text{ T} = \frac{20 \times 10^{-7}}{0.2} \text{ T} = 100 \times 10^{-7} \text{ T} = 1 \times 10^{-5} \text{ T}$`.",
+    "difficulty": "medium",
+    "topic": "magnetic_field_current",
+    "subtopic": "straight_wire",
+    "tags": [
+      "magnetic_field",
+      "current_carrying_wire",
+      "numerical",
+      "ampere_law"
+    ],
+    "learning_objective": "Calculate magnetic field strength due to a straight current-carrying wire",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_18",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "phys_xii_ch18_mcq_005",
+    "question": "Which of the following is NOT a property of magnetic field lines?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "They emerge from the North pole and enter the South pole.",
+      "B": "They never intersect each other.",
+      "C": "The density of field lines indicates the strength of the magnetic field.",
+      "D": "They exist only in the presence of a permanent magnet."
+    },
+    "correct_answer": "D",
+    "explanation": "Magnetic field lines are produced not only by permanent magnets but also by moving charges and electric currents (electromagnets). Therefore, option D is incorrect.",
+    "difficulty": "easy",
+    "topic": "magnetic_field_lines",
+    "subtopic": "properties",
+    "tags": [
+      "magnetic_field",
+      "field_lines",
+      "properties"
+    ],
+    "learning_objective": "Identify incorrect statements about magnetic field line properties",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_18",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "phys_xii_ch18_mcq_006",
+    "question": "A charged particle moving in a uniform magnetic field experiences a force that is:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Parallel to its velocity.",
+      "B": "Parallel to the magnetic field.",
+      "C": "Perpendicular to both its velocity and the magnetic field.",
+      "D": "Independent of its velocity."
+    },
+    "correct_answer": "C",
+    "explanation": "The magnetic Lorentz force on a charged particle is given by `$\\vec{F} = q(\\vec{v} \times \\vec{B})$`. The cross product `$\\vec{v} \times \\vec{B}$` results in a vector that is perpendicular to both `$\\vec{v}$` and `$\\vec{B}$`. Therefore, the force is perpendicular to both the velocity and the magnetic field.",
+    "difficulty": "medium",
+    "topic": "lorentz_force",
+    "subtopic": "charged_particle_motion",
+    "tags": [
+      "magnetic_force",
+      "charged_particle",
+      "lorentz_force",
+      "vector_product"
+    ],
+    "learning_objective": "Describe the direction of the magnetic force on a charged particle",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_18",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "phys_xii_ch18_mcq_007",
+    "question": "What is the magnetic force on a proton (`$q = 1.6 \times 10^{-19} \text{ C}$`) moving at `$2 \times 10^6 \text{ m/s}$` perpendicular to a magnetic field of `$0.5 \text{ T}$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`$1.6 \times 10^{-13} \text{ N}$`",
+      "B": "`$3.2 \times 10^{-13} \text{ N}$`",
+      "C": "`$8.0 \times 10^{-14} \text{ N}$`",
+      "D": "`$1.6 \times 10^{-12} \text{ N}$`"
+    },
+    "correct_answer": "A",
+    "explanation": "The magnetic force on a charged particle is given by `$F = qvB\\sin\theta$`. \nGiven: `$q = 1.6 \times 10^{-19} \text{ C}$`, `$v = 2 \times 10^6 \text{ m/s}$`, `$B = 0.5 \text{ T}$`. Since the motion is perpendicular, `$\theta = 90^\\circ$`, so `$\\sin\theta = 1$`.\n`$F = (1.6 \times 10^{-19} \text{ C})(2 \times 10^6 \text{ m/s})(0.5 \text{ T})(1) = 1.6 \times 10^{-19} \times 10^6 \text{ N} = 1.6 \times 10^{-13} \text{ N}$`.",
+    "difficulty": "medium",
+    "topic": "lorentz_force",
+    "subtopic": "charged_particle_numerical",
+    "tags": [
+      "magnetic_force",
+      "charged_particle",
+      "numerical",
+      "lorentz_force"
+    ],
+    "learning_objective": "Calculate the magnetic force on a moving charged particle",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_18",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "phys_xii_ch18_mcq_008",
+    "question": "A current-carrying conductor of length `$L$` is placed in a uniform magnetic field `$B$`. If the current `$I$` flows perpendicular to the field, the magnitude of the force on the conductor is:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`$F = I L B$`",
+      "B": "`$F = I L / B$`",
+      "C": "`$F = B / (I L)$`",
+      "D": "`$F = I B / L$`"
+    },
+    "correct_answer": "A",
+    "explanation": "The force on a current-carrying conductor in a uniform magnetic field is given by `$F = I L B \\sin\theta$`. When the conductor is perpendicular to the field, `$\theta = 90^\\circ$`, so `$\\sin\theta = 1$`. Thus, the magnitude of the force is `$F = I L B$`.",
+    "difficulty": "easy",
+    "topic": "force_on_conductor",
+    "subtopic": "formula",
+    "tags": [
+      "magnetic_force",
+      "current_conductor",
+      "formula"
+    ],
+    "learning_objective": "Recall the formula for force on a current-carrying conductor",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_18",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "phys_xii_ch18_mcq_009",
+    "question": "Two parallel wires carrying current in the same direction will:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Repel each other.",
+      "B": "Attract each other.",
+      "C": "Exert no force on each other.",
+      "D": "Twist around each other."
+    },
+    "correct_answer": "B",
+    "explanation": "When two parallel wires carry current in the same direction, the magnetic field produced by each wire interacts with the current in the other wire in such a way that they experience an attractive force. If the currents are in opposite directions, they repel.",
+    "difficulty": "easy",
+    "topic": "force_between_wires",
+    "subtopic": "parallel_currents",
+    "tags": [
+      "magnetic_force",
+      "parallel_wires",
+      "currents"
+    ],
+    "learning_objective": "Predict the force between two parallel current-carrying wires",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_18",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "phys_xii_ch18_mcq_010",
+    "question": "The magnetic field inside a long solenoid carrying current is:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Uniform and strong.",
+      "B": "Non-uniform and strong.",
+      "C": "Uniform and weak.",
+      "D": "Zero."
+    },
+    "correct_answer": "A",
+    "explanation": "For an ideal long solenoid, the magnetic field inside is uniform and strong, directed along the axis of the solenoid. Outside the solenoid, the field is very weak and approaches zero.",
+    "difficulty": "medium",
+    "topic": "magnetic_field_solenoid",
+    "subtopic": "properties",
+    "tags": [
+      "magnetic_field",
+      "solenoid",
+      "uniform_field"
+    ],
+    "learning_objective": "Describe the magnetic field inside a long solenoid",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_18",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "phys_xii_ch18_mcq_011",
+    "question": "What is the magnetic field strength inside a solenoid of `$1000$` turns per meter carrying a current of `$2 \text{ A}$`? (Permeability of free space `$\\mu_0 = 4\\pi \times 10^{-7} \text{ T}\\cdot\text{m/A}$`)",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`$8\\pi \times 10^{-4} \text{ T}$`",
+      "B": "`$4\\pi \times 10^{-4} \text{ T}$`",
+      "C": "`$2\\pi \times 10^{-3} \text{ T}$`",
+      "D": "`$8\\pi \times 10^{-7} \text{ T}$`"
+    },
+    "correct_answer": "A",
+    "explanation": "The magnetic field inside a long solenoid is given by `$B = \\mu_0 n I$`, where `$n$` is the number of turns per unit length.\nGiven: `$n = 1000 \text{ turns/m}$`, `$I = 2 \text{ A}$`, `$\\mu_0 = 4\\pi \times 10^{-7} \text{ T}\\cdot\text{m/A}$`.\n`$B = (4\\pi \times 10^{-7} \text{ T}\\cdot\text{m/A})(1000 \text{ m}^{-1})(2 \text{ A}) = 8\\pi \times 10^{-4} \text{ T}$`.",
+    "difficulty": "medium",
+    "topic": "magnetic_field_solenoid",
+    "subtopic": "numerical",
+    "tags": [
+      "magnetic_field",
+      "solenoid",
+      "numerical",
+      "ampere_law"
+    ],
+    "learning_objective": "Calculate magnetic field strength inside a solenoid",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_18",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "phys_xii_ch18_mcq_012",
+    "question": "A charged particle enters a uniform magnetic field parallel to the field lines. What is the path of the particle?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Circular path.",
+      "B": "Helical path.",
+      "C": "Straight line path.",
+      "D": "Parabolic path."
+    },
+    "correct_answer": "C",
+    "explanation": "The magnetic force on a charged particle is given by `$F = qvB\\sin\theta$`. If the particle moves parallel to the magnetic field, `$\theta = 0^\\circ$`, so `$\\sin\theta = 0$`. This means the magnetic force `$F = 0$`. Therefore, the particle continues to move in a straight line with constant velocity.",
+    "difficulty": "medium",
+    "topic": "charged_particle_motion",
+    "subtopic": "parallel_motion",
+    "tags": [
+      "magnetic_force",
+      "charged_particle",
+      "motion",
+      "lorentz_force"
+    ],
+    "learning_objective": "Predict the motion of a charged particle moving parallel to a magnetic field",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_18",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "phys_xii_ch18_mcq_013",
+    "question": "An electron enters a uniform magnetic field perpendicular to its velocity. Which of the following quantities remains constant?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Velocity.",
+      "B": "Momentum.",
+      "C": "Kinetic energy.",
+      "D": "Acceleration."
+    },
+    "correct_answer": "C",
+    "explanation": "When a charged particle moves perpendicular to a magnetic field, the magnetic force acts as a centripetal force, changing the direction of the velocity but not its magnitude. Since kinetic energy depends on the magnitude of velocity (`$KE = \frac{1}{2}mv^2$`), the kinetic energy remains constant. Velocity and momentum are vector quantities, and their directions change, so they are not constant. Acceleration is also not constant as the direction of force changes continuously.",
+    "difficulty": "hard",
+    "topic": "charged_particle_motion",
+    "subtopic": "circular_motion",
+    "tags": [
+      "magnetic_force",
+      "charged_particle",
+      "kinetic_energy",
+      "circular_motion"
+    ],
+    "learning_objective": "Analyze the conservation of energy for a charged particle in a magnetic field",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_18",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "phys_xii_ch18_mcq_014",
+    "question": "The radius of the circular path of a charged particle moving perpendicular to a uniform magnetic field is directly proportional to its:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Charge.",
+      "B": "Magnetic field strength.",
+      "C": "Momentum.",
+      "D": "Mass."
+    },
+    "correct_answer": "C",
+    "explanation": "For a charged particle moving perpendicular to a magnetic field, the magnetic force provides the centripetal force: `$qvB = \frac{mv^2}{r}$`. Rearranging for radius `$r$`, we get `$r = \frac{mv}{qB}$`. Since momentum `$p = mv$`, then `$r = \frac{p}{qB}$`. Thus, the radius is directly proportional to the momentum of the particle.",
+    "difficulty": "medium",
+    "topic": "charged_particle_motion",
+    "subtopic": "radius_of_path",
+    "tags": [
+      "magnetic_force",
+      "charged_particle",
+      "circular_motion",
+      "momentum"
+    ],
+    "learning_objective": "Relate the radius of a charged particle's path to its properties",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_18",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "phys_xii_ch18_mcq_015",
+    "question": "A galvanometer can be converted into an ammeter by connecting a:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "High resistance in series.",
+      "B": "Low resistance in series.",
+      "C": "High resistance in parallel.",
+      "D": "Low resistance (shunt) in parallel."
+    },
+    "correct_answer": "D",
+    "explanation": "To convert a galvanometer into an ammeter, a very low resistance (shunt resistance) is connected in parallel with the galvanometer. This allows most of the current to bypass the galvanometer, protecting it from damage and extending its current measurement range.",
+    "difficulty": "easy",
+    "topic": "galvanometer_conversion",
+    "subtopic": "ammeter",
+    "tags": [
+      "galvanometer",
+      "ammeter",
+      "shunt_resistance",
+      "circuit"
+    ],
+    "learning_objective": "Describe the conversion of a galvanometer into an ammeter",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_18",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "phys_xii_ch18_mcq_016",
+    "question": "A galvanometer can be converted into a voltmeter by connecting a:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "High resistance in series.",
+      "B": "Low resistance in series.",
+      "C": "High resistance in parallel.",
+      "D": "Low resistance (shunt) in parallel."
+    },
+    "correct_answer": "A",
+    "explanation": "To convert a galvanometer into a voltmeter, a very high resistance is connected in series with the galvanometer. This increases the total resistance of the circuit, allowing only a small current to pass through the galvanometer and enabling it to measure large potential differences.",
+    "difficulty": "easy",
+    "topic": "galvanometer_conversion",
+    "subtopic": "voltmeter",
+    "tags": [
+      "galvanometer",
+      "voltmeter",
+      "series_resistance",
+      "circuit"
+    ],
+    "learning_objective": "Describe the conversion of a galvanometer into a voltmeter",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_18",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

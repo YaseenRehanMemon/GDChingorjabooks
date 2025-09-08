@@ -1,0 +1,366 @@
+[
+  {
+    "id": "chem_xi_ch15_mcq_001",
+    "question": "Which of the following is the SI base unit for amount of substance?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Kilogram",
+      "B": "Mole",
+      "C": "Gram",
+      "D": "Liter"
+    },
+    "correct_answer": "B",
+    "explanation": "The SI base unit for the amount of substance is the mole (mol). The kilogram (kg) is the SI base unit for mass, and the liter (L) is a unit of volume, not an SI base unit.",
+    "difficulty": "easy",
+    "topic": "SI_units",
+    "subtopic": "base_units",
+    "tags": [
+      "SI_units",
+      "mole",
+      "amount_of_substance",
+      "basic_chemistry"
+    ],
+    "learning_objective": "Identify the SI base unit for amount of substance.",
+    "created_date": "2024-05-20",
+    "source": "textbook_chapter_15_appendix",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch15_mcq_002",
+    "question": "How many significant figures are in the measurement `$0.00250 \text{ g}$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
+    },
+    "correct_answer": "B",
+    "explanation": "Leading zeros (zeros before non-zero digits) are never significant. Trailing zeros (zeros at the end of the number) are significant only if the number contains a decimal point. In `$0.00250 \text{ g}$`, the zeros before '2' are not significant. The '2', '5', and the final '0' are significant because the number contains a decimal point. Thus, there are 3 significant figures.",
+    "difficulty": "easy",
+    "topic": "significant_figures",
+    "subtopic": "counting_significant_figures",
+    "tags": [
+      "significant_figures",
+      "measurement",
+      "precision"
+    ],
+    "learning_objective": "Apply rules for counting significant figures in a given measurement.",
+    "created_date": "2024-05-20",
+    "source": "textbook_chapter_15_appendix",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch15_mcq_003",
+    "question": "Convert `$2.5 \text{ kilometers}$` to `$\text{centimeters}$`.",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$2.5 \times 10^3 \text{ cm}$",
+      "B": "$2.5 \times 10^4 \text{ cm}$",
+      "C": "$2.5 \times 10^5 \text{ cm}$",
+      "D": "$2.5 \times 10^6 \text{ cm}$"
+    },
+    "correct_answer": "C",
+    "explanation": "To convert kilometers to centimeters, we use the conversion factors: \n`$1 \text{ km} = 1000 \text{ m}$` and `$1 \text{ m} = 100 \text{ cm}$`. \nSo, `$2.5 \text{ km} \times \frac{1000 \text{ m}}{1 \text{ km}} \times \frac{100 \text{ cm}}{1 \text{ m}} = 2.5 \times 1000 \times 100 \text{ cm} = 2.5 \times 10^5 \text{ cm}$`.",
+    "difficulty": "medium",
+    "topic": "unit_conversion",
+    "subtopic": "metric_system",
+    "tags": [
+      "unit_conversion",
+      "metric_system",
+      "length",
+      "kilometers",
+      "centimeters"
+    ],
+    "learning_objective": "Perform unit conversions within the metric system.",
+    "created_date": "2024-05-20",
+    "source": "textbook_chapter_15_appendix",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch15_mcq_004",
+    "question": "Which of the following represents `$0.0000000056 \text{ m}$` in scientific notation?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$5.6 \times 10^9 \text{ m}$",
+      "B": "$5.6 \times 10^{-9} \text{ m}$",
+      "C": "$5.6 \times 10^8 \text{ m}$",
+      "D": "$5.6 \times 10^{-8} \text{ m}$"
+    },
+    "correct_answer": "B",
+    "explanation": "To convert a number to scientific notation, move the decimal point until there is only one non-zero digit to its left. For `$0.0000000056$`, we move the decimal point 9 places to the right to get `$5.6$`. Since we moved the decimal to the right, the exponent will be negative. Therefore, it is `$5.6 \times 10^{-9} \text{ m}$`.",
+    "difficulty": "easy",
+    "topic": "scientific_notation",
+    "subtopic": "conversion_to_scientific_notation",
+    "tags": [
+      "scientific_notation",
+      "measurement",
+      "small_numbers"
+    ],
+    "learning_objective": "Convert small numbers into scientific notation.",
+    "created_date": "2024-05-20",
+    "source": "textbook_chapter_15_appendix",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch15_mcq_005",
+    "question": "When adding or subtracting measurements, the result should be rounded to the same number of decimal places as the measurement with the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Most decimal places",
+      "B": "Fewest decimal places",
+      "C": "Most significant figures",
+      "D": "Fewest significant figures"
+    },
+    "correct_answer": "B",
+    "explanation": "For addition and subtraction, the result must be rounded to the same number of decimal places as the measurement with the fewest decimal places. This ensures that the precision of the result is not greater than the least precise measurement used in the calculation.",
+    "difficulty": "easy",
+    "topic": "significant_figures",
+    "subtopic": "calculations_with_significant_figures",
+    "tags": [
+      "significant_figures",
+      "addition",
+      "subtraction",
+      "precision",
+      "rules"
+    ],
+    "learning_objective": "Apply rules for significant figures in addition and subtraction.",
+    "created_date": "2024-05-20",
+    "source": "textbook_chapter_15_appendix",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch15_mcq_006",
+    "question": "A student measures the mass of a substance as `$12.34 \text{ g}$` and its volume as `$4.5 \text{ mL}$`. What is the density of the substance, reported with the correct number of significant figures?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$2.742 \text{ g/mL}$",
+      "B": "$2.74 \text{ g/mL}$",
+      "C": "$2.7 \text{ g/mL}$",
+      "D": "$2.7422 \text{ g/mL}$"
+    },
+    "correct_answer": "C",
+    "explanation": "Density is calculated as mass divided by volume: `$D = \frac{m}{V}$`. \n`$D = \frac{12.34 \text{ g}}{4.5 \text{ mL}} \\approx 2.74222... \text{ g/mL}$`. \nFor multiplication and division, the result must be rounded to the same number of significant figures as the measurement with the fewest significant figures. `$12.34 \text{ g}$` has 4 significant figures, and `$4.5 \text{ mL}$` has 2 significant figures. Therefore, the result must be rounded to 2 significant figures, which is `$2.7 \text{ g/mL}$`.",
+    "difficulty": "medium",
+    "topic": "significant_figures",
+    "subtopic": "calculations_with_significant_figures",
+    "tags": [
+      "significant_figures",
+      "density",
+      "calculation",
+      "multiplication",
+      "division"
+    ],
+    "learning_objective": "Apply rules for significant figures in multiplication and division.",
+    "created_date": "2024-05-20",
+    "source": "textbook_chapter_15_appendix",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch15_mcq_007",
+    "question": "What is the SI prefix for `$10^{-6}$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Milli",
+      "B": "Micro",
+      "C": "Nano",
+      "D": "Pico"
+    },
+    "correct_answer": "B",
+    "explanation": "The SI prefix for `$10^{-6}$` is micro ($\\mu$). Milli is `$10^{-3}$`, nano is `$10^{-9}$`, and pico is `$10^{-12}$`.",
+    "difficulty": "easy",
+    "topic": "SI_units",
+    "subtopic": "prefixes",
+    "tags": [
+      "SI_units",
+      "prefixes",
+      "metric_system"
+    ],
+    "learning_objective": "Recall common SI prefixes and their corresponding powers of ten.",
+    "created_date": "2024-05-20",
+    "source": "textbook_chapter_15_appendix",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch15_mcq_008",
+    "question": "Which of the following statements best describes the difference between accuracy and precision?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Accuracy refers to the closeness of measurements to each other, while precision refers to the closeness of measurements to the true value.",
+      "B": "Accuracy refers to the closeness of measurements to the true value, while precision refers to the closeness of measurements to each other.",
+      "C": "Accuracy and precision are interchangeable terms.",
+      "D": "Accuracy is only relevant for qualitative data, while precision is for quantitative data."
+    },
+    "correct_answer": "B",
+    "explanation": "Accuracy is a measure of how close a measurement is to the true or accepted value. Precision is a measure of how close a series of measurements are to one another, regardless of their closeness to the true value.",
+    "difficulty": "easy",
+    "topic": "accuracy_precision",
+    "subtopic": "definitions",
+    "tags": [
+      "accuracy",
+      "precision",
+      "measurement",
+      "error_analysis"
+    ],
+    "learning_objective": "Differentiate between accuracy and precision in scientific measurements.",
+    "created_date": "2024-05-20",
+    "source": "textbook_chapter_15_appendix",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch15_mcq_009",
+    "question": "A student performs an experiment and obtains an experimental value of `$9.5 \text{ g}$` for a substance with a known true value of `$10.0 \text{ g}$`. Calculate the percent error.",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$0.5\\%$",
+      "B": "$5.0\\%$",
+      "C": "$9.5\\%$",
+      "D": "$10.0\\%$"
+    },
+    "correct_answer": "B",
+    "explanation": "The formula for percent error is: \n`$\text{Percent Error} = \frac{|\text{Experimental Value} - \text{True Value}|}{\text{True Value}} \times 100\\%$`. \n`$\text{Percent Error} = \frac{|9.5 \text{ g} - 10.0 \text{ g}|}{10.0 \text{ g}} \times 100\\% = \frac{|-0.5 \text{ g}|}{10.0 \text{ g}} \times 100\\% = \frac{0.5}{10.0} \times 100\\% = 0.05 \times 100\\% = 5.0\\%$`.",
+    "difficulty": "medium",
+    "topic": "error_analysis",
+    "subtopic": "percent_error",
+    "tags": [
+      "error_analysis",
+      "percent_error",
+      "calculation",
+      "experimental_data"
+    ],
+    "learning_objective": "Calculate the percent error from experimental and true values.",
+    "created_date": "2024-05-20",
+    "source": "textbook_chapter_15_appendix",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch15_mcq_010",
+    "question": "Which of the following is an intensive property of matter?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Mass",
+      "B": "Volume",
+      "C": "Density",
+      "D": "Length"
+    },
+    "correct_answer": "C",
+    "explanation": "Intensive properties are independent of the amount of substance present (e.g., density, temperature, boiling point). Extensive properties depend on the amount of substance (e.g., mass, volume, length). Density is an intensive property because it does not change with the amount of substance.",
+    "difficulty": "easy",
+    "topic": "properties_of_matter",
+    "subtopic": "intensive_extensive",
+    "tags": [
+      "properties_of_matter",
+      "intensive_property",
+      "extensive_property",
+      "density"
+    ],
+    "learning_objective": "Distinguish between intensive and extensive properties of matter.",
+    "created_date": "2024-05-20",
+    "source": "textbook_chapter_15_appendix",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch15_mcq_011",
+    "question": "A solution has a concentration of `$0.25 \text{ M}$`. If `$500 \text{ mL}$` of this solution is used, how many moles of solute are present?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$0.125 \text{ mol}$",
+      "B": "$0.250 \text{ mol}$",
+      "C": "$0.500 \text{ mol}$",
+      "D": "$1.250 \text{ mol}$"
+    },
+    "correct_answer": "A",
+    "explanation": "Molarity (M) is defined as moles of solute per liter of solution. \n`$\text{Moles} = \text{Molarity} \times \text{Volume (L)}$`. \nFirst, convert the volume from milliliters to liters: `$500 \text{ mL} = 0.500 \text{ L}$`. \nThen, calculate moles: `$0.25 \text{ mol/L} \times 0.500 \text{ L} = 0.125 \text{ mol}$`.",
+    "difficulty": "medium",
+    "topic": "solution_chemistry",
+    "subtopic": "molarity_calculations",
+    "tags": [
+      "molarity",
+      "moles",
+      "volume",
+      "solution_chemistry",
+      "stoichiometry"
+    ],
+    "learning_objective": "Calculate moles of solute given molarity and volume.",
+    "created_date": "2024-05-20",
+    "source": "textbook_chapter_15_appendix",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch15_mcq_012",
+    "question": "What is the primary purpose of a control group in an experiment?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "To ensure the experiment is dangerous.",
+      "B": "To provide a baseline for comparison.",
+      "C": "To introduce additional variables.",
+      "D": "To make the experiment more complex."
+    },
+    "correct_answer": "B",
+    "explanation": "A control group is a group in an experiment or study that does not receive treatment by the researchers and is then used as a benchmark to measure how the other tested subjects react. Its primary purpose is to provide a baseline for comparison, allowing researchers to isolate the effect of the independent variable.",
+    "difficulty": "easy",
+    "topic": "experimental_design",
+    "subtopic": "control_group",
+    "tags": [
+      "experimental_design",
+      "control_group",
+      "scientific_method"
+    ],
+    "learning_objective": "Understand the role of a control group in experimental design.",
+    "created_date": "2024-05-20",
+    "source": "textbook_chapter_15_appendix",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch15_mcq_013",
+    "question": "Which of the following is a common safety precaution when heating substances in a test tube?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Point the test tube opening towards yourself or others.",
+      "B": "Heat the test tube at the very bottom only.",
+      "C": "Use a test tube holder and gently heat the entire tube, pointing it away from people.",
+      "D": "Add cold water immediately to a hot test tube to cool it down."
+    },
+    "correct_answer": "C",
+    "explanation": "When heating substances in a test tube, it is crucial to use a test tube holder to avoid burns. The test tube should be gently heated, often by moving it in and out of the flame, and pointed away from yourself and others to prevent injury from splattering or boiling over. Pointing it towards people (A) is dangerous. Heating only the bottom (B) can cause superheating and sudden boiling. Adding cold water to a hot test tube (D) can cause the glass to crack or shatter.",
+    "difficulty": "easy",
+    "topic": "laboratory_safety",
+    "subtopic": "heating_procedures",
+    "tags": [
+      "laboratory_safety",
+      "heating",
+      "test_tube",
+      "safety_precautions"
+    ],
+    "learning_objective": "Identify safe practices for heating substances in a laboratory setting.",
+    "created_date": "2024-05-20",
+    "source": "textbook_chapter_15_appendix",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

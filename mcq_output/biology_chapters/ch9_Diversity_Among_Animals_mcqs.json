@@ -1,0 +1,557 @@
+[
+  {
+    "id": "bio_xi_ch9_mcq_001",
+    "question": "Which of the following is a defining characteristic of all animals?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Presence of a cell wall",
+      "B": "Autotrophic nutrition",
+      "C": "Multicellularity and heterotrophy",
+      "D": "Sessile lifestyle"
+    },
+    "correct_answer": "C",
+    "explanation": "Animals are fundamentally multicellular organisms that obtain nutrients by consuming other organisms (heterotrophic). They lack cell walls, unlike plants and fungi, and many are motile, not sessile.",
+    "difficulty": "easy",
+    "topic": "general_animal_characteristics",
+    "subtopic": "defining_features",
+    "tags": [
+      "animals",
+      "multicellularity",
+      "heterotrophy"
+    ],
+    "learning_objective": "Identify the fundamental characteristics that define animals.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch9_mcq_002",
+    "question": "An animal with a body plan that can be divided into two identical halves along only one plane is said to exhibit which type of symmetry?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Radial symmetry",
+      "B": "Bilateral symmetry",
+      "C": "Asymmetry",
+      "D": "Spherical symmetry"
+    },
+    "correct_answer": "B",
+    "explanation": "Bilateral symmetry means the body can be divided into two mirror-image halves along a single sagittal plane. Radial symmetry allows division into identical halves along multiple planes passing through the central axis. Asymmetry means no plane of symmetry.",
+    "difficulty": "easy",
+    "topic": "body_symmetry",
+    "subtopic": "types_of_symmetry",
+    "tags": [
+      "symmetry",
+      "bilateral_symmetry",
+      "body_plan"
+    ],
+    "learning_objective": "Differentiate between types of animal body symmetry.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch9_mcq_003",
+    "question": "Which of the following phyla consists of diploblastic animals?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Platyhelminthes",
+      "B": "Nematoda",
+      "C": "Cnidaria",
+      "D": "Annelida"
+    },
+    "correct_answer": "C",
+    "explanation": "Diploblastic animals develop from two germ layers: ectoderm and endoderm. Cnidarians (e.g., jellyfish, hydra) are classic examples of diploblastic organisms. Platyhelminthes, Nematoda, and Annelida are all triploblastic.",
+    "difficulty": "easy",
+    "topic": "germ_layers",
+    "subtopic": "diploblastic_animals",
+    "tags": [
+      "germ_layers",
+      "diploblastic",
+      "cnidaria"
+    ],
+    "learning_objective": "Identify phyla based on the number of germ layers.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch9_mcq_004",
+    "question": "The choanocytes (collar cells) are characteristic features of which animal phylum?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Cnidaria",
+      "B": "Porifera",
+      "C": "Platyhelminthes",
+      "D": "Mollusca"
+    },
+    "correct_answer": "B",
+    "explanation": "Choanocytes are specialized flagellated cells found in sponges (Phylum Porifera). They create water currents and filter food particles, playing a crucial role in the sponge's feeding mechanism.",
+    "difficulty": "easy",
+    "topic": "phylum_porifera",
+    "subtopic": "choanocytes",
+    "tags": [
+      "porifera",
+      "sponges",
+      "choanocytes",
+      "filter_feeding"
+    ],
+    "learning_objective": "Recall unique cell types associated with specific animal phyla.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch9_mcq_005",
+    "question": "Which of the following terms describes animals that lack a true coelom?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Coelomates",
+      "B": "Pseudocoelomates",
+      "C": "Acoelomates",
+      "D": "Both B and C"
+    },
+    "correct_answer": "D",
+    "explanation": "Acoelomates (e.g., flatworms) completely lack a body cavity. Pseudocoelomates (e.g., roundworms) have a body cavity that is not fully lined by mesoderm. Both lack a true coelom, which is a body cavity completely lined by mesoderm.",
+    "difficulty": "easy",
+    "topic": "body_cavity",
+    "subtopic": "acoelomate_pseudocoelomate",
+    "tags": [
+      "coelom",
+      "acoelomate",
+      "pseudocoelomate"
+    ],
+    "learning_objective": "Define and distinguish between different types of body cavities.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch9_mcq_006",
+    "question": "Nematocysts are stinging cells found in which phylum?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Porifera",
+      "B": "Cnidaria",
+      "C": "Annelida",
+      "D": "Echinodermata"
+    },
+    "correct_answer": "B",
+    "explanation": "Nematocysts are specialized stinging organelles contained within cnidocytes, which are characteristic cells of Phylum Cnidaria. They are used for defense and capturing prey.",
+    "difficulty": "easy",
+    "topic": "phylum_cnidaria",
+    "subtopic": "nematocysts",
+    "tags": [
+      "cnidaria",
+      "nematocysts",
+      "cnidocytes",
+      "stinging_cells"
+    ],
+    "learning_objective": "Identify the unique defensive structures of Cnidarians.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch9_mcq_007",
+    "question": "Which of the following is an example of a pseudocoelomate animal?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Earthworm",
+      "B": "Jellyfish",
+      "C": "Tapeworm",
+      "D": "Ascaris"
+    },
+    "correct_answer": "D",
+    "explanation": "Ascaris (a roundworm) belongs to Phylum Nematoda, which are characterized by having a pseudocoelom. Earthworms are coelomates, jellyfish are diploblastic and lack a true coelom, and tapeworms are acoelomates.",
+    "difficulty": "easy",
+    "topic": "body_cavity",
+    "subtopic": "pseudocoelomate_examples",
+    "tags": [
+      "pseudocoelomate",
+      "nematoda",
+      "ascaris",
+      "roundworms"
+    ],
+    "learning_objective": "Provide examples of animals with a pseudocoelom.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch9_mcq_008",
+    "question": "The excretory organs in flatworms (Platyhelminthes) are called:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Nephridia",
+      "B": "Malpighian tubules",
+      "C": "Flame cells",
+      "D": "Kidneys"
+    },
+    "correct_answer": "C",
+    "explanation": "Flatworms utilize specialized cells called flame cells (or protonephridia) for osmoregulation and excretion. Nephridia are found in annelids, Malpighian tubules in insects, and kidneys in vertebrates.",
+    "difficulty": "easy",
+    "topic": "phylum_platyhelminthes",
+    "subtopic": "excretory_system",
+    "tags": [
+      "platyhelminthes",
+      "flatworms",
+      "flame_cells",
+      "excretion"
+    ],
+    "learning_objective": "Identify the excretory structures in flatworms.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch9_mcq_009",
+    "question": "Which of the following phyla exhibits metameric segmentation?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Mollusca",
+      "B": "Echinodermata",
+      "C": "Annelida",
+      "D": "Porifera"
+    },
+    "correct_answer": "C",
+    "explanation": "Metameric segmentation, or true segmentation, where the body is divided into a series of similar segments, is a characteristic feature of Phylum Annelida (e.g., earthworms). It is also seen in Arthropoda and Chordata.",
+    "difficulty": "easy",
+    "topic": "segmentation",
+    "subtopic": "metamerism",
+    "tags": [
+      "segmentation",
+      "metamerism",
+      "annelida",
+      "earthworm"
+    ],
+    "learning_objective": "Recognize phyla characterized by metameric segmentation.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch9_mcq_010",
+    "question": "The presence of a notochord, dorsal hollow nerve cord, pharyngeal slits, and a post-anal tail are defining features of which phylum?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Arthropoda",
+      "B": "Mollusca",
+      "C": "Echinodermata",
+      "D": "Chordata"
+    },
+    "correct_answer": "D",
+    "explanation": "These four characteristics are the diagnostic features of Phylum Chordata, present at some stage of their life cycle, even if modified or lost in adults.",
+    "difficulty": "easy",
+    "topic": "phylum_chordata",
+    "subtopic": "chordate_characteristics",
+    "tags": [
+      "chordata",
+      "notochord",
+      "nerve_cord",
+      "pharyngeal_slits",
+      "post_anal_tail"
+    ],
+    "learning_objective": "Identify the four key characteristics of Chordates.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch9_mcq_011",
+    "question": "Which of the following animals belongs to Phylum Arthropoda?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Snail",
+      "B": "Starfish",
+      "C": "Spider",
+      "D": "Leech"
+    },
+    "correct_answer": "C",
+    "explanation": "Spiders are arachnids, a class within Phylum Arthropoda, characterized by jointed appendages and an exoskeleton. Snails are molluscs, starfish are echinoderms, and leeches are annelids.",
+    "difficulty": "easy",
+    "topic": "phylum_arthropoda",
+    "subtopic": "arthropod_examples",
+    "tags": [
+      "arthropoda",
+      "spider",
+      "insects",
+      "crustaceans"
+    ],
+    "learning_objective": "Identify common examples of arthropods.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch9_mcq_012",
+    "question": "The water vascular system is a unique feature of which phylum?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Mollusca",
+      "B": "Echinodermata",
+      "C": "Cnidaria",
+      "D": "Annelida"
+    },
+    "correct_answer": "B",
+    "explanation": "The water vascular system, with its tube feet, is a distinctive characteristic of Phylum Echinodermata (e.g., starfish, sea urchins). It is used for locomotion, feeding, and gas exchange.",
+    "difficulty": "easy",
+    "topic": "phylum_echinodermata",
+    "subtopic": "water_vascular_system",
+    "tags": [
+      "echinodermata",
+      "water_vascular_system",
+      "tube_feet",
+      "starfish"
+    ],
+    "learning_objective": "Recall the unique anatomical system of echinoderms.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch9_mcq_013",
+    "question": "Which of the following is a characteristic of Phylum Mollusca?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Exoskeleton made of chitin",
+      "B": "Presence of a radula (in most)",
+      "C": "Water vascular system",
+      "D": "Metameric segmentation"
+    },
+    "correct_answer": "B",
+    "explanation": "Molluscs typically possess a radula, a chitinous ribbon of teeth used for scraping food. Chitinous exoskeletons are characteristic of arthropods, water vascular systems of echinoderms, and metameric segmentation of annelids and arthropods.",
+    "difficulty": "easy",
+    "topic": "phylum_mollusca",
+    "subtopic": "radula",
+    "tags": [
+      "mollusca",
+      "radula",
+      "snails",
+      "octopus"
+    ],
+    "learning_objective": "Identify key anatomical features of molluscs.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch9_mcq_014",
+    "question": "Organisms with a gastrovascular cavity, serving both digestion and circulation, are found in which phylum?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Porifera",
+      "B": "Cnidaria",
+      "C": "Nematoda",
+      "D": "Annelida"
+    },
+    "correct_answer": "B",
+    "explanation": "Cnidarians possess a gastrovascular cavity, which is a central digestive compartment with a single opening that functions as both mouth and anus, and also aids in distributing nutrients.",
+    "difficulty": "easy",
+    "topic": "phylum_cnidaria",
+    "subtopic": "gastrovascular_cavity",
+    "tags": [
+      "cnidaria",
+      "gastrovascular_cavity",
+      "digestion",
+      "circulation"
+    ],
+    "learning_objective": "Describe the digestive system of Cnidarians.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch9_mcq_015",
+    "question": "Which of the following is an acoelomate animal?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Earthworm",
+      "B": "Roundworm",
+      "C": "Flatworm",
+      "D": "Starfish"
+    },
+    "correct_answer": "C",
+    "explanation": "Flatworms (Phylum Platyhelminthes) are acoelomates, meaning they lack a true body cavity. Earthworms are coelomates, roundworms are pseudocoelomates, and starfish are coelomates.",
+    "difficulty": "easy",
+    "topic": "body_cavity",
+    "subtopic": "acoelomate_examples",
+    "tags": [
+      "acoelomate",
+      "platyhelminthes",
+      "flatworms"
+    ],
+    "learning_objective": "Identify examples of acoelomate animals.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch9_mcq_016",
+    "question": "The presence of a cuticle that is periodically shed (molting or ecdysis) is characteristic of which phylum?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Annelida",
+      "B": "Mollusca",
+      "C": "Nematoda",
+      "D": "Porifera"
+    },
+    "correct_answer": "C",
+    "explanation": "Nematodes (roundworms) possess a tough, external cuticle that must be shed (ecdysis or molting) as the animal grows. This process is also characteristic of arthropods.",
+    "difficulty": "easy",
+    "topic": "phylum_nematoda",
+    "subtopic": "cuticle_ecdysis",
+    "tags": [
+      "nematoda",
+      "cuticle",
+      "molting",
+      "ecdysis"
+    ],
+    "learning_objective": "Recall the unique integumentary feature and growth process of nematodes.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch9_mcq_017",
+    "question": "Which class of Cnidarians includes corals and sea anemones?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Hydrozoa",
+      "B": "Scyphozoa",
+      "C": "Anthozoa",
+      "D": "Cubozoa"
+    },
+    "correct_answer": "C",
+    "explanation": "Class Anthozoa comprises cnidarians that exist only in the polyp form, such as sea anemones and corals. Hydrozoa includes hydras and Portuguese man-of-war, while Scyphozoa includes true jellyfish.",
+    "difficulty": "easy",
+    "topic": "phylum_cnidaria",
+    "subtopic": "cnidarian_classes",
+    "tags": [
+      "cnidaria",
+      "anthozoa",
+      "corals",
+      "sea_anemones"
+    ],
+    "learning_objective": "Classify examples within the Phylum Cnidaria.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch9_mcq_018",
+    "question": "The primary function of spicules in sponges is:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Locomotion",
+      "B": "Digestion",
+      "C": "Structural support",
+      "D": "Reproduction"
+    },
+    "correct_answer": "C",
+    "explanation": "Spicules, made of calcium carbonate or silica, form the skeletal framework of sponges (Porifera), providing structural support and protection against predators.",
+    "difficulty": "easy",
+    "topic": "phylum_porifera",
+    "subtopic": "spicules",
+    "tags": [
+      "porifera",
+      "spicules",
+      "skeleton",
+      "structural_support"
+    ],
+    "learning_objective": "State the function of spicules in sponges.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch9_mcq_019",
+    "question": "Which of the following is a characteristic feature of Phylum Annelida?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Open circulatory system",
+      "B": "Exoskeleton",
+      "C": "Closed circulatory system",
+      "D": "Radial symmetry"
+    },
+    "correct_answer": "C",
+    "explanation": "Annelids (segmented worms) possess a closed circulatory system, meaning blood is contained within vessels. Arthropods have an open circulatory system and an exoskeleton. Annelids exhibit bilateral symmetry.",
+    "difficulty": "easy",
+    "topic": "phylum_annelida",
+    "subtopic": "circulatory_system",
+    "tags": [
+      "annelida",
+      "closed_circulatory_system",
+      "earthworm"
+    ],
+    "learning_objective": "Identify the type of circulatory system in annelids.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xi_ch9_mcq_020",
+    "question": "The process of shedding the exoskeleton in arthropods is known as:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Metamorphosis",
+      "B": "Regeneration",
+      "C": "Ecdysis",
+      "D": "Budding"
+    },
+    "correct_answer": "C",
+    "explanation": "Ecdysis, or molting, is the process by which arthropods shed their rigid exoskeleton to allow for growth. Metamorphosis is a developmental change, regeneration is regrowth of lost parts, and budding is a form of asexual reproduction.",
+    "difficulty": "easy",
+    "topic": "phylum_arthropoda",
+    "subtopic": "ecdysis",
+    "tags": [
+      "arthropoda",
+      "exoskeleton",
+      "ecdysis",
+      "molting"
+    ],
+    "learning_objective": "Define the process of exoskeleton shedding in arthropods.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_9",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

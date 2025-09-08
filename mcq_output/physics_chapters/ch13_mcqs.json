@@ -1,0 +1,531 @@
+[
+  {
+    "id": "chem_xi_ch13_mcq_001",
+    "question": "Which of the following represents the general formula for alkanes?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$C_nH_{2n}$",
+      "B": "$C_nH_{2n+2}$",
+      "C": "$C_nH_{2n-2}$",
+      "D": "$C_nH_{2n-6}$"
+    },
+    "correct_answer": "B",
+    "explanation": "Alkanes are saturated hydrocarbons, meaning they contain only single bonds between carbon atoms. Their general molecular formula is $C_nH_{2n+2}$, where 'n' represents the number of carbon atoms. For example, methane ($CH_4$) has $n=1$, so $C_1H_{2(1)+2} = CH_4$. Option A is for alkenes, Option C is for alkynes, and Option D is for aromatic compounds like benzene derivatives.",
+    "difficulty": "easy",
+    "topic": "alkanes",
+    "subtopic": "general_formula",
+    "tags": [
+      "alkanes",
+      "hydrocarbons",
+      "general_formula",
+      "saturated"
+    ],
+    "learning_objective": "Recall the general formula for alkanes.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch13_mcq_002",
+    "question": "What is the IUPAC name for the compound with the formula $CH_3CH_2CH(CH_3)CH_3$?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "n-pentane",
+      "B": "isopentane",
+      "C": "2-methylbutane",
+      "D": "3-methylbutane"
+    },
+    "correct_answer": "C",
+    "explanation": "To name the compound $CH_3CH_2CH(CH_3)CH_3$ using IUPAC rules: \n1. Identify the longest continuous carbon chain, which is 4 carbons long (butane).\n2. Number the carbon chain from the end that gives the substituent the lowest possible number. In this case, numbering from the right gives the methyl group at position 2.\n3. The substituent is a methyl group ($CH_3$) at carbon 2. \nTherefore, the IUPAC name is 2-methylbutane. Isopentane is a common name for this compound, but not the IUPAC name.",
+    "difficulty": "easy",
+    "topic": "alkanes",
+    "subtopic": "nomenclature",
+    "tags": [
+      "alkanes",
+      "IUPAC_nomenclature",
+      "isomerism"
+    ],
+    "learning_objective": "Apply IUPAC rules to name simple alkanes.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch13_mcq_003",
+    "question": "Which type of hybridization is present in all carbon atoms of an alkane?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$sp$",
+      "B": "$sp^2$",
+      "C": "$sp^3$",
+      "D": "$dsp^2$"
+    },
+    "correct_answer": "C",
+    "explanation": "Alkanes are saturated hydrocarbons, meaning all carbon-carbon bonds are single bonds. Each carbon atom in an alkane forms four single bonds (either to other carbon atoms or hydrogen atoms). To accommodate these four single bonds in a tetrahedral geometry, the carbon atom undergoes $sp^3$ hybridization. $sp$ hybridization is found in alkynes (triple bonds), and $sp^2$ hybridization is found in alkenes (double bonds) and aromatic compounds.",
+    "difficulty": "easy",
+    "topic": "alkanes",
+    "subtopic": "hybridization",
+    "tags": [
+      "alkanes",
+      "hybridization",
+      "bonding",
+      "sp3"
+    ],
+    "learning_objective": "Identify the hybridization of carbon atoms in alkanes.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "chem_xi_ch13_mcq_004",
+    "question": "Methane reacts with chlorine in the presence of UV light to produce chloromethane. This is an example of which type of reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Addition reaction",
+      "B": "Elimination reaction",
+      "C": "Substitution reaction",
+      "D": "Rearrangement reaction"
+    },
+    "correct_answer": "C",
+    "explanation": "Alkanes undergo substitution reactions, particularly free radical halogenation, where a hydrogen atom is replaced by a halogen atom. In the reaction of methane ($CH_4$) with chlorine ($Cl_2$) under UV light, one hydrogen atom of methane is substituted by a chlorine atom to form chloromethane ($CH_3Cl$) and hydrogen chloride ($HCl$). This is a characteristic reaction of alkanes.",
+    "difficulty": "easy",
+    "topic": "alkanes",
+    "subtopic": "chemical_reactions",
+    "tags": [
+      "alkanes",
+      "substitution_reaction",
+      "halogenation",
+      "methane"
+    ],
+    "learning_objective": "Identify the type of reaction alkanes undergo with halogens.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch13_mcq_005",
+    "question": "Which of the following is the simplest alkane?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Ethane",
+      "B": "Methane",
+      "C": "Propane",
+      "D": "Butane"
+    },
+    "correct_answer": "B",
+    "explanation": "The simplest alkane is the one with the fewest carbon atoms. According to the general formula $C_nH_{2n+2}$, when $n=1$, the formula is $CH_4$, which is methane. Ethane ($C_2H_6$) has two carbons, propane ($C_3H_8$) has three, and butane ($C_4H_{10}$) has four.",
+    "difficulty": "easy",
+    "topic": "alkanes",
+    "subtopic": "basic_concepts",
+    "tags": [
+      "alkanes",
+      "methane",
+      "simplest_alkane"
+    ],
+    "learning_objective": "Identify the simplest alkane.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "chem_xi_ch13_mcq_006",
+    "question": "What is the general formula for alkenes?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$C_nH_{2n+2}$",
+      "B": "$C_nH_{2n}$",
+      "C": "$C_nH_{2n-2}$",
+      "D": "$C_nH_{2n-6}$"
+    },
+    "correct_answer": "B",
+    "explanation": "Alkenes are unsaturated hydrocarbons containing at least one carbon-carbon double bond. Their general molecular formula is $C_nH_{2n}$, where 'n' represents the number of carbon atoms. For example, ethene ($C_2H_4$) has $n=2$, so $C_2H_{2(2)} = C_2H_4$. Option A is for alkanes, Option C is for alkynes, and Option D is for aromatic compounds.",
+    "difficulty": "easy",
+    "topic": "alkenes",
+    "subtopic": "general_formula",
+    "tags": [
+      "alkenes",
+      "hydrocarbons",
+      "general_formula",
+      "unsaturated"
+    ],
+    "learning_objective": "Recall the general formula for alkenes.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch13_mcq_007",
+    "question": "Which of the following is an example of an addition reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Combustion of methane",
+      "B": "Chlorination of ethane",
+      "C": "Hydrogenation of ethene",
+      "D": "Dehydration of ethanol"
+    },
+    "correct_answer": "C",
+    "explanation": "Addition reactions are characteristic of unsaturated compounds like alkenes and alkynes, where atoms are added across the double or triple bond, breaking the pi bond and forming new sigma bonds. Hydrogenation of ethene ($CH_2=CH_2 + H_2 \rightarrow CH_3-CH_3$) is a classic example where hydrogen adds across the double bond. Combustion is an oxidation reaction, chlorination of ethane is a substitution reaction, and dehydration of ethanol is an elimination reaction.",
+    "difficulty": "easy",
+    "topic": "alkenes",
+    "subtopic": "chemical_reactions",
+    "tags": [
+      "alkenes",
+      "addition_reaction",
+      "hydrogenation",
+      "ethene"
+    ],
+    "learning_objective": "Identify addition reactions characteristic of alkenes.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch13_mcq_008",
+    "question": "What is the hybridization of carbon atoms involved in the double bond of an alkene?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$sp$",
+      "B": "$sp^2$",
+      "C": "$sp^3$",
+      "D": "$dsp^2$"
+    },
+    "correct_answer": "B",
+    "explanation": "In an alkene, each carbon atom involved in the double bond forms three sigma bonds (one to the other carbon in the double bond, and two to other atoms, usually hydrogen or carbon) and one pi bond. To accommodate these three sigma bonds in a trigonal planar geometry, the carbon atom undergoes $sp^2$ hybridization. The unhybridized p-orbital forms the pi bond.",
+    "difficulty": "easy",
+    "topic": "alkenes",
+    "subtopic": "hybridization",
+    "tags": [
+      "alkenes",
+      "hybridization",
+      "bonding",
+      "sp2"
+    ],
+    "learning_objective": "Identify the hybridization of carbon atoms in alkenes.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "chem_xi_ch13_mcq_009",
+    "question": "Which reagent is used to test for unsaturation (presence of double or triple bonds) in hydrocarbons?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Aqueous $NaOH$",
+      "B": "Acidified $K_2Cr_2O_7$",
+      "C": "Bromine water ($Br_2/H_2O$)",
+      "D": "Tollens' reagent"
+    },
+    "correct_answer": "C",
+    "explanation": "Bromine water ($Br_2/H_2O$) is a common reagent used to test for unsaturation. Alkenes and alkynes react with bromine via an addition reaction, causing the reddish-brown color of bromine water to disappear (decolorize). Saturated compounds like alkanes do not react with bromine water under normal conditions. Acidified $K_2Cr_2O_7$ is an oxidizing agent, and Tollens' reagent is used for aldehydes and terminal alkynes.",
+    "difficulty": "easy",
+    "topic": "alkenes",
+    "subtopic": "chemical_tests",
+    "tags": [
+      "alkenes",
+      "alkynes",
+      "unsaturation_test",
+      "bromine_water"
+    ],
+    "learning_objective": "Identify the reagent used to test for unsaturation.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch13_mcq_010",
+    "question": "What is the general formula for alkynes?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$C_nH_{2n+2}$",
+      "B": "$C_nH_{2n}$",
+      "C": "$C_nH_{2n-2}$",
+      "D": "$C_nH_{2n-6}$"
+    },
+    "correct_answer": "C",
+    "explanation": "Alkynes are unsaturated hydrocarbons containing at least one carbon-carbon triple bond. Their general molecular formula is $C_nH_{2n-2}$, where 'n' represents the number of carbon atoms. For example, ethyne ($C_2H_2$) has $n=2$, so $C_2H_{2(2)-2} = C_2H_2$. Option A is for alkanes, Option B is for alkenes, and Option D is for aromatic compounds.",
+    "difficulty": "easy",
+    "topic": "alkynes",
+    "subtopic": "general_formula",
+    "tags": [
+      "alkynes",
+      "hydrocarbons",
+      "general_formula",
+      "unsaturated"
+    ],
+    "learning_objective": "Recall the general formula for alkynes.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch13_mcq_011",
+    "question": "Which type of hybridization is present in carbon atoms involved in a triple bond?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$sp$",
+      "B": "$sp^2$",
+      "C": "$sp^3$",
+      "D": "$dsp^2$"
+    },
+    "correct_answer": "A",
+    "explanation": "In an alkyne, each carbon atom involved in the triple bond forms two sigma bonds (one to the other carbon in the triple bond, and one to another atom, usually hydrogen or carbon) and two pi bonds. To accommodate these two sigma bonds in a linear geometry, the carbon atom undergoes $sp$ hybridization. The two unhybridized p-orbitals form the two pi bonds.",
+    "difficulty": "easy",
+    "topic": "alkynes",
+    "subtopic": "hybridization",
+    "tags": [
+      "alkynes",
+      "hybridization",
+      "bonding",
+      "sp"
+    ],
+    "learning_objective": "Identify the hybridization of carbon atoms in alkynes.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "chem_xi_ch13_mcq_012",
+    "question": "What is the common name for ethyne?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Ethylene",
+      "B": "Propylene",
+      "C": "Acetylene",
+      "D": "Methane"
+    },
+    "correct_answer": "C",
+    "explanation": "Ethyne ($C_2H_2$) is the simplest alkyne, containing a carbon-carbon triple bond. Its common name is acetylene. Ethylene is the common name for ethene ($C_2H_4$), and propylene for propene ($C_3H_6$). Methane is an alkane.",
+    "difficulty": "easy",
+    "topic": "alkynes",
+    "subtopic": "nomenclature",
+    "tags": [
+      "alkynes",
+      "ethyne",
+      "acetylene",
+      "common_names"
+    ],
+    "learning_objective": "Recall the common name for ethyne.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "chem_xi_ch13_mcq_013",
+    "question": "Which of the following hydrocarbons is aromatic?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Cyclohexane",
+      "B": "Cyclohexene",
+      "C": "Benzene",
+      "D": "Hexane"
+    },
+    "correct_answer": "C",
+    "explanation": "Aromatic hydrocarbons are cyclic, planar compounds with a continuous ring of p-orbitals and obey Hückel's rule ($4n+2$ pi electrons). Benzene ($C_6H_6$) is the simplest and most common aromatic hydrocarbon, characterized by its delocalized pi electron system. Cyclohexane and hexane are alkanes (saturated), and cyclohexene is an alkene (unsaturated but not aromatic).",
+    "difficulty": "easy",
+    "topic": "aromatic_hydrocarbons",
+    "subtopic": "definition",
+    "tags": [
+      "aromatic_compounds",
+      "benzene",
+      "hydrocarbons",
+      "aromaticity"
+    ],
+    "learning_objective": "Identify an aromatic hydrocarbon.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch13_mcq_014",
+    "question": "What is the characteristic reaction of benzene?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Addition reaction",
+      "B": "Elimination reaction",
+      "C": "Electrophilic substitution reaction",
+      "D": "Free radical substitution reaction"
+    },
+    "correct_answer": "C",
+    "explanation": "Due to its stable delocalized pi electron system, benzene prefers to undergo electrophilic substitution reactions, where an electrophile replaces a hydrogen atom on the ring, maintaining the aromaticity. Unlike alkenes, benzene does not readily undergo addition reactions because that would destroy its aromatic stability. Free radical substitution is characteristic of alkanes.",
+    "difficulty": "easy",
+    "topic": "aromatic_hydrocarbons",
+    "subtopic": "chemical_reactions",
+    "tags": [
+      "benzene",
+      "electrophilic_substitution",
+      "aromaticity",
+      "reactions"
+    ],
+    "learning_objective": "Identify the characteristic reaction of benzene.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch13_mcq_015",
+    "question": "How many pi ($\\pi$) bonds are present in a molecule of benzene?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "6"
+    },
+    "correct_answer": "C",
+    "explanation": "The Kekulé structure of benzene shows three alternating double bonds, meaning there are three pi bonds. However, in reality, these pi electrons are delocalized over the entire ring, forming a continuous pi electron cloud. Each double bond contributes one pi bond.",
+    "difficulty": "easy",
+    "topic": "aromatic_hydrocarbons",
+    "subtopic": "structure",
+    "tags": [
+      "benzene",
+      "pi_bonds",
+      "structure",
+      "aromaticity"
+    ],
+    "learning_objective": "Count the number of pi bonds in benzene.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "chem_xi_ch13_mcq_016",
+    "question": "Which of the following is a saturated hydrocarbon?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Ethene",
+      "B": "Ethyne",
+      "C": "Cyclohexane",
+      "D": "Benzene"
+    },
+    "correct_answer": "C",
+    "explanation": "Saturated hydrocarbons contain only carbon-carbon single bonds. Ethene contains a double bond, ethyne contains a triple bond, and benzene contains delocalized double bonds, making them all unsaturated. Cyclohexane ($C_6H_{12}$) is a cyclic alkane, meaning all its carbon-carbon bonds are single bonds, thus it is saturated.",
+    "difficulty": "easy",
+    "topic": "hydrocarbons",
+    "subtopic": "classification",
+    "tags": [
+      "saturated",
+      "unsaturated",
+      "alkanes",
+      "cyclohexane"
+    ],
+    "learning_objective": "Distinguish between saturated and unsaturated hydrocarbons.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "chem_xi_ch13_mcq_017",
+    "question": "What is the bond angle around each carbon atom in methane?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$180^\\circ$",
+      "B": "$120^\\circ$",
+      "C": "$109.5^\\circ$",
+      "D": "$90^\\circ$"
+    },
+    "correct_answer": "C",
+    "explanation": "Methane ($CH_4$) has a central carbon atom that is $sp^3$ hybridized. This hybridization leads to a tetrahedral geometry around the carbon atom, with bond angles of approximately $109.5^\\circ$ between the C-H bonds. $180^\\circ$ is for linear geometry ($sp$), and $120^\\circ$ is for trigonal planar geometry ($sp^2$).",
+    "difficulty": "easy",
+    "topic": "alkanes",
+    "subtopic": "molecular_geometry",
+    "tags": [
+      "methane",
+      "bond_angle",
+      "tetrahedral",
+      "sp3"
+    ],
+    "learning_objective": "Recall the bond angle in methane.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "chem_xi_ch13_mcq_018",
+    "question": "Which of the following is a source of alkanes?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Coal",
+      "B": "Natural gas",
+      "C": "Biomass",
+      "D": "Water"
+    },
+    "correct_answer": "B",
+    "explanation": "Natural gas is primarily composed of methane (the simplest alkane), along with smaller amounts of other light alkanes like ethane, propane, and butane. Petroleum (crude oil) is also a major source of alkanes. Coal is mainly carbon, and biomass is organic matter, while water is an inorganic compound.",
+    "difficulty": "easy",
+    "topic": "alkanes",
+    "subtopic": "sources",
+    "tags": [
+      "alkanes",
+      "natural_gas",
+      "sources"
+    ],
+    "learning_objective": "Identify a major source of alkanes.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "chem_xi_ch13_mcq_019",
+    "question": "What is the product when propene reacts with $H_2O$ in the presence of an acid catalyst ($H_2SO_4$)?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Propanal",
+      "B": "Propanone",
+      "C": "Propan-1-ol",
+      "D": "Propan-2-ol"
+    },
+    "correct_answer": "D",
+    "explanation": "The reaction of an alkene with water in the presence of an acid catalyst is called hydration, which is an addition reaction. According to Markovnikov's rule, the hydrogen atom from water adds to the carbon atom of the double bond that already has more hydrogen atoms, and the hydroxyl group ($-OH$) adds to the carbon atom with fewer hydrogen atoms. For propene ($CH_3-CH=CH_2$), the hydrogen adds to $CH_2$ and the $-OH$ adds to $CH$, resulting in propan-2-ol ($CH_3-CH(OH)-CH_3$).",
+    "difficulty": "medium",
+    "topic": "alkenes",
+    "subtopic": "chemical_reactions",
+    "tags": [
+      "alkenes",
+      "hydration",
+      "Markovnikov's_rule",
+      "propan-2-ol"
+    ],
+    "learning_objective": "Predict the product of alkene hydration using Markovnikov's rule.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

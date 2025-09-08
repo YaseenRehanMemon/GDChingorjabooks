@@ -1,0 +1,553 @@
+[
+  {
+    "id": "chem_xi_ch2_mcq_001",
+    "question": "Which scientist proposed the planetary model of the atom, suggesting a central nucleus with electrons orbiting around it?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "J.J. Thomson",
+      "B": "Ernest Rutherford",
+      "C": "Niels Bohr",
+      "D": "John Dalton"
+    },
+    "correct_answer": "B",
+    "explanation": "Ernest Rutherford, through his gold foil experiment, proposed that the atom consists of a small, dense, positively charged nucleus at its center, with electrons orbiting around it, similar to planets around the sun. J.J. Thomson proposed the 'plum pudding' model, Bohr proposed quantized orbits, and Dalton proposed the atomic theory.",
+    "difficulty": "easy",
+    "topic": "atomic_models",
+    "subtopic": "rutherford_model",
+    "tags": [
+      "atomic_structure",
+      "rutherford",
+      "nucleus",
+      "historical_models"
+    ],
+    "learning_objective": "Recall the contributions of Rutherford to atomic theory.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_002",
+    "question": "What is the maximum number of electrons that can be accommodated in the first electron shell ($n=1$)?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "2",
+      "B": "8",
+      "C": "18",
+      "D": "32"
+    },
+    "correct_answer": "A",
+    "explanation": "The maximum number of electrons in any principal energy shell ($n$) is given by the formula `$2n^2$`. For the first shell, $n=1$, so the maximum number of electrons is `$2(1)^2 = 2$`. Therefore, the first shell can accommodate a maximum of $2$ electrons.",
+    "difficulty": "easy",
+    "topic": "electronic_configuration",
+    "subtopic": "electron_shells",
+    "tags": [
+      "electron_shells",
+      "quantum_numbers",
+      "electron_capacity"
+    ],
+    "learning_objective": "Calculate the maximum electron capacity of an electron shell.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_003",
+    "question": "Which subatomic particle has a negligible mass compared to protons and neutrons?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Proton",
+      "B": "Neutron",
+      "C": "Electron",
+      "D": "Nucleus"
+    },
+    "correct_answer": "C",
+    "explanation": "Electrons have a mass of approximately `$9.109 \times 10^{-31} \text{ kg}$`, which is about `$1/1836$` times the mass of a proton or neutron. Protons and neutrons have masses of approximately `$1.67 \times 10^{-27} \text{ kg}$`, making them significantly heavier than electrons. The nucleus contains protons and neutrons, so it is also heavy.",
+    "difficulty": "easy",
+    "topic": "subatomic_particles",
+    "subtopic": "electron_mass",
+    "tags": [
+      "electron",
+      "mass",
+      "subatomic_particles",
+      "atomic_structure"
+    ],
+    "learning_objective": "Identify the subatomic particle with negligible mass.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_004",
+    "question": "What is the atomic number ($Z$) of an element defined as?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The total number of protons and neutrons in the nucleus.",
+      "B": "The total number of electrons in the atom.",
+      "C": "The number of protons in the nucleus.",
+      "D": "The number of neutrons in the nucleus."
+    },
+    "correct_answer": "C",
+    "explanation": "The atomic number ($Z$) of an element is uniquely defined by the number of protons in the nucleus of an atom. In a neutral atom, the number of electrons is equal to the number of protons. The total number of protons and neutrons is the mass number ($A$).",
+    "difficulty": "easy",
+    "topic": "atomic_structure",
+    "subtopic": "atomic_number",
+    "tags": [
+      "atomic_number",
+      "protons",
+      "nucleus",
+      "definition"
+    ],
+    "learning_objective": "Define atomic number.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_005",
+    "question": "According to Bohr's model, electrons revolve around the nucleus in fixed paths called:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Orbitals",
+      "B": "Clouds",
+      "C": "Orbits",
+      "D": "Shells"
+    },
+    "correct_answer": "C",
+    "explanation": "Bohr's model described electrons moving in specific, fixed circular paths or energy levels called 'orbits'. The terms 'orbitals' and 'clouds' are associated with the quantum mechanical model, which describes regions of probability for finding electrons, not fixed paths. 'Shells' is a broader term for energy levels, but 'orbits' specifically refers to Bohr's concept of fixed paths.",
+    "difficulty": "easy",
+    "topic": "bohr_model",
+    "subtopic": "orbits",
+    "tags": [
+      "bohr_model",
+      "orbits",
+      "electron_paths",
+      "atomic_structure"
+    ],
+    "learning_objective": "Identify the term used by Bohr for electron paths.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_006",
+    "question": "What is the value of the principal quantum number ($n$) for the M-shell?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
+    "correct_answer": "C",
+    "explanation": "Electron shells are designated by letters K, L, M, N, ... corresponding to principal quantum numbers ($n$) of $1, 2, 3, 4, ...$ respectively. Therefore, the M-shell corresponds to `$n=3$`. K-shell is $n=1$, L-shell is $n=2$, M-shell is $n=3$, and N-shell is $n=4$.",
+    "difficulty": "easy",
+    "topic": "quantum_numbers",
+    "subtopic": "principal_quantum_number",
+    "tags": [
+      "principal_quantum_number",
+      "electron_shells",
+      "quantum_numbers"
+    ],
+    "learning_objective": "Relate principal quantum number to shell designation.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_007",
+    "question": "Which of the following describes isotopes?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Atoms with the same mass number but different atomic numbers.",
+      "B": "Atoms with the same atomic number but different mass numbers.",
+      "C": "Atoms with the same number of neutrons but different atomic numbers.",
+      "D": "Atoms with the same number of electrons but different protons."
+    },
+    "correct_answer": "B",
+    "explanation": "Isotopes are atoms of the same element, meaning they have the same number of protons (and thus the same atomic number, $Z$). However, they differ in the number of neutrons, which leads to different mass numbers ($A$). Option A describes isobars. Option C describes isotones. Option D is incorrect as the number of electrons equals protons in a neutral atom.",
+    "difficulty": "easy",
+    "topic": "atomic_structure",
+    "subtopic": "isotopes",
+    "tags": [
+      "isotopes",
+      "atomic_number",
+      "mass_number",
+      "neutrons"
+    ],
+    "learning_objective": "Define isotopes.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_008",
+    "question": "What is the shape of an s-orbital?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Dumbbell",
+      "B": "Spherical",
+      "C": "Cloverleaf",
+      "D": "Complex"
+    },
+    "correct_answer": "B",
+    "explanation": "All s-orbitals (e.g., $1s$, $2s$, $3s$) are spherically symmetrical. P-orbitals have a dumbbell shape, and d-orbitals have more complex shapes, often described as cloverleaf or double dumbbell.",
+    "difficulty": "easy",
+    "topic": "atomic_orbitals",
+    "subtopic": "s_orbital_shape",
+    "tags": [
+      "s_orbital",
+      "orbital_shape",
+      "atomic_orbitals"
+    ],
+    "learning_objective": "Identify the shape of an s-orbital.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_009",
+    "question": "Which principle states that no two electrons in an atom can have the same set of four quantum numbers?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Aufbau Principle",
+      "B": "Hund's Rule",
+      "C": "Pauli's Exclusion Principle",
+      "D": "Heisenberg's Uncertainty Principle"
+    },
+    "correct_answer": "C",
+    "explanation": "Pauli's Exclusion Principle states that no two electrons in the same atom can have identical values for all four quantum numbers ($n$, $l$, $m_l$, and $m_s$). This means that an atomic orbital can hold a maximum of two electrons, and these two electrons must have opposite spins. The Aufbau principle deals with filling orbitals in increasing energy, Hund's rule with maximizing spin multiplicity, and Heisenberg's principle with the uncertainty in position and momentum.",
+    "difficulty": "easy",
+    "topic": "electronic_configuration",
+    "subtopic": "pauli_exclusion_principle",
+    "tags": [
+      "pauli_exclusion_principle",
+      "quantum_numbers",
+      "electron_configuration"
+    ],
+    "learning_objective": "State Pauli's Exclusion Principle.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_010",
+    "question": "The emission spectrum of hydrogen consists of several series of lines. Which series lies in the visible region of the electromagnetic spectrum?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Lyman series",
+      "B": "Balmer series",
+      "C": "Paschen series",
+      "D": "Brackett series"
+    },
+    "correct_answer": "B",
+    "explanation": "The Balmer series corresponds to electron transitions from higher energy levels ($n > 2$) to the second energy level ($n=2$). These transitions emit photons in the visible region of the electromagnetic spectrum. The Lyman series is in the ultraviolet region, while the Paschen, Brackett, and Pfund series are in the infrared region.",
+    "difficulty": "easy",
+    "topic": "bohr_model",
+    "subtopic": "hydrogen_spectrum",
+    "tags": [
+      "hydrogen_spectrum",
+      "balmer_series",
+      "visible_light",
+      "bohr_model"
+    ],
+    "learning_objective": "Identify the hydrogen spectral series in the visible region.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_011",
+    "question": "What is the charge of a neutron?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "+1",
+      "B": "-1",
+      "C": "0",
+      "D": "+2"
+    },
+    "correct_answer": "C",
+    "explanation": "Neutrons are electrically neutral particles, meaning they carry no charge. Protons have a charge of `$ +1 $` (relative charge), and electrons have a charge of `$ -1 $` (relative charge).",
+    "difficulty": "easy",
+    "topic": "subatomic_particles",
+    "subtopic": "neutron_charge",
+    "tags": [
+      "neutron",
+      "charge",
+      "subatomic_particles"
+    ],
+    "learning_objective": "Recall the charge of a neutron.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_012",
+    "question": "Which of the following statements is true regarding the mass of a proton and a neutron?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Proton mass is significantly greater than neutron mass.",
+      "B": "Neutron mass is significantly greater than proton mass.",
+      "C": "Proton and neutron masses are approximately equal.",
+      "D": "Proton mass is half of neutron mass."
+    },
+    "correct_answer": "C",
+    "explanation": "The mass of a proton is approximately `$1.672 \times 10^{-27} \text{ kg}$`, and the mass of a neutron is approximately `$1.674 \times 10^{-27} \text{ kg}$`. While the neutron is slightly heavier, for most practical purposes in chemistry, their masses are considered approximately equal (both approximately `$1 \text{ amu}$`).",
+    "difficulty": "easy",
+    "topic": "subatomic_particles",
+    "subtopic": "proton_neutron_mass",
+    "tags": [
+      "proton",
+      "neutron",
+      "mass",
+      "subatomic_particles"
+    ],
+    "learning_objective": "Compare the masses of protons and neutrons.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_013",
+    "question": "The concept of 'quantization of energy' was first introduced by:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Albert Einstein",
+      "B": "Max Planck",
+      "C": "Niels Bohr",
+      "D": "Louis de Broglie"
+    },
+    "correct_answer": "B",
+    "explanation": "Max Planck introduced the concept of energy quantization in 1900 to explain black-body radiation, proposing that energy is emitted or absorbed in discrete packets called 'quanta'. Bohr later applied this concept to the atomic model, but Planck was the first to introduce it.",
+    "difficulty": "easy",
+    "topic": "quantum_theory",
+    "subtopic": "planck_quantization",
+    "tags": [
+      "quantization",
+      "max_planck",
+      "quantum_theory",
+      "energy"
+    ],
+    "learning_objective": "Identify the scientist who introduced energy quantization.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_014",
+    "question": "What is the maximum number of electrons that can occupy a p-subshell?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "2",
+      "B": "6",
+      "C": "10",
+      "D": "14"
+    },
+    "correct_answer": "B",
+    "explanation": "A p-subshell consists of three p-orbitals ($p_x$, $p_y$, $p_z$). Each orbital can hold a maximum of two electrons (according to Pauli's Exclusion Principle). Therefore, a p-subshell can hold a maximum of `$3 \times 2 = 6$` electrons.",
+    "difficulty": "easy",
+    "topic": "electronic_configuration",
+    "subtopic": "p_subshell_capacity",
+    "tags": [
+      "p_subshell",
+      "electron_capacity",
+      "orbitals",
+      "quantum_numbers"
+    ],
+    "learning_objective": "Recall the maximum electron capacity of a p-subshell.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_015",
+    "question": "An atom has 17 protons, 18 neutrons, and 17 electrons. What is its mass number?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "17",
+      "B": "18",
+      "C": "35",
+      "D": "34"
+    },
+    "correct_answer": "C",
+    "explanation": "The mass number ($A$) is the sum of the number of protons ($Z$) and the number of neutrons ($N$) in the nucleus. So, `$A = Z + N = 17 + 18 = 35$`. The number of electrons does not affect the mass number.",
+    "difficulty": "easy",
+    "topic": "atomic_structure",
+    "subtopic": "mass_number_calculation",
+    "tags": [
+      "mass_number",
+      "protons",
+      "neutrons",
+      "atomic_calculation"
+    ],
+    "learning_objective": "Calculate the mass number of an atom.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_016",
+    "question": "Which of the following is a postulate of Bohr's atomic model?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Electrons can occupy any orbit around the nucleus.",
+      "B": "Electrons emit energy continuously while orbiting.",
+      "C": "Electrons revolve in discrete, stable orbits without radiating energy.",
+      "D": "The nucleus contains protons and neutrons."
+    },
+    "correct_answer": "C",
+    "explanation": "One of Bohr's key postulates was that electrons revolve in certain fixed, stable orbits (stationary states) without radiating energy. Energy is only absorbed or emitted when an electron jumps from one stationary orbit to another. Options A and B contradict Bohr's postulates. Option D is true but was established by Rutherford, not a postulate of Bohr's *electron* model.",
+    "difficulty": "easy",
+    "topic": "bohr_model",
+    "subtopic": "bohr_postulates",
+    "tags": [
+      "bohr_model",
+      "postulates",
+      "electron_orbits",
+      "energy_levels"
+    ],
+    "learning_objective": "Identify a key postulate of Bohr's atomic model.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_017",
+    "question": "The azimuthal quantum number ($l$) determines the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Size of the orbital",
+      "B": "Orientation of the orbital",
+      "C": "Shape of the orbital",
+      "D": "Spin of the electron"
+    },
+    "correct_answer": "C",
+    "explanation": "The azimuthal (or angular momentum) quantum number ($l$) determines the shape of an atomic orbital. `$l=0$` corresponds to an s-orbital (spherical), `$l=1$` to a p-orbital (dumbbell), `$l=2$` to a d-orbital (complex shapes), and so on. The principal quantum number ($n$) determines the size and energy, the magnetic quantum number ($m_l$) determines the orientation, and the spin quantum number ($m_s$) determines the electron's spin.",
+    "difficulty": "easy",
+    "topic": "quantum_numbers",
+    "subtopic": "azimuthal_quantum_number",
+    "tags": [
+      "azimuthal_quantum_number",
+      "orbital_shape",
+      "quantum_numbers"
+    ],
+    "learning_objective": "State the significance of the azimuthal quantum number.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_018",
+    "question": "Which of the following elements has the electronic configuration `$1s^2 2s^2 2p^6 3s^1$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Magnesium (Mg)",
+      "B": "Sodium (Na)",
+      "C": "Aluminum (Al)",
+      "D": "Neon (Ne)"
+    },
+    "correct_answer": "B",
+    "explanation": "To find the element, sum the superscripts (number of electrons): `$2 + 2 + 6 + 1 = 11$`. In a neutral atom, the number of electrons equals the number of protons, which is the atomic number ($Z$). The element with atomic number $11$ is Sodium (Na). Magnesium has $12$ electrons, Aluminum has $13$, and Neon has $10$.",
+    "difficulty": "easy",
+    "topic": "electronic_configuration",
+    "subtopic": "writing_configurations",
+    "tags": [
+      "electronic_configuration",
+      "atomic_number",
+      "sodium"
+    ],
+    "learning_objective": "Determine an element from its electronic configuration.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_019",
+    "question": "What is the maximum number of electrons in a d-subshell?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "6",
+      "B": "8",
+      "C": "10",
+      "D": "14"
+    },
+    "correct_answer": "C",
+    "explanation": "A d-subshell consists of five d-orbitals. Each orbital can hold a maximum of two electrons. Therefore, a d-subshell can hold a maximum of `$5 \times 2 = 10$` electrons.",
+    "difficulty": "easy",
+    "topic": "electronic_configuration",
+    "subtopic": "d_subshell_capacity",
+    "tags": [
+      "d_subshell",
+      "electron_capacity",
+      "orbitals"
+    ],
+    "learning_objective": "Recall the maximum electron capacity of a d-subshell.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_020",
+    "question": "The phenomenon of radioactivity was discovered by:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Marie Curie",
+      "B": "Ernest Rutherford",
+      "C": "Henri Becquerel",
+      "D": "Otto Hahn"
+    },
+    "correct_answer": "C",
+    "explanation": "Henri Becquerel discovered radioactivity in 1896 when he observed that uranium salts spontaneously emitted radiation that could expose photographic plates. Marie Curie and Pierre Curie later did extensive work on identifying other radioactive elements, but Becquerel made the initial discovery.",
+    "difficulty": "easy",
+    "topic": "radioactivity",
+    "subtopic": "discovery_of_radioactivity",
+    "tags": [
+      "radioactivity",
+      "becquerel",
+      "discovery"
+    ],
+    "learning_objective": "Identify the discoverer of radioactivity.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

@@ -1,0 +1,554 @@
+[
+  {
+    "id": "bio_xii_ch11_mcq_001",
+    "question": "Which of the following is NOT a stage of holozoic nutrition?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Ingestion",
+      "B": "Digestion",
+      "C": "Respiration",
+      "D": "Assimilation"
+    },
+    "correct_answer": "C",
+    "explanation": "Holozoic nutrition involves five main stages: Ingestion (taking in food), Digestion (breaking down food), Absorption (absorbing nutrients), Assimilation (utilizing absorbed nutrients), and Egestion (eliminating undigested waste). Respiration is a metabolic process to release energy from food, but it is not a direct stage of holozoic nutrition itself.",
+    "difficulty": "easy",
+    "topic": "holozoic_nutrition",
+    "subtopic": "stages",
+    "tags": [
+      "holozoic_nutrition",
+      "stages",
+      "basic_concepts"
+    ],
+    "learning_objective": "Identify the stages of holozoic nutrition.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch11_mcq_002",
+    "question": "In Amoeba, food is ingested through which process?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Pinocytosis",
+      "B": "Phagocytosis",
+      "C": "Osmosis",
+      "D": "Diffusion"
+    },
+    "correct_answer": "B",
+    "explanation": "Amoeba ingests solid food particles by forming pseudopodia around them, engulfing them into a food vacuole. This process of ingesting solid particles is known as phagocytosis. Pinocytosis is the ingestion of liquid droplets, while osmosis and diffusion are passive transport mechanisms for water and small molecules, respectively.",
+    "difficulty": "easy",
+    "topic": "holozoic_nutrition",
+    "subtopic": "amoeba_digestion",
+    "tags": [
+      "amoeba",
+      "phagocytosis",
+      "ingestion",
+      "intracellular_digestion"
+    ],
+    "learning_objective": "Describe the process of ingestion in Amoeba.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch11_mcq_003",
+    "question": "Which type of digestion occurs within the cells of the organism?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Extracellular digestion",
+      "B": "Intracellular digestion",
+      "C": "Mechanical digestion",
+      "D": "Chemical digestion"
+    },
+    "correct_answer": "B",
+    "explanation": "Intracellular digestion is the breakdown of food particles within the cytoplasm of cells, typically inside food vacuoles. Extracellular digestion occurs outside the cells, usually in a digestive cavity or lumen. Mechanical and chemical digestion are types of digestion, but they can occur both intracellularly and extracellularly depending on the organism.",
+    "difficulty": "easy",
+    "topic": "types_of_digestion",
+    "subtopic": "intracellular_digestion",
+    "tags": [
+      "intracellular_digestion",
+      "cell_biology",
+      "digestion_types"
+    ],
+    "learning_objective": "Differentiate between intracellular and extracellular digestion.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch11_mcq_004",
+    "question": "The gastrovascular cavity is characteristic of which organism's digestive system?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Amoeba",
+      "B": "Earthworm",
+      "C": "Hydra",
+      "D": "Human"
+    },
+    "correct_answer": "C",
+    "explanation": "Hydra possesses a gastrovascular cavity, which serves as both a digestive and circulatory system. It has a single opening that functions as both mouth and anus, indicating an incomplete digestive system. Amoeba has food vacuoles, Earthworms have a complete digestive tract, and Humans have a complex complete digestive system.",
+    "difficulty": "easy",
+    "topic": "invertebrate_digestion",
+    "subtopic": "hydra",
+    "tags": [
+      "hydra",
+      "gastrovascular_cavity",
+      "incomplete_digestion"
+    ],
+    "learning_objective": "Identify organisms with a gastrovascular cavity.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch11_mcq_005",
+    "question": "Which part of the human digestive system primarily absorbs water and electrolytes?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Stomach",
+      "B": "Small intestine",
+      "C": "Large intestine",
+      "D": "Esophagus"
+    },
+    "correct_answer": "C",
+    "explanation": "The large intestine's primary functions include the absorption of water and electrolytes from the remaining indigestible food matter, and the compaction of feces for elimination. The small intestine is the main site for nutrient absorption, while the stomach primarily digests proteins and the esophagus transports food.",
+    "difficulty": "easy",
+    "topic": "human_digestive_system",
+    "subtopic": "large_intestine",
+    "tags": [
+      "large_intestine",
+      "water_absorption",
+      "electrolytes"
+    ],
+    "learning_objective": "State the primary function of the large intestine.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch11_mcq_006",
+    "question": "The enzyme salivary amylase is responsible for the initial digestion of which nutrient?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Proteins",
+      "B": "Fats",
+      "C": "Carbohydrates",
+      "D": "Nucleic acids"
+    },
+    "correct_answer": "C",
+    "explanation": "Salivary amylase, also known as ptyalin, is secreted in the saliva and begins the chemical digestion of complex carbohydrates (starches) into smaller polysaccharides and disaccharides (like maltose). Protein digestion begins in the stomach, and fat digestion primarily in the small intestine.",
+    "difficulty": "easy",
+    "topic": "human_digestive_system",
+    "subtopic": "mouth_digestion",
+    "tags": [
+      "salivary_amylase",
+      "carbohydrate_digestion",
+      "mouth"
+    ],
+    "learning_objective": "Identify the substrate of salivary amylase.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch11_mcq_007",
+    "question": "Which of the following is an accessory digestive organ?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Esophagus",
+      "B": "Stomach",
+      "C": "Liver",
+      "D": "Small intestine"
+    },
+    "correct_answer": "C",
+    "explanation": "Accessory digestive organs are those that aid in digestion but are not part of the alimentary canal itself. The liver produces bile, which aids in fat digestion, and is therefore an accessory organ. The esophagus, stomach, and small intestine are all parts of the alimentary canal (digestive tract).",
+    "difficulty": "easy",
+    "topic": "human_digestive_system",
+    "subtopic": "accessory_organs",
+    "tags": [
+      "accessory_organs",
+      "liver",
+      "digestion"
+    ],
+    "learning_objective": "Distinguish between alimentary canal organs and accessory organs.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch11_mcq_008",
+    "question": "The process of moving food through the alimentary canal by rhythmic muscular contractions is called:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Deglutition",
+      "B": "Mastication",
+      "C": "Peristalsis",
+      "D": "Segmentation"
+    },
+    "correct_answer": "C",
+    "explanation": "Peristalsis is the wave-like muscular contractions that propel food along the digestive tract. Deglutition is swallowing, mastication is chewing, and segmentation refers to localized contractions that mix food in the small intestine.",
+    "difficulty": "easy",
+    "topic": "human_digestive_system",
+    "subtopic": "motility",
+    "tags": [
+      "peristalsis",
+      "motility",
+      "esophagus"
+    ],
+    "learning_objective": "Define peristalsis.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch11_mcq_009",
+    "question": "Which cells in the stomach secrete hydrochloric acid (HCl)?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Chief cells",
+      "B": "Parietal cells",
+      "C": "Mucous neck cells",
+      "D": "G-cells"
+    },
+    "correct_answer": "B",
+    "explanation": "Parietal cells (also called oxyntic cells) are responsible for secreting hydrochloric acid (HCl) and intrinsic factor in the stomach. Chief cells secrete pepsinogen, mucous neck cells secrete mucus, and G-cells secrete gastrin.",
+    "difficulty": "easy",
+    "topic": "human_digestive_system",
+    "subtopic": "stomach_glands",
+    "tags": [
+      "parietal_cells",
+      "HCl",
+      "stomach",
+      "gastric_glands"
+    ],
+    "learning_objective": "Identify the cells responsible for HCl secretion in the stomach.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch11_mcq_010",
+    "question": "The primary function of bile is to:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Digest proteins",
+      "B": "Emulsify fats",
+      "C": "Break down carbohydrates",
+      "D": "Neutralize stomach acid directly"
+    },
+    "correct_answer": "B",
+    "explanation": "Bile, produced by the liver and stored in the gallbladder, contains bile salts that emulsify fats. This means they break down large fat globules into smaller ones, increasing the surface area for lipase enzymes to act upon. Bile does not contain digestive enzymes itself.",
+    "difficulty": "easy",
+    "topic": "human_digestive_system",
+    "subtopic": "bile_function",
+    "tags": [
+      "bile",
+      "emulsification",
+      "fats",
+      "liver"
+    ],
+    "learning_objective": "Explain the role of bile in digestion.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch11_mcq_011",
+    "question": "Which of the following is a characteristic of an incomplete digestive system?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Presence of a mouth and an anus",
+      "B": "A single opening serving as both mouth and anus",
+      "C": "Specialized organs for digestion and absorption",
+      "D": "Food moves in one direction only"
+    },
+    "correct_answer": "B",
+    "explanation": "An incomplete digestive system, like that found in Hydra and Planaria, has only one opening that functions as both the mouth for ingestion and the anus for egestion. A complete digestive system has two separate openings (mouth and anus) and allows for unidirectional food flow and specialized organ development.",
+    "difficulty": "medium",
+    "topic": "types_of_digestive_systems",
+    "subtopic": "incomplete_vs_complete",
+    "tags": [
+      "incomplete_digestion",
+      "gastrovascular_cavity",
+      "hydra",
+      "planaria"
+    ],
+    "learning_objective": "Distinguish between complete and incomplete digestive systems.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch11_mcq_012",
+    "question": "The dental formula for an adult human is typically represented as:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$\frac{2123}{2123}$",
+      "B": "$\frac{2102}{2102}$",
+      "C": "$\frac{2122}{2122}$",
+      "D": "$\frac{2023}{2023}$"
+    },
+    "correct_answer": "A",
+    "explanation": "The dental formula represents the number of incisors, canines, premolars, and molars in one half of the upper jaw and one half of the lower jaw. For an adult human, it is $\frac{2 \text{ (incisors)} \\ 1 \text{ (canine)} \\ 2 \text{ (premolars)} \\ 3 \text{ (molars)}}{2 \text{ (incisors)} \\ 1 \text{ (canine)} \\ 2 \text{ (premolars)} \\ 3 \text{ (molars)}}$, totaling 32 teeth ($8 \times 4$).",
+    "difficulty": "medium",
+    "topic": "human_digestive_system",
+    "subtopic": "teeth",
+    "tags": [
+      "dental_formula",
+      "teeth",
+      "human_anatomy"
+    ],
+    "learning_objective": "Recall the dental formula of an adult human.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch11_mcq_013",
+    "question": "Which of the following enzymes is NOT found in pancreatic juice?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Trypsinogen",
+      "B": "Pancreatic amylase",
+      "C": "Lipase",
+      "D": "Lactase"
+    },
+    "correct_answer": "D",
+    "explanation": "Pancreatic juice contains enzymes like trypsinogen (a protease precursor), pancreatic amylase (for carbohydrates), and lipase (for fats). Lactase is a disaccharidase found in the brush border of the small intestine, not in pancreatic juice.",
+    "difficulty": "medium",
+    "topic": "human_digestive_system",
+    "subtopic": "pancreas",
+    "tags": [
+      "pancreatic_juice",
+      "enzymes",
+      "lactase",
+      "digestion"
+    ],
+    "learning_objective": "Identify the enzymes present in pancreatic juice.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch11_mcq_014",
+    "question": "The conversion of pepsinogen to active pepsin in the stomach is facilitated by:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Bile",
+      "B": "Trypsin",
+      "C": "Hydrochloric acid",
+      "D": "Gastrin"
+    },
+    "correct_answer": "C",
+    "explanation": "Pepsinogen, an inactive zymogen secreted by chief cells, is converted into its active form, pepsin, by the highly acidic environment created by hydrochloric acid (HCl) in the stomach. Pepsin then initiates protein digestion.",
+    "difficulty": "medium",
+    "topic": "human_digestive_system",
+    "subtopic": "stomach_digestion",
+    "tags": [
+      "pepsinogen",
+      "pepsin",
+      "HCl",
+      "protein_digestion"
+    ],
+    "learning_objective": "Explain the activation of pepsinogen.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch11_mcq_015",
+    "question": "Which of the following hormones stimulates the secretion of pancreatic enzymes and bile from the gallbladder?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Gastrin",
+      "B": "Secretin",
+      "C": "Cholecystokinin (CCK)",
+      "D": "Motilin"
+    },
+    "correct_answer": "C",
+    "explanation": "Cholecystokinin (CCK), also known as pancreozymin, is released by the duodenum in response to fats and proteins. It stimulates the pancreas to secrete digestive enzymes and causes the gallbladder to contract and release bile.",
+    "difficulty": "medium",
+    "topic": "hormonal_regulation",
+    "subtopic": "CCK",
+    "tags": [
+      "CCK",
+      "cholecystokinin",
+      "pancreatic_enzymes",
+      "bile_release",
+      "hormones"
+    ],
+    "learning_objective": "Describe the function of Cholecystokinin (CCK).",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch11_mcq_016",
+    "question": "The finger-like projections in the small intestine that increase the surface area for absorption are called:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Cilia",
+      "B": "Flagella",
+      "C": "Villi",
+      "D": "Rugae"
+    },
+    "correct_answer": "C",
+    "explanation": "Villi are numerous small, finger-like projections that line the inner surface of the small intestine. They significantly increase the surface area for efficient absorption of digested nutrients. Rugae are folds in the stomach lining, while cilia and flagella are structures for movement in other cell types.",
+    "difficulty": "easy",
+    "topic": "human_digestive_system",
+    "subtopic": "small_intestine_structure",
+    "tags": [
+      "villi",
+      "small_intestine",
+      "absorption",
+      "surface_area"
+    ],
+    "learning_objective": "Identify structures that increase surface area in the small intestine.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch11_mcq_017",
+    "question": "If a person is unable to produce sufficient intrinsic factor, they may suffer from a deficiency of which vitamin?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Vitamin A",
+      "B": "Vitamin C",
+      "C": "Vitamin $B_{12}$",
+      "D": "Vitamin D"
+    },
+    "correct_answer": "C",
+    "explanation": "Intrinsic factor, secreted by parietal cells in the stomach, is essential for the absorption of Vitamin $B_{12}$ (cobalamin) in the ileum of the small intestine. A deficiency in intrinsic factor leads to pernicious anemia due to impaired Vitamin $B_{12}$ absorption.",
+    "difficulty": "medium",
+    "topic": "human_digestive_system",
+    "subtopic": "intrinsic_factor",
+    "tags": [
+      "intrinsic_factor",
+      "vitamin_B12",
+      "pernicious_anemia",
+      "stomach"
+    ],
+    "learning_objective": "Relate intrinsic factor to vitamin absorption.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch11_mcq_018",
+    "question": "Which of the following organisms has a complete digestive system?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Hydra",
+      "B": "Planaria",
+      "C": "Earthworm",
+      "D": "Amoeba"
+    },
+    "correct_answer": "C",
+    "explanation": "An earthworm has a complete digestive system, meaning it has a separate mouth for ingestion and an anus for egestion, allowing for unidirectional food flow. Hydra and Planaria have incomplete digestive systems (gastrovascular cavity), while Amoeba uses intracellular digestion via food vacuoles.",
+    "difficulty": "easy",
+    "topic": "invertebrate_digestion",
+    "subtopic": "complete_vs_incomplete",
+    "tags": [
+      "earthworm",
+      "complete_digestion",
+      "invertebrates"
+    ],
+    "learning_objective": "Identify organisms with a complete digestive system.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch11_mcq_019",
+    "question": "The function of the gizzard in the digestive system of an earthworm is to:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Store food",
+      "B": "Grind food particles",
+      "C": "Secrete digestive enzymes",
+      "D": "Absorb nutrients"
+    },
+    "correct_answer": "B",
+    "explanation": "The gizzard in an earthworm is a muscular organ that uses ingested grit and strong muscular contractions to grind food particles into smaller pieces, aiding in mechanical digestion. The crop stores food, and the intestine is responsible for enzyme secretion and nutrient absorption.",
+    "difficulty": "medium",
+    "topic": "invertebrate_digestion",
+    "subtopic": "earthworm_digestion",
+    "tags": [
+      "earthworm",
+      "gizzard",
+      "mechanical_digestion"
+    ],
+    "learning_objective": "Describe the function of the gizzard in an earthworm.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch11_mcq_020",
+    "question": "Which of the following is a disaccharide that is broken down by an enzyme in the brush border of the small intestine?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Glucose",
+      "B": "Starch",
+      "C": "Lactose",
+      "D": "Fructose"
+    },
+    "correct_answer": "C",
+    "explanation": "Lactose is a disaccharide (milk sugar) that is broken down into glucose and galactose by the enzyme lactase, which is located in the brush border of the small intestine. Glucose and fructose are monosaccharides (already digested), and starch is a polysaccharide digested by amylase.",
+    "difficulty": "medium",
+    "topic": "human_digestive_system",
+    "subtopic": "carbohydrate_digestion",
+    "tags": [
+      "lactose",
+      "lactase",
+      "disaccharide",
+      "small_intestine",
+      "brush_border"
+    ],
+    "learning_objective": "Identify disaccharides digested in the small intestine.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

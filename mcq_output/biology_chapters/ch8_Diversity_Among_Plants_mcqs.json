@@ -1,0 +1,622 @@
+[
+  {
+    "id": "bio_xii_ch8_mcq_001",
+    "question": "Which of the following is a characteristic feature of all members of the Plant Kingdom?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Presence of vascular tissue",
+      "B": "Production of seeds",
+      "C": "Autotrophic nutrition",
+      "D": "Dominant sporophyte generation"
+    },
+    "correct_answer": "C",
+    "explanation": "All plants are autotrophic, meaning they produce their own food through photosynthesis. While vascular tissue, seeds, and a dominant sporophyte are characteristics of many plant groups, they are not universal to all, especially simpler plants like bryophytes or algae (if considered broadly).",
+    "difficulty": "easy",
+    "topic": "Plant Kingdom Introduction",
+    "subtopic": "General characteristics",
+    "tags": [
+      "plant_kingdom",
+      "autotroph",
+      "photosynthesis",
+      "basic_characteristics"
+    ],
+    "learning_objective": "Identify fundamental characteristics of plants.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch8_mcq_002",
+    "question": "The alternation of generations in plants involves a multicellular diploid sporophyte and a multicellular haploid gametophyte. Which generation produces spores?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Gametophyte",
+      "B": "Sporophyte",
+      "C": "Both gametophyte and sporophyte",
+      "D": "Neither gametophyte nor sporophyte"
+    },
+    "correct_answer": "B",
+    "explanation": "The sporophyte generation (diploid, `$2n$`) produces haploid spores (n) through meiosis. These spores then develop into the gametophyte generation (haploid, `$n$`), which produces gametes.",
+    "difficulty": "easy",
+    "topic": "Alternation of Generations",
+    "subtopic": "Sporophyte and Gametophyte",
+    "tags": [
+      "alternation_of_generations",
+      "sporophyte",
+      "gametophyte",
+      "spores",
+      "meiosis"
+    ],
+    "learning_objective": "Define the roles of sporophyte and gametophyte in alternation of generations.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch8_mcq_003",
+    "question": "Which group of plants is considered the most primitive and lacks true roots, stems, and leaves?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Pteridophytes",
+      "B": "Gymnosperms",
+      "C": "Bryophytes",
+      "D": "Angiosperms"
+    },
+    "correct_answer": "C",
+    "explanation": "Bryophytes (mosses, liverworts, hornworts) are non-vascular plants that lack true roots, stems, and leaves. They possess rhizoids for anchorage and absorb water directly from their surroundings, making them dependent on moist environments.",
+    "difficulty": "easy",
+    "topic": "Bryophytes",
+    "subtopic": "General characteristics",
+    "tags": [
+      "bryophytes",
+      "non-vascular",
+      "primitive_plants",
+      "rhizoids"
+    ],
+    "learning_objective": "Identify the key features of bryophytes.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "bio_xii_ch8_mcq_004",
+    "question": "In bryophytes, the dominant generation in the life cycle is the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Sporophyte",
+      "B": "Gametophyte",
+      "C": "Spore",
+      "D": "Zygote"
+    },
+    "correct_answer": "B",
+    "explanation": "Bryophytes are unique among land plants in having a dominant, independent gametophyte generation. The sporophyte is smaller, short-lived, and nutritionally dependent on the gametophyte.",
+    "difficulty": "easy",
+    "topic": "Bryophytes",
+    "subtopic": "Life cycle dominance",
+    "tags": [
+      "bryophytes",
+      "gametophyte",
+      "dominant_generation",
+      "life_cycle"
+    ],
+    "learning_objective": "Distinguish the dominant generation in bryophytes.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch8_mcq_005",
+    "question": "Which of the following is a vascular plant but does not produce seeds?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Moss",
+      "B": "Pine",
+      "C": "Fern",
+      "D": "Rose"
+    },
+    "correct_answer": "C",
+    "explanation": "Ferns belong to Pteridophytes, which are the first group of plants to evolve vascular tissue (xylem and phloem) for efficient transport of water and nutrients. However, they reproduce by spores and do not produce seeds.",
+    "difficulty": "easy",
+    "topic": "Pteridophytes",
+    "subtopic": "Characteristics",
+    "tags": [
+      "pteridophytes",
+      "vascular_plants",
+      "seedless_plants",
+      "ferns"
+    ],
+    "learning_objective": "Identify characteristics of pteridophytes.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch8_mcq_006",
+    "question": "The term 'naked seeds' is characteristic of which plant group?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Angiosperms",
+      "B": "Pteridophytes",
+      "C": "Bryophytes",
+      "D": "Gymnosperms"
+    },
+    "correct_answer": "D",
+    "explanation": "Gymnosperms are characterized by 'naked seeds,' meaning their seeds are not enclosed within an ovary or fruit. Examples include conifers, cycads, and ginkgo.",
+    "difficulty": "easy",
+    "topic": "Gymnosperms",
+    "subtopic": "Seed characteristics",
+    "tags": [
+      "gymnosperms",
+      "naked_seeds",
+      "seed_plants"
+    ],
+    "learning_objective": "Define the key feature of gymnosperm seeds.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch8_mcq_007",
+    "question": "Which of the following structures is responsible for anchorage in bryophytes?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "True roots",
+      "B": "Rhizoids",
+      "C": "Stems",
+      "D": "Leaves"
+    },
+    "correct_answer": "B",
+    "explanation": "Bryophytes lack true roots, stems, and leaves. Instead, they have simple, hair-like structures called rhizoids that primarily function in anchorage, not significant water absorption.",
+    "difficulty": "easy",
+    "topic": "Bryophytes",
+    "subtopic": "Structure",
+    "tags": [
+      "bryophytes",
+      "rhizoids",
+      "anchorage",
+      "plant_structure"
+    ],
+    "learning_objective": "Identify the anchorage structure in bryophytes.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "bio_xii_ch8_mcq_008",
+    "question": "The reproductive structures of angiosperms are called:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Cones",
+      "B": "Sori",
+      "C": "Flowers",
+      "D": "Capsules"
+    },
+    "correct_answer": "C",
+    "explanation": "Angiosperms are commonly known as flowering plants. Their unique reproductive structures are flowers, which contain the male and female reproductive organs.",
+    "difficulty": "easy",
+    "topic": "Angiosperms",
+    "subtopic": "Reproductive structures",
+    "tags": [
+      "angiosperms",
+      "flowers",
+      "reproduction",
+      "flowering_plants"
+    ],
+    "learning_objective": "Recall the reproductive structure of angiosperms.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch8_mcq_009",
+    "question": "Which of the following is an adaptation that allowed plants to colonize land?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Presence of chlorophyll",
+      "B": "Cell walls made of cellulose",
+      "C": "Development of a cuticle",
+      "D": "Multicellularity"
+    },
+    "correct_answer": "C",
+    "explanation": "The development of a waxy cuticle on the aerial parts of plants helped prevent desiccation (water loss) in the terrestrial environment. Chlorophyll, cellulose cell walls, and multicellularity are present in aquatic ancestors or are general plant features, but the cuticle is a specific adaptation for land.",
+    "difficulty": "easy",
+    "topic": "Plant Adaptations",
+    "subtopic": "Terrestrial adaptations",
+    "tags": [
+      "plant_evolution",
+      "land_adaptations",
+      "cuticle",
+      "desiccation"
+    ],
+    "learning_objective": "Identify a key adaptation for terrestrial life in plants.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch8_mcq_010",
+    "question": "The process of double fertilization is a unique characteristic of which plant group?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Bryophytes",
+      "B": "Pteridophytes",
+      "C": "Gymnosperms",
+      "D": "Angiosperms"
+    },
+    "correct_answer": "D",
+    "explanation": "Double fertilization is a hallmark of angiosperm reproduction. It involves one sperm fertilizing the egg cell to form a zygote, and another sperm fertilizing the central cell to form the endosperm, which provides nourishment to the embryo.",
+    "difficulty": "easy",
+    "topic": "Angiosperms",
+    "subtopic": "Reproduction",
+    "tags": [
+      "angiosperms",
+      "double_fertilization",
+      "reproduction",
+      "endosperm"
+    ],
+    "learning_objective": "Recall the unique reproductive process of angiosperms.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch8_mcq_011",
+    "question": "Which of the following is NOT a characteristic of algae?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Mostly aquatic habitat",
+      "B": "Presence of true roots, stems, and leaves",
+      "C": "Photosynthetic",
+      "D": "Simple thalloid body organization"
+    },
+    "correct_answer": "B",
+    "explanation": "Algae are simple photosynthetic organisms, mostly aquatic, with a thalloid body (undifferentiated into true roots, stems, and leaves). The presence of true roots, stems, and leaves is a characteristic of more complex land plants.",
+    "difficulty": "easy",
+    "topic": "Algae",
+    "subtopic": "Characteristics",
+    "tags": [
+      "algae",
+      "thalloid",
+      "aquatic",
+      "plant_like_protists"
+    ],
+    "learning_objective": "Identify features that distinguish algae from true plants.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "bio_xii_ch8_mcq_012",
+    "question": "The male reproductive organ in bryophytes and pteridophytes is called the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Archegonium",
+      "B": "Antheridium",
+      "C": "Sporangium",
+      "D": "Ovule"
+    },
+    "correct_answer": "B",
+    "explanation": "The antheridium is the male reproductive organ (gametangium) that produces flagellated sperm in bryophytes and pteridophytes. The archegonium is the female reproductive organ.",
+    "difficulty": "easy",
+    "topic": "Reproductive Structures",
+    "subtopic": "Bryophytes and Pteridophytes",
+    "tags": [
+      "antheridium",
+      "archegonium",
+      "bryophytes",
+      "pteridophytes",
+      "reproductive_organs"
+    ],
+    "learning_objective": "Recall the names of male reproductive organs in lower plants.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch8_mcq_013",
+    "question": "Which of the following terms describes plants that produce only one type of spore?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Heterosporous",
+      "B": "Homosporous",
+      "C": "Monoecious",
+      "D": "Dioecious"
+    },
+    "correct_answer": "B",
+    "explanation": "Homosporous plants produce only one type of spore, which develops into a bisexual gametophyte. Heterosporous plants produce two types of spores: microspores (male) and megaspores (female).",
+    "difficulty": "easy",
+    "topic": "Spore Production",
+    "subtopic": "Homospory vs Heterospory",
+    "tags": [
+      "homosporous",
+      "heterosporous",
+      "spores",
+      "plant_reproduction"
+    ],
+    "learning_objective": "Define homospory.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch8_mcq_014",
+    "question": "The primary function of xylem in vascular plants is:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Transport of food",
+      "B": "Transport of water and minerals",
+      "C": "Storage of starch",
+      "D": "Photosynthesis"
+    },
+    "correct_answer": "B",
+    "explanation": "Xylem is a vascular tissue responsible for the unidirectional transport of water and dissolved minerals from the roots to the rest of the plant. Phloem transports food (sugars).",
+    "difficulty": "easy",
+    "topic": "Vascular Tissue",
+    "subtopic": "Xylem function",
+    "tags": [
+      "xylem",
+      "vascular_tissue",
+      "water_transport",
+      "plant_anatomy"
+    ],
+    "learning_objective": "State the primary function of xylem.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch8_mcq_015",
+    "question": "Which of the following is an example of a gymnosperm?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Moss",
+      "B": "Fern",
+      "C": "Pine tree",
+      "D": "Sunflower"
+    },
+    "correct_answer": "C",
+    "explanation": "Pine trees are conifers, which are a prominent group within gymnosperms. Moss is a bryophyte, fern is a pteridophyte, and sunflower is an angiosperm.",
+    "difficulty": "easy",
+    "topic": "Gymnosperms",
+    "subtopic": "Examples",
+    "tags": [
+      "gymnosperms",
+      "pine_tree",
+      "conifers",
+      "plant_examples"
+    ],
+    "learning_objective": "Identify an example of a gymnosperm.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "bio_xii_ch8_mcq_016",
+    "question": "The primary function of fruits in angiosperms is:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Photosynthesis",
+      "B": "Attracting pollinators",
+      "C": "Seed dispersal and protection",
+      "D": "Water absorption"
+    },
+    "correct_answer": "C",
+    "explanation": "Fruits develop from the ovary after fertilization and serve to protect the developing seeds and aid in their dispersal, often by attracting animals.",
+    "difficulty": "easy",
+    "topic": "Angiosperms",
+    "subtopic": "Fruit function",
+    "tags": [
+      "angiosperms",
+      "fruits",
+      "seed_dispersal",
+      "seed_protection"
+    ],
+    "learning_objective": "Understand the role of fruits in angiosperms.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch8_mcq_017",
+    "question": "Which group of plants is characterized by the presence of sori on the underside of their leaves?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Bryophytes",
+      "B": "Pteridophytes",
+      "C": "Gymnosperms",
+      "D": "Angiosperms"
+    },
+    "correct_answer": "B",
+    "explanation": "Sori are clusters of sporangia found on the underside of the fronds (leaves) of ferns, which are pteridophytes. These sporangia produce spores for reproduction.",
+    "difficulty": "easy",
+    "topic": "Pteridophytes",
+    "subtopic": "Reproductive structures",
+    "tags": [
+      "pteridophytes",
+      "ferns",
+      "sori",
+      "sporangia",
+      "reproduction"
+    ],
+    "learning_objective": "Identify a characteristic reproductive structure of ferns.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch8_mcq_018",
+    "question": "The endosperm in angiosperms is typically triploid (`$3n$`). It results from the fusion of a sperm nucleus with the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Egg cell",
+      "B": "Synergids",
+      "C": "Antipodal cells",
+      "D": "Central cell"
+    },
+    "correct_answer": "D",
+    "explanation": "During double fertilization in angiosperms, one sperm nucleus fuses with the egg cell to form the diploid zygote. The other sperm nucleus fuses with the two polar nuclei of the central cell, forming the triploid endosperm, which serves as nutritive tissue for the embryo.",
+    "difficulty": "medium",
+    "topic": "Angiosperm Reproduction",
+    "subtopic": "Double fertilization",
+    "tags": [
+      "angiosperms",
+      "double_fertilization",
+      "endosperm",
+      "central_cell",
+      "triploid"
+    ],
+    "learning_objective": "Explain the formation of endosperm in angiosperms.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch8_mcq_019",
+    "question": "Which of the following statements correctly describes the sporophyte of a moss?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "It is photosynthetic and independent.",
+      "B": "It is parasitic on the gametophyte.",
+      "C": "It is short-lived and dependent on the gametophyte.",
+      "D": "It produces gametes by meiosis."
+    },
+    "correct_answer": "C",
+    "explanation": "In mosses (bryophytes), the sporophyte is a small, short-lived structure that remains attached to and is nutritionally dependent on the dominant gametophyte. It produces spores by meiosis, not gametes.",
+    "difficulty": "medium",
+    "topic": "Bryophytes",
+    "subtopic": "Sporophyte characteristics",
+    "tags": [
+      "bryophytes",
+      "moss",
+      "sporophyte",
+      "gametophyte_dependency"
+    ],
+    "learning_objective": "Describe the nature of the sporophyte in bryophytes.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch8_mcq_020",
+    "question": "If a plant's life cycle involves a dominant sporophyte and relies on water for fertilization, it is most likely a:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Moss",
+      "B": "Pine tree",
+      "C": "Fern",
+      "D": "Mango tree"
+    },
+    "correct_answer": "C",
+    "explanation": "Ferns (Pteridophytes) have a dominant sporophyte generation and require water for the flagellated sperm to swim to the egg for fertilization. Mosses have a dominant gametophyte. Pine trees and mango trees are seed plants that do not require external water for fertilization.",
+    "difficulty": "medium",
+    "topic": "Plant Life Cycles",
+    "subtopic": "Pteridophytes",
+    "tags": [
+      "pteridophytes",
+      "ferns",
+      "dominant_sporophyte",
+      "water_for_fertilization"
+    ],
+    "learning_objective": "Relate life cycle characteristics to plant groups.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch8_mcq_021",
+    "question": "The evolutionary development of seeds provided several advantages for land plants. Which of the following is NOT an advantage of seeds?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Protection of the embryo",
+      "B": "Enhanced dispersal",
+      "C": "Requirement for water for fertilization",
+      "D": "Provision of stored food for the embryo"
+    },
+    "correct_answer": "C",
+    "explanation": "Seeds are a major adaptation for terrestrial life, offering embryo protection, dispersal mechanisms, and stored food. The evolution of pollen, which accompanies seeds, eliminated the requirement for external water for fertilization, making option C incorrect as an advantage of seeds.",
+    "difficulty": "medium",
+    "topic": "Seed Plants",
+    "subtopic": "Advantages of seeds",
+    "tags": [
+      "seeds",
+      "plant_evolution",
+      "land_adaptations",
+      "seed_advantages"
+    ],
+    "learning_objective": "Analyze the evolutionary advantages of seeds.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch8_mcq_022",
+    "question": "A plant exhibits the following features: presence of cones, naked seeds, and well-developed vascular tissue. To which group does it belong?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Bryophytes",
+      "B": "Pteridophytes",
+      "C": "Gymnosperms",
+      "D": "Angiosperms"
+    },
+    "correct_answer": "C",
+    "explanation": "The combination of cones, naked seeds, and vascular tissue is characteristic of gymnosperms. Bryophytes lack vascular tissue and seeds. Pteridophytes have vascular tissue but no seeds. Angiosperms have flowers, fruits, and enclosed seeds.",
+    "difficulty": "medium",
+    "topic": "Plant Classification",
+    "subtopic": "Gymnosperm identification",
+    "tags": [
+      "gymnosperms",
+      "cones",
+      "naked_seeds",
+      "vascular_tissue",
+      "plant_identification"
+    ],
+    "learning_objective": "Classify plants based on key characteristics.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

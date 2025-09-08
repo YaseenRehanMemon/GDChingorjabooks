@@ -1,0 +1,592 @@
+[
+  {
+    "id": "bio_xii_ch16_mcq_001",
+    "question": "Which of the following is NOT a primary function of the human skeleton?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Support",
+      "B": "Protection",
+      "C": "Movement",
+      "D": "Hormone production"
+    },
+    "correct_answer": "D",
+    "explanation": "The primary functions of the human skeleton include providing support for the body, protecting vital organs, and facilitating movement. While bones do produce some hormones (e.g., osteocalcin), hormone production is not considered a primary function of the skeletal system in the same way as support, protection, and movement. Major hormone production occurs in endocrine glands.",
+    "difficulty": "easy",
+    "topic": "skeletal_system_functions",
+    "subtopic": "basic_functions",
+    "tags": [
+      "skeleton",
+      "functions",
+      "support",
+      "protection",
+      "movement"
+    ],
+    "learning_objective": "Identify the primary functions of the human skeletal system.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_16",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch16_mcq_002",
+    "question": "What type of skeleton is found in insects, providing external support and protection?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Endoskeleton",
+      "B": "Hydrostatic skeleton",
+      "C": "Exoskeleton",
+      "D": "Chitinous skeleton"
+    },
+    "correct_answer": "C",
+    "explanation": "Insects possess an exoskeleton, which is a rigid external covering that provides support, protection, and a surface for muscle attachment. While the exoskeleton of insects is primarily composed of chitin, 'chitinous skeleton' describes its composition rather than its type of skeletal system. An endoskeleton is internal (like in vertebrates), and a hydrostatic skeleton relies on fluid pressure (like in earthworms).",
+    "difficulty": "easy",
+    "topic": "types_of_skeletons",
+    "subtopic": "exoskeleton",
+    "tags": [
+      "skeleton_types",
+      "insects",
+      "exoskeleton",
+      "chitin"
+    ],
+    "learning_objective": "Differentiate between various types of skeletal systems.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_16",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch16_mcq_003",
+    "question": "Which component of bone tissue is responsible for forming new bone matrix?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Osteoclasts",
+      "B": "Osteocytes",
+      "C": "Osteoblasts",
+      "D": "Chondrocytes"
+    },
+    "correct_answer": "C",
+    "explanation": "Osteoblasts are bone-forming cells that synthesize and secrete the organic components of the bone matrix, such as collagen, and facilitate its mineralization. Osteoclasts are involved in bone resorption (breaking down bone), while osteocytes are mature bone cells trapped within the matrix, maintaining bone tissue. Chondrocytes are cartilage cells.",
+    "difficulty": "easy",
+    "topic": "bone_cells",
+    "subtopic": "osteoblasts",
+    "tags": [
+      "bone_tissue",
+      "osteoblasts",
+      "bone_formation",
+      "cells"
+    ],
+    "learning_objective": "Identify the different types of bone cells and their functions.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_16",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch16_mcq_004",
+    "question": "The axial skeleton includes which of the following?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Pectoral girdle",
+      "B": "Pelvic girdle",
+      "C": "Vertebral column",
+      "D": "Upper limbs"
+    },
+    "correct_answer": "C",
+    "explanation": "The axial skeleton consists of the skull, vertebral column, and rib cage (sternum and ribs). The pectoral girdle, pelvic girdle, and upper/lower limbs are all parts of the appendicular skeleton.",
+    "difficulty": "easy",
+    "topic": "skeletal_divisions",
+    "subtopic": "axial_skeleton",
+    "tags": [
+      "axial_skeleton",
+      "vertebral_column",
+      "skull",
+      "rib_cage"
+    ],
+    "learning_objective": "Distinguish between the axial and appendicular skeletons.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_16",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch16_mcq_005",
+    "question": "Which type of muscle tissue is involuntary and found in the walls of internal organs like the stomach and intestines?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Skeletal muscle",
+      "B": "Cardiac muscle",
+      "C": "Smooth muscle",
+      "D": "Striated muscle"
+    },
+    "correct_answer": "C",
+    "explanation": "Smooth muscle tissue is characterized by its involuntary control and its presence in the walls of visceral organs, where it performs functions like peristalsis. Skeletal muscle is voluntary and striated. Cardiac muscle is involuntary and striated, found only in the heart. Striated muscle refers to both skeletal and cardiac muscle due to their striped appearance.",
+    "difficulty": "easy",
+    "topic": "muscle_types",
+    "subtopic": "smooth_muscle",
+    "tags": [
+      "muscle_tissue",
+      "smooth_muscle",
+      "involuntary",
+      "internal_organs"
+    ],
+    "learning_objective": "Identify the characteristics and locations of different muscle types.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_16",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch16_mcq_006",
+    "question": "The functional unit of a skeletal muscle fiber is called a:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Myofibril",
+      "B": "Sarcomere",
+      "C": "Myofilament",
+      "D": "Muscle fascicle"
+    },
+    "correct_answer": "B",
+    "explanation": "The sarcomere is the basic contractile unit of a skeletal muscle fiber. It is the region between two successive Z-lines and contains the actin and myosin myofilaments responsible for muscle contraction. Myofibrils are composed of many sarcomeres arranged end-to-end. Myofilaments are the individual protein strands (actin and myosin). A muscle fascicle is a bundle of muscle fibers.",
+    "difficulty": "easy",
+    "topic": "muscle_structure",
+    "subtopic": "sarcomere",
+    "tags": [
+      "muscle_contraction",
+      "sarcomere",
+      "skeletal_muscle",
+      "functional_unit"
+    ],
+    "learning_objective": "Describe the structural organization of skeletal muscle.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_16",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch16_mcq_007",
+    "question": "Which protein forms the thick filaments in a sarcomere?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Actin",
+      "B": "Myosin",
+      "C": "Troponin",
+      "D": "Tropomyosin"
+    },
+    "correct_answer": "B",
+    "explanation": "Myosin is the protein that constitutes the thick filaments in a sarcomere. Actin forms the thin filaments. Troponin and tropomyosin are regulatory proteins associated with the thin (actin) filaments, playing a crucial role in controlling muscle contraction.",
+    "difficulty": "easy",
+    "topic": "muscle_proteins",
+    "subtopic": "myosin",
+    "tags": [
+      "sarcomere",
+      "myosin",
+      "thick_filaments",
+      "muscle_contraction"
+    ],
+    "learning_objective": "Identify the key proteins involved in muscle contraction.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_16",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch16_mcq_008",
+    "question": "What is the primary role of calcium ions ($Ca^{2+}$) in muscle contraction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "To bind to myosin heads",
+      "B": "To release acetylcholine",
+      "C": "To bind to troponin, exposing actin binding sites",
+      "D": "To generate ATP"
+    },
+    "correct_answer": "C",
+    "explanation": "In muscle contraction, calcium ions ($Ca^{2+}$) are released from the sarcoplasmic reticulum and bind to troponin. This binding causes a conformational change in troponin, which in turn moves tropomyosin away from the myosin-binding sites on the actin filaments, allowing myosin heads to attach and initiate contraction.",
+    "difficulty": "easy",
+    "topic": "muscle_contraction_mechanism",
+    "subtopic": "calcium_role",
+    "tags": [
+      "calcium_ions",
+      "muscle_contraction",
+      "troponin",
+      "actin"
+    ],
+    "learning_objective": "Explain the role of calcium in the sliding filament theory.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_16",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch16_mcq_009",
+    "question": "Which type of joint allows for movement in only one plane, like the elbow or knee?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Ball-and-socket joint",
+      "B": "Pivot joint",
+      "C": "Hinge joint",
+      "D": "Gliding joint"
+    },
+    "correct_answer": "C",
+    "explanation": "A hinge joint, such as the elbow or knee, allows for movement primarily in one plane (flexion and extension), similar to the hinge of a door. Ball-and-socket joints (e.g., shoulder, hip) allow for multi-axial movement. Pivot joints allow rotation around an axis. Gliding joints allow limited sliding movements.",
+    "difficulty": "easy",
+    "topic": "joint_types",
+    "subtopic": "hinge_joint",
+    "tags": [
+      "joints",
+      "hinge_joint",
+      "movement",
+      "elbow",
+      "knee"
+    ],
+    "learning_objective": "Classify different types of synovial joints based on their structure and movement.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_16",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch16_mcq_010",
+    "question": "What is the primary energy source directly used for muscle contraction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Glucose",
+      "B": "Glycogen",
+      "C": "ATP",
+      "D": "Creatine phosphate"
+    },
+    "correct_answer": "C",
+    "explanation": "Adenosine triphosphate (ATP) is the direct energy source for muscle contraction. It powers the detachment of myosin heads from actin and their re-cocking. Glucose and glycogen are stored forms of energy that are broken down to produce ATP. Creatine phosphate is an immediate reserve that rapidly regenerates ATP from ADP, but it is not the direct energy source itself.",
+    "difficulty": "easy",
+    "topic": "muscle_energy",
+    "subtopic": "ATP",
+    "tags": [
+      "ATP",
+      "muscle_contraction",
+      "energy_source",
+      "creatine_phosphate"
+    ],
+    "learning_objective": "Identify the immediate energy source for muscle contraction.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_16",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch16_mcq_011",
+    "question": "Which of the following is a connective tissue that connects muscle to bone?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Ligament",
+      "B": "Cartilage",
+      "C": "Tendon",
+      "D": "Adipose tissue"
+    },
+    "correct_answer": "C",
+    "explanation": "Tendons are strong, fibrous connective tissues that attach muscles to bones, allowing the force generated by muscle contraction to be transmitted to the skeleton, resulting in movement. Ligaments connect bone to bone. Cartilage is a flexible connective tissue found in joints and other areas. Adipose tissue is fat storage tissue.",
+    "difficulty": "easy",
+    "topic": "connective_tissues",
+    "subtopic": "tendons",
+    "tags": [
+      "tendons",
+      "ligaments",
+      "muscle_to_bone",
+      "connective_tissue"
+    ],
+    "learning_objective": "Distinguish between tendons and ligaments.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_16",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch16_mcq_012",
+    "question": "The process of bone formation is known as:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Resorption",
+      "B": "Ossification",
+      "C": "Calcification",
+      "D": "Hematopoiesis"
+    },
+    "correct_answer": "B",
+    "explanation": "Ossification (or osteogenesis) is the process of bone formation. Resorption is the breakdown of bone by osteoclasts. Calcification is the deposition of calcium salts, which is a part of ossification but not the entire process. Hematopoiesis is the formation of blood cells, which occurs in the bone marrow.",
+    "difficulty": "easy",
+    "topic": "bone_formation",
+    "subtopic": "ossification",
+    "tags": [
+      "bone_formation",
+      "ossification",
+      "osteogenesis"
+    ],
+    "learning_objective": "Define the process of bone formation.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_16",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch16_mcq_013",
+    "question": "Which part of the vertebral column consists of 7 vertebrae in humans?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Thoracic",
+      "B": "Lumbar",
+      "C": "Cervical",
+      "D": "Sacral"
+    },
+    "correct_answer": "C",
+    "explanation": "The cervical region of the vertebral column consists of 7 vertebrae ($C_1-C_7$). The thoracic region has 12 vertebrae, the lumbar region has 5, and the sacral region typically consists of 5 fused vertebrae.",
+    "difficulty": "easy",
+    "topic": "vertebral_column",
+    "subtopic": "cervical_vertebrae",
+    "tags": [
+      "vertebral_column",
+      "cervical",
+      "vertebrae",
+      "axial_skeleton"
+    ],
+    "learning_objective": "Recall the number of vertebrae in each region of the vertebral column.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_16",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch16_mcq_014",
+    "question": "The condition characterized by brittle bones due to loss of bone density, common in older adults, is called:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Arthritis",
+      "B": "Rickets",
+      "C": "Osteoporosis",
+      "D": "Scoliosis"
+    },
+    "correct_answer": "C",
+    "explanation": "Osteoporosis is a disease characterized by a decrease in bone density, leading to fragile bones and an increased risk of fractures. Arthritis is inflammation of joints. Rickets is a softening of bones in children due to vitamin D deficiency. Scoliosis is an abnormal lateral curvature of the spine.",
+    "difficulty": "easy",
+    "topic": "bone_disorders",
+    "subtopic": "osteoporosis",
+    "tags": [
+      "bone_disorders",
+      "osteoporosis",
+      "bone_density",
+      "aging"
+    ],
+    "learning_objective": "Identify common disorders of the skeletal system.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_16",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch16_mcq_015",
+    "question": "Which of the following is an example of an antagonistic muscle pair?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Biceps and Triceps",
+      "B": "Quadriceps and Hamstrings",
+      "C": "Both A and B",
+      "D": "Diaphragm and Intercostals"
+    },
+    "correct_answer": "C",
+    "explanation": "Antagonistic muscle pairs are muscles that work in opposition to each other. When one contracts, the other relaxes to allow movement. The biceps (flexor) and triceps (extensor) of the arm, and the quadriceps (extensor) and hamstrings (flexor) of the thigh are classic examples of antagonistic pairs. The diaphragm and intercostals work synergistically for breathing, not antagonistically in the same way for movement.",
+    "difficulty": "easy",
+    "topic": "muscle_action",
+    "subtopic": "antagonistic_muscles",
+    "tags": [
+      "antagonistic_muscles",
+      "biceps",
+      "triceps",
+      "quadriceps",
+      "hamstrings"
+    ],
+    "learning_objective": "Understand the concept of antagonistic muscle action.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_16",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch16_mcq_016",
+    "question": "The point of contact between a motor neuron and a skeletal muscle fiber is called the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Synapse",
+      "B": "Neuromuscular junction",
+      "C": "Motor unit",
+      "D": "Sarcoplasmic reticulum"
+    },
+    "correct_answer": "B",
+    "explanation": "The neuromuscular junction is the specialized synapse where a motor neuron transmits a signal to a skeletal muscle fiber, initiating muscle contraction. A synapse is a general term for a junction between two neurons or a neuron and an effector. A motor unit consists of a motor neuron and all the muscle fibers it innervates. The sarcoplasmic reticulum is an organelle within muscle cells.",
+    "difficulty": "easy",
+    "topic": "neuromuscular_junction",
+    "subtopic": "structure",
+    "tags": [
+      "neuromuscular_junction",
+      "motor_neuron",
+      "muscle_fiber",
+      "synapse"
+    ],
+    "learning_objective": "Define and locate the neuromuscular junction.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_16",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch16_mcq_017",
+    "question": "Which of the following is a characteristic of cardiac muscle?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Voluntary control",
+      "B": "Multinucleated cells",
+      "C": "Intercalated discs",
+      "D": "Lack of striations"
+    },
+    "correct_answer": "C",
+    "explanation": "Cardiac muscle cells are unique in possessing intercalated discs, which are specialized junctions that allow for rapid electrical communication between cells, enabling coordinated heart contractions. Cardiac muscle is involuntary, typically uninucleated (or binucleated), and *is* striated.",
+    "difficulty": "easy",
+    "topic": "muscle_types",
+    "subtopic": "cardiac_muscle",
+    "tags": [
+      "cardiac_muscle",
+      "intercalated_discs",
+      "involuntary",
+      "striated"
+    ],
+    "learning_objective": "Identify the distinguishing features of cardiac muscle tissue.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_16",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch16_mcq_018",
+    "question": "The primary component of the bone matrix that provides tensile strength is:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Calcium phosphate",
+      "B": "Collagen fibers",
+      "C": "Magnesium salts",
+      "D": "Hydroxyapatite"
+    },
+    "correct_answer": "B",
+    "explanation": "Collagen fibers, an organic component of the bone matrix, provide flexibility and tensile strength, preventing bones from shattering under stress. Calcium phosphate and hydroxyapatite are inorganic mineral components that provide hardness and compressional strength. Magnesium salts are also present but not the primary component for tensile strength.",
+    "difficulty": "easy",
+    "topic": "bone_composition",
+    "subtopic": "collagen",
+    "tags": [
+      "bone_matrix",
+      "collagen",
+      "tensile_strength",
+      "bone_composition"
+    ],
+    "learning_objective": "Describe the chemical composition of bone tissue.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_16",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch16_mcq_019",
+    "question": "Which type of cartilage is found at the ends of long bones, providing a smooth, low-friction surface for joint movement?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Elastic cartilage",
+      "B": "Fibrocartilage",
+      "C": "Hyaline cartilage",
+      "D": "Reticular cartilage"
+    },
+    "correct_answer": "C",
+    "explanation": "Hyaline cartilage is the most common type of cartilage and is found at the articular surfaces of bones in synovial joints, where it reduces friction and absorbs shock. Elastic cartilage is found in the ear and epiglottis, providing flexibility. Fibrocartilage is found in intervertebral discs and menisci, offering great tensile strength and shock absorption. Reticular cartilage is not a recognized type.",
+    "difficulty": "easy",
+    "topic": "cartilage_types",
+    "subtopic": "hyaline_cartilage",
+    "tags": [
+      "cartilage",
+      "hyaline_cartilage",
+      "joints",
+      "long_bones"
+    ],
+    "learning_objective": "Differentiate between the types of cartilage and their locations.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_16",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch16_mcq_020",
+    "question": "The 'all-or-none' principle applies to the contraction of a single:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Whole muscle",
+      "B": "Muscle fascicle",
+      "C": "Muscle fiber",
+      "D": "Motor unit"
+    },
+    "correct_answer": "C",
+    "explanation": "The 'all-or-none' principle states that a single muscle fiber, when stimulated by a motor neuron, will contract maximally or not at all. The strength of contraction of a whole muscle depends on the number of muscle fibers recruited and the frequency of stimulation, not on individual fiber strength. A motor unit also follows this principle in that all fibers within *that* unit contract maximally, but the principle fundamentally applies to the individual fiber.",
+    "difficulty": "easy",
+    "topic": "muscle_contraction_principles",
+    "subtopic": "all_or_none",
+    "tags": [
+      "muscle_contraction",
+      "all_or_none",
+      "muscle_fiber",
+      "physiology"
+    ],
+    "learning_objective": "Explain the 'all-or-none' principle in muscle contraction.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_16",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch16_mcq_021",
+    "question": "Which of the following is a characteristic feature of compact bone?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Presence of trabeculae",
+      "B": "Contains red bone marrow in adults",
+      "C": "Composed of osteons (Haversian systems)",
+      "D": "Lightweight and porous structure"
+    },
+    "correct_answer": "C",
+    "explanation": "Compact bone is dense and organized into structural units called osteons (Haversian systems), which consist of concentric lamellae around a central Haversian canal. Trabeculae are characteristic of spongy bone. While compact bone does contain marrow cavities, red marrow is primarily found in spongy bone in adults. Its structure is dense, not lightweight and porous.",
+    "difficulty": "medium",
+    "topic": "bone_structure",
+    "subtopic": "compact_bone",
+    "tags": [
+      "compact_bone",
+      "osteons",
+      "Haversian_system",
+      "bone_tissue"
+    ],
+    "learning_objective": "Describe the microscopic structure of compact bone.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_16",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  }
+]

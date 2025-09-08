@@ -1,0 +1,391 @@
+[
+  {
+    "id": "math_xii_ch8_mcq_001",
+    "question": "A circle is defined as the locus of a point that moves in a plane such that its distance from a fixed point is always:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Variable",
+      "B": "Zero",
+      "C": "Constant",
+      "D": "Infinite"
+    },
+    "correct_answer": "C",
+    "explanation": "By definition, a circle is the set of all points in a plane that are at a fixed distance (the radius) from a fixed point (the center). Thus, the distance from the fixed point is always constant.",
+    "difficulty": "easy",
+    "topic": "definition_of_circle",
+    "subtopic": "locus",
+    "tags": [
+      "circle",
+      "definition",
+      "locus",
+      "geometry"
+    ],
+    "learning_objective": "Understand the basic definition of a circle.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8_circle",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch8_mcq_002",
+    "question": "The standard equation of a circle with center `$(h, k)$` and radius `$r$` is:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`$(x+h)^2 + (y+k)^2 = r^2$`",
+      "B": "`$(x-h)^2 + (y-k)^2 = r^2$`",
+      "C": "`$x^2 + y^2 = r^2$`",
+      "D": "`$(x-h)^2 + (y-k)^2 = r$`"
+    },
+    "correct_answer": "B",
+    "explanation": "The standard form of the equation of a circle with center `$(h, k)$` and radius `$r$` is derived from the distance formula: the distance between any point `$(x, y)$` on the circle and the center `$(h, k)$` is `$r$`. So, `$\\sqrt{(x-h)^2 + (y-k)^2} = r$`, which squares to `$(x-h)^2 + (y-k)^2 = r^2$`.",
+    "difficulty": "easy",
+    "topic": "standard_equation_of_circle",
+    "subtopic": "formula",
+    "tags": [
+      "circle",
+      "equation",
+      "standard_form",
+      "formula"
+    ],
+    "learning_objective": "Recall the standard form of a circle's equation.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8_circle",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch8_mcq_003",
+    "question": "What is the center of the circle represented by the equation `$(x-5)^2 + (y+3)^2 = 16$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`$(5, 3)$`",
+      "B": "`$( -5, -3)$`",
+      "C": "`$(5, -3)$`",
+      "D": "`$( -5, 3)$`"
+    },
+    "correct_answer": "C",
+    "explanation": "Comparing the given equation `$(x-5)^2 + (y+3)^2 = 16$` with the standard form `$(x-h)^2 + (y-k)^2 = r^2$`, we have `$h=5$` and `$k=-3$`. Therefore, the center of the circle is `$(5, -3)$`.",
+    "difficulty": "easy",
+    "topic": "standard_equation_of_circle",
+    "subtopic": "center",
+    "tags": [
+      "circle",
+      "center",
+      "standard_form"
+    ],
+    "learning_objective": "Identify the center of a circle from its standard equation.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8_circle",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch8_mcq_004",
+    "question": "What is the radius of the circle given by the equation `$(x+1)^2 + (y-2)^2 = 9$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`$1$`",
+      "B": "`$2$`",
+      "C": "`$3$`",
+      "D": "`$9$`"
+    },
+    "correct_answer": "C",
+    "explanation": "Comparing the given equation `$(x+1)^2 + (y-2)^2 = 9$` with the standard form `$(x-h)^2 + (y-k)^2 = r^2$`, we have `$r^2 = 9$`. Taking the square root, the radius `$r = \\sqrt{9} = 3$` (radius is always positive).",
+    "difficulty": "easy",
+    "topic": "standard_equation_of_circle",
+    "subtopic": "radius",
+    "tags": [
+      "circle",
+      "radius",
+      "standard_form"
+    ],
+    "learning_objective": "Identify the radius of a circle from its standard equation.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8_circle",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch8_mcq_005",
+    "question": "The general equation of a circle is given by:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`$x^2 + y^2 + 2gx + 2fy + c = 0$`",
+      "B": "`$x^2 - y^2 + 2gx + 2fy + c = 0$`",
+      "C": "`$ax^2 + by^2 + 2gx + 2fy + c = 0$`",
+      "D": "`$x^2 + y^2 + 2gx + 2fy = 0$`"
+    },
+    "correct_answer": "A",
+    "explanation": "The general equation of a circle is `$x^2 + y^2 + 2gx + 2fy + c = 0$`. For this to represent a circle, the coefficients of `$x^2$` and `$y^2$` must be equal (and non-zero, typically `$1$`) and there should be no `$xy$` term.",
+    "difficulty": "easy",
+    "topic": "general_equation_of_circle",
+    "subtopic": "formula",
+    "tags": [
+      "circle",
+      "equation",
+      "general_form",
+      "formula"
+    ],
+    "learning_objective": "Recall the general form of a circle's equation.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8_circle",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch8_mcq_006",
+    "question": "For the general equation of a circle `$x^2 + y^2 + 2gx + 2fy + c = 0$`, the center is:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`$(g, f)$`",
+      "B": "`$( -g, -f)$`",
+      "C": "`$(2g, 2f)$`",
+      "D": "`$( -2g, -2f)$`"
+    },
+    "correct_answer": "B",
+    "explanation": "To find the center from the general equation `$x^2 + y^2 + 2gx + 2fy + c = 0$`, we complete the square. This leads to `$(x+g)^2 + (y+f)^2 = g^2 + f^2 - c$`. Comparing with the standard form `$(x-h)^2 + (y-k)^2 = r^2$`, we get `$h = -g$` and `$k = -f$`. So, the center is `$( -g, -f)$`.",
+    "difficulty": "easy",
+    "topic": "general_equation_of_circle",
+    "subtopic": "center",
+    "tags": [
+      "circle",
+      "center",
+      "general_form",
+      "formula"
+    ],
+    "learning_objective": "Identify the center of a circle from its general equation.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8_circle",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch8_mcq_007",
+    "question": "For the general equation of a circle `$x^2 + y^2 + 2gx + 2fy + c = 0$`, the radius is:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`$\\sqrt{g^2 + f^2 + c}$`",
+      "B": "`$\\sqrt{g^2 + f^2 - c}$`",
+      "C": "`$g^2 + f^2 - c$`",
+      "D": "`$\\sqrt{g+f-c}$`"
+    },
+    "correct_answer": "B",
+    "explanation": "From completing the square for the general equation `$x^2 + y^2 + 2gx + 2fy + c = 0$`, we get `$(x+g)^2 + (y+f)^2 = g^2 + f^2 - c$`. Comparing with `$(x-h)^2 + (y-k)^2 = r^2$`, we find `$r^2 = g^2 + f^2 - c$`. Thus, the radius `$r = \\sqrt{g^2 + f^2 - c}$`. For a real circle, `$g^2 + f^2 - c > 0$`.",
+    "difficulty": "easy",
+    "topic": "general_equation_of_circle",
+    "subtopic": "radius",
+    "tags": [
+      "circle",
+      "radius",
+      "general_form",
+      "formula"
+    ],
+    "learning_objective": "Identify the radius of a circle from its general equation.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8_circle",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch8_mcq_008",
+    "question": "The equation `$x^2 + y^2 = r^2$` represents a circle with its center at:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`$(r, r)$`",
+      "B": "`$(0, 0)$`",
+      "C": "`$(1, 1)$`",
+      "D": "`$( -r, -r)$`"
+    },
+    "correct_answer": "B",
+    "explanation": "The equation `$x^2 + y^2 = r^2$` is a special case of the standard form `$(x-h)^2 + (y-k)^2 = r^2$` where `$h=0$` and `$k=0$`. This means the center of the circle is at the origin `$(0, 0)$`.",
+    "difficulty": "easy",
+    "topic": "circle_at_origin",
+    "subtopic": "center",
+    "tags": [
+      "circle",
+      "origin",
+      "center",
+      "equation"
+    ],
+    "learning_objective": "Recognize the equation of a circle centered at the origin.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8_circle",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch8_mcq_009",
+    "question": "Which of the following conditions must be met for the equation `$Ax^2 + By^2 + 2Gx + 2Fy + C = 0$` to represent a circle?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`$A=B$` and `$A \neq 0$`",
+      "B": "`$A \neq B$`",
+      "C": "`$A=0$` or `$B=0$`",
+      "D": "`$A=B=0$`"
+    },
+    "correct_answer": "A",
+    "explanation": "For the equation `$Ax^2 + By^2 + 2Gx + 2Fy + C = 0$` to represent a circle, the coefficients of `$x^2$` and `$y^2$` must be equal and non-zero. If `$A=B=0$`, it becomes a linear equation. If `$A \neq B$`, it represents an ellipse (or hyperbola if signs are different). So, `$A=B$` and `$A \neq 0$` is the correct condition.",
+    "difficulty": "easy",
+    "topic": "general_equation_of_circle",
+    "subtopic": "conditions",
+    "tags": [
+      "circle",
+      "equation",
+      "conditions",
+      "conic_sections"
+    ],
+    "learning_objective": "Identify conditions for a general second-degree equation to represent a circle.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8_circle",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch8_mcq_010",
+    "question": "A point `$(x_1, y_1)$` lies inside the circle `$x^2 + y^2 + 2gx + 2fy + c = 0$` if:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`$x_1^2 + y_1^2 + 2gx_1 + 2fy_1 + c > 0$`",
+      "B": "`$x_1^2 + y_1^2 + 2gx_1 + 2fy_1 + c < 0$`",
+      "C": "`$x_1^2 + y_1^2 + 2gx_1 + 2fy_1 + c = 0$`",
+      "D": "`$x_1^2 + y_1^2 + 2gx_1 + 2fy_1 + c \\ge 0$`"
+    },
+    "correct_answer": "B",
+    "explanation": "Let `$S = x^2 + y^2 + 2gx + 2fy + c$`. A point `$(x_1, y_1)$` lies inside the circle if `$S_1 < 0$`, on the circle if `$S_1 = 0$`, and outside the circle if `$S_1 > 0$`. This is because `$S_1$` represents the square of the length of the tangent from `$(x_1, y_1)$` to the circle (if outside), or a negative value related to the distance from the center (if inside).",
+    "difficulty": "easy",
+    "topic": "position_of_a_point",
+    "subtopic": "inside_circle",
+    "tags": [
+      "circle",
+      "point_position",
+      "inequality"
+    ],
+    "learning_objective": "Determine if a point lies inside, on, or outside a circle.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8_circle",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch8_mcq_011",
+    "question": "The equation of a circle with center `$(0, 0)$` and radius `$5$` is:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`$x^2 + y^2 = 5$`",
+      "B": "`$x^2 + y^2 = 25$`",
+      "C": "`$(x-5)^2 + (y-5)^2 = 0$`",
+      "D": "`$x^2 - y^2 = 25$`"
+    },
+    "correct_answer": "B",
+    "explanation": "Using the standard form `$(x-h)^2 + (y-k)^2 = r^2$`, with center `$(h, k) = (0, 0)$` and radius `$r = 5$`, we get `$(x-0)^2 + (y-0)^2 = 5^2$`, which simplifies to `$x^2 + y^2 = 25$`.",
+    "difficulty": "easy",
+    "topic": "circle_at_origin",
+    "subtopic": "equation",
+    "tags": [
+      "circle",
+      "origin",
+      "equation",
+      "radius"
+    ],
+    "learning_objective": "Formulate the equation of a circle centered at the origin.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8_circle",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch8_mcq_012",
+    "question": "If the radius `$r$` of a circle is `$0$`, the circle is called a:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Real circle",
+      "B": "Point circle",
+      "C": "Imaginary circle",
+      "D": "Degenerate circle"
+    },
+    "correct_answer": "B",
+    "explanation": "When the radius `$r=0$`, the equation `$(x-h)^2 + (y-k)^2 = 0$` means that only the point `$(h, k)$` satisfies the equation. Such a circle is called a point circle, as it has shrunk to a single point.",
+    "difficulty": "easy",
+    "topic": "types_of_circles",
+    "subtopic": "point_circle",
+    "tags": [
+      "circle",
+      "point_circle",
+      "radius",
+      "degenerate"
+    ],
+    "learning_objective": "Define a point circle.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8_circle",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch8_mcq_013",
+    "question": "The equation of a circle whose diameter has endpoints `$(x_1, y_1)$` and `$(x_2, y_2)$` is given by:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`$(x-x_1)(x-x_2) + (y-y_1)(y-y_2) = 0$`",
+      "B": "`$(x+x_1)(x+x_2) + (y+y_1)(y+y_2) = 0$`",
+      "C": "`$(x-x_1)(x_2-x) + (y-y_1)(y_2-y) = 0$`",
+      "D": "`$(x-x_1)^2 + (y-y_1)^2 = (x_2-x_1)^2 + (y_2-y_1)^2$`"
+    },
+    "correct_answer": "A",
+    "explanation": "This is the diameter form of the circle's equation. It is derived from the property that the angle subtended by a diameter at any point on the circumference is a right angle. If `$(x, y)$` is any point on the circle, then the product of the slopes of the lines connecting `$(x, y)$` to `$(x_1, y_1)$` and `$(x, y)$` to `$(x_2, y_2)$` is `-1`. This leads to `$\frac{y-y_1}{x-x_1} \\cdot \frac{y-y_2}{x-x_2} = -1$`, which simplifies to `$(y-y_1)(y-y_2) = -(x-x_1)(x-x_2)$`, or `$(x-x_1)(x-x_2) + (y-y_1)(y-y_2) = 0$`.",
+    "difficulty": "easy",
+    "topic": "diameter_form_of_circle",
+    "subtopic": "formula",
+    "tags": [
+      "circle",
+      "diameter",
+      "equation",
+      "formula"
+    ],
+    "learning_objective": "Recall the diameter form of a circle's equation.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8_circle",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "math_xii_ch8_mcq_014",
+    "question": "The equation of a circle passing through the origin `$(0,0)$` is:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "`$x^2 + y^2 + 2gx + 2fy = 0$`",
+      "B": "`$x^2 + y^2 + c = 0$`",
+      "C": "`$x^2 + y^2 + 2gx + 2fy + 1 = 0$`",
+      "D": "`$(x-g)^2 + (y-f)^2 = r^2$`"
+    },
+    "correct_answer": "A",
+    "explanation": "If a circle passes through the origin `$(0,0)$`, then substituting `$(0,0)$` into the general equation `$x^2 + y^2 + 2gx + 2fy + c = 0$` gives `$0^2 + 0^2 + 2g(0) + 2f(0) + c = 0$`, which implies `$c=0$`. Thus, the equation becomes `$x^2 + y^2 + 2gx + 2fy = 0$`.",
+    "difficulty": "easy",
+    "topic": "circle_through_origin",
+    "subtopic": "equation",
+    "tags": [
+      "circle",
+      "origin",
+      "equation",
+      "general_form"
+    ],
+    "learning_objective": "Formulate the equation of a circle passing through the origin.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8_circle",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

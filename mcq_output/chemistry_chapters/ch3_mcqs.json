@@ -1,0 +1,543 @@
+[
+  {
+    "id": "chem_xi_ch3_mcq_001",
+    "question": "According to Lewis and Kossel's electronic theory of chemical bonding, a chemical bond is formed between two atoms to acquire which configuration?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Incomplete outer shell",
+      "B": "Noble gas configuration",
+      "C": "Duplet configuration only",
+      "D": "Octet configuration only"
+    },
+    "correct_answer": "B",
+    "explanation": "The electronic theory of chemical bonding, proposed by Kossel and Lewis, states that a chemical bond is formed between two atoms to acquire a stable noble gas configuration.",
+    "difficulty": "easy",
+    "topic": "covalent_bonding",
+    "subtopic": "Lewis_Kossel_theory",
+    "tags": [
+      "chemical_bonding",
+      "Lewis_theory",
+      "noble_gas_configuration"
+    ],
+    "learning_objective": "Explain the basis of chemical bonding",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_002",
+    "question": "Which of the following theories was developed to overcome the shortcomings of Valence Bond Theory (VBT)?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Lewis concept",
+      "B": "Molecular Orbital Theory (MOT)",
+      "C": "VSEPR theory",
+      "D": "Octet rule"
+    },
+    "correct_answer": "B",
+    "explanation": "The document states that Mullikan, Hund, and Huckel developed the Molecular Orbital Theory (MOT) as an alternate theory to overcome the shortcomings of VBT.",
+    "difficulty": "easy",
+    "topic": "covalent_bonding",
+    "subtopic": "modern_theories",
+    "tags": [
+      "VBT",
+      "MOT",
+      "covalent_bond_theories"
+    ],
+    "learning_objective": "Describe modern theories of covalent bonding",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_003",
+    "question": "What is the primary condition for the formation of a pi ($\pi$) bond?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Head-to-head overlapping of orbitals.",
+      "B": "The two p-orbitals must be parallel to each other.",
+      "C": "The atoms must already be bonded with a sigma bond.",
+      "D": "The electron density must be highest between the two bonded nuclei."
+    },
+    "correct_answer": "B",
+    "explanation": "The text states that 'the condition for the formation of pi bond is that the two p-orbital should be parallel to each other.'",
+    "difficulty": "medium",
+    "topic": "covalent_bonding",
+    "subtopic": "pi_bond",
+    "tags": [
+      "pi_bond",
+      "p-orbital",
+      "overlapping"
+    ],
+    "learning_objective": "Describe the features of sigma and pi bonds",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_004",
+    "question": "Which of the following describes the relationship between bond strength and orbital overlap?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Weaker overlap leads to a stronger bond.",
+      "B": "The strength of a bond is independent of the extent of overlap.",
+      "C": "The greater the overlap, the stronger the bond.",
+      "D": "The less the overlap, the more energy is required to break the bond."
+    },
+    "correct_answer": "C",
+    "explanation": "A key postulate of Valence Bond Theory is that 'The strength of bond is determined by the extent of overlap. The greater the overlap, the stronger is the bond.'",
+    "difficulty": "easy",
+    "topic": "covalent_bonding",
+    "subtopic": "VBT_postulates",
+    "tags": [
+      "VBT",
+      "bond_strength",
+      "orbital_overlap"
+    ],
+    "learning_objective": "Define bond energies and explain how they can be used to compare bond strengths",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_005",
+    "question": "What is a major limitation of Valence Bond Theory (VBT)?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "It can't explain the formation of sigma bonds.",
+      "B": "It fails to describe the paramagnetic behavior of oxygen.",
+      "C": "It can't be used to predict the shapes of molecules.",
+      "D": "It can't explain the existence of covalent bonds."
+    },
+    "correct_answer": "B",
+    "explanation": "The document lists several limitations of VBT, including that it 'does not tell about para magnetic behavior of oxygen.'",
+    "difficulty": "medium",
+    "topic": "covalent_bonding",
+    "subtopic": "VBT_limitations",
+    "tags": [
+      "VBT",
+      "limitations",
+      "paramagnetic_behavior",
+      "oxygen"
+    ],
+    "learning_objective": "Critically analyze chemical bonding theories",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_006",
+    "question": "In which type of overlapping does a sigma ($\sigma$) bond form in an $H_2$ molecule?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "s-s overlapping",
+      "B": "s-p overlapping",
+      "C": "p-p overlapping",
+      "D": "d-d overlapping"
+    },
+    "correct_answer": "A",
+    "explanation": "The text states that s-s overlapping is the type of head-to-head overlap that exists in an $H_2$ molecule, forming a sigma bond.",
+    "difficulty": "easy",
+    "topic": "covalent_bonding",
+    "subtopic": "sigma_bond",
+    "tags": [
+      "sigma_bond",
+      "s-s_overlap",
+      "H2_molecule"
+    ],
+    "learning_objective": "Describe the features of sigma and pi bonds",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_007",
+    "question": "Why is a sigma ($\sigma$) bond stronger than a pi ($\pi$) bond?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Pi bonds have a higher electron density between the nuclei.",
+      "B": "Sigma bonds are formed by lateral overlapping, which is more effective.",
+      "C": "The overlapping region in a pi bond is maximum, making it weaker.",
+      "D": "The region of overlapping of atomic orbitals in a pi bond is smaller (minimum)."
+    },
+    "correct_answer": "D",
+    "explanation": "The document explains that a pi bond is weaker than a sigma bond because 'the region of overlapping of atomic orbitals in the formation of pi bond is small (minimum)'.",
+    "difficulty": "medium",
+    "topic": "covalent_bonding",
+    "subtopic": "bond_strength",
+    "tags": [
+      "sigma_bond",
+      "pi_bond",
+      "bond_strength",
+      "overlapping"
+    ],
+    "learning_objective": "Compare the strengths of sigma and pi bonds",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_008",
+    "question": "The Valence Bond Theory was introduced in which year?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "1916",
+      "B": "1920",
+      "C": "1927",
+      "D": "1932"
+    },
+    "correct_answer": "C",
+    "explanation": "The text states that the Valence Bond Theory was introduced by London and Heitler in 1927.",
+    "difficulty": "easy",
+    "topic": "covalent_bonding",
+    "subtopic": "VBT",
+    "tags": [
+      "VBT",
+      "history_of_chemistry",
+      "theory"
+    ],
+    "learning_objective": "Understand the historical development of bonding theories",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_009",
+    "question": "According to Molecular Orbital Theory (MOT), what happens when two atomic orbitals combine?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "They produce a single hybrid orbital.",
+      "B": "They produce two molecular orbitals, one with lower and one with higher energy.",
+      "C": "They form a bonding orbital only.",
+      "D": "They form an anti-bonding orbital only."
+    },
+    "correct_answer": "B",
+    "explanation": "The assumptions of MOT state that 'Combination of two atomic orbitals (A.O) gives two molecular orbitals (MO) one of them has lower energy and other has higher energy than any of the atomic orbital from which they formed.'",
+    "difficulty": "easy",
+    "topic": "covalent_bonding",
+    "subtopic": "MOT",
+    "tags": [
+      "MOT",
+      "molecular_orbitals",
+      "atomic_orbitals"
+    ],
+    "learning_objective": "Describe molecular orbital theory",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_010",
+    "question": "What is the formula to determine the bond order of a molecule in Molecular Orbital Theory?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Bond order = $N(b) + N(a)$",
+      "B": "Bond order = $N(b) - N(a)$",
+      "C": "Bond order = $\\frac{N(b)}{N(a)}$",
+      "D": "Bond order = $\\frac{N(b)-N(a)}{2}$"
+    },
+    "correct_answer": "D",
+    "explanation": "The text provides the formula for bond order as 'Bond order = $\\frac{N(b)-N(a)}{2}$' where $N(b)$ is the number of electrons in bonding MO and $N(a)$ is the number of electrons in anti-bonding MO.",
+    "difficulty": "medium",
+    "topic": "covalent_bonding",
+    "subtopic": "MOT",
+    "tags": [
+      "MOT",
+      "bond_order",
+      "formula"
+    ],
+    "learning_objective": "Calculate bond order using MOT",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_011",
+    "question": "Why is the electron density in the region between two nuclei zero in an anti-bonding molecular orbital?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Because the orbitals interact constructively.",
+      "B": "Because the combining atomic orbitals are of different energies.",
+      "C": "Because the nodal plane bisects the inter-nucleus axis.",
+      "D": "Because electrons prefer to stay closer to one nucleus."
+    },
+    "correct_answer": "C",
+    "explanation": "The text explains that in an anti-bonding molecular orbital, the electron density is zero in the region between the two nuclei 'since the nodal plane bisecting the inter nucleus axis.'",
+    "difficulty": "medium",
+    "topic": "covalent_bonding",
+    "subtopic": "MOT",
+    "tags": [
+      "MOT",
+      "anti-bonding_orbital",
+      "nodal_plane"
+    ],
+    "learning_objective": "Explain the characteristics of bonding and anti-bonding orbitals",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_012",
+    "question": "The attractive force that holds atoms together in a compound is known as:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Van der Waals force",
+      "B": "Hydrogen bond",
+      "C": "Chemical bond",
+      "D": "Electromagnetic force"
+    },
+    "correct_answer": "C",
+    "explanation": "The document defines a chemical bond as 'The attractive force that holds atoms together in a compound'.",
+    "difficulty": "easy",
+    "topic": "chemical_bonding",
+    "subtopic": "definition",
+    "tags": [
+      "chemical_bond",
+      "definition"
+    ],
+    "learning_objective": "Define chemical bond",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_013",
+    "question": "Which of the following is an example of s-p overlapping?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$H_2$ molecule",
+      "B": "$F_2$ molecule",
+      "C": "$HF$ molecule",
+      "D": "$O_2$ molecule"
+    },
+    "correct_answer": "C",
+    "explanation": "The text lists HF and HCl as examples of molecules where a sigma bond is formed due to s-p overlapping.",
+    "difficulty": "easy",
+    "topic": "covalent_bonding",
+    "subtopic": "types_of_overlap",
+    "tags": [
+      "s-p_overlap",
+      "HF_molecule",
+      "sigma_bond"
+    ],
+    "learning_objective": "Describe the formation of sigma bonds",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_014",
+    "question": "Why do noble gases not form chemical bonds?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "They have incomplete outer shells.",
+      "B": "They have very weak attractive forces.",
+      "C": "They are extremely stable due to the completion of their duplet/octet.",
+      "D": "They can only exist as monoatomic molecules."
+    },
+    "correct_answer": "C",
+    "explanation": "The document states that 'Atoms of noble gases are extremely stable due to the completion of duplet/octet therefore they do not form any type of chemical bond'.",
+    "difficulty": "easy",
+    "topic": "chemical_bonding",
+    "subtopic": "noble_gases",
+    "tags": [
+      "noble_gases",
+      "stability",
+      "octet_rule"
+    ],
+    "learning_objective": "Explain why atoms form chemical bonds",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_015",
+    "question": "How is a sigma ($\sigma$) bond defined in Valence Bond Theory?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "A bond formed by lateral overlapping of orbitals.",
+      "B": "A bond formed by the sharing of electron pairs.",
+      "C": "A bond formed by head-to-head overlapping of half-filled atomic orbitals.",
+      "D": "A bond formed by the transfer of electrons."
+    },
+    "correct_answer": "C",
+    "explanation": "A sigma bond is defined as 'the bond formed by head to head overlapping of half filled atomic orbitals'.",
+    "difficulty": "easy",
+    "topic": "covalent_bonding",
+    "subtopic": "sigma_bond",
+    "tags": [
+      "sigma_bond",
+      "VBT",
+      "head-to-head_overlap"
+    ],
+    "learning_objective": "Describe the features of sigma bonds",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_016",
+    "question": "Which of the following is true about the electron cloud of a pi ($\pi$) bond?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "It is concentrated along the axis between the two nuclei.",
+      "B": "It is found highest between the two bonded nuclei.",
+      "C": "It is unsymmetrical and concentrated above and below the plane of the sigma bond.",
+      "D": "It is symmetrically distributed around the nuclei."
+    },
+    "correct_answer": "C",
+    "explanation": "The text states that 'The electron cloud of pi bond in unsymmetrical and is concentrated above and below the plane of sigma bond.'",
+    "difficulty": "medium",
+    "topic": "covalent_bonding",
+    "subtopic": "pi_bond",
+    "tags": [
+      "pi_bond",
+      "electron_cloud",
+      "orbital_shape"
+    ],
+    "learning_objective": "Describe the features of pi bonds",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_017",
+    "question": "Which type of sigma bond is generally the strongest?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "s-s sigma bond",
+      "B": "s-p sigma bond",
+      "C": "p-p sigma bond",
+      "D": "All sigma bonds have equal strength."
+    },
+    "correct_answer": "C",
+    "explanation": "The document states that 'p-orbital have directional charge distribution and longer lobes which cause more effective overlap. Thus s-s sigma bond is relatively weak than s-p and p-p sigma bond.' Among the options, p-p overlap is the most effective and therefore forms the strongest bond.",
+    "difficulty": "medium",
+    "topic": "covalent_bonding",
+    "subtopic": "bond_strength",
+    "tags": [
+      "sigma_bond",
+      "p-p_overlap",
+      "bond_strength"
+    ],
+    "learning_objective": "Compare the strengths of different sigma bonds",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_018",
+    "question": "Why is a molecule more stable than the atoms from which it is formed?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "It has a higher total energy.",
+      "B": "It has a lower total energy.",
+      "C": "It has the same energy as the uncombined atoms.",
+      "D": "It has stronger repulsive forces."
+    },
+    "correct_answer": "B",
+    "explanation": "The document explains that 'A molecule as compared to the atoms from which it is formed is more stable because it possesses energy lower than the energy of the uncombined atoms.'",
+    "difficulty": "easy",
+    "topic": "chemical_bonding",
+    "subtopic": "stability",
+    "tags": [
+      "stability",
+      "energy",
+      "chemical_bond_formation"
+    ],
+    "learning_objective": "Explain the energy changes during bond formation",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_019",
+    "question": "Who introduced the concept of valency and stated that electrons are responsible for chemical bonding?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "London and Heitler",
+      "B": "Mullikan and Hund",
+      "C": "Kossel",
+      "D": "Lewis"
+    },
+    "correct_answer": "D",
+    "explanation": "The text states that 'Lewis (1916) gave the concept of valency and said that electrons in atoms are responsible for chemical bonding.'",
+    "difficulty": "easy",
+    "topic": "chemical_bonding",
+    "subtopic": "historical_development",
+    "tags": [
+      "Lewis",
+      "valency",
+      "history_of_chemistry"
+    ],
+    "learning_objective": "Summarize the historical development of bonding theories",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_020",
+    "question": "The formation of a sigma ($\sigma$) bond by head-to-head overlapping results in the electron density being highest where?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Above and below the plane of the bond axis.",
+      "B": "Outside the plane of the bond axis.",
+      "C": "Between the two bonded nuclei.",
+      "D": "At a point away from the nuclei."
+    },
+    "correct_answer": "C",
+    "explanation": "The document states that 'The electron density in sigma bonded atoms found highest between the two bonded nuclei.'",
+    "difficulty": "easy",
+    "topic": "covalent_bonding",
+    "subtopic": "sigma_bond",
+    "tags": [
+      "sigma_bond",
+      "electron_density",
+      "overlapping"
+    ],
+    "learning_objective": "Describe the features of sigma bonds",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

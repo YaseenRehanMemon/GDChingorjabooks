@@ -1,0 +1,576 @@
+[
+  {
+    "id": "chem_xi_ch10_mcq_001",
+    "question": "Which of the following elements is most likely to form an ionic bond with chlorine?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Carbon",
+      "B": "Oxygen",
+      "C": "Sodium",
+      "D": "Sulfur"
+    },
+    "correct_answer": "C",
+    "explanation": "Ionic bonds typically form between a metal and a non-metal. Sodium (Na) is an alkali metal, which readily loses an electron to form a positive ion ($Na^+$). Chlorine (Cl) is a halogen, a non-metal that readily gains an electron to form a negative ion ($Cl^-$). Carbon, Oxygen, and Sulfur are non-metals and are more likely to form covalent bonds with chlorine.",
+    "difficulty": "easy",
+    "topic": "ionic_bonding",
+    "subtopic": "formation_of_ionic_bonds",
+    "tags": [
+      "ionic_bond",
+      "metal",
+      "non-metal",
+      "electronegativity"
+    ],
+    "learning_objective": "Identify elements that form ionic bonds.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch10_mcq_002",
+    "question": "According to the octet rule, atoms tend to gain, lose, or share electrons to achieve how many electrons in their outermost shell?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "2",
+      "B": "4",
+      "C": "6",
+      "D": "8"
+    },
+    "correct_answer": "D",
+    "explanation": "The octet rule states that atoms tend to combine in such a way that each atom has eight electrons in its valence shell, giving it the same electronic configuration as a noble gas. This provides stability to the atom.",
+    "difficulty": "easy",
+    "topic": "octet_rule",
+    "subtopic": "definition",
+    "tags": [
+      "octet_rule",
+      "valence_electrons",
+      "stability"
+    ],
+    "learning_objective": "Define the octet rule.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch10_mcq_003",
+    "question": "Which type of bond involves the sharing of electrons between two atoms?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Ionic bond",
+      "B": "Covalent bond",
+      "C": "Metallic bond",
+      "D": "Hydrogen bond"
+    },
+    "correct_answer": "B",
+    "explanation": "A covalent bond is formed by the mutual sharing of one or more pairs of electrons between two atoms. Ionic bonds involve the transfer of electrons, metallic bonds involve a 'sea' of delocalized electrons, and hydrogen bonds are a type of intermolecular force.",
+    "difficulty": "easy",
+    "topic": "covalent_bonding",
+    "subtopic": "definition",
+    "tags": [
+      "covalent_bond",
+      "electron_sharing",
+      "chemical_bond"
+    ],
+    "learning_objective": "Distinguish between types of chemical bonds.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch10_mcq_004",
+    "question": "What is the primary force responsible for holding atoms together in a molecule?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Gravitational force",
+      "B": "Nuclear force",
+      "C": "Chemical bond",
+      "D": "Van der Waals force"
+    },
+    "correct_answer": "C",
+    "explanation": "Chemical bonds are the strong attractive forces that hold atoms together in molecules or compounds. Gravitational and nuclear forces operate at different scales (macroscopic and subatomic, respectively). Van der Waals forces are intermolecular forces, weaker than chemical bonds, acting between molecules.",
+    "difficulty": "easy",
+    "topic": "introduction_to_bonding",
+    "subtopic": "nature_of_bonds",
+    "tags": [
+      "chemical_bond",
+      "intermolecular_forces",
+      "intramolecular_forces"
+    ],
+    "learning_objective": "Understand the fundamental concept of chemical bonding.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "chem_xi_ch10_mcq_005",
+    "question": "Which of the following compounds exhibits a triple bond?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$O_2$",
+      "B": "$N_2$",
+      "C": "$CO_2$",
+      "D": "$H_2O$"
+    },
+    "correct_answer": "B",
+    "explanation": "Nitrogen gas ($N_2$) consists of two nitrogen atoms sharing three pairs of electrons, forming a triple covalent bond ($N \\equiv N$). Oxygen ($O_2$) has a double bond, Carbon dioxide ($CO_2$) has two double bonds, and Water ($H_2O$) has two single bonds.",
+    "difficulty": "easy",
+    "topic": "covalent_bonding",
+    "subtopic": "multiple_bonds",
+    "tags": [
+      "triple_bond",
+      "covalent_bond",
+      "nitrogen"
+    ],
+    "learning_objective": "Identify molecules with triple bonds.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch10_mcq_006",
+    "question": "What is the maximum number of electrons that can be accommodated in the valence shell of an atom following the octet rule?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "2",
+      "B": "4",
+      "C": "6",
+      "D": "8"
+    },
+    "correct_answer": "D",
+    "explanation": "The octet rule specifically refers to achieving eight electrons in the outermost (valence) shell for stability, similar to noble gases (except Helium, which achieves a duplet).",
+    "difficulty": "easy",
+    "topic": "octet_rule",
+    "subtopic": "valence_electrons",
+    "tags": [
+      "octet_rule",
+      "valence_shell",
+      "electrons"
+    ],
+    "learning_objective": "Recall the number of electrons in a stable octet.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "chem_xi_ch10_mcq_007",
+    "question": "Which of the following is a characteristic property of ionic compounds?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Low melting point",
+      "B": "Good electrical conductivity in solid state",
+      "C": "Solubility in non-polar solvents",
+      "D": "High melting point"
+    },
+    "correct_answer": "D",
+    "explanation": "Ionic compounds are held together by strong electrostatic forces between oppositely charged ions, forming a crystal lattice. A large amount of energy is required to break these forces, resulting in high melting and boiling points. They are generally soluble in polar solvents (like water) and conduct electricity in molten or aqueous states, but not in the solid state.",
+    "difficulty": "easy",
+    "topic": "ionic_bonding",
+    "subtopic": "properties_of_ionic_compounds",
+    "tags": [
+      "ionic_compounds",
+      "properties",
+      "melting_point",
+      "conductivity"
+    ],
+    "learning_objective": "List properties of ionic compounds.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch10_mcq_008",
+    "question": "Which of the following elements can form a stable duplet configuration?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Carbon",
+      "B": "Oxygen",
+      "C": "Hydrogen",
+      "D": "Nitrogen"
+    },
+    "correct_answer": "C",
+    "explanation": "Hydrogen, being in the first period, only needs two electrons to complete its first shell and achieve the stable electron configuration of Helium. This is known as the duplet rule. Other elements listed typically follow the octet rule.",
+    "difficulty": "easy",
+    "topic": "octet_rule",
+    "subtopic": "duplet_rule",
+    "tags": [
+      "duplet_rule",
+      "hydrogen",
+      "stability"
+    ],
+    "learning_objective": "Identify elements that follow the duplet rule.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "chem_xi_ch10_mcq_009",
+    "question": "What is the term for the energy released when one mole of an ionic compound is formed from its gaseous ions?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Ionization energy",
+      "B": "Electron affinity",
+      "C": "Lattice energy",
+      "D": "Bond energy"
+    },
+    "correct_answer": "C",
+    "explanation": "Lattice energy is defined as the energy released when one mole of an ionic crystal is formed from its constituent gaseous ions. Ionization energy is the energy required to remove an electron, electron affinity is the energy change when an electron is added, and bond energy is associated with covalent bonds.",
+    "difficulty": "easy",
+    "topic": "ionic_bonding",
+    "subtopic": "lattice_energy",
+    "tags": [
+      "lattice_energy",
+      "ionic_compounds",
+      "enthalpy"
+    ],
+    "learning_objective": "Define lattice energy.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch10_mcq_010",
+    "question": "Which of the following is a non-polar molecule?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$H_2O$",
+      "B": "$NH_3$",
+      "C": "$CH_4$",
+      "D": "$HCl$"
+    },
+    "correct_answer": "C",
+    "explanation": "A molecule is non-polar if its bond dipoles cancel out due to symmetrical geometry. Methane ($CH_4$) has a tetrahedral geometry with four identical C-H bonds, and the bond dipoles cancel, making it non-polar. Water ($H_2O$) and Ammonia ($NH_3$) have bent and trigonal pyramidal geometries, respectively, leading to net dipole moments. HCl is a diatomic molecule with a polar bond, making the molecule polar.",
+    "difficulty": "easy",
+    "topic": "covalent_bonding",
+    "subtopic": "molecular_polarity",
+    "tags": [
+      "non_polar",
+      "molecular_geometry",
+      "dipole_moment",
+      "VSEPR"
+    ],
+    "learning_objective": "Identify non-polar molecules based on symmetry.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch10_mcq_011",
+    "question": "What is the geometry around the central atom in a molecule with two bonding pairs and zero lone pairs, according to VSEPR theory?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Linear",
+      "B": "Trigonal planar",
+      "C": "Tetrahedral",
+      "D": "Bent"
+    },
+    "correct_answer": "A",
+    "explanation": "According to VSEPR theory, if a central atom has two bonding pairs and no lone pairs (AX2 type), the electron pairs will arrange themselves as far apart as possible, resulting in a linear molecular geometry with a bond angle of $180^\\circ$. Examples include $BeCl_2$ and $CO_2$.",
+    "difficulty": "easy",
+    "topic": "VSEPR_theory",
+    "subtopic": "molecular_geometry",
+    "tags": [
+      "VSEPR",
+      "molecular_geometry",
+      "linear",
+      "bond_angle"
+    ],
+    "learning_objective": "Predict molecular geometry for simple molecules.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch10_mcq_012",
+    "question": "Which of the following intermolecular forces is present in all molecular substances?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Hydrogen bonding",
+      "B": "Dipole-dipole forces",
+      "C": "London dispersion forces",
+      "D": "Ionic forces"
+    },
+    "correct_answer": "C",
+    "explanation": "London dispersion forces (also known as induced dipole-induced dipole forces) arise from temporary fluctuations in electron distribution and are present in all atoms and molecules, regardless of their polarity. Hydrogen bonding and dipole-dipole forces require specific molecular properties (polar bonds, H bonded to F/O/N). Ionic forces are intramolecular (within a compound), not intermolecular.",
+    "difficulty": "easy",
+    "topic": "intermolecular_forces",
+    "subtopic": "london_dispersion_forces",
+    "tags": [
+      "intermolecular_forces",
+      "london_dispersion",
+      "van_der_waals"
+    ],
+    "learning_objective": "Identify universal intermolecular forces.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch10_mcq_013",
+    "question": "What is the hybridization of the carbon atom in methane ($CH_4$)?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$sp$",
+      "B": "$sp^2$",
+      "C": "$sp^3$",
+      "D": "$dsp^2$"
+    },
+    "correct_answer": "C",
+    "explanation": "In methane ($CH_4$), the central carbon atom forms four single bonds with four hydrogen atoms. To accommodate these four bonds and achieve a tetrahedral geometry, the carbon atom undergoes $sp^3$ hybridization, mixing one $s$ orbital and three $p$ orbitals to form four equivalent $sp^3$ hybrid orbitals.",
+    "difficulty": "easy",
+    "topic": "hybridization",
+    "subtopic": "sp3_hybridization",
+    "tags": [
+      "hybridization",
+      "sp3",
+      "methane",
+      "VSEPR"
+    ],
+    "learning_objective": "Determine hybridization of central atoms.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch10_mcq_014",
+    "question": "Which of the following bonds is the strongest?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Single bond",
+      "B": "Double bond",
+      "C": "Triple bond",
+      "D": "Hydrogen bond"
+    },
+    "correct_answer": "C",
+    "explanation": "Generally, among covalent bonds between the same two atoms, a triple bond is stronger and shorter than a double bond, which in turn is stronger and shorter than a single bond. This is due to the increased number of shared electron pairs. Hydrogen bonds are intermolecular forces and are significantly weaker than covalent bonds.",
+    "difficulty": "easy",
+    "topic": "covalent_bonding",
+    "subtopic": "bond_strength",
+    "tags": [
+      "bond_strength",
+      "multiple_bonds",
+      "covalent_bond"
+    ],
+    "learning_objective": "Compare the strength of different types of covalent bonds.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch10_mcq_015",
+    "question": "What is the bond order of a diatomic molecule with 10 electrons in bonding molecular orbitals and 4 electrons in anti-bonding molecular orbitals?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "6"
+    },
+    "correct_answer": "B",
+    "explanation": "The bond order (BO) is calculated using the formula: $BO = \frac{1}{2} (\text{Number of bonding electrons} - \text{Number of anti-bonding electrons})$.\nGiven: Bonding electrons = 10, Anti-bonding electrons = 4.\n$BO = \frac{1}{2} (10 - 4) = \frac{1}{2} (6) = 3$.",
+    "difficulty": "easy",
+    "topic": "molecular_orbital_theory",
+    "subtopic": "bond_order",
+    "tags": [
+      "MOT",
+      "bond_order",
+      "molecular_orbitals",
+      "numerical"
+    ],
+    "learning_objective": "Calculate bond order using MOT.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch10_mcq_016",
+    "question": "Which of the following substances has metallic bonding?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Water ($H_2O$)",
+      "B": "Sodium chloride ($NaCl$)",
+      "C": "Copper ($Cu$)",
+      "D": "Methane ($CH_4$)"
+    },
+    "correct_answer": "C",
+    "explanation": "Metallic bonding is found in metals, where a 'sea' of delocalized valence electrons holds positively charged metal ions together. Copper is a metal and exhibits metallic bonding. Water and methane are covalently bonded molecules, and sodium chloride is an ionic compound.",
+    "difficulty": "easy",
+    "topic": "metallic_bonding",
+    "subtopic": "identification",
+    "tags": [
+      "metallic_bond",
+      "metals",
+      "electron_sea"
+    ],
+    "learning_objective": "Identify substances with metallic bonding.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "chem_xi_ch10_mcq_017",
+    "question": "What is the approximate bond angle in a molecule with trigonal planar geometry?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$90^\\circ$",
+      "B": "$104.5^\\circ$",
+      "C": "$109.5^\\circ$",
+      "D": "$120^\\circ$"
+    },
+    "correct_answer": "D",
+    "explanation": "In a trigonal planar geometry (e.g., $BF_3$), the central atom is surrounded by three electron domains (bonding pairs) that repel each other to maximize separation, resulting in bond angles of approximately $120^\\circ$.",
+    "difficulty": "easy",
+    "topic": "VSEPR_theory",
+    "subtopic": "bond_angles",
+    "tags": [
+      "VSEPR",
+      "trigonal_planar",
+      "bond_angle"
+    ],
+    "learning_objective": "Recall bond angles for common geometries.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch10_mcq_018",
+    "question": "Which of the following molecules contains a polar covalent bond but is a non-polar molecule overall?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$H_2O$",
+      "B": "$NH_3$",
+      "C": "$CO_2$",
+      "D": "$HF$"
+    },
+    "correct_answer": "C",
+    "explanation": "Carbon dioxide ($CO_2$) has two polar C=O bonds because oxygen is more electronegative than carbon. However, its linear geometry ($O=C=O$) causes the two bond dipoles to be equal in magnitude and opposite in direction, thus canceling each other out. This results in a net dipole moment of zero, making the molecule non-polar. $H_2O$, $NH_3$, and $HF$ are all polar molecules.",
+    "difficulty": "easy",
+    "topic": "covalent_bonding",
+    "subtopic": "molecular_polarity",
+    "tags": [
+      "polar_bond",
+      "non_polar_molecule",
+      "dipole_moment",
+      "VSEPR"
+    ],
+    "learning_objective": "Distinguish between bond polarity and molecular polarity.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch10_mcq_019",
+    "question": "The ability of an atom to attract a shared pair of electrons towards itself in a covalent bond is called:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Ionization energy",
+      "B": "Electron affinity",
+      "C": "Electronegativity",
+      "D": "Atomic radius"
+    },
+    "correct_answer": "C",
+    "explanation": "Electronegativity is a measure of the tendency of an atom to attract a bonding pair of electrons. Ionization energy is the energy required to remove an electron, and electron affinity is the energy change when an electron is added. Atomic radius is the size of an atom.",
+    "difficulty": "easy",
+    "topic": "covalent_bonding",
+    "subtopic": "electronegativity",
+    "tags": [
+      "electronegativity",
+      "covalent_bond",
+      "electron_attraction"
+    ],
+    "learning_objective": "Define electronegativity.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch10_mcq_020",
+    "question": "Which of the following is an example of a coordinate covalent bond?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$H_2$",
+      "B": "$NH_4^+$",
+      "C": "$NaCl$",
+      "D": "$CH_4$"
+    },
+    "correct_answer": "B",
+    "explanation": "A coordinate covalent bond (or dative bond) is a type of covalent bond where both shared electrons come from one atom. In the ammonium ion ($NH_4^+$), the nitrogen atom in $NH_3$ (which has a lone pair) donates both electrons to form a bond with a $H^+$ ion (which has no electrons). $H_2$ and $CH_4$ have regular covalent bonds, and $NaCl$ has an ionic bond.",
+    "difficulty": "easy",
+    "topic": "covalent_bonding",
+    "subtopic": "coordinate_covalent_bond",
+    "tags": [
+      "coordinate_bond",
+      "dative_bond",
+      "ammonium_ion"
+    ],
+    "learning_objective": "Identify coordinate covalent bonds.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch10_mcq_021",
+    "question": "What is the geometry of $PCl_5$ in the gaseous phase?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Tetrahedral",
+      "B": "Trigonal pyramidal",
+      "C": "Trigonal bipyramidal",
+      "D": "Octahedral"
+    },
+    "correct_answer": "C",
+    "explanation": "In $PCl_5$, the central phosphorus atom is bonded to five chlorine atoms and has no lone pairs. According to VSEPR theory, five electron domains will arrange themselves in a trigonal bipyramidal geometry.",
+    "difficulty": "medium",
+    "topic": "VSEPR_theory",
+    "subtopic": "molecular_geometry",
+    "tags": [
+      "VSEPR",
+      "trigonal_bipyramidal",
+      "PCl5"
+    ],
+    "learning_objective": "Predict molecular geometry for expanded octets.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_10",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

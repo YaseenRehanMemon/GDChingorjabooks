@@ -1,0 +1,620 @@
+[
+  {
+    "id": "bio_xii_ch25_mcq_001",
+    "question": "Which of the following is a primary component of an ecosystem?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Biotic and abiotic factors",
+      "B": "Only producers",
+      "C": "Only consumers",
+      "D": "Only decomposers"
+    },
+    "correct_answer": "A",
+    "explanation": "An ecosystem comprises both living (biotic) components like producers, consumers, and decomposers, and non-living (abiotic) components such as sunlight, water, soil, and temperature. Both are essential for the functioning of an ecosystem.",
+    "difficulty": "easy",
+    "topic": "ecosystem_components",
+    "subtopic": "biotic_abiotic",
+    "tags": [
+      "ecosystem",
+      "biotic",
+      "abiotic",
+      "environment"
+    ],
+    "learning_objective": "Define the basic components of an ecosystem.",
+    "created_date": "2024-05-15",
+    "source": "ch25_Man_and_his_Environment.pdf",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch25_mcq_002",
+    "question": "What is the primary role of producers in an ecosystem?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Decompose dead organic matter",
+      "B": "Consume other organisms",
+      "C": "Convert solar energy into chemical energy",
+      "D": "Regulate population sizes"
+    },
+    "correct_answer": "C",
+    "explanation": "Producers, primarily photosynthetic organisms like plants and algae, convert solar energy into chemical energy through photosynthesis. This energy forms the base of most food webs.",
+    "difficulty": "easy",
+    "topic": "trophic_levels",
+    "subtopic": "producers",
+    "tags": [
+      "producers",
+      "photosynthesis",
+      "energy_flow",
+      "ecosystem"
+    ],
+    "learning_objective": "Identify the role of producers in an ecosystem.",
+    "created_date": "2024-05-15",
+    "source": "ch25_Man_and_his_Environment.pdf",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch25_mcq_003",
+    "question": "Which gas is primarily responsible for the greenhouse effect?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Oxygen",
+      "B": "Nitrogen",
+      "C": "Carbon dioxide",
+      "D": "Argon"
+    },
+    "correct_answer": "C",
+    "explanation": "Carbon dioxide (`$CO_2$`) is the most significant anthropogenic greenhouse gas. It traps heat in the Earth's atmosphere, contributing to the greenhouse effect and global warming.",
+    "difficulty": "easy",
+    "topic": "global_warming",
+    "subtopic": "greenhouse_gases",
+    "tags": [
+      "greenhouse_effect",
+      "carbon_dioxide",
+      "global_warming",
+      "climate_change"
+    ],
+    "learning_objective": "Recall the primary greenhouse gas.",
+    "created_date": "2024-05-15",
+    "source": "ch25_Man_and_his_Environment.pdf",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch25_mcq_004",
+    "question": "Deforestation primarily leads to an increase in which atmospheric gas?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Oxygen",
+      "B": "Nitrogen",
+      "C": "Carbon dioxide",
+      "D": "Methane"
+    },
+    "correct_answer": "C",
+    "explanation": "Trees absorb carbon dioxide (`$CO_2$`) during photosynthesis. Deforestation reduces the number of trees, leading to less `$CO_2$` absorption and an increase in atmospheric `$CO_2$` levels, exacerbating the greenhouse effect.",
+    "difficulty": "easy",
+    "topic": "deforestation",
+    "subtopic": "carbon_cycle",
+    "tags": [
+      "deforestation",
+      "carbon_dioxide",
+      "climate_change",
+      "environmental_impact"
+    ],
+    "learning_objective": "Understand the impact of deforestation on atmospheric composition.",
+    "created_date": "2024-05-15",
+    "source": "ch25_Man_and_his_Environment.pdf",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch25_mcq_005",
+    "question": "Which of the following is a non-renewable energy source?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Solar energy",
+      "B": "Wind energy",
+      "C": "Coal",
+      "D": "Hydroelectric power"
+    },
+    "correct_answer": "C",
+    "explanation": "Coal is a fossil fuel, formed over millions of years from dead plant matter. Its reserves are finite and cannot be replenished on a human timescale, making it a non-renewable energy source.",
+    "difficulty": "easy",
+    "topic": "energy_resources",
+    "subtopic": "non_renewable",
+    "tags": [
+      "energy",
+      "non_renewable",
+      "fossil_fuels",
+      "coal"
+    ],
+    "learning_objective": "Distinguish between renewable and non-renewable energy sources.",
+    "created_date": "2024-05-15",
+    "source": "ch25_Man_and_his_Environment.pdf",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch25_mcq_006",
+    "question": "What is biodiversity?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The variety of life on Earth",
+      "B": "The total number of species in a single habitat",
+      "C": "The genetic similarity within a population",
+      "D": "The number of different ecosystems in a region"
+    },
+    "correct_answer": "A",
+    "explanation": "Biodiversity refers to the variety of life on Earth at all its levels, from genes to ecosystems, and encompasses genetic diversity, species diversity, and ecosystem diversity.",
+    "difficulty": "easy",
+    "topic": "biodiversity",
+    "subtopic": "definition",
+    "tags": [
+      "biodiversity",
+      "species_diversity",
+      "ecosystem_diversity",
+      "genetic_diversity"
+    ],
+    "learning_objective": "Define biodiversity.",
+    "created_date": "2024-05-15",
+    "source": "ch25_Man_and_his_Environment.pdf",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch25_mcq_007",
+    "question": "Which term describes the process where excess nutrients in water bodies lead to dense plant growth and subsequent oxygen depletion?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Acid rain",
+      "B": "Eutrophication",
+      "C": "Biomagnification",
+      "D": "Thermal pollution"
+    },
+    "correct_answer": "B",
+    "explanation": "Eutrophication is the enrichment of an ecosystem with chemical nutrients, typically compounds containing nitrogen or phosphorus. This often leads to an increase in primary productivity (e.g., algal blooms) and subsequent oxygen depletion when the algae die and decompose.",
+    "difficulty": "easy",
+    "topic": "water_pollution",
+    "subtopic": "eutrophication",
+    "tags": [
+      "eutrophication",
+      "water_pollution",
+      "nutrients",
+      "algal_bloom"
+    ],
+    "learning_objective": "Define eutrophication.",
+    "created_date": "2024-05-15",
+    "source": "ch25_Man_and_his_Environment.pdf",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch25_mcq_008",
+    "question": "The thinning of the ozone layer is primarily caused by which chemicals?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Carbon dioxide",
+      "B": "Sulfur dioxide",
+      "C": "Chlorofluorocarbons (CFCs)",
+      "D": "Methane"
+    },
+    "correct_answer": "C",
+    "explanation": "Chlorofluorocarbons (CFCs) are synthetic organic compounds that, when released into the atmosphere, rise to the stratosphere and break down ozone molecules, leading to the depletion of the ozone layer.",
+    "difficulty": "easy",
+    "topic": "ozone_depletion",
+    "subtopic": "CFCs",
+    "tags": [
+      "ozone_layer",
+      "CFCs",
+      "stratosphere",
+      "air_pollution"
+    ],
+    "learning_objective": "Identify the main cause of ozone layer depletion.",
+    "created_date": "2024-05-15",
+    "source": "ch25_Man_and_his_Environment.pdf",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch25_mcq_009",
+    "question": "What is the main purpose of conservation efforts?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "To exploit natural resources more efficiently",
+      "B": "To protect and manage natural resources and ecosystems",
+      "C": "To convert all natural areas into agricultural land",
+      "D": "To promote industrial development at any cost"
+    },
+    "correct_answer": "B",
+    "explanation": "Conservation aims to protect, preserve, manage, or restore natural environments and wildlife, ensuring the sustainable use of resources for present and future generations.",
+    "difficulty": "easy",
+    "topic": "conservation",
+    "subtopic": "purpose",
+    "tags": [
+      "conservation",
+      "natural_resources",
+      "ecosystem_protection",
+      "sustainability"
+    ],
+    "learning_objective": "Understand the purpose of conservation.",
+    "created_date": "2024-05-15",
+    "source": "ch25_Man_and_his_Environment.pdf",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch25_mcq_010",
+    "question": "Which of the following is an example of a renewable resource?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Petroleum",
+      "B": "Natural gas",
+      "C": "Timber",
+      "D": "Uranium"
+    },
+    "correct_answer": "C",
+    "explanation": "Timber (wood) is considered a renewable resource because trees can be replanted and regrown over a relatively short period, unlike fossil fuels or nuclear fuels.",
+    "difficulty": "easy",
+    "topic": "natural_resources",
+    "subtopic": "renewable_resources",
+    "tags": [
+      "renewable_resources",
+      "timber",
+      "sustainability",
+      "forestry"
+    ],
+    "learning_objective": "Identify examples of renewable resources.",
+    "created_date": "2024-05-15",
+    "source": "ch25_Man_and_his_Environment.pdf",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch25_mcq_011",
+    "question": "What is the primary cause of acid rain?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Carbon dioxide emissions",
+      "B": "Methane emissions",
+      "C": "Sulfur dioxide and nitrogen oxides",
+      "D": "Chlorofluorocarbons"
+    },
+    "correct_answer": "C",
+    "explanation": "Acid rain is caused by emissions of sulfur dioxide (`$SO_2$`) and nitrogen oxides (`$NO_x$`) from industrial processes and vehicle exhausts. These gases react with water, oxygen, and other chemicals in the atmosphere to form sulfuric and nitric acids.",
+    "difficulty": "easy",
+    "topic": "air_pollution",
+    "subtopic": "acid_rain",
+    "tags": [
+      "acid_rain",
+      "air_pollution",
+      "sulfur_dioxide",
+      "nitrogen_oxides"
+    ],
+    "learning_objective": "Recall the primary causes of acid rain.",
+    "created_date": "2024-05-15",
+    "source": "ch25_Man_and_his_Environment.pdf",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch25_mcq_012",
+    "question": "Which of the following is a biotic component of an ecosystem?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Sunlight",
+      "B": "Water",
+      "C": "Bacteria",
+      "D": "Temperature"
+    },
+    "correct_answer": "C",
+    "explanation": "Biotic components are the living or once-living parts of an ecosystem. Bacteria are living organisms and play crucial roles as decomposers or producers in various ecosystems. Sunlight, water, and temperature are abiotic (non-living) factors.",
+    "difficulty": "easy",
+    "topic": "ecosystem_components",
+    "subtopic": "biotic_factors",
+    "tags": [
+      "biotic_factors",
+      "bacteria",
+      "ecosystem",
+      "living_components"
+    ],
+    "learning_objective": "Identify biotic components of an ecosystem.",
+    "created_date": "2024-05-15",
+    "source": "ch25_Man_and_his_Environment.pdf",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch25_mcq_013",
+    "question": "What is the term for the maximum population size of a species that an environment can sustain indefinitely?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Population density",
+      "B": "Birth rate",
+      "C": "Carrying capacity",
+      "D": "Limiting factor"
+    },
+    "correct_answer": "C",
+    "explanation": "Carrying capacity refers to the maximum population size of a biological species that can be sustained indefinitely by the environment, given the food, habitat, water, and other necessities available.",
+    "difficulty": "easy",
+    "topic": "population_ecology",
+    "subtopic": "carrying_capacity",
+    "tags": [
+      "carrying_capacity",
+      "population_growth",
+      "ecology",
+      "environmental_limits"
+    ],
+    "learning_objective": "Define carrying capacity.",
+    "created_date": "2024-05-15",
+    "source": "ch25_Man_and_his_Environment.pdf",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch25_mcq_014",
+    "question": "Which of the following is a common method for solid waste disposal?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Composting",
+      "B": "Incineration",
+      "C": "Landfilling",
+      "D": "All of the above"
+    },
+    "correct_answer": "D",
+    "explanation": "Composting, incineration, and landfilling are all common methods for managing and disposing of solid waste. Each has its own advantages and disadvantages regarding environmental impact and resource recovery.",
+    "difficulty": "easy",
+    "topic": "waste_management",
+    "subtopic": "disposal_methods",
+    "tags": [
+      "waste_management",
+      "landfill",
+      "incineration",
+      "composting",
+      "solid_waste"
+    ],
+    "learning_objective": "Identify common solid waste disposal methods.",
+    "created_date": "2024-05-15",
+    "source": "ch25_Man_and_his_Environment.pdf",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch25_mcq_015",
+    "question": "The process of converting atmospheric nitrogen into ammonia or other nitrogenous compounds is called:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Denitrification",
+      "B": "Nitrification",
+      "C": "Nitrogen fixation",
+      "D": "Ammonification"
+    },
+    "correct_answer": "C",
+    "explanation": "Nitrogen fixation is the process by which atmospheric nitrogen (`$N_2$`) is converted into ammonia (`$NH_3$`) or other nitrogenous compounds, primarily by certain bacteria, making it available for plants.",
+    "difficulty": "easy",
+    "topic": "biogeochemical_cycles",
+    "subtopic": "nitrogen_cycle",
+    "tags": [
+      "nitrogen_cycle",
+      "nitrogen_fixation",
+      "bacteria",
+      "biogeochemical_cycles"
+    ],
+    "learning_objective": "Define nitrogen fixation.",
+    "created_date": "2024-05-15",
+    "source": "ch25_Man_and_his_Environment.pdf",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch25_mcq_016",
+    "question": "Which type of pollution is characterized by unwanted or excessive sound that can disrupt human or animal life?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Air pollution",
+      "B": "Water pollution",
+      "C": "Noise pollution",
+      "D": "Thermal pollution"
+    },
+    "correct_answer": "C",
+    "explanation": "Noise pollution refers to the propagation of noise with harmful impact on the activity of human or animal life. It is often associated with industrial, transport, and recreational activities.",
+    "difficulty": "easy",
+    "topic": "pollution_types",
+    "subtopic": "noise_pollution",
+    "tags": [
+      "noise_pollution",
+      "pollution",
+      "environmental_impact"
+    ],
+    "learning_objective": "Define noise pollution.",
+    "created_date": "2024-05-15",
+    "source": "ch25_Man_and_his_Environment.pdf",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch25_mcq_017",
+    "question": "The '3 Rs' of waste management stand for:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Reduce, Reuse, Recycle",
+      "B": "Remove, Replant, Restore",
+      "C": "Research, Report, React",
+      "D": "Regulate, Reclaim, Rebuild"
+    },
+    "correct_answer": "A",
+    "explanation": "The '3 Rs' of waste management are Reduce, Reuse, and Recycle. This hierarchy prioritizes reducing waste generation, then reusing items, and finally recycling materials to minimize environmental impact.",
+    "difficulty": "easy",
+    "topic": "waste_management",
+    "subtopic": "3_Rs",
+    "tags": [
+      "waste_management",
+      "reduce",
+      "reuse",
+      "recycle",
+      "sustainability"
+    ],
+    "learning_objective": "Recall the '3 Rs' of waste management.",
+    "created_date": "2024-05-15",
+    "source": "ch25_Man_and_his_Environment.pdf",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch25_mcq_018",
+    "question": "Which of the following is a direct consequence of global warming?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Decreased sea levels",
+      "B": "Increased biodiversity",
+      "C": "Melting of glaciers and ice caps",
+      "D": "Lower frequency of extreme weather events"
+    },
+    "correct_answer": "C",
+    "explanation": "Global warming leads to an increase in average global temperatures, causing glaciers and polar ice caps to melt. This contributes to rising sea levels and changes in ocean currents.",
+    "difficulty": "easy",
+    "topic": "global_warming",
+    "subtopic": "consequences",
+    "tags": [
+      "global_warming",
+      "climate_change",
+      "glacier_melt",
+      "sea_level_rise"
+    ],
+    "learning_objective": "Identify a direct consequence of global warming.",
+    "created_date": "2024-05-15",
+    "source": "ch25_Man_and_his_Environment.pdf",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch25_mcq_019",
+    "question": "What is the primary source of energy for most ecosystems?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Geothermal energy",
+      "B": "Chemical energy from rocks",
+      "C": "Solar energy",
+      "D": "Nuclear energy"
+    },
+    "correct_answer": "C",
+    "explanation": "Solar energy is the primary source of energy for most ecosystems on Earth. Producers (plants, algae) capture sunlight through photosynthesis, converting it into chemical energy that flows through food webs.",
+    "difficulty": "easy",
+    "topic": "energy_flow",
+    "subtopic": "solar_energy",
+    "tags": [
+      "energy_flow",
+      "solar_energy",
+      "ecosystem",
+      "photosynthesis"
+    ],
+    "learning_objective": "Identify the primary energy source for most ecosystems.",
+    "created_date": "2024-05-15",
+    "source": "ch25_Man_and_his_Environment.pdf",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch25_mcq_020",
+    "question": "Which of the following is an example of an abiotic factor?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Fungi",
+      "B": "Bacteria",
+      "C": "Soil pH",
+      "D": "Insects"
+    },
+    "correct_answer": "C",
+    "explanation": "Abiotic factors are the non-living chemical and physical parts of an ecosystem. Soil pH is a chemical property of the soil and is therefore an abiotic factor. Fungi, bacteria, and insects are all living (biotic) organisms.",
+    "difficulty": "easy",
+    "topic": "ecosystem_components",
+    "subtopic": "abiotic_factors",
+    "tags": [
+      "abiotic_factors",
+      "soil_pH",
+      "ecosystem",
+      "non_living_components"
+    ],
+    "learning_objective": "Identify abiotic components of an ecosystem.",
+    "created_date": "2024-05-15",
+    "source": "ch25_Man_and_his_Environment.pdf",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch25_mcq_021",
+    "question": "The process by which certain toxic substances accumulate in living organisms, increasing in concentration at higher trophic levels, is known as:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Eutrophication",
+      "B": "Biomagnification",
+      "C": "Bioaccumulation",
+      "D": "Denitrification"
+    },
+    "correct_answer": "B",
+    "explanation": "Biomagnification (or bioamplification) is the increase in concentration of a pollutant (e.g., DDT, mercury) in organisms at successively higher trophic levels in a food chain. Bioaccumulation is the accumulation within a single organism.",
+    "difficulty": "medium",
+    "topic": "pollution_effects",
+    "subtopic": "biomagnification",
+    "tags": [
+      "biomagnification",
+      "food_chain",
+      "pollutants",
+      "toxic_substances"
+    ],
+    "learning_objective": "Explain the concept of biomagnification.",
+    "created_date": "2024-05-15",
+    "source": "ch25_Man_and_his_Environment.pdf",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch25_mcq_022",
+    "question": "If a food chain consists of producers, primary consumers, secondary consumers, and tertiary consumers, and the producers have `$10,000$` units of energy, how much energy is typically available to the secondary consumers?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$10,000$ units",
+      "B": "$1,000$ units",
+      "C": "$100$ units",
+      "D": "$10$ units"
+    },
+    "correct_answer": "C",
+    "explanation": "According to the `$10\\%$` rule of energy transfer in ecosystems, only about `$10\\%$` of the energy from one trophic level is transferred to the next. \n\nProducers: `$10,000$ units`\nPrimary Consumers: `$10,000 \times 0.10 = 1,000$ units`\nSecondary Consumers: `$1,000 \times 0.10 = 100$ units`\n\nTherefore, secondary consumers receive approximately `$100$` units of energy.",
+    "difficulty": "medium",
+    "topic": "energy_flow",
+    "subtopic": "10_percent_rule",
+    "tags": [
+      "energy_flow",
+      "trophic_levels",
+      "10_percent_rule",
+      "food_chain",
+      "numerical"
+    ],
+    "learning_objective": "Apply the 10% rule of energy transfer in a food chain.",
+    "created_date": "2024-05-15",
+    "source": "ch25_Man_and_his_Environment.pdf",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

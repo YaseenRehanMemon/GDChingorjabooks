@@ -1,0 +1,557 @@
+[
+  {
+    "id": "bio_xii_ch13_mcq_001",
+    "question": "Which of the following is considered the first line of defense in the human immune system?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Phagocytic cells",
+      "B": "Antibodies",
+      "C": "Skin and mucous membranes",
+      "D": "Lymphocytes"
+    },
+    "correct_answer": "C",
+    "explanation": "The first line of defense in the human immune system consists of physical and chemical barriers that prevent pathogens from entering the body. These include the skin, mucous membranes, tears, saliva, and stomach acid. Phagocytic cells, antibodies, and lymphocytes are part of the second and third lines of defense.",
+    "difficulty": "easy",
+    "topic": "innate_immunity",
+    "subtopic": "first_line_defense",
+    "tags": [
+      "innate_immunity",
+      "first_line_defense",
+      "physical_barriers"
+    ],
+    "learning_objective": "Identify components of the first line of defense.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch13_mcq_002",
+    "question": "What is the primary function of phagocytes in the immune system?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Produce antibodies",
+      "B": "Recognize specific antigens",
+      "C": "Engulf and digest pathogens",
+      "D": "Secrete hormones"
+    },
+    "correct_answer": "C",
+    "explanation": "Phagocytes, such as macrophages and neutrophils, are a type of white blood cell that protect the body by ingesting (phagocytosing) harmful foreign particles, bacteria, and dead or dying cells. They are a key component of the innate immune system. Producing antibodies is a function of B cells, recognizing specific antigens is a function of lymphocytes, and secreting hormones is an endocrine function.",
+    "difficulty": "easy",
+    "topic": "innate_immunity",
+    "subtopic": "phagocytes",
+    "tags": [
+      "innate_immunity",
+      "phagocytes",
+      "macrophages",
+      "neutrophils"
+    ],
+    "learning_objective": "Describe the role of phagocytes in immunity.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch13_mcq_003",
+    "question": "Which type of immunity provides immediate, short-term protection through pre-formed antibodies?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Natural active immunity",
+      "B": "Artificial active immunity",
+      "C": "Natural passive immunity",
+      "D": "Cell-mediated immunity"
+    },
+    "correct_answer": "C",
+    "explanation": "Natural passive immunity occurs when antibodies are transferred from one individual to another, providing immediate but temporary protection. An example is the transfer of maternal antibodies to a fetus through the placenta or to an infant through breast milk. Active immunity involves the body producing its own antibodies, which takes time but provides long-term protection. Cell-mediated immunity does not involve antibodies.",
+    "difficulty": "medium",
+    "topic": "types_of_immunity",
+    "subtopic": "passive_immunity",
+    "tags": [
+      "passive_immunity",
+      "natural_passive",
+      "antibodies",
+      "maternal_immunity"
+    ],
+    "learning_objective": "Differentiate between types of acquired immunity.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch13_mcq_004",
+    "question": "What is the term for a substance that can elicit an immune response?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Antibody",
+      "B": "Antigen",
+      "C": "Cytokine",
+      "D": "Histamine"
+    },
+    "correct_answer": "B",
+    "explanation": "An antigen is any substance that causes the immune system to produce antibodies against it. Antigens can be foreign substances from the environment, such as pollen or chemicals, or they can be formed within the body, as with bacterial toxins or viral proteins. Antibodies are proteins produced by the immune system in response to antigens. Cytokines are signaling molecules, and histamine is involved in allergic reactions.",
+    "difficulty": "easy",
+    "topic": "adaptive_immunity",
+    "subtopic": "antigens",
+    "tags": [
+      "antigen",
+      "immune_response",
+      "immunogen"
+    ],
+    "learning_objective": "Define the term antigen.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch13_mcq_005",
+    "question": "Which cells are primarily responsible for humoral immunity?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "T cells",
+      "B": "B cells",
+      "C": "Macrophages",
+      "D": "Natural Killer cells"
+    },
+    "correct_answer": "B",
+    "explanation": "B cells are the primary lymphocytes responsible for humoral immunity. Upon activation, B cells differentiate into plasma cells, which produce and secrete large quantities of antibodies. T cells are involved in cell-mediated immunity. Macrophages are phagocytes, and Natural Killer cells are part of innate immunity.",
+    "difficulty": "easy",
+    "topic": "adaptive_immunity",
+    "subtopic": "humoral_immunity",
+    "tags": [
+      "humoral_immunity",
+      "B_cells",
+      "antibodies",
+      "lymphocytes"
+    ],
+    "learning_objective": "Identify the cells responsible for humoral immunity.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch13_mcq_006",
+    "question": "The process by which phagocytic cells are attracted to the site of infection by chemical signals is called:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Opsonization",
+      "B": "Chemotaxis",
+      "C": "Agglutination",
+      "D": "Neutralization"
+    },
+    "correct_answer": "B",
+    "explanation": "Chemotaxis is the movement of an organism or cell in response to a chemical stimulus. In the immune system, phagocytes are attracted to sites of infection by chemical signals (chemokines) released by damaged cells or pathogens. Opsonization, agglutination, and neutralization are functions of antibodies.",
+    "difficulty": "medium",
+    "topic": "innate_immunity",
+    "subtopic": "inflammatory_response",
+    "tags": [
+      "chemotaxis",
+      "phagocytes",
+      "inflammation",
+      "innate_immunity"
+    ],
+    "learning_objective": "Explain the mechanism of phagocyte recruitment.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "bio_xii_ch13_mcq_007",
+    "question": "Which class of antibodies is primarily found in secretions like tears, saliva, and breast milk?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "IgG",
+      "B": "IgM",
+      "C": "IgA",
+      "D": "IgE"
+    },
+    "correct_answer": "C",
+    "explanation": "IgA (Immunoglobulin A) is the main class of antibody found in mucous secretions, including tears, saliva, breast milk, and secretions of the respiratory, gastrointestinal, and genitourinary tracts. It plays a crucial role in mucosal immunity. IgG is the most abundant antibody in serum, IgM is the first antibody produced in a primary immune response, and IgE is involved in allergic reactions.",
+    "difficulty": "medium",
+    "topic": "adaptive_immunity",
+    "subtopic": "antibodies",
+    "tags": [
+      "antibodies",
+      "IgA",
+      "mucosal_immunity",
+      "secretions"
+    ],
+    "learning_objective": "Identify the functions and locations of different antibody classes.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch13_mcq_008",
+    "question": "A person who receives a vaccine develops what type of immunity?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Natural active immunity",
+      "B": "Artificial active immunity",
+      "C": "Natural passive immunity",
+      "D": "Artificial passive immunity"
+    },
+    "correct_answer": "B",
+    "explanation": "Vaccination involves introducing a weakened or inactivated pathogen, or parts of it, into the body to stimulate an immune response and the production of memory cells. Since the body actively produces its own antibodies and memory cells in response to an artificially introduced antigen, this is classified as artificial active immunity. Natural active immunity results from actual infection, and passive immunity involves receiving pre-formed antibodies.",
+    "difficulty": "medium",
+    "topic": "vaccination",
+    "subtopic": "types_of_immunity",
+    "tags": [
+      "vaccination",
+      "active_immunity",
+      "artificial_active",
+      "immunization"
+    ],
+    "learning_objective": "Relate vaccination to types of acquired immunity.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch13_mcq_009",
+    "question": "Which of the following is NOT a characteristic of adaptive immunity?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Specificity",
+      "B": "Memory",
+      "C": "Immediate response",
+      "D": "Self/non-self recognition"
+    },
+    "correct_answer": "C",
+    "explanation": "Adaptive immunity is characterized by its specificity (targets specific antigens), memory (remembers past encounters), and ability to distinguish self from non-self. However, it is not immediate; it takes time (days) to develop a primary response upon first exposure to a pathogen. Innate immunity provides an immediate response.",
+    "difficulty": "medium",
+    "topic": "adaptive_immunity",
+    "subtopic": "characteristics",
+    "tags": [
+      "adaptive_immunity",
+      "specificity",
+      "memory",
+      "immune_response"
+    ],
+    "learning_objective": "Distinguish characteristics of adaptive immunity from innate immunity.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "bio_xii_ch13_mcq_010",
+    "question": "The role of cytotoxic T cells ($T_C$ cells) is to:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Produce antibodies",
+      "B": "Present antigens to other immune cells",
+      "C": "Directly kill infected or cancerous cells",
+      "D": "Regulate the activity of other immune cells"
+    },
+    "correct_answer": "C",
+    "explanation": "Cytotoxic T cells ($T_C$ cells), also known as killer T cells, are a type of T lymphocyte that kills cancer cells, cells that are infected (particularly with viruses), or cells that are otherwise damaged or dysfunctional. They recognize specific antigens presented on MHC Class I molecules. Producing antibodies is for B cells, presenting antigens is for APCs, and regulating activity is for helper T cells and regulatory T cells.",
+    "difficulty": "medium",
+    "topic": "adaptive_immunity",
+    "subtopic": "cell_mediated_immunity",
+    "tags": [
+      "cytotoxic_T_cells",
+      "T_cells",
+      "cell_mediated_immunity",
+      "MHC_I"
+    ],
+    "learning_objective": "Describe the function of cytotoxic T cells.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch13_mcq_011",
+    "question": "Which of the following is an example of an autoimmune disease?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "AIDS",
+      "B": "Measles",
+      "C": "Rheumatoid arthritis",
+      "D": "Anaphylaxis"
+    },
+    "correct_answer": "C",
+    "explanation": "Autoimmune diseases occur when the immune system mistakenly attacks the body's own healthy tissues. Rheumatoid arthritis is a chronic inflammatory disorder that affects joints, caused by the immune system attacking the synovial lining. AIDS is an immunodeficiency, measles is an infectious disease, and anaphylaxis is a severe allergic reaction.",
+    "difficulty": "medium",
+    "topic": "immune_disorders",
+    "subtopic": "autoimmune_diseases",
+    "tags": [
+      "autoimmune_disease",
+      "rheumatoid_arthritis",
+      "immune_disorders"
+    ],
+    "learning_objective": "Identify examples of autoimmune diseases.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "bio_xii_ch13_mcq_012",
+    "question": "The secondary immune response is characterized by:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "A slower onset than the primary response",
+      "B": "Lower antibody production than the primary response",
+      "C": "A rapid and stronger antibody response",
+      "D": "Lack of immunological memory"
+    },
+    "correct_answer": "C",
+    "explanation": "The secondary immune response occurs upon re-exposure to the same antigen. It is characterized by a much faster onset, a higher magnitude of antibody production (often with higher affinity antibodies), and a longer duration compared to the primary response. This is due to the presence of memory B and T cells generated during the primary response.",
+    "difficulty": "medium",
+    "topic": "immune_response",
+    "subtopic": "primary_secondary_response",
+    "tags": [
+      "secondary_immune_response",
+      "immunological_memory",
+      "antibodies"
+    ],
+    "learning_objective": "Compare primary and secondary immune responses.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch13_mcq_013",
+    "question": "Which component of the innate immune system is responsible for increasing body temperature to inhibit microbial growth?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Inflammation",
+      "B": "Fever",
+      "C": "Complement system",
+      "D": "Natural Killer cells"
+    },
+    "correct_answer": "B",
+    "explanation": "Fever, an elevated body temperature, is a systemic response to infection and is part of the innate immune system. It helps inhibit the growth of many pathogens and can enhance the activity of immune cells. Inflammation is a localized response, the complement system involves proteins, and NK cells kill infected cells directly.",
+    "difficulty": "easy",
+    "topic": "innate_immunity",
+    "subtopic": "fever",
+    "tags": [
+      "innate_immunity",
+      "fever",
+      "body_temperature",
+      "microbial_inhibition"
+    ],
+    "learning_objective": "Identify the role of fever in innate immunity.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "bio_xii_ch13_mcq_014",
+    "question": "What is the primary role of Helper T cells ($T_H$ cells) in the immune response?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Directly kill infected cells",
+      "B": "Produce antibodies",
+      "C": "Activate B cells and other T cells",
+      "D": "Suppress immune reactions"
+    },
+    "correct_answer": "C",
+    "explanation": "Helper T cells ($T_H$ cells) are crucial orchestrators of the immune response. They do not directly kill infected cells or produce antibodies. Instead, they recognize antigens presented by MHC Class II molecules on antigen-presenting cells and then release cytokines that activate B cells to produce antibodies, and activate cytotoxic T cells to kill infected cells. Suppressor T cells (now often called regulatory T cells) suppress immune reactions.",
+    "difficulty": "medium",
+    "topic": "adaptive_immunity",
+    "subtopic": "T_cells",
+    "tags": [
+      "helper_T_cells",
+      "T_cells",
+      "cell_mediated_immunity",
+      "immune_regulation"
+    ],
+    "learning_objective": "Describe the function of Helper T cells.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch13_mcq_015",
+    "question": "The ability of the immune system to distinguish between the body's own cells and foreign invaders is known as:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Specificity",
+      "B": "Memory",
+      "C": "Tolerance",
+      "D": "Diversity"
+    },
+    "correct_answer": "C",
+    "explanation": "Immune tolerance refers to the ability of the immune system to recognize and not attack the body's own cells and tissues (self-tolerance), while still being able to mount an effective response against foreign invaders (non-self). Specificity refers to targeting particular antigens, memory refers to remembering past encounters, and diversity refers to the ability to respond to a vast array of antigens.",
+    "difficulty": "medium",
+    "topic": "adaptive_immunity",
+    "subtopic": "immune_tolerance",
+    "tags": [
+      "immune_tolerance",
+      "self_non_self",
+      "adaptive_immunity"
+    ],
+    "learning_objective": "Define immune tolerance.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "bio_xii_ch13_mcq_016",
+    "question": "Which of the following is a characteristic of the inflammatory response?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Decreased blood flow to the injured area",
+      "B": "Vasoconstriction of blood vessels",
+      "C": "Increased permeability of capillaries",
+      "D": "Suppression of pain signals"
+    },
+    "correct_answer": "C",
+    "explanation": "The inflammatory response is a localized protective response to tissue injury or infection. Key characteristics include vasodilation (increased blood flow, causing redness and heat), increased permeability of capillaries (leading to swelling as fluid leaks into tissues), and pain. Increased permeability allows immune cells and proteins to reach the site of injury more easily. Vasoconstriction and decreased blood flow are opposite to what occurs during inflammation, and pain signals are typically enhanced, not suppressed.",
+    "difficulty": "medium",
+    "topic": "innate_immunity",
+    "subtopic": "inflammatory_response",
+    "tags": [
+      "inflammatory_response",
+      "innate_immunity",
+      "capillary_permeability",
+      "vasodilation"
+    ],
+    "learning_objective": "Describe the key features of the inflammatory response.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch13_mcq_017",
+    "question": "The Major Histocompatibility Complex (MHC) proteins are crucial for:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Antibody production",
+      "B": "Antigen presentation",
+      "C": "Phagocytosis",
+      "D": "Complement activation"
+    },
+    "correct_answer": "B",
+    "explanation": "MHC proteins are cell surface molecules that are essential for the adaptive immune system to recognize foreign antigens. They bind to peptide fragments of antigens and display them on the cell surface for recognition by T cells. MHC Class I molecules present endogenous antigens to cytotoxic T cells, while MHC Class II molecules present exogenous antigens to helper T cells. They are not directly involved in antibody production, phagocytosis, or complement activation.",
+    "difficulty": "medium",
+    "topic": "adaptive_immunity",
+    "subtopic": "MHC",
+    "tags": [
+      "MHC",
+      "antigen_presentation",
+      "T_cells",
+      "adaptive_immunity"
+    ],
+    "learning_objective": "Explain the role of MHC proteins.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch13_mcq_018",
+    "question": "Which type of vaccine uses a live, but weakened, form of the pathogen?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Inactivated vaccine",
+      "B": "Toxoid vaccine",
+      "C": "Subunit vaccine",
+      "D": "Attenuated vaccine"
+    },
+    "correct_answer": "D",
+    "explanation": "An attenuated vaccine uses a live, but weakened (attenuated), form of the pathogen. These vaccines typically elicit a strong, long-lasting immune response because the pathogen can still replicate to a limited extent, mimicking a natural infection without causing severe disease. Examples include MMR (Measles, Mumps, Rubella) and oral polio vaccines. Inactivated vaccines use killed pathogens, toxoid vaccines use inactivated toxins, and subunit vaccines use only specific antigenic components.",
+    "difficulty": "medium",
+    "topic": "vaccination",
+    "subtopic": "types_of_vaccines",
+    "tags": [
+      "vaccine",
+      "attenuated_vaccine",
+      "live_vaccine",
+      "immunization"
+    ],
+    "learning_objective": "Differentiate between types of vaccines.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch13_mcq_019",
+    "question": "The process of coating a pathogen with antibodies or complement proteins to enhance phagocytosis is called:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Neutralization",
+      "B": "Agglutination",
+      "C": "Opsonization",
+      "D": "Lysis"
+    },
+    "correct_answer": "C",
+    "explanation": "Opsonization is the process by which a pathogen is marked for ingestion and elimination by a phagocyte. This marking is done by opsonins, such as antibodies (e.g., IgG) or complement proteins, which bind to the pathogen and make it more recognizable to phagocytic cells. Neutralization involves antibodies blocking pathogen activity, agglutination involves clumping pathogens, and lysis involves cell rupture.",
+    "difficulty": "medium",
+    "topic": "adaptive_immunity",
+    "subtopic": "antibody_functions",
+    "tags": [
+      "opsonization",
+      "antibodies",
+      "complement_system",
+      "phagocytosis"
+    ],
+    "learning_objective": "Describe the function of opsonization.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch13_mcq_020",
+    "question": "Which of the following cells are considered antigen-presenting cells (APCs)?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Plasma cells",
+      "B": "Cytotoxic T cells",
+      "C": "Dendritic cells",
+      "D": "Natural Killer cells"
+    },
+    "correct_answer": "C",
+    "explanation": "Antigen-presenting cells (APCs) are a diverse group of immune cells that mediate the cellular immune response by processing and presenting antigens for recognition by T cells. Key APCs include dendritic cells, macrophages, and B cells. Plasma cells produce antibodies, cytotoxic T cells kill infected cells, and NK cells are part of innate immunity.",
+    "difficulty": "medium",
+    "topic": "adaptive_immunity",
+    "subtopic": "antigen_presentation",
+    "tags": [
+      "APCs",
+      "antigen_presenting_cells",
+      "dendritic_cells",
+      "macrophages"
+    ],
+    "learning_objective": "Identify key antigen-presenting cells.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

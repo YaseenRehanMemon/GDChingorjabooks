@@ -1,0 +1,517 @@
+[
+  {
+    "id": "bio_xii_ch24_mcq_001",
+    "question": "Which of the following is defined as the change in the heritable characteristics of biological populations over successive generations?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Metabolism",
+      "B": "Homeostasis",
+      "C": "Evolution",
+      "D": "Development"
+    },
+    "correct_answer": "C",
+    "explanation": "Evolution is the process by which populations of organisms change over generations. It is characterized by changes in the genetic makeup of a population over time. Metabolism refers to chemical processes in living organisms, homeostasis is maintaining internal stability, and development is the process of growth and maturation.",
+    "difficulty": "easy",
+    "topic": "introduction_to_evolution",
+    "subtopic": "definition_of_evolution",
+    "tags": [
+      "evolution",
+      "definition",
+      "basic_concept"
+    ],
+    "learning_objective": "Define evolution.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_24",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch24_mcq_002",
+    "question": "The study of fossils is known as:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Genetics",
+      "B": "Ecology",
+      "C": "Paleontology",
+      "D": "Embryology"
+    },
+    "correct_answer": "C",
+    "explanation": "Paleontology is the scientific study of life that existed prior to, and sometimes including, the start of the Holocene Epoch. It involves the study of fossils to understand the history of life on Earth. Genetics is the study of heredity, ecology is the study of organism-environment interactions, and embryology is the study of embryo development.",
+    "difficulty": "easy",
+    "topic": "evidence_for_evolution",
+    "subtopic": "paleontology",
+    "tags": [
+      "fossils",
+      "paleontology",
+      "evidence_of_evolution"
+    ],
+    "learning_objective": "Identify paleontology as a source of evidence for evolution.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_24",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch24_mcq_003",
+    "question": "Which of the following is NOT considered a direct evidence for evolution?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Fossil record",
+      "B": "Comparative anatomy",
+      "C": "Astrology",
+      "D": "Molecular biology"
+    },
+    "correct_answer": "C",
+    "explanation": "Astrology is a pseudoscience that claims to predict future events and personality traits based on the positions of celestial bodies, and has no scientific basis as evidence for evolution. The fossil record, comparative anatomy, and molecular biology (e.g., DNA sequencing) all provide strong scientific evidence for evolutionary change.",
+    "difficulty": "easy",
+    "topic": "evidence_for_evolution",
+    "subtopic": "types_of_evidence",
+    "tags": [
+      "evidence",
+      "evolution",
+      "pseudoscience"
+    ],
+    "learning_objective": "Distinguish between scientific evidence and non-scientific claims regarding evolution.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_24",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch24_mcq_004",
+    "question": "Homologous structures are best described as structures that:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Have different origins but similar functions.",
+      "B": "Have similar origins but different functions.",
+      "C": "Have similar origins and similar functions.",
+      "D": "Are vestigial and have no function."
+    },
+    "correct_answer": "B",
+    "explanation": "Homologous structures are anatomical resemblances that represent variations on a structural theme present in a common ancestor. For example, the forelimbs of humans, cats, whales, and bats all have the same bone structure, but they serve different functions (grasping, walking, swimming, flying). This indicates a shared evolutionary origin. Option A describes analogous structures.",
+    "difficulty": "medium",
+    "topic": "evidence_for_evolution",
+    "subtopic": "comparative_anatomy",
+    "tags": [
+      "homologous_structures",
+      "comparative_anatomy",
+      "divergent_evolution"
+    ],
+    "learning_objective": "Differentiate between homologous and analogous structures.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_24",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch24_mcq_005",
+    "question": "The presence of gill slits in the embryonic development of both fish and humans suggests:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Convergent evolution",
+      "B": "Analogous structures",
+      "C": "A common ancestor",
+      "D": "Genetic drift"
+    },
+    "correct_answer": "C",
+    "explanation": "The presence of similar embryonic structures, such as gill slits and a post-anal tail in vertebrate embryos, is strong evidence for a common ancestry. These structures develop into different forms in adults but reflect shared developmental pathways inherited from a common evolutionary past. Convergent evolution leads to analogous structures, and genetic drift is a mechanism of evolution, not an evidence type.",
+    "difficulty": "medium",
+    "topic": "evidence_for_evolution",
+    "subtopic": "comparative_embryology",
+    "tags": [
+      "embryology",
+      "common_ancestor",
+      "vertebrates"
+    ],
+    "learning_objective": "Explain how comparative embryology provides evidence for evolution.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_24",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch24_mcq_006",
+    "question": "Lamarck's theory of evolution proposed that:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Individuals with advantageous traits survive and reproduce more.",
+      "B": "Acquired characteristics are inherited by offspring.",
+      "C": "Species are immutable and do not change over time.",
+      "D": "Genetic mutations are the primary source of variation."
+    },
+    "correct_answer": "B",
+    "explanation": "Jean-Baptiste Lamarck proposed the theory of 'inheritance of acquired characteristics,' stating that traits acquired by an organism during its lifetime (e.g., muscle development from exercise) could be passed on to its offspring. This theory was later disproven. Option A describes Darwin's natural selection, Option C is creationism, and Option D is part of modern synthesis.",
+    "difficulty": "easy",
+    "topic": "lamarckism",
+    "subtopic": "inheritance_of_acquired_characteristics",
+    "tags": [
+      "lamarck",
+      "acquired_traits",
+      "historical_theories"
+    ],
+    "learning_objective": "State the main postulate of Lamarck's theory of evolution.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_24",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch24_mcq_007",
+    "question": "Which of the following examples best illustrates Lamarck's theory?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Giraffes stretching their necks to reach higher leaves, and their offspring inheriting longer necks.",
+      "B": "Antibiotic-resistant bacteria evolving due to natural selection.",
+      "C": "Finches on the Galapagos Islands developing different beak shapes.",
+      "D": "Humans developing immunity after vaccination."
+    },
+    "correct_answer": "A",
+    "explanation": "Lamarck's classic example was the giraffe, where he proposed that giraffes stretched their necks to reach leaves on tall trees, and this acquired longer neck was then passed on to their offspring. This is the core idea of inheritance of acquired characteristics. The other options are examples of natural selection or individual physiological responses, not Lamarckian inheritance.",
+    "difficulty": "medium",
+    "topic": "lamarckism",
+    "subtopic": "examples_of_lamarckism",
+    "tags": [
+      "lamarck",
+      "giraffe",
+      "acquired_traits"
+    ],
+    "learning_objective": "Apply Lamarck's theory to a given scenario.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_24",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch24_mcq_008",
+    "question": "The main reason Lamarck's theory was rejected is that:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "It did not account for genetic mutations.",
+      "B": "Acquired characteristics are not heritable.",
+      "C": "It failed to explain the origin of new species.",
+      "D": "It contradicted the fossil record."
+    },
+    "correct_answer": "B",
+    "explanation": "Lamarck's theory was rejected because scientific evidence demonstrated that characteristics acquired during an organism's lifetime (phenotypic changes) are generally not passed on to offspring. Changes to somatic cells do not affect germline cells, which carry genetic information to the next generation. While genetic mutations (A) and speciation (C) are important, the fundamental flaw was the non-heritability of acquired traits.",
+    "difficulty": "medium",
+    "topic": "lamarckism",
+    "subtopic": "rejection_of_lamarckism",
+    "tags": [
+      "lamarck",
+      "heritability",
+      "disproven_theory"
+    ],
+    "learning_objective": "Explain why Lamarck's theory of evolution was rejected.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_24",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch24_mcq_009",
+    "question": "Charles Darwin's theory of evolution is primarily based on the mechanism of:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Genetic drift",
+      "B": "Gene flow",
+      "C": "Natural selection",
+      "D": "Punctuated equilibrium"
+    },
+    "correct_answer": "C",
+    "explanation": "Charles Darwin, along with Alfred Russel Wallace, proposed natural selection as the primary mechanism for evolutionary change. Natural selection describes how individuals with traits best suited to their environment are more likely to survive and reproduce, passing those advantageous traits to their offspring. Genetic drift and gene flow are other mechanisms of evolution, and punctuated equilibrium is a pattern of evolution, but natural selection is central to Darwinism.",
+    "difficulty": "easy",
+    "topic": "darwinism",
+    "subtopic": "natural_selection",
+    "tags": [
+      "darwin",
+      "natural_selection",
+      "mechanism_of_evolution"
+    ],
+    "learning_objective": "Identify natural selection as the core mechanism of Darwin's theory.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_24",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch24_mcq_010",
+    "question": "Which of the following was a key observation made by Darwin during his voyage on the HMS Beagle?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The constant rate of radioactive decay.",
+      "B": "The uniform distribution of species across continents.",
+      "C": "The unique species found on the Galapagos Islands, similar to mainland forms.",
+      "D": "The inheritance of acquired characteristics in finches."
+    },
+    "correct_answer": "C",
+    "explanation": "Darwin's observations on the Galapagos Islands, particularly the distinct species of finches, tortoises, and mockingbirds that showed similarities to South American mainland species but were adapted to their specific island environments, were crucial in developing his theory of natural selection. This pattern suggested descent with modification from a common ancestor. Radioactive decay (A) is a dating method, uniform distribution (B) is incorrect, and acquired characteristics (D) is Lamarckian.",
+    "difficulty": "medium",
+    "topic": "darwinism",
+    "subtopic": "galapagos_observations",
+    "tags": [
+      "darwin",
+      "hms_beagle",
+      "galapagos",
+      "observations"
+    ],
+    "learning_objective": "Recall key observations that influenced Darwin's theory.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_24",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch24_mcq_011",
+    "question": "The 'struggle for existence' in Darwin's theory refers to:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Competition for limited resources among individuals.",
+      "B": "The fight between predators and prey.",
+      "C": "The struggle of an organism to adapt to climate change.",
+      "D": "All of the above."
+    },
+    "correct_answer": "D",
+    "explanation": "The 'struggle for existence' encompasses all challenges organisms face to survive and reproduce. This includes competition for food, water, space, and mates (A), avoiding predation (B), and coping with environmental factors like climate, disease, and natural disasters (C). All these factors contribute to differential survival and reproduction.",
+    "difficulty": "medium",
+    "topic": "darwinism",
+    "subtopic": "principles_of_natural_selection",
+    "tags": [
+      "struggle_for_existence",
+      "natural_selection",
+      "competition"
+    ],
+    "learning_objective": "Understand the concept of 'struggle for existence' in Darwin's theory.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_24",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch24_mcq_012",
+    "question": "Which type of natural selection favors individuals at one extreme end of the phenotypic range?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Stabilizing selection",
+      "B": "Directional selection",
+      "C": "Disruptive selection",
+      "D": "Sexual selection"
+    },
+    "correct_answer": "B",
+    "explanation": "Directional selection occurs when conditions favor individuals exhibiting one extreme of a phenotypic range, thereby shifting a population's frequency curve for the phenotypic character in one direction or another. For example, an increase in the average body size of a population over time. Stabilizing selection favors intermediate variants, disruptive selection favors individuals at both extremes, and sexual selection relates to mate choice.",
+    "difficulty": "medium",
+    "topic": "darwinism",
+    "subtopic": "types_of_natural_selection",
+    "tags": [
+      "directional_selection",
+      "natural_selection",
+      "phenotype"
+    ],
+    "learning_objective": "Identify and describe directional selection.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_24",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch24_mcq_013",
+    "question": "In a population of birds, individuals with very long beaks and very short beaks are better able to access food sources than individuals with medium-sized beaks. This scenario is an example of:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Stabilizing selection",
+      "B": "Directional selection",
+      "C": "Disruptive selection",
+      "D": "Artificial selection"
+    },
+    "correct_answer": "C",
+    "explanation": "Disruptive selection (also known as diversifying selection) favors individuals at both extremes of the phenotypic range over intermediate phenotypes. In this case, both long-beaked and short-beaked birds thrive, while medium-beaked birds are at a disadvantage. Stabilizing selection would favor medium beaks, and directional selection would favor one extreme. Artificial selection is human-driven.",
+    "difficulty": "hard",
+    "topic": "darwinism",
+    "subtopic": "types_of_natural_selection",
+    "tags": [
+      "disruptive_selection",
+      "natural_selection",
+      "phenotype_extremes"
+    ],
+    "learning_objective": "Analyze a scenario and identify the type of natural selection at play.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_24",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch24_mcq_014",
+    "question": "The Modern Synthesis of evolution combines Darwin's theory of natural selection with:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Lamarckian inheritance",
+      "B": "Mendelian genetics",
+      "C": "Catastrophism",
+      "D": "Spontaneous generation"
+    },
+    "correct_answer": "B",
+    "explanation": "The Modern Synthesis (Neo-Darwinism) integrated Charles Darwin's theory of evolution by natural selection with Gregor Mendel's theory of inheritance (genetics). It provided a comprehensive framework explaining how variation arises (mutation, recombination) and how it is passed on, allowing natural selection to act upon it. Lamarckian inheritance (A) was disproven, catastrophism (C) is an outdated geological theory, and spontaneous generation (D) is a disproven theory of life's origin.",
+    "difficulty": "easy",
+    "topic": "modern_synthesis",
+    "subtopic": "integration_of_genetics",
+    "tags": [
+      "modern_synthesis",
+      "neo_darwinism",
+      "mendelian_genetics"
+    ],
+    "learning_objective": "Understand the components of the Modern Synthesis.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_24",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch24_mcq_015",
+    "question": "Which of the following is a primary source of new alleles in a population?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Genetic drift",
+      "B": "Gene flow",
+      "C": "Mutation",
+      "D": "Natural selection"
+    },
+    "correct_answer": "C",
+    "explanation": "Mutation is the ultimate source of all new genetic variation (new alleles) in a population. While genetic drift, gene flow, and natural selection can change the frequencies of existing alleles, they do not create new ones. Mutations are random changes in the DNA sequence. Recombination also creates new combinations of existing alleles.",
+    "difficulty": "easy",
+    "topic": "modern_synthesis",
+    "subtopic": "sources_of_variation",
+    "tags": [
+      "mutation",
+      "genetic_variation",
+      "alleles"
+    ],
+    "learning_objective": "Identify mutation as the source of new genetic variation.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_24",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch24_mcq_016",
+    "question": "The Hardy-Weinberg principle describes a population that is:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Undergoing rapid evolution.",
+      "B": "In genetic equilibrium.",
+      "C": "Experiencing significant gene flow.",
+      "D": "Subject to strong natural selection."
+    },
+    "correct_answer": "B",
+    "explanation": "The Hardy-Weinberg principle states that allele and genotype frequencies in a population will remain constant from generation to generation in the absence of other evolutionary influences. Such a population is said to be in genetic equilibrium, meaning it is not evolving. Options A, C, and D describe conditions that would cause a population to deviate from Hardy-Weinberg equilibrium.",
+    "difficulty": "easy",
+    "topic": "modern_synthesis",
+    "subtopic": "hardy_weinberg_principle",
+    "tags": [
+      "hardy_weinberg",
+      "genetic_equilibrium",
+      "population_genetics"
+    ],
+    "learning_objective": "State the condition described by the Hardy-Weinberg principle.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_24",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch24_mcq_017",
+    "question": "Which of the following is NOT a condition for Hardy-Weinberg equilibrium?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "No mutation",
+      "B": "Random mating",
+      "C": "Small population size",
+      "D": "No natural selection"
+    },
+    "correct_answer": "C",
+    "explanation": "The Hardy-Weinberg principle assumes a very large population size to prevent genetic drift from significantly altering allele frequencies. A small population size (C) would make it susceptible to genetic drift, thus violating the equilibrium. The other conditions (no mutation, random mating, no natural selection, no gene flow) are all necessary for a population to remain in Hardy-Weinberg equilibrium.",
+    "difficulty": "medium",
+    "topic": "modern_synthesis",
+    "subtopic": "hardy_weinberg_conditions",
+    "tags": [
+      "hardy_weinberg",
+      "conditions",
+      "genetic_drift"
+    ],
+    "learning_objective": "List the conditions required for Hardy-Weinberg equilibrium.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_24",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch24_mcq_018",
+    "question": "If the frequency of the dominant allele (A) in a population is `$0.7$`, what is the frequency of the recessive allele (a) according to the Hardy-Weinberg principle?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$0.3$",
+      "B": "$0.49$",
+      "C": "$0.21$",
+      "D": "$0.09$"
+    },
+    "correct_answer": "A",
+    "explanation": "According to the Hardy-Weinberg principle, the sum of the frequencies of the dominant allele (p) and the recessive allele (q) must equal 1. So, `$p + q = 1$`. Given `$p = 0.7$`, then `$q = 1 - p = 1 - 0.7 = 0.3$`. Therefore, the frequency of the recessive allele (a) is `$0.3$`. Options B, C, and D represent genotype frequencies or incorrect calculations.",
+    "difficulty": "medium",
+    "topic": "modern_synthesis",
+    "subtopic": "hardy_weinberg_calculations",
+    "tags": [
+      "hardy_weinberg",
+      "allele_frequency",
+      "calculation"
+    ],
+    "learning_objective": "Calculate allele frequencies using the Hardy-Weinberg equation.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_24",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "bio_xii_ch24_mcq_019",
+    "question": "In a population, `$16\\%$` of individuals express the recessive phenotype. Assuming Hardy-Weinberg equilibrium, what is the frequency of the homozygous dominant genotype?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$0.16$",
+      "B": "$0.36$",
+      "C": "$0.48$",
+      "D": "$0.64$"
+    },
+    "correct_answer": "B",
+    "explanation": "If `$16\\%$` of individuals express the recessive phenotype, then the frequency of the homozygous recessive genotype (`$q^2$`) is `$0.16$`. Therefore, the frequency of the recessive allele (`$q$`) is `$\\sqrt{0.16} = 0.4$`. Using `$p + q = 1$`, the frequency of the dominant allele (`$p$`) is `$1 - 0.4 = 0.6$`. The frequency of the homozygous dominant genotype (`$p^2$`) is `$0.6^2 = 0.36$`. Option A is `$q^2$`, Option C is `$2pq$`, and Option D is incorrect.",
+    "difficulty": "hard",
+    "topic": "modern_synthesis",
+    "subtopic": "hardy_weinberg_calculations",
+    "tags": [
+      "hardy_weinberg",
+      "genotype_frequency",
+      "calculation",
+      "recessive_phenotype"
+    ],
+    "learning_objective": "Calculate genotype frequencies from phenotypic frequencies using Hardy-Weinberg.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_24",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  }
+]

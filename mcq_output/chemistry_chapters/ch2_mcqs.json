@@ -1,0 +1,544 @@
+[
+  {
+    "id": "chem_xi_ch2_mcq_001",
+    "question": "Which of the following is considered one of the fundamental particles of an atom?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Positron",
+      "B": "Meson",
+      "C": "Neutrino",
+      "D": "Proton"
+    },
+    "correct_answer": "D",
+    "explanation": "The text states that while more than a hundred subatomic particles have been discovered, only electrons, protons, and neutrons are considered fundamental particles that determine the physical and chemical properties of elements.",
+    "difficulty": "easy",
+    "topic": "atomic_structure",
+    "subtopic": "subatomic_particles",
+    "tags": [
+      "fundamental_particles",
+      "proton",
+      "atomic_structure"
+    ],
+    "learning_objective": "Describe properties of subatomic particles",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_002",
+    "question": "Who introduced the modern atomic theory in 1803?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Democritus",
+      "B": "John Dalton",
+      "C": "Leucippus",
+      "D": "Aristotle"
+    },
+    "correct_answer": "B",
+    "explanation": "The document mentions that while the idea of the atom was revisited, it was John Dalton who was recognized as the introducer of the modern atomic theory in 1803.",
+    "difficulty": "easy",
+    "topic": "atomic_theory",
+    "subtopic": "historical_development",
+    "tags": [
+      "atomic_theory",
+      "John_Dalton",
+      "history_of_chemistry"
+    ],
+    "learning_objective": "Summarize the historical development of atomic theory",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_003",
+    "question": "The charge on every oil drop in Millikan's experiment was found to be an integral multiple of:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$1.6 \\times 10^{-19}$ Coulomb",
+      "B": "$9.11 \\times 10^{-28}$ g",
+      "C": "$1.673 \\times 10^{-24}$ g",
+      "D": "$1.602 \\times 10^{-19}$ Joule"
+    },
+    "correct_answer": "A",
+    "explanation": "Robert Andrews Millikan's oil drop experiment in 1909 determined that the charge on every oil drop was an integral multiple of $1.6 \\times 10^{-19}$ Coulomb, which was deduced to be the charge of an electron.",
+    "difficulty": "medium",
+    "topic": "atomic_structure",
+    "subtopic": "electron_charge",
+    "tags": [
+      "Millikan's_oil_drop_experiment",
+      "electron_charge",
+      "atomic_theory"
+    ],
+    "learning_objective": "Describe properties of subatomic particles",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_004",
+    "question": "Who discovered the nucleus of an atom in 1911?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "J.J. Thomson",
+      "B": "James Chadwick",
+      "C": "Ernest Rutherford",
+      "D": "Goldstein"
+    },
+    "correct_answer": "C",
+    "explanation": "The text states that in 1911, Ernest Rutherford laid the foundation that the atom consists of an extremely charged region called the nucleus.",
+    "difficulty": "easy",
+    "topic": "atomic_structure",
+    "subtopic": "nucleus",
+    "tags": [
+      "nucleus",
+      "Rutherford",
+      "atomic_model"
+    ],
+    "learning_objective": "Summarize historical atomic theories",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_005",
+    "question": "What is the mass of a neutron in grams?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$9.11 \\times 10^{-28}$ g",
+      "B": "$1.673 \\times 10^{-24}$ g",
+      "C": "$1.674 \\times 10^{-24}$ g",
+      "D": "$0$ g"
+    },
+    "correct_answer": "C",
+    "explanation": "According to Table 2.1, the mass of a neutron is $1.674 \\times 10^{-24}$ g.",
+    "difficulty": "easy",
+    "topic": "atomic_structure",
+    "subtopic": "subatomic_particles",
+    "tags": [
+      "neutron",
+      "mass_of_neutron",
+      "properties_of_particles"
+    ],
+    "learning_objective": "Describe properties of subatomic particles",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_006",
+    "question": "In Rutherford's atomic model, why was his comparison of electrons revolving around the nucleus like planets around the sun considered defective?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Electrons are smaller than planets.",
+      "B": "Planets are charged bodies, while electrons are not.",
+      "C": "Electrons are charged bodies, while planets are not.",
+      "D": "Planets move in elliptical orbits, while electrons move in circular orbits."
+    },
+    "correct_answer": "C",
+    "explanation": "The text states that Rutherford's model was defective because 'electrons are charged bodies while planets are charge less.'",
+    "difficulty": "medium",
+    "topic": "Bohr's_atomic_theory",
+    "subtopic": "defects_of_Rutherford's_model",
+    "tags": [
+      "Rutherford's_model",
+      "Bohr's_theory",
+      "atomic_models"
+    ],
+    "learning_objective": "Summarize Bohr's atomic theory",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_007",
+    "question": "According to Bohr's theory, when does an electron emit quantized energy?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "When it absorbs energy and jumps to a higher orbit.",
+      "B": "When it moves within the same orbit.",
+      "C": "When it returns from a higher energy orbit to a lower energy orbit.",
+      "D": "When it leaves the atom completely."
+    },
+    "correct_answer": "C",
+    "explanation": "The third postulate of Bohr's theory states that an electron emits quantized energy when it returns back to a lower energy orbit from a higher energy orbit.",
+    "difficulty": "medium",
+    "topic": "Bohr's_atomic_theory",
+    "subtopic": "postulates",
+    "tags": [
+      "Bohr's_theory",
+      "energy_levels",
+      "quantized_energy"
+    ],
+    "learning_objective": "Summarize Bohr's atomic theory",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_008",
+    "question": "The angular momentum of an electron in an orbit is an integral multiple of what value?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$\\frac{h}{2\\pi}$",
+      "B": "$nh/r$",
+      "C": "$2\\pi h/n$",
+      "D": "$h\\nu$"
+    },
+    "correct_answer": "A",
+    "explanation": "According to the fourth postulate of Bohr's theory, the angular momentum of an electron ($mvr$) is an integral multiple of $nh/2\\pi$. The base value is $h/2\\pi$.",
+    "difficulty": "medium",
+    "topic": "Bohr's_atomic_theory",
+    "subtopic": "angular_momentum",
+    "tags": [
+      "Bohr's_theory",
+      "angular_momentum",
+      "quantized_orbits"
+    ],
+    "learning_objective": "Understand Bohr's atomic model for calculations",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_009",
+    "question": "What is the value of Bohr's constant, $a^o$?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$0.529 \\times 10^{-8}$ cm",
+      "B": "$8.84 \\times 10^{-12} C^2/J.m$",
+      "C": "$6.625 \\times 10^{-34}$ J.S",
+      "D": "$1.602 \\times 10^{-19}$ C"
+    },
+    "correct_answer": "A",
+    "explanation": "The text defines Bohr's constant, $a^o$, and provides its value as $0.529 \\times 10^{-8}$ cm.",
+    "difficulty": "easy",
+    "topic": "Bohr's_atomic_theory",
+    "subtopic": "Bohr's_constant",
+    "tags": [
+      "Bohr's_constant",
+      "physical_constants",
+      "atomic_model"
+    ],
+    "learning_objective": "Understand Bohr's atomic model for calculations",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_010",
+    "question": "The energy of an electron in the L-shell ($n=2$) of a hydrogen atom is approximately:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$-2.18 \\times 10^{-18}$ joule",
+      "B": "$-5.43 \\times 10^{-19}$ joule",
+      "C": "$-1312.8$ KJ/mol",
+      "D": "$+5.43 \\times 10^{-19}$ joule"
+    },
+    "correct_answer": "B",
+    "explanation": "Example 2.2 in the document calculates the energy of an electron in the L-shell ($n=2$) using Bohr's formula, resulting in a value of $-5.43 \\times 10^{-19}$ joule.",
+    "difficulty": "medium",
+    "topic": "Bohr's_atomic_theory",
+    "subtopic": "energy_calculation",
+    "tags": [
+      "energy_of_electron",
+      "Bohr's_formula",
+      "L-shell"
+    ],
+    "learning_objective": "Understand to use Bohr's atomic model for calculating radii of orbit energy",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_011",
+    "question": "What is the relationship between the mass of an electron and the mass of a proton?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The mass of a proton is 1836 times less than an electron.",
+      "B": "The mass of an electron is nearly 1836 times less than a proton.",
+      "C": "The mass of an electron is equal to the mass of a proton.",
+      "D": "The mass of an electron is 1839 times less than a proton."
+    },
+    "correct_answer": "B",
+    "explanation": "The text explicitly states: 'The mass of an electron is nearly 1836 times less than proton and 1839 times less than neutron.'",
+    "difficulty": "easy",
+    "topic": "atomic_structure",
+    "subtopic": "subatomic_particles",
+    "tags": [
+      "electron",
+      "proton",
+      "mass_comparison"
+    ],
+    "learning_objective": "Describe properties of subatomic particles",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_012",
+    "question": "Which of the following elements does not contain neutrons in its nucleus?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Helium",
+      "B": "Protium",
+      "C": "Carbon",
+      "D": "Beryllium"
+    },
+    "correct_answer": "B",
+    "explanation": "The document mentions that 'Except protium (isotope of hydrogen), nuclei of all other atoms contain neutrons.'",
+    "difficulty": "easy",
+    "topic": "atomic_structure",
+    "subtopic": "neutrons",
+    "tags": [
+      "neutrons",
+      "protium",
+      "isotopes"
+    ],
+    "learning_objective": "Describe properties of subatomic particles",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_013",
+    "question": "According to the Aufbau Principle, Pauli Exclusion Principle, and Hund's Rule, what can be determined?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The atomic mass of an element.",
+      "B": "The electronic configuration of the elements.",
+      "C": "The stability of the nucleus.",
+      "D": "The charge of subatomic particles."
+    },
+    "correct_answer": "B",
+    "explanation": "The document states that students will be able to 'Understand to use the Aufbau Principle, the Pauli Exclusion Principle, and Hund's Rule to write the electronic configuration of the elements.'",
+    "difficulty": "medium",
+    "topic": "electronic_configuration",
+    "subtopic": "principles_of_filling",
+    "tags": [
+      "Aufbau_Principle",
+      "Pauli_Exclusion_Principle",
+      "Hund's_Rule",
+      "electronic_configuration"
+    ],
+    "learning_objective": "Understand to use the Aufbau Principle, the Pauli Exclusion Principle, and Hund's Rule to write the electronic configuration of the elements.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_014",
+    "question": "What is the wave number of a photon when an electron falls from the 4th orbit to the 2nd orbit in a hydrogen atom?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$1.09678 \\times 10^7$ m$^{-1}$",
+      "B": "$2.051 \\times 10^6$ m$^{-1}$",
+      "C": "$8.46 \\mathring{A}$",
+      "D": "$5.43 \\times 10^{-19}$ joule"
+    },
+    "correct_answer": "B",
+    "explanation": "Example 2.3 in the document calculates the wave number for this transition using the Rydberg formula, and the result is $2.051 \\times 10^6$ m$^{-1}$.",
+    "difficulty": "hard",
+    "topic": "wave_number",
+    "subtopic": "Rydberg_formula",
+    "tags": [
+      "wave_number",
+      "Rydberg_constant",
+      "Bohr_model",
+      "hydrogen_atom"
+    ],
+    "learning_objective": "Calculate wave numbers of photons",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_015",
+    "question": "What happens to the stability of a nucleus when the electrostatic force between protons overcomes the nuclear force?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The nucleus becomes more stable.",
+      "B": "The nucleus becomes unstable and a fission reaction occurs.",
+      "C": "The nucleus becomes positively charged.",
+      "D": "The nucleus's mass decreases."
+    },
+    "correct_answer": "B",
+    "explanation": "The text states: 'Under certain circumstances, when electrostatic force (between protons) overcomes the nuclear force, nucleus becomes unstable and fission reaction is occurred.'",
+    "difficulty": "medium",
+    "topic": "atomic_structure",
+    "subtopic": "nuclear_stability",
+    "tags": [
+      "nucleus",
+      "fission",
+      "nuclear_force"
+    ],
+    "learning_objective": "Explain the uses of nuclear radiation",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_016",
+    "question": "The total energy of an electron in an orbit is the sum of:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Kinetic energy only.",
+      "B": "Potential energy only.",
+      "C": "Kinetic energy and potential energy.",
+      "D": "Heat energy and light energy."
+    },
+    "correct_answer": "C",
+    "explanation": "The document states that 'In any orbit of an atom, the total energy of an electron is the sum of potential energy (P.E) and kinetic energy (K.E).'",
+    "difficulty": "easy",
+    "topic": "Bohr's_atomic_theory",
+    "subtopic": "energy_of_electron",
+    "tags": [
+      "energy_of_electron",
+      "kinetic_energy",
+      "potential_energy"
+    ],
+    "learning_objective": "Understand to use Bohr's atomic model for calculating energy",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_017",
+    "question": "What is the function of the attractive electrostatic force between electrons and protons?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "It pushes the electrons further from the nucleus.",
+      "B": "It keeps the electrons constantly moving around the nucleus.",
+      "C": "It causes the electrons to fall into the nucleus.",
+      "D": "It has no effect on electron movement."
+    },
+    "correct_answer": "B",
+    "explanation": "The text states that 'Electrons are attracted by protons and this attractive force (electrostatic force) keeps electrons constantly moving around nucleus.'",
+    "difficulty": "easy",
+    "topic": "atomic_structure",
+    "subtopic": "electron_motion",
+    "tags": [
+      "electron_motion",
+      "electrostatic_force",
+      "atomic_structure"
+    ],
+    "learning_objective": "Describe properties of subatomic particles",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_018",
+    "question": "Who discovered neutrons in 1932 by bombarding alpha particles on Beryllium?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Goldstein",
+      "B": "Ernest Rutherford",
+      "C": "James Chadwick",
+      "D": "J.J. Thomson"
+    },
+    "correct_answer": "C",
+    "explanation": "The discovery of neutrons was made by James Chadwick (1932 A.D) by bombarding alpha particles from Polonium on Beryllium.",
+    "difficulty": "easy",
+    "topic": "atomic_structure",
+    "subtopic": "neutron_discovery",
+    "tags": [
+      "neutron_discovery",
+      "James_Chadwick",
+      "atomic_theory"
+    ],
+    "learning_objective": "Describe properties of subatomic particles",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_019",
+    "question": "The number of neutrons in an element is calculated by subtracting the number of protons from the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Atomic number",
+      "B": "Mass number",
+      "C": "Number of electrons",
+      "D": "Relative atomic mass"
+    },
+    "correct_answer": "B",
+    "explanation": "The document provides the formula: 'Number of neutrons = Mass number - Number of protons'.",
+    "difficulty": "easy",
+    "topic": "atomic_structure",
+    "subtopic": "neutrons",
+    "tags": [
+      "neutrons",
+      "mass_number",
+      "atomic_number"
+    ],
+    "learning_objective": "Describe properties of subatomic particles",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch2_mcq_020",
+    "question": "Which Greek philosophers gave the first idea that matter is composed of invisible, indivisible building blocks called 'atomos'?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Aristotle and Plato",
+      "B": "Socrates and Plato",
+      "C": "Leucippus and Democritus",
+      "D": "Archimedes and Eratosthenes"
+    },
+    "correct_answer": "C",
+    "explanation": "The text states that in history, two Greek philosophers, Leucippus and Democritus, first gave the idea that matter is composed of indivisible building blocks called 'atomos'.",
+    "difficulty": "easy",
+    "topic": "atomic_theory",
+    "subtopic": "historical_development",
+    "tags": [
+      "atomic_theory",
+      "Greek_philosophy",
+      "atomos"
+    ],
+    "learning_objective": "Summarize the historical development of atomic theory",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_2",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

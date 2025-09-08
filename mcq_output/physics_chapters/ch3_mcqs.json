@@ -1,0 +1,504 @@
+[
+  {
+    "id": "chem_xi_ch3_mcq_001",
+    "question": "Which of the following statements is a postulate of the Kinetic Molecular Theory of Gases?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Gas particles attract each other strongly.",
+      "B": "The volume occupied by gas particles themselves is significant compared to the total volume of the gas.",
+      "C": "Gas particles are in constant, random motion.",
+      "D": "Collisions between gas particles are inelastic."
+    },
+    "correct_answer": "C",
+    "explanation": "The Kinetic Molecular Theory of Gases postulates that gas particles are in constant, random, and rapid motion. Options A and B describe real gases, not ideal gases as per KMT. Option D is incorrect; KMT assumes collisions are perfectly elastic.",
+    "difficulty": "easy",
+    "topic": "kinetic_molecular_theory",
+    "subtopic": "postulates",
+    "tags": [
+      "KMT",
+      "ideal_gas",
+      "gas_properties"
+    ],
+    "learning_objective": "Recall the basic postulates of the Kinetic Molecular Theory of Gases.",
+    "created_date": "2024-03-10",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_002",
+    "question": "According to Boyle's Law, if the pressure of a fixed mass of gas is doubled at constant temperature, its volume will:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Double",
+      "B": "Halve",
+      "C": "Remain constant",
+      "D": "Quadruple"
+    },
+    "correct_answer": "B",
+    "explanation": "Boyle's Law states that for a fixed mass of gas at constant temperature, pressure is inversely proportional to volume ($P \\propto \frac{1}{V}$ or $P_1V_1 = P_2V_2$). If pressure is doubled ($P_2 = 2P_1$), then $P_1V_1 = (2P_1)V_2$, which means $V_2 = \frac{V_1}{2}$. Thus, the volume will halve.",
+    "difficulty": "easy",
+    "topic": "gas_laws",
+    "subtopic": "boyles_law",
+    "tags": [
+      "boyles_law",
+      "pressure",
+      "volume",
+      "inverse_relationship"
+    ],
+    "learning_objective": "Apply Boyle's Law to predict changes in gas volume with pressure.",
+    "created_date": "2024-03-10",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_003",
+    "question": "What is the relationship between volume and absolute temperature for a fixed mass of gas at constant pressure?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Inversely proportional",
+      "B": "Directly proportional",
+      "C": "Exponentially related",
+      "D": "No relationship"
+    },
+    "correct_answer": "B",
+    "explanation": "Charles's Law states that for a fixed mass of gas at constant pressure, the volume is directly proportional to its absolute temperature ($V \\propto T$ or $\frac{V_1}{T_1} = \frac{V_2}{T_2}$).",
+    "difficulty": "easy",
+    "topic": "gas_laws",
+    "subtopic": "charles_law",
+    "tags": [
+      "charles_law",
+      "volume",
+      "temperature",
+      "direct_relationship"
+    ],
+    "learning_objective": "Identify the relationship between volume and temperature as described by Charles's Law.",
+    "created_date": "2024-03-10",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_004",
+    "question": "The standard atmospheric pressure is equivalent to:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$76 \text{ cm}$ of `$Hg`",
+      "B": "$760 \text{ mm}$ of `$Hg`",
+      "C": "$1 \text{ atm}$",
+      "D": "All of the above"
+    },
+    "correct_answer": "D",
+    "explanation": "Standard atmospheric pressure is defined as `$1 \text{ atm}$`. This is also equivalent to `$760 \text{ mm}$ of $Hg$` (mercury) or `$76 \text{ cm}$ of $Hg$`, as `$1 \text{ cm} = 10 \text{ mm}$`. Therefore, all options A, B, and C represent the standard atmospheric pressure.",
+    "difficulty": "easy",
+    "topic": "pressure_units",
+    "subtopic": "standard_pressure",
+    "tags": [
+      "pressure",
+      "units",
+      "atmosphere",
+      "mercury"
+    ],
+    "learning_objective": "Recall common units and values for standard atmospheric pressure.",
+    "created_date": "2024-03-10",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_005",
+    "question": "Which of the following is NOT an assumption of an ideal gas?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Particles have negligible volume.",
+      "B": "There are no intermolecular forces between particles.",
+      "C": "Collisions are perfectly elastic.",
+      "D": "Particles move in an orderly, predictable manner."
+    },
+    "correct_answer": "D",
+    "explanation": "An ideal gas assumes that particles are in constant, random motion, not orderly or predictable. Options A, B, and C are all key assumptions of an ideal gas according to the Kinetic Molecular Theory.",
+    "difficulty": "easy",
+    "topic": "ideal_gas",
+    "subtopic": "assumptions",
+    "tags": [
+      "ideal_gas",
+      "KMT",
+      "assumptions",
+      "gas_behavior"
+    ],
+    "learning_objective": "Identify the key assumptions that define an ideal gas.",
+    "created_date": "2024-03-10",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_006",
+    "question": "What is the value of the universal gas constant `$R$` in `$L \\cdot atm \\cdot mol^{-1} \\cdot K^{-1}$`?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$0.0821$",
+      "B": "$8.314$",
+      "C": "$62.36$",
+      "D": "$1.987$"
+    },
+    "correct_answer": "A",
+    "explanation": "The value of the universal gas constant `$R$` is `$0.0821 \text{ L} \\cdot \text{atm} \\cdot \text{mol}^{-1} \\cdot \text{K}^{-1}$`. Other values correspond to different units: `$8.314 \text{ J} \\cdot \text{mol}^{-1} \\cdot \text{K}^{-1}$`, `$62.36 \text{ L} \\cdot \text{torr} \\cdot \text{mol}^{-1} \\cdot \text{K}^{-1}$`, and `$1.987 \text{ cal} \\cdot \text{mol}^{-1} \\cdot \text{K}^{-1}$`.",
+    "difficulty": "easy",
+    "topic": "ideal_gas_law",
+    "subtopic": "gas_constant",
+    "tags": [
+      "gas_constant",
+      "R_value",
+      "units",
+      "ideal_gas_law"
+    ],
+    "learning_objective": "Recall the value of the universal gas constant in common units.",
+    "created_date": "2024-03-10",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_007",
+    "question": "Which of the following processes involves the conversion of a gas directly into a solid?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Melting",
+      "B": "Evaporation",
+      "C": "Sublimation",
+      "D": "Deposition"
+    },
+    "correct_answer": "D",
+    "explanation": "Deposition is the phase transition from a gas directly to a solid without passing through the liquid phase. Sublimation is the opposite (solid to gas). Melting is solid to liquid, and evaporation is liquid to gas.",
+    "difficulty": "easy",
+    "topic": "states_of_matter",
+    "subtopic": "phase_transitions",
+    "tags": [
+      "phase_change",
+      "deposition",
+      "sublimation",
+      "gas_to_solid"
+    ],
+    "learning_objective": "Define the term 'deposition' in the context of phase changes.",
+    "created_date": "2024-03-10",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_008",
+    "question": "The temperature at which a real gas behaves most like an ideal gas is called the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Critical temperature",
+      "B": "Boiling point",
+      "C": "Boyle temperature",
+      "D": "Melting point"
+    },
+    "correct_answer": "C",
+    "explanation": "The Boyle temperature ($T_B$) is the temperature at which a real gas behaves most ideally over a range of pressures. At this temperature, the attractive and repulsive forces between gas molecules effectively cancel each other out. Critical temperature is the temperature above which a gas cannot be liquefied, no matter how much pressure is applied.",
+    "difficulty": "easy",
+    "topic": "real_gases",
+    "subtopic": "boyle_temperature",
+    "tags": [
+      "real_gas",
+      "ideal_gas",
+      "boyle_temperature",
+      "gas_behavior"
+    ],
+    "learning_objective": "Define Boyle temperature and its significance for real gases.",
+    "created_date": "2024-03-10",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_009",
+    "question": "Which gas law relates the total pressure of a mixture of non-reacting gases to the sum of the partial pressures of individual gases?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Boyle's Law",
+      "B": "Charles's Law",
+      "C": "Dalton's Law of Partial Pressures",
+      "D": "Graham's Law of Diffusion"
+    },
+    "correct_answer": "C",
+    "explanation": "Dalton's Law of Partial Pressures states that the total pressure exerted by a mixture of non-reacting gases is equal to the sum of the partial pressures of the individual gases ($P_{total} = P_1 + P_2 + P_3 + ...$).",
+    "difficulty": "easy",
+    "topic": "gas_laws",
+    "subtopic": "daltons_law",
+    "tags": [
+      "daltons_law",
+      "partial_pressure",
+      "gas_mixture"
+    ],
+    "learning_objective": "Identify Dalton's Law of Partial Pressures.",
+    "created_date": "2024-03-10",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_010",
+    "question": "The process by which gas molecules escape through a tiny hole into a vacuum is called:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Diffusion",
+      "B": "Effusion",
+      "C": "Condensation",
+      "D": "Sublimation"
+    },
+    "correct_answer": "B",
+    "explanation": "Effusion is the process where gas molecules escape through a tiny hole into a vacuum. Diffusion is the spreading of gas molecules throughout a volume or into another gas. Condensation is gas to liquid, and sublimation is solid to gas.",
+    "difficulty": "easy",
+    "topic": "gas_kinetics",
+    "subtopic": "effusion_diffusion",
+    "tags": [
+      "effusion",
+      "diffusion",
+      "gas_movement"
+    ],
+    "learning_objective": "Differentiate between effusion and diffusion.",
+    "created_date": "2024-03-10",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_011",
+    "question": "What is the SI unit of pressure?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Atmosphere (atm)",
+      "B": "Torr",
+      "C": "Pascal (Pa)",
+      "D": "Millimeter of mercury (mmHg)"
+    },
+    "correct_answer": "C",
+    "explanation": "The SI unit of pressure is the Pascal (Pa), which is equivalent to newtons per square meter ($N/m^2$). Atmosphere, Torr, and mmHg are common units of pressure but are not SI units.",
+    "difficulty": "easy",
+    "topic": "pressure_units",
+    "subtopic": "SI_units",
+    "tags": [
+      "pressure",
+      "SI_units",
+      "pascal",
+      "units"
+    ],
+    "learning_objective": "Recall the SI unit for pressure.",
+    "created_date": "2024-03-10",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_012",
+    "question": "Which of the following gases would deviate most from ideal behavior at high pressure and low temperature?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$He$",
+      "B": "$H_2$",
+      "C": "$CH_4$",
+      "D": "$NH_3$"
+    },
+    "correct_answer": "D",
+    "explanation": "Gases deviate from ideal behavior when intermolecular forces become significant and the volume of gas molecules is no longer negligible. `$NH_3$` (ammonia) is a polar molecule and can form hydrogen bonds, leading to much stronger intermolecular forces compared to the nonpolar `$He$`, `$H_2$`, and `$CH_4$`. Therefore, `$NH_3$` will deviate most significantly.",
+    "difficulty": "easy",
+    "topic": "real_gases",
+    "subtopic": "deviation_factors",
+    "tags": [
+      "real_gas",
+      "ideal_gas",
+      "intermolecular_forces",
+      "polarity"
+    ],
+    "learning_objective": "Identify factors causing deviation from ideal gas behavior.",
+    "created_date": "2024-03-10",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_013",
+    "question": "The average kinetic energy of gas molecules is directly proportional to the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Pressure of the gas",
+      "B": "Volume of the gas",
+      "C": "Absolute temperature of the gas",
+      "D": "Number of moles of the gas"
+    },
+    "correct_answer": "C",
+    "explanation": "One of the key postulates of the Kinetic Molecular Theory is that the average kinetic energy of gas molecules is directly proportional to the absolute temperature of the gas. This means that at the same temperature, all ideal gases have the same average kinetic energy.",
+    "difficulty": "easy",
+    "topic": "kinetic_molecular_theory",
+    "subtopic": "kinetic_energy_temperature",
+    "tags": [
+      "KMT",
+      "kinetic_energy",
+      "temperature",
+      "gas_properties"
+    ],
+    "learning_objective": "Relate the average kinetic energy of gas molecules to temperature.",
+    "created_date": "2024-03-10",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_014",
+    "question": "Which of the following is the correct mathematical expression for the Ideal Gas Law?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$P_1V_1 = P_2V_2$",
+      "B": "$\frac{V_1}{T_1} = \frac{V_2}{T_2}$",
+      "C": "$PV = nRT$",
+      "D": "$\frac{P_1V_1}{T_1} = \frac{P_2V_2}{T_2}$"
+    },
+    "correct_answer": "C",
+    "explanation": "The Ideal Gas Law is expressed as $PV = nRT$, where P is pressure, V is volume, n is the number of moles, R is the ideal gas constant, and T is the absolute temperature. Options A, B, and D represent Boyle's Law, Charles's Law, and the Combined Gas Law, respectively.",
+    "difficulty": "easy",
+    "topic": "gas_laws",
+    "subtopic": "ideal_gas_law",
+    "tags": [
+      "ideal_gas_law",
+      "equation",
+      "gas_laws"
+    ],
+    "learning_objective": "Recall the mathematical form of the Ideal Gas Law.",
+    "created_date": "2024-03-10",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_015",
+    "question": "At constant temperature and pressure, the volume of a gas is directly proportional to the number of moles of the gas. This is known as:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Boyle's Law",
+      "B": "Charles's Law",
+      "C": "Avogadro's Law",
+      "D": "Gay-Lussac's Law"
+    },
+    "correct_answer": "C",
+    "explanation": "Avogadro's Law states that at constant temperature and pressure, the volume of a gas is directly proportional to the number of moles of the gas ($V \\propto n$).",
+    "difficulty": "easy",
+    "topic": "gas_laws",
+    "subtopic": "avogadros_law",
+    "tags": [
+      "avogadros_law",
+      "volume",
+      "moles",
+      "direct_relationship"
+    ],
+    "learning_objective": "Identify Avogadro's Law.",
+    "created_date": "2024-03-10",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_016",
+    "question": "A gas occupies `$2.0 \text{ L}$` at `$1.0 \text{ atm}$`. If the pressure is increased to `$2.0 \text{ atm}$` at constant temperature, what is the new volume?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$1.0 \text{ L}$",
+      "B": "$2.0 \text{ L}$",
+      "C": "$4.0 \text{ L}$",
+      "D": "$0.5 \text{ L}$"
+    },
+    "correct_answer": "A",
+    "explanation": "This is an application of Boyle's Law ($P_1V_1 = P_2V_2$).\nGiven: `$P_1 = 1.0 \text{ atm}$`, `$V_1 = 2.0 \text{ L}$`, `$P_2 = 2.0 \text{ atm}$`.\nWe need to find `$V_2$`.\n$V_2 = \frac{P_1V_1}{P_2} = \frac{(1.0 \text{ atm})(2.0 \text{ L})}{2.0 \text{ atm}} = 1.0 \text{ L}$.",
+    "difficulty": "medium",
+    "topic": "gas_laws",
+    "subtopic": "boyles_law_calculation",
+    "tags": [
+      "boyles_law",
+      "numerical",
+      "pressure",
+      "volume"
+    ],
+    "learning_objective": "Calculate changes in gas volume using Boyle's Law.",
+    "created_date": "2024-03-10",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_017",
+    "question": "A gas sample has a volume of `$100 \text{ mL}$` at `$27^\\circ C$`. What will be its volume at `$127^\\circ C$` if the pressure remains constant?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$133.3 \text{ mL}$",
+      "B": "$75.0 \text{ mL}$",
+      "C": "$100 \text{ mL}$",
+      "D": "$200 \text{ mL}$"
+    },
+    "correct_answer": "A",
+    "explanation": "This is an application of Charles's Law ($\frac{V_1}{T_1} = \frac{V_2}{T_2}$). Remember to convert temperatures to Kelvin.\nGiven: `$V_1 = 100 \text{ mL}$`, `$T_1 = 27^\\circ C = 27 + 273 = 300 \text{ K}$`, `$T_2 = 127^\\circ C = 127 + 273 = 400 \text{ K}$`.\nWe need to find `$V_2$`.\n$V_2 = V_1 \times \frac{T_2}{T_1} = 100 \text{ mL} \times \frac{400 \text{ K}}{300 \text{ K}} = 100 \text{ mL} \times \frac{4}{3} = 133.33 \text{ mL}$.",
+    "difficulty": "medium",
+    "topic": "gas_laws",
+    "subtopic": "charles_law_calculation",
+    "tags": [
+      "charles_law",
+      "numerical",
+      "volume",
+      "temperature",
+      "kelvin_conversion"
+    ],
+    "learning_objective": "Calculate changes in gas volume using Charles's Law, including temperature conversion.",
+    "created_date": "2024-03-10",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch3_mcq_018",
+    "question": "A `$5.0 \text{ L}$` container holds `$0.25 \text{ mol}$` of `$O_2$` gas at `$25^\\circ C$`. What is the pressure inside the container?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$1.22 \text{ atm}$",
+      "B": "$0.61 \text{ atm}$",
+      "C": "$0.12 \text{ atm}$",
+      "D": "$2.44 \text{ atm}$"
+    },
+    "correct_answer": "A",
+    "explanation": "This requires the Ideal Gas Law ($PV = nRT$).\nGiven: `$V = 5.0 \text{ L}$`, `$n = 0.25 \text{ mol}$`, `$T = 25^\\circ C = 25 + 273 = 298 \text{ K}$`.\nUse `$R = 0.0821 \text{ L} \\cdot \text{atm} \\cdot \text{mol}^{-1} \\cdot \text{K}^{-1}$`.\n$P = \frac{nRT}{V} = \frac{(0.25 \text{ mol})(0.0821 \text{ L} \\cdot \text{atm} \\cdot \text{mol}^{-1} \\cdot \text{K}^{-1})(298 \text{ K})}{5.0 \text{ L}}$\n$P = \frac{6.11495}{5.0} \text{ atm} \\approx 1.22 \text{ atm}$.",
+    "difficulty": "medium",
+    "topic": "gas_laws",
+    "subtopic": "ideal_gas_law_calculation",
+    "tags": [
+      "ideal_gas_law",
+      "numerical",
+      "pressure",
+      "moles",
+      "temperature"
+    ],
+    "learning_objective": "Calculate pressure using the Ideal Gas Law.",
+    "created_date": "2024-03-10",
+    "source": "textbook_chapter_3",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

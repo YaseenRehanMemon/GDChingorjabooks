@@ -1,0 +1,442 @@
+🚀 Starting Batch MCQ Generation
+==================================================
+📚 Found 8 subject directories
+
+📚 Processing chemistry_chapters
+🔑 Using API key: ...osTw
+
+📚 Processing mathsXII_chapters
+🔑 Using API key: ...ZDqo
+📄 Found 8 PDFs to process
+🔄 Processing: ch9.pdf
+📡 Sending request to API...
+📄 Found 9 PDFs to process
+🔄 Processing: ch4_Higher_Order_Derivatives_and_Applications.pdf
+📡 Sending request to API...
+✅ Generated 14 MCQs for ch9.pdf
+💾 Saved: mcq_output/chemistry_chapters/ch9_mcqs.json
+✅ Generated 15 MCQs for ch4_Higher_Order_Derivatives_and_Applications.pdf
+💾 Saved: mcq_output/mathsXII_chapters/ch4_Higher_Order_Derivatives_and_Applications_mcqs.json
+🔄 Processing: ch10.pdf
+📡 Sending request to API...
+🔄 Processing: ch12_Introduction_To_Numerical_Methods.pdf
+📡 Sending request to API...
+❌ Empty response for ch10.pdf
+This might be due to rate limiting or content filtering
+❌ JSON decode error for ch12_Introduction_To_Numerical_Methods.pdf: Invalid \escape: line 59 column 130 (char 3281)
+Raw response: [
+  {
+    "id": "math_xii_ch12_mcq_001",
+    "question": "What is the primary purpose of numerical methods?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "To find exact analyti...
+🔄 Processing: ch1.pdf
+📡 Sending request to API...
+🔄 Processing: ch8_Circle.pdf
+📡 Sending request to API...
+✅ Generated 20 MCQs for ch1.pdf
+💾 Saved: mcq_output/chemistry_chapters/ch1_mcqs.json
+🔄 Processing: ch12.pdf
+📡 Sending request to API...
+✅ Generated 14 MCQs for ch8_Circle.pdf
+💾 Saved: mcq_output/mathsXII_chapters/ch8_Circle_mcqs.json
+🔄 Processing: ch13_Answers.pdf
+📡 Sending request to API...
+✅ Generated 22 MCQs for ch12.pdf
+💾 Saved: mcq_output/chemistry_chapters/ch12_mcqs.json
+❌ JSON decode error for ch13_Answers.pdf: Expecting value: line 1 column 1 (char 0)
+Raw response: I understand the requirements for generating 100 high-quality MCQs in the specified JSON format, including the detailed schema, difficulty distribution, LaTeX formatting, and comprehensive explanation...
+🔄 Processing: ch6.pdf
+📡 Sending request to API...
+🔄 Processing: ch5_Differentiation_of_Vector_Functions.pdf
+📡 Sending request to API...
+✅ Generated 16 MCQs for ch6.pdf
+💾 Saved: mcq_output/chemistry_chapters/ch6_mcqs.json
+❌ JSON decode error for ch5_Differentiation_of_Vector_Functions.pdf: Invalid \escape: line 8 column 16 (char 216)
+Raw response: [
+  {
+    "id": "math_xii_ch5_mcq_001",
+    "question": "Which of the following represents a vector function?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$f(t) = t^2 + 3t$",...
+🔄 Processing: ch5.pdf
+📡 Sending request to API...
+🔄 Processing: ch11_Partial_Differentiation.pdf
+📡 Sending request to API...
+✅ Generated 14 MCQs for ch5.pdf
+💾 Saved: mcq_output/chemistry_chapters/ch5_mcqs.json
+✅ Generated 16 MCQs for ch11_Partial_Differentiation.pdf
+💾 Saved: mcq_output/mathsXII_chapters/ch11_Partial_Differentiation_mcqs.json
+🔄 Processing: ch8.pdf
+📡 Sending request to API...
+🔄 Processing: ch6_Integration.pdf
+📡 Sending request to API...
+✅ Generated 17 MCQs for ch8.pdf
+💾 Saved: mcq_output/chemistry_chapters/ch8_mcqs.json
+❌ JSON decode error for ch6_Integration.pdf: Invalid \escape: line 73 column 55 (char 3020)
+Raw response: [
+  {
+    "id": "math_xi_ch6_mcq_001",
+    "question": "What is the process of finding an antiderivative called?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Differentiation"...
+🔄 Processing: ch11.pdf
+📡 Sending request to API...
+🔄 Processing: ch10_Differential_Equations.pdf
+📡 Sending request to API...
+✅ Generated 14 MCQs for ch10_Differential_Equations.pdf
+💾 Saved: mcq_output/mathsXII_chapters/ch10_Differential_Equations_mcqs.json
+✅ Generated 17 MCQs for ch11.pdf
+💾 Saved: mcq_output/chemistry_chapters/ch11_mcqs.json
+🔄 Processing: ch1_Introduction_to_Symbolic_Package:_MAPLE.pdf
+📡 Sending request to API...
+
+📚 Processing physicsXII_chapters
+🔑 Using API key: ...JE1E
+📄 Found 13 PDFs to process
+🔄 Processing: ch26_Atomic_Physics.pdf
+📡 Sending request to API...
+⚠️ Model overloaded (503), waiting 30s before retry 2/3
+✅ Generated 20 MCQs for ch1_Introduction_to_Symbolic_Package:_MAPLE.pdf
+💾 Saved: mcq_output/mathsXII_chapters/ch1_Introduction_to_Symbolic_Package:_MAPLE_mcqs.json
+
+📚 Processing chemistryXII_chapters
+🔑 Using API key: ...ZDqo
+📄 Found 6 PDFs to process
+🔄 Processing: ch17_APPENDIX_-_4.pdf
+📡 Sending request to API...
+✅ Generated 1 MCQs for ch17_APPENDIX_-_4.pdf
+💾 Saved: mcq_output/chemistryXII_chapters/ch17_APPENDIX_-_4_mcqs.json
+🔄 Processing: ch16_APPENDIX_-_3.pdf
+📡 Sending request to API...
+✅ Generated 20 MCQs for ch26_Atomic_Physics.pdf
+💾 Saved: mcq_output/physicsXII_chapters/ch26_Atomic_Physics_mcqs.json
+🔄 Processing: ch15_Molecular_Theory_of_Gases.pdf
+📡 Sending request to API...
+❌ Empty response for ch16_APPENDIX_-_3.pdf
+This might be due to rate limiting or content filtering
+🔄 Processing: ch9_CARBOXYLIC_ACID_AND_FUNCTIONAL_DERIVATIVES.pdf
+📡 Sending request to API...
+✅ Generated 15 MCQs for ch15_Molecular_Theory_of_Gases.pdf
+💾 Saved: mcq_output/physicsXII_chapters/ch15_Molecular_Theory_of_Gases_mcqs.json
+🔄 Processing: ch22_Solid_State_of_Electronics.pdf
+📡 Sending request to API...
+✅ Generated 20 MCQs for ch9_CARBOXYLIC_ACID_AND_FUNCTIONAL_DERIVATIVES.pdf
+💾 Saved: mcq_output/chemistryXII_chapters/ch9_CARBOXYLIC_ACID_AND_FUNCTIONAL_DERIVATIVES_mcqs.json
+🔄 Processing: ch14_APPENDIX_-_1.pdf
+📡 Sending request to API...
+✅ Generated 22 MCQs for ch22_Solid_State_of_Electronics.pdf
+💾 Saved: mcq_output/physicsXII_chapters/ch22_Solid_State_of_Electronics_mcqs.json
+🔄 Processing: ch16_First_Law_of_Thermodynamics.pdf
+📡 Sending request to API...
+❌ JSON decode error for ch14_APPENDIX_-_1.pdf: Invalid \escape: line 50 column 80 (char 2363)
+Raw response: [
+  {
+    "id": "chem_xi_ch14_mcq_001",
+    "question": "What is the standard value of Avogadro's number?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$6.022 \\times 10^{23} ...
+🔄 Processing: ch13_SPECTROSCOPY.pdf
+📡 Sending request to API...
+✅ Generated 19 MCQs for ch16_First_Law_of_Thermodynamics.pdf
+💾 Saved: mcq_output/physicsXII_chapters/ch16_First_Law_of_Thermodynamics_mcqs.json
+🔄 Processing: ch18_Magnetic_Fields.pdf
+📡 Sending request to API...
+✅ Generated 21 MCQs for ch13_SPECTROSCOPY.pdf
+💾 Saved: mcq_output/chemistryXII_chapters/ch13_SPECTROSCOPY_mcqs.json
+🔄 Processing: ch15_APPENDIX_-_2.pdf
+📡 Sending request to API...
+✅ Generated 16 MCQs for ch18_Magnetic_Fields.pdf
+💾 Saved: mcq_output/physicsXII_chapters/ch18_Magnetic_Fields_mcqs.json
+🔄 Processing: ch25_Quantum_Physics.pdf
+📡 Sending request to API...
+✅ Generated 13 MCQs for ch15_APPENDIX_-_2.pdf
+💾 Saved: mcq_output/chemistryXII_chapters/ch15_APPENDIX_-_2_mcqs.json
+
+📚 Processing physics_chapters
+🔑 Using API key: ...fF_8
+📄 Found 14 PDFs to process
+🔄 Processing: ch9.pdf
+📡 Sending request to API...
+❌ JSON decode error for ch25_Quantum_Physics.pdf: Invalid \escape: line 53 column 38 (char 2396)
+Raw response: [
+  {
+    "id": "phys_xii_ch25_mcq_001",
+    "question": "Which phenomenon provided the first direct evidence for the quantization of energy?",
+    "question_type": "multiple_choice",
+    "options": {...
+🔄 Processing: ch28_Particles_Physics.pdf
+📡 Sending request to API...
+✅ Generated 17 MCQs for ch9.pdf
+💾 Saved: mcq_output/physics_chapters/ch9_mcqs.json
+🔄 Processing: ch10.pdf
+📡 Sending request to API...
+✅ Generated 22 MCQs for ch28_Particles_Physics.pdf
+💾 Saved: mcq_output/physicsXII_chapters/ch28_Particles_Physics_mcqs.json
+🔄 Processing: ch20_Alternating_Current.pdf
+📡 Sending request to API...
+⚠️ Model overloaded (503), waiting 30s before retry 2/3
+❌ JSON decode error for ch20_Alternating_Current.pdf: Invalid \escape: line 7 column 24 (char 217)
+Raw response: [
+  {
+    "id": "phy_xii_ch20_mcq_001",
+    "question": "Which of the following represents the instantaneous voltage in an AC circuit?",
+    "question_type": "multiple_choice",
+    "options": {
+      ...
+🔄 Processing: ch24_Relativity.pdf
+📡 Sending request to API...
+✅ Generated 21 MCQs for ch10.pdf
+💾 Saved: mcq_output/physics_chapters/ch10_mcqs.json
+❌ Empty response for ch24_Relativity.pdf
+This might be due to rate limiting or content filtering
+🔄 Processing: ch14.pdf
+📡 Sending request to API...
+🔄 Processing: ch17_Second_Law_of_Thermodynamics.pdf
+📡 Sending request to API...
+✅ Generated 19 MCQs for ch14.pdf
+💾 Saved: mcq_output/physics_chapters/ch14_mcqs.json
+✅ Generated 19 MCQs for ch17_Second_Law_of_Thermodynamics.pdf
+💾 Saved: mcq_output/physicsXII_chapters/ch17_Second_Law_of_Thermodynamics_mcqs.json
+🔄 Processing: ch3.pdf
+📡 Sending request to API...
+🔄 Processing: ch23_Digital_Electronics.pdf
+📡 Sending request to API...
+✅ Generated 18 MCQs for ch3.pdf
+💾 Saved: mcq_output/physics_chapters/ch3_mcqs.json
+❌ Empty response for ch23_Digital_Electronics.pdf
+This might be due to rate limiting or content filtering
+🔄 Processing: ch7.pdf
+📡 Sending request to API...
+🔄 Processing: ch19_Electromagnetic_Induction.pdf
+📡 Sending request to API...
+✅ Generated 19 MCQs for ch7.pdf
+💾 Saved: mcq_output/physics_chapters/ch7_mcqs.json
+✅ Generated 17 MCQs for ch19_Electromagnetic_Induction.pdf
+💾 Saved: mcq_output/physicsXII_chapters/ch19_Electromagnetic_Induction_mcqs.json
+🔄 Processing: ch1.pdf
+📡 Sending request to API...
+🔄 Processing: ch21_Physics_of_Solids.pdf
+📡 Sending request to API...
+❌ JSON decode error for ch1.pdf: Invalid \escape: line 145 column 21 (char 6747)
+Raw response: [
+  {
+    "id": "chem_xi_ch1_mcq_001",
+    "question": "What is the SI unit for the amount of substance?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Kilogram",
+      "B": "M...
+✅ Generated 22 MCQs for ch21_Physics_of_Solids.pdf
+💾 Saved: mcq_output/physicsXII_chapters/ch21_Physics_of_Solids_mcqs.json
+🔄 Processing: ch12.pdf
+📡 Sending request to API...
+
+📚 Processing biology_chapters
+🔑 Using API key: ...fF_8
+📄 Found 14 PDFs to process
+🔄 Processing: ch8_Diversity_Among_Plants.pdf
+📡 Sending request to API...
+✅ Generated 22 MCQs for ch8_Diversity_Among_Plants.pdf
+💾 Saved: mcq_output/biology_chapters/ch8_Diversity_Among_Plants_mcqs.json
+❌ Empty response for ch12.pdf
+This might be due to rate limiting or content filtering
+🔄 Processing: ch11_Holozoic_Nutrition.pdf
+📡 Sending request to API...
+🔄 Processing: ch4.pdf
+📡 Sending request to API...
+✅ Generated 20 MCQs for ch11_Holozoic_Nutrition.pdf
+💾 Saved: mcq_output/biology_chapters/ch11_Holozoic_Nutrition_mcqs.json
+✅ Generated 19 MCQs for ch4.pdf
+💾 Saved: mcq_output/physics_chapters/ch4_mcqs.json
+🔄 Processing: ch6_Prokaryotes.pdf
+📡 Sending request to API...
+🔄 Processing: ch6.pdf
+📡 Sending request to API...
+✅ Generated 22 MCQs for ch6_Prokaryotes.pdf
+💾 Saved: mcq_output/biology_chapters/ch6_Prokaryotes_mcqs.json
+✅ Generated 21 MCQs for ch6.pdf
+💾 Saved: mcq_output/physics_chapters/ch6_mcqs.json
+🔄 Processing: ch9_Diversity_Among_Animals.pdf
+📡 Sending request to API...
+🔄 Processing: ch5.pdf
+📡 Sending request to API...
+✅ Generated 20 MCQs for ch9_Diversity_Among_Animals.pdf
+💾 Saved: mcq_output/biology_chapters/ch9_Diversity_Among_Animals_mcqs.json
+✅ Generated 18 MCQs for ch5.pdf
+💾 Saved: mcq_output/physics_chapters/ch5_mcqs.json
+🔄 Processing: ch13_Immunity.pdf
+📡 Sending request to API...
+🔄 Processing: ch8.pdf
+📡 Sending request to API...
+✅ Generated 20 MCQs for ch13_Immunity.pdf
+💾 Saved: mcq_output/biology_chapters/ch13_Immunity_mcqs.json
+✅ Generated 20 MCQs for ch8.pdf
+💾 Saved: mcq_output/physics_chapters/ch8_mcqs.json
+🔄 Processing: ch7_Protocists_and_Fungi.pdf
+📡 Sending request to API...
+🔄 Processing: ch11.pdf
+📡 Sending request to API...
+✅ Generated 19 MCQs for ch7_Protocists_and_Fungi.pdf
+💾 Saved: mcq_output/biology_chapters/ch7_Protocists_and_Fungi_mcqs.json
+✅ Generated 16 MCQs for ch11.pdf
+💾 Saved: mcq_output/physics_chapters/ch11_mcqs.json
+🔄 Processing: ch3_Cell_Structure_and_Function.pdf
+📡 Sending request to API...
+🔄 Processing: ch13.pdf
+📡 Sending request to API...
+⚠️ Model overloaded (503), waiting 30s before retry 2/3
+✅ Generated 19 MCQs for ch13.pdf
+💾 Saved: mcq_output/physics_chapters/ch13_mcqs.json
+🔄 Processing: ch2.pdf
+📡 Sending request to API...
+✅ Generated 22 MCQs for ch3_Cell_Structure_and_Function.pdf
+💾 Saved: mcq_output/biology_chapters/ch3_Cell_Structure_and_Function_mcqs.json
+🔄 Processing: ch5_Acellular_Life.pdf
+📡 Sending request to API...
+✅ Generated 20 MCQs for ch2.pdf
+💾 Saved: mcq_output/physics_chapters/ch2_mcqs.json
+
+📚 Processing biologyXII_chapters
+🔑 Using API key: ...JE1E
+📄 Found 13 PDFs to process
+🔄 Processing: ch24_Evolution.pdf
+📡 Sending request to API...
+✅ Generated 20 MCQs for ch5_Acellular_Life.pdf
+💾 Saved: mcq_output/biology_chapters/ch5_Acellular_Life_mcqs.json
+🔄 Processing: ch2_Enzymes.pdf
+📡 Sending request to API...
+✅ Generated 19 MCQs for ch24_Evolution.pdf
+💾 Saved: mcq_output/biologyXII_chapters/ch24_Evolution_mcqs.json
+🔄 Processing: ch15_Homeostasis.pdf
+📡 Sending request to API...
+✅ Generated 20 MCQs for ch2_Enzymes.pdf
+💾 Saved: mcq_output/biology_chapters/ch2_Enzymes_mcqs.json
+🔄 Processing: ch10_Forms_and_Functions_in_Plant.pdf
+📡 Sending request to API...
+✅ Generated 16 MCQs for ch15_Homeostasis.pdf
+💾 Saved: mcq_output/biologyXII_chapters/ch15_Homeostasis_mcqs.json
+🔄 Processing: ch20_Reproduction.pdf
+📡 Sending request to API...
+⚠️ Model overloaded (503), waiting 30s before retry 2/3
+✅ Generated 21 MCQs for ch10_Forms_and_Functions_in_Plant.pdf
+💾 Saved: mcq_output/biology_chapters/ch10_Forms_and_Functions_in_Plant_mcqs.json
+🔄 Processing: ch14_Gaseous_Exchange.pdf
+📡 Sending request to API...
+❌ JSON decode error for ch14_Gaseous_Exchange.pdf: Expecting value: line 438 column 5 (char 21167)
+Raw response: [
+  {
+    "id": "bio_xii_ch14_mcq_001",
+    "question": "Which of the following processes is primarily responsible for the movement of gases across respiratory surfaces?",
+    "question_type": "multip...
+✅ Generated 17 MCQs for ch20_Reproduction.pdf
+💾 Saved: mcq_output/biologyXII_chapters/ch20_Reproduction_mcqs.json
+🔄 Processing: ch4_Bioenergetics.pdf
+📡 Sending request to API...
+🔄 Processing: ch18_Chemical_Coordination.pdf
+📡 Sending request to API...
+✅ Generated 22 MCQs for ch4_Bioenergetics.pdf
+💾 Saved: mcq_output/biology_chapters/ch4_Bioenergetics_mcqs.json
+✅ Generated 20 MCQs for ch18_Chemical_Coordination.pdf
+💾 Saved: mcq_output/biologyXII_chapters/ch18_Chemical_Coordination_mcqs.json
+🔄 Processing: ch12_Circulation.pdf
+📡 Sending request to API...
+🔄 Processing: ch27_Biology_and_Human_Welfare.pdf
+📡 Sending request to API...
+✅ Generated 20 MCQs for ch12_Circulation.pdf
+💾 Saved: mcq_output/biology_chapters/ch12_Circulation_mcqs.json
+✅ Generated 21 MCQs for ch27_Biology_and_Human_Welfare.pdf
+💾 Saved: mcq_output/biologyXII_chapters/ch27_Biology_and_Human_Welfare_mcqs.json
+🔄 Processing: ch1_Biological_Molecules.pdf
+📡 Sending request to API...
+🔄 Processing: ch22_Chromosome_and_DNA.pdf
+📡 Sending request to API...
+❌ JSON decode error for ch1_Biological_Molecules.pdf: Expecting value: line 214 column 12 (char 8663)
+Raw response: [
+  {
+    "id": "bio_xi_ch1_mcq_001",
+    "question": "Which of the following elements is found in all organic molecules?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Oxygen"...
+✅ Generated 16 MCQs for ch22_Chromosome_and_DNA.pdf
+💾 Saved: mcq_output/biologyXII_chapters/ch22_Chromosome_and_DNA_mcqs.json
+
+📚 Processing math_chapters
+🔑 Using API key: ...osTw
+📄 Found 6 PDFs to process
+🔄 Processing: ch9.pdf
+📡 Sending request to API...
+🔄 Processing: ch21_Development_and_Aging.pdf
+📡 Sending request to API...
+⚠️ Model overloaded (503), waiting 30s before retry 2/3
+⚠️ Model overloaded (503), waiting 30s before retry 2/3
+⚠️ Model overloaded (503), waiting 60s before retry 3/3
+✅ Generated 16 MCQs for ch9.pdf
+💾 Saved: mcq_output/math_chapters/ch9_mcqs.json
+🔄 Processing: ch10.pdf
+📡 Sending request to API...
+✅ Generated 16 MCQs for ch10.pdf
+💾 Saved: mcq_output/math_chapters/ch10_mcqs.json
+🔄 Processing: ch7.pdf
+📡 Sending request to API...
+✅ Generated 23 MCQs for ch21_Development_and_Aging.pdf
+💾 Saved: mcq_output/biologyXII_chapters/ch21_Development_and_Aging_mcqs.json
+🔄 Processing: ch19_Animal_Behaviour.pdf
+📡 Sending request to API...
+✅ Generated 21 MCQs for ch7.pdf
+💾 Saved: mcq_output/math_chapters/ch7_mcqs.json
+🔄 Processing: ch1.pdf
+📡 Sending request to API...
+✅ Generated 20 MCQs for ch19_Animal_Behaviour.pdf
+💾 Saved: mcq_output/biologyXII_chapters/ch19_Animal_Behaviour_mcqs.json
+🔄 Processing: ch26_Biotechnology.pdf
+📡 Sending request to API...
+✅ Generated 17 MCQs for ch1.pdf
+💾 Saved: mcq_output/math_chapters/ch1_mcqs.json
+🔄 Processing: ch5.pdf
+📡 Sending request to API...
+✅ Generated 20 MCQs for ch26_Biotechnology.pdf
+💾 Saved: mcq_output/biologyXII_chapters/ch26_Biotechnology_mcqs.json
+🔄 Processing: ch16_Support_and_Movement.pdf
+📡 Sending request to API...
+✅ Generated 20 MCQs for ch5.pdf
+💾 Saved: mcq_output/math_chapters/ch5_mcqs.json
+🔄 Processing: ch11.pdf
+📡 Sending request to API...
+✅ Generated 21 MCQs for ch16_Support_and_Movement.pdf
+💾 Saved: mcq_output/biologyXII_chapters/ch16_Support_and_Movement_mcqs.json
+🔄 Processing: ch23_Inheritance.pdf
+📡 Sending request to API...
+✅ Generated 20 MCQs for ch11.pdf
+💾 Saved: mcq_output/math_chapters/ch11_mcqs.json
+✅ Generated 21 MCQs for ch23_Inheritance.pdf
+💾 Saved: mcq_output/biologyXII_chapters/ch23_Inheritance_mcqs.json
+🔄 Processing: ch25_Man_and_his_Environment.pdf
+📡 Sending request to API...
+✅ Generated 22 MCQs for ch25_Man_and_his_Environment.pdf
+💾 Saved: mcq_output/biologyXII_chapters/ch25_Man_and_his_Environment_mcqs.json
+🔄 Processing: ch17_Nervous_Coordination.pdf
+📡 Sending request to API...
+⚠️ Model overloaded (503), waiting 30s before retry 2/3
+✅ Generated 19 MCQs for ch17_Nervous_Coordination.pdf
+💾 Saved: mcq_output/biologyXII_chapters/ch17_Nervous_Coordination_mcqs.json
+
+🎉 Batch processing completed!
+
+📊 Summary:
+====================
+  chemistry_chapters: 7 files
+  mathsXII_chapters: 5 files
+  physicsXII_chapters: 9 files
+  chemistryXII_chapters: 4 files
+  physics_chapters: 12 files
+  biology_chapters: 12 files
+  biologyXII_chapters: 13 files
+  math_chapters: 6 files
+
+Total MCQ files: 68

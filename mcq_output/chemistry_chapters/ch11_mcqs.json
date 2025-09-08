@@ -1,0 +1,468 @@
+[
+  {
+    "id": "chem_xi_ch11_mcq_001",
+    "question": "What is the unit of the rate of reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$mol \\cdot dm^{-3} \\cdot s^{-1}$",
+      "B": "$mol \\cdot dm^{-3}$",
+      "C": "$s^{-1}$",
+      "D": "$dm^3 \\cdot mol^{-1} \\cdot s^{-1}$"
+    },
+    "correct_answer": "A",
+    "explanation": "The rate of reaction is defined as the change in concentration of a reactant or product per unit time. Concentration is typically measured in $mol \\cdot dm^{-3}$ (or $M$), and time in seconds (s). Therefore, the unit of reaction rate is $mol \\cdot dm^{-3} \\cdot s^{-1}$.",
+    "difficulty": "easy",
+    "topic": "rate_of_reaction",
+    "subtopic": "units_of_rate",
+    "tags": [
+      "rate_of_reaction",
+      "units",
+      "basic_kinetics"
+    ],
+    "learning_objective": "Recall the standard units for the rate of a chemical reaction.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch11_mcq_002",
+    "question": "Which of the following factors does NOT affect the rate of a chemical reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Concentration of reactants",
+      "B": "Temperature",
+      "C": "Pressure (for reactions involving gases)",
+      "D": "Volume of the reaction vessel"
+    },
+    "correct_answer": "D",
+    "explanation": "The rate of a chemical reaction is influenced by several factors: concentration of reactants (higher concentration generally means higher rate), temperature (higher temperature generally means higher rate), nature of reactants, surface area (for heterogeneous reactions), and presence of a catalyst. For reactions involving gases, pressure is directly related to concentration, so it affects the rate. The volume of the reaction vessel itself, assuming concentration remains constant, does not directly affect the intrinsic rate of reaction.",
+    "difficulty": "easy",
+    "topic": "factors_affecting_rate",
+    "subtopic": "general_factors",
+    "tags": [
+      "rate_of_reaction",
+      "factors",
+      "kinetics"
+    ],
+    "learning_objective": "Identify factors that influence the rate of a chemical reaction.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "chem_xi_ch11_mcq_003",
+    "question": "For the reaction $2A + B \rightarrow C$, if the concentration of A is doubled and the concentration of B is kept constant, the rate of reaction doubles. If the concentration of A is kept constant and the concentration of B is doubled, the rate of reaction quadruples. What is the order of reaction with respect to A and B, respectively?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "1, 2",
+      "B": "2, 1",
+      "C": "1, 1",
+      "D": "2, 2"
+    },
+    "correct_answer": "A",
+    "explanation": "Let the rate law be $Rate = k[A]^x[B]^y$.\nWhen $[A]$ is doubled and $[B]$ is constant, rate doubles: $2 \\cdot Rate = k[2A]^x[B]^y \\implies 2 = 2^x$. So, $x=1$.\nWhen $[B]$ is doubled and $[A]$ is constant, rate quadruples: $4 \\cdot Rate = k[A]^x[2B]^y \\implies 4 = 2^y$. So, $y=2$.\nThus, the order with respect to A is 1 and with respect to B is 2.",
+    "difficulty": "medium",
+    "topic": "order_of_reaction",
+    "subtopic": "experimental_determination",
+    "tags": [
+      "rate_law",
+      "order_of_reaction",
+      "kinetics",
+      "experimental_data"
+    ],
+    "learning_objective": "Determine the order of reaction with respect to individual reactants from experimental data.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch11_mcq_004",
+    "question": "The half-life period of a first-order reaction is $20$ minutes. How much time will it take for the concentration of the reactant to reduce to $1/8^{th}$ of its initial value?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$40$ minutes",
+      "B": "$60$ minutes",
+      "C": "$80$ minutes",
+      "D": "$100$ minutes"
+    },
+    "correct_answer": "B",
+    "explanation": "For a first-order reaction, the half-life ($t_{1/2}$) is constant. To reduce the concentration to $1/8^{th}$ of its initial value, it undergoes three half-lives:\n$1 \\xrightarrow{t_{1/2}} \frac{1}{2} \\xrightarrow{t_{1/2}} \frac{1}{4} \\xrightarrow{t_{1/2}} \frac{1}{8}$\nSo, the total time required is $3 \times t_{1/2}$.\nTime $= 3 \times 20$ minutes $= 60$ minutes.",
+    "difficulty": "medium",
+    "topic": "half_life",
+    "subtopic": "first_order_half_life",
+    "tags": [
+      "half_life",
+      "first_order",
+      "kinetics",
+      "numerical"
+    ],
+    "learning_objective": "Calculate the time required for a first-order reaction to reach a certain concentration given its half-life.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "chem_xi_ch11_mcq_005",
+    "question": "What is the effect of a catalyst on the activation energy of a reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Increases activation energy",
+      "B": "Decreases activation energy",
+      "C": "Does not affect activation energy",
+      "D": "Increases activation energy for exothermic reactions and decreases for endothermic reactions"
+    },
+    "correct_answer": "B",
+    "explanation": "A catalyst provides an alternative reaction pathway with a lower activation energy ($E_a$). By lowering the activation energy, a larger fraction of reactant molecules possess the minimum energy required for effective collisions, thus increasing the rate of reaction. A catalyst does not change the overall enthalpy change ($\\Delta H$) of the reaction.",
+    "difficulty": "easy",
+    "topic": "catalysis",
+    "subtopic": "effect_on_activation_energy",
+    "tags": [
+      "catalyst",
+      "activation_energy",
+      "kinetics"
+    ],
+    "learning_objective": "Describe the effect of a catalyst on the activation energy of a reaction.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch11_mcq_006",
+    "question": "The rate law for a reaction is given as $Rate = k[A]^2[B]$. If the concentration of A is doubled and the concentration of B is halved, what will be the change in the reaction rate?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Rate doubles",
+      "B": "Rate quadruples",
+      "C": "Rate remains unchanged",
+      "D": "Rate halves"
+    },
+    "correct_answer": "A",
+    "explanation": "Let the initial rate be $Rate_1 = k[A]^2[B]$.\nWhen $[A]$ is doubled ($2[A]$) and $[B]$ is halved ($[B]/2$), the new rate $Rate_2$ will be:\n$Rate_2 = k(2[A])^2([B]/2) = k(4[A]^2)([B]/2) = 2k[A]^2[B]$\nComparing $Rate_2$ with $Rate_1$, we see that $Rate_2 = 2 \\cdot Rate_1$. So, the rate doubles.",
+    "difficulty": "medium",
+    "topic": "rate_law",
+    "subtopic": "effect_of_concentration",
+    "tags": [
+      "rate_law",
+      "concentration_effect",
+      "kinetics",
+      "numerical"
+    ],
+    "learning_objective": "Predict the change in reaction rate based on changes in reactant concentrations and the rate law.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch11_mcq_007",
+    "question": "Which statement is true regarding the molecularity of a reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "It can be fractional.",
+      "B": "It is determined experimentally.",
+      "C": "It applies to the overall reaction.",
+      "D": "It is the number of reacting species in an elementary step."
+    },
+    "correct_answer": "D",
+    "explanation": "Molecularity is defined as the number of reacting species (atoms, ions, or molecules) that collide simultaneously in an elementary reaction step. It is always a whole number (1, 2, or 3, rarely higher). Molecularity cannot be fractional and is a theoretical concept based on the reaction mechanism, not determined experimentally. It applies only to elementary steps, not necessarily to the overall reaction.",
+    "difficulty": "medium",
+    "topic": "molecularity",
+    "subtopic": "definition_properties",
+    "tags": [
+      "molecularity",
+      "elementary_reaction",
+      "kinetics"
+    ],
+    "learning_objective": "Understand the definition and characteristics of molecularity.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "chem_xi_ch11_mcq_008",
+    "question": "For a zero-order reaction, what is the relationship between the concentration of reactant and time?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Exponential decrease",
+      "B": "Linear decrease",
+      "C": "Inverse relationship",
+      "D": "Quadratic decrease"
+    },
+    "correct_answer": "B",
+    "explanation": "For a zero-order reaction, the rate of reaction is independent of the concentration of the reactant. The integrated rate law for a zero-order reaction is $[A]_t = [A]_0 - kt$. This equation shows a linear decrease in the concentration of the reactant ($[A]_t$) with time ($t$), with a negative slope of $-k$.",
+    "difficulty": "medium",
+    "topic": "integrated_rate_laws",
+    "subtopic": "zero_order_kinetics",
+    "tags": [
+      "zero_order",
+      "integrated_rate_law",
+      "kinetics",
+      "graphical_interpretation"
+    ],
+    "learning_objective": "Describe the concentration-time relationship for a zero-order reaction.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch11_mcq_009",
+    "question": "The Arrhenius equation is given by $k = A e^{-E_a/RT}$. What does the term '$A$' represent?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Activation energy",
+      "B": "Rate constant",
+      "C": "Frequency factor (pre-exponential factor)",
+      "D": "Gas constant"
+    },
+    "correct_answer": "C",
+    "explanation": "In the Arrhenius equation, $k$ is the rate constant, $E_a$ is the activation energy, $R$ is the ideal gas constant, and $T$ is the absolute temperature. The term '$A$' is known as the frequency factor or pre-exponential factor. It represents the frequency of collisions with the correct orientation between reactant molecules.",
+    "difficulty": "easy",
+    "topic": "arrhenius_equation",
+    "subtopic": "components_of_equation",
+    "tags": [
+      "arrhenius_equation",
+      "frequency_factor",
+      "kinetics"
+    ],
+    "learning_objective": "Identify the components of the Arrhenius equation.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "chem_xi_ch11_mcq_010",
+    "question": "Which of the following is an example of homogeneous catalysis?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Haber's process for ammonia synthesis",
+      "B": "Decomposition of hydrogen peroxide by platinum",
+      "C": "Hydrolysis of ethyl acetate in the presence of acid",
+      "D": "Hydrogenation of vegetable oil using nickel"
+    },
+    "correct_answer": "C",
+    "explanation": "Homogeneous catalysis occurs when the catalyst and reactants are in the same phase. In the hydrolysis of ethyl acetate ($CH_3COOC_2H_5$) in the presence of an acid ($H_2SO_4$ or $HCl$), both the reactants (ethyl acetate, water) and the catalyst (acid) are in the liquid phase. Haber's process (gas-solid), decomposition of $H_2O_2$ by Pt (liquid-solid), and hydrogenation of vegetable oil (liquid-solid) are examples of heterogeneous catalysis.",
+    "difficulty": "medium",
+    "topic": "catalysis",
+    "subtopic": "types_of_catalysis",
+    "tags": [
+      "catalysis",
+      "homogeneous_catalysis",
+      "examples"
+    ],
+    "learning_objective": "Distinguish between homogeneous and heterogeneous catalysis with examples.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch11_mcq_011",
+    "question": "For a reaction, the rate constant $k$ has units of $s^{-1}$. What is the order of this reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Zero order",
+      "B": "First order",
+      "C": "Second order",
+      "D": "Third order"
+    },
+    "correct_answer": "B",
+    "explanation": "The general unit for the rate constant $k$ is $(concentration)^{1-n} \\cdot time^{-1}$, where $n$ is the order of the reaction. If the unit of $k$ is $s^{-1}$, then $(concentration)^{1-n}$ must be $(concentration)^0$, which means $1-n=0$, so $n=1$. Therefore, the reaction is first order.",
+    "difficulty": "medium",
+    "topic": "rate_constant",
+    "subtopic": "units_of_k",
+    "tags": [
+      "rate_constant",
+      "order_of_reaction",
+      "units",
+      "kinetics"
+    ],
+    "learning_objective": "Determine the order of a reaction from the units of its rate constant.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch11_mcq_012",
+    "question": "The rate of a reaction generally increases with an increase in temperature. This is primarily due to:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Decrease in activation energy",
+      "B": "Increase in the number of effective collisions",
+      "C": "Decrease in the concentration of reactants",
+      "D": "Increase in the molecularity of the reaction"
+    },
+    "correct_answer": "B",
+    "explanation": "According to collision theory, an increase in temperature increases the kinetic energy of reactant molecules. This leads to two main effects: 1) an increase in the total number of collisions, and more importantly, 2) a significant increase in the fraction of molecules possessing energy equal to or greater than the activation energy. This results in a higher number of effective collisions per unit time, thus increasing the reaction rate. Activation energy is not decreased by temperature, and molecularity is a fixed property of an elementary step.",
+    "difficulty": "medium",
+    "topic": "temperature_effect",
+    "subtopic": "collision_theory",
+    "tags": [
+      "temperature",
+      "collision_theory",
+      "effective_collisions",
+      "kinetics"
+    ],
+    "learning_objective": "Explain the effect of temperature on reaction rate based on collision theory.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch11_mcq_013",
+    "question": "What is the overall order of the reaction if the rate law is $Rate = k[A]^{1/2}[B]^2$?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$1/2$",
+      "B": "$2$",
+      "C": "$2.5$",
+      "D": "$3$"
+    },
+    "correct_answer": "C",
+    "explanation": "The overall order of a reaction is the sum of the exponents of the concentration terms in the rate law. For the given rate law $Rate = k[A]^{1/2}[B]^2$, the order with respect to A is $1/2$ and with respect to B is $2$. Therefore, the overall order is $1/2 + 2 = 2.5$.",
+    "difficulty": "easy",
+    "topic": "order_of_reaction",
+    "subtopic": "overall_order",
+    "tags": [
+      "rate_law",
+      "order_of_reaction",
+      "kinetics"
+    ],
+    "learning_objective": "Calculate the overall order of a reaction from its rate law.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "chem_xi_ch11_mcq_014",
+    "question": "The decomposition of $N_2O_5$ is a first-order reaction. If the initial concentration of $N_2O_5$ is $0.5 \\ M$ and after $100$ minutes, it is $0.1 \\ M$, what is the rate constant ($k$) for the reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$0.0161 \\ min^{-1}$",
+      "B": "$0.005 \\ min^{-1}$",
+      "C": "$0.023 \\ min^{-1}$",
+      "D": "$0.0023 \\ min^{-1}$"
+    },
+    "correct_answer": "A",
+    "explanation": "For a first-order reaction, the integrated rate law is $k = \frac{2.303}{t} \\log \frac{[A]_0}{[A]_t}$.\nGiven: $[A]_0 = 0.5 \\ M$, $[A]_t = 0.1 \\ M$, $t = 100 \\ min$.\n$k = \frac{2.303}{100 \\ min} \\log \frac{0.5 \\ M}{0.1 \\ M}$\n$k = \frac{2.303}{100} \\log 5$\n$k = \frac{2.303}{100} \times 0.6989$\n$k = 0.02303 \times 0.6989 \\approx 0.0161 \\ min^{-1}$.",
+    "difficulty": "hard",
+    "topic": "integrated_rate_laws",
+    "subtopic": "first_order_calculations",
+    "tags": [
+      "first_order",
+      "rate_constant",
+      "integrated_rate_law",
+      "numerical"
+    ],
+    "learning_objective": "Calculate the rate constant for a first-order reaction using the integrated rate law.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "chem_xi_ch11_mcq_015",
+    "question": "Which of the following statements about catalysts is INCORRECT?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "A catalyst participates in the reaction but is regenerated at the end.",
+      "B": "A catalyst changes the equilibrium constant of a reversible reaction.",
+      "C": "A catalyst provides an alternative reaction pathway with lower activation energy.",
+      "D": "A small amount of catalyst can catalyze a large amount of reactants."
+    },
+    "correct_answer": "B",
+    "explanation": "A catalyst increases the rate of both forward and reverse reactions equally, thus helping the system reach equilibrium faster. However, it does not change the position of equilibrium, meaning it does not alter the equilibrium constant ($K_c$). Options A, C, and D are correct characteristics of catalysts.",
+    "difficulty": "medium",
+    "topic": "catalysis",
+    "subtopic": "characteristics_of_catalysts",
+    "tags": [
+      "catalyst",
+      "equilibrium",
+      "kinetics"
+    ],
+    "learning_objective": "Identify the key characteristics and limitations of catalysts.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch11_mcq_016",
+    "question": "The instantaneous rate of reaction is best described as:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The rate of reaction at the beginning of the reaction.",
+      "B": "The average rate of reaction over a long period.",
+      "C": "The rate of reaction at a specific moment in time.",
+      "D": "The maximum rate achieved during the reaction."
+    },
+    "correct_answer": "C",
+    "explanation": "The instantaneous rate of reaction refers to the rate of reaction at a particular instant in time. It is determined by finding the slope of the tangent to the concentration-time curve at that specific time. The average rate is calculated over a time interval.",
+    "difficulty": "easy",
+    "topic": "rate_of_reaction",
+    "subtopic": "instantaneous_rate",
+    "tags": [
+      "rate_of_reaction",
+      "instantaneous_rate",
+      "kinetics"
+    ],
+    "learning_objective": "Define instantaneous rate of reaction.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "chem_xi_ch11_mcq_017",
+    "question": "Which of the following reactions is most likely to be an elementary reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$2NO_2 \rightarrow 2NO + O_2$",
+      "B": "$H_2 + I_2 \rightarrow 2HI$",
+      "C": "$2H_2O_2 \rightarrow 2H_2O + O_2$",
+      "D": "$CH_4 + 2O_2 \rightarrow CO_2 + 2H_2O$"
+    },
+    "correct_answer": "B",
+    "explanation": "Elementary reactions are single-step reactions. Bimolecular reactions are common elementary steps. The reaction $H_2 + I_2 \rightarrow 2HI$ is known to be an elementary bimolecular reaction. The other reactions are generally complex reactions that occur in multiple steps. For example, the decomposition of $H_2O_2$ involves free radicals, and combustion of $CH_4$ is a complex chain reaction.",
+    "difficulty": "hard",
+    "topic": "elementary_reactions",
+    "subtopic": "identification",
+    "tags": [
+      "elementary_reaction",
+      "reaction_mechanism",
+      "kinetics"
+    ],
+    "learning_objective": "Identify potential elementary reactions from a given set of chemical equations.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  }
+]

@@ -1,0 +1,562 @@
+[
+  {
+    "id": "chem_xi_ch11_mcq_001",
+    "question": "What is the unit of the rate of reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$mol \\cdot dm^{-3} \\cdot s^{-1}$",
+      "B": "$mol \\cdot dm^{-3}$",
+      "C": "$s^{-1}$",
+      "D": "$dm^3 \\cdot mol^{-1} \\cdot s^{-1}$"
+    },
+    "correct_answer": "A",
+    "explanation": "The rate of reaction is defined as the change in concentration of a reactant or product per unit time. Concentration is typically measured in $mol \\cdot dm^{-3}$ (molarity), and time in seconds ($s$). Therefore, the unit of the rate of reaction is $mol \\cdot dm^{-3} \\cdot s^{-1}$.",
+    "difficulty": "easy",
+    "topic": "rate_of_reaction",
+    "subtopic": "units_of_rate",
+    "tags": [
+      "rate_of_reaction",
+      "units",
+      "kinetics",
+      "basic_concept"
+    ],
+    "learning_objective": "Recall the definition and units of reaction rate.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch11_mcq_002",
+    "question": "Which of the following factors does NOT affect the rate of a chemical reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Temperature",
+      "B": "Concentration of reactants",
+      "C": "Pressure (for gaseous reactions)",
+      "D": "Gibbs free energy change ($\\Delta G$)"
+    },
+    "correct_answer": "D",
+    "explanation": "The rate of a chemical reaction is influenced by several factors, including temperature, concentration of reactants, surface area (for heterogeneous reactions), presence of a catalyst, and pressure (for gaseous reactions). Gibbs free energy change ($\\Delta G$) determines the spontaneity of a reaction, not its rate. A spontaneous reaction can be very slow.",
+    "difficulty": "easy",
+    "topic": "factors_affecting_rate",
+    "subtopic": "non_influencing_factors",
+    "tags": [
+      "rate_of_reaction",
+      "factors",
+      "kinetics",
+      "spontaneity"
+    ],
+    "learning_objective": "Identify factors that influence reaction rates.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "chem_xi_ch11_mcq_003",
+    "question": "For a reaction $A \rightarrow B$, if the concentration of $A$ doubles and the rate of reaction also doubles, what is the order of reaction with respect to $A$?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Zero order",
+      "B": "First order",
+      "C": "Second order",
+      "D": "Third order"
+    },
+    "correct_answer": "B",
+    "explanation": "If the rate of reaction is directly proportional to the first power of the concentration of a reactant, then the reaction is first order with respect to that reactant. In this case, doubling the concentration of $A$ doubles the rate, which indicates a first-order dependence: $Rate \\propto [A]^1$.",
+    "difficulty": "easy",
+    "topic": "order_of_reaction",
+    "subtopic": "determining_order",
+    "tags": [
+      "order_of_reaction",
+      "rate_law",
+      "kinetics",
+      "first_order"
+    ],
+    "learning_objective": "Determine the order of reaction from concentration-rate relationship.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch11_mcq_004",
+    "question": "What is the role of a catalyst in a chemical reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "To increase the activation energy",
+      "B": "To shift the equilibrium position",
+      "C": "To decrease the activation energy",
+      "D": "To change the enthalpy change ($\\Delta H$) of the reaction"
+    },
+    "correct_answer": "C",
+    "explanation": "A catalyst speeds up a chemical reaction by providing an alternative reaction pathway with a lower activation energy ($E_a$). It does not get consumed in the reaction, nor does it affect the overall enthalpy change ($\\Delta H$) or the equilibrium position; it only helps the system reach equilibrium faster.",
+    "difficulty": "easy",
+    "topic": "catalysis",
+    "subtopic": "role_of_catalyst",
+    "tags": [
+      "catalyst",
+      "activation_energy",
+      "kinetics",
+      "reaction_rate"
+    ],
+    "learning_objective": "Understand the function of a catalyst in chemical reactions.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch11_mcq_005",
+    "question": "The minimum amount of energy required for reactant molecules to transform into products is called:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Bond energy",
+      "B": "Activation energy",
+      "C": "Lattice energy",
+      "D": "Ionization energy"
+    },
+    "correct_answer": "B",
+    "explanation": "Activation energy ($E_a$) is the minimum amount of energy that must be supplied to a system to initiate a chemical reaction. It represents the energy barrier that must be overcome for reactants to form products.",
+    "difficulty": "easy",
+    "topic": "activation_energy",
+    "subtopic": "definition",
+    "tags": [
+      "activation_energy",
+      "energy_barrier",
+      "kinetics",
+      "collision_theory"
+    ],
+    "learning_objective": "Define activation energy.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch11_mcq_006",
+    "question": "For a zero-order reaction, the rate of reaction is independent of the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Temperature",
+      "B": "Concentration of reactants",
+      "C": "Presence of catalyst",
+      "D": "Surface area"
+    },
+    "correct_answer": "B",
+    "explanation": "A zero-order reaction is one whose rate does not depend on the concentration of the reactants. The rate law for a zero-order reaction is $Rate = k$, where $k$ is the rate constant. The rate is constant throughout the reaction, regardless of how much reactant is present. Temperature, catalyst, and surface area can still affect the rate constant $k$.",
+    "difficulty": "easy",
+    "topic": "order_of_reaction",
+    "subtopic": "zero_order",
+    "tags": [
+      "zero_order",
+      "rate_law",
+      "kinetics",
+      "concentration"
+    ],
+    "learning_objective": "Understand the characteristics of a zero-order reaction.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.88
+  },
+  {
+    "id": "chem_xi_ch11_mcq_007",
+    "question": "What happens to the rate of most chemical reactions when the temperature is increased?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "It decreases",
+      "B": "It increases",
+      "C": "It remains unchanged",
+      "D": "It first decreases then increases"
+    },
+    "correct_answer": "B",
+    "explanation": "Increasing the temperature generally increases the rate of most chemical reactions. This is because higher temperatures lead to more frequent and more energetic collisions between reactant molecules, increasing the number of effective collisions that can overcome the activation energy barrier.",
+    "difficulty": "easy",
+    "topic": "factors_affecting_rate",
+    "subtopic": "temperature_effect",
+    "tags": [
+      "temperature",
+      "reaction_rate",
+      "kinetics",
+      "collision_theory"
+    ],
+    "learning_objective": "Describe the effect of temperature on reaction rate.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch11_mcq_008",
+    "question": "The half-life of a first-order reaction is:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Dependent on initial concentration",
+      "B": "Independent of initial concentration",
+      "C": "Directly proportional to initial concentration",
+      "D": "Inversely proportional to initial concentration"
+    },
+    "correct_answer": "B",
+    "explanation": "For a first-order reaction, the half-life ($t_{1/2}$) is given by the formula $t_{1/2} = \frac{0.693}{k}$, where $k$ is the rate constant. As this formula shows, the half-life of a first-order reaction depends only on the rate constant and is independent of the initial concentration of the reactant.",
+    "difficulty": "easy",
+    "topic": "half_life",
+    "subtopic": "first_order_half_life",
+    "tags": [
+      "half_life",
+      "first_order",
+      "kinetics",
+      "concentration"
+    ],
+    "learning_objective": "Recall the characteristics of half-life for a first-order reaction.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch11_mcq_009",
+    "question": "Which statement is true about the molecularity of a reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "It can be fractional.",
+      "B": "It is determined experimentally.",
+      "C": "It applies to elementary reactions only.",
+      "D": "It can be zero."
+    },
+    "correct_answer": "C",
+    "explanation": "Molecularity refers to the number of reactant molecules or ions that participate in an elementary step of a reaction. It is always a whole number (1, 2, or 3, rarely higher) and applies only to elementary reactions. It cannot be fractional or zero. The order of reaction, on the other hand, is determined experimentally and can be fractional or zero.",
+    "difficulty": "easy",
+    "topic": "molecularity",
+    "subtopic": "definition_properties",
+    "tags": [
+      "molecularity",
+      "elementary_reaction",
+      "kinetics",
+      "order_of_reaction"
+    ],
+    "learning_objective": "Distinguish between molecularity and order of reaction.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.88
+  },
+  {
+    "id": "chem_xi_ch11_mcq_010",
+    "question": "The rate constant ($k$) for a reaction depends on:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Initial concentration of reactants",
+      "B": "Time of reaction",
+      "C": "Temperature",
+      "D": "Extent of reaction"
+    },
+    "correct_answer": "C",
+    "explanation": "The rate constant ($k$) is a proportionality constant in the rate law. While the rate of reaction depends on concentration, the rate constant itself is independent of concentration. It is, however, highly dependent on temperature (as described by the Arrhenius equation) and also on the nature of reactants and the presence of a catalyst.",
+    "difficulty": "easy",
+    "topic": "rate_constant",
+    "subtopic": "factors_affecting_k",
+    "tags": [
+      "rate_constant",
+      "temperature",
+      "kinetics",
+      "Arrhenius_equation"
+    ],
+    "learning_objective": "Identify factors influencing the rate constant.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch11_mcq_011",
+    "question": "Which of the following is an example of a homogeneous catalyst?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Iron in Haber process",
+      "B": "$V_2O_5$ in contact process",
+      "C": "$H_2SO_4$ in esterification",
+      "D": "Nickel in hydrogenation of oils"
+    },
+    "correct_answer": "C",
+    "explanation": "A homogeneous catalyst is in the same phase as the reactants. In esterification, sulfuric acid ($H_2SO_4$) acts as a catalyst and is in the liquid phase, just like the reactants (alcohol and carboxylic acid). Iron, $V_2O_5$, and Nickel are solid catalysts used in gaseous or liquid reactions, making them heterogeneous catalysts.",
+    "difficulty": "easy",
+    "topic": "catalysis",
+    "subtopic": "types_of_catalysis",
+    "tags": [
+      "catalyst",
+      "homogeneous_catalysis",
+      "heterogeneous_catalysis",
+      "examples"
+    ],
+    "learning_objective": "Differentiate between homogeneous and heterogeneous catalysis with examples.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "chem_xi_ch11_mcq_012",
+    "question": "The instantaneous rate of reaction is determined by:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The slope of the tangent to the concentration-time curve at a specific time.",
+      "B": "The total change in concentration divided by the total time.",
+      "C": "The initial concentration of reactants.",
+      "D": "The final concentration of products."
+    },
+    "correct_answer": "A",
+    "explanation": "The instantaneous rate of reaction is the rate of reaction at a particular instant in time. On a concentration-time graph, this is represented by the slope of the tangent drawn to the curve at that specific time. The total change in concentration divided by total time gives the average rate.",
+    "difficulty": "easy",
+    "topic": "rate_of_reaction",
+    "subtopic": "instantaneous_rate",
+    "tags": [
+      "instantaneous_rate",
+      "average_rate",
+      "kinetics",
+      "graphical_analysis"
+    ],
+    "learning_objective": "Define and determine instantaneous reaction rate.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch11_mcq_013",
+    "question": "For a reaction $2A + B \rightarrow C$, if the rate law is $Rate = k[A]^2[B]^0$, what is the overall order of the reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Zero",
+      "B": "First",
+      "C": "Second",
+      "D": "Third"
+    },
+    "correct_answer": "C",
+    "explanation": "The overall order of a reaction is the sum of the exponents of the concentration terms in the rate law. For the given rate law $Rate = k[A]^2[B]^0$, the order with respect to $A$ is 2, and with respect to $B$ is 0. So, the overall order is $2 + 0 = 2$.",
+    "difficulty": "easy",
+    "topic": "order_of_reaction",
+    "subtopic": "overall_order",
+    "tags": [
+      "order_of_reaction",
+      "rate_law",
+      "kinetics",
+      "overall_order"
+    ],
+    "learning_objective": "Calculate the overall order of reaction from the rate law.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch11_mcq_014",
+    "question": "What is the effect of increasing the surface area of a solid reactant on the reaction rate?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Decreases the rate",
+      "B": "Increases the rate",
+      "C": "No effect on the rate",
+      "D": "Only affects gaseous reactions"
+    },
+    "correct_answer": "B",
+    "explanation": "For reactions involving solid reactants, increasing the surface area (e.g., by grinding a solid into a powder) increases the number of reactant particles exposed to other reactants. This leads to more frequent collisions and thus an increased reaction rate.",
+    "difficulty": "easy",
+    "topic": "factors_affecting_rate",
+    "subtopic": "surface_area_effect",
+    "tags": [
+      "surface_area",
+      "reaction_rate",
+      "kinetics",
+      "heterogeneous_reactions"
+    ],
+    "learning_objective": "Explain the effect of surface area on reaction rate.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "chem_xi_ch11_mcq_015",
+    "question": "The slowest step in a reaction mechanism is called the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Elementary step",
+      "B": "Rate-determining step",
+      "C": "Transition state",
+      "D": "Intermediate step"
+    },
+    "correct_answer": "B",
+    "explanation": "In a multi-step reaction mechanism, the overall rate of the reaction is limited by the rate of the slowest elementary step. This slowest step is known as the rate-determining step (or rate-limiting step) because it dictates how fast the overall reaction can proceed.",
+    "difficulty": "easy",
+    "topic": "reaction_mechanisms",
+    "subtopic": "rate_determining_step",
+    "tags": [
+      "reaction_mechanism",
+      "rate_determining_step",
+      "kinetics",
+      "elementary_step"
+    ],
+    "learning_objective": "Identify the rate-determining step in a reaction mechanism.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch11_mcq_016",
+    "question": "Which of the following units is NOT suitable for a rate constant ($k$) of a first-order reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$s^{-1}$",
+      "B": "$min^{-1}$",
+      "C": "$mol \\cdot dm^{-3} \\cdot s^{-1}$",
+      "D": "$year^{-1}$"
+    },
+    "correct_answer": "C",
+    "explanation": "For a first-order reaction, the rate law is $Rate = k[A]$. Since $Rate$ has units of $mol \\cdot dm^{-3} \\cdot s^{-1}$ and $[A]$ has units of $mol \\cdot dm^{-3}$, the units of $k$ must be $s^{-1}$ (or $min^{-1}$, $year^{-1}$, etc., depending on the time unit). $mol \\cdot dm^{-3} \\cdot s^{-1}$ is the unit for the rate of reaction, not for the rate constant of a first-order reaction.",
+    "difficulty": "easy",
+    "topic": "rate_constant",
+    "subtopic": "units_of_k",
+    "tags": [
+      "rate_constant",
+      "units",
+      "first_order",
+      "kinetics"
+    ],
+    "learning_objective": "Determine the units of the rate constant for different reaction orders.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch11_mcq_017",
+    "question": "According to collision theory, for a reaction to occur, reactant molecules must:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Collide with any orientation.",
+      "B": "Collide with energy less than activation energy.",
+      "C": "Collide with proper orientation and sufficient energy.",
+      "D": "Avoid collision to form products."
+    },
+    "correct_answer": "C",
+    "explanation": "Collision theory states that for a chemical reaction to occur, reactant molecules must collide with each other. These collisions must be 'effective', meaning they must have sufficient energy (equal to or greater than the activation energy) and the correct orientation for bonds to break and form.",
+    "difficulty": "easy",
+    "topic": "collision_theory",
+    "subtopic": "effective_collisions",
+    "tags": [
+      "collision_theory",
+      "activation_energy",
+      "orientation",
+      "kinetics"
+    ],
+    "learning_objective": "Explain the basic principles of collision theory.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch11_mcq_018",
+    "question": "The term 'molecularity' is applicable to:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Overall complex reactions",
+      "B": "Elementary reactions only",
+      "C": "Reactions with fractional order",
+      "D": "Reactions with zero order"
+    },
+    "correct_answer": "B",
+    "explanation": "Molecularity is defined for an elementary reaction (a single step in a reaction mechanism) and refers to the number of reactant species involved in that step. It is not defined for overall complex reactions, which consist of multiple elementary steps. Order of reaction, however, applies to both elementary and complex reactions and can be fractional or zero.",
+    "difficulty": "easy",
+    "topic": "molecularity",
+    "subtopic": "applicability",
+    "tags": [
+      "molecularity",
+      "elementary_reaction",
+      "kinetics",
+      "complex_reaction"
+    ],
+    "learning_objective": "Understand the scope of molecularity.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.88
+  },
+  {
+    "id": "chem_xi_ch11_mcq_019",
+    "question": "Which of the following statements about the rate constant ($k$) is true?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Its value changes with time as the reaction proceeds.",
+      "B": "It is independent of temperature.",
+      "C": "It is specific for a given reaction at a particular temperature.",
+      "D": "Its units are always $s^{-1}$."
+    },
+    "correct_answer": "C",
+    "explanation": "The rate constant ($k$) is a constant for a specific reaction at a given temperature. Its value does not change with time or reactant concentration during the course of the reaction. It is highly dependent on temperature (Arrhenius equation). Its units vary depending on the overall order of the reaction.",
+    "difficulty": "easy",
+    "topic": "rate_constant",
+    "subtopic": "properties_of_k",
+    "tags": [
+      "rate_constant",
+      "temperature",
+      "kinetics",
+      "reaction_specific"
+    ],
+    "learning_objective": "Describe the properties of the rate constant.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch11_mcq_020",
+    "question": "The substance that is formed in one elementary step and consumed in a subsequent elementary step is called a(n):",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Catalyst",
+      "B": "Reactant",
+      "C": "Intermediate",
+      "D": "Product"
+    },
+    "correct_answer": "C",
+    "explanation": "A reaction intermediate is a species that is produced in an early step of a reaction mechanism and then consumed in a later step. It does not appear in the overall balanced chemical equation. A catalyst is also consumed and regenerated, but it participates in the reaction without being permanently consumed.",
+    "difficulty": "easy",
+    "topic": "reaction_mechanisms",
+    "subtopic": "reaction_intermediate",
+    "tags": [
+      "reaction_intermediate",
+      "reaction_mechanism",
+      "kinetics",
+      "catalyst"
+    ],
+    "learning_objective": "Define and identify reaction intermediates.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

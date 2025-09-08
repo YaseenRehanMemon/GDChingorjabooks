@@ -1,0 +1,484 @@
+[
+  {
+    "id": "physics_xii_ch19_mcq_001",
+    "question": "Which phenomenon is described by Faraday's Law of Electromagnetic Induction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Production of electric current by chemical reactions",
+      "B": "Production of magnetic field by electric current",
+      "C": "Production of electric current by changing magnetic flux",
+      "D": "Production of heat by electric current"
+    },
+    "correct_answer": "C",
+    "explanation": "Faraday's Law of Electromagnetic Induction states that an electromotive force (EMF) is induced in a conductor whenever there is a change in the magnetic flux linked with the conductor. This induced EMF can drive an electric current if the circuit is closed. Option A describes a battery, option B describes Oersted's discovery, and option D describes Joule heating.",
+    "difficulty": "easy",
+    "topic": "faradays_law",
+    "subtopic": "basic_concept",
+    "tags": [
+      "faraday's law",
+      "electromagnetic induction",
+      "induced emf",
+      "magnetic flux"
+    ],
+    "learning_objective": "Define Faraday's Law of Electromagnetic Induction.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch19_mcq_002",
+    "question": "What is the SI unit of magnetic flux?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Tesla (T)",
+      "B": "Weber (Wb)",
+      "C": "Henry (H)",
+      "D": "Ampere (A)"
+    },
+    "correct_answer": "B",
+    "explanation": "The SI unit of magnetic flux ($\\Phi_B$) is the Weber (Wb). One Weber is equal to one Tesla-meter squared ($1 \text{ Wb} = 1 \text{ T} \\cdot \text{m}^2$). Tesla is the unit of magnetic field strength, Henry is the unit of inductance, and Ampere is the unit of electric current.",
+    "difficulty": "easy",
+    "topic": "magnetic_flux",
+    "subtopic": "units",
+    "tags": [
+      "magnetic flux",
+      "units",
+      "weber",
+      "tesla"
+    ],
+    "learning_objective": "Recall the SI unit of magnetic flux.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch19_mcq_003",
+    "question": "According to Lenz's Law, the direction of the induced current is such that it:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Aids the change in magnetic flux",
+      "B": "Opposes the change in magnetic flux",
+      "C": "Is always perpendicular to the magnetic field",
+      "D": "Is always parallel to the magnetic field"
+    },
+    "correct_answer": "B",
+    "explanation": "Lenz's Law states that the direction of the induced current (or EMF) is always such that it opposes the change in magnetic flux that produced it. This is a manifestation of the conservation of energy. If it aided the change, it would lead to an uncontrolled increase in energy.",
+    "difficulty": "easy",
+    "topic": "lenzs_law",
+    "subtopic": "direction_of_induced_current",
+    "tags": [
+      "lenz's law",
+      "induced current",
+      "magnetic flux",
+      "conservation of energy"
+    ],
+    "learning_objective": "State Lenz's Law.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch19_mcq_004",
+    "question": "A straight conductor of length `$L$` moves with a velocity `$v$` perpendicular to a uniform magnetic field `$B$`. The induced motional EMF across its ends is given by:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$\\mathcal{E} = B L / v$",
+      "B": "$\\mathcal{E} = B v / L$",
+      "C": "$\\mathcal{E} = B L v$",
+      "D": "$\\mathcal{E} = B L v^2$"
+    },
+    "correct_answer": "C",
+    "explanation": "The formula for motional EMF induced in a straight conductor of length `$L$` moving with velocity `$v$` perpendicular to a uniform magnetic field `$B$` is given by $\\mathcal{E} = B L v$. This formula is derived from the magnetic force on charges within the conductor.",
+    "difficulty": "easy",
+    "topic": "motional_emf",
+    "subtopic": "formula",
+    "tags": [
+      "motional emf",
+      "magnetic field",
+      "velocity",
+      "conductor"
+    ],
+    "learning_objective": "Recall the formula for motional EMF.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch19_mcq_005",
+    "question": "What is self-inductance?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The property of a coil to induce EMF in a neighboring coil",
+      "B": "The property of a coil to oppose the flow of current through it",
+      "C": "The property of a coil to induce an EMF in itself due to a change in current in the same coil",
+      "D": "The property of a coil to store electric charge"
+    },
+    "correct_answer": "C",
+    "explanation": "Self-inductance is the property of a coil or circuit element to induce an electromotive force (EMF) in itself due to a change in the current flowing through the same coil. This induced EMF opposes the change in current, as per Lenz's Law. Option A describes mutual inductance, option B is a general characteristic of resistance, and option D describes capacitance.",
+    "difficulty": "easy",
+    "topic": "self_induction",
+    "subtopic": "definition",
+    "tags": [
+      "self-inductance",
+      "induced emf",
+      "current change",
+      "coil"
+    ],
+    "learning_objective": "Define self-inductance.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch19_mcq_006",
+    "question": "The SI unit of self-inductance is:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Farad (F)",
+      "B": "Ohm ($\\Omega$)",
+      "C": "Henry (H)",
+      "D": "Tesla (T)"
+    },
+    "correct_answer": "C",
+    "explanation": "The SI unit of self-inductance (L) is the Henry (H). One Henry is defined as the inductance of a circuit in which an EMF of one volt is induced when the current in the circuit is changing at the rate of one ampere per second ($1 \text{ H} = 1 \text{ V} \\cdot \text{s/A}$). Farad is the unit of capacitance, Ohm is the unit of resistance, and Tesla is the unit of magnetic field strength.",
+    "difficulty": "easy",
+    "topic": "self_induction",
+    "subtopic": "units",
+    "tags": [
+      "self-inductance",
+      "units",
+      "henry"
+    ],
+    "learning_objective": "Recall the SI unit of self-inductance.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch19_mcq_007",
+    "question": "Which device converts mechanical energy into electrical energy based on electromagnetic induction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Electric Motor",
+      "B": "Transformer",
+      "C": "AC Generator",
+      "D": "Resistor"
+    },
+    "correct_answer": "C",
+    "explanation": "An AC generator (or dynamo) works on the principle of electromagnetic induction. It converts mechanical energy (e.g., from rotating a coil) into electrical energy by inducing an EMF due to the changing magnetic flux through the coil. An electric motor converts electrical energy to mechanical energy. A transformer changes AC voltage levels. A resistor dissipates electrical energy as heat.",
+    "difficulty": "easy",
+    "topic": "ac_generator",
+    "subtopic": "principle",
+    "tags": [
+      "ac generator",
+      "electromagnetic induction",
+      "energy conversion",
+      "mechanical energy",
+      "electrical energy"
+    ],
+    "learning_objective": "Identify devices based on electromagnetic induction.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch19_mcq_008",
+    "question": "A step-up transformer increases:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Current",
+      "B": "Power",
+      "C": "Voltage",
+      "D": "Frequency"
+    },
+    "correct_answer": "C",
+    "explanation": "A step-up transformer is designed to increase the output voltage (secondary voltage) compared to the input voltage (primary voltage). To conserve power (assuming an ideal transformer), the current in the secondary coil will decrease proportionally. Power and frequency remain essentially unchanged in an ideal transformer.",
+    "difficulty": "easy",
+    "topic": "transformers",
+    "subtopic": "types",
+    "tags": [
+      "transformer",
+      "step-up",
+      "voltage",
+      "current",
+      "power"
+    ],
+    "learning_objective": "Understand the function of a step-up transformer.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch19_mcq_009",
+    "question": "What are eddy currents?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Currents flowing in a straight wire",
+      "B": "Induced circular currents in bulk conductors due to changing magnetic flux",
+      "C": "Currents flowing in a semiconductor",
+      "D": "Currents flowing in a vacuum"
+    },
+    "correct_answer": "B",
+    "explanation": "Eddy currents are circulating currents induced in bulk conductors (like metal plates or cores) when they are exposed to a changing magnetic flux. These currents flow in closed loops within the conductor, resembling eddies in water, hence the name. They are a consequence of Faraday's Law.",
+    "difficulty": "easy",
+    "topic": "eddy_currents",
+    "subtopic": "definition",
+    "tags": [
+      "eddy currents",
+      "induced current",
+      "magnetic flux",
+      "conductors"
+    ],
+    "learning_objective": "Define eddy currents.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch19_mcq_010",
+    "question": "The negative sign in Faraday's Law ($\\mathcal{E} = -N \frac{\\Delta \\Phi_B}{\\Delta t}$) represents:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The direction of the magnetic field",
+      "B": "The magnitude of the induced EMF",
+      "C": "Lenz's Law, indicating opposition to the change in flux",
+      "D": "The type of material used in the coil"
+    },
+    "correct_answer": "C",
+    "explanation": "The negative sign in Faraday's Law is a mathematical representation of Lenz's Law. It signifies that the induced electromotive force (EMF) and the resulting induced current will always act in a direction that opposes the change in magnetic flux that produced it. This ensures the conservation of energy.",
+    "difficulty": "easy",
+    "topic": "faradays_law",
+    "subtopic": "lenzs_law_connection",
+    "tags": [
+      "faraday's law",
+      "lenz's law",
+      "negative sign",
+      "induced emf",
+      "magnetic flux"
+    ],
+    "learning_objective": "Interpret the negative sign in Faraday's Law.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch19_mcq_011",
+    "question": "Which of the following factors does NOT affect the magnitude of the induced EMF in a coil?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Number of turns in the coil",
+      "B": "Rate of change of magnetic flux",
+      "C": "Resistance of the coil",
+      "D": "Area of the coil"
+    },
+    "correct_answer": "C",
+    "explanation": "According to Faraday's Law, $\\mathcal{E} = -N \frac{\\Delta \\Phi_B}{\\Delta t}$. The magnitude of the induced EMF depends on the number of turns ($N$) and the rate of change of magnetic flux ($\frac{\\Delta \\Phi_B}{\\Delta t}$). Magnetic flux itself depends on the magnetic field strength and the area of the coil. The resistance of the coil affects the induced current ($I = \\mathcal{E}/R$) but not the induced EMF itself.",
+    "difficulty": "medium",
+    "topic": "faradays_law",
+    "subtopic": "factors_affecting_emf",
+    "tags": [
+      "faraday's law",
+      "induced emf",
+      "magnetic flux",
+      "coil turns",
+      "resistance"
+    ],
+    "learning_objective": "Analyze factors affecting induced EMF.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "physics_xii_ch19_mcq_012",
+    "question": "A coil of 100 turns has a magnetic flux of `$0.05 \text{ Wb}$` passing through it. If the flux changes to `$0.01 \text{ Wb}$` in `$0.2 \text{ s}$`, what is the magnitude of the induced EMF?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$20 \text{ V}$",
+      "B": "$10 \text{ V}$",
+      "C": "$5 \text{ V}$",
+      "D": "$4 \text{ V}$"
+    },
+    "correct_answer": "A",
+    "explanation": "Using Faraday's Law, the magnitude of the induced EMF is given by $\\mathcal{E} = N \\left| \frac{\\Delta \\Phi_B}{\\Delta t} \right|$.\nGiven: $N = 100$ turns, $\\Phi_{B,initial} = 0.05 \text{ Wb}$, $\\Phi_{B,final} = 0.01 \text{ Wb}$, $\\Delta t = 0.2 \text{ s}$.\n$\\Delta \\Phi_B = \\Phi_{B,final} - \\Phi_{B,initial} = 0.01 \text{ Wb} - 0.05 \text{ Wb} = -0.04 \text{ Wb}$.\n$\\mathcal{E} = 100 \times \\left| \frac{-0.04 \text{ Wb}}{0.2 \text{ s}} \right| = 100 \times \frac{0.04}{0.2} \text{ V} = 100 \times 0.2 \text{ V} = 20 \text{ V}$.",
+    "difficulty": "medium",
+    "topic": "faradays_law",
+    "subtopic": "numerical_calculation",
+    "tags": [
+      "faraday's law",
+      "induced emf",
+      "magnetic flux",
+      "numerical",
+      "coil turns"
+    ],
+    "learning_objective": "Calculate induced EMF using Faraday's Law.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch19_mcq_013",
+    "question": "A bar magnet is moved rapidly towards a coil. The induced current in the coil will:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Produce a magnetic field that attracts the magnet",
+      "B": "Produce a magnetic field that repels the magnet",
+      "C": "Not produce any magnetic field",
+      "D": "Produce a magnetic field perpendicular to the magnet's motion"
+    },
+    "correct_answer": "B",
+    "explanation": "According to Lenz's Law, the induced current will flow in a direction that opposes the change in magnetic flux. As the magnet moves towards the coil, the magnetic flux through the coil increases. To oppose this increase, the induced current will create a magnetic field that repels the approaching magnet. This means the coil will act like a magnet with a like pole facing the approaching pole of the bar magnet.",
+    "difficulty": "medium",
+    "topic": "lenzs_law",
+    "subtopic": "application",
+    "tags": [
+      "lenz's law",
+      "induced current",
+      "magnetic field",
+      "bar magnet",
+      "coil"
+    ],
+    "learning_objective": "Apply Lenz's Law to determine the direction of induced current.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch19_mcq_014",
+    "question": "A metallic rod of length `$1.5 \text{ m}$` is moved at a speed of `$10 \text{ m/s}$` perpendicular to a uniform magnetic field of `$0.5 \text{ T}$`. What is the motional EMF induced across its ends?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$7.5 \text{ V}$",
+      "B": "$0.75 \text{ V}$",
+      "C": "$75 \text{ V}$",
+      "D": "$1.5 \text{ V}$"
+    },
+    "correct_answer": "A",
+    "explanation": "The motional EMF is given by the formula $\\mathcal{E} = B L v$, where `$B$` is the magnetic field strength, `$L$` is the length of the conductor, and `$v$` is its velocity, assuming they are mutually perpendicular.\nGiven: $B = 0.5 \text{ T}$, $L = 1.5 \text{ m}$, $v = 10 \text{ m/s}$.\n$\\mathcal{E} = (0.5 \text{ T}) \times (1.5 \text{ m}) \times (10 \text{ m/s}) = 7.5 \text{ V}$.",
+    "difficulty": "medium",
+    "topic": "motional_emf",
+    "subtopic": "numerical_calculation",
+    "tags": [
+      "motional emf",
+      "magnetic field",
+      "velocity",
+      "conductor",
+      "numerical"
+    ],
+    "learning_objective": "Calculate motional EMF.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch19_mcq_015",
+    "question": "An inductor of `$0.2 \text{ H}$` has a current changing at a rate of `$5 \text{ A/s}$`. What is the magnitude of the self-induced EMF?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$1 \text{ V}$",
+      "B": "$0.1 \text{ V}$",
+      "C": "$2.5 \text{ V}$",
+      "D": "$10 \text{ V}$"
+    },
+    "correct_answer": "A",
+    "explanation": "The magnitude of the self-induced EMF ($\\mathcal{E}_L$) in an inductor is given by the formula $\\mathcal{E}_L = L \\left| \frac{\\Delta I}{\\Delta t} \right|$, where `$L$` is the self-inductance and $\frac{\\Delta I}{\\Delta t}$ is the rate of change of current.\nGiven: $L = 0.2 \text{ H}$, $\frac{\\Delta I}{\\Delta t} = 5 \text{ A/s}$.\n$\\mathcal{E}_L = (0.2 \text{ H}) \times (5 \text{ A/s}) = 1 \text{ V}$.",
+    "difficulty": "medium",
+    "topic": "self_induction",
+    "subtopic": "numerical_calculation",
+    "tags": [
+      "self-inductance",
+      "induced emf",
+      "current change",
+      "numerical"
+    ],
+    "learning_objective": "Calculate self-induced EMF.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch19_mcq_016",
+    "question": "The energy stored in an inductor of inductance `$L$` carrying a current `$I$` is given by:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$U = LI$",
+      "B": "$U = \frac{1}{2}LI^2$",
+      "C": "$U = \frac{1}{2}L^2I$",
+      "D": "$U = L/I$"
+    },
+    "correct_answer": "B",
+    "explanation": "The energy stored in the magnetic field of an inductor is given by the formula $U = \frac{1}{2}LI^2$, where `$L$` is the self-inductance and `$I$` is the current flowing through it. This is analogous to the energy stored in a capacitor, $U = \frac{1}{2}CV^2$.",
+    "difficulty": "medium",
+    "topic": "self_induction",
+    "subtopic": "energy_storage",
+    "tags": [
+      "self-inductance",
+      "energy storage",
+      "inductor",
+      "current"
+    ],
+    "learning_objective": "Recall the formula for energy stored in an inductor.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "physics_xii_ch19_mcq_017",
+    "question": "In an AC generator, the function of slip rings is to:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Reverse the direction of current every half cycle",
+      "B": "Maintain a constant magnetic field",
+      "C": "Connect the rotating coil to the external circuit",
+      "D": "Increase the speed of rotation"
+    },
+    "correct_answer": "C",
+    "explanation": "In an AC generator, slip rings are used to connect the rotating armature coil to the stationary external circuit (load) through brushes. They allow the continuous transfer of the alternating current generated in the coil to the external circuit without reversing its direction. Commutators (split rings) are used in DC generators to reverse the current direction every half cycle.",
+    "difficulty": "medium",
+    "topic": "ac_generator",
+    "subtopic": "components",
+    "tags": [
+      "ac generator",
+      "slip rings",
+      "components",
+      "electrical circuit"
+    ],
+    "learning_objective": "Identify the function of slip rings in an AC generator.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_19",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  }
+]

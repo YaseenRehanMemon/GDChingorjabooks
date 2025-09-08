@@ -1,0 +1,443 @@
+[
+  {
+    "id": "chem_xi_ch6_mcq_001",
+    "question": "Which of the following is a state function?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Heat",
+      "B": "Work",
+      "C": "Internal Energy",
+      "D": "Path"
+    },
+    "correct_answer": "C",
+    "explanation": "A state function is a property of a system that depends only on the current state of the system, not on the path taken to reach that state. Internal energy ($\\Delta U$), enthalpy ($\\Delta H$), entropy ($\\Delta S$), and Gibbs free energy ($\\Delta G$) are state functions. Heat ($q$) and work ($w$) are path functions.",
+    "difficulty": "easy",
+    "topic": "thermodynamic_basics",
+    "subtopic": "state_functions",
+    "tags": [
+      "state_function",
+      "internal_energy",
+      "thermodynamics"
+    ],
+    "learning_objective": "Differentiate between state functions and path functions.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_6",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch6_mcq_002",
+    "question": "For an exothermic reaction, the enthalpy change ($\\Delta H$) is:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Positive",
+      "B": "Negative",
+      "C": "Zero",
+      "D": "Undefined"
+    },
+    "correct_answer": "B",
+    "explanation": "An exothermic reaction releases heat to the surroundings. By convention, when heat is released from the system, the enthalpy change ($\\Delta H$) is negative. For endothermic reactions, heat is absorbed, and $\\Delta H$ is positive.",
+    "difficulty": "easy",
+    "topic": "enthalpy",
+    "subtopic": "exothermic_endothermic",
+    "tags": [
+      "enthalpy",
+      "exothermic",
+      "endothermic",
+      "heat_change"
+    ],
+    "learning_objective": "Define and identify exothermic reactions based on enthalpy change.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_6",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch6_mcq_003",
+    "question": "The First Law of Thermodynamics is essentially a statement of:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Conservation of mass",
+      "B": "Conservation of energy",
+      "C": "Conservation of momentum",
+      "D": "Conservation of entropy"
+    },
+    "correct_answer": "B",
+    "explanation": "The First Law of Thermodynamics states that energy cannot be created or destroyed, only transferred or changed from one form to another. It is also expressed as $\\Delta U = q + w$, where $\\Delta U$ is the change in internal energy, $q$ is heat, and $w$ is work.",
+    "difficulty": "easy",
+    "topic": "first_law_thermodynamics",
+    "subtopic": "conservation_of_energy",
+    "tags": [
+      "first_law",
+      "thermodynamics",
+      "conservation_of_energy"
+    ],
+    "learning_objective": "State the First Law of Thermodynamics.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_6",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch6_mcq_004",
+    "question": "What is the standard enthalpy of formation ($\\Delta H_f^\\circ$) for an element in its most stable standard state?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Positive",
+      "B": "Negative",
+      "C": "Zero",
+      "D": "Depends on temperature"
+    },
+    "correct_answer": "C",
+    "explanation": "By definition, the standard enthalpy of formation ($\\Delta H_f^\\circ$) of an element in its most stable standard state (e.g., $O_2(g)$, $C(graphite)$, $H_2(g)$) is zero. This serves as a reference point for calculating enthalpy changes of compounds.",
+    "difficulty": "easy",
+    "topic": "enthalpy_of_formation",
+    "subtopic": "standard_state",
+    "tags": [
+      "enthalpy_of_formation",
+      "standard_state",
+      "elements"
+    ],
+    "learning_objective": "Recall the standard enthalpy of formation for elements.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_6",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch6_mcq_005",
+    "question": "Which type of system allows exchange of both energy and matter with its surroundings?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Closed system",
+      "B": "Isolated system",
+      "C": "Open system",
+      "D": "Adiabatic system"
+    },
+    "correct_answer": "C",
+    "explanation": "An open system can exchange both energy (heat and work) and matter with its surroundings. A closed system can exchange energy but not matter. An isolated system cannot exchange either energy or matter.",
+    "difficulty": "easy",
+    "topic": "thermodynamic_systems",
+    "subtopic": "types_of_systems",
+    "tags": [
+      "open_system",
+      "closed_system",
+      "isolated_system",
+      "thermodynamics"
+    ],
+    "learning_objective": "Distinguish between different types of thermodynamic systems.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_6",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch6_mcq_006",
+    "question": "The unit of enthalpy change ($\\Delta H$) is typically:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Joules (J)",
+      "B": "Joules per mole (J/mol)",
+      "C": "Kilograms (kg)",
+      "D": "Kelvin (K)"
+    },
+    "correct_answer": "B",
+    "explanation": "Enthalpy change ($\\Delta H$) is an extensive property, meaning it depends on the amount of substance. Therefore, it is typically expressed in units of energy per mole, such as Joules per mole ($J/mol$) or Kilojoules per mole ($kJ/mol$). While Joules (J) is a unit of energy, $\\Delta H$ for a reaction is usually normalized per mole of reactant or product.",
+    "difficulty": "easy",
+    "topic": "enthalpy",
+    "subtopic": "units",
+    "tags": [
+      "enthalpy",
+      "units",
+      "thermodynamics"
+    ],
+    "learning_objective": "Identify the correct units for enthalpy change.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_6",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "chem_xi_ch6_mcq_007",
+    "question": "Which of the following processes is endothermic?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Combustion of methane",
+      "B": "Neutralization of an acid by a base",
+      "C": "Melting of ice",
+      "D": "Condensation of steam"
+    },
+    "correct_answer": "C",
+    "explanation": "An endothermic process absorbs heat from the surroundings. Melting of ice requires energy input (heat) to break the intermolecular forces, making it an endothermic process. Combustion, neutralization, and condensation are all exothermic processes, releasing heat.",
+    "difficulty": "easy",
+    "topic": "enthalpy",
+    "subtopic": "endothermic_processes",
+    "tags": [
+      "endothermic",
+      "exothermic",
+      "phase_change",
+      "enthalpy"
+    ],
+    "learning_objective": "Identify common endothermic processes.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_6",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch6_mcq_008",
+    "question": "According to the First Law of Thermodynamics, for an isolated system, the internal energy ($\\Delta U$) is:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Always positive",
+      "B": "Always negative",
+      "C": "Always zero",
+      "D": "Can be positive or negative"
+    },
+    "correct_answer": "C",
+    "explanation": "For an isolated system, there is no exchange of heat ($q=0$) or work ($w=0$) with the surroundings. According to the First Law, $\\Delta U = q + w$. Therefore, for an isolated system, $\\Delta U = 0 + 0 = 0$. The internal energy of an isolated system remains constant.",
+    "difficulty": "easy",
+    "topic": "first_law_thermodynamics",
+    "subtopic": "isolated_system",
+    "tags": [
+      "first_law",
+      "isolated_system",
+      "internal_energy"
+    ],
+    "learning_objective": "Apply the First Law of Thermodynamics to an isolated system.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_6",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch6_mcq_009",
+    "question": "The term 'standard conditions' in thermochemistry usually refers to a temperature of:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$0^\\circ C$",
+      "B": "$25^\\circ C$",
+      "C": "$100^\\circ C$",
+      "D": "$273 K$"
+    },
+    "correct_answer": "B",
+    "explanation": "Standard conditions in thermochemistry are typically defined as $25^\\circ C$ (or $298.15 K$) and $1$ atmosphere ($1 atm$) or $1$ bar pressure for gases, and $1 M$ concentration for solutions. Note that $0^\\circ C$ ($273 K$) is standard temperature and pressure (STP) for gas laws, which is different.",
+    "difficulty": "easy",
+    "topic": "thermodynamic_basics",
+    "subtopic": "standard_conditions",
+    "tags": [
+      "standard_conditions",
+      "temperature",
+      "thermochemistry"
+    ],
+    "learning_objective": "Recall the standard temperature for thermochemical calculations.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_6",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.8
+  },
+  {
+    "id": "chem_xi_ch6_mcq_010",
+    "question": "Hess's Law states that the total enthalpy change for a reaction is independent of the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Initial and final states",
+      "B": "Number of steps in the reaction",
+      "C": "Temperature of the reaction",
+      "D": "Pressure of the reaction"
+    },
+    "correct_answer": "B",
+    "explanation": "Hess's Law of Constant Heat Summation states that if a reaction takes place in several steps, then its standard enthalpy of reaction ($\\Delta H^\\circ$) is the sum of the standard enthalpies of the intermediate reactions. This is because enthalpy is a state function, meaning the overall change depends only on the initial and final states, not the pathway or number of steps.",
+    "difficulty": "easy",
+    "topic": "hess_law",
+    "subtopic": "principle",
+    "tags": [
+      "hess_law",
+      "enthalpy_change",
+      "state_function"
+    ],
+    "learning_objective": "Understand the principle of Hess's Law.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_6",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch6_mcq_011",
+    "question": "Which of the following statements is true for a spontaneous process?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$\\Delta G > 0$",
+      "B": "$\\Delta G < 0$",
+      "C": "$\\Delta G = 0$",
+      "D": "$\\Delta H > 0$"
+    },
+    "correct_answer": "B",
+    "explanation": "For a process to be spontaneous at constant temperature and pressure, the change in Gibbs free energy ($\\Delta G$) must be negative ($\\Delta G < 0$). If $\\Delta G > 0$, the process is non-spontaneous (the reverse process is spontaneous). If $\\Delta G = 0$, the system is at equilibrium.",
+    "difficulty": "easy",
+    "topic": "gibbs_free_energy",
+    "subtopic": "spontaneity_criteria",
+    "tags": [
+      "spontaneity",
+      "gibbs_free_energy",
+      "thermodynamics"
+    ],
+    "learning_objective": "Relate Gibbs free energy to the spontaneity of a process.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_6",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch6_mcq_012",
+    "question": "The enthalpy of neutralization is always:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Positive",
+      "B": "Negative",
+      "C": "Zero",
+      "D": "Dependent on the acid and base"
+    },
+    "correct_answer": "B",
+    "explanation": "Neutralization reactions, especially between strong acids and strong bases, are highly exothermic, meaning they release heat. Therefore, the enthalpy of neutralization ($\\Delta H_{neut}$) is always negative. For strong acid-strong base reactions, it's approximately $-57.3 kJ/mol$.",
+    "difficulty": "easy",
+    "topic": "enthalpy_of_neutralization",
+    "subtopic": "exothermic_nature",
+    "tags": [
+      "enthalpy_of_neutralization",
+      "exothermic",
+      "acid_base"
+    ],
+    "learning_objective": "Understand the nature of enthalpy of neutralization.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_6",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch6_mcq_013",
+    "question": "What is the relationship between $\\Delta U$ and $\\Delta H$ for a reaction occurring at constant pressure?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$\\Delta H = \\Delta U - P\\Delta V$",
+      "B": "$\\Delta H = \\Delta U + P\\Delta V$",
+      "C": "$\\Delta H = \\Delta U$",
+      "D": "$\\Delta U = \\Delta H + P\\Delta V$"
+    },
+    "correct_answer": "B",
+    "explanation": "Enthalpy ($H$) is defined as $H = U + PV$. For a change at constant pressure, the change in enthalpy ($\\Delta H$) is given by $\\Delta H = \\Delta U + P\\Delta V$. This equation relates the heat absorbed or released at constant pressure ($\\Delta H$) to the change in internal energy ($\\Delta U$) and the work done by or on the system ($P\\Delta V$).",
+    "difficulty": "medium",
+    "topic": "enthalpy",
+    "subtopic": "relationship_with_internal_energy",
+    "tags": [
+      "enthalpy",
+      "internal_energy",
+      "first_law",
+      "thermodynamics"
+    ],
+    "learning_objective": "Derive the relationship between enthalpy and internal energy.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_6",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch6_mcq_014",
+    "question": "Calculate the work done (in Joules) when $1$ mole of an ideal gas expands isothermally and reversibly from $10 L$ to $20 L$ at $300 K$. (Given: $R = 8.314 J \\cdot mol^{-1} \\cdot K^{-1}$)",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$-1728 J$",
+      "B": "$+1728 J$",
+      "C": "$-2494 J$",
+      "D": "$+2494 J$"
+    },
+    "correct_answer": "A",
+    "explanation": "For an isothermal reversible expansion of an ideal gas, the work done ($w$) is given by the formula: \n$w = -nRT \\ln\\left(\frac{V_2}{V_1}\right)$\nGiven:\n$n = 1 \text{ mol}$\n$R = 8.314 J \\cdot mol^{-1} \\cdot K^{-1}$\n$T = 300 K$\n$V_1 = 10 L$\n$V_2 = 20 L$\n\nSubstitute the values:\n$w = -(1 \text{ mol})(8.314 J \\cdot mol^{-1} \\cdot K^{-1})(300 K) \\ln\\left(\frac{20 L}{10 L}\right)$\n$w = -2494.2 \\ln(2)$\n$w = -2494.2 \times 0.693$\n$w \\approx -1728 J$\n\nThe negative sign indicates that work is done by the system on the surroundings.",
+    "difficulty": "medium",
+    "topic": "work_done",
+    "subtopic": "isothermal_reversible_expansion",
+    "tags": [
+      "work_done",
+      "thermodynamics",
+      "ideal_gas",
+      "isothermal_process",
+      "numerical"
+    ],
+    "learning_objective": "Calculate work done during isothermal reversible expansion of an ideal gas.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_6",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "chem_xi_ch6_mcq_015",
+    "question": "Given the following reactions:\n1. $C(s) + O_2(g) \rightarrow CO_2(g)$, $\\Delta H_1 = -393.5 kJ/mol$\n2. $H_2(g) + \frac{1}{2}O_2(g) \rightarrow H_2O(l)$, $\\Delta H_2 = -285.8 kJ/mol$\n3. $CH_4(g) + 2O_2(g) \rightarrow CO_2(g) + 2H_2O(l)$, $\\Delta H_3 = -890.3 kJ/mol$\n\nCalculate the standard enthalpy of formation of methane ($CH_4(g)$).",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$+74.8 kJ/mol$",
+      "B": "$-74.8 kJ/mol$",
+      "C": "$+211.0 kJ/mol$",
+      "D": "$-211.0 kJ/mol$"
+    },
+    "correct_answer": "B",
+    "explanation": "We need to find $\\Delta H_f^\\circ$ for $CH_4(g)$, which corresponds to the reaction:\n$C(s) + 2H_2(g) \rightarrow CH_4(g)$, $\\Delta H_f^\\circ = ?$\n\nUsing Hess's Law, we manipulate the given equations:\n1. $C(s) + O_2(g) \rightarrow CO_2(g)$, $\\Delta H_1 = -393.5 kJ/mol$ (Keep as is)\n2. $2 \times [H_2(g) + \frac{1}{2}O_2(g) \rightarrow H_2O(l)]$, $\\Delta H_2' = 2 \times (-285.8 kJ/mol) = -571.6 kJ/mol$ (Multiply by 2)\n3. $CO_2(g) + 2H_2O(l) \rightarrow CH_4(g) + 2O_2(g)$, $\\Delta H_3' = -(-890.3 kJ/mol) = +890.3 kJ/mol$ (Reverse the reaction)\n\nNow, sum the manipulated equations:\n$C(s) + O_2(g) \rightarrow CO_2(g)$ \n$2H_2(g) + O_2(g) \rightarrow 2H_2O(l)$ \n$CO_2(g) + 2H_2O(l) \rightarrow CH_4(g) + 2O_2(g)$ \n---------------------------------------------------\n$C(s) + 2H_2(g) \rightarrow CH_4(g)$\n\nSum the enthalpy changes:\n$\\Delta H_f^\\circ (CH_4) = \\Delta H_1 + \\Delta H_2' + \\Delta H_3'$\n$\\Delta H_f^\\circ (CH_4) = -393.5 kJ/mol + (-571.6 kJ/mol) + (+890.3 kJ/mol)$\n$\\Delta H_f^\\circ (CH_4) = -965.1 kJ/mol + 890.3 kJ/mol$\n$\\Delta H_f^\\circ (CH_4) = -74.8 kJ/mol$",
+    "difficulty": "medium",
+    "topic": "hess_law",
+    "subtopic": "enthalpy_of_formation_calculation",
+    "tags": [
+      "hess_law",
+      "enthalpy_of_formation",
+      "thermochemistry",
+      "numerical"
+    ],
+    "learning_objective": "Apply Hess's Law to calculate the enthalpy of formation.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_6",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.98
+  },
+  {
+    "id": "chem_xi_ch6_mcq_016",
+    "question": "Which of the following conditions favors a spontaneous reaction at all temperatures?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$\\Delta H > 0$, $\\Delta S < 0$",
+      "B": "$\\Delta H < 0$, $\\Delta S > 0$",
+      "C": "$\\Delta H > 0$, $\\Delta S > 0$",
+      "D": "$\\Delta H < 0$, $\\Delta S < 0$"
+    },
+    "correct_answer": "B",
+    "explanation": "The spontaneity of a reaction is determined by the Gibbs free energy change: $\\Delta G = \\Delta H - T\\Delta S$.\n\n*   **A: $\\Delta H > 0$, $\\Delta S < 0$**: $\\Delta G$ will always be positive ($\text{positive} - T(\text{negative}) = \text{positive} + \text{positive}$). Non-spontaneous at all temperatures.\n*   **B: $\\Delta H < 0$, $\\Delta S > 0$**: $\\Delta G$ will always be negative ($\text{negative} - T(\text{positive}) = \text{negative} - \text{positive}$). Spontaneous at all temperatures.\n*   **C: $\\Delta H > 0$, $\\Delta S > 0$**: $\\Delta G$ can be positive or negative. Spontaneous at high temperatures (when $T\\Delta S$ term dominates).\n*   **D: $\\Delta H < 0$, $\\Delta S < 0$**: $\\Delta G$ can be positive or negative. Spontaneous at low temperatures (when $\\Delta H$ term dominates).",
+    "difficulty": "medium",
+    "topic": "gibbs_free_energy",
+    "subtopic": "spontaneity_conditions",
+    "tags": [
+      "spontaneity",
+      "gibbs_free_energy",
+      "enthalpy",
+      "entropy",
+      "thermodynamics"
+    ],
+    "learning_objective": "Predict spontaneity based on enthalpy and entropy changes.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_6",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  }
+]

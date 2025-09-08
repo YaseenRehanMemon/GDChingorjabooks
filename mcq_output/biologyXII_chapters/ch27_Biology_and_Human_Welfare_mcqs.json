@@ -1,0 +1,583 @@
+[
+  {
+    "id": "bio_xii_ch27_mcq_001",
+    "question": "Which of the following is NOT a primary goal of animal husbandry?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Improvement of animal breeds",
+      "B": "Enhancement of milk production",
+      "C": "Increase in meat yield",
+      "D": "Development of new animal species"
+    },
+    "correct_answer": "D",
+    "explanation": "Animal husbandry focuses on the scientific management of livestock to improve breeds, increase production of useful products like milk, meat, eggs, and wool, and manage diseases. It does not aim to develop entirely new animal species, which is typically a result of evolutionary processes or advanced genetic engineering beyond the scope of traditional husbandry.",
+    "difficulty": "easy",
+    "topic": "animal_husbandry",
+    "subtopic": "goals",
+    "tags": [
+      "animal_husbandry",
+      "livestock",
+      "agriculture"
+    ],
+    "learning_objective": "Understand the basic objectives of animal husbandry.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_27",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch27_mcq_002",
+    "question": "The 'Green Revolution' in agriculture primarily aimed to achieve which of the following?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Increase in organic farming practices",
+      "B": "Significant increase in crop production",
+      "C": "Reduction in pesticide use",
+      "D": "Promotion of traditional farming methods"
+    },
+    "correct_answer": "B",
+    "explanation": "The Green Revolution, initiated in the mid-20th century, was a period of rapid agricultural advancements that led to a significant increase in crop production, particularly wheat and rice, through the development of high-yielding varieties (HYVs), improved irrigation, and the use of fertilizers and pesticides. Its primary goal was to combat food shortages.",
+    "difficulty": "easy",
+    "topic": "crop_improvement",
+    "subtopic": "green_revolution",
+    "tags": [
+      "green_revolution",
+      "agriculture",
+      "crop_production",
+      "HYVs"
+    ],
+    "learning_objective": "Recall the main objective of the Green Revolution.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_27",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch27_mcq_003",
+    "question": "Which of the following is a common method used for improving cattle breeds in dairy farming?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Polyploidy",
+      "B": "Artificial insemination",
+      "C": "Tissue culture",
+      "D": "Biofortification"
+    },
+    "correct_answer": "B",
+    "explanation": "Artificial insemination is a widely used technique in animal husbandry, especially in dairy farming, to improve cattle breeds. It involves collecting semen from a superior male and artificially introducing it into the reproductive tract of a female, allowing for controlled breeding and the propagation of desirable traits. Polyploidy and tissue culture are plant breeding techniques, and biofortification is about improving nutritional quality of crops.",
+    "difficulty": "easy",
+    "topic": "animal_husbandry",
+    "subtopic": "dairy_farming",
+    "tags": [
+      "artificial_insemination",
+      "dairy_farming",
+      "cattle_breeding"
+    ],
+    "learning_objective": "Identify a key technique for cattle breed improvement.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_27",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch27_mcq_004",
+    "question": "What is the primary benefit of 'biofortification' in crops?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Increased resistance to pests",
+      "B": "Enhanced nutritional quality",
+      "C": "Higher yield per acre",
+      "D": "Reduced water requirements"
+    },
+    "correct_answer": "B",
+    "explanation": "Biofortification is the process of increasing the nutritional value of food crops through conventional plant breeding or genetic engineering. The primary benefit is to enhance the content of essential vitamins and minerals (e.g., Vitamin A, iron, zinc) in staple foods to address malnutrition in populations.",
+    "difficulty": "easy",
+    "topic": "crop_improvement",
+    "subtopic": "biofortification",
+    "tags": [
+      "biofortification",
+      "nutrition",
+      "crop_breeding"
+    ],
+    "learning_objective": "Define and understand the purpose of biofortification.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_27",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch27_mcq_005",
+    "question": "Which of the following is a microbial source for the production of ethanol in industries?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Lactobacillus",
+      "B": "Penicillium",
+      "C": "Saccharomyces cerevisiae",
+      "D": "Acetobacter"
+    },
+    "correct_answer": "C",
+    "explanation": "Saccharomyces cerevisiae, commonly known as baker's yeast or brewer's yeast, is a type of fungus widely used in industries for the fermentation of sugars into ethanol (alcohol) and carbon dioxide. Lactobacillus is used for lactic acid fermentation, Penicillium for antibiotics, and Acetobacter for acetic acid.",
+    "difficulty": "easy",
+    "topic": "microbes_in_industry",
+    "subtopic": "fermentation",
+    "tags": [
+      "microbes",
+      "ethanol",
+      "fermentation",
+      "Saccharomyces_cerevisiae"
+    ],
+    "learning_objective": "Identify a key microbe used in industrial ethanol production.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_27",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch27_mcq_006",
+    "question": "What is the primary function of a vaccine?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "To cure an existing infection",
+      "B": "To provide immediate passive immunity",
+      "C": "To stimulate the body's immune system to produce antibodies",
+      "D": "To directly kill pathogens in the body"
+    },
+    "correct_answer": "C",
+    "explanation": "A vaccine works by introducing a weakened or inactivated form of a pathogen, or its components, into the body. This exposure stimulates the immune system to recognize the pathogen and produce antibodies and memory cells, providing active immunity against future infections without causing the actual disease. Vaccines are primarily preventive, not curative.",
+    "difficulty": "easy",
+    "topic": "human_health",
+    "subtopic": "vaccination",
+    "tags": [
+      "vaccine",
+      "immunity",
+      "antibodies",
+      "prevention"
+    ],
+    "learning_objective": "Understand the basic mechanism of vaccine action.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_27",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch27_mcq_007",
+    "question": "Which of the following is an example of a biofertilizer?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Urea",
+      "B": "Rhizobium",
+      "C": "DDT",
+      "D": "Potassium nitrate"
+    },
+    "correct_answer": "B",
+    "explanation": "Biofertilizers are organisms that enrich the nutrient quality of the soil. Rhizobium bacteria form a symbiotic relationship with leguminous plants, fixing atmospheric nitrogen into a usable form for the plants. Urea and potassium nitrate are chemical fertilizers, while DDT is a pesticide.",
+    "difficulty": "easy",
+    "topic": "microbes_in_agriculture",
+    "subtopic": "biofertilizers",
+    "tags": [
+      "biofertilizer",
+      "Rhizobium",
+      "nitrogen_fixation",
+      "agriculture"
+    ],
+    "learning_objective": "Identify an example of a biofertilizer.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_27",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch27_mcq_008",
+    "question": "What is the main purpose of sewage treatment?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "To produce biogas",
+      "B": "To remove all dissolved salts",
+      "C": "To reduce the organic matter and pathogenic microbes in wastewater",
+      "D": "To convert wastewater into drinking water directly"
+    },
+    "correct_answer": "C",
+    "explanation": "The main purpose of sewage treatment is to reduce the organic matter, suspended solids, and pathogenic microorganisms in wastewater before it is discharged into natural water bodies. While biogas can be a byproduct, and some advanced treatments can make water potable, the primary goal is environmental protection by making wastewater less harmful.",
+    "difficulty": "easy",
+    "topic": "environmental_management",
+    "subtopic": "sewage_treatment",
+    "tags": [
+      "sewage_treatment",
+      "wastewater",
+      "pollution_control",
+      "microbes"
+    ],
+    "learning_objective": "Understand the primary goal of sewage treatment.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_27",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch27_mcq_009",
+    "question": "Which of the following diseases is primarily transmitted by mosquitoes?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Typhoid",
+      "B": "Malaria",
+      "C": "Pneumonia",
+      "D": "Tuberculosis"
+    },
+    "correct_answer": "B",
+    "explanation": "Malaria is a parasitic disease caused by Plasmodium parasites, which are transmitted to humans through the bites of infected female Anopheles mosquitoes. Typhoid, pneumonia, and tuberculosis are typically transmitted through contaminated food/water or airborne droplets.",
+    "difficulty": "easy",
+    "topic": "human_health",
+    "subtopic": "vector_borne_diseases",
+    "tags": [
+      "malaria",
+      "mosquitoes",
+      "vector_borne_disease",
+      "Plasmodium"
+    ],
+    "learning_objective": "Identify a common vector-borne disease.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_27",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch27_mcq_010",
+    "question": "The process of growing plants in a nutrient solution without soil is known as:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Vermiculture",
+      "B": "Hydroponics",
+      "C": "Aeroponics",
+      "D": "Tissue culture"
+    },
+    "correct_answer": "B",
+    "explanation": "Hydroponics is a method of growing plants using mineral nutrient solutions dissolved in water, without soil. Vermiculture is worm farming, aeroponics involves growing plants in an air or mist environment, and tissue culture is growing cells or tissues in a sterile medium.",
+    "difficulty": "easy",
+    "topic": "crop_improvement",
+    "subtopic": "modern_farming_techniques",
+    "tags": [
+      "hydroponics",
+      "soilless_culture",
+      "agriculture"
+    ],
+    "learning_objective": "Define hydroponics.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_27",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch27_mcq_011",
+    "question": "Which type of immunity is acquired by an individual after recovering from a disease?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Passive immunity",
+      "B": "Innate immunity",
+      "C": "Active natural immunity",
+      "D": "Active artificial immunity"
+    },
+    "correct_answer": "C",
+    "explanation": "When an individual recovers from a disease, their immune system has actively responded to the pathogen by producing antibodies and memory cells. This is a form of active immunity because the body produced its own immune response, and it's natural because it occurred through natural exposure to the pathogen, not through vaccination.",
+    "difficulty": "easy",
+    "topic": "human_health",
+    "subtopic": "immunity",
+    "tags": [
+      "immunity",
+      "active_immunity",
+      "natural_immunity",
+      "disease_recovery"
+    ],
+    "learning_objective": "Differentiate types of acquired immunity.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_27",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch27_mcq_012",
+    "question": "What is the role of 'Bt toxin' in genetically modified crops?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "To enhance nutrient absorption",
+      "B": "To provide resistance against insect pests",
+      "C": "To increase drought tolerance",
+      "D": "To improve flavor and shelf life"
+    },
+    "correct_answer": "B",
+    "explanation": "Bt toxin is a protein produced by the bacterium Bacillus thuringiensis (Bt). Genes encoding this toxin are introduced into crops (e.g., Bt cotton, Bt corn) to make them resistant to certain insect pests. When insects ingest parts of the plant, the toxin becomes active in their gut, leading to their death.",
+    "difficulty": "easy",
+    "topic": "biotechnology",
+    "subtopic": "GMOs",
+    "tags": [
+      "Bt_toxin",
+      "GMOs",
+      "pest_resistance",
+      "Bacillus_thuringiensis"
+    ],
+    "learning_objective": "Understand the application of Bt toxin in agriculture.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_27",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch27_mcq_013",
+    "question": "Which of the following is a major component of biogas?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Oxygen",
+      "B": "Nitrogen",
+      "C": "Methane",
+      "D": "Carbon monoxide"
+    },
+    "correct_answer": "C",
+    "explanation": "Biogas is produced by the anaerobic digestion of organic matter by microorganisms. Its primary component is methane (`$CH_4$`), typically comprising `$50\\%$` to `$75\\%$` of the gas, along with carbon dioxide and trace amounts of other gases. Methane is a combustible gas, making biogas a valuable fuel source.",
+    "difficulty": "easy",
+    "topic": "microbes_in_industry",
+    "subtopic": "biogas",
+    "tags": [
+      "biogas",
+      "methane",
+      "anaerobic_digestion",
+      "biofuel"
+    ],
+    "learning_objective": "Identify the main component of biogas.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_27",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch27_mcq_014",
+    "question": "What is the term for the rearing of fish in controlled environments?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Apiculture",
+      "B": "Sericulture",
+      "C": "Pisciculture",
+      "D": "Horticulture"
+    },
+    "correct_answer": "C",
+    "explanation": "Pisciculture, also known as fish farming or aquaculture, is the commercial breeding of fish, usually for food, in controlled ponds or enclosures. Apiculture is beekeeping, sericulture is silkworm rearing, and horticulture is the cultivation of plants.",
+    "difficulty": "easy",
+    "topic": "animal_husbandry",
+    "subtopic": "fisheries",
+    "tags": [
+      "pisciculture",
+      "aquaculture",
+      "fish_farming"
+    ],
+    "learning_objective": "Define pisciculture.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_27",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch27_mcq_015",
+    "question": "Which of the following is a common symptom of AIDS?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Sudden weight gain",
+      "B": "Increased immunity to infections",
+      "C": "Opportunistic infections",
+      "D": "Rapid healing of wounds"
+    },
+    "correct_answer": "C",
+    "explanation": "AIDS (Acquired Immunodeficiency Syndrome) is caused by the Human Immunodeficiency Virus (HIV), which attacks and weakens the immune system. This leads to a severe decline in immunity, making the individual highly susceptible to opportunistic infections (infections that normally wouldn't affect a healthy person) and certain cancers. Weight loss is common, not gain, and immunity is decreased, not increased.",
+    "difficulty": "easy",
+    "topic": "human_health",
+    "subtopic": "AIDS",
+    "tags": [
+      "AIDS",
+      "HIV",
+      "immune_system",
+      "opportunistic_infections"
+    ],
+    "learning_objective": "Recall a key characteristic of AIDS.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_27",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch27_mcq_016",
+    "question": "The use of biological agents (like insects or microbes) to control weeds and pests is known as:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Chemical control",
+      "B": "Integrated pest management",
+      "C": "Biocontrol",
+      "D": "Crop rotation"
+    },
+    "correct_answer": "C",
+    "explanation": "Biocontrol (or biological control) is a method of controlling pests and weeds using other living organisms. For example, using ladybugs to control aphids or specific bacteria to target insect larvae. Integrated Pest Management (IPM) is a broader approach that combines various methods, including biocontrol, chemical control, and cultural practices.",
+    "difficulty": "easy",
+    "topic": "microbes_in_agriculture",
+    "subtopic": "biocontrol",
+    "tags": [
+      "biocontrol",
+      "pest_management",
+      "biological_agents",
+      "agriculture"
+    ],
+    "learning_objective": "Define biocontrol.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_27",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch27_mcq_017",
+    "question": "Which of the following is an example of a primary pollutant?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Ozone",
+      "B": "Smog",
+      "C": "Carbon monoxide",
+      "D": "Peroxyacetyl nitrate (PAN)"
+    },
+    "correct_answer": "C",
+    "explanation": "Primary pollutants are emitted directly into the atmosphere from a source. Carbon monoxide (`$CO$`) is a direct emission from incomplete combustion. Ozone, smog, and PAN are secondary pollutants, formed in the atmosphere through chemical reactions involving primary pollutants.",
+    "difficulty": "easy",
+    "topic": "environmental_management",
+    "subtopic": "air_pollution",
+    "tags": [
+      "air_pollution",
+      "primary_pollutant",
+      "carbon_monoxide"
+    ],
+    "learning_objective": "Distinguish between primary and secondary air pollutants.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_27",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch27_mcq_018",
+    "question": "What is the term for the process of cultivating silkworms for silk production?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Apiculture",
+      "B": "Sericulture",
+      "C": "Pisciculture",
+      "D": "Vermiculture"
+    },
+    "correct_answer": "B",
+    "explanation": "Sericulture is the rearing of silkworms for the production of raw silk. Apiculture is beekeeping, pisciculture is fish farming, and vermiculture is worm farming.",
+    "difficulty": "easy",
+    "topic": "animal_husbandry",
+    "subtopic": "sericulture",
+    "tags": [
+      "sericulture",
+      "silkworms",
+      "silk_production"
+    ],
+    "learning_objective": "Define sericulture.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_27",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch27_mcq_019",
+    "question": "Which of the following is a common method for the disposal of solid waste in urban areas?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Incineration",
+      "B": "Composting",
+      "C": "Landfilling",
+      "D": "All of the above"
+    },
+    "correct_answer": "D",
+    "explanation": "All listed options are common methods for solid waste disposal. Landfilling is the most common, involving burying waste. Incineration burns waste to reduce volume and sometimes generate energy. Composting is the decomposition of organic waste into nutrient-rich soil amendment. A combination of these methods is often used in urban waste management.",
+    "difficulty": "easy",
+    "topic": "environmental_management",
+    "subtopic": "waste_management",
+    "tags": [
+      "solid_waste",
+      "waste_disposal",
+      "landfilling",
+      "incineration",
+      "composting"
+    ],
+    "learning_objective": "Identify common methods of solid waste disposal.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_27",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch27_mcq_020",
+    "question": "What is the main advantage of using tissue culture for plant propagation?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Produces genetically diverse offspring",
+      "B": "Requires large amounts of space",
+      "C": "Allows rapid propagation of disease-free plants",
+      "D": "Is dependent on seasonal conditions"
+    },
+    "correct_answer": "C",
+    "explanation": "Tissue culture (micropropagation) allows for the rapid production of a large number of genetically identical plants (clones) from a small piece of plant tissue. A significant advantage is the ability to produce disease-free plants, as the meristematic tissue used is often free of viruses. It requires minimal space and can be done year-round, independent of seasons.",
+    "difficulty": "easy",
+    "topic": "crop_improvement",
+    "subtopic": "tissue_culture",
+    "tags": [
+      "tissue_culture",
+      "micropropagation",
+      "plant_propagation",
+      "disease_free_plants"
+    ],
+    "learning_objective": "Understand the benefits of tissue culture in plant propagation.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_27",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "bio_xii_ch27_mcq_021",
+    "question": "Which of the following is a common bacterial disease in humans?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Common cold",
+      "B": "Influenza",
+      "C": "Typhoid",
+      "D": "Measles"
+    },
+    "correct_answer": "C",
+    "explanation": "Typhoid fever is caused by the bacterium Salmonella typhi. The common cold, influenza (flu), and measles are all viral diseases.",
+    "difficulty": "easy",
+    "topic": "human_health",
+    "subtopic": "bacterial_diseases",
+    "tags": [
+      "bacterial_disease",
+      "typhoid",
+      "Salmonella_typhi"
+    ],
+    "learning_objective": "Identify a common bacterial disease.",
+    "created_date": "2024-01-01",
+    "source": "textbook_chapter_27",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

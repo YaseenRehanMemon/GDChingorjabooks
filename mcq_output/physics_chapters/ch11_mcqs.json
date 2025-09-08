@@ -1,0 +1,438 @@
+[
+  {
+    "id": "chem_xii_ch11_mcq_001",
+    "question": "Which of the following factors does NOT affect the rate of a chemical reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Concentration of reactants",
+      "B": "Temperature",
+      "C": "Surface area of reactants",
+      "D": "Gibbs free energy change ($\\Delta G$)"
+    },
+    "correct_answer": "D",
+    "explanation": "The rate of a chemical reaction is influenced by factors such as the concentration of reactants, temperature, surface area, presence of a catalyst, and nature of reactants. Gibbs free energy change ($\\Delta G$) determines the spontaneity of a reaction, not its rate. A spontaneous reaction can be very slow. Therefore, option D is the correct answer. Options A, B, and C all directly affect reaction rates.",
+    "difficulty": "easy",
+    "topic": "rate_of_reaction",
+    "subtopic": "factors_affecting_rate",
+    "tags": [
+      "reaction_rate",
+      "factors",
+      "kinetics_basics"
+    ],
+    "learning_objective": "Identify factors influencing reaction rates.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch11_mcq_002",
+    "question": "The rate of a reaction is expressed as the change in concentration of a reactant or product per unit time. What are the common units for reaction rate?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$mol \\cdot dm^{-3} \\cdot s$",
+      "B": "$mol \\cdot dm^{-3} \\cdot s^{-1}$",
+      "C": "$mol \\cdot s^{-1}$",
+      "D": "$dm^3 \\cdot mol^{-1} \\cdot s^{-1}$"
+    },
+    "correct_answer": "B",
+    "explanation": "The rate of reaction is defined as the change in concentration per unit time. Concentration is typically measured in $mol \\cdot dm^{-3}$ (or $M$), and time in seconds ($s$). Therefore, the units for reaction rate are $mol \\cdot dm^{-3} \\cdot s^{-1}$. Option A has time in the numerator, which is incorrect. Option C is for change in moles per unit time, not concentration. Option D is for a second-order rate constant, not the rate itself.",
+    "difficulty": "easy",
+    "topic": "rate_of_reaction",
+    "subtopic": "units_of_rate",
+    "tags": [
+      "reaction_rate",
+      "units",
+      "kinetics_basics"
+    ],
+    "learning_objective": "Recall the standard units for reaction rate.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch11_mcq_003",
+    "question": "For the reaction $2A + B \rightarrow 3C$, if the rate of disappearance of A is $0.04 \\ M \\cdot s^{-1}$, what is the rate of formation of C?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$0.02 \\ M \\cdot s^{-1}$",
+      "B": "$0.04 \\ M \\cdot s^{-1}$",
+      "C": "$0.06 \\ M \\cdot s^{-1}$",
+      "D": "$0.08 \\ M \\cdot s^{-1}$"
+    },
+    "correct_answer": "C",
+    "explanation": "The general rate expression for the reaction $2A + B \rightarrow 3C$ is: \n$$Rate = -\frac{1}{2}\frac{d[A]}{dt} = -\frac{d[B]}{dt} = +\frac{1}{3}\frac{d[C]}{dt}$$ \nGiven that the rate of disappearance of A, $-\frac{d[A]}{dt}$, is $0.04 \\ M \\cdot s^{-1}$. \nWe can write: \n$$-\frac{1}{2}\frac{d[A]}{dt} = +\frac{1}{3}\frac{d[C]}{dt}$$ \nSubstituting the given value: \n$$-\frac{1}{2}(0.04 \\ M \\cdot s^{-1}) = +\frac{1}{3}\frac{d[C]}{dt}$$ \n$$0.02 \\ M \\cdot s^{-1} = \frac{1}{3}\frac{d[C]}{dt}$$ \n$$\frac{d[C]}{dt} = 3 \times 0.02 \\ M \\cdot s^{-1} = 0.06 \\ M \\cdot s^{-1}$$ \nThus, the rate of formation of C is $0.06 \\ M \\cdot s^{-1}$.",
+    "difficulty": "medium",
+    "topic": "rate_of_reaction",
+    "subtopic": "stoichiometric_rate",
+    "tags": [
+      "reaction_rate",
+      "stoichiometry",
+      "numerical"
+    ],
+    "learning_objective": "Calculate relative rates of consumption and formation based on stoichiometry.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "chem_xii_ch11_mcq_004",
+    "question": "What is the primary effect of increasing temperature on the rate of most chemical reactions?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Decreases the activation energy",
+      "B": "Increases the number of effective collisions",
+      "C": "Decreases the frequency of collisions",
+      "D": "Changes the reaction mechanism"
+    },
+    "correct_answer": "B",
+    "explanation": "Increasing the temperature increases the kinetic energy of reactant molecules. This leads to a higher frequency of collisions and, more importantly, a greater proportion of molecules possessing energy equal to or greater than the activation energy. Consequently, the number of effective collisions (collisions leading to product formation) increases, thus increasing the reaction rate. Temperature does not change the activation energy (A), nor does it decrease collision frequency (C). While temperature can sometimes favor different reaction pathways, its primary effect on rate is through effective collisions (B).",
+    "difficulty": "easy",
+    "topic": "rate_of_reaction",
+    "subtopic": "effect_of_temperature",
+    "tags": [
+      "temperature_effect",
+      "collision_theory",
+      "reaction_rate"
+    ],
+    "learning_objective": "Explain how temperature affects reaction rate.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch11_mcq_005",
+    "question": "For a reaction $A + B \rightarrow P$, the rate law is given by $Rate = k[A]^2[B]$. If the concentration of A is doubled and the concentration of B is halved, what will be the effect on the reaction rate?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Rate will be halved",
+      "B": "Rate will be doubled",
+      "C": "Rate will be quadrupled",
+      "D": "Rate will remain unchanged"
+    },
+    "correct_answer": "B",
+    "explanation": "The initial rate is $Rate_1 = k[A]^2[B]$. \nIf $[A]$ is doubled to $2[A]$ and $[B]$ is halved to $\frac{1}{2}[B]$, the new rate, $Rate_2$, will be: \n$$Rate_2 = k(2[A])^2(\frac{1}{2}[B])$$ \n$$Rate_2 = k(4[A]^2)(\frac{1}{2}[B])$$ \n$$Rate_2 = 4 \times \frac{1}{2} \times k[A]^2[B]$$ \n$$Rate_2 = 2 \times k[A]^2[B]$$ \n$$Rate_2 = 2 \times Rate_1$$ \nThe reaction rate will be doubled. Therefore, option B is correct.",
+    "difficulty": "medium",
+    "topic": "rate_law",
+    "subtopic": "effect_of_concentration",
+    "tags": [
+      "rate_law",
+      "order_of_reaction",
+      "concentration_effect",
+      "numerical"
+    ],
+    "learning_objective": "Predict the change in reaction rate based on changes in reactant concentrations and rate law.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "chem_xii_ch11_mcq_006",
+    "question": "What is the overall order of a reaction whose rate law is $Rate = k[X]^1[Y]^2$?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "First order",
+      "B": "Second order",
+      "C": "Third order",
+      "D": "Zero order"
+    },
+    "correct_answer": "C",
+    "explanation": "The overall order of a reaction is the sum of the exponents of the concentration terms in the rate law. For the rate law $Rate = k[X]^1[Y]^2$, the exponent for $[X]$ is $1$ and for $[Y]$ is $2$. \nOverall order $= 1 + 2 = 3$. \nThus, the reaction is third order overall. Options A, B, and D are incorrect because they do not represent the sum of the exponents.",
+    "difficulty": "easy",
+    "topic": "rate_law",
+    "subtopic": "overall_order",
+    "tags": [
+      "rate_law",
+      "order_of_reaction",
+      "kinetics_basics"
+    ],
+    "learning_objective": "Determine the overall order of a reaction from its rate law.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch11_mcq_007",
+    "question": "Which of the following statements is true regarding the molecularity of a reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "It can be fractional",
+      "B": "It is determined experimentally",
+      "C": "It refers to the number of molecules participating in the slowest step of a complex reaction",
+      "D": "It is always equal to the overall order of the reaction"
+    },
+    "correct_answer": "C",
+    "explanation": "Molecularity is the number of reactant molecules, atoms, or ions that collide simultaneously in an elementary step. It is always a whole number (1, 2, or 3, rarely higher). Molecularity cannot be fractional (A). It is a theoretical concept derived from the reaction mechanism, not determined experimentally (B). For a complex reaction, molecularity applies to each elementary step, and the molecularity of the rate-determining (slowest) step is often considered when relating to the overall reaction (C). Molecularity is not always equal to the overall order of the reaction, especially for complex reactions (D).",
+    "difficulty": "medium",
+    "topic": "molecularity",
+    "subtopic": "definition_and_properties",
+    "tags": [
+      "molecularity",
+      "reaction_mechanism",
+      "elementary_step"
+    ],
+    "learning_objective": "Distinguish between molecularity and order of reaction.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch11_mcq_008",
+    "question": "The half-life period ($t_{1/2}$) for a first-order reaction is $20 \\ minutes$. How much time will it take for the reactant concentration to decrease from $0.8 \\ M$ to $0.1 \\ M$?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$20 \\ minutes$",
+      "B": "$40 \\ minutes$",
+      "C": "$60 \\ minutes$",
+      "D": "$80 \\ minutes$"
+    },
+    "correct_answer": "C",
+    "explanation": "For a first-order reaction, the half-life is constant. \nInitial concentration $[A]_0 = 0.8 \\ M$. \nFinal concentration $[A] = 0.1 \\ M$. \nAfter 1 half-life: $[A] = 0.8 / 2 = 0.4 \\ M$ (Time = $20 \\ minutes$) \nAfter 2 half-lives: $[A] = 0.4 / 2 = 0.2 \\ M$ (Time = $20 + 20 = 40 \\ minutes$) \nAfter 3 half-lives: $[A] = 0.2 / 2 = 0.1 \\ M$ (Time = $40 + 20 = 60 \\ minutes$) \nAlternatively, we can use the formula for first-order reactions: \n$$[A] = [A]_0 (\frac{1}{2})^n$$ \nwhere $n$ is the number of half-lives. \n$$0.1 = 0.8 (\frac{1}{2})^n$$ \n$$\frac{0.1}{0.8} = (\frac{1}{2})^n$$ \n$$\frac{1}{8} = (\frac{1}{2})^n$$ \n$$(\frac{1}{2})^3 = (\frac{1}{2})^n$$ \nSo, $n=3$. \nTotal time $= n \times t_{1/2} = 3 \times 20 \\ minutes = 60 \\ minutes$. \nTherefore, option C is correct.",
+    "difficulty": "medium",
+    "topic": "integrated_rate_laws",
+    "subtopic": "first_order_half_life",
+    "tags": [
+      "first_order",
+      "half_life",
+      "numerical",
+      "integrated_rate_law"
+    ],
+    "learning_objective": "Calculate the time required for a specific concentration change in a first-order reaction.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "chem_xii_ch11_mcq_009",
+    "question": "The rate constant for a first-order reaction is $2.303 \times 10^{-2} \\ s^{-1}$. What is the half-life of the reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$10 \\ s$",
+      "B": "$20 \\ s$",
+      "C": "$30 \\ s$",
+      "D": "$40 \\ s$"
+    },
+    "correct_answer": "C",
+    "explanation": "For a first-order reaction, the half-life ($t_{1/2}$) is related to the rate constant ($k$) by the formula: \n$$t_{1/2} = \frac{0.693}{k}$$ \nGiven $k = 2.303 \times 10^{-2} \\ s^{-1}$. \n$$t_{1/2} = \frac{0.693}{2.303 \times 10^{-2} \\ s^{-1}}$$ \n$$t_{1/2} \\approx \frac{0.693}{0.02303} \\ s$$ \n$$t_{1/2} \\approx 30.09 \\ s$$ \nRounding to the nearest whole number, $t_{1/2} \\approx 30 \\ s$. Therefore, option C is correct.",
+    "difficulty": "medium",
+    "topic": "integrated_rate_laws",
+    "subtopic": "first_order_half_life_calculation",
+    "tags": [
+      "first_order",
+      "half_life",
+      "rate_constant",
+      "numerical"
+    ],
+    "learning_objective": "Calculate the half-life of a first-order reaction given its rate constant.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "chem_xii_ch11_mcq_010",
+    "question": "Which of the following plots yields a straight line for a zero-order reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$ln[A]$ vs. time",
+      "B": "$1/[A]$ vs. time",
+      "C": "$[A]$ vs. time",
+      "D": "$ln(k)$ vs. $1/T$"
+    },
+    "correct_answer": "C",
+    "explanation": "For a zero-order reaction, the integrated rate law is: \n$$[A]_t = -kt + [A]_0$$ \nThis equation is in the form of a straight line $y = mx + c$, where $y = [A]_t$, $m = -k$, $x = time$, and $c = [A]_0$. Therefore, a plot of $[A]$ versus time yields a straight line with a negative slope equal to $-k$. \nOption A is for a first-order reaction. \nOption B is for a second-order reaction. \nOption D is for the Arrhenius equation, relating rate constant to temperature. \nThus, option C is correct.",
+    "difficulty": "medium",
+    "topic": "integrated_rate_laws",
+    "subtopic": "graphical_representation",
+    "tags": [
+      "zero_order",
+      "integrated_rate_law",
+      "graphical_analysis"
+    ],
+    "learning_objective": "Identify the linear plot for a zero-order reaction.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch11_mcq_011",
+    "question": "The minimum energy required for reactant molecules to transform into products is called the:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Internal energy",
+      "B": "Activation energy",
+      "C": "Gibbs free energy",
+      "D": "Bond energy"
+    },
+    "correct_answer": "B",
+    "explanation": "Activation energy ($E_a$) is the minimum amount of energy that must be possessed by the reactant molecules for a chemical reaction to occur. It represents the energy barrier that must be overcome for reactants to form products. Internal energy (A) is the total energy of a system. Gibbs free energy (C) determines spontaneity. Bond energy (D) is the energy required to break a specific bond. Therefore, option B is the correct definition.",
+    "difficulty": "easy",
+    "topic": "activation_energy",
+    "subtopic": "definition",
+    "tags": [
+      "activation_energy",
+      "energy_barrier",
+      "kinetics_basics"
+    ],
+    "learning_objective": "Define activation energy.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch11_mcq_012",
+    "question": "According to the Arrhenius equation, how does the rate constant ($k$) change with increasing temperature ($T$)?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Increases linearly",
+      "B": "Decreases exponentially",
+      "C": "Increases exponentially",
+      "D": "Remains constant"
+    },
+    "correct_answer": "C",
+    "explanation": "The Arrhenius equation is given by $k = Ae^{-E_a/RT}$, where $k$ is the rate constant, $A$ is the pre-exponential factor, $E_a$ is the activation energy, $R$ is the gas constant, and $T$ is the absolute temperature. As $T$ increases, the term $-E_a/RT$ becomes less negative (or more positive), which means $e^{-E_a/RT}$ increases exponentially. Consequently, the rate constant $k$ increases exponentially with increasing temperature. Options A, B, and D are incorrect.",
+    "difficulty": "medium",
+    "topic": "activation_energy",
+    "subtopic": "arrhenius_equation",
+    "tags": [
+      "arrhenius_equation",
+      "temperature_effect",
+      "rate_constant"
+    ],
+    "learning_objective": "Describe the relationship between rate constant and temperature using the Arrhenius equation.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch11_mcq_013",
+    "question": "A catalyst increases the rate of a chemical reaction by:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Increasing the activation energy",
+      "B": "Decreasing the activation energy",
+      "C": "Increasing the enthalpy change of the reaction",
+      "D": "Shifting the equilibrium position"
+    },
+    "correct_answer": "B",
+    "explanation": "A catalyst works by providing an alternative reaction pathway with a lower activation energy ($E_a$). By lowering the energy barrier, a larger fraction of reactant molecules can overcome this barrier at a given temperature, leading to an increased reaction rate. A catalyst does not increase activation energy (A), nor does it change the overall enthalpy change ($\\Delta H$) of the reaction (C). Catalysts speed up both forward and reverse reactions equally, thus they do not shift the equilibrium position but help achieve equilibrium faster (D). Therefore, option B is correct.",
+    "difficulty": "easy",
+    "topic": "catalysis",
+    "subtopic": "mechanism_of_catalysis",
+    "tags": [
+      "catalyst",
+      "activation_energy",
+      "reaction_rate"
+    ],
+    "learning_objective": "Explain how catalysts affect reaction rates.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch11_mcq_014",
+    "question": "Which type of catalysis involves reactants and catalysts in different phases?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Homogeneous catalysis",
+      "B": "Heterogeneous catalysis",
+      "C": "Auto-catalysis",
+      "D": "Enzyme catalysis"
+    },
+    "correct_answer": "B",
+    "explanation": "Heterogeneous catalysis occurs when the reactants and the catalyst are in different phases. For example, a solid catalyst used in a gaseous or liquid reaction mixture. Homogeneous catalysis (A) involves reactants and catalysts in the same phase. Auto-catalysis (C) is when a product of the reaction acts as a catalyst. Enzyme catalysis (D) is a type of homogeneous or heterogeneous catalysis involving biological catalysts (enzymes). Thus, option B is correct.",
+    "difficulty": "easy",
+    "topic": "catalysis",
+    "subtopic": "types_of_catalysis",
+    "tags": [
+      "catalysis",
+      "heterogeneous_catalysis",
+      "phases"
+    ],
+    "learning_objective": "Differentiate between homogeneous and heterogeneous catalysis.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch11_mcq_015",
+    "question": "For a reaction $A \rightarrow B$, the rate law is $Rate = k[A]^0$. If the initial concentration of A is $0.5 \\ M$, what will be the concentration of A after $10 \\ s$ if $k = 0.02 \\ M \\cdot s^{-1}$?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$0.5 \\ M$",
+      "B": "$0.3 \\ M$",
+      "C": "$0.2 \\ M$",
+      "D": "$0.1 \\ M$"
+    },
+    "correct_answer": "B",
+    "explanation": "This is a zero-order reaction because the rate law is $Rate = k[A]^0 = k$. \nThe integrated rate law for a zero-order reaction is: \n$$[A]_t = [A]_0 - kt$$ \nGiven: \n$[A]_0 = 0.5 \\ M$ \n$k = 0.02 \\ M \\cdot s^{-1}$ \n$t = 10 \\ s$ \nSubstitute these values into the equation: \n$$[A]_t = 0.5 \\ M - (0.02 \\ M \\cdot s^{-1} \times 10 \\ s)$$ \n$$[A]_t = 0.5 \\ M - 0.2 \\ M$$ \n$$[A]_t = 0.3 \\ M$$ \nTherefore, the concentration of A after $10 \\ s$ is $0.3 \\ M$. Option B is correct.",
+    "difficulty": "medium",
+    "topic": "integrated_rate_laws",
+    "subtopic": "zero_order_calculation",
+    "tags": [
+      "zero_order",
+      "integrated_rate_law",
+      "numerical",
+      "concentration_change"
+    ],
+    "learning_objective": "Calculate reactant concentration at a given time for a zero-order reaction.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "chem_xii_ch11_mcq_016",
+    "question": "Which of the following is a characteristic of a pseudo-first-order reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The reaction is actually first order with respect to all reactants.",
+      "B": "One reactant is present in a very large excess, making its concentration effectively constant.",
+      "C": "The overall order of the reaction is zero.",
+      "D": "The rate constant depends on the concentration of the catalyst."
+    },
+    "correct_answer": "B",
+    "explanation": "A pseudo-first-order reaction is a reaction that appears to be first order but is actually of a higher order. This occurs when one or more reactants are present in such a large excess that their concentrations do not change significantly during the reaction. Consequently, their concentration terms can be absorbed into the rate constant, making the reaction appear first order with respect to the other reactant(s). Option A is incorrect as it's not truly first order with respect to all. Option C describes a zero-order reaction. Option D describes how a catalyst affects the rate constant, but not the definition of pseudo-first-order. Therefore, option B is correct.",
+    "difficulty": "medium",
+    "topic": "order_of_reaction",
+    "subtopic": "pseudo_order_reaction",
+    "tags": [
+      "pseudo_first_order",
+      "reaction_order",
+      "concentration"
+    ],
+    "learning_objective": "Understand the concept of pseudo-first-order reactions.",
+    "created_date": "2024-07-29",
+    "source": "textbook_chapter_11",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

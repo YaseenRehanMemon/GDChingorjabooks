@@ -1,0 +1,472 @@
+[
+  {
+    "id": "chem_xi_ch8_mcq_001",
+    "question": "Which of the following statements best describes a reversible reaction?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "A reaction that proceeds only in the forward direction.",
+      "B": "A reaction that proceeds only in the reverse direction.",
+      "C": "A reaction that can proceed in both forward and reverse directions simultaneously.",
+      "D": "A reaction that stops once products are formed."
+    },
+    "correct_answer": "C",
+    "explanation": "A reversible reaction is characterized by its ability to proceed in both the forward direction (reactants forming products) and the reverse direction (products reforming reactants) at the same time. Options A and B describe irreversible reactions, and option D is incorrect as reactions continue until equilibrium is reached.",
+    "difficulty": "easy",
+    "topic": "reversible_reactions",
+    "subtopic": "definition",
+    "tags": [
+      "reversible_reaction",
+      "chemical_equilibrium",
+      "basic_concept"
+    ],
+    "learning_objective": "Define a reversible reaction.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch8_mcq_002",
+    "question": "At equilibrium, what is the relationship between the rates of the forward and reverse reactions?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The rate of the forward reaction is greater than the rate of the reverse reaction.",
+      "B": "The rate of the reverse reaction is greater than the rate of the forward reaction.",
+      "C": "The rates of the forward and reverse reactions are equal.",
+      "D": "Both reactions stop at equilibrium."
+    },
+    "correct_answer": "C",
+    "explanation": "Chemical equilibrium is a dynamic state where the rate at which reactants are converted to products (forward reaction) is exactly equal to the rate at which products are converted back to reactants (reverse reaction). This results in no net change in concentrations of reactants and products, but the reactions are still ongoing. Options A and B describe non-equilibrium states, and option D is incorrect because equilibrium is dynamic.",
+    "difficulty": "easy",
+    "topic": "dynamic_equilibrium",
+    "subtopic": "rates_at_equilibrium",
+    "tags": [
+      "equilibrium",
+      "reaction_rates",
+      "dynamic_state"
+    ],
+    "learning_objective": "Describe the dynamic nature of chemical equilibrium.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch8_mcq_003",
+    "question": "Which of the following is an example of a physical equilibrium?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Formation of ammonia from nitrogen and hydrogen.",
+      "B": "Melting of ice at $0^\\circ C$ and $1$ atm pressure.",
+      "C": "Combustion of methane.",
+      "D": "Neutralization of an acid by a base."
+    },
+    "correct_answer": "B",
+    "explanation": "Physical equilibrium involves a balance between physical processes, such as phase changes. At $0^\\circ C$ and $1$ atm, ice and liquid water coexist in equilibrium, meaning the rate of melting equals the rate of freezing. Options A, C, and D are examples of chemical reactions, not physical changes.",
+    "difficulty": "easy",
+    "topic": "types_of_equilibrium",
+    "subtopic": "physical_equilibrium",
+    "tags": [
+      "physical_equilibrium",
+      "phase_change",
+      "ice_water"
+    ],
+    "learning_objective": "Differentiate between physical and chemical equilibrium.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.85
+  },
+  {
+    "id": "chem_xi_ch8_mcq_004",
+    "question": "The Law of Mass Action states that the rate of a chemical reaction is directly proportional to the product of the molar concentrations of the reactants, each raised to the power of its:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Stoichiometric coefficient.",
+      "B": "Molecular mass.",
+      "C": "Atomic number.",
+      "D": "Valency."
+    },
+    "correct_answer": "A",
+    "explanation": "According to the Law of Mass Action, for a general reaction `$aA + bB \rightleftharpoons cC + dD$`, the rate of the forward reaction is proportional to `$[A]^a[B]^b$`, where 'a' and 'b' are the stoichiometric coefficients of reactants A and B, respectively. Options B, C, and D are incorrect chemical properties.",
+    "difficulty": "easy",
+    "topic": "law_of_mass_action",
+    "subtopic": "definition",
+    "tags": [
+      "law_of_mass_action",
+      "reaction_rate",
+      "stoichiometry"
+    ],
+    "learning_objective": "Recall the statement of the Law of Mass Action.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch8_mcq_005",
+    "question": "For the reaction `$N_2(g) + 3H_2(g) \rightleftharpoons 2NH_3(g)$`, what is the expression for the equilibrium constant, $K_c$?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$\frac{[NH_3]^2}{[N_2][H_2]^3}$",
+      "B": "$\frac{[N_2][H_2]^3}{[NH_3]^2}$",
+      "C": "$\frac{[NH_3]}{[N_2][H_2]}$",
+      "D": "$\frac{[NH_3]^2}{[N_2][H_2]}$"
+    },
+    "correct_answer": "A",
+    "explanation": "The equilibrium constant $K_c$ is expressed as the ratio of the product of the molar concentrations of products to the product of the molar concentrations of reactants, each raised to the power of its stoichiometric coefficient. For the given reaction, products are `$NH_3$` (coefficient 2) and reactants are `$N_2$` (coefficient 1) and `$H_2$` (coefficient 3). Thus, `$K_c = \frac{[NH_3]^2}{[N_2][H_2]^3}$`.",
+    "difficulty": "easy",
+    "topic": "equilibrium_constant",
+    "subtopic": "expression_kc",
+    "tags": [
+      "equilibrium_constant",
+      "Kc",
+      "Haber_process",
+      "expression"
+    ],
+    "learning_objective": "Write the expression for $K_c$ for a given reversible reaction.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "chem_xi_ch8_mcq_006",
+    "question": "What does a large value of $K_c$ indicate about a reaction at equilibrium?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The reaction favors the formation of reactants.",
+      "B": "The reaction favors the formation of products.",
+      "C": "The reaction is irreversible.",
+      "D": "The reaction is very slow."
+    },
+    "correct_answer": "B",
+    "explanation": "A large value of $K_c$ (typically `$K_c > 10^3$`) indicates that at equilibrium, the concentration of products is significantly higher than the concentration of reactants. This means the equilibrium lies far to the right, favoring the formation of products. Option A is true for a small $K_c$. Options C and D are incorrect as $K_c$ relates to the extent of reaction, not its reversibility or rate.",
+    "difficulty": "easy",
+    "topic": "equilibrium_constant",
+    "subtopic": "significance_of_kc",
+    "tags": [
+      "Kc",
+      "equilibrium_position",
+      "product_favored"
+    ],
+    "learning_objective": "Interpret the significance of the magnitude of $K_c$.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch8_mcq_007",
+    "question": "Which of the following factors does NOT affect the value of the equilibrium constant $K_c$?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Temperature",
+      "B": "Concentration of reactants",
+      "C": "Pressure",
+      "D": "Presence of a catalyst"
+    },
+    "correct_answer": "D",
+    "explanation": "The equilibrium constant $K_c$ is constant for a given reaction at a specific temperature. Changes in concentration of reactants (B) or pressure (C) will shift the equilibrium position according to Le Chatelier's principle, but they do not change the *value* of $K_c$. Only temperature (A) can change the value of $K_c$. A catalyst (D) speeds up both forward and reverse reactions equally, helping the system reach equilibrium faster, but it does not affect the equilibrium position or the value of $K_c$.",
+    "difficulty": "medium",
+    "topic": "equilibrium_constant",
+    "subtopic": "factors_affecting_kc",
+    "tags": [
+      "Kc",
+      "catalyst",
+      "temperature",
+      "Le_Chatelier"
+    ],
+    "learning_objective": "Identify factors that affect the equilibrium constant.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "chem_xi_ch8_mcq_008",
+    "question": "Le Chatelier's Principle states that if a change of condition is applied to a system in equilibrium, the system will shift in a direction that:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Increases the change.",
+      "B": "Opposes the change.",
+      "C": "Has no effect on the change.",
+      "D": "Accelerates the change."
+    },
+    "correct_answer": "B",
+    "explanation": "Le Chatelier's Principle is a fundamental concept in chemical equilibrium. It states that when a system at equilibrium is subjected to a change (stress) in concentration, temperature, or pressure, the system will adjust itself to counteract or oppose the effect of the change, thereby re-establishing a new equilibrium. Options A, C, and D are contrary to the principle.",
+    "difficulty": "easy",
+    "topic": "le_chateliers_principle",
+    "subtopic": "definition",
+    "tags": [
+      "Le_Chatelier",
+      "equilibrium_shift",
+      "stress"
+    ],
+    "learning_objective": "State Le Chatelier's Principle.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch8_mcq_009",
+    "question": "Consider the reaction `$2SO_2(g) + O_2(g) \rightleftharpoons 2SO_3(g)$`. If the concentration of `$SO_2$` is increased, what will be the effect on the equilibrium?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The equilibrium will shift to the left, favoring reactants.",
+      "B": "The equilibrium will shift to the right, favoring products.",
+      "C": "The equilibrium will remain unchanged.",
+      "D": "The reaction will stop."
+    },
+    "correct_answer": "B",
+    "explanation": "According to Le Chatelier's Principle, if the concentration of a reactant (`$SO_2$`) is increased, the system will try to consume the added reactant. This means the equilibrium will shift to the right, favoring the formation of products (`$SO_3$`) to reduce the stress caused by the increased `$SO_2$` concentration. Options A, C, and D are incorrect.",
+    "difficulty": "medium",
+    "topic": "le_chateliers_principle",
+    "subtopic": "effect_of_concentration",
+    "tags": [
+      "Le_Chatelier",
+      "concentration",
+      "equilibrium_shift",
+      "sulfur_trioxide"
+    ],
+    "learning_objective": "Predict the effect of concentration changes on equilibrium.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch8_mcq_010",
+    "question": "For the exothermic reaction `$N_2(g) + 3H_2(g) \rightleftharpoons 2NH_3(g)$ ($\\Delta H = -92.4 \text{ kJ/mol}$), how will increasing the temperature affect the equilibrium?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The equilibrium will shift to the right, favoring products.",
+      "B": "The equilibrium will shift to the left, favoring reactants.",
+      "C": "The equilibrium will remain unchanged.",
+      "D": "The value of $K_c$ will increase."
+    },
+    "correct_answer": "B",
+    "explanation": "Since the reaction is exothermic ($\\Delta H$ is negative), heat is a product. Increasing the temperature adds heat to the system. According to Le Chatelier's Principle, the system will try to consume this added heat by shifting the equilibrium in the reverse (endothermic) direction. This means the equilibrium will shift to the left, favoring the formation of reactants (`$N_2$` and `$H_2$`). For an exothermic reaction, increasing temperature decreases the value of $K_c$, making option D incorrect.",
+    "difficulty": "medium",
+    "topic": "le_chateliers_principle",
+    "subtopic": "effect_of_temperature",
+    "tags": [
+      "Le_Chatelier",
+      "temperature",
+      "exothermic",
+      "equilibrium_shift",
+      "Haber_process"
+    ],
+    "learning_objective": "Predict the effect of temperature changes on equilibrium for exothermic reactions.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "chem_xi_ch8_mcq_011",
+    "question": "Consider the reaction `$PCl_5(g) \rightleftharpoons PCl_3(g) + Cl_2(g)$`. What will be the effect of increasing the pressure on this system at equilibrium?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The equilibrium will shift to the right.",
+      "B": "The equilibrium will shift to the left.",
+      "C": "The equilibrium will remain unchanged.",
+      "D": "The reaction will become irreversible."
+    },
+    "correct_answer": "B",
+    "explanation": "To determine the effect of pressure, we compare the number of moles of gaseous reactants and products. On the reactant side, there is 1 mole of `$PCl_5(g)$`. On the product side, there are `$1$ mole of $PCl_3(g)$` and `$1$ mole of $Cl_2(g)$`, totaling 2 moles of gas. Increasing pressure favors the side with fewer moles of gas to relieve the stress. Therefore, the equilibrium will shift to the left, favoring the formation of `$PCl_5(g)$`.",
+    "difficulty": "medium",
+    "topic": "le_chateliers_principle",
+    "subtopic": "effect_of_pressure",
+    "tags": [
+      "Le_Chatelier",
+      "pressure",
+      "gaseous_equilibrium",
+      "moles_of_gas"
+    ],
+    "learning_objective": "Predict the effect of pressure changes on equilibrium.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch8_mcq_012",
+    "question": "For the reaction `$H_2(g) + I_2(g) \rightleftharpoons 2HI(g)$`, what is the effect of increasing pressure on the equilibrium position?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Shifts to the right.",
+      "B": "Shifts to the left.",
+      "C": "No effect.",
+      "D": "Increases the rate of reaction."
+    },
+    "correct_answer": "C",
+    "explanation": "To determine the effect of pressure, we compare the number of moles of gaseous reactants and products. On the reactant side, there is `$1$ mole of $H_2(g)$` and `$1$ mole of $I_2(g)$`, totaling 2 moles of gas. On the product side, there are `$2$ moles of $HI(g)$`. Since the number of moles of gas is equal on both sides of the equation (2 moles on reactants, 2 moles on products), a change in pressure will have no effect on the equilibrium position. It might increase the reaction rate, but not shift the equilibrium.",
+    "difficulty": "medium",
+    "topic": "le_chateliers_principle",
+    "subtopic": "effect_of_pressure",
+    "tags": [
+      "Le_Chatelier",
+      "pressure",
+      "gaseous_equilibrium",
+      "moles_of_gas",
+      "no_effect"
+    ],
+    "learning_objective": "Analyze the effect of pressure changes when moles of gas are equal.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "chem_xi_ch8_mcq_013",
+    "question": "Which of the following statements is true regarding the role of a catalyst in a reversible reaction at equilibrium?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "A catalyst shifts the equilibrium position to the right.",
+      "B": "A catalyst shifts the equilibrium position to the left.",
+      "C": "A catalyst increases the yield of products.",
+      "D": "A catalyst increases the rate at which equilibrium is attained."
+    },
+    "correct_answer": "D",
+    "explanation": "A catalyst works by lowering the activation energy for both the forward and reverse reactions equally. This means it speeds up both reactions to the same extent, allowing the system to reach equilibrium faster. However, it does not change the relative amounts of reactants and products at equilibrium, nor does it affect the value of the equilibrium constant ($K_c$). Therefore, it does not shift the equilibrium position or increase the yield of products.",
+    "difficulty": "easy",
+    "topic": "catalysis",
+    "subtopic": "effect_on_equilibrium",
+    "tags": [
+      "catalyst",
+      "equilibrium",
+      "reaction_rate",
+      "activation_energy"
+    ],
+    "learning_objective": "Explain the role of a catalyst in a reversible reaction.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch8_mcq_014",
+    "question": "For the reaction `$A(g) + B(g) \rightleftharpoons C(g)$`, if at equilibrium, `$[A] = 0.5 \text{ M}$`, `$[B] = 0.5 \text{ M}$`, and `$[C] = 2.0 \text{ M}$`, what is the value of $K_c$?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$0.25$",
+      "B": "$1.0$",
+      "C": "$4.0$",
+      "D": "$8.0$"
+    },
+    "correct_answer": "D",
+    "explanation": "The equilibrium constant expression for the reaction `$A(g) + B(g) \rightleftharpoons C(g)$` is `$K_c = \frac{[C]}{[A][B]}$`. \nGiven equilibrium concentrations:\n`$[A] = 0.5 \text{ M}$`\n`$[B] = 0.5 \text{ M}$`\n`$[C] = 2.0 \text{ M}$`\nSubstitute these values into the $K_c$ expression:\n`$K_c = \frac{2.0}{(0.5)(0.5)} = \frac{2.0}{0.25} = 8.0$`\nTherefore, the value of $K_c$ is $8.0$.",
+    "difficulty": "medium",
+    "topic": "equilibrium_constant",
+    "subtopic": "kc_calculation",
+    "tags": [
+      "Kc_calculation",
+      "equilibrium_concentrations",
+      "numerical_problem"
+    ],
+    "learning_objective": "Calculate $K_c$ from equilibrium concentrations.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "chem_xi_ch8_mcq_015",
+    "question": "Which of the following conditions is necessary for a system to be in chemical equilibrium?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The system must be open.",
+      "B": "The temperature must be constantly changing.",
+      "C": "The concentrations of reactants and products must be constant.",
+      "D": "The reaction must be irreversible."
+    },
+    "correct_answer": "C",
+    "explanation": "For a system to be in chemical equilibrium, the macroscopic properties, including the concentrations of reactants and products, must remain constant over time. This is because the rates of the forward and reverse reactions are equal, leading to no net change. The system must be closed (A) to prevent loss or gain of matter. Temperature must be constant (B) for $K_c$ to be constant. The reaction must be reversible (D) to reach equilibrium.",
+    "difficulty": "easy",
+    "topic": "dynamic_equilibrium",
+    "subtopic": "conditions_for_equilibrium",
+    "tags": [
+      "equilibrium_conditions",
+      "constant_concentration",
+      "closed_system"
+    ],
+    "learning_objective": "Identify the conditions required for chemical equilibrium.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xi_ch8_mcq_016",
+    "question": "For the reaction `$CaCO_3(s) \rightleftharpoons CaO(s) + CO_2(g)$`, what is the expression for $K_c$?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$\frac{[CaO][CO_2]}{[CaCO_3]}$",
+      "B": "$[CO_2]$",
+      "C": "$\frac{1}{[CO_2]}$",
+      "D": "$[CaCO_3]$"
+    },
+    "correct_answer": "B",
+    "explanation": "In the expression for the equilibrium constant, the concentrations of pure solids and pure liquids are considered constant and are therefore omitted. For the given reaction, `$CaCO_3(s)$` and `$CaO(s)$` are solids. Thus, the equilibrium constant expression only includes the gaseous product `$CO_2(g)$`. So, `$K_c = [CO_2]$`.",
+    "difficulty": "medium",
+    "topic": "equilibrium_constant",
+    "subtopic": "heterogeneous_equilibrium",
+    "tags": [
+      "Kc",
+      "heterogeneous_equilibrium",
+      "solids_liquids",
+      "calcium_carbonate"
+    ],
+    "learning_objective": "Write $K_c$ expressions for heterogeneous equilibria.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.95
+  },
+  {
+    "id": "chem_xi_ch8_mcq_017",
+    "question": "If the reaction quotient $Q_c$ is less than the equilibrium constant $K_c$ ($Q_c < K_c$), in which direction will the reaction proceed to reach equilibrium?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "To the left (towards reactants).",
+      "B": "To the right (towards products).",
+      "C": "The reaction is already at equilibrium.",
+      "D": "The reaction will stop."
+    },
+    "correct_answer": "B",
+    "explanation": "The reaction quotient $Q_c$ has the same form as $K_c$ but uses current (non-equilibrium) concentrations. If `$Q_c < K_c$`, it means the ratio of products to reactants is currently too small compared to the equilibrium ratio. To reach equilibrium, the system must increase the concentration of products and decrease the concentration of reactants. Therefore, the reaction will proceed to the right (forward direction) to form more products.",
+    "difficulty": "medium",
+    "topic": "reaction_quotient",
+    "subtopic": "qc_vs_kc",
+    "tags": [
+      "reaction_quotient",
+      "Kc",
+      "equilibrium_prediction",
+      "Qc_less_than_Kc"
+    ],
+    "learning_objective": "Use $Q_c$ to predict the direction of a reaction.",
+    "created_date": "2024-05-15",
+    "source": "textbook_chapter_8",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]

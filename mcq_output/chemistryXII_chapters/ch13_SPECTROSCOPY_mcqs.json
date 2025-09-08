@@ -1,0 +1,589 @@
+[
+  {
+    "id": "chem_xii_ch13_mcq_001",
+    "question": "Which branch of chemistry deals with the interaction of electromagnetic radiation with matter?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Thermodynamics",
+      "B": "Kinetics",
+      "C": "Spectroscopy",
+      "D": "Electrochemistry"
+    },
+    "correct_answer": "C",
+    "explanation": "Spectroscopy is the study of the interaction between matter and electromagnetic radiation. It provides information about the structure, composition, and properties of matter.",
+    "difficulty": "easy",
+    "topic": "introduction_to_spectroscopy",
+    "subtopic": "definition",
+    "tags": [
+      "spectroscopy",
+      "electromagnetic_radiation",
+      "basic_definition"
+    ],
+    "learning_objective": "Define spectroscopy and its scope.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch13_mcq_002",
+    "question": "What is the relationship between the energy ($E$) of a photon, its frequency ($\nu$), and Planck's constant ($h$)?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$E = h/\nu$",
+      "B": "$E = h\nu$",
+      "C": "$E = \nu/h$",
+      "D": "$E = h + \nu$"
+    },
+    "correct_answer": "B",
+    "explanation": "The energy of a photon is directly proportional to its frequency, as described by Planck's equation: `$E = h\nu$`, where `$h$` is Planck's constant (`$6.626 \times 10^{-34} J \\cdot s$`).",
+    "difficulty": "easy",
+    "topic": "electromagnetic_spectrum",
+    "subtopic": "energy_frequency_relation",
+    "tags": [
+      "electromagnetic_radiation",
+      "photon_energy",
+      "planck's_constant",
+      "formula"
+    ],
+    "learning_objective": "Recall the relationship between photon energy and frequency.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch13_mcq_003",
+    "question": "Which region of the electromagnetic spectrum is associated with rotational transitions in molecules?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Ultraviolet",
+      "B": "Infrared",
+      "C": "Microwave",
+      "D": "X-ray"
+    },
+    "correct_answer": "C",
+    "explanation": "Rotational transitions in molecules involve very small energy changes, corresponding to the low energy region of the electromagnetic spectrum, specifically the microwave region.",
+    "difficulty": "easy",
+    "topic": "molecular_spectroscopy",
+    "subtopic": "rotational_transitions",
+    "tags": [
+      "molecular_spectroscopy",
+      "rotational_energy",
+      "microwave_radiation",
+      "electromagnetic_spectrum"
+    ],
+    "learning_objective": "Identify the EMS region for rotational transitions.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch13_mcq_004",
+    "question": "The Beer-Lambert Law relates absorbance to which two factors?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Wavelength and frequency",
+      "B": "Concentration and path length",
+      "C": "Temperature and pressure",
+      "D": "Refractive index and density"
+    },
+    "correct_answer": "B",
+    "explanation": "The Beer-Lambert Law states that absorbance (`$A$`) is directly proportional to the concentration (`$c$`) of the absorbing species and the path length (`$b$`) of the light through the sample: `$A = \\epsilon bc$`, where `$\\epsilon$` is the molar absorptivity.",
+    "difficulty": "easy",
+    "topic": "uv_visible_spectroscopy",
+    "subtopic": "beer_lambert_law",
+    "tags": [
+      "uv_vis",
+      "beer_lambert_law",
+      "absorbance",
+      "concentration",
+      "path_length"
+    ],
+    "learning_objective": "Recall the parameters involved in the Beer-Lambert Law.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch13_mcq_005",
+    "question": "Which type of spectroscopy is primarily used to identify functional groups in organic molecules?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "UV-Visible Spectroscopy",
+      "B": "Infrared (IR) Spectroscopy",
+      "C": "Nuclear Magnetic Resonance (NMR) Spectroscopy",
+      "D": "Mass Spectrometry"
+    },
+    "correct_answer": "B",
+    "explanation": "Infrared (IR) spectroscopy measures the vibrations of bonds within molecules. Different functional groups (e.g., C=O, O-H, C-H) absorb IR radiation at characteristic frequencies, making it an excellent tool for functional group identification.",
+    "difficulty": "easy",
+    "topic": "ir_spectroscopy",
+    "subtopic": "functional_group_identification",
+    "tags": [
+      "ir_spectroscopy",
+      "functional_groups",
+      "vibrational_transitions",
+      "organic_chemistry"
+    ],
+    "learning_objective": "Identify the primary application of IR spectroscopy.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch13_mcq_006",
+    "question": "In Mass Spectrometry, what does the molecular ion peak represent?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "The most abundant fragment ion",
+      "B": "The ion formed by the loss of a proton",
+      "C": "The intact molecule with one electron removed",
+      "D": "An ion formed by rearrangement"
+    },
+    "correct_answer": "C",
+    "explanation": "The molecular ion peak (M$^+$) in Mass Spectrometry corresponds to the intact molecule that has lost one electron, resulting in a radical cation. Its m/z value gives the molecular weight of the compound.",
+    "difficulty": "easy",
+    "topic": "mass_spectrometry",
+    "subtopic": "molecular_ion_peak",
+    "tags": [
+      "mass_spectrometry",
+      "molecular_ion",
+      "molecular_weight",
+      "m/z"
+    ],
+    "learning_objective": "Understand the significance of the molecular ion peak in MS.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch13_mcq_007",
+    "question": "Which type of electromagnetic radiation has the longest wavelength?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Gamma rays",
+      "B": "X-rays",
+      "C": "Radio waves",
+      "D": "Ultraviolet light"
+    },
+    "correct_answer": "C",
+    "explanation": "The electromagnetic spectrum ranges from high-energy, short-wavelength gamma rays to low-energy, long-wavelength radio waves. Radio waves have the longest wavelengths among the given options.",
+    "difficulty": "easy",
+    "topic": "electromagnetic_spectrum",
+    "subtopic": "wavelength_order",
+    "tags": [
+      "electromagnetic_spectrum",
+      "wavelength",
+      "radio_waves",
+      "gamma_rays"
+    ],
+    "learning_objective": "Order different regions of the EMS by wavelength.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch13_mcq_008",
+    "question": "What is the primary phenomenon exploited in Nuclear Magnetic Resonance (NMR) spectroscopy?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Absorption of UV light by electrons",
+      "B": "Vibrational transitions of molecular bonds",
+      "C": "Spin transitions of atomic nuclei in a magnetic field",
+      "D": "Ionization and fragmentation of molecules"
+    },
+    "correct_answer": "C",
+    "explanation": "NMR spectroscopy is based on the absorption of radiofrequency radiation by atomic nuclei (like `$^1H$` or `$^{13}C$`) when placed in a strong external magnetic field. These nuclei possess a property called 'spin', which aligns with or against the magnetic field, and transitions between these spin states are observed.",
+    "difficulty": "easy",
+    "topic": "nmr_spectroscopy",
+    "subtopic": "principle",
+    "tags": [
+      "nmr_spectroscopy",
+      "nuclear_spin",
+      "magnetic_field",
+      "radiofrequency"
+    ],
+    "learning_objective": "State the fundamental principle of NMR spectroscopy.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch13_mcq_009",
+    "question": "A chromophore is a part of a molecule responsible for:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Emitting infrared radiation",
+      "B": "Absorbing UV or visible light",
+      "C": "Undergoing nuclear spin transitions",
+      "D": "Fragmenting in a mass spectrometer"
+    },
+    "correct_answer": "B",
+    "explanation": "In UV-Visible spectroscopy, a chromophore is a functional group or part of a molecule that absorbs light in the ultraviolet or visible region of the electromagnetic spectrum, leading to electronic transitions.",
+    "difficulty": "easy",
+    "topic": "uv_visible_spectroscopy",
+    "subtopic": "chromophore",
+    "tags": [
+      "uv_vis",
+      "chromophore",
+      "light_absorption",
+      "electronic_transitions"
+    ],
+    "learning_objective": "Define a chromophore in the context of UV-Vis spectroscopy.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch13_mcq_010",
+    "question": "What type of transitions are observed in UV-Visible spectroscopy?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Rotational transitions",
+      "B": "Vibrational transitions",
+      "C": "Electronic transitions",
+      "D": "Nuclear spin transitions"
+    },
+    "correct_answer": "C",
+    "explanation": "UV-Visible spectroscopy involves the absorption of UV or visible light, which provides enough energy to promote electrons from lower energy molecular orbitals to higher energy molecular orbitals. These are known as electronic transitions.",
+    "difficulty": "easy",
+    "topic": "uv_visible_spectroscopy",
+    "subtopic": "electronic_transitions",
+    "tags": [
+      "uv_vis",
+      "electronic_transitions",
+      "energy_levels",
+      "molecular_orbitals"
+    ],
+    "learning_objective": "Identify the type of transitions in UV-Vis spectroscopy.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch13_mcq_011",
+    "question": "Which of the following is NOT a region of the electromagnetic spectrum?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Sound waves",
+      "B": "Microwaves",
+      "C": "Infrared radiation",
+      "D": "X-rays"
+    },
+    "correct_answer": "A",
+    "explanation": "Sound waves are mechanical waves that require a medium for propagation and are not part of the electromagnetic spectrum. Microwaves, infrared radiation, and X-rays are all forms of electromagnetic radiation.",
+    "difficulty": "easy",
+    "topic": "electromagnetic_spectrum",
+    "subtopic": "components",
+    "tags": [
+      "electromagnetic_spectrum",
+      "sound_waves",
+      "types_of_radiation"
+    ],
+    "learning_objective": "Distinguish between electromagnetic and mechanical waves.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch13_mcq_012",
+    "question": "What is the unit of chemical shift ($\\delta$) in NMR spectroscopy?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Hz",
+      "B": "ppm",
+      "C": "J",
+      "D": "cm$^{-1}$"
+    },
+    "correct_answer": "B",
+    "explanation": "Chemical shift in NMR spectroscopy is expressed in parts per million (ppm). It is a dimensionless quantity that describes the relative difference in the resonance frequency of a nucleus compared to a standard (usually TMS).",
+    "difficulty": "easy",
+    "topic": "nmr_spectroscopy",
+    "subtopic": "chemical_shift",
+    "tags": [
+      "nmr_spectroscopy",
+      "chemical_shift",
+      "units",
+      "ppm"
+    ],
+    "learning_objective": "Recall the unit for chemical shift in NMR.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch13_mcq_013",
+    "question": "Which of the following molecules would NOT show an absorption in the IR spectrum?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$H_2O$",
+      "B": "$CO_2$",
+      "C": "$N_2$",
+      "D": "$CH_4$"
+    },
+    "correct_answer": "C",
+    "explanation": "For a molecule to absorb IR radiation, its vibration must cause a change in the molecule's dipole moment. Homonuclear diatomic molecules like `$N_2$`, `$O_2$`, `$H_2$`, `$Cl_2$` do not have a net change in dipole moment during vibration, so they are IR inactive. `$H_2O$`, `$CO_2$` (asymmetric stretch), and `$CH_4$` all have IR active vibrations.",
+    "difficulty": "easy",
+    "topic": "ir_spectroscopy",
+    "subtopic": "ir_activity",
+    "tags": [
+      "ir_spectroscopy",
+      "dipole_moment",
+      "ir_active",
+      "homonuclear_diatomic"
+    ],
+    "learning_objective": "Identify molecules that are IR inactive.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch13_mcq_014",
+    "question": "The 'fingerprint region' in an IR spectrum is typically found in which wavenumber range?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$4000-2500 \text{ cm}^{-1}$",
+      "B": "$2500-1500 \text{ cm}^{-1}$",
+      "C": "$1500-400 \text{ cm}^{-1}$",
+      "D": "$400-100 \text{ cm}^{-1}$"
+    },
+    "correct_answer": "C",
+    "explanation": "The fingerprint region in IR spectroscopy is typically between `$1500 \text{ cm}^{-1}$` and `$400 \text{ cm}^{-1}$`. This region is complex due to many overlapping vibrations and is unique for almost every compound, hence its name 'fingerprint'.",
+    "difficulty": "easy",
+    "topic": "ir_spectroscopy",
+    "subtopic": "fingerprint_region",
+    "tags": [
+      "ir_spectroscopy",
+      "fingerprint_region",
+      "wavenumber",
+      "spectral_interpretation"
+    ],
+    "learning_objective": "Recall the wavenumber range of the IR fingerprint region.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch13_mcq_015",
+    "question": "What is the purpose of a reference cell in UV-Visible spectrophotometry?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "To hold the sample solution",
+      "B": "To measure the intensity of light after passing through the sample",
+      "C": "To compensate for absorption by the solvent",
+      "D": "To generate the UV-Visible light"
+    },
+    "correct_answer": "C",
+    "explanation": "The reference cell (or blank) contains only the solvent used to dissolve the sample. By measuring the absorbance of the reference cell, the spectrophotometer can subtract any absorption due to the solvent, ensuring that only the absorbance of the analyte is measured.",
+    "difficulty": "easy",
+    "topic": "uv_visible_spectroscopy",
+    "subtopic": "instrumentation",
+    "tags": [
+      "uv_vis",
+      "spectrophotometer",
+      "reference_cell",
+      "solvent_compensation"
+    ],
+    "learning_objective": "Explain the role of a reference cell in UV-Vis.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch13_mcq_016",
+    "question": "Which of the following techniques provides information about the molecular weight and elemental composition of a compound?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "IR Spectroscopy",
+      "B": "UV-Visible Spectroscopy",
+      "C": "Mass Spectrometry",
+      "D": "NMR Spectroscopy"
+    },
+    "correct_answer": "C",
+    "explanation": "Mass Spectrometry (MS) is a powerful technique for determining the molecular weight of a compound from the molecular ion peak and can provide information about elemental composition through high-resolution MS and isotopic patterns.",
+    "difficulty": "easy",
+    "topic": "mass_spectrometry",
+    "subtopic": "applications",
+    "tags": [
+      "mass_spectrometry",
+      "molecular_weight",
+      "elemental_composition",
+      "applications"
+    ],
+    "learning_objective": "Identify the technique for molecular weight determination.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch13_mcq_017",
+    "question": "The speed of light ($c$) in a vacuum is approximately:",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "$3.0 \times 10^8 \text{ m/s}$",
+      "B": "$3.0 \times 10^5 \text{ m/s}$",
+      "C": "$3.0 \times 10^8 \text{ km/s}$",
+      "D": "$3.0 \times 10^5 \text{ km/s}$"
+    },
+    "correct_answer": "A",
+    "explanation": "The speed of light in a vacuum, a fundamental constant, is approximately `$3.0 \times 10^8 \text{ meters per second}$` (`$m/s$`).",
+    "difficulty": "easy",
+    "topic": "electromagnetic_spectrum",
+    "subtopic": "speed_of_light",
+    "tags": [
+      "speed_of_light",
+      "constant",
+      "electromagnetic_radiation",
+      "physics"
+    ],
+    "learning_objective": "Recall the value of the speed of light.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch13_mcq_018",
+    "question": "Which of the following is a common internal standard used in `$^1H$ NMR spectroscopy?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Deuterated chloroform ($CDCl_3$)",
+      "B": "Tetramethylsilane (TMS)",
+      "C": "Water ($H_2O$)",
+      "D": "Acetone ($CH_3COCH_3$)"
+    },
+    "correct_answer": "B",
+    "explanation": "Tetramethylsilane (TMS) is widely used as an internal standard in `$^1H$ NMR spectroscopy. It is chemically inert, volatile, and gives a single sharp signal at `$0 \text{ ppm}$`, which is outside the range of most organic protons, making it an ideal reference.",
+    "difficulty": "easy",
+    "topic": "nmr_spectroscopy",
+    "subtopic": "internal_standard",
+    "tags": [
+      "nmr_spectroscopy",
+      "tms",
+      "internal_standard",
+      "chemical_shift_reference"
+    ],
+    "learning_objective": "Identify the common internal standard in NMR.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch13_mcq_019",
+    "question": "What is the primary purpose of a detector in a spectrophotometer?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "To separate light into different wavelengths",
+      "B": "To hold the sample",
+      "C": "To measure the intensity of light",
+      "D": "To generate the light source"
+    },
+    "correct_answer": "C",
+    "explanation": "The detector in a spectrophotometer measures the intensity of the light that has passed through the sample. It converts the light signal into an electrical signal that can then be processed and displayed as absorbance or transmittance.",
+    "difficulty": "easy",
+    "topic": "instrumentation",
+    "subtopic": "detector",
+    "tags": [
+      "spectrophotometer",
+      "detector",
+      "light_intensity",
+      "instrumentation_components"
+    ],
+    "learning_objective": "Describe the function of a detector in spectroscopy.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch13_mcq_020",
+    "question": "Which type of spectroscopy is used to determine the relative number of different types of protons in a molecule?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "IR Spectroscopy",
+      "B": "UV-Visible Spectroscopy",
+      "C": "Mass Spectrometry",
+      "D": "$^1H$ NMR Spectroscopy"
+    },
+    "correct_answer": "D",
+    "explanation": "In `$^1H$ NMR spectroscopy, the area under each signal (integration) is directly proportional to the number of equivalent protons giving rise to that signal. This allows for the determination of the relative number of different types of protons in a molecule.",
+    "difficulty": "easy",
+    "topic": "nmr_spectroscopy",
+    "subtopic": "integration",
+    "tags": [
+      "nmr_spectroscopy",
+      "proton_nmr",
+      "integration",
+      "number_of_protons"
+    ],
+    "learning_objective": "Understand the information provided by NMR integration.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  },
+  {
+    "id": "chem_xii_ch13_mcq_021",
+    "question": "If a solution absorbs green light, what color would it most likely appear to the human eye?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Green",
+      "B": "Red",
+      "C": "Blue",
+      "D": "Yellow"
+    },
+    "correct_answer": "B",
+    "explanation": "When a solution absorbs a particular color of light, it transmits or reflects the complementary color. The complementary color to green is red. Therefore, if a solution absorbs green light, it will appear red.",
+    "difficulty": "easy",
+    "topic": "uv_visible_spectroscopy",
+    "subtopic": "color_and_absorption",
+    "tags": [
+      "uv_vis",
+      "color",
+      "absorption",
+      "complementary_colors"
+    ],
+    "learning_objective": "Relate absorbed light color to observed color.",
+    "created_date": "2024-07-28",
+    "source": "textbook_chapter_13",
+    "ai_generated": true,
+    "reviewed": false,
+    "quality_score": 0.9
+  }
+]
