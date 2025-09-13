@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <!-- Main Pages -->
+    <url>
+        <loc>https://ourbooks.example.com/</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/pages/about.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/pages/contact.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/pages/faq.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/pages/author.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/pages/privacy.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/pages/terms.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- Chemistry Chapters - Class XI -->
+    <url>
+        <loc>https://ourbooks.example.com/chemistrybooks/ch1.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/chemistrybooks/ch2.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/chemistrybooks/ch3.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/chemistrybooks/ch4.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/chemistrybooks/ch5.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/chemistrybooks/ch6.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/chemistrybooks/ch7.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/chemistrybooks/ch8.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/chemistrybooks/ch9.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/chemistrybooks/ch10.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/chemistrybooks/ch11.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Chemistry Chapters - Class XII -->
+    <url>
+        <loc>https://ourbooks.example.com/chemistryxiibooks/ch1.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/chemistryxiibooks/ch2.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/chemistryxiibooks/ch3.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/chemistryxiibooks/ch4.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/chemistryxiibooks/ch5.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/chemistryxiibooks/ch6.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/chemistryxiibooks/ch7.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/chemistryxiibooks/ch8.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/chemistryxiibooks/ch9.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/chemistryxiibooks/ch10.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/chemistryxiibooks/ch11.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/chemistryxiibooks/ch12.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/chemistryxiibooks/ch13.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/chemistryxiibooks/ch14.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Physics Chapters - Class XI -->
+    <url>
+        <loc>https://ourbooks.example.com/physicsbooks/ch1.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/physicsbooks/ch2.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/physicsbooks/ch3.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/physicsbooks/ch4.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/physicsbooks/ch5.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/physicsbooks/ch6.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/physicsbooks/ch7.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/physicsbooks/ch8.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/physicsbooks/ch9.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/physicsbooks/ch10.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/physicsbooks/ch11.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/physicsbooks/ch12.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/physicsbooks/ch13.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/physicsbooks/ch14.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Physics Chapters - Class XII -->
+    <url>
+        <loc>https://ourbooks.example.com/physicsxiibooks/ch15.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/physicsxiibooks/ch16.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/physicsxiibooks/ch17.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/physicsxiibooks/ch18.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/physicsxiibooks/ch19.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/physicsxiibooks/ch20.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/physicsxiibooks/ch21.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/physicsxiibooks/ch22.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/physicsxiibooks/ch23.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/physicsxiibooks/ch24.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/physicsxiibooks/ch25.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/physicsxiibooks/ch26.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/physicsxiibooks/ch27.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/physicsxiibooks/ch28.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Mathematics Chapters - Class XI -->
+    <url>
+        <loc>https://ourbooks.example.com/mathbooks/ch1.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/mathbooks/ch2.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/mathbooks/ch3.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/mathbooks/ch4.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/mathbooks/ch5.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/mathbooks/ch6.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/mathbooks/ch7.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/mathbooks/ch8.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/mathbooks/ch9.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/mathbooks/ch10.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/mathbooks/ch11.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/mathbooks/ch12.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Mathematics Chapters - Class XII -->
+    <url>
+        <loc>https://ourbooks.example.com/mathsxiibooks/ch1.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/mathsxiibooks/ch2.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/mathsxiibooks/ch3.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/mathsxiibooks/ch4.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/mathsxiibooks/ch5.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/mathsxiibooks/ch6.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/mathsxiibooks/ch7.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/mathsxiibooks/ch8.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/mathsxiibooks/ch9.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/mathsxiibooks/ch10.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/mathsxiibooks/ch11.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/mathsxiibooks/ch12.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/mathsxiibooks/ch13.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Biology Chapters - Class XI -->
+    <url>
+        <loc>https://ourbooks.example.com/biologybooks/ch1.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/biologybooks/ch2.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/biologybooks/ch3.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/biologybooks/ch4.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/biologybooks/ch5.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/biologybooks/ch6.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/biologybooks/ch7.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/biologybooks/ch8.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/biologybooks/ch9.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/biologybooks/ch10.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/biologybooks/ch11.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/biologybooks/ch12.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/biologybooks/ch13.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/biologybooks/ch14.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Biology Chapters - Class XII -->
+    <url>
+        <loc>https://ourbooks.example.com/biologyxiibooks/ch15.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/biologyxiibooks/ch16.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/biologyxiibooks/ch17.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/biologyxiibooks/ch18.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/biologyxiibooks/ch19.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/biologyxiibooks/ch20.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/biologyxiibooks/ch21.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/biologyxiibooks/ch22.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/biologyxiibooks/ch23.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/biologyxiibooks/ch24.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/biologyxiibooks/ch25.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/biologyxiibooks/ch26.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://ourbooks.example.com/biologyxiibooks/ch27.html</loc>
+        <lastmod>2024-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+</urlset>

@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search - Our Books Educational Platform</title>
+    <meta name="description" content="Search through our comprehensive collection of Chemistry, Physics, Mathematics, and Biology study materials. Find chapters, topics, and practice questions instantly.">
+    <meta name="keywords" content="search, find, chapters, topics, study materials, educational content">
+    <meta name="author" content="Yaseen Rehan Memon">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ourbooks.example.com/search.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Search - Our Books Educational Platform">
+    <meta property="og:description" content="Search through our comprehensive collection of Chemistry, Physics, Mathematics, and Biology study materials.">
+    <meta property="og:image" content="https://ourbooks.example.com/assets/images/search-og.jpg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0d1117;
+            color: #d1d5db;
+        }
+
+        .search-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            font-size: 1.125rem;
+            border: 2px solid #374151;
+            border-radius: 0.75rem;
+            background: #1f2937;
+            color: #e5e7eb;
+            transition: all 0.2s;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .search-button {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 0.75rem;
+            border: none;
+            font-size: 1.125rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            min-height: 44px;
+            min-width: 120px;
+        }
+
+        .search-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+        }
+
+        .result-item {
+            background: #1f2937;
+            border: 1px solid #374151;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            transition: all 0.2s;
+        }
+
+        .result-item:hover {
+            border-color: #3b82f6;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .result-title {
+            color: #3b82f6;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .result-url {
+            color: #9ca3af;
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .result-snippet {
+            color: #d1d5db;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            background: #fbbf24;
+            color: #1f2937;
+            padding: 0.125rem 0.25rem;
+            border-radius: 0.25rem;
+            font-weight: 600;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 3rem;
+            color: #9ca3af;
+        }
+
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #374151;
+            border-radius: 50%;
+            border-top-color: #3b82f6;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .filters {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+            flex-wrap: wrap;
+        }
+
+        .filter-button {
+            padding: 0.5rem 1rem;
+            border: 1px solid #374151;
+            border-radius: 0.5rem;
+            background: #1f2937;
+            color: #d1d5db;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .filter-button:hover,
+        .filter-button.active {
+            border-color: #3b82f6;
+            color: #3b82f6;
+        }
+
+        @media (max-width: 768px) {
+            .search-container {
+                padding: 1rem;
+            }
+
+            .filters {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .filter-button {
+                width: 100%;
+                min-height: 44px;
+                font-size: 1rem;
+                padding: 0.75rem 1rem;
+            }
+
+            .search-input {
+                font-size: 1rem;
+                padding: 1rem 1.25rem;
+                min-height: 44px;
+            }
+
+            .search-button {
+                padding: 1rem 1.5rem;
+                font-size: 1rem;
+                min-width: 100px;
+            }
+
+            .result-item {
+                padding: 1.25rem;
+            }
+
+            .result-title {
+                font-size: 1.25rem;
+            }
+
+            .result-snippet {
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .search-container {
+                padding: 0.75rem;
+            }
+
+            .search-input {
+                font-size: 0.95rem;
+                padding: 0.875rem 1rem;
+            }
+
+            .search-button {
+                padding: 0.875rem 1.25rem;
+                font-size: 0.95rem;
+            }
+
+            .result-item {
+                padding: 1rem;
+            }
+
+            .result-title {
+                font-size: 1.125rem;
+            }
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 lg:p-12">
+    <header class="bg-transparent shadow-lg py-4 fixed w-full top-0 z-10">
+        <div class="container mx-auto px-6 flex justify-center">
+            <h1 class="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-400 to-indigo-400">Our Books</h1>
+        </div>
+    </header>
+
+    <div class="max-w-7xl mx-auto pt-20">
+        <div class="search-container">
+            <h1 class="text-4xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-400 to-indigo-400">
+                Search Our Books
+            </h1>
+
+            <div class="search-box mb-6">
+                <div class="flex gap-4 mb-4">
+                    <input type="text" id="search-input" class="search-input" placeholder="Search for chapters, topics, or keywords..." autocomplete="off">
+                    <button id="search-button" class="search-button">
+                        <span id="search-text">Search</span>
+                        <div id="loading-spinner" class="loading hidden ml-2"></div>
+                    </button>
+                </div>
+
+                <div class="filters">
+                    <button class="filter-button active" data-filter="all">All Subjects</button>
+                    <button class="filter-button" data-filter="chemistry">Chemistry</button>
+                    <button class="filter-button" data-filter="physics">Physics</button>
+                    <button class="filter-button" data-filter="mathematics">Mathematics</button>
+                    <button class="filter-button" data-filter="biology">Biology</button>
+                </div>
+            </div>
+
+            <div id="search-results" class="results-container">
+                <div class="no-results">
+                    <h3 class="text-xl font-semibold mb-2">Start Your Search</h3>
+                    <p>Enter keywords like "stoichiometry", "quantum physics", "calculus", or "photosynthesis" to find relevant content.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-700 mt-20">
+        <div class="max-w-7xl mx-auto px-4 py-8 md:py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Brand Section -->
+                <div class="text-center md:text-left">
+                    <h3 class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-400 to-indigo-400 mb-4">Our Books</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Making learning accessible and efficient for college students through digital textbooks and AI-powered assistance.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="text-center md:text-left">
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors text-sm">Home</a></li>
+                        <li><a href="pages/about.html" class="text-gray-400 hover:text-white transition-colors text-sm">About Us</a></li>
+                        <li><a href="pages/contact.html" class="text-gray-400 hover:text-white transition-colors text-sm">Contact</a></li>
+                        <li><a href="pages/faq.html" class="text-gray-400 hover:text-white transition-colors text-sm">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Links -->
+                <div class="text-center md:text-left">
+                    <h4 class="text-lg font-semibold text-white mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="pages/privacy.html" class="text-gray-400 hover:text-white transition-colors text-sm">Privacy Policy</a></li>
+                        <li><a href="pages/terms.html" class="text-gray-400 hover:text-white transition-colors text-sm">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2025 Our Books. All rights reserved. Created by Yaseen Rehan Memon.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Search functionality
+        class SearchEngine {
+            constructor() {
+                this.searchIndex = [];
+                this.currentFilter = 'all';
+                this.initializeSearchIndex();
+                this.bindEvents();
+            }
+
+            initializeSearchIndex() {
+                // Comprehensive search index with all subjects and chapters
+                this.searchIndex = [
+                    // Chemistry Chapters
+                    {
+                        title: "Chemistry Chapter 1: Stoichiometry",
+                        url: "chemistrybooks/ch1.html",
+                        subject: "chemistry",
+                        content: "stoichiometry mole concept molar mass limiting reactant reaction yield calculations chemical equations",
+                        description: "Master stoichiometry, mole concept, molar mass calculations, limiting reactants, and reaction yields with practice problems."
+                    },
+                    {
+                        title: "Chemistry Chapter 2: Atomic Structure",
+                        url: "chemistrybooks/ch2.html",
+                        subject: "chemistry",
+                        content: "atomic structure electron configuration quantum numbers orbitals bohr model rutherford model",
+                        description: "Learn about atomic structure, electron configuration, quantum numbers, and atomic models."
+                    },
+                    {
+                        title: "Chemistry Chapter 3: Chemical Bonding",
+                        url: "chemistrybooks/ch3.html",
+                        subject: "chemistry",
+                        content: "chemical bonding ionic bonding covalent bonding metallic bonding hydrogen bonding",
+                        description: "Understand different types of chemical bonding including ionic, covalent, and metallic bonding."
+                    },
+                    {
+                        title: "Chemistry Chapter 4: States of Matter",
+                        url: "chemistrybooks/ch4.html",
+                        subject: "chemistry",
+                        content: "states of matter solid liquid gas plasma intermolecular forces kinetic theory",
+                        description: "Study the different states of matter and intermolecular forces that govern their behavior."
+                    },
+                    {
+                        title: "Chemistry Chapter 5: Thermodynamics",
+                        url: "chemistrybooks/ch5.html",
+                        subject: "chemistry",
+                        content: "thermodynamics first law second law enthalpy entropy gibbs free energy",
+                        description: "Explore the principles of thermodynamics including energy changes and spontaneity."
+                    },
+                    {
+                        title: "Chemistry Chapter 6: Chemical Equilibrium",
+                        url: "chemistrybooks/ch6.html",
+                        subject: "chemistry",
+                        content: "chemical equilibrium equilibrium constant le chatelier principle acid base equilibrium",
+                        description: "Learn about chemical equilibrium, equilibrium constants, and factors affecting equilibrium."
+                    },
+                    {
+                        title: "Chemistry Chapter 7: Acids, Bases, and Salts",
+                        url: "chemistrybooks/ch7.html",
+                        subject: "chemistry",
+                        content: "acids bases salts ph scale neutralization titration buffer solutions",
+                        description: "Study acids, bases, salts, pH scale, and buffer solutions."
+                    },
+                    {
+                        title: "Chemistry Chapter 8: Chemical Kinetics",
+                        url: "chemistrybooks/ch8.html",
+                        subject: "chemistry",
+                        content: "chemical kinetics reaction rate rate law order of reaction activation energy",
+                        description: "Understand reaction rates, rate laws, and factors affecting reaction kinetics."
+                    },
+                    {
+                        title: "Chemistry Chapter 9: Solutions and Colloids",
+                        url: "chemistrybooks/ch9.html",
+                        subject: "chemistry",
+                        content: "solutions colloids concentration solubility osmotic pressure",
+                        description: "Learn about solutions, colloids, concentration units, and colligative properties."
+                    },
+                    {
+                        title: "Chemistry Chapter 10: Thermochemistry",
+                        url: "chemistrybooks/ch10.html",
+                        subject: "chemistry",
+                        content: "thermochemistry heat energy enthalpy exothermic endothermic",
+                        description: "Study heat changes in chemical reactions and thermochemical calculations."
+                    },
+                    {
+                        title: "Chemistry Chapter 11: Electrochemistry",
+                        url: "chemistrybooks/ch11.html",
+                        subject: "chemistry",
+                        content: "electrochemistry electrolysis galvanic cell electrode potential",
+                        description: "Explore electrochemical cells, electrolysis, and electrode potentials."
+                    },
+
+                    // Physics Chapters
+                    {
+                        title: "Physics Chapter 1: Physics and Measurements",
+                        url: "physicsbooks/ch1.html",
+                        subject: "physics",
+                        content: "physics measurements units dimensions significant figures errors",
+                        description: "Learn about physical quantities, units, measurements, and error analysis."
+                    },
+                    {
+                        title: "Physics Chapter 2: Kinematics",
+                        url: "physicsbooks/ch2.html",
+                        subject: "physics",
+                        content: "kinematics motion velocity acceleration projectile motion",
+                        description: "Study motion in one and two dimensions, projectile motion, and kinematics equations."
+                    },
+                    {
+                        title: "Physics Chapter 3: Dynamics",
+                        url: "physicsbooks/ch3.html",
+                        subject: "physics",
+                        content: "dynamics force newton laws friction circular motion",
+                        description: "Understand forces, Newton's laws, friction, and circular motion."
+                    },
+                    {
+                        title: "Physics Chapter 4: Rotational and Circular Motion",
+                        url: "physicsbooks/ch4.html",
+                        subject: "physics",
+                        content: "rotational motion torque angular momentum moment of inertia",
+                        description: "Learn about rotational motion, torque, and angular momentum."
+                    },
+                    {
+                        title: "Physics Chapter 5: Work, Energy and Power",
+                        url: "physicsbooks/ch5.html",
+                        subject: "physics",
+                        content: "work energy power kinetic energy potential energy conservation",
+                        description: "Study work, energy, power, and conservation of energy."
+                    },
+                    {
+                        title: "Physics Chapter 6: Fluid Statics",
+                        url: "physicsbooks/ch6.html",
+                        subject: "physics",
+                        content: "fluid statics pressure buoyancy archimedes principle",
+                        description: "Learn about fluid pressure, buoyancy, and Archimedes' principle."
+                    },
+                    {
+                        title: "Physics Chapter 7: Fluid Dynamics",
+                        url: "physicsbooks/ch7.html",
+                        subject: "physics",
+                        content: "fluid dynamics bernoulli equation viscosity streamline flow",
+                        description: "Study fluid dynamics, Bernoulli's equation, and viscous flow."
+                    },
+                    {
+                        title: "Physics Chapter 8: Electric Fields",
+                        url: "physicsbooks/ch8.html",
+                        subject: "physics",
+                        content: "electric fields coulomb law electric field lines gauss law",
+                        description: "Understand electric fields, Coulomb's law, and Gauss's law."
+                    },
+                    {
+                        title: "Physics Chapter 9: Capacitors",
+                        url: "physicsbooks/ch9.html",
+                        subject: "physics",
+                        content: "capacitors capacitance dielectric energy stored parallel plate",
+                        description: "Learn about capacitors, capacitance, and energy storage."
+                    },
+                    {
+                        title: "Physics Chapter 10: D.C Circuits",
+                        url: "physicsbooks/ch10.html",
+                        subject: "physics",
+                        content: "dc circuits ohm law kirchhoff laws resistance combination",
+                        description: "Study DC circuits, Ohm's law, and Kirchhoff's laws."
+                    },
+                    {
+                        title: "Physics Chapter 11: Oscillations",
+                        url: "physicsbooks/ch11.html",
+                        subject: "physics",
+                        content: "oscillations simple harmonic motion pendulum waves",
+                        description: "Explore simple harmonic motion, pendulums, and wave motion."
+                    },
+                    {
+                        title: "Physics Chapter 12: Acoustics",
+                        url: "physicsbooks/ch12.html",
+                        subject: "physics",
+                        content: "acoustics sound waves doppler effect resonance",
+                        description: "Study sound waves, acoustics, and the Doppler effect."
+                    },
+                    {
+                        title: "Physics Chapter 13: Physical Optics",
+                        url: "physicsbooks/ch13.html",
+                        subject: "physics",
+                        content: "optics light reflection refraction lenses mirrors",
+                        description: "Learn about light, reflection, refraction, and optical instruments."
+                    },
+                    {
+                        title: "Physics Chapter 14: Communication",
+                        url: "physicsbooks/ch14.html",
+                        subject: "physics",
+                        content: "communication modulation demodulation radio television",
+                        description: "Study communication systems, modulation, and signal transmission."
+                    },
+
+                    // Mathematics Chapters
+                    {
+                        title: "Mathematics Chapter 1: Complex Numbers",
+                        url: "mathbooks/ch1.html",
+                        subject: "mathematics",
+                        content: "complex numbers imaginary unit argand plane polar form",
+                        description: "Learn about complex numbers, their properties, and geometric representation."
+                    },
+                    {
+                        title: "Mathematics Chapter 2: Matrices & Determinants",
+                        url: "mathbooks/ch2.html",
+                        subject: "mathematics",
+                        content: "matrices determinants inverse transpose matrix operations",
+                        description: "Study matrices, determinants, and matrix operations."
+                    },
+                    {
+                        title: "Mathematics Chapter 3: Vectors",
+                        url: "mathbooks/ch3.html",
+                        subject: "mathematics",
+                        content: "vectors scalar product vector product direction cosines",
+                        description: "Understand vectors, their operations, and applications."
+                    },
+                    {
+                        title: "Mathematics Chapter 4: Sequences & Series",
+                        url: "mathbooks/ch4.html",
+                        subject: "mathematics",
+                        content: "sequences series arithmetic geometric harmonic progression",
+                        description: "Learn about different types of sequences and series."
+                    },
+                    {
+                        title: "Mathematics Chapter 5: Miscellaneous Series",
+                        url: "mathbooks/ch5.html",
+                        subject: "mathematics",
+                        content: "series convergence divergence power series taylor series",
+                        description: "Study advanced series concepts and convergence."
+                    },
+                    {
+                        title: "Mathematics Chapter 6: Permutation, Combination & Probability",
+                        url: "mathbooks/ch6.html",
+                        subject: "mathematics",
+                        content: "permutation combination probability binomial distribution",
+                        description: "Learn about counting principles and probability theory."
+                    },
+                    {
+                        title: "Mathematics Chapter 7: Mathematical Induction & Binomial Theorem",
+                        url: "mathbooks/ch7.html",
+                        subject: "mathematics",
+                        content: "mathematical induction binomial theorem pascal triangle",
+                        description: "Study mathematical induction and binomial expansions."
+                    },
+                    {
+                        title: "Mathematics Chapter 8: Functions & Graphs",
+                        url: "mathbooks/ch8.html",
+                        subject: "mathematics",
+                        content: "functions graphs domain range inverse functions",
+                        description: "Understand functions, their graphs, and properties."
+                    },
+                    {
+                        title: "Mathematics Chapter 9: Linear Inequalities",
+                        url: "mathbooks/ch9.html",
+                        subject: "mathematics",
+                        content: "linear inequalities graphical solution feasible region",
+                        description: "Learn about linear inequalities and their graphical solutions."
+                    },
+                    {
+                        title: "Mathematics Chapter 10: Trigonometric Identities",
+                        url: "mathbooks/ch10.html",
+                        subject: "mathematics",
+                        content: "trigonometric identities sum difference product identities",
+                        description: "Study trigonometric identities and their applications."
+                    },
+                    {
+                        title: "Mathematics Chapter 11: Application of Trigonometry",
+                        url: "mathbooks/ch11.html",
+                        subject: "mathematics",
+                        content: "trigonometry applications height distance problems",
+                        description: "Learn practical applications of trigonometry."
+                    },
+                    {
+                        title: "Mathematics Chapter 12: Trigonometric Functions",
+                        url: "mathbooks/ch12.html",
+                        subject: "mathematics",
+                        content: "trigonometric functions graphs inverse trigonometric functions",
+                        description: "Study trigonometric functions and their graphs."
+                    },
+
+                    // Biology Chapters
+                    {
+                        title: "Biology Chapter 1: The Living World",
+                        url: "biologybooks/ch1.html",
+                        subject: "biology",
+                        content: "living world biodiversity taxonomy classification nomenclature",
+                        description: "Learn about biodiversity, taxonomy, and classification of living organisms."
+                    },
+                    {
+                        title: "Biology Chapter 2: Biological Classification",
+                        url: "biologybooks/ch2.html",
+                        subject: "biology",
+                        content: "biological classification five kingdom system monera protista fungi",
+                        description: "Study the five kingdom system of biological classification."
+                    },
+                    {
+                        title: "Biology Chapter 3: Plant Kingdom",
+                        url: "biologybooks/ch3.html",
+                        subject: "biology",
+                        content: "plant kingdom algae bryophytes pteridophytes gymnosperms angiosperms",
+                        description: "Explore the diversity of plant kingdom and their characteristics."
+                    },
+                    {
+                        title: "Biology Chapter 4: Animal Kingdom",
+                        url: "biologybooks/ch4.html",
+                        subject: "biology",
+                        content: "animal kingdom porifera coelenterata platyhelminthes nematodes",
+                        description: "Learn about animal kingdom classification and characteristics."
+                    },
+                    {
+                        title: "Biology Chapter 5: Morphology of Flowering Plants",
+                        url: "biologybooks/ch5.html",
+                        subject: "biology",
+                        content: "morphology flowering plants root stem leaf flower fruit seed",
+                        description: "Study the external morphology of flowering plants."
+                    },
+                    {
+                        title: "Biology Chapter 6: Anatomy of Flowering Plants",
+                        url: "biologybooks/ch6.html",
+                        subject: "biology",
+                        content: "anatomy flowering plants tissues vascular bundles cambium",
+                        description: "Learn about internal structure and tissues of flowering plants."
+                    },
+                    {
+                        title: "Biology Chapter 7: Structural Organisation in Animals",
+                        url: "biologybooks/ch7.html",
+                        subject: "biology",
+                        content: "structural organisation animals epithelial tissue connective tissue",
+                        description: "Study animal tissues and structural organization."
+                    },
+                    {
+                        title: "Biology Chapter 8: Cell: The Unit of Life",
+                        url: "biologybooks/ch8.html",
+                        subject: "biology",
+                        content: "cell unit life cell theory prokaryotic eukaryotic organelles",
+                        description: "Learn about cell structure, organelles, and cell theory."
+                    },
+                    {
+                        title: "Biology Chapter 9: Biomolecules",
+                        url: "biologybooks/ch9.html",
+                        subject: "biology",
+                        content: "biomolecules carbohydrates proteins lipids nucleic acids enzymes",
+                        description: "Study biomolecules, their structure, and functions."
+                    },
+                    {
+                        title: "Biology Chapter 10: Cell Cycle and Cell Division",
+                        url: "biologybooks/ch10.html",
+                        subject: "biology",
+                        content: "cell cycle mitosis meiosis cell division phases",
+                        description: "Learn about cell cycle, mitosis, and meiosis."
+                    },
+                    {
+                        title: "Biology Chapter 11: Transport in Plants",
+                        url: "biologybooks/ch11.html",
+                        subject: "biology",
+                        content: "transport plants xylem phloem transpiration root pressure",
+                        description: "Study transport mechanisms in plants."
+                    },
+                    {
+                        title: "Biology Chapter 12: Mineral Nutrition",
+                        url: "biologybooks/ch12.html",
+                        subject: "biology",
+                        content: "mineral nutrition essential elements macronutrients micronutrients",
+                        description: "Learn about mineral nutrition and nutrient uptake in plants."
+                    },
+                    {
+                        title: "Biology Chapter 13: Photosynthesis in Higher Plants",
+                        url: "biologybooks/ch13.html",
+                        subject: "biology",
+                        content: "photosynthesis light reaction dark reaction calvin cycle chlorophyll",
+                        description: "Study photosynthesis process and its mechanisms."
+                    },
+                    {
+                        title: "Biology Chapter 14: Respiration in Plants",
+                        url: "biologybooks/ch14.html",
+                        subject: "biology",
+                        content: "respiration plants glycolysis krebs cycle electron transport chain",
+                        description: "Learn about respiration in plants and energy production."
+                    }
+                ];
+            }
+
+            bindEvents() {
+                const searchInput = document.getElementById('search-input');
+                const searchButton = document.getElementById('search-button');
+                const filterButtons = document.querySelectorAll('.filter-button');
+
+                searchInput.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') {
+                        this.performSearch();
+                    }
+                });
+
+                searchButton.addEventListener('click', () => {
+                    this.performSearch();
+                });
+
+                filterButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        filterButtons.forEach(btn => btn.classList.remove('active'));
+                        button.classList.add('active');
+                        this.currentFilter = button.dataset.filter;
+                        if (searchInput.value.trim()) {
+                            this.performSearch();
+                        }
+                    });
+                });
+            }
+
+            performSearch() {
+                const query = document.getElementById('search-input').value.trim().toLowerCase();
+                if (!query) return;
+
+                this.showLoading(true);
+
+                // Simulate search delay for better UX
+                setTimeout(() => {
+                    const results = this.search(query);
+                    this.displayResults(results, query);
+                    this.showLoading(false);
+                }, 500);
+            }
+
+            search(query) {
+                return this.searchIndex.filter(item => {
+                    const matchesQuery = item.title.toLowerCase().includes(query) ||
+                                       item.content.toLowerCase().includes(query) ||
+                                       item.description.toLowerCase().includes(query);
+
+                    const matchesFilter = this.currentFilter === 'all' || item.subject === this.currentFilter;
+
+                    return matchesQuery && matchesFilter;
+                });
+            }
+
+            displayResults(results, query) {
+                const resultsContainer = document.getElementById('search-results');
+
+                if (results.length === 0) {
+                    resultsContainer.innerHTML = `
+                        <div class="no-results">
+                            <h3 class="text-xl font-semibold mb-2">No Results Found</h3>
+                            <p>Try different keywords like "stoichiometry", "quantum physics", "calculus", or "photosynthesis".</p>
+                            <p class="mt-2">Or try searching in a different subject.</p>
+                        </div>
+                    `;
+                    return;
+                }
+
+                const resultsHtml = results.map(result => {
+                    const highlightedTitle = this.highlightText(result.title, query);
+                    const highlightedDescription = this.highlightText(result.description, query);
+
+                    return `
+                        <div class="result-item">
+                            <h3 class="result-title">
+                                <a href="${result.url}">${highlightedTitle}</a>
+                            </h3>
+                            <div class="result-url">${result.url}</div>
+                            <div class="result-snippet">${highlightedDescription}</div>
+                        </div>
+                    `;
+                }).join('');
+
+                resultsContainer.innerHTML = `
+                    <div class="mb-4">
+                        <p class="text-gray-400">Found ${results.length} result${results.length !== 1 ? 's' : ''} for "${query}"</p>
+                    </div>
+                    ${resultsHtml}
+                `;
+            }
+
+            highlightText(text, query) {
+                const words = query.split(' ').filter(word => word.length > 0);
+                let highlightedText = text;
+
+                words.forEach(word => {
+                    const regex = new RegExp(`(${word})`, 'gi');
+                    highlightedText = highlightedText.replace(regex, '<span class="highlight">$1</span>');
+                });
+
+                return highlightedText;
+            }
+
+            showLoading(show) {
+                const spinner = document.getElementById('loading-spinner');
+                const searchText = document.getElementById('search-text');
+
+                if (show) {
+                    spinner.classList.remove('hidden');
+                    searchText.textContent = 'Searching...';
+                } else {
+                    spinner.classList.add('hidden');
+                    searchText.textContent = 'Search';
+                }
+            }
+        }
+
+        // Initialize search when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            new SearchEngine();
+        });
+    </script>
+</body>
+</html>

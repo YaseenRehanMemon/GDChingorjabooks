@@ -2,44 +2,17 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.html",
-      "use": "@vercel/static"
-    },
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "routes": [
     {
-      "src": "assets/**",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "pages/**",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "physicsbooks/**",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "chemistrybooks/**",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "mathbooks/**",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "physicsxiibooks/**",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "biologyxiibooks/**",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "chemistryxiibooks/**",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "mathsxiibooks/**",
-      "use": "@vercel/static"
+      "src": "/(.*)",
+      "dest": "/dist/$1"
     }
   ]
 }

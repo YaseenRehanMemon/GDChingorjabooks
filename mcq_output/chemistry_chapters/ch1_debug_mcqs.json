@@ -1,0 +1,72 @@
+[
+  {
+    "question": "What is the molar mass of water ($H_2O$) given that the atomic mass of hydrogen is 1 g/mol and oxygen is 16 g/mol?",
+    "options": {
+      "A": "17 g/mol",
+      "B": "18 g/mol",
+      "C": "19 g/mol",
+      "D": "20 g/mol"
+    },
+    "correct_answer": "B",
+    "explanation": "The molar mass of water is calculated by adding the atomic masses of its constituent elements.  $H_2O$ has two hydrogen atoms (2 * 1 g/mol = 2 g/mol) and one oxygen atom (16 g/mol). Therefore, the molar mass is 2 g/mol + 16 g/mol = 18 g/mol.",
+    "difficulty": "easy",
+    "topic": "Mole and Avogadro's Number",
+    "subtopic": "Molar Mass Calculation"
+  },
+  {
+    "question": "How many moles are present in 44g of carbon dioxide ($CO_2$) (Atomic mass of C = 12 g/mol, O = 16 g/mol)?",
+    "options": {
+      "A": "0.5 moles",
+      "B": "1 mole",
+      "C": "1.5 moles",
+      "D": "2 moles"
+    },
+    "correct_answer": "B",
+    "explanation": "First, calculate the molar mass of $CO_2$: 12 g/mol (C) + 2 * 16 g/mol (O) = 44 g/mol. Then, divide the given mass by the molar mass: $\frac{44g}{44 g/mol} = 1 mol$.",
+    "difficulty": "medium",
+    "topic": "Mole and Avogadro's Number",
+    "subtopic": "Mole Calculation from Mass"
+  },
+  {
+    "question": "If 2 moles of hydrogen gas ($H_2$) react with 1 mole of oxygen gas ($O_2$) to produce water ($H_2O$), what is the limiting reactant?",
+    "options": {
+      "A": "Hydrogen gas",
+      "B": "Oxygen gas",
+      "C": "Water",
+      "D": "Both are limiting reactants"
+    },
+    "correct_answer": "A",
+    "explanation": "According to the balanced equation, 2$H_2$ + $O_2$ → 2$H_2O$,  2 moles of hydrogen react with 1 mole of oxygen. Since we have exactly the stoichiometric ratio, hydrogen will be consumed first, making it the limiting reactant. ",
+    "difficulty": "medium",
+    "topic": "Limiting Reactant",
+    "subtopic": "Identifying Limiting Reactant"
+  },
+  {
+    "question": "Express the number 0.00000678 in exponential notation.",
+    "options": {
+      "A": "$6.78 \\times 10^{-6}$",
+      "B": "$6.78 \\times 10^{6}$",
+      "C": "$6.78 \\times 10^{-5}$",
+      "D": "$67.8 \\times 10^{-7}$"
+    },
+    "correct_answer": "A",
+    "explanation": "To express a number in exponential notation, move the decimal point to the right until you have a number between 1 and 10. The number of places you moved the decimal point becomes the negative exponent of 10. In this case, moving the decimal point six places to the right gives 6.78, and the exponent is -6.",
+    "difficulty": "easy",
+    "topic": "Exponential Notation",
+    "subtopic": "Converting to Exponential Notation"
+  },
+  {
+    "question": "In a reaction, 20g of reactant A produces 15g of product B.  If the theoretical yield of B is 25g, what is the percentage yield?",
+    "options": {
+      "A": "60%",
+      "B": "75%",
+      "C": "80%",
+      "D": "90%"
+    },
+    "correct_answer": "A",
+    "explanation": "Percentage yield is calculated as:  $\\frac{Actual Yield}{Theoretical Yield} \\times 100$.  In this case, it's $\\frac{15g}{25g} \\times 100 = 60\\%$.",
+    "difficulty": "hard",
+    "topic": "Theoretical and Percent Yield",
+    "subtopic": "Percentage Yield Calculation"
+  }
+]

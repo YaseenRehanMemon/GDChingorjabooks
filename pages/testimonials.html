@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Testimonials - Our Books Educational Platform</title>
+    <meta name="description" content="Read what students say about Our Books. Real testimonials from college students who improved their grades using our free educational resources and study materials.">
+    <meta name="keywords" content="testimonials, student reviews, feedback, success stories, educational platform, study materials">
+    <meta name="author" content="Yaseen Rehan Memon">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ourbooks.example.com/pages/testimonials.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Student Testimonials - Our Books Educational Platform">
+    <meta property="og:description" content="Read what students say about Our Books. Real testimonials from college students who improved their grades using our free educational resources.">
+    <meta property="og:image" content="https://ourbooks.example.com/assets/images/testimonials-og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Student Testimonials - Our Books Educational Platform">
+    <meta property="twitter:description" content="Read what students say about Our Books. Real testimonials from college students who improved their grades using our free educational resources.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0d1117;
+            color: #d1d5db;
+        }
+
+        .testimonial-card {
+            background: #1f2937;
+            border: 1px solid #374151;
+            border-radius: 1rem;
+            padding: 2rem;
+            margin: 1rem 0;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);
+            border-color: #3b82f6;
+        }
+
+        .testimonial-quote {
+            font-size: 1.125rem;
+            line-height: 1.7;
+            color: #e5e7eb;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .testimonial-quote::before {
+            content: '"';
+            font-size: 4rem;
+            color: #3b82f6;
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            opacity: 0.3;
+        }
+
+        .student-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .student-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .student-details h4 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #3b82f6;
+            margin-bottom: 0.25rem;
+        }
+
+        .student-details p {
+            color: #9ca3af;
+            font-size: 0.875rem;
+        }
+
+        .rating {
+            display: flex;
+            gap: 0.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .star {
+            color: #fbbf24;
+            font-size: 1.25rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .stat-item {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            padding: 2rem;
+            border-radius: 1rem;
+            color: white;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1.125rem;
+            opacity: 0.9;
+        }
+
+        .subject-filter {
+            display: flex;
+            gap: 1rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .filter-btn {
+            padding: 0.75rem 1.5rem;
+            border: 2px solid #374151;
+            border-radius: 0.75rem;
+            background: #1f2937;
+            color: #d1d5db;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-weight: 500;
+            min-height: 44px;
+            min-width: 120px;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            border-color: #3b82f6;
+            color: #3b82f6;
+            transform: translateY(-2px);
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .subject-filter {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.75rem;
+            }
+
+            .filter-btn {
+                width: 200px;
+                font-size: 1rem;
+                padding: 0.875rem 1.25rem;
+            }
+
+            .testimonial-card {
+                padding: 1.5rem;
+            }
+
+            .testimonial-quote {
+                font-size: 1.1rem;
+            }
+
+            .student-avatar {
+                width: 50px;
+                height: 50px;
+            }
+
+            .student-details h4 {
+                font-size: 1.125rem;
+            }
+
+            .student-details p {
+                font-size: 0.9rem;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .stat-label {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .testimonial-card {
+                padding: 1.25rem;
+            }
+
+            .testimonial-quote {
+                font-size: 1rem;
+            }
+
+            .student-avatar {
+                width: 45px;
+                height: 45px;
+            }
+
+            .student-details h4 {
+                font-size: 1rem;
+            }
+
+            .filter-btn {
+                width: 180px;
+                font-size: 0.95rem;
+                padding: 0.75rem 1rem;
+            }
+
+            .stat-number {
+                font-size: 1.75rem;
+            }
+        }
+
+            .subject-filter {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .filter-btn {
+                width: 200px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 lg:p-12">
+    <header class="bg-transparent shadow-lg py-4 fixed w-full top-0 z-10">
+        <div class="container mx-auto px-6 flex justify-center">
+            <h1 class="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-400 to-indigo-400">Our Books</h1>
+        </div>
+    </header>
+
+    <div class="max-w-7xl mx-auto pt-20">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-400 to-indigo-400 mb-4">
+                Student Success Stories
+            </h1>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                Hear from students who transformed their academic performance using Our Books
+            </p>
+        </div>
+
+        <!-- Statistics -->
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">10,000+</div>
+                <div class="stat-label">Students Helped</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">95%</div>
+                <div class="stat-label">Grade Improvement</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">4.9/5</div>
+                <div class="stat-label">Average Rating</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Success Stories</div>
+            </div>
+        </div>
+
+        <!-- Subject Filter -->
+        <div class="subject-filter">
+            <button class="filter-btn active" data-subject="all">All Subjects</button>
+            <button class="filter-btn" data-subject="chemistry">Chemistry</button>
+            <button class="filter-btn" data-subject="physics">Physics</button>
+            <button class="filter-btn" data-subject="mathematics">Mathematics</button>
+            <button class="filter-btn" data-subject="biology">Biology</button>
+        </div>
+
+        <!-- Testimonials Grid -->
+        <div class="testimonial-grid" id="testimonials-container">
+            <!-- Chemistry Testimonials -->
+            <div class="testimonial-card" data-subject="chemistry">
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <div class="testimonial-quote">
+                    "Our Books completely changed how I study Chemistry. The stoichiometry chapter with practice problems helped me understand concepts I struggled with for months. I went from C grades to A+ in my finals!"
+                </div>
+                <div class="student-info">
+                    <div class="student-avatar">S</div>
+                    <div class="student-details">
+                        <h4>Sarah Johnson</h4>
+                        <p>Class XII Student • Chemistry Major</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card" data-subject="physics">
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <div class="testimonial-quote">
+                    "The Physics chapters are incredibly detailed and easy to follow. The real-world applications section helped me connect theory to practical scenarios. My physics teacher was impressed with my understanding!"
+                </div>
+                <div class="student-info">
+                    <div class="student-avatar">M</div>
+                    <div class="student-details">
+                        <h4>Michael Chen</h4>
+                        <p>Class XI Student • Aspiring Engineer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card" data-subject="mathematics">
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <div class="testimonial-quote">
+                    "Mathematics was my weakest subject until I found Our Books. The step-by-step explanations and practice problems made complex calculus topics so much easier. I actually started enjoying math!"
+                </div>
+                <div class="student-info">
+                    <div class="student-avatar">A</div>
+                    <div class="student-details">
+                        <h4>Ahmed Hassan</h4>
+                        <p>Class XII Student • Mathematics Excellence</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card" data-subject="biology">
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <div class="testimonial-quote">
+                    "The Biology chapters are beautifully explained with amazing diagrams and real-life examples. I finally understood photosynthesis and cellular respiration. My biology grades improved dramatically!"
+                </div>
+                <div class="student-info">
+                    <div class="student-avatar">P</div>
+                    <div class="student-details">
+                        <h4>Priya Sharma</h4>
+                        <p>Class XI Student • Future Doctor</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card" data-subject="chemistry">
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <div class="testimonial-quote">
+                    "As someone who struggled with organic chemistry, the clear explanations and practice problems were a game-changer. The common mistakes section helped me avoid silly errors in exams."
+                </div>
+                <div class="student-info">
+                    <div class="student-avatar">R</div>
+                    <div class="student-details">
+                        <h4>Rahul Kumar</h4>
+                        <p>Class XII Student • Medical Aspirant</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card" data-subject="physics">
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <div class="testimonial-quote">
+                    "The electricity and magnetism chapters are explained so well! The circuit diagrams and problem-solving approach helped me master complex topics. Highly recommended for physics students."
+                </div>
+                <div class="student-info">
+                    <div class="student-avatar">L</div>
+                    <div class="student-details">
+                        <h4>Lisa Wang</h4>
+                        <p>Class XII Student • Physics Enthusiast</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card" data-subject="mathematics">
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <div class="testimonial-quote">
+                    "The integration and differentiation chapters saved my calculus grade! The step-by-step solutions and practice problems made everything click. Thank you for making math accessible."
+                </div>
+                <div class="student-info">
+                    <div class="student-avatar">D</div>
+                    <div class="student-details">
+                        <h4>David Rodriguez</h4>
+                        <p>Class XII Student • Math Competition Winner</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card" data-subject="biology">
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <div class="testimonial-quote">
+                    "Human physiology and genetics chapters are incredibly comprehensive. The diagrams and explanations helped me understand complex biological processes. Perfect for medical aspirants!"
+                </div>
+                <div class="student-info">
+                    <div class="student-avatar">N</div>
+                    <div class="student-details">
+                        <h4>Nina Patel</h4>
+                        <p>Class XI Student • Biology Olympiad</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card" data-subject="chemistry">
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <div class="testimonial-quote">
+                    "The periodic table and chemical bonding explanations are outstanding. I finally understand why elements behave the way they do. This resource is invaluable for chemistry students."
+                </div>
+                <div class="student-info">
+                    <div class="student-avatar">K</div>
+                    <div class="student-details">
+                        <h4>Kevin Brown</h4>
+                        <p>Class XI Student • Chemistry Club President</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card" data-subject="physics">
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <div class="testimonial-quote">
+                    "Mechanics and thermodynamics chapters are explained with such clarity. The real-world examples and practice problems helped me excel in my physics practical exams. Amazing resource!"
+                </div>
+                <div class="student-info">
+                    <div class="student-avatar">T</div>
+                    <div class="student-details">
+                        <h4>Tanvi Gupta</h4>
+                        <p>Class XII Student • Physics Topper</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center mt-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8">
+            <h2 class="text-3xl font-bold text-white mb-4">Ready to Join These Success Stories?</h2>
+            <p class="text-xl text-blue-100 mb-6">Start your journey to academic excellence with Our Books</p>
+            <a href="../index.html" class="inline-block bg-white text-blue-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-200">
+                Explore Subjects Now
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-700 mt-20">
+        <div class="max-w-7xl mx-auto px-4 py-8 md:py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Brand Section -->
+                <div class="text-center md:text-left">
+                    <h3 class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-400 to-indigo-400 mb-4">Our Books</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Making learning accessible and efficient for college students through digital textbooks and AI-powered assistance.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="text-center md:text-left">
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-gray-400 hover:text-white transition-colors text-sm">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors text-sm">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors text-sm">Contact</a></li>
+                        <li><a href="faq.html" class="text-gray-400 hover:text-white transition-colors text-sm">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Links -->
+                <div class="text-center md:text-left">
+                    <h4 class="text-lg font-semibold text-white mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition-colors text-sm">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors text-sm">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2025 Our Books. All rights reserved. Created by Yaseen Rehan Memon.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Filter testimonials by subject
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const testimonials = document.querySelectorAll('.testimonial-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    button.classList.add('active');
+
+                    const subject = button.dataset.subject;
+
+                    testimonials.forEach(testimonial => {
+                        if (subject === 'all' || testimonial.dataset.subject === subject) {
+                            testimonial.style.display = 'block';
+                        } else {
+                            testimonial.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
